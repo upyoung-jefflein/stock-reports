@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>大立光(3008) 台股技術分析報告</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+      background: #f4f6fa;
+      color: #172033;
+    }
+    header { padding: 24px 18px 18px; background: #14213d; color: #fff; }
+    main { max-width: 1180px; margin: 0 auto; padding: 18px; }
+    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0; }
+    h2 { margin: 0 0 14px; font-size: 20px; }
+    .panel {
+      background: #fff;
+      border: 1px solid #dce2ee;
+      border-radius: 8px;
+      margin: 16px 0;
+      padding: 16px;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    .table-scroll { overflow-x: auto; width: 100%; }
+    th, td {
+      border-bottom: 1px solid #e7ebf2;
+      padding: 9px 8px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th { width: 230px; color: #526070; font-weight: 600; }
+    .cell-number { text-align: right; font-variant-numeric: tabular-nums; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #e5e9f0;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .analysis ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .detail-panel { padding: 0; overflow: hidden; }
+    details > summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      font-weight: 700;
+      color: #172033;
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary::after { content: "展開"; float: right; color: #64748b; font-weight: 500; }
+    details[open] > summary::after { content: "收合"; }
+    .detail-body { padding: 0 16px 16px; }
+    .detail-body ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+    .summary-card {
+      border: 1px solid #dde4ef;
+      border-radius: 8px;
+      padding: 12px;
+      background: #f8fafc;
+      min-height: 82px;
+    }
+    .summary-card span { display: block; color: #64748b; font-size: 13px; margin-bottom: 7px; }
+    .summary-card strong { display: block; color: #111827; font-size: 15px; line-height: 1.45; }
+    .notice { line-height: 1.7; color: #3f4b5f; }
+    @media (max-width: 720px) {
+      header { padding: 18px 14px 14px; }
+      main { padding: 10px; }
+      h1 { font-size: 20px; line-height: 1.35; }
+      h2 { font-size: 16px; margin-bottom: 10px; }
+      .panel { border-radius: 6px; margin: 10px 0; padding: 10px; }
+      table, tbody, tr, th, td { display: block; width: 100%; }
+      tr { border-bottom: 1px solid #e7ebf2; padding: 8px 0; }
+      th, td { border-bottom: 0; padding: 2px 0; font-size: 13px; }
+      th { color: #64748b; }
+      .table-scroll th, .table-scroll td { display: table-cell; width: auto; min-width: 120px; padding: 7px 8px; border-bottom: 1px solid #e7ebf2; }
+      .table-scroll tr { display: table-row; border-bottom: 0; padding: 0; }
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .summary-card { min-height: auto; padding: 9px; }
+      .summary-card strong { font-size: 13px; }
+      .analysis ul { padding-left: 18px; font-size: 13px; }
+      details > summary { padding: 11px 10px; font-size: 14px; }
+      .detail-body { padding: 0 10px 10px; font-size: 13px; }
+      .notice { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>大立光(3008) 台股技術分析報告</h1>
+    <div>產生時間：2026-05-23T09:41:26+08:00</div>
+  </header>
+  <main>
+    
+    <section class="panel conclusion">
+      <h2>結論摘要</h2>
+      <div class="summary-grid"><div class="summary-card"><span>整體方向</span><strong>中性偏多；收盤站上 MA5, MA5 高於 MA10, MA10 上方且投信 5/10 日偏買</strong></div>
+<div class="summary-card"><span>明日觀察</span><strong>價漲量縮；明日觀察 MA5 3371.00 / MA10 3162.50</strong></div>
+<div class="summary-card"><span>支撐</span><strong>第一 3371.00 / 第二 3162.50 / 強 2861.75</strong></div>
+<div class="summary-card"><span>壓力</span><strong>3615.00</strong></div></div>
+    </section>
+    
+    <section class="panel">
+      <h2>資料摘要</h2>
+      <table><tr><th>標的</th><td>大立光(3008)</td></tr>
+<tr><th>產業分類</th><td>光電業</td></tr>
+<tr><th>資料期間</th><td>2025-05-23 to 2026-05-22</td></tr>
+<tr><th>最後交易日</th><td>2026-05-22</td></tr>
+<tr><th>有效交易日數</th><td>243</td></tr>
+<tr><th>圖表狀態</th><td>已產生 6 張圖表</td></tr>
+<tr><th>同族群比較</th><td>大立光(3008)、台亞(2340)、圓展(3669)、新門(5432)、元創精密(3685)、新晶投控(3713)、光麗-KY(6431)</td></tr>
+<tr><th>ETF 持股異動</th><td>持有快照 2026-05-22，未命中最新異動</td></tr>
+<tr><th>集保股權分散</th><td>20260515；大額 57.94% / 小額 14.50%</td></tr>
+<tr><th>權證資料</th><td>311 檔，認購 298 / 認售 13</td></tr>
+<tr><th>基本面資料</th><td>月營收、估值與正式 EPS 已取得</td></tr></table>
+    </section>
+    <section class="panel analysis"><h2>零、整體評語 / 技術分析概念 / 明日走向</h2><ul><li>整體評語：目前整體評級為「中性偏多」（分數 2）。日線 偏多、周線 偏多、月線 偏多，三個週期若同向，訊號可信度較高；若互相矛盾，應以區間與量能確認為主。</li><li>技術分析概念：本報告以趨勢、位置、量能三個面向判讀。趨勢看均線排列（MA5 3371.00, MA10 3162.50, MA20 2861.75, MA60 2544.08），位置看近 20 / 60 日高低點，量能看今日成交量 1,289,200 是否高於近 20 日均量 2,252,204。</li><li>目前結構：短線均線呈多頭排列，代表買盤動能仍在價格下方支撐。收盤位於近 20 日區間約 93% 位置，仍需觀察是否能脫離區間。量能低於近 20 日均量，代表市場仍偏觀望，突破或跌破訊號需等補量確認。</li><li>MA5 短線判斷：MA5 位於 MA10 之上且收盤站上 MA5，短線動能偏強；明日若不跌破 MA5，短線攻擊續航較佳。</li><li>MA10 / 投信支撐：收盤價站上 MA10（3162.50），且投信近 5 日買賣超 397,350、近 10 日 867,510，代表短線均線支撐有法人買盤配合，MA10 支撐可信度較高。</li><li>明日走向推估：基於 日漲跌為正, 收盤站上 MA5, 收盤站上 MA10, 收盤站上 MA20，明日初步以「偏多震盪」看待；若開高並站穩 3615.00，有機會延續挑戰上方壓力；若開低或跌破 2470.00，短線需先防守轉弱。</li><li>觀察價位：短線支撐優先看 2861.75，壓力優先看 3615.00；明日若量能放大且收盤方向明確，會比盤中瞬間突破或跌破更具參考性。</li></ul></section>
+<section class="panel analysis"><h2>一、圖表重點解讀</h2><ul><li>整體評分為「中性偏多」（分數 2），主要依據：收盤站上 MA5、MA5 高於 MA10、收盤站上 MA20、收盤站上 MA60、MA20 高於 MA60、量能偏低。</li><li>資料最後交易日為 2026-05-22，最新收盤價 3540.00，單日漲跌幅 2.31%；一年區間 2020.00～3615.00，一年報酬 53.58%。</li><li>趨勢判讀：短中期均線呈多頭排列，價格站在 20 日與 60 日均線上方。 目前 收盤價位於區間高檔，較接近壓力區。</li><li>量價判讀：價漲量縮。價格上漲但量能不足，代表追價力道有限；若接近壓力區，需提防假突破。</li><li>短線均線判斷：MA5=3371.00 高於 MA10=3162.50，且收盤站上 MA5，短線動能偏強。收盤價站上 MA10（3162.50），且投信近 5 日買賣超 397,350、近 10 日 867,510，代表短線均線支撐有法人買盤配合，MA10 支撐可信度較高。</li><li>短線風險 / 空間：距近 20 日低點約 43.32%，距近 20 日高點約 2.12%；量能為近 20 日均量 0.57 倍。</li><li>同族群題材判斷：大立光(3008) 期間報酬 53.58%，排名第 3/7，屬於位於族群中段；族群同步偏強（上漲 6/7 檔），領先者為 元創精密(3685) 148.96%。股價較依賴個股量價與法人籌碼，需等待族群擴散或本股重新轉強。</li><li>操作解讀上，若價格突破壓力且量能續增，偏多情境較有延續性；若跌破短線支撐且放量，需優先控管風險。</li></ul></section>
+<section class="panel analysis"><h2>二、日週月趨勢與支撐壓力</h2><ul><li>日線：MA5 3371.00、MA10 3162.50、MA20 2861.75；MA5=3371.00 高於 MA10=3162.50，且收盤站上 MA5，短線動能偏強。</li><li>周線 / 月線：周收 3540.00（2.76%），月收 3540.00（40.76%）。</li><li>支撐：第一 MA5 3371.00 / 近 5 日低點 3125.00；第二 MA10 3162.50；強支撐 MA20 2861.75 / 近 20 日低點 2470.00。</li><li>壓力：短線看近 20 日高點 3615.00，中線看近 60 日高點 3615.00。</li><li>簡化判斷：突破 3615.00 且補量，偏多延續；跌破 2470.00 或 MA20，先轉防守。</li></ul></section>
+<section class="panel analysis"><h2>三、圖表閱讀順序</h2><ul><li>先看 01 日線：確認短線方向、成交量與支撐壓力。</li><li>再看 02 周線與 03 月線：確認這波是短線反彈、波段趨勢，還是長期壓力區。</li><li>最後看權證、同族群、基本面與集保：只作輔助確認，不單獨決定操作。</li></ul></section>
+<section class="panel analysis"><h2>九、短線 / 中線與進出場情境</h2><ul><li>突破情境：收盤突破 3615.00 且量能高於 20 日均量，偏多延續；跌回 MA5 3371.00 下方則降權重。</li><li>拉回情境：回測 MA10 3162.50 或 MA20 2861.75 量縮守住，才視為健康整理。</li><li>防守情境：放量跌破 MA20 2861.75 或近 20 日低點 2470.00，短線先轉防守。</li><li>波動參考：ATR14 約 188.93，明日常態波動區間約 3351.07～3728.93。</li></ul></section>
+<section class="panel analysis"><h2>九之一、股性與操作方式</h2><ul><li>股性判斷：中高波動趨勢股，ATR 約占股價 5.34%。適合順勢與拉回承接並用，重點是不要在壓力區無量追價。</li><li>偏順勢：股價在短均與月線之上，若突破近 20 日高點且量能維持大於均量，可採順勢追蹤；跌回 MA5 下方則先降短線權重。</li><li>量能策略：目前量能偏低，突破可信度不足，較適合等補量或回測支撐量縮。</li><li>籌碼策略：收盤價站上 MA10（3162.50），且投信近 5 日買賣超 397,350、近 10 日 867,510，代表短線均線支撐有法人買盤配合，MA10 支撐可信度較高。</li><li>權證輔助：權證未提供明顯單邊支持，操作仍以現股量價與支撐壓力為主。</li><li>參考操作框架：上方以近 20 日高點 3615.00 作為突破確認，下方以 MA10 3162.50、MA20 2861.75 與近 20 日低點 2470.00 分層控管。此為條件式交易計畫，不是保證買賣訊號。</li></ul></section>
+    
+        <section class="panel chart-panel">
+          <h2>01_日線完整技術與籌碼分析圖</h2>
+          <img src="01_日線完整技術與籌碼分析圖.png?v=2026-05-23T09:41:26+08:00" alt="01_日線完整技術與籌碼分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>02_周線完整技術與趨勢分析圖</h2>
+          <img src="02_周線完整技術與趨勢分析圖.png?v=2026-05-23T09:41:26+08:00" alt="02_周線完整技術與趨勢分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>03_月線完整技術與長期趨勢分析圖</h2>
+          <img src="03_月線完整技術與長期趨勢分析圖.png?v=2026-05-23T09:41:26+08:00" alt="03_月線完整技術與長期趨勢分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>04_權證完整分析圖</h2>
+          <img src="04_權證完整分析圖.png?v=2026-05-23T09:41:26+08:00" alt="04_權證完整分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>05_同族群比較分析圖</h2>
+          <img src="05_同族群比較分析圖.png?v=2026-05-23T09:41:26+08:00" alt="05_同族群比較分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>06_基本面分析圖</h2>
+          <img src="06_基本面分析圖.png?v=2026-05-23T09:41:26+08:00" alt="06_基本面分析圖">
+        </section>
+        
+    <section class="panel">
+      <h2>進階分析與資料明細</h2>
+      <p class="notice">以下內容預設收合，保留完整分析與資料檢查，需要時再展開查看。</p>
+    </section>
+    
+    <details class="panel detail-panel">
+      <summary>四、量價結構</summary>
+      <div class="detail-body"><ul><li>最新成交量 1,289,200，近 20 日均量 2,252,204，近 60 日均量 1,604,522。</li><li>最新量能約為近 20 日均量的 0.57 倍，近 20 日上漲日 11 天、下跌日 8 天。</li><li>量價型態：價漲量縮。價格上漲但量能不足，代表追價力道有限；若接近壓力區，需提防假突破。</li><li>累積交易量分布可觀察過去一年成交量較集中的價格帶，作為籌碼密集區參考。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>四之二、乖離率與 ATR 波動區間</summary>
+      <div class="detail-body"><ul><li>MA5 乖離 5.01%：正乖離偏高，趨勢偏強但不宜忽略追高風險</li><li>MA10 乖離 11.94%：正乖離偏高，趨勢偏強但不宜忽略追高風險</li><li>MA20 乖離 23.70%：正乖離偏大，短線容易震盪或拉回</li><li>MA60 乖離 39.15%：正乖離偏大，短線容易震盪或拉回</li><li>ATR14 約 188.93，以最新收盤估算，明日常態波動參考區間約 3351.07～3728.93；若開盤跳空或爆量，區間需重新評估。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>五、融資融券與法人 / 籌碼成本</summary>
+      <div class="detail-body"><ul><li>融資融券資料期間 2025-05-23 to 2026-05-22，筆數 243。</li><li>融資餘額目前 1,576，變化 485（44.45%）。</li><li>近 5 日融資餘額目前 1,576，變化 -80（-4.83%）。</li><li>融券餘額目前 16，變化 9（128.57%）。</li><li>融資融券只能用來觀察槓桿籌碼變化，不等同真實散戶或主力成本。</li><li>法人資料期間 2025-05-23 to 2026-05-22，原始筆數 1215。</li><li>最新一日法人合計買賣超 17,275，近 5 日合計 1,384,929，近 20 日合計 4,177,358。</li><li>最新一日分項：外資 -974、投信 2,872、自營商自行 -11,069、自營商避險 26,446、外資自營商 0。</li><li>法人買賣超可作籌碼方向輔助，但不代表完整持股成本；成本仍需搭配成交量密集區與價格區間估算。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>六、權證與市場情緒</summary>
+      <div class="detail-body"><ul><li>權證定位：本段只用權證資料觀察現股人氣與未來漲勢機率，不作權證買賣建議。</li><li>權證資料期間 / 出表日：TWSE report_date=1150522。</li><li>本次匹配權證 311 檔；認購 298 檔、認售 13 檔，認購/認售檔數比 22.92。</li><li>履約價分布 1625.00～5167.00，中位數 3082.87；標的最新收盤 3540.00。</li><li>價內 / 近價外結構：認購價內 218 檔、認購 10% 內價外 30 檔；認售價內 0 檔、認售 10% 內價外 0 檔。</li><li>成交金額合計 47,064,420，其中認購 46,907,780（99.67%）、認售 156,640（0.33%）；認購成交較集中，前 5 大成交占比 36.44%。</li><li>權證名詞說明：近價外認購代表市場押注區離現股不遠，對現股續漲的參考性通常高於深價外；深價外認購代表想像空間大，但確認力較弱。</li><li>履約價熱區：認購成交加權履約價約 3631.64，較現股高約 2.59%；認售成交加權履約價約 2865.94，現股較其高約 23.52%。認購成交中，近價外 10% 內占 12.31%，深價外認購占 30.69%。</li><li>以權證角度看目前股價：目前股價 3540.00 已接近認購成交加權履約價 3631.64，代表股價已靠近權證資金主流押注區，續漲需要更多現股量能支撐，否則容易進入震盪消化。</li><li>權證情緒分型：本次屬於「中性觀察」。近價外認購成交金額 5,774,880，深價外認購成交金額 14,398,240，近價外認售成交金額 0，深價外認售成交金額 156,640。認購資金未明顯集中在近價外區，對現股續漲的輔助力較有限。</li><li>資金集中度：前 5 大權證成交占 36.44%。成交集中度中等，資金有熱門標的但沒有完全擠在少數權證。</li><li>輔助結論：認購與認售資金沒有形成強烈單邊結構，權證籌碼暫時只能視為市場熱度參考，主要方向仍應回到現股 K 線、均線與量能。</li><li>白話解讀：權證這邊還沒有給出很清楚的方向，先看股票本身有沒有突破或跌破。簡單說，權證是在看市場有沒有跟著股票一起熱起來；它可以加分或扣分，但不能單獨決定股價方向。</li><li>未來一個月現股輔助推估：現股技術面初步為「偏多延續」。若價格維持在 MA20 / MA60 之上、量能不縮，且認購成交沒有明顯退潮，偏多情境較容易延續；若現股跌破支撐，即使認購仍熱，也要先降低權證訊號權重。</li><li>一個月觀察區間：上方先看 3615.00，再看近 60 日高點 3615.00；下方先看 2861.75，再看近 20 日低點 2470.00。突破近 20 日高點 3615.00 可視為偏多確認；跌破近 20 日低點 2470.00 則偏多情境失效；MA20 2861.75 是短中線強弱分界。</li><li>現股判斷用法：近價外認購有量、認售沒有明顯放大、且現股同步站穩均線時，權證資料可視為現股續漲的加分項；若權證很熱但現股不漲，則視為人氣過熱而非追價確認。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七、同族群比較</summary>
+      <div class="detail-body"><ul><li>比較依據：同產業相關性候選：光電業（中：同產業候選，將再依一年價格相關性篩選；一年日報酬相關性排序）</li><li>比較清單：大立光(3008)、台亞(2340)、圓展(3669)、新門(5432)、元創精密(3685)、新晶投控(3713)、光麗-KY(6431)</li><li>同期間相對報酬排序：元創精密(3685) 148.96%、台亞(2340) 83.18%、大立光(3008) 53.58%、光麗-KY(6431) 19.20%、新門(5432) 16.13%、圓展(3669) 10.95%</li><li>相關性：台亞(2340) 0.237、圓展(3669) 0.235、新門(5432) 0.230、元創精密(3685) 0.094、新晶投控(3713) 0.074、光麗-KY(6431) -0.007</li><li>部分候選排除：大峽谷-KY(5281): No TaiwanStockPrice rows for 5281；兆遠(4944): No TaiwanStockPrice rows for 4944；華信科(3627): No TaiwanStockPrice rows for 3627</li><li>此圖為同產業相關性候選比較，不等同精準子產業；若使用者指定清單，會優先採用指定清單。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之一、每日 ETF 持股該股增減名單</summary>
+      <div class="detail-body"><ul><li>ETF 持股最新快照：2026-05-22。</li><li>目前解析到 30 檔 ETF 持有此股，其中主動式候選 2 檔，已檢查 2 檔最近一次持股異動。</li><li>最近一次主動 ETF 異動未命中此股；目前主要持有 ETF：0050 0050、00929 00929、00881 00881、006208 006208、00981A 00981A主動、00982A 00982A主動、0052 0052、00922 00922。</li><li>此資料為 ETF資訊網依公開持股快照差異推估，非基金公司實際成交紀錄；一般被動 ETF 多僅列持有快照，不強行推估每日買賣。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之二、集保股權分散資訊</summary>
+      <div class="detail-body"><ul><li>資料來源：TDCC OpenAPI /v1/opendata/1-5 集保戶股權分散表；資料日期 20260515。</li><li>集保戶數合計 86,131 人，集保股數合計 133,468,197 股。</li><li>小額持股（1～10,000 股）占 14.50%；中階持股（50,001～400,000 股）占 19.88%；大額持股（400,001 股以上）占 57.94%，其中百萬股以上占 43.44%。</li><li>集保結構判斷：大額持股集中度中等。籌碼結構不算分散，仍需搭配法人、融資與量價確認是否有人持續承接。</li><li>散戶化觀察：小額持股占比中性，需觀察是否隨股價上漲而增加。</li><li>限制：TDCC 集保資料通常是每週最後營業日結束後的持股級距統計，能看籌碼集中或分散，但不能知道是哪位自然人或哪家主力在買賣。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>八、基本面 EPS / 月營收</summary>
+      <div class="detail-body"><ul><li>基本面資料期間：revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-05-23 to 2026-05-22; EPS 2021-06-30 to 2026-03-31。</li><li>最新月營收 2026-04 為 53.62 億元，MoM -1.06%，YoY 22.57%。</li><li>近 3 個月營收 153.95 億元，較前 3 個月 -6.23%。</li><li>最新估值：PER 22.10、PBR 2.51、殖利率 2.26%。</li><li>正式 EPS：最新 2026Q1 基本每股盈餘 46.63 元，較去年同期 -3.42%。</li><li>是否支持股價：支持度中性。理由：近 3 個月營收動能轉弱、最新月營收年增雙位數、正式 EPS 年減。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十、主力名單及主力 / 散戶分佈限制</summary>
+      <div class="detail-body"><ul><li>不得宣稱可取得完整自然人大戶名單。</li><li>券商分點、法人與融資融券僅能作為主力 / 大戶疑似結構輔助，不等同真實大戶。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十一、產圖完成檢查表</summary>
+      <div class="detail-body"><ul><li>OHLCV 已轉入 Python 並產生日線、周線、月線 PNG 圖表。</li><li>有效交易日數 243，實際期間 2025-05-23 至 2026-05-22。</li><li>01～03 為真實 K 線圖；04～06 為狀態圖並列出資料限制。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>每日 ETF 持股該股增減名單表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>ETF代號</th>
+              <th>ETF名稱</th>
+              <th>動作</th>
+              <th>增減張數</th>
+              <th>比較區間</th>
+              <th>原始摘要</th>
+            </tr>
+          </thead>
+          <tbody><tr><td colspan="6">最近一次主動 ETF 持股異動未命中此股，或資料來源未提供可解析增減。</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保戶股權分散表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>級距</th>
+              <th>持股分級</th>
+              <th>人數</th>
+              <th>股數</th>
+              <th>占集保庫存比例</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>1</td><td>1-999 股</td><td class="cell-number">78,025</td><td class="cell-number">4,697,407</td><td class="cell-number">3.51%</td></tr>
+<tr><td>2</td><td>1,000-5,000 股</td><td class="cell-number">6,924</td><td class="cell-number">11,261,678</td><td class="cell-number">8.43%</td></tr>
+<tr><td>3</td><td>5,001-10,000 股</td><td class="cell-number">457</td><td class="cell-number">3,424,541</td><td class="cell-number">2.56%</td></tr>
+<tr><td>4</td><td>10,001-15,000 股</td><td class="cell-number">180</td><td class="cell-number">2,284,074</td><td class="cell-number">1.71%</td></tr>
+<tr><td>5</td><td>15,001-20,000 股</td><td class="cell-number">83</td><td class="cell-number">1,478,593</td><td class="cell-number">1.10%</td></tr>
+<tr><td>6</td><td>20,001-30,000 股</td><td class="cell-number">111</td><td class="cell-number">2,758,740</td><td class="cell-number">2.06%</td></tr>
+<tr><td>7</td><td>30,001-40,000 股</td><td class="cell-number">52</td><td class="cell-number">1,853,428</td><td class="cell-number">1.38%</td></tr>
+<tr><td>8</td><td>40,001-50,000 股</td><td class="cell-number">40</td><td class="cell-number">1,821,344</td><td class="cell-number">1.36%</td></tr>
+<tr><td>9</td><td>50,001-100,000 股</td><td class="cell-number">92</td><td class="cell-number">6,338,070</td><td class="cell-number">4.74%</td></tr>
+<tr><td>10</td><td>100,001-200,000 股</td><td class="cell-number">83</td><td class="cell-number">11,025,936</td><td class="cell-number">8.26%</td></tr>
+<tr><td>11</td><td>200,001-400,000 股</td><td class="cell-number">35</td><td class="cell-number">9,190,873</td><td class="cell-number">6.88%</td></tr>
+<tr><td>12</td><td>400,001-600,000 股</td><td class="cell-number">22</td><td class="cell-number">11,014,887</td><td class="cell-number">8.25%</td></tr>
+<tr><td>13</td><td>600,001-800,000 股</td><td class="cell-number">7</td><td class="cell-number">4,833,195</td><td class="cell-number">3.62%</td></tr>
+<tr><td>14</td><td>800,001-1,000,000 股</td><td class="cell-number">4</td><td class="cell-number">3,517,500</td><td class="cell-number">2.63%</td></tr>
+<tr><td>15</td><td>1,000,001 股以上</td><td class="cell-number">16</td><td class="cell-number">57,978,931</td><td class="cell-number">43.44%</td></tr>
+<tr><td>16</td><td>差異或調整數</td><td class="cell-number">2</td><td class="cell-number">11,000</td><td class="cell-number">0.00%</td></tr>
+<tr><td>17</td><td>合計</td><td class="cell-number">86,131</td><td class="cell-number">133,468,197</td><td class="cell-number">100.00%</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>權證成交金額前 5 名表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>權證代號</th>
+              <th>權證名稱</th>
+              <th>類型</th>
+              <th>履約價</th>
+              <th>成交金額</th>
+              <th>成交張數</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>057958</td><td>大立光凱基5A購03</td><td>認購</td><td class="cell-number">3,425.41</td><td class="cell-number">5,652,800</td><td class="cell-number">690,000</td></tr>
+<tr><td>067468</td><td>大立光台新5B購05</td><td>認購</td><td class="cell-number">4,500.00</td><td class="cell-number">4,658,910</td><td class="cell-number">1,102,000</td></tr>
+<tr><td>067350</td><td>大立光台新5B購01</td><td>認購</td><td class="cell-number">3,400.00</td><td class="cell-number">3,388,750</td><td class="cell-number">461,000</td></tr>
+<tr><td>064125</td><td>大立光永豐5A購03</td><td>認購</td><td class="cell-number">4,005.00</td><td class="cell-number">1,845,740</td><td class="cell-number">458,000</td></tr>
+<tr><td>051249</td><td>大立光統一5B購01</td><td>認購</td><td class="cell-number">2,881.26</td><td class="cell-number">1,604,650</td><td class="cell-number">865,000</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+  </main>
+</body>
+</html>
