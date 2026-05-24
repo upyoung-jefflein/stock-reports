@@ -1,0 +1,538 @@
+{
+  "stock_id": "2330",
+  "stock_name": "台積電",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "半導體業",
+  "data_period": "2025-05-26 to 2026-05-22",
+  "data_date": "2026-05-22",
+  "ohlcv_start": "2025-05-26",
+  "ohlcv_end": "2026-05-22",
+  "last_daily_k_date": "2026-05-22",
+  "valid_trading_days": 242,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-05-26 to 2026-05-22 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "margin_period": "2025-05-26 to 2026-05-22 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "warrant_period": "TWSE report_date=1150523 (OK; call=1224, put=334, with_exercise_price=1558)",
+  "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-05-26 to 2026-05-22; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=242; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260522 (OK; rows=17)",
+  "etf_holding_change_period": "2026-05-22 (OK; holders=65, active_candidates=20; changes=2)",
+  "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=台積電(2330), 聯電(2303), 力積電(6770), 世界(5347); failures=none",
+  "peer_display_list": "台積電(2330)、聯電(2303)、力積電(6770)、世界(5347)",
+  "etf_display_status": "最新異動命中 2 檔",
+  "tdcc_display_status": "20260522；大額 88.10% / 小額 5.46%",
+  "warrant_display_status": "1558 檔，認購 1224 / 認售 334",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "2026Q1 毛利率 66.25%（年變化 +7.46 個百分點）、營業利益率 58.10%（年變化 +9.60 個百分點）；稼動率目前資料源未提供",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 8.29%（年變化 -1.86 個百分點）、稅後淨利率 50.51%（年變化 +7.52 個百分點）、ROE 6.61%（年變化 -1.23 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 4,107.25 億元；MoM -1.08%；YoY 17.50%；近 3 個月累計 YoY 27.70%；近 12 個月滾動營收 YoY 27.98%；連續 18 個月年增為正",
+  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期下滑、營業費用率較去年同期下降。",
+  "chip_summary": {
+    "margin_balance": 26946.0,
+    "margin_5d_change": 773.0,
+    "short_balance": 97.0,
+    "short_5d_change": -22.0,
+    "foreign_latest": 732974.0,
+    "foreign_5d": -36052921.0,
+    "foreign_20d": -148288462.0,
+    "trust_latest": -464848.0,
+    "trust_5d": 12464675.0,
+    "trust_20d": 51860545.0,
+    "total_latest": 455790.0,
+    "total_5d": -22969190.0,
+    "total_20d": -96303166.0
+  },
+  "news_display_status": "新聞面偏利多（利多 2 / 利空 0 / 中性 10）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 10 則（法說會 7 / 公告 3）",
+  "summary_one_line": "中性偏多，偏多震盪；站穩 MA10 2236.00 並突破 2345.00 才有續攻機會，跌破 MA20 2235.75 轉防守。",
+  "summary_overall": "中性偏多；收盤站上 MA5, MA5 低於 MA10, MA10 上方且投信 5/10 日偏買",
+  "summary_tomorrow": "偏多震盪",
+  "summary_one_month": "偏多延續",
+  "summary_support": "第一 2223.00 / 第二 2236.00 / 強 2235.75",
+  "summary_pressure": "2345.00",
+  "summary_atr": "ATR14 52.50，常態區間 2202.50～2307.50",
+  "summary_key_watch": "價漲量縮；明日觀察 MA5 2223.00 / MA10 2236.00",
+  "summary_risk": "跌破 MA10 2236.00 且放量，短線轉弱；跌破 MA20 2235.75 則整理擴大",
+  "summary_warrant": "認購成交占 0.00%，近價外認購 102 檔，前五大成交占 0.00%",
+  "summary_warrant_signal": "中性",
+  "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
+  "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
+  "generated_at": "2026-05-24T17:34:58+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2330_2026-05-24\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2330_2026-05-24\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2330_2026-05-24\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2330_2026-05-24\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2330_2026-05-24\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2330_2026-05-24\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [
+    {
+      "etf_id": "00994A",
+      "etf_name": "主動第一金台股優",
+      "period": "2026-05-21 → 2026-05-22・張數最小 1 張、金額以最新收盤價估算",
+      "action": "減碼",
+      "shares_change_lot": "-37",
+      "raw": "2330 台積電 -37 張 -8,344 萬 減碼"
+    },
+    {
+      "etf_id": "00401A",
+      "etf_name": "主動摩根台灣鑫收",
+      "period": "2026-05-21 → 2026-05-22・張數最小 1 張、金額以最新收盤價估算",
+      "action": "減碼",
+      "shares_change_lot": "-2",
+      "raw": "2330 台灣積體電路製造 -2 張 — 減碼"
+    }
+  ],
+  "tdcc_rows": [
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 2150354,
+      "shares": 255470212,
+      "ratio": 0.98
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 423464,
+      "shares": 809032836,
+      "ratio": 3.11
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 49589,
+      "shares": 355730523,
+      "ratio": 1.37
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 16459,
+      "shares": 202141908,
+      "ratio": 0.77
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 7727,
+      "shares": 136049835,
+      "ratio": 0.52
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 7471,
+      "shares": 183114682,
+      "ratio": 0.7
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 3510,
+      "shares": 121763649,
+      "ratio": 0.46
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 2015,
+      "shares": 90947999,
+      "ratio": 0.35
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 3966,
+      "shares": 277190327,
+      "ratio": 1.06
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 1993,
+      "shares": 278714198,
+      "ratio": 1.07
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 1324,
+      "shares": 369772496,
+      "ratio": 1.42
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 565,
+      "shares": 276934599,
+      "ratio": 1.06
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 350,
+      "shares": 243073276,
+      "ratio": 0.93
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 209,
+      "shares": 187127012,
+      "ratio": 0.72
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 1498,
+      "shares": 22145632483,
+      "ratio": 85.39
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 6,
+      "shares": 171514,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2330",
+      "level": 17,
+      "level_label": "合計",
+      "people": 2670494,
+      "shares": 25932524521,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260522",
+      "total_people": 2670494,
+      "total_shares": 25932524521,
+      "small_ratio": 5.46,
+      "mid_ratio": 3.55,
+      "large_ratio": 88.1,
+      "million_ratio": 85.39,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2330_2026-05-24\\07_集保股權歷史趨勢圖.png",
+  "news_rows": [
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "2330 台積電 - 阿里巴巴法說會解析影片-股市爆料同學會 - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-23 19:56",
+      "published_ts": "2026-05-23T19:56:29+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE91bW5mU2pyYlptWDZnbWhzeWtXczgtc3NsUk9vOVRQMDZwdkZuRGJveWR2R1lEdjM1bUxYNGQ4NndabUpjYko2RXNVaHFXWkZTQ3pOczRmYlk?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【即時新聞】台積電(2330)收漲25元至2255元 帶動台股四大紀錄改寫 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-23 18:25",
+      "published_ts": "2026-05-23T18:25:36+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOUtzVE1Ld01JdnNxakstSlBlQVlHa2c1ZVh4aXNuMFdmM1NNX01FRWg3bmVXaUFBSHJ5dUU5QjI4TjlZS25KUk1RTmtvOGhOUDVLTVN2NGFLYmx6NmszVmZ3dkdrWTExZEhvTGotSmFpZjM3bDdwT0d4RVJ4QlpTSzNMbTVCT3ZXWWd5WnVzeUc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "2330 台積電 - AI未來、晶片、記憶體看法、台股市值世界第6不是偶然而是必然-股市爆料同學會 - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-23 07:29",
+      "published_ts": "2026-05-23T07:29:06+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nQXJCcXpvcFFxc1Rmc2M3alNHcThmZF8xYXVITV8xOTFOUnNjVEtLcENVby1kVTBya3E1Wi1oMm9JbV9lbTM2aGZxRGkyamR2NHlKaW1LeHU?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "台積電股價2200元、台達電跌破2千元，雙神山特價可以撿？買200元的光寶科漲更多？台股老手：有10萬寧可抱它 - 今周刊",
+      "source": "今周刊",
+      "published": "2026-05-20 02:34",
+      "published_ts": "2026-05-20T02:34:04+08:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNck10emxjLXNRMkpxbHRicDQ3NTVsSS1JdGl4MmRDSXJIcmxUTFh1LS1TdVFvNUx5TnJQbjkzeTJFRy1DbkJHazlBb3FwbmM2cDludnhhcjltLTdsQzRBRUZqYlNsZkI0bVhQWHJHSTU3YUprUGxrcEhZaHBIemRqWg?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "台股年底上看5萬？ 台積電漲到3,000元會發生什麼事？蔡明翰揭台股「最危險時刻」|《雅筑會客室》EP31｜蔡明翰、張雅筑 - sinotrade.com.tw",
+      "source": "sinotrade.com.tw",
+      "published": "2026-05-19 12:25",
+      "published_ts": "2026-05-19T12:25:02+08:00",
+      "link": "https://news.google.com/rss/articles/CBMijAVBVV95cUxPeUs3c1ZkSVFRcEFkbWt0TjBPbUZUMzAtYnVobGhxOFdhWHRzcjVJOUR1RjdLenpCd2RndGhCWHlrWWZ4R0ZSQ0FyN041TFk2Y0dtLU9tWWZDMjZYRWt2cktmN2s1SG1vS2hYNEZHWGRtRHJZbjVGY1lBVmRJVEIzV2hoakhIX3lQcFp3TjF0Ynp5VUhGcUV2c19VUmdDQTRwQXkwUE4tY3dBZTI5TFVmcG9MTTJCdHJPS3FvM1lfRmRQc05ZZ2UtX2xvVXpuQzNndjFEUndXNHMwUjRPdnFjX250ZWluRFZja1RZM3Jodk81V0JjR21DM3M4SEpoTU53dFlONXpneUxTZEtfT08xakdDS29Tc0xMbGFLcXdxeDZaQ05Da3pWSWl0bDFsRk9IRmRWeWE0ZENrQ2toZGlXeWVUZUZ3dG5MbzliNEFpeU9jSDJYekRXa1ozUWxPbTlITGQzdXNlUmpMT3p1a1pvY2RFRXNmWFR3MW8zTHJOWDZGWmlhSjN2aUtxNHdaSEVBLUc2dk55VFctaWlGdDVGTjc1TzlDdnRmY1d5OVBSQkwydlFYSkxNa0NleUpxdTZKWC1pRVM0OGNSQVF3Ymo3bW9SM0pHaS12dWt4NWs1al9yODBFaGZ0LVdmNFFBSU1ITFVaS1V0bUVyeWhibDhuTjBuYWRfZEF2WFBjMTc4T1lHNlg1UkhWcWF4WWVsTjFJOVI3U2lSLUJQYTNVa0NxYjhqM3B5c0dLcVhvclp6NTNlWVlzM2FYbG1nOGdiTFJEMmFRYVV4NmppNkxCMV9fbG9NbEgzblk4VWlKVlVJZFZJLTl1Y3A5c29tRFZGakEyZkFWeEhFTlp0QktP?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "台積電(2330)股價2200元還能買？橋水基金大買115億、空降第10大持股「關鍵訊號」解析：神山5年內漲到5000元？ - 今周刊",
+      "source": "今周刊",
+      "published": "2026-05-19 07:45",
+      "published_ts": "2026-05-19T07:45:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUmk3YlRsUHNCWGhXcGtzRGtVYzMteXp4OGJSYzdhU0xvc0xQTTIwbjY5SU1ub1FCTHFIbFVYbHg3c3c4Y3VFWk1FazhYX2tZcHFfcTNwTHFJQWtzSU9hUVZOcmpiSDQ5WGJtM2JYNkZJWkVzX3duM0w3UFc1NDR5Vg?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國外",
+      "bias": "利多",
+      "title": "Taiwan Semiconductor Manufacturing Co Ltd(TSM)股票5月18日盤中下跌3.12%：背後推手曝光 - TradingKey",
+      "source": "TradingKey",
+      "published": "2026-05-19 03:16",
+      "published_ts": "2026-05-19T03:16:30+08:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNY1dqX3VUcFFUYThjWHQ4dDFWTUdqUUFEbENfb2VGZUx3Z2pPREtDdEJPdWpjNmpOeWhLaW81aWxISjJfd1Z3cEZrSUVDSDlXdXN6RklmNjRiS0xndHc1T25fMS1DWU85eWtBNHg0RkJrdEJ3WmhDS2VuSXdtRWxHNUdFSDBPYXBFbFN5SDRwc3ctM1VY?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國外",
+      "bias": "中性",
+      "title": "把握芯片投機機會：值得投資的10檔半導體股票推薦 - Mitrade",
+      "source": "Mitrade",
+      "published": "2026-05-13 15:00",
+      "published_ts": "2026-05-13T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONXZGaGktVE1EZi1SM0hiV18zNXNFaUU2dHNPTWhOeVpTMWJTcG1GNi1PREFrelBJRmx5TmJRcmJZRlJEci1kTzVMR2VVRGZCQ3hmS09fVzJCdnJseW5qZk42SUVtSk5JOGpyU0FmMXdOT0pmV2FfR0NadlVEVnNSRGMwcml5SXdqUjJueGxkS0twNEUwTFdXRGxkR3NLX0hCSDl6Vg?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國外",
+      "bias": "中性",
+      "title": "台股、美股半導體ETF有哪些推薦？如何投資半導體ETF？ - Mitrade",
+      "source": "Mitrade",
+      "published": "2026-05-12 15:00",
+      "published_ts": "2026-05-12T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOczFuMUg5Nm5hNnlmQnNqWWJOcXhtWmxvMTNxS1hjSUVhNmdncTJxMmZPTFlCalA0MGMzZnRiTlJZZHNIQ1NtRnJOY0hkVUJHZGV3UnhqM1htS1BLWEx6TGh6N1BVTHlrTURJeml4bjliTlgtNXdoVnJyc2YzVkhWUW5xWVU2ZUtaZFJ5ekNB?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "台積電四月營收／4,107.26億元、月減1.1%年增17.5%，累計前四月年增29.9%創歷史同期新高｜股市話題 - sinotrade.com.tw",
+      "source": "sinotrade.com.tw",
+      "published": "2026-05-08 15:58",
+      "published_ts": "2026-05-08T15:58:44+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikwRBVV95cUxOZGJsZVladmRjZWNyU3pUaWQ5aVRCN0tzZ2xCeWtxdmNrUWFkcmJ2NjdLeG50eXR6VWtEZW5jc3hJTm1EQ0hHWnI1a2NCVFdXak1jLVRmcnNEc0M4bGd5RXVOcGU0R205d3M1enpJUm9sM2dwbGJRNzVYNDBVUXRSeWVNRzlnNmFwMTdrdFYxLUtPUmFRblFBN1U5Q1ZBRkQ5RHYzVW5DMXA3QkF6QmFFSjdNbHFicGhnZExhci1oUzY2QjZNOEpDZUlmVFk1TldCaTREYXdETlpfcU1YMmloamo5RzRtNXBvckN4bkNMZGZwMDdEVWFnUVBISndMNUlRd3ltNmFTV2V1WUtGcG9yZEtTMDN3LVd1b3RkdUFPMUlCdDhzSDJFZU40blNRRVcyY0IzUlJxZ0J6WEFSdnBMUGVnUzVMdnF4RURuaW1DY1F3b2JsRFFGQUhVcVMySmZLRUt4a2Fkd1BuV2dVTTItbzUzeHlkdWhUMno0WUhqOTZlbDczMzNnU3NTelB6cTEzdXkzUENTdWFDc0tQRm1pWDhIelJDdnR5OHdackd4SEhTaFNwblBUNXlSQzNiRkRFNHZqeWw4YS1kZW4tNjl0TFRZaGs2RVVaVjMzX0dycUdMUEZ0VVFZWGluakNEdWtfNS1Jd0l3cDExZ2tWeUFlYWFXbGNTTFIwNXZzMklOX2x0QVU?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "台積電收2310元史上最高！買在2345元會套多久？ 專家解答 - Yahoo股市",
+      "source": "Yahoo股市",
+      "published": "2026-05-06 15:00",
+      "published_ts": "2026-05-06T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi7wJBVV95cUxQckl3OHJYYnlrdXNydThhNVNPVzdpVjc0bjl1b1hjY2ZrQmFzMlVxbGJNckp0Z0Y4cnJhN1FOeHBISDJRelJUUHBVNFc1b0c2WUZwdDZJcTV5TXdxYkZZZG5CTjJiNDRHNklyZEpZaW1fU292dm9sdGZaRmNMcGd5d2IyeEttY3lKRTJtZ0JmZzZiT1FUV1ltclBseEJkZjJOUlY2SlhhZVRMQTNtaEExZlFpQkdnMU9VQUN4ZWxSNkRJMEo4aDh2NGFyZW9NSlJIMkJydGkzUVpyNmx6dDBHWTlmcG45dHZkYlZ2Q0RPYktCNzVwaUhQYlg5Nk9NS1JrTWFLcGZHRHA4NnUxbkNEekJrZ2R5UDNlMGsxcElXaUk3NjJDbjZIMERKc2JQSEFmYXRKbHpBenVRbm1iaEZnTVNfUHY2cWZmLXJIbldvSnY3RzJOdlY2THo1VzFhWVJPOVIwcFpNR28yZXFEaVNJ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "台積電股價狂飆不敢買？達人曝「進場6招」：未來必定賺錢 - Yahoo股市",
+      "source": "Yahoo股市",
+      "published": "2026-05-05 15:00",
+      "published_ts": "2026-05-05T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQVEpiWWJyeV9UMDgwVHhjdEY2aVYwWkFOdXR4c1hLSTVCZjdWY2t3aTVxMk5ZcEd0Y0dOVGRmWG1CMnVxamZEZzJReTluSjZVOWpCVmV5TGpockh1dnl3LWI0clVmZG5OclpXYU50Q3dlc1E5bG93ZENQRF9zZU9neWNPVjVqOGVnTndMc2tRSEFkaFZGbkhzYk1fb3lPMFRWanM1cGhiTHhTQlRWT3pfTVhJSF83SU1rSmRNSjllREF4RllibWRkZXJGUWgxVnd5NUhuQTNzTUpNVWtLTHpfTE0tcGFhaEwzaHk4OWlkdjZQdEFjUXQ3N1Zya2E2M1QxbkhGS05aNEE0dHVXRm9ZY3RMYS1oWi1FZ09PcU5oYzBlbVR0NzlCbTUwcXZGYjNMMzJBLW1oaFNWaExmbTN4R3pzZ3dQOHJyQldqWUZoUGdEcjZCRnNCanRWSjNYakVsQjRwT0VSUm4?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "個股：台積電(2330)5/26-5/27受邀參加瑞銀證券舉辦之機構投資人說明會 - 富聯網",
+      "source": "富聯網",
+      "published": "2026-05-21 07:42",
+      "published_ts": "2026-05-21T07:42:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRGxYcmo3a1VDTG5TRGZ3OExCNnJFQk5TQmlxemR0dXpzeFdmdk1ZSGw2cGpyZlYxbkJDX1h1TlZxNUtCZFMzSnhMcU5qWXF6cV9PTTctX1ZQOEFBMldtUU5NLS1GbE9iemxjY1h6enhFaHdBMXNyX3VnWWtmUDNiOEFlV2RGSlVF?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【26Q1財報公告】台積電(2330) Q1 營收1.1341兆元，創歷史新高，季增8.41%、年成長35.13%-CMoney 小編 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-15 15:00",
+      "published_ts": "2026-05-15T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYjFnRlBtN0s1UnZjbmR6WTYxRTBSLWlsSEgyYzlkRm0xb0dQcFBlSnlWVEVzeFZQVU1OYWFHVUhUaW1WVXl3SERwdmh3T0ZQUnRubVl4SU9DMEZvUDhLeVVCa1hFRGpmRXI4SkdsQXJVSnU0N1RCamVBVnhXcFB0bzFiM1ZwNVBDMnc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "台積電發重訊　代子公司公告取得固定收益證券 - ETtoday財經雲",
+      "source": "ETtoday財經雲",
+      "published": "2026-04-17 15:00",
+      "published_ts": "2026-04-17T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5c3IxYXI1YkZNV2poamR5QTl4Y0FkbWlvT0h5TFB0ZE9nQTVRd3JxYWh2V0x5aDdaT2h4dDdYWEl5eE9jdFphZWZEdm92SVNuRUHSAW5BVV95cUxPamthcmUtZm1Qd3RMM0NKT2V2VGVlTkVUQ3o4dy1zd0NYX253TW5xNDJfLWlubmdEVFpsczFkZUhwS2txRFBSbEwxWF9IalJqMUtFRm1TNlhCLV9wN3ptSkdfU1M5aS1VSE1yR29Udw?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "整理包／產業景氣風向球！台積電法說會六大重點一次看 - 經濟日報",
+      "source": "經濟日報",
+      "published": "2026-04-16 15:00",
+      "published_ts": "2026-04-16T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5Z3J0UWs2WXU2ZG1tdzY0WmdUOGllcnU4dUdxTTdDWThJY1hVNmQwa3V1Y0EyR1dVOXhoaG9GaFN4MUtLY0k5NWZocF9pamxVRkR4ZnRfbkNTUdIBX0FVX3lxTE1XT3U2cDlzRnM1UFU1M2xUOVdrcnRYcy1namF1eGFWa19fMWJwVnF0c2JHUi15algzRnhsVEZFanpVNnBMSjBtZ19pQkhERFJfaUFaR3RoVEplUG9NenZN?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【台積電法說會】全球首富馬斯克想自蓋晶圓廠 魏哲家霸回：這行沒有捷徑 - Yahoo股市",
+      "source": "Yahoo股市",
+      "published": "2026-04-16 15:00",
+      "published_ts": "2026-04-16T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi6ANBVV95cUxNTXBldE9KekVuNTNLT2g5Y1AzQzQ1MXh6NklBSGRJdzQ2ZXgyRG5HeWR4NVpvNVBRVEU5RlRLUTNhZFhWVDJYMVh6NlVkRER2RTBqNlhROGdyemtzb1JzOU5qWENIYXdRY3MtRWNyRFlXMmxabVRrOGFRZGtXMU82akJJNWRETXh0T1RoWHdmTF9LSmstaWZtOGNYZndmdWlKbHpUS0tXNDhPMmN1akc3bEdoNFJvZmR4eEd0Z1QxdF9FNmZfa21NTlltNFBuWjJZSDJJUUhJT0pHVktNazhUWjB3N0xnMzcxckkxYjUxZWI0WFgzSTBpTC1pdDdKdGxXN0VuOFFXZkdNMTZKd0hEVUMtWTFTZU8zbVBLOVlMVU5kUS0tRkNDVDdqelFaQmhHbENfWm92dHB0NTJ3U2dlQl9mMTg1QnZrQXNwOWFRN2w4Z1d5NFl5UDlfaV9fNWFfQTlmalJmSU5OLUVJSDBBVUxGNGtmeTVmVDVsZlI3UjcyVFFISDdPYlBjdUhwOWk2bnlBSWdScFFiSGZiZEJOcEgxb3ZDbUdWek1TcTc2Zi03UUVDU05rTUxXb0tkS0JHbG10SlFUOGtFNUxCbGhlUFk0Y3BYRC11V3BDMTJmMkRvZ2k0d2Z3UA?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "台積電法說會／談定價策略 魏哲家：不會劇烈調價 - 經濟日報",
+      "source": "經濟日報",
+      "published": "2026-04-16 15:00",
+      "published_ts": "2026-04-16T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBUWt6aE5QNVpJRU4wYkRLalpQQ0U3VHltTV96eHVuVjJoUm1mRzZyVkp3Z0hzSEU0M0YzWUJ6dEptaHFuS3hTQnFnLWlodHFDS0doSFgxRFRvZ9IBX0FVX3lxTFBxZWJ2V3o4V3otd3F0Y3MxNGo3REVEMHBPYnpla2x4RWZ6OF80eVFJaTNrUHE4NmZXYVlRUGxsWjJXQzR0bDNSRGx2Q1B0ei1BS01uTjRCcnVFbWJYMmw0?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "title": "【台積電法說會】魏哲家：跟客戶確認過 AI需求實在太強勁了 - Yahoo股市",
+      "source": "Yahoo股市",
+      "published": "2026-04-15 15:00",
+      "published_ts": "2026-04-15T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMilwNBVV95cUxNUTNwSGZ0R0ZxZkxsdGNkZVBwbUI2X01nMFpRYkNaNjVTZEpkRlZfRkhJeEJlTTNNVkhuZVdraUVaUnM4c2N0aElhbFctZjZFRlYwSXMtY19JalJSZzhjSGtwZUFGSHNjeFpUb3VkLWdJcGFpS3BTOFZZNzFBdTZEbmcxQjJ0am00RnRVaUk4M1hJREF6T1kyZnVxZDV6dlRJXzJiLVgzT09iWmJMLUlZb21YNWdRdll1aXhWYndxTTQ5QV9vdm41SG5NZC1qaVNteTdGOGVmVi1IZWRHS2FTWTZpQVRfUldxcHZ5ZkhmQjJxaDJBNktmR1dmeVl3cU9jbGR4WHlGQ2JKcHBjcXdaMGtYemZsTzc5RjM4Zk5ZNE4zTlJrT1lNNzBPSUVCdEJiQ3NHck9RN3pIbzgwZ0dXNGg4Y21zWXJWYWN4bWFmXzZUb2IxWWU1U2tTUWxBaUFqQnJaZmNnWExpRXloOHhtNXpiQ0dRY2dUdThRS0p2a1d4THdnVHFESW1Wa2pUWFo1WWZnbnhBcw?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "台積電法說會在即，沈萬鈞揭先進封裝變革下值得關注的個股 - 鏈新聞 ABMedia",
+      "source": "鏈新聞 ABMedia",
+      "published": "2026-04-13 15:00",
+      "published_ts": "2026-04-13T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPX1BkMzB5bFUzZksydWNxQlY0aWkySzA2RFpDYnRTbzdGSlJ3N0lFQ29sUnNLeXJhc2txR01WWEpQMU1QTFZMazRQVmNqSFFBQWotckg2T3g1OENZdjN1NGQ4SmlSSmdvSGdfc0pTaERLa0U0dHpwVW82Zmp2VzhnTkJiNldLZUtPNHlv?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "title": "焦點股》台積電：Q1獲利看好 法說會前卡位買盤增 - 自由財經",
+      "source": "自由財經",
+      "published": "2026-04-07 15:00",
+      "published_ts": "2026-04-07T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE81YjgycktqSWJfdGNJdGVvb1hyTUo5NlJpSXhkT213dmJuOU5xaHVKV0w2UHdwQ3lBR181am9jUjhlQ1FHZWhVN1RQdVdYVlgtQVotanNBTGFXUEh0aFFz0gFkQVVfeXFMUDNqaW5YUEQ3VU1FVXNFc1hnVWVPZW5BNTZ3SWNsQTFQQzNhdG4tNGVqbG9XeDJSVHF4SndzZS1JTzJnMHJCQy11UGE5NWQ2X0NEVDhsb2JIcVhMT0JPV3hGMW91OQ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "台積電發布重訊 第三季現金股利微調 - Yahoo新聞",
+      "source": "Yahoo新聞",
+      "published": "2026-03-02 16:00",
+      "published_ts": "2026-03-02T16:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPV0ZpSW1nNjJPY0lSdVFmdGpmMWJXNWRja1dhbXVMd3Z0RjJEN1A2NUdvck1GQmJlWl80STc4TEFRbUJLN08tRWRCWnVNV0ppTmVOY3RuRnYyeXluUHV3UEl0bmliUUJmdG12dVpPb3FpaUdWR2NRRnEzTlI4LWJFOUJCYkxqTGd1X25BaFZ0Mks2Z0NzOGxtOUM1eFZwNjhoWHFaeHk4VGpZNTktdXpVcUVyMGxhRmpWM1FsQ2J3R0N2RGhGS1pOZ1NHNEg2cmFsRVhwUktTdHRaZVJ2cU9lODhZUEQ0Z2FGWGJ2QTdaQmpMU1c3OTlQdVVqcXZ6aERHaWJ2R1NSbE85M0t3RzVsY3hiRkQ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    }
+  ],
+  "warrant_top_rows": [
+    {
+      "warrant_id": "03002T",
+      "warrant_name": "台積電群益5A售12",
+      "call_put": "認售",
+      "exercise_price": 1860.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "03011T",
+      "warrant_name": "台積電凱基67售14",
+      "call_put": "認售",
+      "exercise_price": 1750.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "03035T",
+      "warrant_name": "台積電凱基5A售11",
+      "call_put": "認售",
+      "exercise_price": 1850.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "030362",
+      "warrant_name": "台積電元大54購19",
+      "call_put": "認購",
+      "exercise_price": 1335.79,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "030418",
+      "warrant_name": "台積電永豐55購04",
+      "call_put": "認購",
+      "exercise_price": 1217.06,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    }
+  ],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2330_2026-05-24\\index.html"
+}
