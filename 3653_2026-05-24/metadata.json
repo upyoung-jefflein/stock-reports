@@ -14,7 +14,7 @@
   "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
   "institutional_period": "2025-05-26 to 2026-05-22 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
   "margin_period": "2025-05-26 to 2026-05-22 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
-  "warrant_period": "TWSE report_date=1150522 (OK; call=40, put=7, with_exercise_price=47)",
+  "warrant_period": "TWSE report_date=1150523 (OK; call=40, put=7, with_exercise_price=47)",
   "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-05-26 to 2026-05-22; EPS 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=242; eps_rows=20)",
   "major_holder_period": "not available; no complete natural person major-holder list claimed",
   "tdcc_period": "20260522 (OK; rows=17)",
@@ -25,7 +25,7 @@
   "tdcc_display_status": "20260522；大額 68.85% / 小額 7.04%",
   "warrant_display_status": "47 檔，認購 40 / 認售 7",
   "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
-  "news_display_status": "新聞面偏利多（利多 5 / 利空 1 / 中性 6）",
+  "news_display_status": "新聞面偏利多（利多 4 / 利空 1 / 中性 7）",
   "summary_one_line": "中性偏弱，偏多震盪；站穩 MA10 3467.50 並突破 5575.00 才有續攻機會，跌破 MA20 4134.50 轉防守。",
   "summary_overall": "中性偏弱；收盤站上 MA5, MA5 低於 MA10, MA10 上方但投信支撐不足",
   "summary_tomorrow": "偏多震盪",
@@ -35,11 +35,11 @@
   "summary_atr": "ATR14 349.64，常態區間 3310.36～4009.64",
   "summary_key_watch": "價漲量縮；明日觀察 MA5 3276.00 / MA10 3467.50",
   "summary_risk": "跌破 MA10 3467.50 且放量，短線轉弱；跌破 MA20 4134.50 則整理擴大",
-  "summary_warrant": "認購成交占 97.45%，近價外認購 4 檔，前五大成交占 59.36%",
-  "summary_warrant_signal": "中性偏投機",
-  "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
-  "summary_warrant_price_view": "現股距認購主流履約價仍有 20.81% 空間，屬高想像但投機風險也高",
-  "generated_at": "2026-05-24T00:55:38+08:00",
+  "summary_warrant": "認購成交占 0.00%，近價外認購 4 檔，前五大成交占 0.00%",
+  "summary_warrant_signal": "中性",
+  "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
+  "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
+  "generated_at": "2026-05-24T11:48:43+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3653_2026-05-24\\01_日線完整技術與籌碼分析圖.png",
@@ -239,7 +239,7 @@
       "source": "富聯網",
       "published": "2026-05-22 13:12",
       "published_ts": "2026-05-22T13:12:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNVRWTWFFNWJiNFU3R0RqVV9qTGVwSTYtRFZla0NJY0Q4eU5oZ3RmcXJ6cGxPMVVsU3IzRFB2OHJCUjQ0Q1RYOTdSOXh1U2dHY3NfNEVIa0RIUEtLblNMWDBxMnNrcTdnaUZRa0lUMFFZNzN6QXRNQUhvQ2FhY2ZoM2FlRUtiQUFHaVBUb2R3?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWWJkTTdRVllhalJEMHF2QnZySExqS3FwNVI4eG5adWhrbTRIYjVha1pwZ3FicHp6eG1fb2FyTEo4aURVY0l0bjMzSk81Y2xQeEpZQlhid3djVkZtTXF5Tl92UmlNclNTemQ5bXE0aC1Tc1RPS1E0UExxTGpyYmNnUW5fTnFGNDQ?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字"
     },
     {
@@ -305,6 +305,16 @@
     {
       "region": "國內",
       "bias": "中性",
+      "title": "健策4月營收月增6.8% - 經濟日報",
+      "source": "經濟日報",
+      "published": "2026-05-08 15:00",
+      "published_ts": "2026-05-08T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBEYTZiemd5R1hLREpxNEdLVFlCaGQxNGgwRjJuOEE1SzQ2dklpSXFtZVQ2RVZwWkZuNDFDWVduY1E5cWFBWGpNd0lCYUo0Y2JaT1VFV2p2MURQUdIBX0FVX3lxTE1vZlZTWXU4enpRQVlYSVFsMmoxaDE4QWpud0ZXYThON21OODBUQzd0dkhuaFJTSWJnQUtvVE54VU1Yc3paT0VZUnZDaXRGSDBKdDVERWlQS29zT240NzBN?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
       "title": "出關最後1天還慘綠！健策險連吞3跌停已崩28% 散熱「這檔」營收年增99%猛漲3.5% - Yahoo股市",
       "source": "Yahoo股市",
       "published": "2026-05-07 15:00",
@@ -324,65 +334,55 @@
     },
     {
       "region": "國內",
-      "bias": "利多",
-      "title": "【即時新聞】健策(3653)最新營收創高卻跌停，法人倒貨跌逾2成能撿？ - CMoney",
-      "source": "CMoney",
-      "published": "2026-05-07 11:02",
-      "published_ts": "2026-05-07T11:02:59+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9sWjZKVnNKRWRudlc2anozYVZ6T1laQUJPRERIZDZXNC10Qy10WDU5WFZKREpQR01rUWQwRC16OHJSdlRHV1F5aGRXM3ZXUDNnR2dHd1RwMkVlUk0yNTcyVXRQdW9pcW8?oc=5",
-      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
-    },
-    {
-      "region": "國內",
       "bias": "中性",
-      "title": "訂單能見度看至2027年！「半導體設備廠」開盤秒摔跌停 健策關禁閉也躺平、恐迎連4黑 - Yahoo股市",
-      "source": "Yahoo股市",
-      "published": "2026-05-05 15:00",
-      "published_ts": "2026-05-05T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMi5wNBVV95cUxPZTNMZ1JEZklJVXdKN3RGaGZiLTRQajVhTG53cGkyLVFsMUh5eVlmQ1FEdDMwVGFNaGpTaFNHNXlNMm5NUEQ3NWsteGk5OW5aMDVDMzVtZ0t0MlZnVFMtN1ZzM3J4UGtmSzE5TENrVmEyVFh3dW9ocVRyU1B4REJRMzU3X0ltV3hPN2tLVm1RdE5LY2d3YWY2bnNiM29IZktUa2R6VjVaWXV6TmVYR01Ubk9jandVYTNXQ2FVQzRYMHVFYy1aSzNnaWlsNzNiZGN4b1drRjE0SUZ2aHlJeVhob0pLMldxUFVqalVqVWJUS2ZVWW1ZZDV1Zk5XdXQycVBnQzFlWktvdWlpRGJWNkNGazRuc3BZSnd6NzNVc0l2dk5yQWFIYktaVmFrdjBLM1VPNlQydGd4WVoxSDZRZnd0bEo2MXctc21ra0VBam9LSVJZSm85WkJjUXdCM3A0dEVmQjNhRTRDNi1lRW9hVm00dXlPS2ZjNmxQUnZzX05NTjZ4UndGVVZ3OEp5MFlKOXdBVTN4UThVREdkaWlnZkJPVHVWdGZ4V24yQTFRZENFajZLSjdiSFBEY0pjVkt1MnBpbWRURGFOQWFSczRDVk43bHZDamFUR3JVM1NGVU9mZWF2ZEN1VURJ?oc=5",
+      "title": "5檔千金股跌停！　散熱飆股奇鋐、健策都躺平 - ETtoday財經雲",
+      "source": "ETtoday財經雲",
+      "published": "2026-05-06 15:00",
+      "published_ts": "2026-05-06T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lTjhVWlVGNWJTb1Z4R29ybUZHTDg3WkJ0bk1yOGdDd21sSEl5N0ZmUnNTLUJwNGRkTnN2V0hjaktMTi1WV0p5T2JZelY4SWM0amfSAW5BVV95cUxNVURIWnE2a2ZFcFQ2U2Z1WmpqRVFwNHBvY2EtaWJJY1R2dHo1OUhKX3o0enBEcm1WUk9YTWVUdFNST00wTFY3dTlJeUFTWnJTdlozVWVwUlcyOWFreGRyN2RCWkozMUxBczhtbGxtUQ?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字"
     }
   ],
   "warrant_top_rows": [
     {
-      "warrant_id": "059195",
-      "warrant_name": "健策元大59購01",
+      "warrant_id": "030594",
+      "warrant_name": "健策統一58購01",
       "call_put": "認購",
-      "exercise_price": 4505.63,
-      "trading_money": 1785320.0,
-      "trading_volume": 809000.0
+      "exercise_price": 1888.88,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "059065",
-      "warrant_name": "健策統一73購01",
+      "warrant_id": "030595",
+      "warrant_name": "健策統一58購02",
       "call_put": "認購",
-      "exercise_price": 4567.89,
-      "trading_money": 916780.0,
-      "trading_volume": 508000.0
+      "exercise_price": 1688.88,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "059035",
-      "warrant_name": "健策富邦63購01",
+      "warrant_id": "031612",
+      "warrant_name": "健策永豐54購01",
       "call_put": "認購",
-      "exercise_price": 4550.0,
-      "trading_money": 652490.0,
-      "trading_volume": 512000.0
+      "exercise_price": 1700.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "059063",
-      "warrant_name": "健策統一65購01",
+      "warrant_id": "032575",
+      "warrant_name": "健策國票58購01",
       "call_put": "認購",
-      "exercise_price": 4868.88,
-      "trading_money": 388850.0,
-      "trading_volume": 364000.0
+      "exercise_price": 2200.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "059121",
-      "warrant_name": "健策群益5B購01",
+      "warrant_id": "032986",
+      "warrant_name": "健策群益54購02",
       "call_put": "認購",
-      "exercise_price": 5000.0,
-      "trading_money": 318470.0,
-      "trading_volume": 201000.0
+      "exercise_price": 2430.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     }
   ],
   "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3653_2026-05-24\\index.html"
