@@ -15,7 +15,7 @@
   "institutional_period": "2025-05-26 to 2026-05-22 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
   "margin_period": "2025-05-26 to 2026-05-22 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
   "warrant_period": "TWSE report_date=1150523 (OK; call=208, put=19, with_exercise_price=227)",
-  "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-05-26 to 2026-05-22; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=242; eps_rows=20; profitability_rows=20)",
+  "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-05-26 to 2026-05-22; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=242; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
   "major_holder_period": "not available; no complete natural person major-holder list claimed",
   "tdcc_period": "20260522 (OK; rows=17)",
   "etf_holding_change_period": "2026-05-22 (OK; holders=12, active_candidates=0; changes=0)",
@@ -26,7 +26,26 @@
   "warrant_display_status": "227 檔，認購 208 / 認售 19",
   "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
   "fundamental_profitability_summary": "2026Q1 毛利率 14.43%（年變化 +6.86 個百分點）、營業利益率 2.25%（年變化 +4.46 個百分點）；稼動率目前資料源未提供",
-  "news_display_status": "新聞面偏利多（利多 4 / 利空 0 / 中性 8）",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 12.18%（年變化 +2.40 個百分點）、稅後淨利率 2.69%（年變化 +0.75 個百分點）、ROE 0.46%（年變化 +0.00 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 212.37 億元；MoM -14.97%；YoY 11.79%；近 3 個月累計 YoY 16.86%；近 12 個月滾動營收 YoY 8.24%；連續 5 個月年增為正",
+  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、PER 位階偏高，股價需要成長性支撐、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、營業費用率較去年同期上升。",
+  "chip_summary": {
+    "margin_balance": 429375.0,
+    "margin_5d_change": 24493.0,
+    "short_balance": 21827.0,
+    "short_5d_change": 8059.0,
+    "foreign_latest": 11908896.0,
+    "foreign_5d": 51493948.0,
+    "foreign_20d": 646500294.0,
+    "trust_latest": -29889.0,
+    "trust_5d": 1048211.0,
+    "trust_20d": -4815958.0,
+    "total_latest": 14713266.0,
+    "total_5d": 56868756.0,
+    "total_20d": 711741951.0
+  },
+  "news_display_status": "新聞面偏利多（利多 3 / 利空 0 / 中性 9）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 5 則（法說會 5 / 公告 0）",
   "summary_one_line": "偏多強勢，偏多震盪；站穩 MA10 37.52 並突破 44.65 才有續攻機會，跌破 MA20 31.72 轉防守。",
   "summary_overall": "偏多強勢；收盤站上 MA5, MA5 高於 MA10, MA10 上方且投信 5/10 日偏買",
   "summary_tomorrow": "偏多震盪",
@@ -40,7 +59,7 @@
   "summary_warrant_signal": "中性",
   "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
   "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
-  "generated_at": "2026-05-24T13:42:33+08:00",
+  "generated_at": "2026-05-24T17:27:47+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3481_2026-05-24\\01_日線完整技術與籌碼分析圖.png",
@@ -226,11 +245,11 @@
     {
       "region": "國內",
       "bias": "中性",
-      "title": "法人給面板雙虎「中立」評等 看見了什麼隱憂？ - UDN",
-      "source": "UDN",
-      "published": "2026-05-24 10:36",
-      "published_ts": "2026-05-24T10:36:40+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBoUXF0dHg0Z3lWVTNLLV9SOEtsZHZGRGxoWmNSalV1WC1LOXJ3eTBURW1oU0Ewd1dDb3BfVTNxdHAzT1dTZUxwVlZlSXlLT1I00gFWQVVfeXFMT0dNSkRxVVk1OTRFS1FWWjJ2TTBTWTB0TEVLcjRvM0ZCVUdLQWJWWXJCZUdKSHZ2aVhzSHlRMjBOWjJNazRzMEJ6YXFhUjlWWXN1UG9LVlE?oc=5",
+      "title": "群創(3481)股價狂飆15年新高、44元可以買？外資目標價曝光！友達(2409)、欣興(3037)呢？選股教練提醒1風險 - 今周刊",
+      "source": "今周刊",
+      "published": "2026-05-24 16:54",
+      "published_ts": "2026-05-24T16:54:13+08:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRkRGbjJmV01BM0NRU3Y5VG51a1hJajZtYmJUcFZDUjQzVGhjeGVqWnI4dS1ycG9nVGJEYjVERWRfUjhEYTFKM19ha2JPR2VYa2EzelVRYzhHeWYtaFJiV3RFSlV5X2IxaWZjWEdrYUN6NWlIcVpQdlJ2WEppbjRyYQ?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字"
     },
     {
@@ -246,22 +265,22 @@
     {
       "region": "國內",
       "bias": "利多",
-      "title": "美股創高助攻台股破四萬二！群創及國巨領漲-財經焦點情報站 - CMoney投資網誌",
-      "source": "CMoney投資網誌",
-      "published": "2026-05-24 05:44",
-      "published_ts": "2026-05-24T05:44:56+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOX0U0bko1Zm1fSm1hcHBGWnhHQzlUMERTLW85SjN2UDBBYWl2QkNiYm9TNXQtazlPUDlHbldzamx4WlJncFM2Z3NjaVp4OVBUcXMyeHcycjhTU05EMFFaUXM1QzdSWWhSYzhNUUlPajBKOHJRbDZvT2lubGZsdHZnd2Zn?oc=5",
+      "title": "群創飆到44元現在還能買嗎？Q1轉虧為盈年增6成，二利多發功，本季會更好嗎？ - 經濟日報",
+      "source": "經濟日報",
+      "published": "2026-05-24 01:00",
+      "published_ts": "2026-05-24T01:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FTXBramI3MDhfdWFJTUE0aFIxak9zaU5CX0paOXdlb0tKXzFjM29qYmk4bk95SlQ3dFMyQ2Q0QU94V19GVHV4QnpMT0RuS3pac3k4TGR6UGdJd9IBX0FVX3lxTE9kSjZUVHo0OWlNdVRjeDlOZG8zYWVvaGNkR1d0THBudlhHQ3dDSmE5ZU5Ha1pOazlFQTBSV1RlanA0UzhVMF81N0lOckxyOTRpSFJlN3BBUEZJdXhKTldB?oc=5",
       "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
     },
     {
       "region": "國內",
-      "bias": "利多",
-      "title": "群創飆到44元現在還能買嗎？Q1轉虧為盈年增6成，二利多發功，本季會更好嗎？ - 經濟日報",
-      "source": "經濟日報",
-      "published": "2026-05-23 19:00",
-      "published_ts": "2026-05-23T19:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FTXBramI3MDhfdWFJTUE0aFIxak9zaU5CX0paOXdlb0tKXzFjM29qYmk4bk95SlQ3dFMyQ2Q0QU94V19GVHV4QnpMT0RuS3pac3k4TGR6UGdJd9IBX0FVX3lxTE9kSjZUVHo0OWlNdVRjeDlOZG8zYWVvaGNkR1d0THBudlhHQ3dDSmE5ZU5Ha1pOazlFQTBSV1RlanA0UzhVMF81N0lOckxyOTRpSFJlN3BBUEZJdXhKTldB?oc=5",
-      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+      "bias": "中性",
+      "title": "法人給面板雙虎「中立」評等 看見了什麼隱憂？ - UDN",
+      "source": "UDN",
+      "published": "2026-05-23 15:38",
+      "published_ts": "2026-05-23T15:38:21+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBoUXF0dHg0Z3lWVTNLLV9SOEtsZHZGRGxoWmNSalV1WC1LOXJ3eTBURW1oU0Ewd1dDb3BfVTNxdHAzT1dTZUxwVlZlSXlLT1I00gFWQVVfeXFMT0dNSkRxVVk1OTRFS1FWWjJ2TTBTWTB0TEVLcjRvM0ZCVUdLQWJWWXJCZUdKSHZ2aVhzSHlRMjBOWjJNazRzMEJ6YXFhUjlWWXN1UG9LVlE?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
     },
     {
       "region": "國內",
@@ -276,21 +295,21 @@
     {
       "region": "國內",
       "bias": "中性",
-      "title": "群創(3481)股價狂飆15年新高、44元可以買？外資目標價曝光！友達(2409)、欣興(3037)呢？選股教練提醒1風險 - 今周刊",
-      "source": "今周刊",
-      "published": "2026-05-22 16:12",
-      "published_ts": "2026-05-22T16:12:21+08:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRkRGbjJmV01BM0NRU3Y5VG51a1hJajZtYmJUcFZDUjQzVGhjeGVqWnI4dS1ycG9nVGJEYjVERWRfUjhEYTFKM19ha2JPR2VYa2EzelVRYzhHeWYtaFJiV3RFSlV5X2IxaWZjWEdrYUN6NWlIcVpQdlJ2WEppbjRyYQ?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字"
-    },
-    {
-      "region": "國內",
-      "bias": "中性",
       "title": "群創(3481)股價飆44元、聯電(2303)漲到110元現在買還有肉？最新目標價曝光！杜金龍示警台股恐跌6千點，教你高出低進操作法 - 今周刊",
       "source": "今周刊",
       "published": "2026-05-22 12:21",
       "published_ts": "2026-05-22T12:21:34+08:00",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVW1yQWIzX0p5alNxVXRma29uOWRrQ3ZBSThfZXliMU5CZ2Q0bDJBUEUxZHdEWWhxWURiSlV6NU5VOWNHMkYyLW4xaTFLNFRyd2JwemgzdnhHSlRiaVc0RlJMbDhHUy15QzFsLTFTWFE1a2h2UzZhZzk1ajEzd2ZucA?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【即時新聞】【即時新聞】群創(3481)爆量亮燈漲停，這「4檔概念股」資金湧入接棒上攻？ - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-22 11:05",
+      "published_ts": "2026-05-22T11:05:33+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ1E5WUtPVjNzMXRGV2hlYWFfM3VFRnVWelFZVGI3ZGNEd042RmJRY0JNT1RwXzh2eDN4MXRpS2I3WlZvcTJCLWhJeU1VanZoRTJGXzEzWFhUOUlsQmZUdDF3N05CM0VRYWtUMzlEUUdjTHhYOVVldFpsZDE1OGd5d2JJbnhrMU9vYXRKc2c1Nkc?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字"
     },
     {
@@ -316,11 +335,11 @@
     {
       "region": "國內",
       "bias": "中性",
-      "title": "面板股反攻！群創股價奔「4」字頭攀15年新高　2檔同刷漲停 - ETtoday財經雲",
-      "source": "ETtoday財經雲",
-      "published": "2026-05-21 11:58",
-      "published_ts": "2026-05-21T11:58:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54RUxBaTVYUjhrREF5TjZ3Vnh5NGlkdEsyQ3E2dWVyb1ZfcGx3UGJkNm9oZHloaDFteWd6X1d2NGRjTm4wbDlrR25NUW45NkREZ1HSAW5BVV95cUxQX0lHajl4Q2tYTVU5ZC1VQ2RJMVd4cFhtZno4Q1NuRlo0ZndQU1BIdklYTllGY19VWXBRZjhlVFBNTUdxaUtZdDZVWjF3cy1fVDRadVFqZ05CV2oyZnNwdjJ5N3pJb2hpMDdScERwUQ?oc=5",
+      "title": "熱門股》群創買氣旺 爆百萬張巨量 - 自由時報",
+      "source": "自由時報",
+      "published": "2026-05-16 09:03",
+      "published_ts": "2026-05-16T09:03:56+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WSV9WbkQ1ZXNHNmoyOVdiRVROUmxHdUdZVWREQndmUFBqZXlPQnJSUEN1aHYtcXNadXlQZU91aEVSVFRKcThmcE5GR200ak45S25ob2t3N2o?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字"
     },
     {
@@ -342,6 +361,63 @@
       "published_ts": "2026-05-08T15:00:00+08:00",
       "link": "https://news.google.com/rss/articles/CBMijwRBVV95cUxQOU9TVTVYVWZnN2RLVGM2RU80bVJ1UG5mU19zWE5jMU9MbjVrc00zRmRvT1U0LWlrM2poR3hnM3BtdGRDb01VZ1RraVZsa0JxTXpuTU1BQ2FCb3k3X0c1LWVDWG9QcmgtcUdjek0yZjRIY3ZoNjNFRDMxZWZmREs3b25tY052RUFfQnNyd0Q2ZmkwR3E5UGNVWEkwSnVySDNTNm9IenJOYmFQWlZCOE9nX2hGQW9xZkVXbFhXaWxpNURXa0tiUVRiN3J1QVJiSjVkaGpvYVJEN19aZy0zajFlb0o1M3dJVWx3ZHRZWVVzZXdYU193R3ZJOUluNVBzQmE3UzJkMXNPQ3V5RzRTeC13RTIzUVhpc2RFUkVoTk1Cdzg0WDhrLUZWY3JDOVpxUUNObjlyZ2twQkJMbGVrZkg5clZvVFoyWHc0UnRNOVpWWjRoVHpsWVdGNGd0ZmhydmF0eC1fcnNsVUMxaTBBRVVnVkZFb29QM2xuZmZHS1FBSWdja1VwbjdUQlVrUl9jdGhmMDhmbTFmMGVidk9KSWg0RTZ5cVdjN1Vwc1BXWHJfQ1hRRHFDLXc4b3FFbDFtMWlnOGtwd012OTZTM1k1dVlDWWNXN0t1U2FUNF9WbGdWb09NbHYxd0FxUloxbk1qT2x6QTZlMWNLNlBBNmduWlVZSmg2V1pPS3pfZ1hHdzBxaw?oc=5",
       "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "台積電法說會在即，沈萬鈞揭先進封裝變革下值得關注的個股 - 鏈新聞 ABMedia",
+      "source": "鏈新聞 ABMedia",
+      "published": "2026-04-13 15:00",
+      "published_ts": "2026-04-13T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPX1BkMzB5bFUzZksydWNxQlY0aWkySzA2RFpDYnRTbzdGSlJ3N0lFQ29sUnNLeXJhc2txR01WWEpQMU1QTFZMazRQVmNqSFFBQWotckg2T3g1OENZdjN1NGQ4SmlSSmdvSGdfc0pTaERLa0U0dHpwVW82Zmp2VzhnTkJiNldLZUtPNHlv?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "群創 2025 Q4 法說會重點：出售廠房活化資產，FOPLP 與智慧座艙成轉型雙引擎 - StockFeel 股感",
+      "source": "StockFeel 股感",
+      "published": "2026-03-26 15:00",
+      "published_ts": "2026-03-26T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNVll2bWhWcDRIeFlKckNrUGo2ZGtJOVc1NlFvYzB4VVI3dC16WlN5RW9DVGFmLUdUSnd1YjlwUjJCU3NrNkp2OFdYeE9nakNSVmJtWXRocXFGalFCSXM2al93ZllJN29fdkZMbXQ0SDkxdnExR3lXVUdvMnRxeUtaRExRY0x6NF9ORkIwVUtMMlUxM2lzQzRFal90WG5DbUZQekJiMWlEdkJ1blg5S1NYcVFWcTljQTVPNXpRbi1JSWljMHlTM0NEMmNFSmVMWFR5QmhvTGV6enppdXpfNGhB?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "群創法說會後重挫9%！交易量仍破百萬 跌破這價位快下車 - TVBS新聞網",
+      "source": "TVBS新聞網",
+      "published": "2026-03-13 15:00",
+      "published_ts": "2026-03-13T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1ZRFEtUE5yT1piUThCeHNGZEE3dm1vblZWeVdHWWdaVjNaTmd5ZXh0OG1pZmxDWkNTcmxfZlFiUlZMa2ZYc2RQbS0zVTQ0R3M?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "群創法說／扇型封裝出貨成長10倍 南科廠處分「持續評估」 - TVBS新聞網",
+      "source": "TVBS新聞網",
+      "published": "2026-03-12 15:00",
+      "published_ts": "2026-03-12T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBObHNOSGM1c1dpcVl1YjBONmVVMEp5R3B3Nk8yd0lqNXBDa2VDVi1PRjhZb0VyYkMtM0ctUkJIM3ExYlBiUFA3UlBsR1lUQlU?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "title": "【即時新聞】群創(3481)1月獲利爆發年增46倍！EPS 0.05元，法說會前夕營運受矚目 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-03-04 16:00",
+      "published_ts": "2026-03-04T16:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSFl1bW11NE5TZi1tNU5rdG5WeFlVZVduc2t1VUhhOUdGUDFLYjdPdnQ3MEhrMS1GQUNSbGVVaWJPWXZ4ZFl6ZTVwOHVsSHNEZXZMTjI1YnVYZ0hhcW5UYnRoV3RBMDdMQmNWb0tlMnBoMWcxWHcwSm9IU3VYMlVBSWdJcElXVzBCYTVjajhsdXk?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "kind": "法說會"
     }
   ],
   "warrant_top_rows": [
