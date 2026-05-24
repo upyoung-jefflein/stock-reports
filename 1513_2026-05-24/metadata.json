@@ -1,0 +1,448 @@
+{
+  "stock_id": "1513",
+  "stock_name": "中興電",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "電機機械",
+  "data_period": "2025-05-26 to 2026-05-22",
+  "data_date": "2026-05-22",
+  "ohlcv_start": "2025-05-26",
+  "ohlcv_end": "2026-05-22",
+  "last_daily_k_date": "2026-05-22",
+  "valid_trading_days": 242,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-05-26 to 2026-05-22 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "margin_period": "2025-05-26 to 2026-05-22 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "warrant_period": "TWSE report_date=1150523 (OK; call=113, put=2, with_exercise_price=115)",
+  "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-05-26 to 2026-05-22; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=242; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260522 (OK; rows=17)",
+  "etf_holding_change_period": "2026-05-22 (OK; holders=9, active_candidates=0; changes=0)",
+  "peer_source_and_list": "FinMind TaiwanStockInfo industry_category candidates + TaiwanStockPrice OHLCV correlation filter; compared=中興電(1513), 擎邦(6122), 千附精密(6829), 巧新(1563), 虎山(7736), 豐祥-KY(5288), 永冠-KY(1589); failures=總格精密(4578): No TaiwanStockPrice rows for 4578; 東元精電(8041): No TaiwanStockPrice rows for 8041; 開億(1523): No TaiwanStockPrice rows for 1523; 永大(1507): No TaiwanStockPrice rows for 1507",
+  "peer_display_list": "中興電(1513)、擎邦(6122)、千附精密(6829)、巧新(1563)、虎山(7736)、豐祥-KY(5288)、永冠-KY(1589)",
+  "etf_display_status": "持有快照 2026-05-22，未命中最新異動",
+  "tdcc_display_status": "20260522；大額 42.01% / 小額 36.32%",
+  "warrant_display_status": "115 檔，認購 113 / 認售 2",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "2026Q1 毛利率 25.98%（年變化 +0.55 個百分點）、營業利益率 18.54%（年變化 -0.20 個百分點）；稼動率目前資料源未提供",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 7.44%（年變化 +0.74 個百分點）、稅後淨利率 14.79%（年變化 +1.18 個百分點）、ROE 1.97%（年變化 -2.52 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 23.08 億元；MoM -6.87%；YoY 5.86%；近 3 個月累計 YoY -0.50%；近 12 個月滾動營收 YoY 5.47%；連續 2 個月年增為正",
+  "fundamental_support_summary": "是否支持股價：支持度中性。理由：近 3 個月營收動能轉弱、最新月營收年增為正、正式 EPS 年增、毛利率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期下滑、營業費用率較去年同期上升。",
+  "chip_summary": {
+    "margin_balance": 8832.0,
+    "margin_5d_change": -75.0,
+    "short_balance": 28.0,
+    "short_5d_change": 14.0,
+    "foreign_latest": 2100686.0,
+    "foreign_5d": -1173367.0,
+    "foreign_20d": -17036426.0,
+    "trust_latest": 264840.0,
+    "trust_5d": 1837840.0,
+    "trust_20d": 1205819.0,
+    "total_latest": 2447452.0,
+    "total_5d": 821435.0,
+    "total_20d": -15929453.0
+  },
+  "news_display_status": "新聞面偏利多（利多 1 / 利空 0 / 中性 7）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 7 則（法說會 1 / 公告 6）",
+  "summary_one_line": "中性偏多，偏多震盪；站穩 MA10 153.20 並突破 163.50 才有續攻機會，跌破 MA20 152.85 轉防守。",
+  "summary_overall": "中性偏多；收盤站上 MA5, MA5 低於 MA10, MA10 上方且投信 5/10 日偏買",
+  "summary_tomorrow": "偏多震盪",
+  "summary_one_month": "偏多延續",
+  "summary_support": "第一 151.60 / 第二 153.20 / 強 152.85",
+  "summary_pressure": "163.50",
+  "summary_atr": "ATR14 3.96，常態區間 152.54～160.46",
+  "summary_key_watch": "量價中性偏多；明日觀察 MA5 151.60 / MA10 153.20",
+  "summary_risk": "跌破 MA10 153.20 且放量，短線轉弱；跌破 MA20 152.85 則整理擴大",
+  "summary_warrant": "認購成交占 0.00%，近價外認購 13 檔，前五大成交占 0.00%",
+  "summary_warrant_signal": "中性",
+  "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
+  "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
+  "generated_at": "2026-05-24T22:39:16+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1513_2026-05-24\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1513_2026-05-24\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1513_2026-05-24\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1513_2026-05-24\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1513_2026-05-24\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1513_2026-05-24\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [],
+  "tdcc_rows": [
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 72874,
+      "shares": 9466159,
+      "ratio": 1.88
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 72417,
+      "shares": 130200744,
+      "ratio": 25.87
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 5545,
+      "shares": 43119591,
+      "ratio": 8.57
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 1380,
+      "shares": 17723891,
+      "ratio": 3.52
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 773,
+      "shares": 14383263,
+      "ratio": 2.85
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 559,
+      "shares": 14366833,
+      "ratio": 2.85
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 230,
+      "shares": 8300627,
+      "ratio": 1.64
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 141,
+      "shares": 6606223,
+      "ratio": 1.31
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 248,
+      "shares": 17979847,
+      "ratio": 3.57
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 111,
+      "shares": 14954747,
+      "ratio": 2.97
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 49,
+      "shares": 14525011,
+      "ratio": 2.88
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 20,
+      "shares": 9835041,
+      "ratio": 1.95
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 12,
+      "shares": 8250998,
+      "ratio": 1.63
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 5,
+      "shares": 4499535,
+      "ratio": 0.89
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 43,
+      "shares": 188900005,
+      "ratio": 37.54
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 0,
+      "shares": 0,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260522",
+      "stock_id": "1513",
+      "level": 17,
+      "level_label": "合計",
+      "people": 154407,
+      "shares": 503112515,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260522",
+      "total_people": 154407,
+      "total_shares": 503112515,
+      "small_ratio": 36.32,
+      "mid_ratio": 9.42,
+      "large_ratio": 42.01,
+      "million_ratio": 37.54,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1513_2026-05-24\\07_集保股權歷史趨勢圖.png",
+  "news_rows": [
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "中興電(1513)只看一份評等就下結論，真的夠嗎？-黃詠晴 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-19 22:33",
+      "published_ts": "2026-05-19T22:33:46+08:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYWdXeHV1OXhGSTh0SW1NQzZkbzFpMEdXdnp5LUhMcTR3RDN2Y2VGLWJFR1JBTGNKbkZXeXJvUmpzdVRBVFBmRVJBVnRrNXk1Zmw3RnAwSENISWs0T2l6MFhRaW5iNE9wWEpUYVdjQ2VGRi1jMjVHQ1NWejJJV2VHY1FHQWdkYk0?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "1513 中興電1Q26 EPS 1.90元略優預期、在手訂單創高帶動獲利逐年增長【豐學PRIME盤後精選】｜豐雲學堂2026 年 05 月 - sinotrade.com.tw",
+      "source": "sinotrade.com.tw",
+      "published": "2026-05-14 15:00",
+      "published_ts": "2026-05-14T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi8ANBVV95cUxOTWVmaDc1MUFhaDZyQ28tc0stX2c0YkMtX1lCNGJNaW9pSjdTUnhQTUxlRGg3Q24wRUlWbmUtZU1YN240b1ZLclF4bzFRVnB5ZUFGN0RPZVhLTGpPSW9FSGh3eF9wdlJIN3BDR3VnTFBzWjFIb2g3UWZYT21VUjdPbWkxdVdFODdfaVVZNWZDcDhtenZOQU1PVU1LQ2x5d25jQkdjdHJxZmNRMDNNamYyR19zZ3c0cUJDVTg5VHBsN21OVHN1bWJJOVRqR196d3VBZW04cVJyVmJCZXUyWmI2Y3FiRVplZW1XM2pNVE5RNy00N3dyVmRzTVVHcU85Q1lFb2ROMmZuQUNDck5WVXB6Zy11Y19uemx0Z2c2X3JjWUJNM3RkdmhmU2Y5TE55dUFjOUJjNkRreHBPZktKQW1UdkdRZmI3TzlpY2o4QlFjV1QwellnYU5OYUFaZmlqWFQ3czZuUnFnWG5oLVRIY25MRkRCYXJMWHI2ZXVzdmxrVkhnMUpQOWFtVEotNmo1d0VDeVV6a21WaG1WRU01QlExZm9Ma2dVTDVyb1ZtQ2JWM2Fscm5OVmhrUHkxQmJ0ZlJjX2dtWHNBTzBKSmNDaXJtRUN6VjZ1cG04MVlUb0U5M3Fxd1BfSnJjRjdoRWxISkVv?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【26Q1財報公告】中興電(1513) Q1 營收64.9064億元，季減 8.66％、年成長 0.67％ - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-14 09:50",
+      "published_ts": "2026-05-14T09:50:04+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBTTlV6RkotdWVRaG9fanRSZXk3ZWxhMzA0Q05oZ3FOdExjRFhYTTNNV25LYVlBMlE2VDkyNm9MN28weE5jR1RXdERlejV2M3VEYnQwekNzMjBYQ19kaGVCVlhac0tMMFE?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【即時新聞】中興電4月營收年增5.86%達23.07億元，在手訂單431億元維持高檔 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-08 15:00",
+      "published_ts": "2026-05-08T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSzFuOEdLVVEtb2ZlV0Y1NFFMS3JOWHMtLXV5THFodXI4WEgzZURJMFNXWldDSjZ6dXFGUEEyR3g5akt4R2U2LXhtVTB0NmxMRGo3UWpsT2lMeVQwVmdob2ZpcERWUF9GS29Ld3ExUTlOU2hocUQydUFJczZEd2lQbzB3MU1MdWJMa29vSk9mQUg?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【2026/04月營收公告】中興電(1513) 四月營收23.08億元，年增5.86％ - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-07 17:40",
+      "published_ts": "2026-05-07T17:40:04+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9iZGVNU2lvVG5uM2pyaVE1Y1lHVmJ2TlFHUWd1cXMycEd6NkxrUi11LWN4NjVXSUlsM0tQbjFCNFNHdzhhS3Q3Rkx6LW1GT3MxYzlqTjhVcnU3WDY2YS1NRWZuR21PMzA?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "中興電在手訂單431億；營收/毛利有望雙升- 新聞 - MoneyDJ",
+      "source": "MoneyDJ",
+      "published": "2026-05-04 15:00",
+      "published_ts": "2026-05-04T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdC01bVRRbGlsbUxMNXhVNU9DVmIyZjk0ZlVvMjRqQ0lTQkFIa1hnbFBKaC1wOUxXSVlkSjVBNGpIUnB5eTNxUUZzNVFicjV4QlRXajFtTDloRDBwNnJqbm5ZeENiRjd2UG5VTWZEWklNa1FxUDhWQTZ5Zy1kT2dWM01YdW9kUHBuODFfTzlBZC1Hdw?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【即時新聞】中興電(1513)訂單衝破4百億！資金點火，這「5檔概念股」接棒狂飆？ - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-04 15:00",
+      "published_ts": "2026-05-04T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNUJCeERobUw3Y1EwcnBIX2pLcXJOczZJbENZVlVHZzhTV2tua2RSUE13LXRxVFVOeU9yWWJrYmt4RGo0M0o4RFF2a2psSnhkM29NT1FrTHpyMk02R0liWXJVUVhMUWlmTHd4aDRkNGtvRExjRmhJMlJZOS1yM25kV2NDUnpkdFYzYXdMU2NiSUM?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【即時新聞】中興電最新在手訂單飆431億，外資轉向調節小心這檔拉回！ - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-04 15:00",
+      "published_ts": "2026-05-04T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVDg2ZHVWbjduYVMzaFN1a0JQYlNvNGpTUDl6NndpT3E0Q1FhMVV0ZW8tTHlGQXY4VkJQUDI3dl9TUm9SeGRaWU43djdoanJpQ0pmQ1BVYmh3REV6Rm9LYWJoMUt5NmpXQmdHTDJQSENfbGs2dnpRMnhvZlktUWdlV09BZnhEYUhXUUdfcFpJZHc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【26Q1財報公告】中興電(1513) Q1 營收64.9064億元，創下近4季新低，季減8.66%、年成長0.67%-CMoney 小編 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-14 15:00",
+      "published_ts": "2026-05-14T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVTVIXy01cWlYblZsV2ZNc0VYdU5MWVkyTm52OHFVRkRCd2dwcUFDMHozLXR4Q0hMS0pXbk9GZUNKN21KNVhKSWEzeU9nUXhQS0IwSVZReUN0MkYwZFNGOUU3U2tXd3hCYWQ1TUh2TVU1QnhoYjJlT2VuZ2J2T1d4bmJUN1Vfd0dqZXc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "title": "【即時新聞】中興電第一季財報公布，EPS達1.94元年增8.8%，訂單能見度高 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-13 15:00",
+      "published_ts": "2026-05-13T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPY1QyTXA3REF4UzN2UDFRcXNqSTZJQ3NwQjZCbUpNZ2tRYWtOS1ZQX3dtX002YzhfZHIwRGlLYnpHVTgwQzR1enhjdFBQWUxQQjhMQWlUWlRuNzVmUDZCaUJza080V1Jaak12b3k0QUh1M21RX24xU1AzUE1DbE1SSnAxb0lEdXlZUktlcmh1Y2Y?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "title": "中興電財報／第1季 EPS 1.94元 明年進入加速成長期 - 經濟日報",
+      "source": "經濟日報",
+      "published": "2026-05-12 15:00",
+      "published_ts": "2026-05-12T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE53aVRvYnJBMGw5Nk1IMnRQVjNWeGFrdXUxejhxN2NfWkhUSG5YSWF4TkFjSFd4amhzblJicTVWQTNxNFg4ZlFxLVZ0QnlWdVJDZG5reWNmSEJrZ9IBX0FVX3lxTE5MamNmdUdHeHNISTdJbER4NV9oS0dfeFd3cDkxLVlCbE9aWTZ5cHBlSXM0S3RBZnNQRy0xUkVxTmJ4ZzE2eXVvYUlLMWJGYzdlZEFLeUxKUERrem1UY0Nr?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【2026/04月營收公告】中興電(1513) 四月營收23.08億元，年增5.86%-CMoney 小編 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-08 15:00",
+      "published_ts": "2026-05-08T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNDhFazZfclhOT2JwU2JCWDFaM01VNEU4dEZ0cE8tZjRHb3AzN1NPZ1dldW9NUExMWTZFUjZZWmFBM0EtWWZTZFp2NmJTb0REZ2NrRFNGa24tc2FqWlB3aUxKVDNhSV9iOVJ5SGt5RFgzZVE3WFJhbU4zNjFrRzBMOER6cVVGSkMtaVE?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "title": "中興電法說會／AI 需求爆單！今年拚一季比一季高 總座：只要用電就需要 GIS - 經濟日報",
+      "source": "經濟日報",
+      "published": "2026-04-23 15:00",
+      "published_ts": "2026-04-23T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKdHNhV2gwSXVvX19DVHhyS1hMdmVLbEktNHljVXA4c3dyU1pJLXl3LVY4VGdWSi1OZjMxYVJKWGNpdWMza2pIUWZpNEdNS1F5cHJ2YmNYd0VBUdIBX0FVX3lxTFBKUFN5Rmx5d29PUjJPWFFZOWJBMDVmWnIxdDdCbHItdjJGTm1UNnJyNTdaN19rTjRUMlRoZGN5eldqYmh0enhSVy1kSzdYSlY4eXpqX1hqTHR3NHBGVjZV?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【2026/03月營收公告】中興電(1513) 三月營收24.78億元，表現亮眼、呈現雙成長，創近3個月以來新高，年增4.84% - CMoney",
+      "source": "CMoney",
+      "published": "2026-04-10 15:10",
+      "published_ts": "2026-04-10T15:10:03+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsSFdXdm9UNTRwalJpVUk4Smd4Z0pOcVZva09wcGkyRXo2MVYybFBIQTktSDJoUFNxemQxSjNWcHZVMW8yV245eXhzMjJqblRZLTFkZ0I2eWN1dmhwSFJlY2hUWl9tNHM?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【25Q4財報公告】中興電(1513) Q4 營收71.0609億元，創歷史新高，季增 4.64％、年成長 2.24％ - CMoney",
+      "source": "CMoney",
+      "published": "2026-03-11 15:00",
+      "published_ts": "2026-03-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02dXc2SkJINTctNklpQ3c4TFZiN21BeFN5RHBQTUJQTVU5S09KWmRvODZSUkkzSnloQUdyaXFEZkZlQVVGLVpnZnJUcklxNTdEYzM4RWpJVjktWlRZU0N4eGRUakhpbmM?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    }
+  ],
+  "warrant_top_rows": [
+    {
+      "warrant_id": "031189",
+      "warrant_name": "中興電國票58購01",
+      "call_put": "認購",
+      "exercise_price": 243.15,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "031379",
+      "warrant_name": "中興電永豐54購01",
+      "call_put": "認購",
+      "exercise_price": 223.7,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "031518",
+      "warrant_name": "中興電凱基58購01",
+      "call_put": "認購",
+      "exercise_price": 248.02,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "033469",
+      "warrant_name": "中興電元大54購01",
+      "call_put": "認購",
+      "exercise_price": 187.72,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "034830",
+      "warrant_name": "中興電凱基54購01",
+      "call_put": "認購",
+      "exercise_price": 180.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    }
+  ],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1513_2026-05-24\\index.html"
+}
