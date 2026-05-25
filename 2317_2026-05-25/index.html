@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>鴻海(2317) 台股技術分析報告</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+      background: #f4f6fa;
+      color: #172033;
+    }
+    header { padding: 24px 18px 18px; background: #14213d; color: #fff; }
+    main { max-width: 1180px; margin: 0 auto; padding: 18px; }
+    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0; }
+    h2 { margin: 0 0 14px; font-size: 20px; }
+    .panel {
+      background: #fff;
+      border: 1px solid #dce2ee;
+      border-radius: 8px;
+      margin: 16px 0;
+      padding: 16px;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    .table-scroll { overflow-x: auto; width: 100%; }
+    th, td {
+      border-bottom: 1px solid #e7ebf2;
+      padding: 9px 8px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th { width: 230px; color: #526070; font-weight: 600; }
+    .cell-number { text-align: right; font-variant-numeric: tabular-nums; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #e5e9f0;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .analysis ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .deep-analysis {
+      border-color: #b8c7dc;
+      background: #fbfdff;
+    }
+    .deep-analysis-body { line-height: 1.78; color: #243044; }
+    .deep-analysis-body h2,
+    .deep-analysis-body h3,
+    .deep-analysis-body h4 {
+      margin: 18px 0 8px;
+      font-size: 17px;
+      color: #14213d;
+    }
+    .deep-analysis-body p { margin: 8px 0; }
+    .deep-analysis-body ul,
+    .deep-analysis-body ol { margin: 8px 0 12px; padding-left: 22px; }
+    .deep-analysis-body li { margin: 4px 0; }
+    .detail-panel { padding: 0; overflow: hidden; }
+    details > summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      font-weight: 700;
+      color: #172033;
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary::after { content: "展開"; float: right; color: #64748b; font-weight: 500; }
+    details[open] > summary::after { content: "收合"; }
+    .detail-body { padding: 0 16px 16px; }
+    .detail-body ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+    .summary-card {
+      border: 1px solid #dde4ef;
+      border-radius: 8px;
+      padding: 12px;
+      background: #f8fafc;
+      min-height: 82px;
+    }
+    .summary-card span { display: block; color: #64748b; font-size: 13px; margin-bottom: 7px; }
+    .summary-card strong { display: block; color: #111827; font-size: 15px; line-height: 1.45; }
+    .notice { line-height: 1.7; color: #3f4b5f; }
+    @media (max-width: 720px) {
+      header { padding: 18px 14px 14px; }
+      main { padding: 10px; }
+      h1 { font-size: 20px; line-height: 1.35; }
+      h2 { font-size: 16px; margin-bottom: 10px; }
+      .panel { border-radius: 6px; margin: 10px 0; padding: 10px; }
+      table, tbody, tr, th, td { display: block; width: 100%; }
+      tr { border-bottom: 1px solid #e7ebf2; padding: 8px 0; }
+      th, td { border-bottom: 0; padding: 2px 0; font-size: 13px; }
+      th { color: #64748b; }
+      .table-scroll th, .table-scroll td { display: table-cell; width: auto; min-width: 120px; padding: 7px 8px; border-bottom: 1px solid #e7ebf2; }
+      .table-scroll tr { display: table-row; border-bottom: 0; padding: 0; }
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .summary-card { min-height: auto; padding: 9px; }
+      .summary-card strong { font-size: 13px; }
+      .analysis ul { padding-left: 18px; font-size: 13px; }
+      .deep-analysis-body { font-size: 13px; }
+      .deep-analysis-body h2,
+      .deep-analysis-body h3,
+      .deep-analysis-body h4 { font-size: 15px; }
+      details > summary { padding: 11px 10px; font-size: 14px; }
+      .detail-body { padding: 0 10px 10px; font-size: 13px; }
+      .notice { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>鴻海(2317) 台股技術分析報告</h1>
+    <div>產生時間：2026-05-25T18:03:05+08:00</div>
+  </header>
+  <main>
+    
+    <section class="panel conclusion">
+      <h2>結論摘要</h2>
+      <div class="summary-grid"><div class="summary-card"><span>一句話</span><strong>偏多強勢，偏多震盪；站穩 MA10 248.60 並突破 263.50 才有續攻機會，跌破 MA20 242.93 轉防守。</strong></div>
+<div class="summary-card"><span>明日觀察</span><strong>價漲量增；明日觀察 MA5 248.70 / MA10 248.60</strong></div>
+<div class="summary-card"><span>支撐</span><strong>第一 248.70 / 第二 248.60 / 強 242.93</strong></div>
+<div class="summary-card"><span>壓力</span><strong>263.50</strong></div>
+<div class="summary-card"><span>權證對現股</span><strong>中性</strong></div>
+<div class="summary-card"><span>獲利率</span><strong>2026Q1 毛利率 6.18%（年變化 +0.06 個百分點）、營業利益率 3.57%（年變化 +0.74 個百分點）；稼動率目前資料源未提供</strong></div></div>
+    </section>
+    
+    
+    
+        <section class="panel analysis">
+          <h2>八、基本面 EPS / 月營收</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>摘要</th>
+              <th>重點</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>月營收趨勢</td><td>2026-04 月營收 8,320.98 億元；MoM 3.53%；YoY 29.74%；近 3 個月累計 YoY 27.90%；近 12 個月滾動營收 YoY 20.08%；連續 18 個月年增為正</td><td>營收動能</td></tr>
+<tr><td>獲利率</td><td>2026Q1 毛利率 6.18%（年變化 +0.06 個百分點）、營業利益率 3.57%（年變化 +0.74 個百分點）；稼動率目前資料源未提供</td><td>毛利率 / 營業利益率</td></tr>
+<tr><td>季報細項</td><td>2026Q1 營業費用率 2.61%（年變化 -0.68 個百分點）、稅後淨利率 2.69%（年變化 -0.10 個百分點）、ROE 1.09%（年變化 -1.40 個百分點）</td><td>營業費用率 / 稅後淨利率 / ROE</td></tr>
+<tr><td>估值狀態</td><td>月營收、估值與正式 EPS 已取得</td><td>PER / PBR / EPS</td></tr></tbody>
+        </table>
+      </div>
+    
+          <ul><li>是否支持股價：支持度偏強。理由：近 3 個月營收動能轉弱、最新月營收年增雙位數、正式 EPS 年增、營業利益率較去年同期改善、ROE 較去年同期下滑、營業費用率較去年同期下降。</li></ul>
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>五、融資融券與法人 / 籌碼成本</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>最新值</th>
+              <th>近 5 日</th>
+              <th>近 20 日</th>
+              <th>籌碼成本</th>
+              <th>說明</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>融資餘額</td><td class="cell-number">46,734</td><td class="cell-number">-239</td><td class="cell-number">-</td><td class="cell-number">-</td><td>槓桿籌碼</td></tr>
+<tr><td>融券餘額</td><td class="cell-number">826</td><td class="cell-number">-126</td><td class="cell-number">-</td><td class="cell-number">-</td><td>放空籌碼</td></tr>
+<tr><td>外資</td><td class="cell-number">52,052,205</td><td class="cell-number">89,007,714</td><td class="cell-number">489,603,741</td><td class="cell-number">-</td><td>法人主力</td></tr>
+<tr><td>投信</td><td class="cell-number">1,212,000</td><td class="cell-number">-3,683,293</td><td class="cell-number">-6,842,375</td><td class="cell-number">-</td><td>內資趨勢</td></tr>
+<tr><td>法人合計</td><td class="cell-number">55,787,312</td><td class="cell-number">84,630,201</td><td class="cell-number">482,198,689</td><td class="cell-number">-</td><td>整體方向</td></tr></tbody>
+        </table>
+      </div>
+    
+          <ul><li>融資餘額目前 46,734，變化 -11,256（-19.41%）。</li><li>近 5 日融資餘額目前 46,734，變化 -239（-0.51%）。</li><li>融券餘額目前 826，變化 190（29.87%）。</li><li>融資融券只能用來觀察槓桿籌碼變化，不等同真實散戶或主力成本。</li><li>最新一日法人合計買賣超 55,787,312，近 5 日合計 84,630,201，近 20 日合計 482,198,689。</li><li>最新一日分項：外資 52,052,205、投信 1,212,000、自營商自行 678,058、自營商避險 1,845,049、外資自營商 0。</li><li>法人買賣超可作籌碼方向輔助，但不代表完整持股成本；成本仍需搭配成交量密集區與價格區間估算。</li></ul>
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>公司法說會 / 公告</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>類型</th>
+              <th>標題</th>
+              <th>來源</th>
+              <th>初判</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>2026-05-22 18:20</td><td>公告</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQZ2kzY01ZMFkxQVJzc2NMY0laZmRCZHpQNmVhZmlFekFJTjllS0pNcW85Y3dhX0NMMHZTVWxJYzd2cWY1dzdHV3REV3ZJbFZ5SXFoMFczYm9ickk1VC1rN0prQVRjLTRJU285Z2pIV2xNVVotLUowNF91SEUxeEM4M1lKWU1YbzlGbUE?oc=5" target="_blank" rel="noopener noreferrer">【26Q1財報公告】鴻海(2317) Q1 營收2.1195兆元，創下近2季新低，季減18.68%、年成長28.9%-CMoney 小編 - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>中性</td></tr>
+<tr><td>2026-05-18 23:43</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9WT1FRVWlELUxTeldKam9ESmJ6M2l5U3JqNGJockhqNEVhdFBVNmxYdmFoLWVTZ3liNG44a2tkN1dLUkRyLVdxWjdHbnhEVFJIdlZSY3ZaNzgyZw?oc=5" target="_blank" rel="noopener noreferrer">鴻海、廣達兩大 AI 伺服器龍頭法說會 分別透露哪些重要訊息？ | 產業熱點 | 產業 - 經濟日報</a></td><td>經濟日報</td><td>利多</td></tr>
+<tr><td>2026-05-14 12:33</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMiwgJBVV95cUxQVk5XbXhSNVNHMTJzR0stbGZZWlI1c2h4enVjVTI0WWhPakY3Y19TVFc5dFpSUTBINjI5cjBnWHUwRWFfU1dmM0tzX3gta0FyaTI0WmNZT01rMXBMYW94aWl5VnpUWDJtOEViTjVRRHp4SG1HcV9WcFQ2aDJYck9lRmctZnRObHh6aG02OW9wblVCcnRGUkFtVUtUVEhqcjFnNk4yMUE4eGdmdEJyd2NhV1Jic1JfRVlhZHdQMU0yd1U3LVVmNENDRVF4dWFDYVVEOVh6UUcweHlza3d6WWJUb2VmMHd3eTN0V29udTZSbmw0a0VJVVBCTmJrUG1vMGVEMDlKaFBOZksxY3dDN1JxTjVyYjRaSFBUb1AzbXUyMG8xQWRVajh6TUNEQ2Z0Yl9ZREcyTmpYdnBwMzZpX3BNUkVB?oc=5" target="_blank" rel="noopener noreferrer">鴻海法說會下午登場 法人「喊買」 調升目標價 - MSN</a></td><td>MSN</td><td>利多</td></tr>
+<tr><td>2026-04-05 15:52</td><td>公告</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1wT0FEeFFCTmVWOXNxTUxndTlINDNRVk9UQnliUFoyVDBHRWhtZHNhbi1Na3NSdWt0MUVLVnYtb1Fra3Z1NFdKSXRVTHJYd2EtQWpQcGY4RjU?oc=5" target="_blank" rel="noopener noreferrer">2317 鴻海 - 【營收快訊】鴻海(2317)公告03月營收-股市爆料同學會 - CMoney</a></td><td>CMoney</td><td>中性</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>相關利多利空新聞</h2>
+          <ul><li>新聞面偏利多（利多 2 / 利空 0 / 中性 10）。</li><li>下表僅列最近一個月新聞，依發布時間由新到舊排序；利多/利空為標題關鍵字初判，仍需閱讀原文確認。</li></ul>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>區域</th>
+              <th>初判</th>
+              <th>新聞標題</th>
+              <th>來源</th>
+              <th>時間</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE05dllGb1FtS2RoSjlhT1BWcmFkSWg4dnpCOHhGOHRYb0dhdl9aeW5TbXVvVVg0RGYxaEJ6UVlNYU1ENTVXUGktSEc3QnN5eldOQlR0MF9rUmc?oc=5" target="_blank" rel="noopener noreferrer">2317 鴻海 - 望能今非昔比，旺股價直上雲霄-股市爆料同學會 - CMoney</a></td><td>CMoney</td><td>2026-05-24 07:12</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFAtWkpWb1Zram5fTTYyN05iN0NMTExfTXdmQi1GdUhta3hrZHpEb2FfeVdXdi1CT1RWWHlyT2RCWm9VWTRjMjJsNWdYcmFqUkJLc2FCdjh6cGc?oc=5" target="_blank" rel="noopener noreferrer">2317 鴻海 - 東元法說會解析影片-股市爆料同學會 - CMoney</a></td><td>CMoney</td><td>2026-05-24 03:04</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOS0dGaExZeEdDNjVkdVhRZnFZbkp1VXBxVDg0aFNRaUFGNDcyNTBBY09kbE8tMm1UNWIxN2hrSkFzbDZkSngxaUozQ21fZVA5eUI0U0dzX1RnQ1p0YXFWYVpHeUVqUUI3b1R1MGNQamVMaXBfVTlPWWNJbTlSM3RxSHhmQklLa2dDU3VZQjU5d0I?oc=5" target="_blank" rel="noopener noreferrer">【即時新聞】鴻海(2317)蘋果WWDC新品發表 供應鏈動向受矚目 - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>2026-05-24 01:18</td></tr>
+<tr><td>國外</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMikwRBVV95cUxNbEhvTGFfd3BCWnliclpmY0xURHNrbDQxdVpSSnJkQ1JtOVI4N0hzcWE4Skl5dnUwY1Y3UGo4RnBMYldZQzFzZDUxZXB0bVFUR3dKcXM4aHVDdEEwOUdDZjM0Wl8tcFFUalFSY0tVczNkaHJVTTNwdUkxUG42SnNMZjdKbWt6aWZCSDhXM2hRLUNDLWJ2OE03QUtTTTN0emQwWDdURDRPaFpGOUVJQ29NcWJCU1YtRjNIN183RkZfYVpvSEdVLW9KTzhlVzRYSGlBWnVCR0JWZUw2d095aUdHWGx3RkR4djZUMGpidFdia3hsalZmZ2xuUkxGaUhRbE9idVM3Vk5vWUlQNTREd1dSbl9iNUJxWXk2V252d1hqQXhKSzRvVXhKbWZjNWxQTlV3WlFJNmExVXIyTVRjN1N0VmVDZGpmay1TbC1LVG1ROEJmUzR5aUN6RmhFWjdmRDY3NjVkZ3RNQ3BacTFRTmVJa0ptRWtGcEhUSWpSM09VNnp0X21QT3FIcEtDWVdSajZFOTNWcnV5YVZSU1lncjZHb2ZLRmVXLXRjeHZSVm5MMXlpaTZOTFpqY2MxUmszT0xIY0dBczR4djYtNFNZU3pRTXFhNWRZM0lRREZ5RjZqNEdmX1lqd1VyQUJLVktJYTd3bG5pODFITWt0dGRfWFdiQnlXazNWTldkNFZvUXZDMmduM1k?oc=5" target="_blank" rel="noopener noreferrer">2025記憶體概念股還值得留意嗎？什麼是DRAM和Flash？記憶體產業知識、台廠供應鏈全告訴你！ - sinotrade.com.tw</a></td><td>sinotrade.com.tw</td><td>2026-05-21 13:52</td></tr>
+<tr><td>國內</td><td>利多</td><td><a href="https://news.google.com/rss/articles/CBMijgNBVV95cUxQbHBVYUF0OXItV0JUYkh1SF9JT0NwWjZHd2syNGFSSHRSY1pES3l1dnhCcnU4bHZMVjFhWWQ0VFRpRmNPUFVyVF9JZW45MjF0ZG1zYzFSbS1zY2JEZTlwaUlJbXljMndMeUpJZVBibVFPdDhaM0hib1VrTDI4ZThZZkFBRm5CZVZtOEEwTURudFFVblZrSlNscjBmLUpBNV9LNmRYZ3ZVRGE2YTVQZU1lUmgtdVdMS002NkRjZXh4T0Q0ZTdxN1RLenp3Z0dfZlJmX3RyeHA5ZGlJNjk2RGFNYlBjY0dWS2VhLVBmOTltMS1SQjZDb2hRM0lQTjhEZGJLbi1GRkRXa1hqbXZESnBaZ1dtMllYR1JyRGE2ZWU2aENodWluc21CMjZleUhaa2lpWmdzMmFnQVBfUmpOVlJVRnNQWnNSSkhaQTBoeTZtZkVPNUtweWFrNE9NdEZoZlVoZVNoeU1DUFV3eW1vYWgxMXNURXZORXd0MFltX2MycEcwRktIWERlRlVSR0l4Zw?oc=5" target="_blank" rel="noopener noreferrer">【法說會本週登場】鴻海、凌華、樺漢營收數據與邊緣 AI 佈局｜豐雲學堂 2026 年 05 月 - sinotrade.com.tw</a></td><td>sinotrade.com.tw</td><td>2026-05-14 15:00</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1lbzU4SW90MTBvRzJPZTRxUnJTT1JSZW9IVGptcmhtQ2tCYUN0ZDhidUxidEF3OENWUURDYXlrNEpNT19kazRxS29venZ1R2dadnRSZkVRbnFWUllCdnByYXZCbWpOZDVReXc?oc=5" target="_blank" rel="noopener noreferrer">鴻海(2317)法說來了！股價7天漲18％、外資連10天買超30萬張為哪樁？劉揚偉會端什麼好菜上場- 上市櫃 - 旺得富理財網</a></td><td>旺得富理財網</td><td>2026-05-14 15:00</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNeERIOFIxeXhjcHpMbG4tSTZCWHpBRmtpNnJvc0FoUTAxVXM3WW9rTG1oTzRIRXN0a2dBUW1JeDhodTRNckZNOE9uWGJ2VnBpNTFQSDc0WENJQnZNWGliLWRISjVfUDhSS0ZRUEFKc0hfLUpGOExlV0lkOGJFUjBzYw?oc=5" target="_blank" rel="noopener noreferrer">台股4萬1還能進場？「1警訊」快下車！杜金龍曝台積電(2330)、台達電(2308)買點：鴻海(2317)1壞處「已賣一半」 - 今周刊</a></td><td>今周刊</td><td>2026-05-08 15:00</td></tr>
+<tr><td>國內</td><td>利多</td><td><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOa3NBc3A5eVd5UHU2Y3UzdkR4TFcwbzhSMVZSSnFHZlplcm14OE1rdFJwNENBd3h5cUNXSkh3S2FzOTd6dE8wUHZQWTZreVVhd2FxenRxMmZfMXFFTXYxeklTNDA2Q3d2TWNlU3U1Smp0S1VwUV9yX1ZEYV9ocGppR3NuQ2dkMnVjemE1cUxqZkg?oc=5" target="_blank" rel="noopener noreferrer">【即時新聞】鴻海(2317)營收創高獲外資狂掃！這「3檔概念股」買氣升溫接棒上攻？ - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>2026-05-07 15:00</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE54U2ZoMGl2NkxmMTNZRGVxdXB5SUdxZlozbUJ2LWVLcklOVHhMUlRLc2VKUHpqVV9oYVJKNEtkSEhCVzdacF9PUVNfVnV0eXpxcVQ1UXNKUWpLcFNIakF6WWtrWXB2a29yRWpNaV9FaW9kak50eXc?oc=5" target="_blank" rel="noopener noreferrer">營收速報 - 鴻海(2317)4月營收8,320.98億元年增率高達29.74％｜新聞快訊｜豐雲學堂 - sinotrade.com.tw</a></td><td>sinotrade.com.tw</td><td>2026-05-05 15:00</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMijANBVV95cUxQLWQ0dnNUUkRLa05FNkM4RXBUWVlmY2JQZFpaeTFIMEFsRXI2amRRbDg0LV81X2NidlVRVkhuNzdvTlM1NTl1LW9PMTFHM1Z1SmlDOHVHLTUyRXZmLWlaSW9uLWMzMEd6aFJsWEhYUDByQXBweURjTzMxcTBrYVU5TlQxY3BEeHVENGF3UFFDbDNxazBOelhRN3lPcWVUNF96TGgybDZLT25RVDkySk9EUHYxeXRsOXQ1S3JtTWpfeTc0NEpWTkw0X3daMGhGdkFxcWY2Z2psWnZFVHJZbjMxYmZvNUhlZFRyYlR2YVBxeEViVGtEMWFJQ0FEU3ZiVlQxQ1luS0NmRWxBMW9LYjhnTkdWV1RUSWRnVlVpOVJmTnpab2V5ejFzcFJNNFZnWi1Zdk1LbEkxbWJSUmJUSHcxRENyMVdUSkNxWTUxcjYtNlNHUUZRNGRBR1lVZ3RCY0pUTjFubEQ5RnYxSjA0ZEhrVU9STkVubXZhbXA1SXFMTHI4MEY1M21tdGtZU1U?oc=5" target="_blank" rel="noopener noreferrer">鴻海營收行情待發酵？今漲半根衝刺240元大關 分析師這樣看 - Yahoo股市</a></td><td>Yahoo股市</td><td>2026-05-04 15:00</td></tr>
+<tr><td>國外</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQWjVKcmlhOVpwdS01Z2d5d04xQmhZM3ZVODZvbE1JcFhWeXRRV2dwZTFTQWZtWHpMaEFiMEYwMEt3cjZzTEJsUmxpdDE0cWlrV1dRNzNPWkRyQ1VXUnRnZWlFWGkwb1RzLW5mZVlZaURCTkczV1NydHdNWkhLSHVfZUhpemU5NFpCeVFNNGVrb29NRVJsSGFpOXNHelFoZw?oc=5" target="_blank" rel="noopener noreferrer">軟體工程時代翻盤！類比IC工程師年薪中位數171萬元霸榜，這3類職位晉升百萬俱樂部 - 數位時代</a></td><td>數位時代</td><td>2026-04-29 15:00</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMi2wNBVV95cUxOb2ptWkRiZVZhN0dSa2xsc193T0VSX212NlRicUVwWndwVTRiME1VYnpDaHpIdjV6MEF5bXpacTdKeGtySnZFM0JILU9XQzIycWtXSVdmUk1rcXdPWnhKZzlfXzhBS2JEWE12REJvZ0NSSHZUT05JRWdESW5pZi1FTUQtU2J1alhkeDdxM2NqQzlDdkZZZm9jM1Z3VUVuRGk2WkV3UkRlbzBTTXY2S1VCcFBJR1R3RzJNM1BIRW1uMGExRFgzcGV2YW9DLXVWcTdDSkhHLVlEZ2ViYkZnUlE5cXAwU3pCM0NmelQ3Q2FvYjhjZk9FZ1k3ZndPSUZUQ3BDbUlDZURNZmc5S1VjTWVoUHJHN1c0Y1J0bHRMM0p4SDdxM1c0Y0pQVkdvUWpodWJKc2J5R2p4bEtpcEp5R1NmQUlxV3BKOVlvYVBIcU5iMmpFeVpqVENYaUJhazZmQjAtc0Q4QlNMcDd5X19hTWVQbUF3aEtuWGJMdFkxSnc0MVVIVVNhUFFMbzRsbjR4eWpEWTVDNjhHZkxXandzeWYwdUxZNDc1cFpFOTlKNmhOY0FDSTdENkxkZ0JjRjFtY19MSmV6LXRDeHpyTHdUSV84WE1qVjZ4THBPMEpz?oc=5" target="_blank" rel="noopener noreferrer">【Hot台股】鴻海漲2%後臉綠...網哭「981A也救不了公公嗎？」 分析師：非轉弱訊號 - Yahoo股市</a></td><td>Yahoo股市</td><td>2026-04-27 15:00</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel chart-panel">
+          <h2>01_日線完整技術與籌碼分析圖</h2>
+          <img src="01_日線完整技術與籌碼分析圖.png?v=2026-05-25T18:03:05+08:00" alt="01_日線完整技術與籌碼分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>02_周線完整技術與趨勢分析圖</h2>
+          <img src="02_周線完整技術與趨勢分析圖.png?v=2026-05-25T18:03:05+08:00" alt="02_周線完整技術與趨勢分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>03_月線完整技術與長期趨勢分析圖</h2>
+          <img src="03_月線完整技術與長期趨勢分析圖.png?v=2026-05-25T18:03:05+08:00" alt="03_月線完整技術與長期趨勢分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>04_權證完整分析圖</h2>
+          <img src="04_權證完整分析圖.png?v=2026-05-25T18:03:05+08:00" alt="04_權證完整分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>05_同族群比較分析圖</h2>
+          <img src="05_同族群比較分析圖.png?v=2026-05-25T18:03:05+08:00" alt="05_同族群比較分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>06_基本面分析圖</h2>
+          <img src="06_基本面分析圖.png?v=2026-05-25T18:03:05+08:00" alt="06_基本面分析圖">
+        </section>
+        
+    
+    <section class="panel">
+      <h2>進階分析與資料明細</h2>
+      <p class="notice">以下內容預設收合，需要時再展開。</p>
+    </section>
+    
+    <details class="panel detail-panel">
+      <summary>四、量價結構</summary>
+      <div class="detail-body"><ul><li>最新成交量 122,990,174，近 20 日均量 94,071,797，近 60 日均量 78,280,881。</li><li>最新量能約為近 20 日均量的 1.31 倍，近 20 日上漲日 10 天、下跌日 8 天。</li><li>量價型態：價漲量增。價格上漲且量能高於均量，屬較健康的偏多確認；若同步突破壓力，訊號可信度提高。</li><li>累積交易量分布可觀察過去一年成交量較集中的價格帶，作為籌碼密集區參考。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>四之二、乖離率與 ATR 波動區間</summary>
+      <div class="detail-body"><ul><li>MA5 乖離 4.95%：乖離接近中性</li><li>MA10 乖離 4.99%：乖離接近中性</li><li>MA20 乖離 7.44%：正乖離偏高，趨勢偏強但不宜忽略追高風險</li><li>MA60 乖離 18.06%：正乖離偏大，短線容易震盪或拉回</li><li>ATR14 約 9.93，以最新收盤估算，明日常態波動參考區間約 251.07～270.93；若開盤跳空或爆量，區間需重新評估。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>六、權證與市場情緒</summary>
+      <div class="detail-body"><ul><li>權證定位：本段只用權證資料觀察現股人氣與未來漲勢機率，不作權證買賣建議。</li><li>權證對現股訊號：中性。認購與認售沒有形成明確單邊結構，仍以現股量價為主。</li><li>本次匹配權證 864 檔；認購 768 檔、認售 96 檔，認購/認售檔數比 8.00。</li><li>履約價分布 34.25～390.00，中位數 265.00；標的最新收盤 261.00。</li><li>價內 / 近價外結構：認購價內 317 檔、認購 10% 內價外 138 檔；認售價內 1 檔、認售 10% 內價外 6 檔。</li><li>成交金額合計 0，其中認購 0（0.00%）、認售 0（0.00%）；認購認售成交接近，前 5 大成交占比 0.00%。</li><li>權證名詞說明：近價外認購代表市場押注區離現股不遠，對現股續漲的參考性通常高於深價外；深價外認購代表想像空間大，但確認力較弱。</li><li>履約價熱區：認購成交加權履約價因成交金額不足暫不估算；認售成交加權履約價因成交金額不足暫不估算。認購成交中，近價外 10% 內占 0.00%，深價外認購占 0.00%。</li><li>以權證角度看目前股價：權證履約價熱區資料不足，暫時無法用權證角度評估目前股價位置。</li><li>權證情緒分型：本次屬於「中性觀察」。近價外認購成交金額 0，深價外認購成交金額 0，近價外認售成交金額 0，深價外認售成交金額 0。認購資金未明顯集中在近價外區，對現股續漲的輔助力較有限。</li><li>資金集中度：前 5 大權證成交占 0.00%。成交分散度較高，單一權證對整體情緒的影響較小。</li><li>輔助結論：認購與認售資金沒有形成強烈單邊結構，權證籌碼暫時只能視為市場熱度參考，主要方向仍應回到現股 K 線、均線與量能。</li><li>白話解讀：權證這邊還沒有給出很清楚的方向，先看股票本身有沒有突破或跌破。簡單說，權證是在看市場有沒有跟著股票一起熱起來；它可以加分或扣分，但不能單獨決定股價方向。</li><li>未來一個月現股輔助推估：現股技術面初步為「偏多延續」。若價格維持在 MA20 / MA60 之上、量能不縮，且認購成交沒有明顯退潮，偏多情境較容易延續；若現股跌破支撐，即使認購仍熱，也要先降低權證訊號權重。</li><li>一個月觀察區間：上方先看 263.50，再看近 60 日高點 263.50；下方先看 242.93，再看近 20 日低點 219.50。突破近 20 日高點 263.50 可視為偏多確認；跌破近 20 日低點 219.50 則偏多情境失效；MA20 242.93 是短中線強弱分界。</li><li>現股判斷用法：近價外認購有量、認售沒有明顯放大、且現股同步站穩均線時，權證資料可視為現股續漲的加分項；若權證很熱但現股不漲，則視為人氣過熱而非追價確認。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七、同族群比較</summary>
+      <div class="detail-body"><ul><li>比較依據：精準子群組：AI伺服器與代工 / 伺服器 / EMS 組裝（高：同主題且同產品/商業模式子群組）</li><li>比較清單：鴻海(2317)、廣達(2382)、緯創(3231)、緯穎(6669)、英業達(2356)</li><li>同期間相對報酬排序：緯穎(6669) 136.71%、鴻海(2317) 70.59%、英業達(2356) 53.52%、緯創(3231) 28.45%、廣達(2382) 19.21%</li><li>此圖為精準子群組比較，但仍應確認各公司產品比重與客戶結構差異。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之一、每日 ETF 持股該股增減名單</summary>
+      <div class="detail-body"><ul><li>ETF 持股最新快照：2026-05-25。</li><li>目前解析到 37 檔 ETF 持有此股，其中主動式候選 7 檔，已檢查 7 檔最近一次持股異動。</li><li>最新異動命中 1 檔：加碼 / 新增 0 檔，減碼 / 刪除 1 檔。</li><li>名單：00401A 主動摩根台灣鑫收：減碼 -2 張。</li><li>此資料為 ETF資訊網依公開持股快照差異推估，非基金公司實際成交紀錄；一般被動 ETF 多僅列持有快照，不強行推估每日買賣。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之二、集保股權分散資訊</summary>
+      <div class="detail-body"><ul><li>集保戶數合計 1,079,685 人，集保股數合計 14,028,648,626 股。</li><li>小額持股（1～10,000 股）占 12.82%；中階持股（50,001～400,000 股）占 7.78%；大額持股（400,001 股以上）占 69.76%，其中百萬股以上占 67.07%。</li><li>集保結構判斷：大額持股集中度中等。籌碼結構不算分散，仍需搭配法人、融資與量價確認是否有人持續承接。</li><li>散戶化觀察：小額持股占比中性，需觀察是否隨股價上漲而增加。</li><li>限制：TDCC 集保資料通常是每週最後營業日結束後的持股級距統計，能看籌碼集中或分散，但不能知道是哪位自然人或哪家主力在買賣。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十、主力名單及主力 / 散戶分佈限制</summary>
+      <div class="detail-body"><ul><li>不得宣稱可取得完整自然人大戶名單。</li><li>券商分點、法人與融資融券僅能作為主力 / 大戶疑似結構輔助，不等同真實大戶。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十一、產圖完成檢查表</summary>
+      <div class="detail-body"><ul><li>01～03 為真實 K 線圖；04～06 為狀態圖並列出資料限制。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>每日 ETF 持股該股增減名單表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>ETF代號</th>
+              <th>ETF名稱</th>
+              <th>動作</th>
+              <th>增減張數</th>
+              <th>比較區間</th>
+              <th>原始摘要</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>00401A</td><td>主動摩根台灣鑫收</td><td>減碼</td><td class="cell-number">-2</td><td>2026-05-21 → 2026-05-22・張數最小 1 張、金額以最新收盤價估算</td><td>2317 鴻海精密工業 -2 張 -52 萬 減碼</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保戶股權分散表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>級距</th>
+              <th>持股分級</th>
+              <th>人數</th>
+              <th>股數</th>
+              <th>占集保庫存比例</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>1</td><td>1-999 股</td><td class="cell-number">395,445</td><td class="cell-number">92,121,846</td><td class="cell-number">0.65%</td></tr>
+<tr><td>2</td><td>1,000-5,000 股</td><td class="cell-number">523,470</td><td class="cell-number">1,089,619,669</td><td class="cell-number">7.76%</td></tr>
+<tr><td>3</td><td>5,001-10,000 股</td><td class="cell-number">82,654</td><td class="cell-number">619,689,549</td><td class="cell-number">4.41%</td></tr>
+<tr><td>4</td><td>10,001-15,000 股</td><td class="cell-number">28,065</td><td class="cell-number">350,560,766</td><td class="cell-number">2.49%</td></tr>
+<tr><td>5</td><td>15,001-20,000 股</td><td class="cell-number">14,544</td><td class="cell-number">260,359,259</td><td class="cell-number">1.85%</td></tr>
+<tr><td>6</td><td>20,001-30,000 股</td><td class="cell-number">13,873</td><td class="cell-number">344,899,077</td><td class="cell-number">2.45%</td></tr>
+<tr><td>7</td><td>30,001-40,000 股</td><td class="cell-number">6,213</td><td class="cell-number">218,141,204</td><td class="cell-number">1.55%</td></tr>
+<tr><td>8</td><td>40,001-50,000 股</td><td class="cell-number">3,782</td><td class="cell-number">172,405,558</td><td class="cell-number">1.22%</td></tr>
+<tr><td>9</td><td>50,001-100,000 股</td><td class="cell-number">6,537</td><td class="cell-number">455,374,431</td><td class="cell-number">3.24%</td></tr>
+<tr><td>10</td><td>100,001-200,000 股</td><td class="cell-number">2,695</td><td class="cell-number">366,860,044</td><td class="cell-number">2.61%</td></tr>
+<tr><td>11</td><td>200,001-400,000 股</td><td class="cell-number">986</td><td class="cell-number">270,928,701</td><td class="cell-number">1.93%</td></tr>
+<tr><td>12</td><td>400,001-600,000 股</td><td class="cell-number">348</td><td class="cell-number">170,407,633</td><td class="cell-number">1.21%</td></tr>
+<tr><td>13</td><td>600,001-800,000 股</td><td class="cell-number">150</td><td class="cell-number">104,151,025</td><td class="cell-number">0.74%</td></tr>
+<tr><td>14</td><td>800,001-1,000,000 股</td><td class="cell-number">116</td><td class="cell-number">103,885,244</td><td class="cell-number">0.74%</td></tr>
+<tr><td>15</td><td>1,000,001 股以上</td><td class="cell-number">807</td><td class="cell-number">9,409,259,620</td><td class="cell-number">67.07%</td></tr>
+<tr><td>16</td><td>差異或調整數</td><td class="cell-number">2</td><td class="cell-number">15,000</td><td class="cell-number">0.00%</td></tr>
+<tr><td>17</td><td>合計</td><td class="cell-number">1,079,685</td><td class="cell-number">14,028,648,626</td><td class="cell-number">100.00%</td></tr></tbody>
+        </table>
+        </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>權證成交金額前 5 名表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>權證代號</th>
+              <th>權證名稱</th>
+              <th>類型</th>
+              <th>履約價</th>
+              <th>成交金額</th>
+              <th>成交張數</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>03010X</td><td>元展10</td><td>認購</td><td class="cell-number">34.25</td><td class="cell-number">0</td><td class="cell-number">0</td></tr>
+<tr><td>030145</td><td>鴻海統一54購02</td><td>認購</td><td class="cell-number">198.62</td><td class="cell-number">0</td><td class="cell-number">0</td></tr>
+<tr><td>030174</td><td>鴻海凱基63購01</td><td>認購</td><td class="cell-number">248.00</td><td class="cell-number">0</td><td class="cell-number">0</td></tr>
+<tr><td>03022X</td><td>富展01</td><td>認購</td><td class="cell-number">34.33</td><td class="cell-number">0</td><td class="cell-number">0</td></tr>
+<tr><td>03045T</td><td>鴻海凱基5C售07</td><td>認售</td><td class="cell-number">160.00</td><td class="cell-number">0</td><td class="cell-number">0</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保股權歷史趨勢表格</summary>
+      <div class="detail-body">
+        <p class="notice">目前資料源只提供單一期資料，先呈現最新集保分布；有歷史期數時會自動比較變化。</p>
+        <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>總戶數</th>
+              <th>小額 1～10,000 股</th>
+              <th>大額 400,001 股以上</th>
+              <th>大戶 1000 張以上</th>
+              <th>小額變化</th>
+              <th>大額變化</th>
+              <th>大戶變化</th>
+              <th>戶數變化</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>20260522</td><td class="cell-number">+1,079,685</td><td class="cell-number">12.82%</td><td class="cell-number">69.76%</td><td class="cell-number">67.07%</td><td class="cell-number">-</td><td class="cell-number">-</td><td class="cell-number">-</td><td class="cell-number">-</td></tr></tbody>
+        </table>
+        </div>
+    </div>
+    </details>
+    
+  </main>
+</body>
+</html>
