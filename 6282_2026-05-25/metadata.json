@@ -1,0 +1,455 @@
+{
+  "stock_id": "6282",
+  "stock_name": "康舒",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "電子零組件業",
+  "data_period": "2025-05-26 to 2026-05-22",
+  "data_date": "2026-05-22",
+  "ohlcv_start": "2025-05-26",
+  "ohlcv_end": "2026-05-22",
+  "last_daily_k_date": "2026-05-22",
+  "valid_trading_days": 242,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-05-26 to 2026-05-22 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "margin_period": "2025-05-26 to 2026-05-22 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "warrant_period": "TWSE report_date=1150524 (OK; call=195, put=14, with_exercise_price=209)",
+  "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-05-26 to 2026-05-22; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=242; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260522 (OK; rows=17)",
+  "etf_holding_change_period": "2026-05-22 (OK; holders=3, active_candidates=0; changes=0)",
+  "peer_source_and_list": "FinMind TaiwanStockInfo industry_category candidates + TaiwanStockPrice OHLCV correlation filter; compared=康舒(6282), 佳邦(6284), 迅德(6292), 元山(6275), 良維(6290), 翔名(8091), 胡連(6279); failures=先豐(5349): No TaiwanStockPrice rows for 5349; 新揚科(3144): No TaiwanStockPrice rows for 3144; 億杰(3089): No TaiwanStockPrice rows for 3089; 力信(2469): No TaiwanStockPrice rows for 2469; 乾坤(2452): No TaiwanStockPrice rows for 2452; 樺晟(3202): No TaiwanStockPrice rows for 3202; 鎧鉅(1585): 有效交易日少於 60; 旺詮(2437): No TaiwanStockPrice rows for 2437; 奇力新(2456): No TaiwanStockPrice rows for 2456; 定穎(6251): No TaiwanStockPrice rows for 6251; 君耀-KY(6422): No TaiwanStockPrice rows for 6422",
+  "peer_display_list": "康舒(6282)、佳邦(6284)、迅德(6292)、元山(6275)、良維(6290)、翔名(8091)、胡連(6279)",
+  "etf_display_status": "持有快照 2026-05-22，未命中最新異動",
+  "tdcc_display_status": "20260522；大額 47.75% / 小額 26.17%",
+  "warrant_display_status": "209 檔，認購 195 / 認售 14",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "2026Q1 毛利率 24.39%（年變化 -1.20 個百分點）、營業利益率 2.93%（年變化 +3.39 個百分點）；稼動率目前資料源未提供",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 21.46%（年變化 -4.59 個百分點）、稅後淨利率 2.70%（年變化 +3.42 個百分點）、ROE 0.44%（年變化 +0.67 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 31.52 億元；MoM 0.19%；YoY 34.61%；近 3 個月累計 YoY 21.92%；近 12 個月滾動營收 YoY 7.43%；連續 7 個月年增為正",
+  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：最新月營收年增雙位數、PER 位階偏高，股價需要成長性支撐、正式 EPS 年增、毛利率較去年同期下滑、營業利益率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期改善、營業費用率較去年同期下降。",
+  "chip_summary": {
+    "margin_balance": 30165.0,
+    "margin_5d_change": -2467.0,
+    "short_balance": 499.0,
+    "short_5d_change": 312.0,
+    "foreign_latest": 18893816.0,
+    "foreign_5d": 40179390.0,
+    "foreign_20d": 59199950.0,
+    "trust_latest": -4000.0,
+    "trust_5d": 137000.0,
+    "trust_20d": -222000.0,
+    "total_latest": 20531671.0,
+    "total_5d": 43561246.0,
+    "total_20d": 62930461.0
+  },
+  "news_display_status": "新聞面偏利多（利多 4 / 利空 0 / 中性 8）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 4 則（法說會 0 / 公告 4）",
+  "summary_one_line": "偏多強勢，偏多震盪；站穩 MA10 52.65 並突破 58.30 才有續攻機會，跌破 MA20 50.65 轉防守。",
+  "summary_overall": "偏多強勢；收盤站上 MA5, MA5 高於 MA10, MA10 上方且投信 5/10 日偏買",
+  "summary_tomorrow": "偏多震盪",
+  "summary_one_month": "偏多延續",
+  "summary_support": "第一 52.68 / 第二 52.65 / 強 50.65",
+  "summary_pressure": "58.30",
+  "summary_atr": "ATR14 3.24，常態區間 54.16～60.64",
+  "summary_key_watch": "價漲量增；明日觀察 MA5 52.68 / MA10 52.65",
+  "summary_risk": "跌破 MA10 52.65 且放量，短線轉弱；跌破 MA20 50.65 則整理擴大",
+  "summary_warrant": "認購成交占 0.00%，近價外認購 31 檔，前五大成交占 0.00%",
+  "summary_warrant_signal": "中性",
+  "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
+  "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
+  "generated_at": "2026-05-25T09:05:46+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-05-25\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-05-25\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-05-25\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-05-25\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-05-25\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-05-25\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [],
+  "tdcc_rows": [
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 51672,
+      "shares": 4287526,
+      "ratio": 0.5
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 75535,
+      "shares": 147979160,
+      "ratio": 17.28
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 9081,
+      "shares": 71843099,
+      "ratio": 8.39
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 2557,
+      "shares": 32823852,
+      "ratio": 3.83
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 1533,
+      "shares": 28650241,
+      "ratio": 3.34
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 1195,
+      "shares": 30795004,
+      "ratio": 3.59
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 563,
+      "shares": 20402130,
+      "ratio": 2.38
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 347,
+      "shares": 16273806,
+      "ratio": 1.9
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 567,
+      "shares": 40015694,
+      "ratio": 4.67
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 212,
+      "shares": 29714085,
+      "ratio": 3.47
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 87,
+      "shares": 24331278,
+      "ratio": 2.84
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 28,
+      "shares": 13421282,
+      "ratio": 1.56
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 16,
+      "shares": 10751188,
+      "ratio": 1.25
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 5,
+      "shares": 4636437,
+      "ratio": 0.54
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 65,
+      "shares": 380118850,
+      "ratio": 44.4
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 1,
+      "shares": 8000,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260522",
+      "stock_id": "6282",
+      "level": 17,
+      "level_label": "合計",
+      "people": 143463,
+      "shares": 856035632,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260522",
+      "total_people": 143463,
+      "total_shares": 856035632,
+      "small_ratio": 26.17,
+      "mid_ratio": 10.98,
+      "large_ratio": 47.75,
+      "million_ratio": 44.4,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-05-25\\07_集保股權歷史趨勢圖.png",
+  "news_rows": [
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "6282 康舒 - 下午15：00法說見真章-股市爆料同學會 - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-23 17:49",
+      "published_ts": "2026-05-23T17:49:19+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WS2gybDdTQ1JSYjJmVEZ2M3VrVk5sTUlzbWlMeTVYNDFLenhtSm9mT09ObFRvcjFDQlR2b0dkcEhBUFF2LVhVVWdwVTVMR0hfMVJXS2Nodmk?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "討論牆 | 盤中速報 - 康舒(6282)股價拉至漲停，漲停價50.3元，成交9,092張 - LINE TODAY",
+      "source": "LINE TODAY",
+      "published": "2026-05-21 17:31",
+      "published_ts": "2026-05-21T17:31:46+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9WbUxGTGViYmtORHI4c2E3d0YzY2pfaTl6dkFaVmZQU1h3Tk41bWNpeVVZTEZRamRsMEtMUFVnejh5eTdkRDdJSU9MVmJJN095U1VwZUpOcUxHZmRDaTNjazR0SW0?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "康舒 6282 - 自由時報",
+      "source": "自由時報",
+      "published": "2026-05-21 15:00",
+      "published_ts": "2026-05-21T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWVllUnBSalVNQS16cTZvaWZ0Q041ekZPZmhmQXJXdl85aGY2c3RvTlczTjVHcFh3SDY0eGk4NTJGcWM0SVQyVnEtN2gwRERBU1dSUU1mSFR3aF9JXzhDN2dENk0zNTV1dEhGN1VIWmdhdXlEMGxjTjJMdmN4VncxODJzb3VIRlRHbTN2ZlBjbUh3bzBNR1lGZm1GMGhtOFQ1UklrcWZWaUk?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "康舒渡過併購轉型陣痛期 營運持續升溫 價漲量增中 長線看好 - 理財周刊",
+      "source": "理財周刊",
+      "published": "2026-05-21 11:54",
+      "published_ts": "2026-05-21T11:54:29+08:00",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5zaWI2SHRsQ2VwbE10WG1lQnBKSVpPVml1a0ozekkwcEZXMzMwTHFsb0kyajdXVUxoUlluTFM0ako5Y3BzT1ZCNXgwLXZyS2N3OTczcWJ4RHJqSUd5dXZSUjFiSFhULU9PdHg1WmJUdw?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "【即時新聞】康舒(6282)營收創高！AI電源需求爆發，這「3檔概念股」資金輪動升溫！ - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-12 15:00",
+      "published_ts": "2026-05-12T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRnRfNnBiSEw5YmVrbXVWZGFoTFZ3S2V4RG9DZEtBUDdmRTZPYWwzdVplanhaLS00cVppdkQwcTQ4M2NCWlRqSEhnT3RFSFZDLUkxNkxDclYyS2xnY000MzVKZHFJUHVMR2J3VjNxM2dGd3J0ZEp6UmIzZVFpUE94aWt5a25vM2J5VUQtdHZaVS0?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "營收創高、EPS暴增640%！「電源供應大廠」首季EPS達0.27元今直飆漲停持續深化AI基建供應鏈角色 - Yahoo股市",
+      "source": "Yahoo股市",
+      "published": "2026-05-11 15:00",
+      "published_ts": "2026-05-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxOYWJ5LVMtbGdTQm1lT05kc0NqMUZ6QkktYlhPOEVsT1UzVzZqaGV4c0lhd0M3cGtYQVQxd0k2T1hha291Y3gyVmpIU1ZneHZIUVJMYWxEZExPU3ZaZ3o0ZDJISmNVZkItbVZYeGpsNDcydXcxaHBiWnBvemhsWUxCa3ZjT19CZ3BXS0JPSzBGZ0VfS1ZpNkQ2c3NXN0djLXZLRjNPNWlGeWNMdVRJanVsMlMycU5XWHd1REJ4WkRVUTd0ZUFXNXA3REY5NjVHajlQRzhtd1NteGUxUHZLcnVkeGNYUUNyNzJvRlhWanRsVFhjYkczUGJscVZwUGR1YzJ4aGF0QU8xeWUxVVJ1NnpaUnROUkRwQzZ5ZnpvRGlFUjJLTVhnUlVfLWVaemJLWXpSaXhxbWd0WmI3WW10ZGtlcklEX2R2c0lWbnhOUUwyYkFaMGl1anJwb0FKZE1BeVo4RjhXZjZhZTN2cGF3?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "【12:32 即時新聞】康舒(6282)亮燈漲停55.4元，受燃料電池與AI電力題材點火＋外資主導買盤推升技術面轉強 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-11 15:00",
+      "published_ts": "2026-05-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMWJVOHBkS0k0UmdHbjRvblM4cVVVQldIT3ptTnFLSzlqWWhyZjFYS0JxRmR3dkZPb0RleVpYZ1lGdmc3cUpVaXhnem5rNjVPdGNMZXFmN0hPbFdwbHFUVFJUZzZrU2t5NE8wQWRMWFdQZ2YzWF9JRVI2UUFQaDFTQi1EUHVpemlka0w2Tmdn?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "康舒4月營收年增逾3成，企業用電源占比近5成 - MoneyDJ理財網",
+      "source": "MoneyDJ理財網",
+      "published": "2026-05-11 15:00",
+      "published_ts": "2026-05-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPclNfV05WTk40bmcyWkZmV2ozUlJqclF6MmNmVVZ3TU9hRHZocnNjTUV3OW1YS2xzb3pzYzZhb0ZJSFVIVl96bTVfU29qU3FrLUJOS0dUZ1A4TUdfUFFzS3R1TGZPR0luNlJ6UnhURXJhUlhnOG5LenRYanE2b015enpxZGRYTWctTndlQ3NGclBrUQ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "【即時新聞】康舒(6282)營收創高亮燈漲停！這「5檔概念股」買盤狂湧接棒？ - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-11 15:00",
+      "published_ts": "2026-05-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRC1IOEQ0MmhYMWFHWUx0MHpjS3ZHRVlENlBFZTdSYmZYQ1JQYWRmMi1UOF9RamVKRnB3WFA4Zk9LNzRyT1VnWVVROWNGbnVWWV9tV0R2ak1LMjV2TDl3ZmhjUVJrMTlTbERNWnpwVkZKYVRTTFBid3EtbEN5Q3RoQlduaEFNbUFVVnNhMGh0V2c?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "焦點股》康舒：營收傳捷報 帶量攻漲停 - 自由財經",
+      "source": "自由財經",
+      "published": "2026-05-11 15:00",
+      "published_ts": "2026-05-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1rMGIyMFprX3BxZG9nUTNycXJMWXFuSkhGaW5fM1pvUHdhN25pWVc1RE9uSzhRM2tyNWM0NlVvc2dHb1dFQ2FLakRKc2tCeXdZQ1RyZ3paQjRZZi13RVlF0gFkQVVfeXFMT3JTVDVoVzNpZDRuTGJaeWNURTBMSmtsS25oY3FkMmE5SHFNcU5FU0Q1N2xKY25FX2JYcFVmbTJsS0pQUVB0aVlpT1h6YUxFQi03TFN2ekQxMXZLZDU5NG85ejBTQw?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "6282 康舒- 下週必大漲-股市爆料同學會 - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-08 17:12",
+      "published_ts": "2026-05-08T17:12:52+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9kVk9JenV0b0J4bmFNSDRBdWhCOWt4QXdlczVfTm81aHBiUFZwdWpEZzR4bTlsZFQxOXdNaUtUdFAzOE5zMXlqM3pVYU95dW1oYjNVSF9oSnA?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "6282 康舒- 康舒4月營收應該又是年成長20%以上.-股市爆料同學會 - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-03 07:27",
+      "published_ts": "2026-05-03T07:27:41+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ub3RySjZXNi1kakoxYzMxa1pVa21SU1JlWnRNczhsdklmYnE0VVpjT1h3WWRYY1FZWTY5NmxzaGRKbmVITjdwNFRUejdJYjZPSnhka0FwOWs?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【26Q1財報公告】康舒(6282) Q1 營收85.8076億元，創下近2季新低，季減6.71%、年成長20.54%-CMoney 小編 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-14 15:00",
+      "published_ts": "2026-05-14T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVG0yYThWQzRRVVZfb3U5Y2psb2Z1MTEwZEoybHVfY09scjJ2UDlieWtQcjRwdG5Uc0NhaDlodUxyUERHWEJFT0NPaEZtQVF3NndPQV9xbHVjWXRCODB1RDBPcW0xN1hHZVl6d3BwWTVVYVlfeElVNThheXVCOWhPa1J1MGhvSjBnZ2c?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【26Q1財報公告】康舒(6282) Q1 營收85.8076億元，創下近2季新低，季減6.71%、年成長20.54% - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-12 09:50",
+      "published_ts": "2026-05-12T09:50:05+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1jRDZUcl9xeDAyMGNFZENNV2lFdVpTVjEtTGk1eXR6UDFoTlR3MGpCUE1lVXR0X0V5UDdZSDdZRDNEVmJXWW9DQkppTXhUMF94QUg4SFdSS1BPM0VRUjhjdnBPU20tazQ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【2026/04月營收公告】康舒(6282) 四月營收31.52億元，表現亮眼、呈現雙成長，創近4個月以來新高，年增34.61% - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-09 09:20",
+      "published_ts": "2026-05-09T09:20:03+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9xZnBaSEMyMzFoUjA1dzBEQXROS1NUU0I4NlE5UjV6d0dYWTFhOWE2c2NYeUxwS0NNUTRsTWwzZnA3ZjdCR0l3R01NQ0lZV3R6NTdkck9OTkZGaGpBaEhQNnMyUlc1Y2c?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【2026/03月營收公告】康舒(6282) 三月營收31.46億元，表現亮眼、呈現雙成長，創近3個月以來新高，年增18.03% - CMoney",
+      "source": "CMoney",
+      "published": "2026-04-10 15:00",
+      "published_ts": "2026-04-10T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qTVJTUVRiQklycS1WNXRWZEVzMF91Slp4cWdhaVc2WVFhaDZNaGFnWHY4WFhRSTc3LXE1VDNjMkFhUVdUSlF1eGRUeUx0d0ZjX1pWeVl4aEMwOUdvdEFJUjJWRXpzVzg?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    }
+  ],
+  "warrant_top_rows": [
+    {
+      "warrant_id": "03384T",
+      "warrant_name": "康舒台新5B售01",
+      "call_put": "認售",
+      "exercise_price": 41.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "039084",
+      "warrant_name": "康舒永豐55購01",
+      "call_put": "認購",
+      "exercise_price": 37.61,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "039115",
+      "warrant_name": "康舒元富54購01",
+      "call_put": "認購",
+      "exercise_price": 35.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "039199",
+      "warrant_name": "康舒元大54購01",
+      "call_put": "認購",
+      "exercise_price": 35.16,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "039264",
+      "warrant_name": "康舒凱基54購01",
+      "call_put": "認購",
+      "exercise_price": 36.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    }
+  ],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-05-25\\index.html"
+}
