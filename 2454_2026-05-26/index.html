@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>聯發科(2454) 台股技術分析報告</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+      background: #f4f6fa;
+      color: #172033;
+    }
+    header { padding: 24px 18px 18px; background: #14213d; color: #fff; }
+    main { max-width: 1180px; margin: 0 auto; padding: 18px; }
+    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0; }
+    h2 { margin: 0 0 14px; font-size: 20px; }
+    .panel {
+      background: #fff;
+      border: 1px solid #dce2ee;
+      border-radius: 8px;
+      margin: 16px 0;
+      padding: 16px;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    .table-scroll { overflow-x: auto; width: 100%; }
+    th, td {
+      border-bottom: 1px solid #e7ebf2;
+      padding: 9px 8px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th { width: 230px; color: #526070; font-weight: 600; }
+    .cell-number { text-align: right; font-variant-numeric: tabular-nums; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #e5e9f0;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .analysis ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .deep-analysis {
+      border-color: #b8c7dc;
+      background: #fbfdff;
+    }
+    .deep-analysis-body { line-height: 1.78; color: #243044; }
+    .deep-analysis-body h2,
+    .deep-analysis-body h3,
+    .deep-analysis-body h4 {
+      margin: 18px 0 8px;
+      font-size: 17px;
+      color: #14213d;
+    }
+    .deep-analysis-body p { margin: 8px 0; }
+    .deep-analysis-body ul,
+    .deep-analysis-body ol { margin: 8px 0 12px; padding-left: 22px; }
+    .deep-analysis-body li { margin: 4px 0; }
+    .detail-panel { padding: 0; overflow: hidden; }
+    details > summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      font-weight: 700;
+      color: #172033;
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary::after { content: "展開"; float: right; color: #64748b; font-weight: 500; }
+    details[open] > summary::after { content: "收合"; }
+    .detail-body { padding: 0 16px 16px; }
+    .detail-body ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+    .summary-card {
+      border: 1px solid #dde4ef;
+      border-radius: 8px;
+      padding: 12px;
+      background: #f8fafc;
+      min-height: 82px;
+    }
+    .summary-card span { display: block; color: #64748b; font-size: 13px; margin-bottom: 7px; }
+    .summary-card strong { display: block; color: #111827; font-size: 15px; line-height: 1.45; }
+    .notice { line-height: 1.7; color: #3f4b5f; }
+    @media (max-width: 720px) {
+      header { padding: 18px 14px 14px; }
+      main { padding: 10px; }
+      h1 { font-size: 20px; line-height: 1.35; }
+      h2 { font-size: 16px; margin-bottom: 10px; }
+      .panel { border-radius: 6px; margin: 10px 0; padding: 10px; }
+      table, tbody, tr, th, td { display: block; width: 100%; }
+      tr { border-bottom: 1px solid #e7ebf2; padding: 8px 0; }
+      th, td { border-bottom: 0; padding: 2px 0; font-size: 13px; }
+      th { color: #64748b; }
+      .table-scroll th, .table-scroll td { display: table-cell; width: auto; min-width: 120px; padding: 7px 8px; border-bottom: 1px solid #e7ebf2; }
+      .table-scroll tr { display: table-row; border-bottom: 0; padding: 0; }
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .summary-card { min-height: auto; padding: 9px; }
+      .summary-card strong { font-size: 13px; }
+      .analysis ul { padding-left: 18px; font-size: 13px; }
+      .deep-analysis-body { font-size: 13px; }
+      .deep-analysis-body h2,
+      .deep-analysis-body h3,
+      .deep-analysis-body h4 { font-size: 15px; }
+      details > summary { padding: 11px 10px; font-size: 14px; }
+      .detail-body { padding: 0 10px 10px; font-size: 13px; }
+      .notice { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>聯發科(2454) 台股技術分析報告</h1>
+    <div>產生時間：2026-05-26T21:03:12+08:00</div>
+  </header>
+  <main>
+    
+    <section class="panel conclusion">
+      <h2>結論摘要</h2>
+      <div class="summary-grid"><div class="summary-card"><span>一句話</span><strong>偏多強勢，偏多震盪；站穩 MA10 3586.50 並突破 4440.00 才有續攻機會，跌破 MA20 3387.50 轉防守。</strong></div>
+<div class="summary-card"><span>明日觀察</span><strong>價漲量增；明日觀察 MA5 3830.00 / MA10 3586.50</strong></div>
+<div class="summary-card"><span>支撐</span><strong>第一 3830.00 / 第二 3586.50 / 強 3387.50</strong></div>
+<div class="summary-card"><span>壓力</span><strong>4440.00</strong></div>
+<div class="summary-card"><span>權證對現股</span><strong>小幅加分</strong></div>
+<div class="summary-card"><span>獲利率</span><strong>2026Q1 毛利率 46.30%（年變化 -1.84 個百分點）、營業利益率 15.35%（年變化 -4.26 個百分點）</strong></div></div>
+    </section>
+    
+    
+    
+        <section class="panel analysis">
+          <h2>八、基本面 EPS / 月營收</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>摘要</th>
+              <th>重點</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>月營收趨勢</td><td>2026-04 月營收 467.37 億元；MoM -26.07%；YoY -4.14%；近 3 個月累計 YoY -1.33%；近 12 個月滾動營收 YoY 5.85%</td><td>營收動能</td></tr>
+<tr><td>獲利率</td><td>2026Q1 毛利率 46.30%（年變化 -1.84 個百分點）、營業利益率 15.35%（年變化 -4.26 個百分點）</td><td>毛利率 / 營業利益率</td></tr>
+<tr><td>季報細項</td><td>2026Q1 營業費用率 30.95%（年變化 +2.41 個百分點）、稅後淨利率 16.34%（年變化 -2.92 個百分點）、ROE 3.30%（年變化 -4.16 個百分點）</td><td>營業費用率 / 稅後淨利率 / ROE</td></tr>
+<tr><td>財報推算股價</td><td>推算中樞 785 元；區間 707～864 元；EPS法 1007 元（近四季 EPS 62.91、目標本益比 16.0 倍）；ROE/PB 法 269 元；現價 4265.00 元</td><td>EPS / ROE / 獲利率</td></tr>
+<tr><td>估值狀態</td><td>月營收、估值與正式 EPS 已取得</td><td>PER / PBR / EPS</td></tr></tbody>
+        </table>
+      </div>
+    
+          <ul><li>是否支持股價：支持度偏弱。理由：近 3 個月營收動能改善、最新月營收年增偏弱、PER 位階偏高，股價需要成長性支撐、正式 EPS 年減、毛利率較去年同期下滑、營業利益率較去年同期下滑、稅後淨利率較去年同期下滑、ROE 較去年同期下滑、營業費用率較去年同期上升。</li></ul>
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>五、融資融券與法人 / 籌碼成本</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>最新值</th>
+              <th>近 5 日</th>
+              <th>近 20 日</th>
+              <th>籌碼成本</th>
+              <th>說明</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>融資餘額</td><td class="cell-number">11,531</td><td class="cell-number">2,142</td><td class="cell-number">-</td><td class="cell-number">-</td><td>槓桿籌碼</td></tr>
+<tr><td>融券餘額</td><td class="cell-number">115</td><td class="cell-number">-7</td><td class="cell-number">-</td><td class="cell-number">-</td><td>放空籌碼</td></tr>
+<tr><td>外資</td><td class="cell-number">1,367,297</td><td class="cell-number">-3,496,640</td><td class="cell-number">-3,106,127</td><td class="cell-number">-</td><td>法人主力</td></tr>
+<tr><td>投信</td><td class="cell-number">-598,432</td><td class="cell-number">-448,869</td><td class="cell-number">1,528,728</td><td class="cell-number">-</td><td>內資趨勢</td></tr>
+<tr><td>法人合計</td><td class="cell-number">976,145</td><td class="cell-number">-2,678,985</td><td class="cell-number">-1,171,559</td><td class="cell-number">-</td><td>整體方向</td></tr></tbody>
+        </table>
+      </div>
+    
+          <ul><li>融資餘額目前 11,531，變化 2,531（28.12%）。</li><li>近 5 日融資餘額目前 11,531，變化 2,142（22.81%）。</li><li>融券餘額目前 115，變化 -96（-45.50%）。</li><li>融資融券只能用來觀察槓桿籌碼變化，不等同真實散戶或主力成本。</li><li>最新一日法人合計買賣超 976,145，近 5 日合計 -2,678,985，近 20 日合計 -1,171,559。</li><li>最新一日分項：外資 1,367,297、投信 -598,432、自營商自行 325,701、自營商避險 -118,421、外資自營商 0。</li><li>法人買賣超可作籌碼方向輔助，但不代表完整持股成本；成本仍需搭配成交量密集區與價格區間估算。</li></ul>
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>公司法說會 / 公告</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>類型</th>
+              <th>標題</th>
+              <th>來源</th>
+              <th>初判</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>2026-05-14 15:00</td><td>公告</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQcTk2TGhZdnUzQzZMSmo4SDV5WkYzdVAxZlRfNjdadlFneDNuLXNzdmpBV1hBbFpXMTN6S3VBZW9nSlZqSDhmRV9HNDJkVFpZVjQ5UElvcEZ6djBIT1RrbW1CMlYwaXZfaUpUNHI2OTZHNGlBMGZ3OXNmaHBLclRiMDBfcUdidEdEWWc?oc=5" target="_blank" rel="noopener noreferrer">【26Q1財報公告】聯發科(2454) Q1 營收1,491.5051億元，創下近2季新低，季減0.69%、年衰退2.71%-CMoney 小編 - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>利空</td></tr>
+<tr><td>2026-05-10 02:59</td><td>公告</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9UMDNjM19nMXlTQkctbC1HelE5d19wd2lod2xvVEltU3lUSlZvM2pnY3R4bUV2T25EazhRVGdtQUEzNnVwczRJTnJTVE0xbUJHVFhDUUt4NWc?oc=5" target="_blank" rel="noopener noreferrer">2454 聯發科 - 史上最大尾！證交所公告最新6處置股聯發科被「抓去關」-股市爆料同學會 - CMoney</a></td><td>CMoney</td><td>中性</td></tr>
+<tr><td>2026-05-08 15:00</td><td>公告</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPZUtoMEt5c0gxVDhmMmdTNnREYmFZQ0JMZ3VxYllKd2poMVZ3aUZWWHd4RzljbmdYRlA1aElGbjJaT1dKZEtlZFhjUUR1Q0x2eWRtUkotclNHSFM0c0tzUTk5WkJEMVhNeHJPcFdkdjEwNmhMYWplNkxXVjdFTjhkdG53eHRCUjV2Q3c?oc=5" target="_blank" rel="noopener noreferrer">【2026/04月營收公告】聯發科(2454) 四月營收467.37億元，營收雙減，年減4.14%-CMoney 小編 - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>中性</td></tr>
+<tr><td>2026-05-06 06:03</td><td>公告</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9GODZxRW13QlF5SWdsMFp3YjhFcTJwYjF3V2pDS2VwblpPdnY1MXVqVnU5TWo5bjg5Y0F5MThLZXl6a3JxaWM4N3FZeVVWSkIzS29vc0lvZnM?oc=5" target="_blank" rel="noopener noreferrer">2454 聯發科 - 快訊／聯發科也入列！證交所公告6處置股新名單-股市爆料同學會 - CMoney</a></td><td>CMoney</td><td>中性</td></tr>
+<tr><td>2026-04-28 15:00</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1KWlVpTXdXdWp4RXkzaFotaV8yTjNjblAyUE80MU8yYVBSckRXYnk1QzU1OWlkVkhCak5vZlZEN3JzYjFiN1B2SXNhWDNVcXZUUUpWc1ZtcGwzN1dreG5GVk5ldVJBY2s?oc=5" target="_blank" rel="noopener noreferrer">【即時新聞】聯發科(2454)狂飆87％創歷史天價！法說會前夕，散戶還能追嗎？ - CMoney</a></td><td>CMoney</td><td>中性</td></tr>
+<tr><td>2026-04-27 15:00</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPUGpIVXF6OEt4VE00UmVoZVowQVNQTEVaX0puUHR6RFJ2RXE4SjRXcjRuWmlNWGRuOS0zYTgwekhYemZXT3AxRkFOb0R3aUp1VGcyUEVXV2ZVam4tNTh5T1ZkR3NBbU12RExDMDY2RmJ4bkIzTEIwRllDWndQTkRBRg?oc=5" target="_blank" rel="noopener noreferrer">聯發科(2454)股價閃見2575元又拉回平盤，法說會前最後上車機會？3營運重點待蔡力行說清楚｜今周重磅 - 今周刊</a></td><td>今周刊</td><td>中性</td></tr>
+<tr><td>2026-04-13 15:00</td><td>公告</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNLW9seFBWT3M5NHE2VHZObUZVUllsRlBkS3ZMdzVYcGo0bWR6TGt4VVNNVS1zWGNfdFk3TmdYTzlCN0h5ZDZlRld5ZkswR2h6WmkwN09yMENRWE1PVzFpbGJTVXFCSVZBSG41RTVEUHdwR21sSllCMzktN211aGpMYTYyMUo2SGxxRXc?oc=5" target="_blank" rel="noopener noreferrer">【2026/03月營收公告】聯發科(2454) 三月營收632.19億元，表現亮眼、呈現雙成長，創歷史新高，年增12.9% - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>中性</td></tr>
+<tr><td>2026-03-17 15:00</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQUpaSHJRdDc3VnlERVBiSElmQXRweWg1TFNzSlYtcFpVUEIzMnQ1aWlGUUI0VGc2Y3ZwTlBDVXQ5dWMyNTl0NmJ4eWo4Y2tiUE90dlhiS2JtM2t4eFVONVhQMHdackNUZHptcXRSVUlMd21VZFJibWxJRkdkVDN2U2NCakhkSU91?oc=5" target="_blank" rel="noopener noreferrer">個股：聯發科(2454)3/17-3/19參與機構投資人說明會 - 富聯網</a></td><td>富聯網</td><td>中性</td></tr>
+<tr><td>2026-02-05 16:00</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBORDZzWlNZTzhOMExad0dZZ3pIYmpHcjAzUkRTMXZTTERzbS1XZEVaVFpfbVpZSVIzV25FRS1COXhZSmd3VllMTXFVY1Jwa0R4Nmc5RzZYZXdVTDJGcnfSAWNBVV95cUxPTXMtbGRBMXU0X3lBal93N3NiNGVGVnhLYjhFZ0VKbDJhTjlZMzMwUC1DT2pxaHFzY1VDQmVmaERYcll0WFBXQ3BEVWNjT1pKamNlcUVHX3Bwa1FkaXFOcUYtSjQ?oc=5" target="_blank" rel="noopener noreferrer">(2454) 聯發科技法說會 2026/02、聯發科財報、展望與投資亮點｜理柴知道:法說最速報! - 方格子 - Vocus</a></td><td>Vocus</td><td>中性</td></tr>
+<tr><td>2026-02-04 16:00</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE8ybnZyWmljMUEzX1hON0hKRmFrZml5WjJtd0ZLRVJMZjZzY1l6YWVIYWN3ZDdKZkxIcHlYUkFBZFl4WENaMjZRZTF0cEZLdnM?oc=5" target="_blank" rel="noopener noreferrer">〈聯發科法說〉去年Q4雙率續跌、EPS 14.39元 全年每股仍大賺66.16元 - news.cnyes.com</a></td><td>news.cnyes.com</td><td>利多</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>相關利多利空新聞</h2>
+          <ul><li>新聞面偏利多（利多 2 / 利空 0 / 中性 10）。</li><li>下表僅列最近一個月新聞，依發布時間由新到舊排序；利多/利空為標題關鍵字初判，仍需閱讀原文確認。</li></ul>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>區域</th>
+              <th>初判</th>
+              <th>新聞標題</th>
+              <th>來源</th>
+              <th>時間</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE8zbGU2czlBbS1TODVURHZqNHNuVzdJWjd2bVJYeWYxMU4xYksxNVpZcU1XRThOdk5WZG5ZaGRuLXNnRlNKNHVYUVhSLUlwWW1fOXRCS0FpQjZoT1NoTTdXY0c2WGM?oc=5" target="_blank" rel="noopener noreferrer">討論牆 | 盤中速報 - 聯發科(2454)股價拉至漲停，漲停價4245.0元，成交1,294張 - LINE TODAY</a></td><td>LINE TODAY</td><td>2026-05-26 16:55</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNUldkblFSSnRTZk9MQktfVjZsQkVsSDNmQjluUmpEWGlNRWdNRHlCbE5NcXprZ0dyWm40cXVZVUNsTlZ2bFJwSmNKa0c1d1JXTDJOZ1ZhWmc2a3hiLWNmNVJwWlBGRVNXaW55VFMtNERBTlA0c0IzRGxnY29tU2JoZ3VB?oc=5" target="_blank" rel="noopener noreferrer">半導體與散熱廠獲單，台積電聯發科營收攀升-財經焦點情報站 - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>2026-05-26 10:14</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOV0JsUEV6emVoREdMenZQVjhYRVhVRUNGb2xFQWFZQXpGa0h5Qk9FOEprSk1ibnZ0NGF2dkNqMnV0QTdfeS0wUHFjaEdkWXJScVZ3d3NhRWVPMXZvYXRLcTZDdUdNMHV2WWFONkhqM2dNMDYwdExfNkVobEtUcGlPUA?oc=5" target="_blank" rel="noopener noreferrer">聯發科大漲原因？股價又漲停1470→4245元能買？打通任督二脈變武林高手：打天下的還有「這群大俠」 - 今周刊</a></td><td>今周刊</td><td>2026-05-26 07:24</td></tr>
+<tr><td>國內</td><td>利多</td><td><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNMGVSa0ROMlpBYy1rTVBFeVZONHFsTmxyTmRRSzFXT1BQTTRnNVJpWEM1NXRUOGhXcThCNHROMmVrT0M0Z3N5WG15YkdLMkk1RXk1SXlRQnFIWVNSVTdKQ2hRMkVha0szLTI3UWVydWJidTdrYTB0empsTDFDMlgxN0pidm5OcmlsSU5VX0FB?oc=5" target="_blank" rel="noopener noreferrer">【09:26 即時新聞】聯發科(2454)亮燈漲停至4245元，AI ASIC題材發酵＋股價逼近歷史高檔多頭結構強勢 - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>2026-05-25 09:26</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOOUtkV04ySUFXZm5RMUR4c1IzN0FpUXI0RHFDdXFfbHVSVnJ5Wkxqd1NqLXN1dVAxMVFrYXIxTFVvdlcyeHRQRFJOSnNJdENLRjJKYWdzTnVJOVNEbGtCWk8yM1piM1AtNnJxZ2ROamlPUEp5d0pYSlQ2Vk81STMwMQ?oc=5" target="_blank" rel="noopener noreferrer">聯發科3865元還能買？老手曝3底氣撐股價！00891、00927、009802...6檔「含發ETF」跟著賺 - 今周刊</a></td><td>今周刊</td><td>2026-05-22 11:57</td></tr>
+<tr><td>國內</td><td>利多</td><td><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE83dUJ0UERvOGNJVFBGQ0liV2ctSURpdFE5VDJVeTE3QTNzOUVoaTVHYUI2cmF0cHMwdnNlWTFDNlpwRU9Mdk4wMHhSRzFuems?oc=5" target="_blank" rel="noopener noreferrer">《價值型投資 最新產業研究報告》聯發科（2454-TW）先進封裝雙線佈局，AI ASIC 營運轉型動能強勁 - news.cnyes.com</a></td><td>news.cnyes.com</td><td>2026-05-21 11:46</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMinANBVV95cUxNRUZyM216a01ZLUdOVWRILVZ3NlpzWVlmSkx6azBWYjBUT0RUNmdQNC1RQmRkVXBEM01YaXM4TUk5TzlORVJCSG9abHNIQlFtZDY1cnNrbnJ2WFAwbi0tb0dtc01qN3l4cTJVV0FvQ3FNNFhfS2lVNlJhS2c3YUQxWGtfdnlqcWdDWTdwWndwODlqdHpLV2lIa1oyeS1ndExxVS1pQWdadDdfN25GT2dLZkFUYS1lUEtqMHJPRFF5VUdHTllCN2pSejFreDdxbE52TzVzWnJra0dYUXV4ekpvenlRSWNRVE5mNUNlNmJ0S3YzYmhaWUJkVTFhWGNtWjNCNW0yNEVPNV8tNXdTUkV6aFdZVVVRNFBLQXhVZ1hpcXNSVmxYLUVHR3VyOThScERjQUNndFFzN1pTQTB2dXh1cHRqTWlLN3d3WDhNTDE1azRXUXNmOVVGRl9GVHpRcWZRZ2VobFQ0dGhCTUoyZzFuSmJJQTlFODlKd3I1Ml91YXYtN3RQYnNfeS1fN2p5Wm1uMzJ6blZjZmNjTGJk?oc=5" target="_blank" rel="noopener noreferrer">發哥猛虎出閘！聯發科出關首日 開盤不到10分鐘亮燈漲停鎖3550元 - Yahoo股市</a></td><td>Yahoo股市</td><td>2026-05-21 09:20</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBSVERJMkVsTDJZYmFZR2lPNFU0SEdJSEh3ME1kRXNoSEgtQUFQMHRsWV90Y3RGd2h4TmwtQzRlNWNWUlV6ZEFLNlZXdXFFdUh5UHFyMVN1MmpVWmwzQkFj0gFkQVVfeXFMT1U3aGhtVG1KbFlERFEydm14OEtHczl2bmxBWUJPMmt6YTZHVXBmSm5rQ1hqclE2YXkwSF9FcDVzaG1sOGxrRXNBZFYyRWNUOF96ZnpINXU5TDNtbjhKbzhvSXpEeA?oc=5" target="_blank" rel="noopener noreferrer">焦點股》聯發科：明天出關 股價提前發動 - 自由財經</a></td><td>自由財經</td><td>2026-05-20 10:53</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1UWVJNM1pTaDRKbC1hY0ZESW9xbkFjWWFoZVlSYjBwNDFlbjdiZkRPOVZCVm9tMmlpTlBCRFJPWU9iNDhfN0tKbEtrU3lYbXl4U2RiQjR3?oc=5" target="_blank" rel="noopener noreferrer">聯發科(2454)賣太早拍斷大腿？狂飆逼近4千元還能追？台股老先覺杜金龍算給你看：「二次上車」最佳接刀的絕佳價位 - 優分析UAnalyze</a></td><td>優分析UAnalyze</td><td>2026-05-16 15:00</td></tr>
+<tr><td>國外</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9DcFYycjVHLVJpTGRyNHJ4RFAwZVVBeVk0VExiX1BqdXoya1dicVhVYTVLZ21wcGlwdnNlc1VaRHZYYUtqZG95aFlfSHRfTGlnWWhGdEp4RUE?oc=5" target="_blank" rel="noopener noreferrer">傳聯發科、高通空出台積電部分產線 AMD蘇姿丰撿到槍 - 自由時報</a></td><td>自由時報</td><td>2026-05-10 15:00</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFA3cTUyRUFEUkJWQnJzSTZoZXpfRHFHWnpOeHVjUWVPS19oSU1zTVI1OW53MzNUeDl1RmFCZ0RrSUN5bnJUa21ST0FPUlQ1VGhuenfSAVdBVV95cUxOWXVEa2ZSUXNzQmtzRVVPLUVyLUItX0JKOEZkRVFIaTNWVHloZGFYbHRDakg5akpaandla282b2NXR0tPYk1hTUhYS1dsd2JfWnRKRXpSbDg?oc=5" target="_blank" rel="noopener noreferrer">聯發科（2454）狂飆破3000元買不下手？00891含發量逾12％還享15％高息 - UDN</a></td><td>UDN</td><td>2026-05-06 15:00</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMi8gJBVV95cUxQWm9JTlBKTkpOS1dWQnhEazh4ekVkZ1ZTc0NzMGVfcDFqZEtJRnZQekRTU21sNFpsWHhneTVxTHNweEI4SDFwekFqTkdUalJCT2JIOTBVS083ckhMQTJoQzZGN05WVFdqMUxXT0FFNS01NDRpTk92Y3dSVUNKUVJpWlZadm1SYURhel91dEJMWGR3SENMNExOV2l3eG42NWZYRG5wQ1pYT0JxUEJjWVVjRElBdUYyUzROd0ZMUE9xV3lBd2NtYTY0WE1iUlAxcEE0UWNxeG42anJONXM1RnFvMlFhUDRtNnQyQllBQTF0NWtaeFNhUFpYVGpqakd0bF9DX1RIRDJ2SlNGa1psTzRzc1hZTFo3QVFWbEVQWjJKSE9PTzRSLU5wc1p0dUJCb2ZZRnk2NXdMajdUSDFERlpUeXdRc1lUX1RtVHJEcUxuRnc3Rm9ic0k3SVpLNGtqNlBOaERpMHU5cW4wOTB0eVhiMFBn?oc=5" target="_blank" rel="noopener noreferrer">史上最大尾！聯發科今起抓去關禁閉 股價震盪下跌近4% - Yahoo股市</a></td><td>Yahoo股市</td><td>2026-05-06 15:00</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel chart-panel">
+          <h2>01_日線完整技術與籌碼分析圖</h2>
+          <img src="01_日線完整技術與籌碼分析圖.png?v=2026-05-26T21:03:12+08:00" alt="01_日線完整技術與籌碼分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>02_周線完整技術與趨勢分析圖</h2>
+          <img src="02_周線完整技術與趨勢分析圖.png?v=2026-05-26T21:03:12+08:00" alt="02_周線完整技術與趨勢分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>03_月線完整技術與長期趨勢分析圖</h2>
+          <img src="03_月線完整技術與長期趨勢分析圖.png?v=2026-05-26T21:03:12+08:00" alt="03_月線完整技術與長期趨勢分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>04_權證完整分析圖</h2>
+          <img src="04_權證完整分析圖.png?v=2026-05-26T21:03:12+08:00" alt="04_權證完整分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>05_同族群比較分析圖</h2>
+          <img src="05_同族群比較分析圖.png?v=2026-05-26T21:03:12+08:00" alt="05_同族群比較分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>06_基本面分析圖</h2>
+          <img src="06_基本面分析圖.png?v=2026-05-26T21:03:12+08:00" alt="06_基本面分析圖">
+        </section>
+        
+    
+    <section class="panel">
+      <h2>進階分析與資料明細</h2>
+      <p class="notice">以下內容預設收合，需要時再展開。</p>
+    </section>
+    
+    <details class="panel detail-panel">
+      <summary>四、量價結構</summary>
+      <div class="detail-body"><ul><li>最新成交量 19,540,872，近 20 日均量 12,401,821，近 60 日均量 11,729,836。</li><li>最新量能約為近 20 日均量的 1.58 倍，近 20 日上漲日 12 天、下跌日 7 天。</li><li>量價型態：價漲量增。價格上漲且量能高於均量，屬較健康的偏多確認；若同步突破壓力，訊號可信度提高。</li><li>累積交易量分布可觀察過去一年成交量較集中的價格帶，作為籌碼密集區參考。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>四之二、乖離率與 ATR 波動區間</summary>
+      <div class="detail-body"><ul><li>MA5 乖離 11.36%：正乖離偏高，趨勢偏強但不宜忽略追高風險</li><li>MA10 乖離 18.92%：正乖離偏大，短線容易震盪或拉回</li><li>MA20 乖離 25.90%：正乖離偏大，短線容易震盪或拉回</li><li>MA60 乖離 84.97%：正乖離偏大，短線容易震盪或拉回</li><li>ATR14 約 304.29，以最新收盤估算，明日常態波動參考區間約 3960.71～4569.29；若開盤跳空或爆量，區間需重新評估。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>六、權證與市場情緒</summary>
+      <div class="detail-body"><ul><li>權證定位：本段只用權證資料觀察現股人氣與未來漲勢機率，不作權證買賣建議。</li><li>權證對現股訊號：中性。認購與認售沒有形成明確單邊結構，仍以現股量價為主。</li><li>本次匹配權證 757 檔；認購 698 檔、認售 59 檔，認購/認售檔數比 11.83。</li><li>履約價分布 784.79～4305.00，中位數 1863.87；標的最新收盤 4265.00。</li><li>價內 / 近價外結構：認購價內 691 檔、認購 10% 內價外 7 檔；認售價內 0 檔、認售 10% 內價外 0 檔。</li><li>成交金額合計 55,921,280，其中認購 55,238,440（98.78%）、認售 682,840（1.22%）；認購成交較集中，前 5 大成交占比 32.59%。</li><li>權證名詞說明：近價外認購代表市場押注區離現股不遠，對現股續漲的參考性通常高於深價外；深價外認購代表想像空間大，但確認力較弱。</li><li>履約價熱區：認購成交加權履約價約 2744.74，較現股高約 -35.64%；認售成交加權履約價約 2158.99，現股較其高約 97.55%。認購成交中，近價外 10% 內占 6.38%，深價外認購占 0.00%。</li><li>以權證角度看目前股價：目前股價 4265.00 已高於認購成交加權履約價 2744.74，代表部分認購權證已偏價內或接近價內，權證市場對股價的追價輔助可能開始遞減，需留意短線獲利了結。</li><li>權證情緒分型：本次屬於「中性觀察」。近價外認購成交金額 3,524,840，深價外認購成交金額 0，近價外認售成交金額 0，深價外認售成交金額 682,840。認購資金未明顯集中在近價外區，對現股續漲的輔助力較有限。</li><li>資金集中度：前 5 大權證成交占 32.59%。成交集中度中等，資金有熱門標的但沒有完全擠在少數權證。</li><li>輔助結論：認購與認售資金沒有形成強烈單邊結構，權證籌碼暫時只能視為市場熱度參考，主要方向仍應回到現股 K 線、均線與量能。</li><li>白話解讀：權證這邊還沒有給出很清楚的方向，先看股票本身有沒有突破或跌破。簡單說，權證是在看市場有沒有跟著股票一起熱起來；它可以加分或扣分，但不能單獨決定股價方向。</li><li>未來一個月現股輔助推估：現股技術面初步為「偏多延續」。若價格維持在 MA20 / MA60 之上、量能不縮，且認購成交沒有明顯退潮，偏多情境較容易延續；若現股跌破支撐，即使認購仍熱，也要先降低權證訊號權重。</li><li>一個月觀察區間：上方先看 4440.00，再看近 60 日高點 4440.00；下方先看 3387.50，再看近 20 日低點 2485.00。突破近 20 日高點 4440.00 可視為偏多確認；跌破近 20 日低點 2485.00 則偏多情境失效；MA20 3387.50 是短中線強弱分界。</li><li>現股判斷用法：近價外認購有量、認售沒有明顯放大、且現股同步站穩均線時，權證資料可視為現股續漲的加分項；若權證很熱但現股不漲，則視為人氣過熱而非追價確認。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七、同族群比較</summary>
+      <div class="detail-body"><ul><li>比較依據：主題規則：IC設計（中：同主題候選，但未細分產品/商業模式）</li><li>比較清單：聯發科(2454)、瑞昱(2379)、聯詠(3034)、創意(3443)、信驊(5274)、世芯-KY(3661)</li><li>同期間相對報酬排序：創意(3443) 373.99%、信驊(5274) 359.73%、聯發科(2454) 233.20%、世芯-KY(3661) 62.52%、瑞昱(2379) 11.32%、聯詠(3034) -6.20%</li><li>此圖標示為同產業候選比較，不等同精準子產業或主題族群。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之一、每日 ETF 持股該股增減名單</summary>
+      <div class="detail-body"><ul><li>ETF 持股最新快照：2026-05-26。</li><li>目前解析到 67 檔 ETF 持有此股，其中主動式候選 17 檔，已檢查 17 檔最近一次持股異動。</li><li>最新異動命中 4 檔：加碼 / 新增 2 檔，減碼 / 刪除 2 檔。</li><li>名單：00982A 主動群益台灣強棒：減碼 -17 張；00400A 主動國泰動能高息：減碼 -52 張；00988A 主動統一全球創新：加碼 +35 張；00990A 主動元大AI新經濟：加碼 +83 張。</li><li>此資料為 ETF資訊網依公開持股快照差異推估，非基金公司實際成交紀錄；一般被動 ETF 多僅列持有快照，不強行推估每日買賣。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之二、集保股權分散資訊</summary>
+      <div class="detail-body"><ul><li>集保戶數合計 383,938 人，集保股數合計 1,603,895,407 股。</li><li>小額持股（1～10,000 股）占 6.77%；中階持股（50,001～400,000 股）占 13.29%；大額持股（400,001 股以上）占 76.39%，其中百萬股以上占 66.81%。</li><li>集保結構判斷：大額持股集中度高。籌碼較集中，若股價同步站穩均線，趨勢延續性通常較好；但若大額級距鬆動，回檔壓力也會放大。</li><li>散戶化觀察：小額持股占比不高，籌碼相對不分散。</li><li>限制：TDCC 集保資料通常是每週最後營業日結束後的持股級距統計，能看籌碼集中或分散，但不能知道是哪位自然人或哪家主力在買賣。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十、主力名單及主力 / 散戶分佈限制</summary>
+      <div class="detail-body"><ul><li>不得宣稱可取得完整自然人大戶名單。</li><li>券商分點、法人與融資融券僅能作為主力 / 大戶疑似結構輔助，不等同真實大戶。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十一、產圖完成檢查表</summary>
+      <div class="detail-body"><ul><li>01～03 為真實 K 線圖；04～06 為狀態圖並列出資料限制。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>每日 ETF 持股該股增減名單表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>ETF代號</th>
+              <th>ETF名稱</th>
+              <th>動作</th>
+              <th>增減張數</th>
+              <th>比較區間</th>
+              <th>原始摘要</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>00982A</td><td>主動群益台灣強棒</td><td>減碼</td><td class="cell-number">-17</td><td>2026-05-25 → 2026-05-26・張數最小 1 張、金額以最新收盤價估算</td><td>2454 聯發科 -17 張 -7,251 萬 減碼</td></tr>
+<tr><td>00400A</td><td>主動國泰動能高息</td><td>減碼</td><td class="cell-number">-52</td><td>2026-05-25 → 2026-05-26・張數最小 1 張、金額以最新收盤價估算</td><td>2454 聯發科 -52 張 — 減碼</td></tr>
+<tr><td>00988A</td><td>主動統一全球創新</td><td>加碼</td><td class="cell-number">+35</td><td>2026-05-21 → 2026-05-22・張數最小 1 張、金額以最新收盤價估算</td><td>2454 聯發科 +35 張 +1.5 億 加碼</td></tr>
+<tr><td>00990A</td><td>主動元大AI新經濟</td><td>加碼</td><td class="cell-number">+83</td><td>2026-05-21 → 2026-05-22・張數最小 1 張、金額以最新收盤價估算</td><td>2454 聯發科 +83 張 +3.5 億 加碼</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保戶股權分散表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>級距</th>
+              <th>持股分級</th>
+              <th>人數</th>
+              <th>股數</th>
+              <th>占集保庫存比例</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>1</td><td>1-999 股</td><td class="cell-number">338,926</td><td class="cell-number">25,887,030</td><td class="cell-number">1.61%</td></tr>
+<tr><td>2</td><td>1,000-5,000 股</td><td class="cell-number">37,788</td><td class="cell-number">63,041,138</td><td class="cell-number">3.93%</td></tr>
+<tr><td>3</td><td>5,001-10,000 股</td><td class="cell-number">2,692</td><td class="cell-number">19,773,400</td><td class="cell-number">1.23%</td></tr>
+<tr><td>4</td><td>10,001-15,000 股</td><td class="cell-number">933</td><td class="cell-number">11,719,931</td><td class="cell-number">0.73%</td></tr>
+<tr><td>5</td><td>15,001-20,000 股</td><td class="cell-number">527</td><td class="cell-number">9,388,514</td><td class="cell-number">0.58%</td></tr>
+<tr><td>6</td><td>20,001-30,000 股</td><td class="cell-number">550</td><td class="cell-number">13,648,160</td><td class="cell-number">0.85%</td></tr>
+<tr><td>7</td><td>30,001-40,000 股</td><td class="cell-number">300</td><td class="cell-number">10,537,341</td><td class="cell-number">0.65%</td></tr>
+<tr><td>8</td><td>40,001-50,000 股</td><td class="cell-number">243</td><td class="cell-number">11,009,058</td><td class="cell-number">0.68%</td></tr>
+<tr><td>9</td><td>50,001-100,000 股</td><td class="cell-number">685</td><td class="cell-number">49,320,875</td><td class="cell-number">3.07%</td></tr>
+<tr><td>10</td><td>100,001-200,000 股</td><td class="cell-number">471</td><td class="cell-number">67,761,668</td><td class="cell-number">4.22%</td></tr>
+<tr><td>11</td><td>200,001-400,000 股</td><td class="cell-number">340</td><td class="cell-number">96,257,634</td><td class="cell-number">6.00%</td></tr>
+<tr><td>12</td><td>400,001-600,000 股</td><td class="cell-number">139</td><td class="cell-number">68,433,721</td><td class="cell-number">4.26%</td></tr>
+<tr><td>13</td><td>600,001-800,000 股</td><td class="cell-number">64</td><td class="cell-number">44,598,817</td><td class="cell-number">2.78%</td></tr>
+<tr><td>14</td><td>800,001-1,000,000 股</td><td class="cell-number">45</td><td class="cell-number">40,829,939</td><td class="cell-number">2.54%</td></tr>
+<tr><td>15</td><td>1,000,001 股以上</td><td class="cell-number">235</td><td class="cell-number">1,071,688,181</td><td class="cell-number">66.81%</td></tr>
+<tr><td>16</td><td>差異或調整數</td><td class="cell-number">0</td><td class="cell-number">0</td><td class="cell-number">0.00%</td></tr>
+<tr><td>17</td><td>合計</td><td class="cell-number">383,938</td><td class="cell-number">1,603,895,407</td><td class="cell-number">100.00%</td></tr></tbody>
+        </table>
+        </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>權證成交金額前 5 名表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>權證代號</th>
+              <th>權證名稱</th>
+              <th>類型</th>
+              <th>履約價</th>
+              <th>成交金額</th>
+              <th>成交張數</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>072376</td><td>聯發科元富62購01</td><td>認購</td><td class="cell-number">1,875.98</td><td class="cell-number">6,546,100</td><td class="cell-number">541,000</td></tr>
+<tr><td>071061</td><td>聯發科永豐5A購01</td><td>認購</td><td class="cell-number">1,539.27</td><td class="cell-number">5,450,000</td><td class="cell-number">500,000</td></tr>
+<tr><td>055151</td><td>聯發科元大61購11</td><td>認購</td><td class="cell-number">2,630.00</td><td class="cell-number">3,159,100</td><td class="cell-number">577,000</td></tr>
+<tr><td>066186</td><td>聯發科元大64購06</td><td>認購</td><td class="cell-number">4,305.00</td><td class="cell-number">1,781,850</td><td class="cell-number">873,000</td></tr>
+<tr><td>064992</td><td>聯發科群益5C購01</td><td>認購</td><td class="cell-number">3,440.00</td><td class="cell-number">1,290,400</td><td class="cell-number">123,000</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保股權歷史趨勢表格</summary>
+      <div class="detail-body">
+        <p class="notice">目前資料源只提供單一期資料，先呈現最新集保分布；有歷史期數時會自動比較變化。</p>
+        <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>總戶數</th>
+              <th>小額 1～10,000 股</th>
+              <th>大額 400,001 股以上</th>
+              <th>大戶 1000 張以上</th>
+              <th>小額變化</th>
+              <th>大額變化</th>
+              <th>大戶變化</th>
+              <th>戶數變化</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>20260522</td><td class="cell-number">+383,938</td><td class="cell-number">6.77%</td><td class="cell-number">76.39%</td><td class="cell-number">66.81%</td><td class="cell-number">-</td><td class="cell-number">-</td><td class="cell-number">-</td><td class="cell-number">-</td></tr></tbody>
+        </table>
+        </div>
+    </div>
+    </details>
+    
+  </main>
+</body>
+</html>
