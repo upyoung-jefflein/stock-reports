@@ -13,7 +13,7 @@
   "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
   "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
   "institutional_period": "2025-05-26 to 2026-05-26 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
-  "margin_period": "2025-05-26 to 2026-05-25 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_period": "2025-05-26 to 2026-05-26 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
   "warrant_period": "TWSE report_date=1150525 (OK; call=215, put=24, with_exercise_price=239)",
   "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-05-26 to 2026-05-26; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=244; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
   "major_holder_period": "not available; no complete natural person major-holder list claimed",
@@ -31,10 +31,10 @@
   "fundamental_price_estimate_summary": "推算中樞 239 元；區間 215～263 元；EPS法 246 元（近四季 EPS 11.17、目標本益比 22.0 倍）；ROE/PB 法 224 元；現價 303.50 元",
   "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期改善、營業費用率較去年同期下降。",
   "chip_summary": {
-    "margin_balance": 109467.0,
-    "margin_5d_change": 2548.0,
-    "short_balance": 1319.0,
-    "short_5d_change": -434.0,
+    "margin_balance": 110011.0,
+    "margin_5d_change": 7964.0,
+    "short_balance": 1349.0,
+    "short_5d_change": -367.0,
     "foreign_latest": 7330462.0,
     "foreign_5d": 3403984.0,
     "foreign_20d": 38800390.0,
@@ -46,7 +46,7 @@
     "total_20d": 51768423.0
   },
   "news_display_status": "新聞面偏利多（利多 5 / 利空 0 / 中性 7）",
-  "disclosure_display_status": "近 120 天公告/法說追蹤 8 則（法說會 5 / 公告 3）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 7 則（法說會 5 / 公告 2）",
   "summary_one_line": "偏多強勢，偏多震盪；站穩 MA10 303.10 並突破 353.00 才有續攻機會，跌破 MA20 283.88 轉防守。",
   "summary_overall": "偏多強勢；收盤站上 MA5, MA5 低於 MA10, MA10 上方但投信支撐不足",
   "summary_tomorrow": "偏多震盪",
@@ -60,7 +60,7 @@
   "summary_warrant_signal": "小幅加分",
   "summary_warrant_plain": "權證略偏多，但只能當輔助，仍需現股突破壓力確認",
   "summary_warrant_price_view": "現股低於認購主流履約價 4.07%，權證資金仍押續漲",
-  "generated_at": "2026-05-26T19:40:27+08:00",
+  "generated_at": "2026-05-26T20:52:41+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-05-26\\01_日線完整技術與籌碼分析圖.png",
@@ -379,6 +379,17 @@
     {
       "region": "公告/法說",
       "bias": "中性",
+      "title": "南亞科（2408）重大訊息公告 - CMoney",
+      "source": "CMoney",
+      "published": "2026-04-27 15:00",
+      "published_ts": "2026-04-27T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE52SmpILTFTSUgwaU9iSEo4d3pSdEZDenlfakpEd3RpS3FNZGJlTHVXOTZoRHd4V0ZYV0g2bnQ3Nk0xQm5SRmo2aTd5dWR0MWhJSlRYLXlXd0E?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
       "title": "(2408) 南亞科法說會 2026/04、南亞科財報、南亞科展望、南亞科財報投資亮點｜理柴知道:法說最速報! - 方格子 - Vocus",
       "source": "Vocus",
       "published": "2026-04-14 15:00",
@@ -422,17 +433,6 @@
     },
     {
       "region": "公告/法說",
-      "bias": "中性",
-      "title": "【即時新聞】南亞科(2408)今日下午召開重訊記者會，財務主管說明董事會重大決議 - CMoney投資網誌",
-      "source": "CMoney投資網誌",
-      "published": "2026-04-14 15:00",
-      "published_ts": "2026-04-14T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZ3FQaE5hUmRtNjcxLVdaZGFCNGhmTHcxNnpHN2dYQmc2cDB0RnJJb05ZQU11STdaX1lMbjhaN0tMTllKLVZVMXUtcWlaZ04tdE5RZGNERlBfWERmVEdRUS1MeUJyVlRidTVRd1RDbXBYaFFoeXFUT3pxTXdpU1FpcGN0NjVUelVpeUV1bWtLMXM?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字",
-      "kind": "公告"
-    },
-    {
-      "region": "公告/法說",
       "bias": "利多",
       "title": "南亞科法說倒數 法人升目標價至365元、估Q1 EPS 8.07元 - TVBS新聞網",
       "source": "TVBS新聞網",
@@ -441,17 +441,6 @@
       "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9sVHowSFZhYjd5MmROcTJQZ00tbnJQZk52cnFNejhvOVc5UHRtMUFRVzNmWU00eFloZW5pV0hBc2R0c2xMUW5WRnF6SGFsY3c?oc=5",
       "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
       "kind": "法說會"
-    },
-    {
-      "region": "公告/法說",
-      "bias": "中性",
-      "title": "【營收快訊】南亞科(2408)公告03月營收 - CMoney",
-      "source": "CMoney",
-      "published": "2026-04-02 15:00",
-      "published_ts": "2026-04-02T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5oQ2Z5UkpXai1CVEJwWUc0SVA1MmdVUGN0OFMxTGpFdDdpaVQ5UF9NYVZzczY2WTA4cmJpNHRmRWVTeGdubVh2YWFSbmd0akNQNXNLVHZPdFY?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字",
-      "kind": "公告"
     }
   ],
   "warrant_top_rows": [
