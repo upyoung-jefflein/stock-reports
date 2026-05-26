@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>群創(3481) 台股技術分析報告</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+      background: #f4f6fa;
+      color: #172033;
+    }
+    header { padding: 24px 18px 18px; background: #14213d; color: #fff; }
+    main { max-width: 1180px; margin: 0 auto; padding: 18px; }
+    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0; }
+    h2 { margin: 0 0 14px; font-size: 20px; }
+    .panel {
+      background: #fff;
+      border: 1px solid #dce2ee;
+      border-radius: 8px;
+      margin: 16px 0;
+      padding: 16px;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    .table-scroll { overflow-x: auto; width: 100%; }
+    th, td {
+      border-bottom: 1px solid #e7ebf2;
+      padding: 9px 8px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th { width: 230px; color: #526070; font-weight: 600; }
+    .cell-number { text-align: right; font-variant-numeric: tabular-nums; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #e5e9f0;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .analysis ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .deep-analysis {
+      border-color: #b8c7dc;
+      background: #fbfdff;
+    }
+    .deep-analysis-body { line-height: 1.78; color: #243044; }
+    .deep-analysis-body h2,
+    .deep-analysis-body h3,
+    .deep-analysis-body h4 {
+      margin: 18px 0 8px;
+      font-size: 17px;
+      color: #14213d;
+    }
+    .deep-analysis-body p { margin: 8px 0; }
+    .deep-analysis-body ul,
+    .deep-analysis-body ol { margin: 8px 0 12px; padding-left: 22px; }
+    .deep-analysis-body li { margin: 4px 0; }
+    .detail-panel { padding: 0; overflow: hidden; }
+    details > summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      font-weight: 700;
+      color: #172033;
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary::after { content: "展開"; float: right; color: #64748b; font-weight: 500; }
+    details[open] > summary::after { content: "收合"; }
+    .detail-body { padding: 0 16px 16px; }
+    .detail-body ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+    .summary-card {
+      border: 1px solid #dde4ef;
+      border-radius: 8px;
+      padding: 12px;
+      background: #f8fafc;
+      min-height: 82px;
+    }
+    .summary-card span { display: block; color: #64748b; font-size: 13px; margin-bottom: 7px; }
+    .summary-card strong { display: block; color: #111827; font-size: 15px; line-height: 1.45; }
+    .notice { line-height: 1.7; color: #3f4b5f; }
+    @media (max-width: 720px) {
+      header { padding: 18px 14px 14px; }
+      main { padding: 10px; }
+      h1 { font-size: 20px; line-height: 1.35; }
+      h2 { font-size: 16px; margin-bottom: 10px; }
+      .panel { border-radius: 6px; margin: 10px 0; padding: 10px; }
+      table, tbody, tr, th, td { display: block; width: 100%; }
+      tr { border-bottom: 1px solid #e7ebf2; padding: 8px 0; }
+      th, td { border-bottom: 0; padding: 2px 0; font-size: 13px; }
+      th { color: #64748b; }
+      .table-scroll th, .table-scroll td { display: table-cell; width: auto; min-width: 120px; padding: 7px 8px; border-bottom: 1px solid #e7ebf2; }
+      .table-scroll tr { display: table-row; border-bottom: 0; padding: 0; }
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .summary-card { min-height: auto; padding: 9px; }
+      .summary-card strong { font-size: 13px; }
+      .analysis ul { padding-left: 18px; font-size: 13px; }
+      .deep-analysis-body { font-size: 13px; }
+      .deep-analysis-body h2,
+      .deep-analysis-body h3,
+      .deep-analysis-body h4 { font-size: 15px; }
+      details > summary { padding: 11px 10px; font-size: 14px; }
+      .detail-body { padding: 0 10px 10px; font-size: 13px; }
+      .notice { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>群創(3481) 台股技術分析報告</h1>
+    <div>產生時間：2026-05-26T21:17:56+08:00</div>
+  </header>
+  <main>
+    
+    <section class="panel conclusion">
+      <h2>結論摘要</h2>
+      <div class="summary-grid"><div class="summary-card"><span>一句話</span><strong>偏多強勢，偏多震盪；站穩 MA10 40.22 並突破 52.20 才有續攻機會，跌破 MA20 34.08 轉防守。</strong></div>
+<div class="summary-card"><span>明日觀察</span><strong>價跌量增；明日觀察 MA5 43.40 / MA10 40.22</strong></div>
+<div class="summary-card"><span>支撐</span><strong>第一 43.40 / 第二 40.22 / 強 34.08</strong></div>
+<div class="summary-card"><span>壓力</span><strong>52.20</strong></div>
+<div class="summary-card"><span>權證對現股</span><strong>小幅加分</strong></div>
+<div class="summary-card"><span>獲利率</span><strong>2026Q1 毛利率 14.43%（年變化 +6.86 個百分點）、營業利益率 2.25%（年變化 +4.46 個百分點）</strong></div></div>
+    </section>
+    
+    
+    
+        <section class="panel analysis">
+          <h2>八、基本面 EPS / 月營收</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>摘要</th>
+              <th>重點</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>月營收趨勢</td><td>2026-04 月營收 212.37 億元；MoM -14.97%；YoY 11.79%；近 3 個月累計 YoY 16.86%；近 12 個月滾動營收 YoY 8.24%；連續 5 個月年增為正</td><td>營收動能</td></tr>
+<tr><td>獲利率</td><td>2026Q1 毛利率 14.43%（年變化 +6.86 個百分點）、營業利益率 2.25%（年變化 +4.46 個百分點）</td><td>毛利率 / 營業利益率</td></tr>
+<tr><td>季報細項</td><td>2026Q1 營業費用率 12.18%（年變化 +2.40 個百分點）、稅後淨利率 2.69%（年變化 +0.75 個百分點）、ROE 0.46%（年變化 +0.00 個百分點）</td><td>營業費用率 / 稅後淨利率 / ROE</td></tr>
+<tr><td>財報推算股價</td><td>推算中樞 9 元；區間 8～10 元；EPS法 1 元（近四季 EPS 0.11、目標本益比 8.0 倍）；ROE/PB 法 28 元；現價 45.70 元</td><td>EPS / ROE / 獲利率</td></tr>
+<tr><td>估值狀態</td><td>月營收、估值與正式 EPS 已取得</td><td>PER / PBR / EPS</td></tr></tbody>
+        </table>
+      </div>
+    
+          <ul><li>是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、PER 位階偏高，股價需要成長性支撐、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、營業費用率較去年同期上升。</li></ul>
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>五、融資融券與法人 / 籌碼成本</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>最新值</th>
+              <th>近 5 日</th>
+              <th>近 20 日</th>
+              <th>籌碼成本</th>
+              <th>說明</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>融資餘額</td><td class="cell-number">411,424</td><td class="cell-number">-3,576</td><td class="cell-number">-</td><td class="cell-number">-</td><td>槓桿籌碼</td></tr>
+<tr><td>融券餘額</td><td class="cell-number">16,173</td><td class="cell-number">-760</td><td class="cell-number">-</td><td class="cell-number">-</td><td>放空籌碼</td></tr>
+<tr><td>外資</td><td class="cell-number">-202,889,796</td><td class="cell-number">-83,958,861</td><td class="cell-number">443,983,372</td><td class="cell-number">-</td><td>法人主力</td></tr>
+<tr><td>投信</td><td class="cell-number">-2,712,696</td><td class="cell-number">-2,805,585</td><td class="cell-number">-3,233,932</td><td class="cell-number">-</td><td>內資趨勢</td></tr>
+<tr><td>法人合計</td><td class="cell-number">-219,925,504</td><td class="cell-number">-88,593,142</td><td class="cell-number">498,024,162</td><td class="cell-number">-</td><td>整體方向</td></tr></tbody>
+        </table>
+      </div>
+    
+          <ul><li>融資餘額目前 411,424，變化 98,190（31.35%）。</li><li>近 5 日融資餘額目前 411,424，變化 -3,576（-0.86%）。</li><li>融券餘額目前 16,173，變化 4,918（43.70%）。</li><li>融資融券只能用來觀察槓桿籌碼變化，不等同真實散戶或主力成本。</li><li>最新一日法人合計買賣超 -219,925,504，近 5 日合計 -88,593,142，近 20 日合計 498,024,162。</li><li>最新一日分項：外資 -202,889,796、投信 -2,712,696、自營商自行 -7,285,000、自營商避險 -7,038,012、外資自營商 0。</li><li>法人買賣超可作籌碼方向輔助，但不代表完整持股成本；成本仍需搭配成交量密集區與價格區間估算。</li></ul>
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>公司法說會 / 公告</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>類型</th>
+              <th>標題</th>
+              <th>來源</th>
+              <th>初判</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>2026-04-13 15:00</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPX1BkMzB5bFUzZksydWNxQlY0aWkySzA2RFpDYnRTbzdGSlJ3N0lFQ29sUnNLeXJhc2txR01WWEpQMU1QTFZMazRQVmNqSFFBQWotckg2T3g1OENZdjN1NGQ4SmlSSmdvSGdfc0pTaERLa0U0dHpwVW82Zmp2VzhnTkJiNldLZUtPNHlv?oc=5" target="_blank" rel="noopener noreferrer">台積電法說會在即，沈萬鈞揭先進封裝變革下值得關注的個股 - 鏈新聞 ABMedia</a></td><td>鏈新聞 ABMedia</td><td>中性</td></tr>
+<tr><td>2026-03-26 15:00</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxNVll2bWhWcDRIeFlKckNrUGo2ZGtJOVc1NlFvYzB4VVI3dC16WlN5RW9DVGFmLUdUSnd1YjlwUjJCU3NrNkp2OFdYeE9nakNSVmJtWXRocXFGalFCSXM2al93ZllJN29fdkZMbXQ0SDkxdnExR3lXVUdvMnRxeUtaRExRY0x6NF9ORkIwVUtMMlUxM2lzQzRFal90WG5DbUZQekJiMWlEdkJ1blg5S1NYcVFWcTljQTVPNXpRbi1JSWljMHlTM0NEMmNFSmVMWFR5QmhvTGV6enppdXpfNGhB?oc=5" target="_blank" rel="noopener noreferrer">群創 2025 Q4 法說會重點：出售廠房活化資產，FOPLP 與智慧座艙成轉型雙引擎 - StockFeel 股感</a></td><td>StockFeel 股感</td><td>中性</td></tr>
+<tr><td>2026-03-12 15:00</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFBObHNOSGM1c1dpcVl1YjBONmVVMEp5R3B3Nk8yd0lqNXBDa2VDVi1PRjhZb0VyYkMtM0ctUkJIM3ExYlBiUFA3UlBsR1lUQlU?oc=5" target="_blank" rel="noopener noreferrer">群創法說／扇型封裝出貨成長10倍 南科廠處分「持續評估」 - TVBS新聞網</a></td><td>TVBS新聞網</td><td>中性</td></tr>
+<tr><td>2026-03-04 16:00</td><td>法說會</td><td><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQSFl1bW11NE5TZi1tNU5rdG5WeFlVZVduc2t1VUhhOUdGUDFLYjdPdnQ3MEhrMS1GQUNSbGVVaWJPWXZ4ZFl6ZTVwOHVsSHNEZXZMTjI1YnVYZ0hhcW5UYnRoV3RBMDdMQmNWb0tlMnBoMWcxWHcwSm9IU3VYMlVBSWdJcElXVzBCYTVjajhsdXk?oc=5" target="_blank" rel="noopener noreferrer">【即時新聞】群創(3481)1月獲利爆發年增46倍！EPS 0.05元，法說會前夕營運受矚目 - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>利多</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>相關利多利空新聞</h2>
+          <ul><li>新聞面中性（利多 0 / 利空 0 / 中性 12）。</li><li>下表僅列最近一個月新聞，依發布時間由新到舊排序；利多/利空為標題關鍵字初判，仍需閱讀原文確認。</li></ul>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>區域</th>
+              <th>初判</th>
+              <th>新聞標題</th>
+              <th>來源</th>
+              <th>時間</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5uTE5DdHRkb3lpb0tfN2dkSWJsZmJZNkRmeFhYWFBpRlJRQnFteDF6YnJXZUxmdGI5dGstWmQ5bzlKZzlBLVpsU2lKem9lcWNXUW9Db0xSN0c?oc=5" target="_blank" rel="noopener noreferrer">群創爆巨量摜殺！幕後兇手是這群人 66萬股東被團滅 - 自由時報</a></td><td>自由時報</td><td>2026-05-26 16:05</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMimwNBVV95cUxQVG5jQzUwemFrWmtjVlV3NnFQVmltZnRrWWFXOTdGMEFDcWgyaWRLaUZwY1lxVTliaGR6aXRoS2luaEREMUF6a05QQkRmaFBRRTI5NmlXbXpqNk5XZGV0V0ZfMGt4ZGhjZDRCWGZBUUxyUW42eFUzMDlQOFlCZHlycnRGeUpjX0loMVRRUnJqaHZXOUItX0xCYUxjbk1NSTByd25zX2NHb2cyNS02SElWc01jQWhGSDl5cU02NC1tQWwwVF9QOFB0cWVWU3U0Njh2YkxaaXRKOXFNUVJyQkpOTW8zYmZLcUxOYkNjX0pDREhxczd0VHdwTURxSmRWTXVldlJUVU9UV0lXVXZXMV9lR2QybklMT0xzS0ZqSDU4b1I0OGlLcGhDYUpiNElDc1dNSm83US1vWWtDcTctSS1KVm1LcWtXM3hfS2JWbnZKWnBQWmdWNmhzU2t6SjF6cDZENjBEc3UxQmFIb1N1Qlh6Q2h4aWtoVG9VSVJpWEs4akpheEtBYW5YckdyNWVIOXgzN1BnN1Y5SGZLRFE?oc=5" target="_blank" rel="noopener noreferrer">面板雙虎遭血洗！群創抱百萬張天量慘崩7％ 這檔陷跌停緊跟8.1萬張 - Yahoo股市</a></td><td>Yahoo股市</td><td>2026-05-26 15:40</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBXMXBoWVpQeTZBV3dXclY3OXkya0N1YjFhN25BdVlTcFN3UlNnTDQyUHo1Sy1IRmg3ZkNETG8yeTBCMmVXdWdBanNHT2xza3c20gFWQVVfeXFMT1VTVGg1SWhlV0YtN3d5WHd6dEV1UnpienJPR2pHRW9RTl9Bd3dtTVRXQU1OenBISFdjU0lpQ0VRa0syLVlKek80YUtXLXlqSG5PenNHaWc?oc=5" target="_blank" rel="noopener noreferrer">群創爆145萬張成交量收45.7元、跌6.92% 友達重挫跌停 - UDN</a></td><td>UDN</td><td>2026-05-26 15:11</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1HQV9WUnE3MkFOeUV3c2hCWXF4VmdETFVJRlphVm1QQW1WZU9PNGJNaHYtd3ljRDU2MHhKX0NiZHE3bUZwN1VKOXFjdHNweWRFbnfSAW5BVV95cUxQOXlVT3BSUTdmSW9EdG90ZG1VenJ6NUpXMnhadzJjQVJFSGpoN3VBMlJ0RWU0bHl3ejNLbEJhTmRUQkp2VVJRd2k0XzVNTUNNdUlrNWdDeDhUdC1hZEZ4SWp3cTd2RWNxUG5BWkhodw?oc=5" target="_blank" rel="noopener noreferrer">面板股多空激戰！群創翻黑衝百萬張大量　友達摜跌停 - ETtoday財經雲</a></td><td>ETtoday財經雲</td><td>2026-05-26 11:33</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMi2gNBVV95cUxPaGJiYTd1a3VMTENiazgwYzBLajY1SDh5ZkdJUVdpbjlYZGVhM25tdG41cDF3dGNNanB3aWZxMW10MjlzTXY5WkNCUnRubkxtM1YzLUdYQmxtMEdYZGNCUWdza1E0TVpuMW5vOGgxd0h6UGVSQVQ2aHhJT1VYQXN1NGVuT1RPWU1vSE1jUmNWLThZYWQzSFc4R3pxUzZ2SXlyX2Rjc3BFaFVGMHdxWXFqZXE5SXRwMzNxYndzYWJ0cXBaSFlQNS1FWXhEOERzZVZUYTVMdnU5d2ozSWdfY3p3Znc5QW5CaWJ6WWZ4V1JTX1BweElMZEJfQnRLMTNfNVBsWE5xNFNVSXdwTlA1MEZXdGx1Tl85ZmhYbmtocXZwYUtESnd2aTVueGVwd01DSFJGck0ybGZIQ2dFOFI5R3ZWdzVxTU9KTWp0bDJQVDZhcGQzWnc5OEl6LUZuOFZIMElxXzdkMlc4SUd2eWFaM2dsUGJta040VjVYVnFrdnpKVjdWWS1yaEVtY3ltRE5yNi1LOHJYSjR0b2xhMlJRLTN0LWtyYUtoZHJXaGh5dV9IWkJTVFZZUGR5ODlkbE9ra1hnQTdTdllQSno2aFhjRl91QjlUQmhzQ052a1E?oc=5" target="_blank" rel="noopener noreferrer">【Hot台股】群創重摔7%爆110萬張天量...網問「躲關小黑屋？」 分析師：短線先跑 - Yahoo股市</a></td><td>Yahoo股市</td><td>2026-05-26 11:11</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQQ3BRdU0zaHNiN2hxR1ZHQUtaOHhPVHBKVjBLYjBnOGFka2xwVU80MkhQVGNfMzdTU0hEVDFVTWNGTDdGQTRkYVN4eWs1WlEwX0xGcHFVdW40cVlCUVdFdXozRmtXbmozSFhTaWZPRjRBWWprVDFxSGUyUUYxbTA5Ym1lWDlkMU51LWZYSVE2djY?oc=5" target="_blank" rel="noopener noreferrer">【即時新聞】群創(3481)飆16年新高！這「3檔概念股」資金輪動爆量換手？ - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>2026-05-26 11:10</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQYnJQME9KUzRJX28xc3lVY3VqNnB3YWl2TlVidHFmcHZrT1h6YmFmVm5qYlFxYjJWNW5vZjV1UldkZEdMWGIxVGJCLXpBNTIxNjdZMkJjakY2V3BSNGdoRWRYLVVHMGI0aTRfdVZCWXRCd0FIcnQtZlJpaWMzRC1ISURCeWxzZUFYS2huYi1fT2U?oc=5" target="_blank" rel="noopener noreferrer">【即時新聞】群創(3481)強攻先進封裝飆漲26%！這「2檔概念股」爆量多空交戰！ - CMoney投資網誌</a></td><td>CMoney投資網誌</td><td>2026-05-26 11:02</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFB1Uy14WUxKVWYwZUktZEtJU2h0R1lEQzM0dGFjdDZuLTdPd3FMTFJUUjk2UzFEMHN0SEx3cWdUNnRrQzJYR0lIQTlveTl0MHc?oc=5" target="_blank" rel="noopener noreferrer">融資44萬張爆多殺多！面板雙虎遭血洗 群創崩7%、友達陷跌停 - TVBS新聞網</a></td><td>TVBS新聞網</td><td>2026-05-26 10:34</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMi3wNBVV95cUxNQ2ZwUUZzQjBtVVJoTWN5a3lkU2ZRaXZGNUdQaGxqbFFManBmbHpCbWZsZkJ2eHlmNFAwVG1Kb3lPVUVnZjZzTldQY2pHcE1YNXRXaF9WYlFQQnVjNFZOLWVxdTVESGw3OTBqRm9ZazVnaTFVa3ZLSEFSRW92VzJmem5ydElkOThDd2tkcGJ5ei1RNTd5VldQWTVUU1FIYkdSdHFSUENTVjI0Y2h6MHVnSWU2cl9jT2YyN0prempJSGhaRENEamlFbjdzcDJ1RGxjWHVpQ3RBaG9UbjZGZ25Jd1JoVnFLeDExSTh0aGVYQmdjLUN5NWJxY0pLZXlha2pWT2JYZmdwMzNNUm16dnVuUVJNT0ludFZfUG15Z1VFMkVXWjlWWjhfSjd2MDkwanNlNHgzY3VYTE9ZU25FV3dsRHVOX2VrR1BiMFMwZFVMa1N4VlprWU5UUk1MTWFGMjJtR0VtaUlMUVFPUmtHV2dqU3JDMEJRYWVxNy0tLUQxNm00SkpHdy1uWlVsT1M5MW9seGVScS1VZ2pQWTRkMm1xMkhvcFVXYlM1c1JWY09mZlp0Q0tpOXhrdFA5bmdXdUxGbWpGODlWZUF1WWVEQURCaWJDSzVaYjBndUZzSlNWQQ?oc=5" target="_blank" rel="noopener noreferrer">面板股，跟你想的不一樣，本周群創、友達、瑞軒股東會關注重點｜股市話題｜豐雲學堂2026 年 05 月 - sinotrade.com.tw</a></td><td>sinotrade.com.tw</td><td>2026-05-26 07:24</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMitANBVV95cUxOcGlSc05iR01GcEdBNEVxRU5sV3JLWnFodDVFT0d3bl9SVVNHMUR6WUt1bkV4Mm40WVJpeVNOZ2d0cjJtR0EwWGtYYmdPTFJaTVJ6b2NRVVJ1WV90QUNHa2JGVXZxZlFRRkNPV1BWMUFlcS1YOGEwNHNsUHJ1X2w3Ml9HMFVyd2M3cV9GNlpBOUlLcmZuQ3ZYZFdtUTR4OU5jR3dLZ1NGRVRneE5rVnJWLTZTdktMVVNIaHh4US0xaEFKZDByOHRRcGdIV2lmZzBaNzBPeTZ4THljVXFXcjZhdWFtZnVtbU5LTVAzZkJWb2xITU1pWktBRHpJc2N0cncwbF84Q3d1TGZWaTZvMk9RRTlObDJEWXBBYURvQzlnQng2OXpEUlZmTHZ4NUt3RWJ1MHJxSVdQalBOVEdpQlZsUmdiYVFzMTdIRWdhcV9KRmwtXzZDdzBTSXE3YWhOT0FKYk12cldoODJTeUdpVmZvQnpVaVliVENJQ3Y0Z0ZHTlBxbUt1RmJoMThGVk1QN2YtRW00VFBSZjUtYlpGWi10M182NTBJQ1ZxNzhEME05U3BVVk54?oc=5" target="_blank" rel="noopener noreferrer">群創衝18年新高挑戰50元大關！面板三虎一字鎖漲停 逾36萬張排隊搶買 - Yahoo股市</a></td><td>Yahoo股市</td><td>2026-05-25 15:45</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPRkRGbjJmV01BM0NRU3Y5VG51a1hJajZtYmJUcFZDUjQzVGhjeGVqWnI4dS1ycG9nVGJEYjVERWRfUjhEYTFKM19ha2JPR2VYa2EzelVRYzhHeWYtaFJiV3RFSlV5X2IxaWZjWEdrYUN6NWlIcVpQdlJ2WEppbjRyYQ?oc=5" target="_blank" rel="noopener noreferrer">群創(3481)股價狂飆15年新高、49元可以買？外資目標價曝光！友達(2409)、欣興(3037)呢？選股教練提醒1風險 - 今周刊</a></td><td>今周刊</td><td>2026-05-25 15:00</td></tr>
+<tr><td>國內</td><td>中性</td><td><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQVW1yQWIzX0p5alNxVXRma29uOWRrQ3ZBSThfZXliMU5CZ2Q0bDJBUEUxZHdEWWhxWURiSlV6NU5VOWNHMkYyLW4xaTFLNFRyd2JwemgzdnhHSlRiaVc0RlJMbDhHUy15QzFsLTFTWFE1a2h2UzZhZzk1ajEzd2ZucA?oc=5" target="_blank" rel="noopener noreferrer">群創(3481)股價飆49元、聯電(2303)逼120元現在買還有肉？最新目標價曝光！杜金龍示警台股恐跌6千點，教你高出低進操作法 - 今周刊</a></td><td>今周刊</td><td>2026-05-25 15:00</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel chart-panel">
+          <h2>01_日線完整技術與籌碼分析圖</h2>
+          <img src="01_日線完整技術與籌碼分析圖.png?v=2026-05-26T21:17:56+08:00" alt="01_日線完整技術與籌碼分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>02_周線完整技術與趨勢分析圖</h2>
+          <img src="02_周線完整技術與趨勢分析圖.png?v=2026-05-26T21:17:56+08:00" alt="02_周線完整技術與趨勢分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>03_月線完整技術與長期趨勢分析圖</h2>
+          <img src="03_月線完整技術與長期趨勢分析圖.png?v=2026-05-26T21:17:56+08:00" alt="03_月線完整技術與長期趨勢分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>04_權證完整分析圖</h2>
+          <img src="04_權證完整分析圖.png?v=2026-05-26T21:17:56+08:00" alt="04_權證完整分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>05_同族群比較分析圖</h2>
+          <img src="05_同族群比較分析圖.png?v=2026-05-26T21:17:56+08:00" alt="05_同族群比較分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>06_基本面分析圖</h2>
+          <img src="06_基本面分析圖.png?v=2026-05-26T21:17:56+08:00" alt="06_基本面分析圖">
+        </section>
+        
+    
+    <section class="panel">
+      <h2>進階分析與資料明細</h2>
+      <p class="notice">以下內容預設收合，需要時再展開。</p>
+    </section>
+    
+    <details class="panel detail-panel">
+      <summary>四、量價結構</summary>
+      <div class="detail-body"><ul><li>最新成交量 1,463,227,218，近 20 日均量 637,528,986，近 60 日均量 580,691,517。</li><li>最新量能約為近 20 日均量的 2.30 倍，近 20 日上漲日 12 天、下跌日 6 天。</li><li>量價型態：價跌量增。價格下跌且放量，賣壓較明顯；若跌破 MA10 / MA20，短線風險升高。</li><li>累積交易量分布可觀察過去一年成交量較集中的價格帶，作為籌碼密集區參考。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>四之二、乖離率與 ATR 波動區間</summary>
+      <div class="detail-body"><ul><li>MA5 乖離 5.30%：正乖離偏高，趨勢偏強但不宜忽略追高風險</li><li>MA10 乖離 13.64%：正乖離偏大，短線容易震盪或拉回</li><li>MA20 乖離 34.12%：正乖離偏大，短線容易震盪或拉回</li><li>MA60 乖離 57.95%：正乖離偏大，短線容易震盪或拉回</li><li>ATR14 約 3.60，以最新收盤估算，明日常態波動參考區間約 42.10～49.30；若開盤跳空或爆量，區間需重新評估。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>六、權證與市場情緒</summary>
+      <div class="detail-body"><ul><li>權證定位：本段只用權證資料觀察現股人氣與未來漲勢機率，不作權證買賣建議。</li><li>權證對現股訊號：中性。認購與認售沒有形成明確單邊結構，仍以現股量價為主。</li><li>本次匹配權證 227 檔；認購 208 檔、認售 19 檔，認購/認售檔數比 10.95。</li><li>履約價分布 10.00～53.25，中位數 20.65；標的最新收盤 45.70。</li><li>價內 / 近價外結構：認購價內 194 檔、認購 10% 內價外 9 檔；認售價內 0 檔、認售 10% 內價外 0 檔。</li><li>成交金額合計 70,017,220，其中認購 69,229,880（98.88%）、認售 787,340（1.12%）；認購成交較集中，前 5 大成交占比 63.13%。</li><li>權證名詞說明：近價外認購代表市場押注區離現股不遠，對現股續漲的參考性通常高於深價外；深價外認購代表想像空間大，但確認力較弱。</li><li>履約價熱區：認購成交加權履約價約 28.24，較現股高約 -38.20%；認售成交加權履約價約 21.19，現股較其高約 115.68%。認購成交中，近價外 10% 內占 2.53%，深價外認購占 3.45%。</li><li>以權證角度看目前股價：目前股價 45.70 已高於認購成交加權履約價 28.24，代表部分認購權證已偏價內或接近價內，權證市場對股價的追價輔助可能開始遞減，需留意短線獲利了結。</li><li>權證情緒分型：本次屬於「中性觀察」。近價外認購成交金額 1,749,790，深價外認購成交金額 2,391,320，近價外認售成交金額 0，深價外認售成交金額 787,340。認購資金未明顯集中在近價外區，對現股續漲的輔助力較有限。</li><li>資金集中度：前 5 大權證成交占 63.13%。成交集中度偏高，短線情緒可能由少數熱門權證帶動，容易放大波動。</li><li>輔助結論：認購與認售資金沒有形成強烈單邊結構，權證籌碼暫時只能視為市場熱度參考，主要方向仍應回到現股 K 線、均線與量能。</li><li>白話解讀：權證這邊還沒有給出很清楚的方向，先看股票本身有沒有突破或跌破。簡單說，權證是在看市場有沒有跟著股票一起熱起來；它可以加分或扣分，但不能單獨決定股價方向。</li><li>未來一個月現股輔助推估：現股技術面初步為「高波動區間震盪」。若價格維持在 MA20 / MA60 之上、量能不縮，且認購成交沒有明顯退潮，偏多情境較容易延續；若現股跌破支撐，即使認購仍熱，也要先降低權證訊號權重。</li><li>一個月觀察區間：上方先看 52.20，再看近 60 日高點 52.20；下方先看 34.08，再看近 20 日低點 23.65。突破近 20 日高點 52.20 可視為偏多確認；跌破近 20 日低點 23.65 則偏多情境失效；MA20 34.08 是短中線強弱分界。</li><li>現股判斷用法：近價外認購有量、認售沒有明顯放大、且現股同步站穩均線時，權證資料可視為現股續漲的加分項；若權證很熱但現股不漲，則視為人氣過熱而非追價確認。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七、同族群比較</summary>
+      <div class="detail-body"><ul><li>比較依據：主題規則：面板（中：同主題候選，但未細分產品/商業模式）</li><li>比較清單：群創(3481)、友達(2409)、彩晶(6116)、茂林-KY(4935)</li><li>同期間相對報酬排序：群創(3481) 258.43%、彩晶(6116) 86.22%、友達(2409) 63.57%、茂林-KY(4935) -13.50%</li><li>此圖標示為同產業候選比較，不等同精準子產業或主題族群。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之一、每日 ETF 持股該股增減名單</summary>
+      <div class="detail-body"><ul><li>ETF 持股最新快照：2026-05-25。</li><li>目前解析到 13 檔 ETF 持有此股，其中主動式候選 0 檔，已檢查 0 檔最近一次持股異動。</li><li>最近一次主動 ETF 異動未命中此股；目前主要持有 ETF：0052 0052、00850 00850、00961 00961、00888 00888、0051 0051、00735 00735、00964 00964、00901 00901。</li><li>此資料為 ETF資訊網依公開持股快照差異推估，非基金公司實際成交紀錄；一般被動 ETF 多僅列持有快照，不強行推估每日買賣。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之二、集保股權分散資訊</summary>
+      <div class="detail-body"><ul><li>集保戶數合計 666,489 人，集保股數合計 7,989,197,337 股。</li><li>小額持股（1～10,000 股）占 16.46%；中階持股（50,001～400,000 股）占 15.69%；大額持股（400,001 股以上）占 52.44%，其中百萬股以上占 47.71%。</li><li>集保結構判斷：大額持股集中度中等。籌碼結構不算分散，仍需搭配法人、融資與量價確認是否有人持續承接。</li><li>散戶化觀察：小額持股占比偏高，短線若遇利空或跌破支撐，籌碼容易比較浮動。</li><li>限制：TDCC 集保資料通常是每週最後營業日結束後的持股級距統計，能看籌碼集中或分散，但不能知道是哪位自然人或哪家主力在買賣。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十、主力名單及主力 / 散戶分佈限制</summary>
+      <div class="detail-body"><ul><li>不得宣稱可取得完整自然人大戶名單。</li><li>券商分點、法人與融資融券僅能作為主力 / 大戶疑似結構輔助，不等同真實大戶。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十一、產圖完成檢查表</summary>
+      <div class="detail-body"><ul><li>01～03 為真實 K 線圖；04～06 為狀態圖並列出資料限制。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>每日 ETF 持股該股增減名單表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>ETF代號</th>
+              <th>ETF名稱</th>
+              <th>動作</th>
+              <th>增減張數</th>
+              <th>比較區間</th>
+              <th>原始摘要</th>
+            </tr>
+          </thead>
+          <tbody><tr><td colspan="6">最近一次主動 ETF 持股異動未命中此股，或資料來源未提供可解析增減。</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保戶股權分散表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>級距</th>
+              <th>持股分級</th>
+              <th>人數</th>
+              <th>股數</th>
+              <th>占集保庫存比例</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>1</td><td>1-999 股</td><td class="cell-number">197,101</td><td class="cell-number">59,726,204</td><td class="cell-number">0.74%</td></tr>
+<tr><td>2</td><td>1,000-5,000 股</td><td class="cell-number">334,216</td><td class="cell-number">740,610,260</td><td class="cell-number">9.27%</td></tr>
+<tr><td>3</td><td>5,001-10,000 股</td><td class="cell-number">65,784</td><td class="cell-number">515,561,433</td><td class="cell-number">6.45%</td></tr>
+<tr><td>4</td><td>10,001-15,000 股</td><td class="cell-number">19,961</td><td class="cell-number">250,898,840</td><td class="cell-number">3.14%</td></tr>
+<tr><td>5</td><td>15,001-20,000 股</td><td class="cell-number">15,258</td><td class="cell-number">275,266,506</td><td class="cell-number">3.44%</td></tr>
+<tr><td>6</td><td>20,001-30,000 股</td><td class="cell-number">12,002</td><td class="cell-number">304,063,111</td><td class="cell-number">3.80%</td></tr>
+<tr><td>7</td><td>30,001-40,000 股</td><td class="cell-number">6,013</td><td class="cell-number">212,899,656</td><td class="cell-number">2.66%</td></tr>
+<tr><td>8</td><td>40,001-50,000 股</td><td class="cell-number">3,969</td><td class="cell-number">183,960,908</td><td class="cell-number">2.30%</td></tr>
+<tr><td>9</td><td>50,001-100,000 股</td><td class="cell-number">6,984</td><td class="cell-number">502,932,352</td><td class="cell-number">6.29%</td></tr>
+<tr><td>10</td><td>100,001-200,000 股</td><td class="cell-number">2,868</td><td class="cell-number">400,703,789</td><td class="cell-number">5.01%</td></tr>
+<tr><td>11</td><td>200,001-400,000 股</td><td class="cell-number">1,255</td><td class="cell-number">350,996,017</td><td class="cell-number">4.39%</td></tr>
+<tr><td>12</td><td>400,001-600,000 股</td><td class="cell-number">352</td><td class="cell-number">170,929,124</td><td class="cell-number">2.13%</td></tr>
+<tr><td>13</td><td>600,001-800,000 股</td><td class="cell-number">174</td><td class="cell-number">121,098,532</td><td class="cell-number">1.51%</td></tr>
+<tr><td>14</td><td>800,001-1,000,000 股</td><td class="cell-number">97</td><td class="cell-number">87,501,868</td><td class="cell-number">1.09%</td></tr>
+<tr><td>15</td><td>1,000,001 股以上</td><td class="cell-number">455</td><td class="cell-number">3,812,064,720</td><td class="cell-number">47.71%</td></tr>
+<tr><td>16</td><td>差異或調整數</td><td class="cell-number">4</td><td class="cell-number">15,983</td><td class="cell-number">0.00%</td></tr>
+<tr><td>17</td><td>合計</td><td class="cell-number">666,489</td><td class="cell-number">7,989,197,337</td><td class="cell-number">100.00%</td></tr></tbody>
+        </table>
+        </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>權證成交金額前 5 名表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>權證代號</th>
+              <th>權證名稱</th>
+              <th>類型</th>
+              <th>履約價</th>
+              <th>成交金額</th>
+              <th>成交張數</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>051148</td><td>群創中信61購01</td><td>認購</td><td class="cell-number">25.00</td><td class="cell-number">25,947,500</td><td class="cell-number">1,022,000</td></tr>
+<tr><td>051325</td><td>群創元大57購06</td><td>認購</td><td class="cell-number">25.50</td><td class="cell-number">7,106,500</td><td class="cell-number">305,000</td></tr>
+<tr><td>051196</td><td>群創國票57購03</td><td>認購</td><td class="cell-number">25.00</td><td class="cell-number">4,700,000</td><td class="cell-number">200,000</td></tr>
+<tr><td>034597</td><td>群創元大59購01</td><td>認購</td><td class="cell-number">18.00</td><td class="cell-number">4,645,600</td><td class="cell-number">261,000</td></tr>
+<tr><td>064591</td><td>群創凱基5A購02</td><td>認購</td><td class="cell-number">40.00</td><td class="cell-number">1,800,700</td><td class="cell-number">226,000</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保股權歷史趨勢表格</summary>
+      <div class="detail-body">
+        <p class="notice">目前資料源只提供單一期資料，先呈現最新集保分布；有歷史期數時會自動比較變化。</p>
+        <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>總戶數</th>
+              <th>小額 1～10,000 股</th>
+              <th>大額 400,001 股以上</th>
+              <th>大戶 1000 張以上</th>
+              <th>小額變化</th>
+              <th>大額變化</th>
+              <th>大戶變化</th>
+              <th>戶數變化</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>20260522</td><td class="cell-number">+666,489</td><td class="cell-number">16.46%</td><td class="cell-number">52.44%</td><td class="cell-number">47.71%</td><td class="cell-number">-</td><td class="cell-number">-</td><td class="cell-number">-</td><td class="cell-number">-</td></tr></tbody>
+        </table>
+        </div>
+    </div>
+    </details>
+    
+  </main>
+</body>
+</html>
