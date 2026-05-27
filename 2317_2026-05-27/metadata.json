@@ -13,7 +13,7 @@
   "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
   "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
   "institutional_period": "2025-05-27 to 2026-05-27 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
-  "margin_period": "2025-05-27 to 2026-05-26 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_period": "2025-05-27 to 2026-05-27 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
   "warrant_period": "TWSE report_date=1150526 (OK; call=771, put=96, with_exercise_price=867)",
   "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-05-27 to 2026-05-27; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=244; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
   "major_holder_period": "not available; no complete natural person major-holder list claimed",
@@ -31,10 +31,10 @@
   "fundamental_price_estimate_summary": "保守 209 元 / 中性 265 元 / 樂觀 305 元；近四季 EPS 14.13；估值本益比 14.8x / 18.8x / 21.6x；以目前 PER 18.8x 作為中性基準；歷史 PER 分位 Q25/Q50/Q75=14.8x/16.2x/16.9x；目前 PER 位於近一年 95% 分位；市場情境 20x/25x/30x=283/353/424 元；ROE/PB 參考 127 元；現價 264.00 元，較中性估值 -0.4%；現價接近中性估值",
   "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能轉弱、最新月營收年增雙位數、正式 EPS 年增、營業利益率較去年同期改善、ROE 較去年同期下滑、營業費用率較去年同期下降。",
   "chip_summary": {
-    "margin_balance": 48196.0,
-    "margin_5d_change": 925.0,
-    "short_balance": 852.0,
-    "short_5d_change": -26.0,
+    "margin_balance": 46900.0,
+    "margin_5d_change": -1395.0,
+    "short_balance": 943.0,
+    "short_5d_change": -349.0,
     "foreign_latest": 19616089.0,
     "foreign_5d": 125805898.0,
     "foreign_20d": 488290217.0,
@@ -45,8 +45,8 @@
     "total_5d": 130174695.0,
     "total_20d": 476206529.0
   },
-  "news_display_status": "新聞面偏利多（利多 2 / 利空 0 / 中性 8）",
-  "disclosure_display_status": "近 120 天公告/法說追蹤 5 則（法說會 2 / 公告 3）",
+  "news_display_status": "新聞面偏利多（利多 3 / 利空 0 / 中性 9）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 3 則（法說會 1 / 公告 2）",
   "summary_one_line": "偏多強勢，偏多震盪；站穩 MA10 250.80 並突破 269.00 才有續攻機會，跌破 MA20 246.40 轉防守。",
   "summary_overall": "偏多強勢；收盤站上 MA5, MA5 高於 MA10, MA10 上方但投信支撐不足",
   "summary_tomorrow": "偏多震盪",
@@ -61,7 +61,7 @@
   "summary_warrant_signal": "中性偏投機",
   "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
   "summary_warrant_price_view": "現股低於認購主流履約價 9.00%，權證資金仍押續漲",
-  "generated_at": "2026-05-27T18:33:12+08:00",
+  "generated_at": "2026-05-27T20:51:55+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2317_2026-05-27\\01_日線完整技術與籌碼分析圖.png",
@@ -246,6 +246,16 @@
   "news_rows": [
     {
       "region": "國內",
+      "bias": "利多",
+      "title": "【即時新聞】鴻海AI伺服器代工市占領先 法人預估營收挑戰新高 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-27 17:59",
+      "published_ts": "2026-05-27T17:59:21+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWV9JRkpfTHJySkZBX1dTejcwbXBLTE1TNUZfbWR2bHFUTU9RcVdNdnh3SWpRUlJvV0tIYWduNXd0OFRfaFVjNk9Ba1dtZF83WWxuaUc3Y1ZDYVpzRlZ5YWw5My1kZlI5NmtTOHNyYjRZbDRXZUxQQ0w1UHd2aTRFbjJiZ3pqTEhtU1M2VllYeUI?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
       "bias": "中性",
       "title": "2317 鴻海 - 鴻海（2317）未來股價充滿錢景!!!-股市爆料同學會 - CMoney",
       "source": "CMoney",
@@ -257,11 +267,11 @@
     {
       "region": "國內",
       "bias": "中性",
-      "title": "2317 鴻海 - 廣達法說會解析影片-股市爆料同學會 - CMoney",
+      "title": "2317 鴻海 - 散戶可以海虐主力的事，台股只出現在鴻海這支！-股市爆料同學會 - CMoney",
       "source": "CMoney",
-      "published": "2026-05-25 04:00",
-      "published_ts": "2026-05-25T04:00:38+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LT2RLMk4waDdESmhGUzFiLWVJbm9wSkNtSzhwSDdrSEZmaENsZTQ2VnVvc2ltNFczcVl6eDZXaVNZdklDMWd3bFBCeVhzQWZwWGxPdkNqY1A?oc=5",
+      "published": "2026-05-26 08:27",
+      "published_ts": "2026-05-26T08:27:06+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB2aVJsTkJpSlBqVE1vdmRxNmNLOS11ZVlNYW9rVkc0QW9kTU5DRTN3THk0ZUhzUTFSQzR3cEFVSERPTV8zdlExQmR4eDFoWVFHTkJqSGc0QV8?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字"
     },
     {
@@ -302,6 +312,16 @@
       "published": "2026-05-14 15:00",
       "published_ts": "2026-05-14T15:00:00+08:00",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1lbzU4SW90MTBvRzJPZTRxUnJTT1JSZW9IVGptcmhtQ2tCYUN0ZDhidUxidEF3OENWUURDYXlrNEpNT19kazRxS29venZ1R2dadnRSZkVRbnFWUllCdnByYXZCbWpOZDVReXc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "鴻海法說行情啟動 今漲逾半根衝260元大關戰前高 - Yahoo股市",
+      "source": "Yahoo股市",
+      "published": "2026-05-14 15:00",
+      "published_ts": "2026-05-14T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPV3pXSmtPdmkydzByWEM1UWZQYWp0UXFJYUI4S09ybnR3LVJYWmR4UU13NDBNMm4yUngyc2RjNUcyYVJ2QjV5amJzcU1pVXhSb2l0SnBxV1RqVy04ckM1TTBDeG5WS1pMbjhjTVhOYUdZQmRWU1A5azhjVjluVzVhNkNKOUhla0wtMk9kd19PTEwzVlFkYnBrSDFnYXNxcDY1ekRpYnJSZkN6b21xOGx6eVljMTFhdkRXby1tNEkwWjB3ZTJwdnZrZ21hMEtpNEFvVk5PRHMwc2xCZlBKNGViOGhqelhqNzduMlZPazYyc3JPMmItNVltQ2EwUDIwS0lqRWJMOXlpVzBOWllCWVBPcHVSVVF3eXpnci1DVEY4MXlCRXdlRUdsaUJRNzdXREtVSDc2YUVIbWxYSXpiSTd3QU0tOEI4aHhmUU1YckhUdTM?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字"
     },
     {
@@ -359,34 +379,12 @@
     },
     {
       "region": "公告/法說",
-      "bias": "利多",
-      "title": "鴻海、廣達兩大 AI 伺服器龍頭法說會 分別透露哪些重要訊息？ | 產業熱點 | 產業 - 經濟日報",
-      "source": "經濟日報",
-      "published": "2026-05-18 23:43",
-      "published_ts": "2026-05-18T23:43:58+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9WT1FRVWlELUxTeldKam9ESmJ6M2l5U3JqNGJockhqNEVhdFBVNmxYdmFoLWVTZ3liNG44a2tkN1dLUkRyLVdxWjdHbnhEVFJIdlZSY3ZaNzgyZw?oc=5",
-      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "kind": "法說會"
-    },
-    {
-      "region": "公告/法說",
       "bias": "中性",
-      "title": "2317 鴻海 - 【營收快訊】鴻海(2317)公告04月營收-股市爆料同學會 - CMoney",
+      "title": "2317 鴻海 - 【營收快訊】鴻海(2317)公告03月營收-股市爆料同學會 - CMoney",
       "source": "CMoney",
-      "published": "2026-05-05 15:46",
-      "published_ts": "2026-05-05T15:46:06+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1kZVBWdk1CbXk0TDhjY2lENlMzdS03U3VPNW9iNmE0bjlNNVBRV3F6MlZhRTNuS0ZkTEVLclBmX3VpUTByT1NwQUJpWE5xVE9pUEdLYjlLNzM?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字",
-      "kind": "公告"
-    },
-    {
-      "region": "公告/法說",
-      "bias": "中性",
-      "title": "【2026/04月營收公告】鴻海(2317) 四月營收8,320.98億元，表現亮眼、呈現雙成長，創近4個月以來新高，年增29.74% - CMoney投資網誌",
-      "source": "CMoney投資網誌",
-      "published": "2026-05-05 15:00",
-      "published_ts": "2026-05-05T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSG82cmRHVm5venpiOEd2Tm9MUTU4OGVBLTZyWlQwV28yRlNTX3hmWUZZVXJOY3NOM3RMeGVGM1dXSi13ZTVrTmdlVndqOHIxSjlQVWEya1Q2cjI5SEtSbGs5SERvZDJyZE85eXRMYU1sZUpRZmVNdTMwYUFUNlNOQjZVRXJ3Uk40RFE?oc=5",
+      "published": "2026-04-05 15:52",
+      "published_ts": "2026-04-05T15:52:14+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1wT0FEeFFCTmVWOXNxTUxndTlINDNRVk9UQnliUFoyVDBHRWhtZHNhbi1Na3NSdWt0MUVLVnYtb1Fra3Z1NFdKSXRVTHJYd2EtQWpQcGY4RjU?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字",
       "kind": "公告"
     },
