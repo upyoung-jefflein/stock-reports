@@ -237,7 +237,7 @@
   <header>
     <h1>晚盤期貨觀察室</h1>
     <p>焦點：台指期夜盤、美股期貨、匯率與隔日台股風險</p>
-    <p>產生時間：2026-05-27 22:19</p>
+    <p>產生時間：2026-05-27 22:22</p>
   </header>
   <main>
     <section class="session">
@@ -429,7 +429,7 @@
 
     function normalizeTime(value) {
       const text = String(value || "");
-      if (/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}/.test(text)) {
+      if (/^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}/.test(text)) {
         return Math.floor(new Date(text.replace(" ", "T") + ":00+08:00").getTime() / 1000);
       }
       return text.slice(0, 10);
