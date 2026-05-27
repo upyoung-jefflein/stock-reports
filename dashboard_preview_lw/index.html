@@ -237,7 +237,7 @@
   <header>
     <h1>晚盤期貨觀察室</h1>
     <p>焦點：台指期夜盤、美股期貨、匯率與隔日台股風險</p>
-    <p>產生時間：2026-05-27 22:16</p>
+    <p>產生時間：2026-05-27 22:19</p>
   </header>
   <main>
     <section class="session">
@@ -416,15 +416,23 @@
 
     function normalizeRows(rows) {
       return (rows || [])
-        .filter(row => row.date && row.open && row.high && row.low && row.close)
+        .filter(row => (row.time || row.date) && row.open && row.high && row.low && row.close)
         .map(row => ({
-          time: row.date,
+          time: normalizeTime(row.time || row.date),
           open: Number(row.open),
           high: Number(row.high),
           low: Number(row.low),
           close: Number(row.close),
           volume: Number(row.volume || 0),
         }));
+    }
+
+    function normalizeTime(value) {
+      const text = String(value || "");
+      if (/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}/.test(text)) {
+        return Math.floor(new Date(text.replace(" ", "T") + ":00+08:00").getTime() / 1000);
+      }
+      return text.slice(0, 10);
     }
 
     function updateChart(containerId, rows) {
