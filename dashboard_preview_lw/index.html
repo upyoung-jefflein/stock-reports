@@ -129,6 +129,29 @@
       overflow: hidden;
       background: #f8fafc;
     }
+    .chart-toggle {
+      display: inline-flex;
+      gap: 4px;
+      margin: 0 0 8px;
+      padding: 3px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+    .chart-mode {
+      border: 0;
+      border-radius: 6px;
+      padding: 6px 10px;
+      background: transparent;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .chart-mode.active {
+      background: #111827;
+      color: #ffffff;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -214,7 +237,7 @@
   <header>
     <h1>晚盤期貨觀察室</h1>
     <p>焦點：台指期夜盤、美股期貨、匯率與隔日台股風險</p>
-    <p>產生時間：2026-05-27 21:49</p>
+    <p>產生時間：2026-05-27 22:16</p>
   </header>
   <main>
     <section class="session">
@@ -258,8 +281,12 @@
       </article>
       <article class="live-chart-card">
         <div class="live-chart-head">
-          <strong>台指期近月 K 線</strong>
+          <strong>台指期近月</strong>
           <span>TAIFEX TX 202606</span>
+        </div>
+        <div class="chart-toggle" role="group" aria-label="台指期圖表週期">
+          <button type="button" class="chart-mode active" data-txf-mode="realtime">即時</button>
+          <button type="button" class="chart-mode" data-txf-mode="daily">日 K</button>
         </div>
         <div class="lw-chart" id="lw-txf"></div>
       </article>
@@ -352,6 +379,8 @@
   <script src="https://unpkg.com/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script>
   <script>
     const chartState = new Map();
+    let latestMarketData = null;
+    let txfMode = "realtime";
 
     function createKlineChart(containerId) {
       const el = document.getElementById(containerId);
@@ -417,15 +446,25 @@
       state.chart.timeScale().fitContent();
     }
 
+    function renderTxfChart() {
+      if (!latestMarketData) return;
+      const realtimeRows = latestMarketData.charts?.txf_realtime || [];
+      const dailyRows = latestMarketData.charts?.txf || [];
+      const rows = txfMode === "realtime" && realtimeRows.length ? realtimeRows : dailyRows;
+      updateChart("lw-txf", rows);
+    }
+
     async function refreshMarketData() {
       const status = document.getElementById("market-data-status");
       try {
         const response = await fetch(`market_data.json?ts=${Date.now()}`, { cache: "no-store" });
         const data = await response.json();
+        latestMarketData = data;
         updateChart("lw-taiex", data.charts?.taiex || []);
-        updateChart("lw-txf", data.charts?.txf || []);
+        renderTxfChart();
         const errors = data.errors?.length ? `；限制：${data.errors.join("；")}` : "";
-        status.textContent = `市場 K 線更新：${data.generated_at || "-"}${errors}`;
+        const modeLabel = txfMode === "realtime" ? "台指期即時" : "台指期日 K";
+        status.textContent = `市場 K 線更新：${data.generated_at || "-"}；目前模式：${modeLabel}${errors}`;
       } catch (error) {
         status.textContent = `市場 K 線讀取失敗：${error}`;
       }
@@ -433,6 +472,18 @@
 
     createKlineChart("lw-taiex");
     createKlineChart("lw-txf");
+    document.querySelectorAll("[data-txf-mode]").forEach(button => {
+      button.addEventListener("click", () => {
+        txfMode = button.dataset.txfMode;
+        document.querySelectorAll("[data-txf-mode]").forEach(item => item.classList.toggle("active", item === button));
+        renderTxfChart();
+        const status = document.getElementById("market-data-status");
+        if (status && latestMarketData) {
+          const modeLabel = txfMode === "realtime" ? "台指期即時" : "台指期日 K";
+          status.textContent = `市場 K 線更新：${latestMarketData.generated_at || "-"}；目前模式：${modeLabel}`;
+        }
+      });
+    });
     refreshMarketData();
     setInterval(refreshMarketData, 60000);
 
