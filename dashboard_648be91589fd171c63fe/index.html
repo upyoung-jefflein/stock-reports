@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>股票戰情室 Dashboard</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --ink: #111827;
+      --muted: #6b7280;
+      --line: #d9dee7;
+      --accent: #0f766e;
+      --danger: #b91c1c;
+      --watch: #a16207;
+      --neutral: #475569;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", "Noto Sans TC", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+    }
+    header {
+      padding: 24px clamp(16px, 4vw, 48px);
+      background: #111827;
+      color: white;
+    }
+    header h1 { margin: 0 0 8px; font-size: clamp(26px, 4vw, 42px); }
+    header p { margin: 4px 0; color: #d1d5db; }
+    main { padding: 22px clamp(16px, 4vw, 48px) 48px; }
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    input {
+      width: min(520px, 100%);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 11px 12px;
+      font-size: 15px;
+      background: white;
+    }
+    .session {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .session div, .night-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .session strong { display: block; margin-bottom: 6px; }
+    .session span, .night-panel p { color: var(--muted); font-size: 14px; }
+    .market-panel {
+      display: grid;
+      grid-template-columns: minmax(180px, 1fr) auto minmax(220px, 1.2fr);
+      gap: 16px;
+      align-items: center;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 18px;
+    }
+    .panel-label {
+      display: inline-block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .market-panel strong { display: block; font-size: 20px; }
+    .market-panel p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+    .quote { text-align: right; }
+    .quote b { display: block; font-size: 30px; }
+    .quote span { font-weight: 700; }
+    .quote.up span { color: #b91c1c; }
+    .quote.down span { color: #047857; }
+    .neutral-quote span { color: var(--muted); }
+    .quote-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .live-market-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .live-chart-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .live-chart-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .live-chart-head strong {
+      display: block;
+      font-size: 16px;
+    }
+    .live-chart-head span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .lw-chart {
+      width: 100%;
+      height: 420px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f8fafc;
+    }
+    .chart-toggle {
+      display: inline-flex;
+      gap: 4px;
+      margin: 0 0 8px;
+      padding: 3px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+    .chart-mode {
+      border: 0;
+      border-radius: 6px;
+      padding: 6px 10px;
+      background: transparent;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .chart-mode.active {
+      background: #111827;
+      color: #ffffff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 14px;
+    }
+    .stock-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--neutral);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .stock-card.watch { border-left-color: var(--watch); }
+    .stock-card.danger { border-left-color: var(--danger); }
+    .card-top { display: flex; justify-content: space-between; gap: 12px; }
+    .kline-preview {
+      display: block;
+      margin: 12px 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f8fafc;
+      aspect-ratio: 16 / 9;
+    }
+    .kline-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+    h2 { margin: 0; font-size: 20px; }
+    h3 { margin: 24px 0 12px; }
+    .card-top p, .one-line { color: var(--muted); }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 52px;
+      height: 28px;
+      border-radius: 999px;
+      background: #e5e7eb;
+      color: var(--neutral);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .badge.watch { background: #fef3c7; color: var(--watch); }
+    .badge.danger { background: #fee2e2; color: var(--danger); }
+    .badge.small { min-width: 44px; height: 24px; }
+    dl { margin: 14px 0; display: grid; gap: 9px; }
+    dl div { display: grid; grid-template-columns: 72px 1fr; gap: 10px; }
+    dt { color: var(--muted); font-size: 13px; }
+    dd { margin: 0; line-height: 1.45; }
+    a { color: var(--accent); font-weight: 700; text-decoration: none; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      display: table;
+    }
+    th, td {
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      padding: 10px;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th { background: #eef2f7; white-space: nowrap; }
+    @media (max-width: 760px) {
+      .session { grid-template-columns: 1fr; }
+      .market-panel { grid-template-columns: 1fr; }
+      .live-market-grid { grid-template-columns: 1fr; }
+      .lw-chart { height: 360px; }
+      .quote { text-align: left; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>晚盤期貨觀察室</h1>
+    <p>焦點：台指期夜盤、美股期貨、匯率與隔日台股風險</p>
+    <p>產生時間：2026-05-27 22:22</p>
+  </header>
+  <main>
+    <section class="session">
+      <div><strong>早上看台股</strong><span>個股支撐壓力、K 線型態、同族群同步性。</span></div>
+      <div><strong>盤後整理</strong><span>整理明日觀察價、財報推估、公告與法說變化。</span></div>
+      <div><strong>晚上看期貨盤</strong><span>先保留夜盤欄位，後續可接台指期 / 美股期貨資料源。</span></div>
+    </section>
+    <section class="night-panel">
+      <strong>目前模式</strong>
+      <p>優先顯示台指期即時資料；若即時權限不足，改顯示 TAIFEX 最近夜盤/盤後批次資料。</p>
+    </section>
+    
+        <section class="market-panel">
+          <div>
+            <span class="panel-label">晚盤期貨</span>
+            <strong>台指期 TX / 202606</strong>
+            <p>更新：20260526；最近夜盤/盤後批次</p>
+          </div>
+          <div class="quote up">
+            <b>44389</b>
+            <span>519 / 1.18%</span>
+          </div>
+          <div class="quote-grid">
+            <span>開 43870</span>
+            <span>高 44399</span>
+            <span>低 43806</span>
+            <span>量 24420</span>
+            <span>買 44381</span>
+            <span>賣 44390</span>
+          </div>
+        </section>
+        
+    
+    <section class="live-market-grid">
+      <article class="live-chart-card">
+        <div class="live-chart-head">
+          <strong>大盤加權指數</strong>
+          <span>FinMind TAIEX / 60 秒刷新</span>
+        </div>
+        <div class="lw-chart" id="lw-taiex"></div>
+      </article>
+      <article class="live-chart-card">
+        <div class="live-chart-head">
+          <strong>台指期近月</strong>
+          <span>TAIFEX TX 202606</span>
+        </div>
+        <div class="chart-toggle" role="group" aria-label="台指期圖表週期">
+          <button type="button" class="chart-mode active" data-txf-mode="realtime">即時</button>
+          <button type="button" class="chart-mode" data-txf-mode="daily">日 K</button>
+        </div>
+        <div class="lw-chart" id="lw-txf"></div>
+      </article>
+    </section>
+    <p class="chart-error" id="market-data-status">市場 K 線資料讀取中...</p>
+    
+    <div class="toolbar">
+      <input id="filter" type="search" placeholder="搜尋股票、族群、支撐、壓力或關鍵字">
+    </div>
+    <section class="grid" id="cards">
+      
+            <article class="stock-card danger" data-text="鴻海(2317) 其他電子業 警戒 danger 偏多強勢，偏多震盪；站穩 MA10 250.80 並突破 269.00 才有續攻機會，跌破 MA20 246.40 轉防守。 量價中性偏多；明日觀察 MA5 256.30 / MA10 250.80 近90日上升通道：高低點同步墊高，沿通道偏多整理；近180日區間震盪：近 180 日支撐約 201.85，壓力約 252.10；近10日緩步上行：收盤重心上移，仍需觀察是否突破前高 第一 256.30 / 第二 250.80 / 強 246.40 269.00 鴻海(2317)、廣達(2382)、緯創(3231)、緯穎(6669)、英業達(2356) 2026Q1 毛利率 6.18%（年變化 +0.06 個百分點）、營業利益率 3.57%（年變化 +0.74 個百分點） 保守 209 元 / 中性 265 元 / 樂觀 305 元；近四季 EPS 14.13；估值本益比 14.8x / 18.8x / 21.6x；以目前 PER 18.8x 作為中性基準；歷史 PER 分位 Q25/Q50/Q75=14.8x/16.2x/16.9x；目前 PER 位於近一年 95% 分位；市場情境 20x/25x/30x=283/353/424 元；ROE/PB 參考 127 元；現價 264.00 元，較中性估值 -0.4%；現價接近中性估值 https://upyoung-jefflein.github.io/stock-reports/2317_2026-05-27/index.html https://upyoung-jefflein.github.io/stock-reports/2317_2026-05-27/01_日線完整技術與籌碼分析圖.png 2026-05-27T20:51">
+              <div class="card-top">
+                <div>
+                  <h2>鴻海(2317)</h2>
+                  <p>其他電子業</p>
+                </div>
+                <span class="badge">警戒</span>
+              </div>
+              <a class="kline-preview" href="https://upyoung-jefflein.github.io/stock-reports/2317_2026-05-27/index.html" target="_blank" rel="noreferrer">
+                <img src="https://upyoung-jefflein.github.io/stock-reports/2317_2026-05-27/01_日線完整技術與籌碼分析圖.png" alt="鴻海(2317) 日 K 線圖" loading="lazy">
+              </a>
+              <p class="one-line">偏多強勢，偏多震盪；站穩 MA10 250.80 並突破 269.00 才有續攻機會，跌破 MA20 246.40 轉防守。</p>
+              <dl>
+                <div><dt>觀察</dt><dd>量價中性偏多；明日觀察 MA5 256.30 / MA10 250.80</dd></div>
+                <div><dt>K 線</dt><dd>近90日上升通道：高低點同步墊高，沿通道偏多整理；近180日區間震盪：近 180 日支撐約 201.85，壓力約 252.10；近10日緩步上行：收盤重心上移，仍需觀察是否突破前高</dd></div>
+                <div><dt>支撐</dt><dd>第一 256.30 / 第二 250.80 / 強 246.40</dd></div>
+                <div><dt>壓力</dt><dd>269.00</dd></div>
+                <div><dt>同族群</dt><dd>鴻海(2317)、廣達(2382)、緯創(3231)、緯穎(6669)、英業達(2356)</dd></div>
+              </dl>
+              <a href="https://upyoung-jefflein.github.io/stock-reports/2317_2026-05-27/index.html" target="_blank" rel="noreferrer">開啟完整報告</a>
+            </article>
+            
+            <article class="stock-card danger" data-text="健鼎(3044) 電子零組件業 警戒 danger 偏多強勢，偏多震盪；站穩 MA10 489.00 並突破 542.00 才有續攻機會，跌破 MA20 485.55 轉防守。 量價中性偏多；明日觀察 MA5 501.30 / MA10 489.00 近90日上升通道：高低點同步墊高，沿通道偏多整理；近15日緩步上行：收盤重心上移，仍需觀察是否突破前高；近81日上升通道：高低點同步墊高，沿通道偏多整理 第一 501.30 / 第二 489.00 / 強 485.55 542.00 健鼎(3044)、華通(2313)、金像電(2368)、敬鵬(2355)、燿華(2367)、欣興(3037)、瀚宇博(5469) 2026Q1 毛利率 26.51%（年變化 +1.55 個百分點）、營業利益率 18.34%（年變化 +1.70 個百分點） 保守 331 元 / 中性 524 元 / 樂觀 603 元；近四季 EPS 20.58；估值本益比 16.1x / 25.5x / 29.3x；以目前 PER 25.5x 作為中性基準；歷史 PER 分位 Q25/Q50/Q75=16.1x/17.3x/19.0x；目前 PER 位於近一年 99% 分位；市場情境 20x/25x/30x=412/514/617 元；ROE/PB 參考 111 元；現價 524.00 元，較中性估值 +0.0%；現價接近中性估值 https://upyoung-jefflein.github.io/stock-reports/3044_2026-05-27/index.html https://upyoung-jefflein.github.io/stock-reports/3044_2026-05-27/01_日線完整技術與籌碼分析圖.png 2026-05-27T20:27">
+              <div class="card-top">
+                <div>
+                  <h2>健鼎(3044)</h2>
+                  <p>電子零組件業</p>
+                </div>
+                <span class="badge">警戒</span>
+              </div>
+              <a class="kline-preview" href="https://upyoung-jefflein.github.io/stock-reports/3044_2026-05-27/index.html" target="_blank" rel="noreferrer">
+                <img src="https://upyoung-jefflein.github.io/stock-reports/3044_2026-05-27/01_日線完整技術與籌碼分析圖.png" alt="健鼎(3044) 日 K 線圖" loading="lazy">
+              </a>
+              <p class="one-line">偏多強勢，偏多震盪；站穩 MA10 489.00 並突破 542.00 才有續攻機會，跌破 MA20 485.55 轉防守。</p>
+              <dl>
+                <div><dt>觀察</dt><dd>量價中性偏多；明日觀察 MA5 501.30 / MA10 489.00</dd></div>
+                <div><dt>K 線</dt><dd>近90日上升通道：高低點同步墊高，沿通道偏多整理；近15日緩步上行：收盤重心上移，仍需觀察是否突破前高；近81日上升通道：高低點同步墊高，沿通道偏多整理</dd></div>
+                <div><dt>支撐</dt><dd>第一 501.30 / 第二 489.00 / 強 485.55</dd></div>
+                <div><dt>壓力</dt><dd>542.00</dd></div>
+                <div><dt>同族群</dt><dd>健鼎(3044)、華通(2313)、金像電(2368)、敬鵬(2355)、燿華(2367)、欣興(3037)、瀚宇博(5469)</dd></div>
+              </dl>
+              <a href="https://upyoung-jefflein.github.io/stock-reports/3044_2026-05-27/index.html" target="_blank" rel="noreferrer">開啟完整報告</a>
+            </article>
+            
+    </section>
+    <h3>監測總表</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>狀態</th>
+          <th>觀察</th>
+          <th>支撐</th>
+          <th>壓力</th>
+          <th>估值</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr>
+              <td>鴻海(2317)</td>
+              <td><span class="badge small danger">警戒</span></td>
+              <td>量價中性偏多；明日觀察 MA5 256.30 / MA10 250.80</td>
+              <td>第一 256.30 / 第二 250.80 / 強 246.40</td>
+              <td>269.00</td>
+              <td>保守 209 元 / 中性 265 元 / 樂觀 305 元；近四季 EPS 14.13；估值本益比 14.8x / 18.8x / 21.6x；以目前 PER 18.8x 作為中性基準；歷史 PER 分位 Q25/Q50/Q75=14.8x/16.2x/16.9x；目前 PER 位於近一年 95% 分位；市場情境 20x/25x/30x=283/353/424 元；ROE/PB 參考 127 元；現價 264.00 元，較中性估值 -0.4%；現價接近中性估值</td>
+            </tr>
+            
+            <tr>
+              <td>健鼎(3044)</td>
+              <td><span class="badge small danger">警戒</span></td>
+              <td>量價中性偏多；明日觀察 MA5 501.30 / MA10 489.00</td>
+              <td>第一 501.30 / 第二 489.00 / 強 485.55</td>
+              <td>542.00</td>
+              <td>保守 331 元 / 中性 524 元 / 樂觀 603 元；近四季 EPS 20.58；估值本益比 16.1x / 25.5x / 29.3x；以目前 PER 25.5x 作為中性基準；歷史 PER 分位 Q25/Q50/Q75=16.1x/17.3x/19.0x；目前 PER 位於近一年 99% 分位；市場情境 20x/25x/30x=412/514/617 元；ROE/PB 參考 111 元；現價 524.00 元，較中性估值 +0.0%；現價接近中性估值</td>
+            </tr>
+            </tbody>
+    </table>
+  </main>
+  <script src="https://unpkg.com/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script>
+  <script>
+    const chartState = new Map();
+    let latestMarketData = null;
+    let txfMode = "realtime";
+
+    function createKlineChart(containerId) {
+      const el = document.getElementById(containerId);
+      const chart = LightweightCharts.createChart(el, {
+        layout: { background: { color: "#ffffff" }, textColor: "#111827" },
+        grid: { vertLines: { color: "#eef2f7" }, horzLines: { color: "#eef2f7" } },
+        rightPriceScale: { borderColor: "#d9dee7" },
+        timeScale: { borderColor: "#d9dee7", timeVisible: false },
+        crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
+      });
+      const candle = chart.addCandlestickSeries({
+        upColor: "#dc2626",
+        downColor: "#059669",
+        borderUpColor: "#dc2626",
+        borderDownColor: "#059669",
+        wickUpColor: "#dc2626",
+        wickDownColor: "#059669",
+      });
+      const volume = chart.addHistogramSeries({
+        priceFormat: { type: "volume" },
+        priceScaleId: "",
+        color: "#94a3b8",
+      });
+      volume.priceScale().applyOptions({
+        scaleMargins: { top: 0.8, bottom: 0 },
+      });
+      new ResizeObserver(() => {
+        chart.applyOptions({ width: el.clientWidth, height: el.clientHeight });
+        chart.timeScale().fitContent();
+      }).observe(el);
+      chartState.set(containerId, { chart, candle, volume });
+    }
+
+    function normalizeRows(rows) {
+      return (rows || [])
+        .filter(row => (row.time || row.date) && row.open && row.high && row.low && row.close)
+        .map(row => ({
+          time: normalizeTime(row.time || row.date),
+          open: Number(row.open),
+          high: Number(row.high),
+          low: Number(row.low),
+          close: Number(row.close),
+          volume: Number(row.volume || 0),
+        }));
+    }
+
+    function normalizeTime(value) {
+      const text = String(value || "");
+      if (/^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}/.test(text)) {
+        return Math.floor(new Date(text.replace(" ", "T") + ":00+08:00").getTime() / 1000);
+      }
+      return text.slice(0, 10);
+    }
+
+    function updateChart(containerId, rows) {
+      const state = chartState.get(containerId);
+      const data = normalizeRows(rows);
+      if (!state || !data.length) return;
+      state.candle.setData(data.map(row => ({
+        time: row.time,
+        open: row.open,
+        high: row.high,
+        low: row.low,
+        close: row.close,
+      })));
+      state.volume.setData(data.map(row => ({
+        time: row.time,
+        value: row.volume,
+        color: row.close >= row.open ? "rgba(220,38,38,.28)" : "rgba(5,150,105,.28)",
+      })));
+      state.chart.timeScale().fitContent();
+    }
+
+    function renderTxfChart() {
+      if (!latestMarketData) return;
+      const realtimeRows = latestMarketData.charts?.txf_realtime || [];
+      const dailyRows = latestMarketData.charts?.txf || [];
+      const rows = txfMode === "realtime" && realtimeRows.length ? realtimeRows : dailyRows;
+      updateChart("lw-txf", rows);
+    }
+
+    async function refreshMarketData() {
+      const status = document.getElementById("market-data-status");
+      try {
+        const response = await fetch(`market_data.json?ts=${Date.now()}`, { cache: "no-store" });
+        const data = await response.json();
+        latestMarketData = data;
+        updateChart("lw-taiex", data.charts?.taiex || []);
+        renderTxfChart();
+        const errors = data.errors?.length ? `；限制：${data.errors.join("；")}` : "";
+        const modeLabel = txfMode === "realtime" ? "台指期即時" : "台指期日 K";
+        status.textContent = `市場 K 線更新：${data.generated_at || "-"}；目前模式：${modeLabel}${errors}`;
+      } catch (error) {
+        status.textContent = `市場 K 線讀取失敗：${error}`;
+      }
+    }
+
+    createKlineChart("lw-taiex");
+    createKlineChart("lw-txf");
+    document.querySelectorAll("[data-txf-mode]").forEach(button => {
+      button.addEventListener("click", () => {
+        txfMode = button.dataset.txfMode;
+        document.querySelectorAll("[data-txf-mode]").forEach(item => item.classList.toggle("active", item === button));
+        renderTxfChart();
+        const status = document.getElementById("market-data-status");
+        if (status && latestMarketData) {
+          const modeLabel = txfMode === "realtime" ? "台指期即時" : "台指期日 K";
+          status.textContent = `市場 K 線更新：${latestMarketData.generated_at || "-"}；目前模式：${modeLabel}`;
+        }
+      });
+    });
+    refreshMarketData();
+    setInterval(refreshMarketData, 60000);
+
+    const input = document.querySelector("#filter");
+    const cards = [...document.querySelectorAll(".stock-card")];
+    input.addEventListener("input", () => {
+      const key = input.value.trim().toLowerCase();
+      cards.forEach(card => {
+        card.style.display = card.dataset.text.toLowerCase().includes(key) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
