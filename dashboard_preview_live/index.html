@@ -214,7 +214,7 @@
   <header>
     <h1>晚盤期貨觀察室</h1>
     <p>焦點：台指期夜盤、美股期貨、匯率與隔日台股風險</p>
-    <p>產生時間：2026-05-27 21:41</p>
+    <p>產生時間：2026-05-27 21:45</p>
   </header>
   <main>
     <section class="session">
@@ -258,10 +258,10 @@
       </article>
       <article class="live-chart-card">
         <div class="live-chart-head">
-          <strong>台指期連續合約</strong>
-          <span>TAIFEX:TXF1!</span>
+          <strong>台指期近月合約</strong>
+          <span>TAIFEX:TXFM2026</span>
         </div>
-        <div class="tv-chart" id="tv-txf"></div>
+        <div class="tv-chart" id="tv-txf" data-symbol="TAIFEX:TXFM2026"></div>
       </article>
     </section>
     
@@ -371,8 +371,9 @@
     }
 
     function initRealtimeCharts() {
+      const txfSymbol = document.querySelector("#tv-txf")?.dataset.symbol || "TAIFEX:TXF1!";
       loadTradingViewChart("tv-taiex", "TWSE:TAIEX", "5");
-      loadTradingViewChart("tv-txf", "TAIFEX:TXF1!", "5");
+      loadTradingViewChart("tv-txf", txfSymbol, "5");
     }
 
     const tvScript = document.createElement("script");
