@@ -1,0 +1,554 @@
+{
+  "stock_id": "2880",
+  "stock_name": "華南金",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "金融保險",
+  "data_period": "2025-06-02 to 2026-05-29",
+  "data_date": "2026-05-29",
+  "ohlcv_start": "2025-06-02",
+  "ohlcv_end": "2026-05-29",
+  "last_daily_k_date": "2026-05-29",
+  "valid_trading_days": 243,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-06-02 to 2026-05-29 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "institutional_latest_period": "2026-05-29",
+  "margin_period": "2025-06-02 to 2026-05-29 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_latest_period": "2026-05-29",
+  "warrant_period": "TWSE report_date=1150529 (OK; call=3, put=0, with_exercise_price=3)",
+  "warrant_latest_period": "TWSE report_date=1150529",
+  "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-06-02 to 2026-05-29; EPS 2021-06-30 to 2025-12-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=243; eps_rows=19; profitability_rows=0; quarterly_detail_rows=20)",
+  "revenue_latest_period": "2026-04",
+  "quarterly_latest_period": "2026-03-31",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260522 (OK; rows=17)",
+  "tdcc_latest_period": "20260522",
+  "etf_latest_period": "2026-05-29",
+  "etf_holding_change_period": "2026-05-29 (OK; holders=22, active_candidates=1; changes=0)",
+  "peer_source_and_list": "FinMind TaiwanStockInfo industry_category candidates + TaiwanStockPrice OHLCV correlation filter; compared=華南金(2880), 合庫金(5880), 彰銀(2801), 台中銀(2812), 上海商銀(5876), 群益證(6005), 京城銀(2809); failures=金鼎證(6012): No TaiwanStockPrice rows for 6012; 元京證(6004): No TaiwanStockPrice rows for 6004; 合庫(5854): No TaiwanStockPrice rows for 5854; 中聯(2827): No TaiwanStockPrice rows for 2827; 竹商銀(2807): No TaiwanStockPrice rows for 2807; 中華銀(2831): No TaiwanStockPrice rows for 2831; 台壽保(2833): No TaiwanStockPrice rows for 2833; 寶來證(2854): No TaiwanStockPrice rows for 2854; 大眾銀(2847): No TaiwanStockPrice rows for 2847; 萬泰銀(2837): No TaiwanStockPrice rows for 2837; 中壽(2823): No TaiwanStockPrice rows for 2823; 新光金(2888): 有效交易日少於 60; 元富證(2856): No TaiwanStockPrice rows for 2856",
+  "peer_display_list": "華南金(2880)、合庫金(5880)、彰銀(2801)、台中銀(2812)、上海商銀(5876)、群益證(6005)、京城銀(2809)",
+  "peer_business_summary": "華南金(2880) 定位：同產業候選，需補公司產品資料；主要產品：-；同族群比較基準：金融保險。對照族群涵蓋：同產業候選，需補公司產品資料。",
+  "peer_business_rows": [
+    {
+      "stock_id": "2880",
+      "name": "華南金",
+      "profile_scope": "待補資料",
+      "chain_position": "同產業候選，需補公司產品資料",
+      "product_mix": "-",
+      "growth_drivers": "-",
+      "valuation_logic": "以同產業估值、獲利率與成長性交叉比較",
+      "risks": "-",
+      "comparability": "中：同產業或同題材，但產品比重仍需確認；公司實際產品比重需以法說、年報或公告確認"
+    },
+    {
+      "stock_id": "5880",
+      "name": "合庫金",
+      "profile_scope": "待補資料",
+      "chain_position": "同產業候選，需補公司產品資料",
+      "product_mix": "-",
+      "growth_drivers": "-",
+      "valuation_logic": "以同產業估值、獲利率與成長性交叉比較",
+      "risks": "-",
+      "comparability": "中：同產業或同題材，但產品比重仍需確認；公司實際產品比重需以法說、年報或公告確認"
+    },
+    {
+      "stock_id": "2801",
+      "name": "彰銀",
+      "profile_scope": "待補資料",
+      "chain_position": "同產業候選，需補公司產品資料",
+      "product_mix": "-",
+      "growth_drivers": "-",
+      "valuation_logic": "以同產業估值、獲利率與成長性交叉比較",
+      "risks": "-",
+      "comparability": "中：同產業或同題材，但產品比重仍需確認；公司實際產品比重需以法說、年報或公告確認"
+    },
+    {
+      "stock_id": "2812",
+      "name": "台中銀",
+      "profile_scope": "待補資料",
+      "chain_position": "同產業候選，需補公司產品資料",
+      "product_mix": "-",
+      "growth_drivers": "-",
+      "valuation_logic": "以同產業估值、獲利率與成長性交叉比較",
+      "risks": "-",
+      "comparability": "中：同產業或同題材，但產品比重仍需確認；公司實際產品比重需以法說、年報或公告確認"
+    },
+    {
+      "stock_id": "5876",
+      "name": "上海商銀",
+      "profile_scope": "待補資料",
+      "chain_position": "同產業候選，需補公司產品資料",
+      "product_mix": "-",
+      "growth_drivers": "-",
+      "valuation_logic": "以同產業估值、獲利率與成長性交叉比較",
+      "risks": "-",
+      "comparability": "中：同產業或同題材，但產品比重仍需確認；公司實際產品比重需以法說、年報或公告確認"
+    },
+    {
+      "stock_id": "6005",
+      "name": "群益證",
+      "profile_scope": "待補資料",
+      "chain_position": "同產業候選，需補公司產品資料",
+      "product_mix": "-",
+      "growth_drivers": "-",
+      "valuation_logic": "以同產業估值、獲利率與成長性交叉比較",
+      "risks": "-",
+      "comparability": "中：同產業或同題材，但產品比重仍需確認；公司實際產品比重需以法說、年報或公告確認"
+    },
+    {
+      "stock_id": "2809",
+      "name": "京城銀",
+      "profile_scope": "待補資料",
+      "chain_position": "同產業候選，需補公司產品資料",
+      "product_mix": "-",
+      "growth_drivers": "-",
+      "valuation_logic": "以同產業估值、獲利率與成長性交叉比較",
+      "risks": "-",
+      "comparability": "中：同產業或同題材，但產品比重仍需確認；公司實際產品比重需以法說、年報或公告確認"
+    }
+  ],
+  "peer_business_interpretation": [
+    "華南金(2880) 定位：同產業候選，需補公司產品資料；主要產品：-；同族群比較基準：金融保險。對照族群涵蓋：同產業候選，需補公司產品資料。",
+    "估值比較應優先看產品組合與獲利率差異：以同產業估值、獲利率與成長性交叉比較。",
+    "主要風險要和同族群分開看：-。"
+  ],
+  "etf_display_status": "持有快照 2026-05-29，未命中最新異動",
+  "tdcc_display_status": "20260522；大額 80.81% / 小額 4.33%",
+  "warrant_display_status": "3 檔，認購 3 / 認售 0",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "毛利率 / 營業利益率資料未取得",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 47.45%（年變化 -3.57 個百分點）、稅後淨利率 40.92%（年變化 +8.94 個百分點）、ROE 0.17%（年變化 +0.04 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 72.33 億元；MoM 13.55%；YoY 46.99%；近 3 個月累計 YoY 22.36%；近 12 個月滾動營收 YoY 10.41%；連續 11 個月年增為正",
+  "fundamental_price_estimate_summary": "保守 24 元 / 中性 32 元 / 樂觀 38 元；近四季 EPS 1.90；前瞻 EPS 估 2.16（成長假設 +13.5%）；估值 PER 12.7x / 14.9x / 17.7x；目前 PER 14.7x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=17.0x/17.3x/17.7x；目前 PER 位於近一年 1% 分位；市場情境 20x/25x/30x=38/48/57 元；ROE/PB 交叉參考 18 元；現價 30.50 元，較中性估值 -5.4%；現價接近中性估值；合理偏低區：若技術面轉強，具估值修復條件",
+  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、PER 位階相對不高、正式 EPS 年增、毛利率 / 營業利益率資料不足、稅後淨利率較去年同期改善、營業費用率較去年同期下降。",
+  "chip_summary": {
+    "margin_balance": 1525.0,
+    "margin_5d_change": -2478.0,
+    "short_balance": 1.0,
+    "short_5d_change": 1.0,
+    "foreign_latest": -43961910.0,
+    "foreign_5d": -180835476.0,
+    "foreign_20d": -184650525.0,
+    "trust_latest": 42905400.0,
+    "trust_5d": 116045400.0,
+    "trust_20d": 101960409.0,
+    "total_latest": -1460748.0,
+    "total_5d": -65563885.0,
+    "total_20d": -91441710.0
+  },
+  "news_display_status": "新聞面偏利多（利多 4 / 利空 0 / 中性 4）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 7 則（法說會 1 / 公告 6）",
+  "summary_one_line": "中性偏弱，偏多震盪；站穩 MA10 31.09 並突破 33.80 才有續攻機會，跌破 MA20 31.92 轉防守。",
+  "summary_overall": "中性偏弱；收盤站上 MA5, MA5 低於 MA10, 跌破 MA10，但投信仍偏買",
+  "summary_tomorrow": "偏多震盪",
+  "summary_one_month": "高波動區間震盪",
+  "summary_support": "第一 30.15 / 第二 31.09 / 強 31.92",
+  "summary_pressure": "33.80",
+  "summary_price_pattern": "近60日下降通道 有效7.7 / 跌破；近180日上升通道 有效5.2 / 區間內",
+  "summary_price_pattern_brief": "近60日下降通道 有效7.7 / 跌破；近180日上升通道 有效5.2 / 區間內",
+  "summary_trade_plan": "買點：靠近 31.92 守住，或放量突破 35.84 再加分；賣點：已跌破 31.92，反彈未站回前偏防守。依據：下降通道有效分數 7.7。",
+  "price_pattern_rows": [
+    {
+      "lookback": 60,
+      "label": "下降通道",
+      "support": 31.78,
+      "resistance": 35.839999999999996,
+      "score": 7.7,
+      "touch_count": 35,
+      "slope_stability": 35.042173301788594,
+      "volume_confirmation": "量能確認",
+      "breakout_status": "跌破",
+      "confirm_status": "站穩"
+    },
+    {
+      "lookback": 180,
+      "label": "上升通道",
+      "support": 28.95,
+      "resistance": 35.405,
+      "score": 5.15,
+      "touch_count": 146,
+      "slope_stability": 25.17883989916247,
+      "volume_confirmation": "量能確認",
+      "breakout_status": "區間內",
+      "confirm_status": "待確認"
+    }
+  ],
+  "summary_atr": "ATR14 0.91，常態區間 29.59～31.41",
+  "summary_key_watch": "價漲量增；明日觀察 MA5 30.15 / MA10 31.09",
+  "summary_risk": "跌破 MA10 31.09 且放量，短線轉弱；跌破 MA20 31.92 則整理擴大",
+  "summary_warrant": "認購成交占 100.00%，近價外認購 0 檔，前五大成交占 100.00%",
+  "summary_warrant_signal": "中性偏投機",
+  "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
+  "summary_warrant_price_view": "現股距認購主流履約價仍有 50.82% 空間，屬高想像但投機風險也高",
+  "generated_at": "2026-05-30T18:10:04+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2880_2026-05-30\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2880_2026-05-30\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2880_2026-05-30\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2880_2026-05-30\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2880_2026-05-30\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2880_2026-05-30\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [],
+  "tdcc_rows": [
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 232234,
+      "shares": 22183064,
+      "ratio": 0.15
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 168519,
+      "shares": 333051895,
+      "ratio": 2.39
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 36219,
+      "shares": 249245583,
+      "ratio": 1.79
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 18694,
+      "shares": 222937405,
+      "ratio": 1.6
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 8507,
+      "shares": 147107128,
+      "ratio": 1.05
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 9507,
+      "shares": 228253412,
+      "ratio": 1.64
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 5091,
+      "shares": 174987584,
+      "ratio": 1.25
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 2866,
+      "shares": 127753909,
+      "ratio": 0.91
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 6068,
+      "shares": 416869207,
+      "ratio": 2.99
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 3158,
+      "shares": 426560088,
+      "ratio": 3.06
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 1182,
+      "shares": 320631329,
+      "ratio": 2.3
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 329,
+      "shares": 158758842,
+      "ratio": 1.14
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 133,
+      "shares": 89111097,
+      "ratio": 0.64
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 104,
+      "shares": 92751445,
+      "ratio": 0.66
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 572,
+      "shares": 10906763101,
+      "ratio": 78.37
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 0,
+      "shares": 0,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2880",
+      "level": 17,
+      "level_label": "合計",
+      "people": 493183,
+      "shares": 13916965089,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260522",
+      "total_people": 493183,
+      "total_shares": 13916965089,
+      "small_ratio": 4.33,
+      "mid_ratio": 8.35,
+      "large_ratio": 80.81,
+      "million_ratio": 78.37,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2880_2026-05-30\\07_集保股權歷史趨勢圖.png",
+  "news_rows": [
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "華南金獲利三箭頭發威法說會揭示併購三原則| 經濟日報 - LINE TODAY",
+      "source": "LINE TODAY",
+      "published": "2026-05-29 09:04",
+      "published_ts": "2026-05-29T09:04:23+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE84VlZZQXh4VUhFb0F2MnBMQ2IwS0ttM0lIZ01HQmVEanVKdnU3dkZ6NHIyVWZhTFBsZ3FNTzJLbE80eFo1ZjZtT1dzUTc2ZC0wa2I2Y0xR?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "華南金獲利三箭頭發威法說會揭示併購三原則| 金融要聞| 產經 - UDN",
+      "source": "UDN",
+      "published": "2026-05-29 01:44",
+      "published_ts": "2026-05-29T01:44:01+08:00",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBSVlN5cWtSOVB0Z0ZDNFRwd1BTS1hZNXI1cVlsb0tUcndMWXhyVl9hc01OcHlueXBsenY5bS12VWl5RVFaSkNVUXBadDJJV3YyLWJoR1p3VlFKQjlCZXFaYWtlV3Q0RnQyZXpBS1doZ2dCb2M?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "華南金法說會／前四月獲利破百億元！不只靠放款 、新金雞母來了 - UDN",
+      "source": "UDN",
+      "published": "2026-05-28 19:16",
+      "published_ts": "2026-05-28T19:16:40+08:00",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9aM0JUT2pvdDlWdy1HdDhEVUloNGVoZ0NSWjhYQTFMS0dNRWJzdU1UUzZQcndWRkRGRnJlUENBZDJfUnJEdVozRDBnNlNPdDBGaGxsaFhrcnZabUQtN3h3RGx3SEtjYkVsS1pTZmJiN2Qxd9IBVkFVX3lxTE1WNkUxOXhnNy0xdi12ZWFEVUgzZWZKcEp4bjNsV3dNUmZYenRLV3JDRGlYNTgtU1NuLXBITDUxR2R4WU1keWlGWmt6d0gzeDl2Ym9pdndn?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "華南金旗下銀行海外獲利大增近倍；核心收入強勁- 新聞 - MoneyDJ",
+      "source": "MoneyDJ",
+      "published": "2026-05-28 16:49",
+      "published_ts": "2026-05-28T16:49:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUUVFRFhzN24xTUJGTk5HcUFmM1Z4aWx6WjBaY1RzTm1Rb3VBSHVmQmliVnlRZmZ5bHZWa1d3dFo2eGJ2cWZSRGl1dmstZU9hRE5HeTlKN3BrdEhzcmtXcmRnOXd0Nm9reUtKa3RQUFU0bHg2SXpRYUFPTUlmUUxuQUpocDRUMWtaenc4UVlxbkkzdw?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【即時新聞】華南金(2880)金融股輪動上漲逾1% 富邦金帶動盤面 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-27 06:05",
+      "published_ts": "2026-05-27T06:05:04+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRk9FbXhMQ3B6TkxDUkF1MVhrMFI3cUVQemZnWU5xRDJuVW1iTkFxVGhwcC14X2htWExFeTBMaWlLMklvdnRWVExnR1Jhb2MzanFyaEdnd3dLV01TeWpnOW01LUNfNVdWcUVKeUJUQVJhQVJHdkJ5WXhOSE0zNEZQQnhsY0Y5RWhaOVpveWY2QkY?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "營收速報 - 華南金(2880)4月營收72.33億元年增率高達59.58％｜新聞快訊｜豐雲學堂 - sinotrade.com.tw",
+      "source": "sinotrade.com.tw",
+      "published": "2026-05-15 15:00",
+      "published_ts": "2026-05-15T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5MckxLZFRWYU9Sem5haVN2YWhiRVcxSEVPR0lTVHktSmZfaFZPd1RyUml3Z01jVjVWcHZCUGJ3dEV3WW9neXhuSXBBWHBpSExiNWRWcWJ2X2ZXRnVUdDRCU1hsRmk2QU1PZ0tfSUY2bDRPczhtNmc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【2026/04月營收公告】華南金(2880) 四月營收72.33億元，表現亮眼、呈現雙成長，創近9個月以來新高，年增59.58% - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-15 15:00",
+      "published_ts": "2026-05-15T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNOExZWlotX3FldkJOXy00a3NLcHFGWE5OZF9IeHFOSl9QS0lPQzFfZjJrREhFdUE0ZFpkeE1TODkzVzFlOXVTZTFncUFhWWdjOUM5dk0xMWtzdmotY0xoZnU1T0ZfVGpxQWpNTWN5SFdvVTNKRmN1QjlLYzZ2cDBTLWVFSjY4X3hyQ1E?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【營收快訊】華南金(2880)公告04月營收 - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-15 01:42",
+      "published_ts": "2026-05-15T01:42:50+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1MR2pRTWlTcFVUVUlHcW9Cc2luM0lPM1Nqc2NrMWMtUlpVY2lHUmtvbldnMUJOWUdETGJoWW9HZzdsMEdNcUtzNWY4WXVWVjB2T2NQZVhseFA?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【2026/04月營收公告】華南金(2880) 四月營收72.33億元，表現亮眼、呈現雙成長，創近9個月以來新高，年增59.58% - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-15 15:00",
+      "published_ts": "2026-05-15T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNOExZWlotX3FldkJOXy00a3NLcHFGWE5OZF9IeHFOSl9QS0lPQzFfZjJrREhFdUE0ZFpkeE1TODkzVzFlOXVTZTFncUFhWWdjOUM5dk0xMWtzdmotY0xoZnU1T0ZfVGpxQWpNTWN5SFdvVTNKRmN1QjlLYzZ2cDBTLWVFSjY4X3hyQ1E?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "【營收快訊】華南金(2880)公告04月營收 - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-15 01:42",
+      "published_ts": "2026-05-15T01:42:50+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1MR2pRTWlTcFVUVUlHcW9Cc2luM0lPM1Nqc2NrMWMtUlpVY2lHUmtvbldnMUJOWUdETGJoWW9HZzdsMEdNcUtzNWY4WXVWVjB2T2NQZVhseFA?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "華南金股利將以現金為主 法人估1.4元 有望寫20年新紀錄 - UDN",
+      "source": "UDN",
+      "published": "2026-03-26 15:00",
+      "published_ts": "2026-03-26T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9jWXNXZUNGa0NDNEJvaEZXaFpZdUkwQW1Zc2tmTnBGUjlmN0lWR0NXRFlGbjFzTnliZUVZV2VSSW1abkN5NUdEZVRpOUNLbGh20gFWQVVfeXFMTVNxT3lJSVkxdVFxbG8zMmR4QkZ5ZkhBdU4tVUdCaUJQYmo1SWtDUGVCWi1tTnZTOXZISVpWaUlMYmZfTVhIdlFPdGN6NFV4RGwwX1QzY2c?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "華南金法說會／股利要變大了！法人喊上探1.4元 戰20年新高 - UDN",
+      "source": "UDN",
+      "published": "2026-03-25 15:00",
+      "published_ts": "2026-03-25T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1XdXZQTnZlSXV2TUVfUzJVQ3A3ckxPWmVSeXpEWUtJa2ZEQ0UwNkVEamR0eFlEVXo4MnlKYVBPNEhUMmU2UlNkUS1hQ0JVRWFu0gFWQVVfeXFMUDZWZnZxVmI2NndEc1JTYTRqX3hxanBRNFh2Sno4N1pXSE5tUDF4NkU5TzRJczFBZ3F1bU1TaHdySkl5SEloYldtRy1vVHd1NnpwRm9teFE?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "華南金今年股利可望優去年；啟動新的五年藍圖- 新聞 - MoneyDJ",
+      "source": "MoneyDJ",
+      "published": "2026-03-25 15:00",
+      "published_ts": "2026-03-25T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOLXluMm02UkNWeWFoXzRJa0lzbFZkSFRiTVhZS0xSR2ZFNktHQi00S25xanZpbFhlSThKRnJFOHNoSGZFLUh4aWk4Rm1ydFRIWWx6UFJ4eUREdmk0dDZHRTZURTBlZGhaSDRWMXhxa2dWbFJwc1lyRDIzTGRRNzgzbFZRVE5laVp6WHpTV1c1OHpYZw?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "華南金總座：今年股利「可期待」 法人估股利上看1.5元 - 自由財經",
+      "source": "自由財經",
+      "published": "2026-03-25 15:00",
+      "published_ts": "2026-03-25T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5zbEhUbWhfb0RfdFVIZ3FxNU5iOTBtVFEwci1mdGx2Yng3RGZoVDdrWnE5alE1a1Y0c1pCb1d1RmRVUkF5SVgwVng2QWU2Qmx2NlVLUndMRVBOSi1KZzVz0gFkQVVfeXFMUHBVQ0xubEFjTVNVZmM0T1VGRmo2SmlGNU9xUGY4NUg3Y3kwYjZzeUlmWGdHc3R3bndMbUxPczdSU0x2Z1NCZm5ocU9EWXBiaWRwemR2blg5MzZzVm1ZbS1hMjlxTg?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "華南金新任總座：今年股利可以期待 且以現金股利為主 - UDN",
+      "source": "UDN",
+      "published": "2026-03-25 15:00",
+      "published_ts": "2026-03-25T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1GamplUVVydDNXdDRfZU95clMxT0NPbUJpOG1QR3BCOHhLSUJDZEZQbG1hNU05aXNZTEZ2c3lUcF8yRk9sR1BPMHlwVi1seTRU0gFWQVVfeXFMTVBOUnJRbTJMM1JtR3pvUUJEMFRTR25ERHZ1Vm5xSVF3Mkg4U01YTlFxM0NiUjR3anRhdHdfTDZZRzljQVU0azdKTHlFa3preTRFNER6Wnc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    }
+  ],
+  "warrant_top_rows": [
+    {
+      "warrant_id": "067798",
+      "warrant_name": "華南金國票5C購01",
+      "call_put": "認購",
+      "exercise_price": 46.0,
+      "trading_money": 343020.0,
+      "trading_volume": 483000.0
+    },
+    {
+      "warrant_id": "047748",
+      "warrant_name": "華南金中信56購01",
+      "call_put": "認購",
+      "exercise_price": 40.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "049495",
+      "warrant_name": "華南金凱基56購01",
+      "call_put": "認購",
+      "exercise_price": 35.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    }
+  ],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2880_2026-05-30\\index.html"
+}
