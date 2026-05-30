@@ -1,0 +1,522 @@
+{
+  "stock_id": "2002",
+  "stock_name": "中鋼",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "鋼鐵工業",
+  "data_period": "2025-06-02 to 2026-05-29",
+  "data_date": "2026-05-29",
+  "ohlcv_start": "2025-06-02",
+  "ohlcv_end": "2026-05-29",
+  "last_daily_k_date": "2026-05-29",
+  "valid_trading_days": 243,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-06-02 to 2026-05-29 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "institutional_latest_period": "2026-05-29",
+  "margin_period": "2025-06-02 to 2026-05-29 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_latest_period": "2026-05-29",
+  "warrant_period": "TWSE report_date=1150529 (OK; call=56, put=0, with_exercise_price=56)",
+  "warrant_latest_period": "TWSE report_date=1150529",
+  "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-06-02 to 2026-05-29; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=243; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
+  "revenue_latest_period": "2026-04",
+  "quarterly_latest_period": "2026-03-31",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260522 (OK; rows=17)",
+  "tdcc_latest_period": "20260522",
+  "etf_latest_period": "2026-05-29",
+  "etf_holding_change_period": "2026-05-29 (OK; holders=10, active_candidates=1; changes=0)",
+  "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=中鋼(2002), 中鴻(2014); failures=none",
+  "peer_display_list": "中鋼(2002)、中鴻(2014)",
+  "peer_business_summary": "中鋼(2002) 定位：鋼鐵 / 金屬材料；主要產品：族群共通：鋼材、不鏽鋼、金屬加工、原料與製品；同族群比較基準：碳鋼 / 鋼品。對照族群涵蓋：鋼鐵 / 金屬材料。",
+  "peer_business_rows": [
+    {
+      "stock_id": "2002",
+      "name": "中鋼",
+      "profile_scope": "產業通用推估",
+      "chain_position": "鋼鐵 / 金屬材料",
+      "product_mix": "族群共通：鋼材、不鏽鋼、金屬加工、原料與製品",
+      "growth_drivers": "鋼價循環、基建需求、製造業景氣",
+      "valuation_logic": "以鋼價、利差、庫存與產能利用率比較。",
+      "risks": "景氣循環、原料成本、中國供給",
+      "comparability": "中：鋼鐵產業通用比較；公司實際產品比重需以法說、年報或公告確認"
+    },
+    {
+      "stock_id": "2014",
+      "name": "中鴻",
+      "profile_scope": "產業通用推估",
+      "chain_position": "鋼鐵 / 金屬材料",
+      "product_mix": "族群共通：鋼材、不鏽鋼、金屬加工、原料與製品",
+      "growth_drivers": "鋼價循環、基建需求、製造業景氣",
+      "valuation_logic": "以鋼價、利差、庫存與產能利用率比較。",
+      "risks": "景氣循環、原料成本、中國供給",
+      "comparability": "中：鋼鐵產業通用比較；公司實際產品比重需以法說、年報或公告確認"
+    }
+  ],
+  "peer_business_interpretation": [
+    "中鋼(2002) 定位：鋼鐵 / 金屬材料；主要產品：族群共通：鋼材、不鏽鋼、金屬加工、原料與製品；同族群比較基準：碳鋼 / 鋼品。對照族群涵蓋：鋼鐵 / 金屬材料。",
+    "估值比較應優先看產品組合與獲利率差異：以鋼價、利差、庫存與產能利用率比較。",
+    "主要風險要和同族群分開看：景氣循環、原料成本、中國供給。"
+  ],
+  "etf_display_status": "持有快照 2026-05-29，未命中最新異動",
+  "tdcc_display_status": "20260522；大額 52.96% / 小額 16.19%",
+  "warrant_display_status": "56 檔，認購 56 / 認售 0",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "2026Q1 毛利率 3.33%（年變化 -2.20 個百分點）、營業利益率 -0.78%（年變化 -2.43 個百分點）",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 4.12%（年變化 +0.23 個百分點）、稅後淨利率 -2.35%（年變化 -3.33 個百分點）、ROE -0.28%（年變化 -0.51 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 308.91 億元；MoM 7.93%；YoY 2.15%；近 3 個月累計 YoY -4.18%；近 12 個月滾動營收 YoY -9.70%；連續 1 個月年增為正",
+  "fundamental_price_estimate_summary": "財報推算股價資料不足（EPS 無法換算）",
+  "fundamental_support_summary": "是否支持股價：支持度偏弱。理由：近 3 個月營收動能改善、最新月營收年增為正、正式 EPS 年減、毛利率較去年同期下滑、營業利益率較去年同期下滑、稅後淨利率較去年同期下滑、ROE 較去年同期下滑。",
+  "chip_summary": {
+    "margin_balance": 44521.0,
+    "margin_5d_change": 3742.0,
+    "short_balance": 659.0,
+    "short_5d_change": 616.0,
+    "foreign_latest": 2193070.0,
+    "foreign_5d": -38351405.0,
+    "foreign_20d": -223922905.0,
+    "trust_latest": 27525.0,
+    "trust_5d": 16525.0,
+    "trust_20d": 802139.0,
+    "total_latest": 2360364.0,
+    "total_5d": -36694284.0,
+    "total_20d": -222172823.0
+  },
+  "news_display_status": "新聞面偏利多（利多 4 / 利空 1 / 中性 7）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 4 則（法說會 0 / 公告 4）",
+  "summary_one_line": "中性偏弱，偏多震盪；站穩 MA10 18.73 並突破 21.00 才有續攻機會，跌破 MA20 18.65 轉防守。",
+  "summary_overall": "中性偏弱；收盤跌破 MA5, MA5 高於 MA10, MA10 上方且投信 5/10 日偏買",
+  "summary_tomorrow": "偏多震盪",
+  "summary_one_month": "高波動區間震盪",
+  "summary_support": "第一 19.30 / 第二 18.73 / 強 18.65",
+  "summary_pressure": "21.00",
+  "summary_price_pattern": "近80日下降通道 有效5.8 / 區間內；近180日箱型整理 有效5.4 / 區間內",
+  "summary_price_pattern_brief": "近80日下降通道 有效5.8 / 區間內；近180日箱型整理 有效5.4 / 區間內",
+  "summary_trade_plan": "買點：靠近 18.73 守住，或放量突破 21.12 再加分；賣點：跌破 18.73，先降權重。依據：下降通道有效分數 5.8。",
+  "price_pattern_rows": [
+    {
+      "lookback": 80,
+      "label": "下降通道",
+      "support": 18.435,
+      "resistance": 21.115000000000002,
+      "score": 5.8,
+      "touch_count": 27,
+      "slope_stability": 37.97879121639235,
+      "volume_confirmation": "量能中性",
+      "breakout_status": "區間內",
+      "confirm_status": "待確認"
+    },
+    {
+      "lookback": 180,
+      "label": "箱型整理",
+      "support": 18.1,
+      "resistance": 20.55,
+      "score": 5.3500000000000005,
+      "touch_count": 78,
+      "slope_stability": 27.868165915089804,
+      "volume_confirmation": "量能中性",
+      "breakout_status": "區間內",
+      "confirm_status": "待確認"
+    }
+  ],
+  "summary_atr": "ATR14 0.52，常態區間 18.58～19.62",
+  "summary_key_watch": "量價中性偏多；明日觀察 MA5 19.30 / MA10 18.73",
+  "summary_risk": "跌破 MA10 18.73 且放量，短線轉弱；跌破 MA20 18.65 則整理擴大",
+  "summary_warrant": "認購成交占 100.00%，近價外認購 7 檔，前五大成交占 73.02%",
+  "summary_warrant_signal": "中性偏投機",
+  "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
+  "summary_warrant_price_view": "現股距認購主流履約價仍有 23.75% 空間，屬高想像但投機風險也高",
+  "generated_at": "2026-05-30T21:56:19+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2002_2026-05-30\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2002_2026-05-30\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2002_2026-05-30\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2002_2026-05-30\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2002_2026-05-30\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2002_2026-05-30\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [],
+  "tdcc_rows": [
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 322845,
+      "shares": 45494277,
+      "ratio": 0.28
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 738219,
+      "shares": 1484514132,
+      "ratio": 9.43
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 135474,
+      "shares": 1019903452,
+      "ratio": 6.48
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 50540,
+      "shares": 622923130,
+      "ratio": 3.95
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 29194,
+      "shares": 528921279,
+      "ratio": 3.36
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 25410,
+      "shares": 631426157,
+      "ratio": 4.01
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 11757,
+      "shares": 412877563,
+      "ratio": 2.62
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 7205,
+      "shares": 330213924,
+      "ratio": 2.09
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 12391,
+      "shares": 873481468,
+      "ratio": 5.55
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 5419,
+      "shares": 745841295,
+      "ratio": 4.74
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 2556,
+      "shares": 703071809,
+      "ratio": 4.46
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 685,
+      "shares": 331340171,
+      "ratio": 2.1
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 230,
+      "shares": 157694880,
+      "ratio": 1.0
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 116,
+      "shares": 103156676,
+      "ratio": 0.65
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 471,
+      "shares": 7744000784,
+      "ratio": 49.21
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 0,
+      "shares": 0,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260522",
+      "stock_id": "2002",
+      "level": 17,
+      "level_label": "合計",
+      "people": 1342512,
+      "shares": 15734860997,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260522",
+      "total_people": 1342512,
+      "total_shares": 15734860997,
+      "small_ratio": 16.19,
+      "mid_ratio": 14.75,
+      "large_ratio": 52.96,
+      "million_ratio": 49.21,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2002_2026-05-30\\07_集保股權歷史趨勢圖.png",
+  "news_rows": [
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "董座的話聽到了！中鋼喊拚 AI 鋼廠、當機器人後盾 爆量衝漲停 - 經濟日報",
+      "source": "經濟日報",
+      "published": "2026-05-29 17:00",
+      "published_ts": "2026-05-29T17:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DQ2xuWlQwdVIzdmN0bUNCbE1UTGJDVUNRV3E1OVVOV0s2NmRtcVBWYUl2c2VNbXNCLXh2a0xqWkhyMnpxaHRPTXF3U2tOeUlFTDdDMlpOV1BrUdIBX0FVX3lxTE8yUEZaNllzcFJNZkxFSVdRd3FWVUVGcElvZXlFN1JXM2ZZV0U4Tm5xakFoZ0dFUVIzN2ozeUQ2MlY0ay1OdC11Tm5sWUVmSno2YlZnNm9tb21HbWNOSDFr?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "2002 中鋼 - 台股要飆上5萬了，加碼20張-股市爆料同學會 - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-26 14:03",
+      "published_ts": "2026-05-26T14:03:13+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NenptWkhackdXNFZCVl9WMjVGOGduM3g0U21UbTROT0FNdkYxbjlMcEJRWE9QQUM4ZGstVFpBb05Kb2R2WFVHSEU0SG5JSVRybGR1ZmdHR1Y?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "中鋼為何拉一根漲停？20元買氣搶搶滾，原因只有1個！小股民46元套5年不敢置信…會從傳產變軍工股？ - 今周刊",
+      "source": "今周刊",
+      "published": "2026-05-26 12:19",
+      "published_ts": "2026-05-26T12:19:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZVNmOUhFYjhyUWFWNUJITzVVYU9uQnY5ZVZXTzZRcVFpUjB2RVVaSXV5U1JfNkN4SkVjaEVMQ2x5NnVIdHk1ZGRDZ2FLYm5DbTN5MFJkc3lGbjZDUjdyRS1wVTFqZkVWMWVWWVlESXFRQXREVG5qSWN6TEhDNWFwSA?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "中鋼（2002）春燕回來了？董座一句「旺到7月」點火股價 苦主卻嘆：還在等解套 - UDN",
+      "source": "UDN",
+      "published": "2026-05-26 08:17",
+      "published_ts": "2026-05-26T08:17:32+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBSREFVQXhMbXNwdE1OYUdOUW16a2N3M0JQc2RtMVlWNVdCNmxWSzJ0ZjI3Q05yWEtlUTZ4aVRraE5TMzBfemxyQ21wU3hWOENXQ2fSAVdBVV95cUxOejVsVDI3WDVmdWc4NWNyZGFSWDNmSWRRSGlXWklQbDJ4ZXcwdkpXcVU1ektnZmRfMVlhMU9BZGZvM3pTMW5vRFRSSzRGTGhITGxnZzdYYzg?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "【即時新聞】中鋼股價9.92%漲停 法人11連賣後回頭買超 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-25 23:16",
+      "published_ts": "2026-05-25T23:16:41+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR2MtY1E3OFRGa2xNaGo1eW1jYkxLV0V3ZEsyWGJ1ZnBFZXNyS2ZQcGVPNHpSUUtLbWNXZklaQVN6X3FCTTBfSFVGbGYzMWdlOTg3LXNzWmdhZUwtTl9uWV9KVVE5Z0tMQWh0ZWtvS29ieGtJUXU5ZDQxYnpGbkFLTGhpb3Y5QXZhWGl2RjMycjM?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "董座一句話點火！中鋼亮燈漲停叩關20元 專家：先別追高 - Yahoo股市",
+      "source": "Yahoo股市",
+      "published": "2026-05-25 15:11",
+      "published_ts": "2026-05-25T15:11:57+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxPUXpBN2J2dGM1NERQR1I3N29LZUlBTjRGWnFjMUZicVZXRWI4WXN2Z2xyME1xYUJzN1hKV2VkNlR0R3JYUDFYbzBGSVdSSnFUUFZvLWR6bHUyemppWjl6SXdRa1hxc0RWdUhuY2VFTXpuTVNqOXVMS3o4MkNiTWdmeFBoaXFaS1FTaDlkSTI4eUoyTVgxTFJoQjdBUUlELW81UmlTNWJlXzVIbElrWm51Q0hib2RBdUxkS3hCX3VfTWtkV2Vnbmp5NzAyZWs4NklCbnJmNnpFNi13RXk1eUVSeGx6WFluU1BNRzFMc193UGtuSWlTV3pkcnU3MVdxMGpWYll1SmxkMHJHYy05dGs0ZlRRSlZtLXlpYzBZcXRIN21oRmY0clVLd29tX19ES0tVVUZ2ODdrRVM0RW9qN0tNN252b0E1NDJGNlpLX0lRQjR4bTZYVjZETV9TTkpGckdsWTc2SVVIZy1nVXpFQ3dXLU9oQndoNWJIbTFOaWxYSQ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "【12:14 即時新聞】中鋼(2002)亮燈漲停19.95元，受營運由虧轉盈與鋼價連六漲帶動＋低檔整理後技術面轉強、官股持續加碼護盤 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-25 12:14",
+      "published_ts": "2026-05-25T12:14:38+08:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQUE5YTE0cjlvcnpRYWp0aWNRdlp4QkVjQlZnTXo1VVU3SHFGYXhQVUNNRTlzTEN3OVdTOGVjTlJFdHlZN0kwbEtmbzFkTTRkN1ZDYU5NbWx1Y1FZaWl4SzBOWTFsalY2WXVrUG41RWN3OHZ4Wjc4MnU1dm54WFA0eWJIUWR2V09nYjVLaVdR?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "中鋼股價委屈？黃建智：資金輪動無法控制、7月前獲利可期 - 自由財經",
+      "source": "自由財經",
+      "published": "2026-05-22 09:12",
+      "published_ts": "2026-05-22T09:12:09+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBmalpjOWYwSzBCVzFjTEVwRDdQM3RxVmhXazdrY2RqZ2wtUXFseHBZbVROYUM1cmgyWXgxS1VQV3JCTHN0elNVRTB5TmpueVlmcjFZdGlhMjNTT1BFZWRz0gFkQVVfeXFMTzRFcTF5OWR6Y2lQVWhaaVlBbklmak1vZDlBY1ZJRHp3NDljWll5WHVDVW9sS1lfa0pKWmFBLXBRcmtpeXRrQV8zZUFyS2YzU01ULVBscnE0N2xYR1haNzhBRmZRag?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "盤價連漲＋市場需求回暖 中鋼4月終轉盈 股價「利多不漲」原因在哪？ - 工商時報",
+      "source": "工商時報",
+      "published": "2026-05-21 15:00",
+      "published_ts": "2026-05-21T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEc2g5UVFyUlptQUxiQUI0cHcxVWg1dmRNNzZJblVqZm1aTkFTNklsZVBlNk9ud1FTYmFxaDNTZzJPVVpxNl8ybXhnMTJpdkpSaGVMTTNrNlFqRGVHZHRZ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "暴力轉機來了！中鋼4月營收炸出308億「股淨比還不到1倍能存股？」內行：能賺18％價差誰要1.6％股息 - 上市櫃 - 旺得富理財網",
+      "source": "旺得富理財網",
+      "published": "2026-05-12 15:00",
+      "published_ts": "2026-05-12T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9wcFF2bXlpbEdaVVp2UEQtZ1Y2bTJJUEhEcjQ1YXZuU0lSRlgxQ3o3WWJ3Nnh4VEpTMEY5V3h4LW9XMzNuN0ZNWUtJeWpIZ2Z4ZFJuZHQxQ3ZwS0haOFgzaHVqMW9FTlZMdHc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "title": "中鋼4月營收重返300億元大關 創23個月新高 - news.cnyes.com",
+      "source": "news.cnyes.com",
+      "published": "2026-05-11 15:00",
+      "published_ts": "2026-05-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1kNUtTTGxQY1dJemxTX0ppa2JoNWlvelgyOGp2YXZxQnFmcEMzVVBUbFZFNFI0UlZ1ZkVMYlpSTVBONUxUZHNzRGRIWmN0RDQ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利空",
+      "title": "Factset 最新調查：中鋼(2002-TW)目標價調降至23元，幅度約4.17%｜新聞快訊｜豐雲學堂 - sinotrade.com.tw",
+      "source": "sinotrade.com.tw",
+      "published": "2026-05-03 15:00",
+      "published_ts": "2026-05-03T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8wQmRldm1sMzlwcVlwQjFnWlpwTlZGaF9PSTVfcWZ3T01mUU9Lb1dFOGZmSGRNS2ZobS1yeG9mWm54SGRoTXNFV2VRR1dQZUNwVEJWLWh4LS1GOVpxa1FBdjJ1VzJuMXdQS2pCZ3cwNWZ0UXhtUVE?oc=5",
+      "reason": "標題含需求疲弱、報價下跌、虧損或評等偏負向關鍵字"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "虧43億照發股利！中鋼每股擬配現金0.15元 股東會時間、紀念品門檻一次看 - 自由時報",
+      "source": "自由時報",
+      "published": "2026-05-26 15:05",
+      "published_ts": "2026-05-26T15:05:41+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5SaDdhcE5nWTFja3NKUEVmeXlfVHdyYS1rN2xJdDlNY296M051ZkFCdjlYWm50R1A0OFNid1d5aHpudzR0U2JQRGtxS1VLX1FmOFZLdm92dUk?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "2002 中鋼- 【營收快訊】中鋼(2002)公告04月營收-股市爆料同學會 - CMoney",
+      "source": "CMoney",
+      "published": "2026-05-10 15:00",
+      "published_ts": "2026-05-10T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9aRGRIZVFnTnpiOGdXdUFTSU90eDhLTUJQU1BtX1lCZFlmMl9PcTMydGF1emEzZ1JEdERhejgtTzlPeVkyajZ6cTd5VDVJQ0dVaWY0Y1Y0X3E?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "137萬股民傻眼！中鋼紀念品「超商50元商品卡」最後買進日後公告網轟史上最爛：周一開盤刺激啦 - Yahoo股市",
+      "source": "Yahoo股市",
+      "published": "2026-03-28 15:00",
+      "published_ts": "2026-03-28T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMizwNBVV95cUxNQm1uNDFEaDZwQzlIeE1SMHZwX2ZzMFlyUmdmeDgzS3UzN1ZOS1B1T3RIYWVPRmxWcUpEMks2enpWSk9fdnRFSEpITW5fdUF1SFBUcFlueTBLSGgxNlRDOGtSallWUm05OEtMbTZmazhIMWhKc0ZMVWRuVlVYV2JPN1g3NzJlWTNmQ2NfaGFMN2FhSzI0Mi04aFBoVW8xSEJrWE1qbm56Qk9pY2ZCaXVDYnJqRmFMcHRlUzItLVl5elc5TjB3dUpsUEg5Qnl2TnZZY1NhQkhNa3A3UUthanJzVUxzVTJmVFNoMVB1bW9QNVc5UUg3MTZEckNXMTRzTTA1aUstTjk2azZyTWJhaXZsS18xV1ZFTUtsc1h2SEl1ZG9NVmpvRDM5eHpLUnhBYXJtSGhFY1UyNHhCdWhyaUwxZ3VOVVBnbFh6MVVNc0UwNVhBWVJqbUMzanBaT3RzX1F2YWdjV2NUVkU3R1UyaUo5X1FuOTdHbloxb3JzMUhuMXFVYXFxNWpIRGRhRnJmVU91UUFvc2Q0V0VfdEsyVUthdlItMzRCSE9Ea2d4eHdZV3pkVF9tY3BCSDhmWmQ2Rk53NVBOMzRvMHc5UTAzYVM0?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "title": "中鋼47年首虧43億 因「這原因」硬配0.15元股利創新低 | CTWANT - LINE TODAY",
+      "source": "LINE TODAY",
+      "published": "2026-02-26 16:00",
+      "published_ts": "2026-02-26T16:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tY2M5ME1laHZ6LXNwM0tLXy1Da2JtcWtnSUtmMHpiRTRDRjY0WlRodkkzaEhTRGhqMUpYZmRUYWlkSTRieTFRVWhnYzR2MDYzZk1iclRB?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "kind": "公告"
+    }
+  ],
+  "warrant_top_rows": [
+    {
+      "warrant_id": "053436",
+      "warrant_name": "中鋼富邦59購02",
+      "call_put": "認購",
+      "exercise_price": 21.88,
+      "trading_money": 947380.0,
+      "trading_volume": 1553000.0
+    },
+    {
+      "warrant_id": "058303",
+      "warrant_name": "中鋼富邦5C購01",
+      "call_put": "認購",
+      "exercise_price": 28.88,
+      "trading_money": 176740.0,
+      "trading_volume": 269000.0
+    },
+    {
+      "warrant_id": "055375",
+      "warrant_name": "中鋼國泰59購01",
+      "call_put": "認購",
+      "exercise_price": 24.0,
+      "trading_money": 175700.0,
+      "trading_volume": 350000.0
+    },
+    {
+      "warrant_id": "055655",
+      "warrant_name": "中鋼統一62購01",
+      "call_put": "認購",
+      "exercise_price": 24.0,
+      "trading_money": 134720.0,
+      "trading_volume": 368000.0
+    },
+    {
+      "warrant_id": "068927",
+      "warrant_name": "中鋼富邦61購01",
+      "call_put": "認購",
+      "exercise_price": 21.88,
+      "trading_money": 132070.0,
+      "trading_volume": 127000.0
+    }
+  ],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2002_2026-05-30\\index.html"
+}
