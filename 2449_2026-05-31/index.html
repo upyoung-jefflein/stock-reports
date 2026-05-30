@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>京元電子(2449) 台股技術分析報告</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+      background: #f4f6fa;
+      color: #172033;
+    }
+    header { padding: 24px 18px 18px; background: #14213d; color: #fff; }
+    main { max-width: 1180px; margin: 0 auto; padding: 18px; }
+    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0; }
+    h2 { margin: 0 0 14px; font-size: 20px; }
+    .panel {
+      background: #fff;
+      border: 1px solid #dce2ee;
+      border-radius: 8px;
+      margin: 16px 0;
+      padding: 16px;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    .table-scroll { overflow-x: auto; width: 100%; }
+    th, td {
+      border-bottom: 1px solid #e7ebf2;
+      padding: 9px 8px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th { width: 230px; color: #526070; font-weight: 600; }
+    .cell-number { text-align: right; font-variant-numeric: tabular-nums; }
+    .cell-muted { display: inline-block; margin-top: 4px; color: #64748b; font-size: 12px; line-height: 1.45; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #e5e9f0;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .analysis ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .deep-analysis {
+      border-color: #b8c7dc;
+      background: #fbfdff;
+    }
+    .deep-analysis-body { line-height: 1.78; color: #243044; }
+    .deep-analysis-body h2,
+    .deep-analysis-body h3,
+    .deep-analysis-body h4 {
+      margin: 18px 0 8px;
+      font-size: 17px;
+      color: #14213d;
+    }
+    .deep-analysis-body p { margin: 8px 0; }
+    .deep-analysis-body ul,
+    .deep-analysis-body ol { margin: 8px 0 12px; padding-left: 22px; }
+    .deep-analysis-body li { margin: 4px 0; }
+    .detail-panel { padding: 0; overflow: hidden; }
+    details > summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      font-weight: 700;
+      color: #172033;
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary::after { content: "展開"; float: right; color: #64748b; font-weight: 500; }
+    details[open] > summary::after { content: "收合"; }
+    .detail-body { padding: 0 16px 16px; }
+    .detail-body ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .summary-decision {
+      border-left: 4px solid #2563eb;
+      background: #eff6ff;
+      color: #0f172a;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      line-height: 1.55;
+    }
+    .summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+    .summary-card {
+      border: 1px solid #dde4ef;
+      border-radius: 8px;
+      padding: 12px;
+      background: #f8fafc;
+      min-height: 78px;
+    }
+    .summary-card span { display: block; color: #64748b; font-size: 13px; margin-bottom: 7px; }
+    .summary-card strong { display: block; color: #111827; font-size: 15px; line-height: 1.45; }
+    .freshness-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 10px; }
+    .freshness-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 10px;
+      background: #ffffff;
+    }
+    .freshness-card span { display: block; color: #64748b; font-size: 12px; margin-bottom: 5px; }
+    .freshness-card strong { display: block; color: #111827; font-size: 13px; line-height: 1.4; }
+    .freshness-list {
+      margin: 0;
+      padding-left: 20px;
+      columns: 2;
+      line-height: 1.75;
+    }
+    .freshness-list li { break-inside: avoid; padding-right: 12px; }
+    .freshness-list span { color: #64748b; margin-right: 6px; }
+    .freshness-list strong { color: #111827; font-weight: 600; }
+    .notice { line-height: 1.7; color: #3f4b5f; }
+    @media (max-width: 720px) {
+      header { padding: 18px 14px 14px; }
+      main { padding: 10px; }
+      h1 { font-size: 20px; line-height: 1.35; }
+      h2 { font-size: 16px; margin-bottom: 10px; }
+      .panel { border-radius: 6px; margin: 10px 0; padding: 10px; }
+      table, tbody, tr, th, td { display: block; width: 100%; }
+      tr { border-bottom: 1px solid #e7ebf2; padding: 8px 0; }
+      th, td { border-bottom: 0; padding: 2px 0; font-size: 13px; }
+      th { color: #64748b; }
+      .table-scroll th, .table-scroll td { display: table-cell; width: auto; min-width: 120px; padding: 7px 8px; border-bottom: 1px solid #e7ebf2; }
+      .table-scroll tr { display: table-row; border-bottom: 0; padding: 0; }
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .summary-decision { padding: 9px 10px; font-size: 13px; }
+      .summary-card { min-height: auto; padding: 9px; }
+      .summary-card strong { font-size: 13px; }
+      .freshness-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .freshness-card { padding: 8px; }
+      .freshness-card strong { font-size: 12px; }
+      .freshness-list { columns: 1; padding-left: 18px; font-size: 13px; }
+      .analysis ul { padding-left: 18px; font-size: 13px; }
+      .deep-analysis-body { font-size: 13px; }
+      .deep-analysis-body h2,
+      .deep-analysis-body h3,
+      .deep-analysis-body h4 { font-size: 15px; }
+      details > summary { padding: 11px 10px; font-size: 14px; }
+      .detail-body { padding: 0 10px 10px; font-size: 13px; }
+      .notice { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>京元電子(2449) 台股技術分析報告</h1>
+    <div>產生時間：2026-05-31T02:25:44+08:00</div>
+  </header>
+  <main>
+    
+    <section class="panel conclusion">
+      <h2>結論摘要</h2>
+      <div class="summary-decision">偏多強勢，偏多震盪 / 偏多震盪 / 中性 251 元；現價差 +30.7%；偏高估區：不宜只用本益比追價</div>
+      <div class="summary-grid"><div class="summary-card"><span>趨勢</span><strong>偏多強勢，偏多震盪</strong></div>
+<div class="summary-card"><span>估值</span><strong>中性 251 元；現價差 +30.7%；偏高估區：不宜只用本益比追價</strong></div>
+<div class="summary-card"><span>支撐 / 壓力</span><strong>第一 323.90 / 第二 306.30 / 強 311.45 / 壓力 364.50</strong></div>
+<div class="summary-card"><span>觀察</span><strong>價漲量增；MA5 323.90 / MA10 306.30</strong></div>
+<div class="summary-card"><span>買點</span><strong>已突破 318.80 且站穩，回測不破可偏多續抱</strong></div>
+<div class="summary-card"><span>賣點 / 風險</span><strong>跌破 311.45，先降權重；跌破 MA10 306.30 且放量，短線轉弱
+跌破 MA20 311.45 則整理擴大</strong></div>
+<div class="summary-card"><span>獲利率</span><strong>毛利率 39.74% / 營益率 27.20%</strong></div></div>
+    </section>
+    
+    
+    <section class="panel freshness">
+      <h2>資料截至</h2>
+      <ul class="freshness-list"><li><span>股價</span><strong>2026-05-29</strong></li>
+<li><span>月營收</span><strong>2026-04</strong></li>
+<li><span>季報</span><strong>2026-03-31</strong></li>
+<li><span>法人</span><strong>2026-05-29</strong></li>
+<li><span>融資融券</span><strong>2026-05-29</strong></li>
+<li><span>集保</span><strong>20260529</strong></li>
+<li><span>ETF</span><strong>2026-05-29</strong></li></ul>
+    </section>
+    
+    
+    
+        <section class="panel chart-panel">
+          <h2>01_日線完整技術與籌碼分析圖</h2>
+          <img src="01_日線完整技術與籌碼分析圖.png?v=2026-05-31T02:25:44+08:00" alt="01_日線完整技術與籌碼分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>02_周線完整技術與趨勢分析圖</h2>
+          <img src="02_周線完整技術與趨勢分析圖.png?v=2026-05-31T02:25:44+08:00" alt="02_周線完整技術與趨勢分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>03_月線完整技術與長期趨勢分析圖</h2>
+          <img src="03_月線完整技術與長期趨勢分析圖.png?v=2026-05-31T02:25:44+08:00" alt="03_月線完整技術與長期趨勢分析圖">
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>八、基本面 EPS / 月營收</h2>
+          
+      <h3>估值情境表</h3>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>情境</th>
+              <th>推估價</th>
+              <th>PER 假設</th>
+              <th>EPS 假設</th>
+              <th>相對現價</th>
+              <th>說明</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>保守</td><td class="cell-number">111</td><td class="cell-number">15.0x</td><td class="cell-number">7.78</td><td class="cell-number">-66.2%</td><td>風險折價後的防守估值</td></tr>
+<tr><td>中性</td><td class="cell-number">251</td><td class="cell-number">32.3x</td><td class="cell-number">7.78</td><td class="cell-number">-23.6%</td><td>產業模型 + 歷史 PER + 前瞻 EPS</td></tr>
+<tr><td>樂觀</td><td class="cell-number">315</td><td class="cell-number">40.5x</td><td class="cell-number">7.78</td><td class="cell-number">-4.1%</td><td>催化溢價後的進攻估值</td></tr></tbody>
+        </table>
+      </div>
+    
+      <h3>多模型股價參考</h3>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>模型</th>
+              <th>參考價</th>
+              <th>依據</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>EPS/PER</td><td class="cell-number">251</td><td>前瞻 EPS 7.78 × 中性 PER 32.3x</td></tr>
+<tr><td>PBR/ROE</td><td class="cell-number">45</td><td>ROE 對應合理 PBR</td></tr>
+<tr><td>技術型態</td><td class="cell-number">442</td><td>上升通道 突破量測目標</td></tr>
+<tr><td>法人籌碼成本</td><td class="cell-number">324</td><td>外資 / 投信近20與60日加碼成本</td></tr>
+<tr><td>同族群動能</td><td class="cell-number">411</td><td>同族群中位報酬 +310.2% / 本股 +255.1%</td></tr>
+<tr><td>殖利率</td><td class="cell-number">81</td><td>歷史殖利率中位數回推</td></tr></tbody>
+        </table>
+      </div>
+    
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>摘要</th>
+              <th>重點</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>月營收趨勢</td><td>2026-04 月營收 37.43 億元；MoM 4.03%；YoY 34.56%；近 3 個月累計 YoY 36.99%；近 12 個月滾動營收 YoY 34.17%；創近 24 個月新高；連續 13 個月年增為正</td><td>營收動能</td></tr>
+<tr><td>獲利率</td><td>2026Q1 毛利率 39.74%（年變化 +6.25 個百分點）、營業利益率 27.20%（年變化 +6.38 個百分點）</td><td>毛利率 / 營業利益率</td></tr>
+<tr><td>季報細項</td><td>2026Q1 營業費用率 12.55%（年變化 -0.14 個百分點）、稅後淨利率 22.43%（年變化 +4.95 個百分點）、ROE 2.02%（年變化 -0.65 個百分點）</td><td>營業費用率 / 稅後淨利率 / ROE</td></tr>
+<tr><td>財報推算股價</td><td>估值區間：保守 111 / 中性 251 / 樂觀 315 元<br>模型：成長型 PER（PER 下限 12.0x / 上限 45.0x）<br>假設：EPS 7.78，PER 15.0x / 32.3x / 40.5x<br>多模型中位：324 元<br>現價：328.50 元，較中性估值 +30.7%<br>判讀：偏高估區：不宜只用本益比追價</td><td>EPS / ROE / 獲利率</td></tr>
+<tr><td>估值狀態</td><td>月營收、估值與正式 EPS 已取得</td><td>PER / PBR / EPS</td></tr></tbody>
+        </table>
+      </div>
+    
+          <ul><li>是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、PER 位階偏高，股價需要成長性支撐、正式 EPS 年減、毛利率較去年同期改善、營業利益率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期下滑。</li></ul>
+        </section>
+        
+    
+        <section class="panel chart-panel">
+          <h2>06_基本面分析圖</h2>
+          <img src="06_基本面分析圖.png?v=2026-05-31T02:25:44+08:00" alt="06_基本面分析圖">
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>五、融資融券與法人 / 籌碼成本</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>最新值</th>
+              <th>近 5 日</th>
+              <th>近 20 日</th>
+              <th>籌碼成本</th>
+              <th>說明</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>融資餘額</td><td class="cell-number">26,339</td><td class="cell-number">1,917</td><td class="cell-number">-</td><td class="cell-number">-</td><td>槓桿籌碼</td></tr>
+<tr><td>融券餘額</td><td class="cell-number">189</td><td class="cell-number">73</td><td class="cell-number">-</td><td class="cell-number">-</td><td>放空籌碼</td></tr>
+<tr><td>外資</td><td class="cell-number">11,362,092</td><td class="cell-number">57,510,277</td><td class="cell-number">-17,930,679</td><td class="cell-number">-</td><td>法人主力</td></tr>
+<tr><td>投信</td><td class="cell-number">-9,157,621</td><td class="cell-number">-32,730,413</td><td class="cell-number">-53,902,567</td><td class="cell-number">-</td><td>內資趨勢</td></tr>
+<tr><td>法人合計</td><td class="cell-number">2,389,897</td><td class="cell-number">24,513,040</td><td class="cell-number">-73,677,305</td><td class="cell-number">-</td><td>整體方向</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>同族群產業定位 / 產品組合</h2>
+          <ul><li>京元電子(2449) 定位：封測；產品組合：封測、主要營收項目需由法說 / 年報確認；資料層級：通用推估；同族群比較基準：封測。對照族群涵蓋：封測、面板 / 光學 / 顯示與光電元件。</li><li>估值比較應優先看產品組合與獲利率差異：以同產業估值、獲利率、營收趨勢與股價相對強弱交叉比較。</li><li>主要風險要和同族群分開看：產品比重未明、景氣循環、估值差異。</li></ul>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>公司</th>
+              <th>資料來源</th>
+              <th>產業鏈位置</th>
+              <th>產品組合</th>
+              <th>股價觀察重點</th>
+              <th>估值 / 風險</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>京元電子(2449)</td><td>通用推估<br><span class="cell-muted">信心度：低；通用 fallback</span></td><td>封測</td><td>封測、主要營收項目需由法說 / 年報確認<br><span class="cell-muted">低到中：缺公司產品細項，先以產業通用邏輯比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>營收成長、毛利率變化、同族群景氣；同時看毛利率、營益率與月營收是否同步改善</td><td>以同產業估值、獲利率、營收趨勢與股價相對強弱交叉比較。<br><span class="cell-muted">風險：產品比重未明、景氣循環、估值差異</span></td></tr>
+<tr><td>日月光投控(3711)</td><td>產業 / 主題推估<br><span class="cell-muted">信心度：中；名稱關鍵字推估</span></td><td>面板 / 光學 / 顯示與光電元件</td><td>面板、背光 / 光學元件、顯示模組、光電材料<br><span class="cell-muted">中：光電產業通用比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>面板報價、車用 / 工控需求、產品規格升級；同時看毛利率、營益率與月營收是否同步改善</td><td>以報價循環、稼動率、毛利率與庫存水位比較。<br><span class="cell-muted">風險：報價循環、供需失衡、中國產能競爭</span></td></tr>
+<tr><td>力成(6239)</td><td>通用推估<br><span class="cell-muted">信心度：低；通用 fallback</span></td><td>封測</td><td>封測、主要營收項目需由法說 / 年報確認<br><span class="cell-muted">低到中：缺公司產品細項，先以產業通用邏輯比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>營收成長、毛利率變化、同族群景氣；同時看毛利率、營益率與月營收是否同步改善</td><td>以同產業估值、獲利率、營收趨勢與股價相對強弱交叉比較。<br><span class="cell-muted">風險：產品比重未明、景氣循環、估值差異</span></td></tr>
+<tr><td>南茂(8150)</td><td>通用推估<br><span class="cell-muted">信心度：低；通用 fallback</span></td><td>封測</td><td>封測、主要營收項目需由法說 / 年報確認<br><span class="cell-muted">低到中：缺公司產品細項，先以產業通用邏輯比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>營收成長、毛利率變化、同族群景氣；同時看毛利率、營益率與月營收是否同步改善</td><td>以同產業估值、獲利率、營收趨勢與股價相對強弱交叉比較。<br><span class="cell-muted">風險：產品比重未明、景氣循環、估值差異</span></td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel chart-panel">
+          <h2>05_同族群比較分析圖</h2>
+          <img src="05_同族群比較分析圖.png?v=2026-05-31T02:25:44+08:00" alt="05_同族群比較分析圖">
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>公司法說會 / 公告</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>類型</th>
+              <th>初判</th>
+              <th>判讀重點</th>
+              <th>標題</th>
+              <th>來源</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>2026-05-26 16:19</td><td>法說會</td><td>利多</td><td>偏多訊號；追蹤管理層展望、訂單與獲利率指引</td><td><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWV8zcVJkczJSckZZZFR3SWl1WHpMTWZ5MHZsSFFna2tNdUNzR2tBYVZWWG12OWVnOGY3SGx6ODk5RGM1b1VaNmY4Y2NoMXJvYUlsQ19Sa2ZiMVVMTFpvdXVJSkVjLU9QbWdfX1N6b2c2THJFUGFjZDVHd0dHMGgyOHFpM2RPcGRU?oc=5" target="_blank" rel="noopener noreferrer">個股：京元電子(2449)6/1受邀參加HSBC Taiwan Conference</a></td><td>富聯網</td></tr>
+<tr><td>2026-05-11 15:00</td><td>公告</td><td>中性</td><td>觀察訊號；檢查 EPS、毛利率與營益率是否支撐估值</td><td><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQSnAwX1hRU3ktNDUxM0NJYjRTbE4zWWFfVU9nUmU1RkZxSkJrZ2c0WHNaTG5od3VwOXFTOEl5V21UVDJJdTZnLVFBX3BJelpSN3Y5NUZwNmFiNnBYaXd6b1hOZHhuR0UzdnlRN25Cay15Mml5RzFyNmZmRjR3ZlhiQ3FIVXhpUmZ0MUZhZGdLX3A?oc=5" target="_blank" rel="noopener noreferrer">【即時新聞】京元電子(2449)財報優預期，這「6檔封測概念股」買盤接棒狂飆！</a></td><td>CMoney投資網誌</td></tr>
+<tr><td>2026-05-07 15:00</td><td>公告</td><td>利多</td><td>偏多訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15QlJZTUJGTDJLUjZaTVNaWHlfTXBfTW92cFhVUHhHZm1VeFJrU0JieGE2QVljLWtRYVJvMU5SNUVHQ0tSby1qdGs3dEZiYVQ4QkduRHV5MUt1a2NIRHR2b05mNzlKLUU?oc=5" target="_blank" rel="noopener noreferrer">【2026/04月營收公告】京元電子(2449) 四月營收37.43億元，表現亮眼、呈現雙成長，創歷史新高，年增34.56%</a></td><td>CMoney</td></tr>
+<tr><td>2026-03-13 15:00</td><td>法說會</td><td>中性</td><td>觀察訊號；追蹤管理層展望、訂單與獲利率指引</td><td><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMVBmWFdVWE41ZllhREFtYndodE5CcE1QaUpDaHNfZnltU3U3Q1NydHBFYTRqV1NrMFdqRjhTcUk2S2ZTeklBVURxLXROOF85NjNRc1p6cEJoWkJFUjJ1c29idENmWDJ2M1gzN2VsZW5qbnFfaFFGWm9xYWNMcHM5bDJMQXRob3Bh?oc=5" target="_blank" rel="noopener noreferrer">個股：京元電子(2449)3/17受邀參加美銀證券舉辦2026 Asia Tech Conference</a></td><td>富聯網</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>相關利多利空新聞</h2>
+          <ul><li>新聞面偏利多（利多 6 / 利空 2 / 中性 0）。</li><li>優先看事件類型與判讀重點，避免只因標題情緒追價。</li></ul>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>時間</th>
+              <th>事件</th>
+              <th>初判</th>
+              <th>判讀重點</th>
+              <th>新聞標題</th>
+              <th>來源</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>2026-05-29 16:45</td><td>籌碼</td><td>利空</td><td>偏空訊號；搭配法人買賣超與股價位置判斷承接力</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1kdUFjeUtqTFh5T1hJYjc2cG9GMEhZRjlIV1BZQXhXR0trRWVXZE1YLW11aGROdHp6T3RXY1ZKNVY3VWplNUt5dEN3cnVaLTl4UEV4OVUtZEo?oc=5" target="_blank" rel="noopener noreferrer">2449 京元電子 - 為什麼外資的買賣超差這麼多啊 誰是對的🤔</a></td><td>CMoney</td></tr>
+<tr><td>2026-05-29 16:15</td><td>籌碼</td><td>利多</td><td>偏多訊號；搭配法人買賣超與股價位置判斷承接力</td><td><a href="https://news.google.com/rss/articles/CBMi2wJBVV95cUxOMGd6RlRsdzh3ZThsbm1tb1FuWUlOMmhBMlNTdHdxRWZKUjFMVUpCOHNEa0ZHYktXWUE4cl9BSExzUjByMG9sdjROOWpLLW9OWnJfYTFZbktjajAtbExPVl9kZTNaRmEya2VSUVpEZk8teTBXWTZPbVRuMGIwLVFaSmlCSlJ1dVlnZ3RiVVZXaWNIck5DVXlpNzlXNjdweV9IM3R4UXFUa19ua3JxUVltZTh5YVlwVkVyYzJyVWJDU2dMZG9TNkQ4VDdVSXdndnN6bXp4V3htaG1aLWotZmUxZWpKRFpXV2VEZC1ONjVLRF9vVWFmMFYwZncxRmFpZEswcjhqUzFSTzBFNk50eHcyamplUjlGenlOQ1pSVkRiemx6b0lFc1RIWU1OMFhCQjVDOGZnUkpybFhDTDNwOWhLYUhpQXBEejljSzVhay16RlRQQktCMmFfZFczMA?oc=5" target="_blank" rel="noopener noreferrer">AI、HPC晶片邁入高成長！外資喊出「這封測大廠」目標價338元 公司看旺：2026是豐收年</a></td><td>Yahoo股市</td></tr>
+<tr><td>2026-05-29 07:03</td><td>訂單</td><td>利多</td><td>偏多訊號；確認訂單能見度、認列時程與毛利率</td><td><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQajZ4LUstQUs5N0ExYjV1YWpPakRJZ082UXNVcDhjMjdQQU5wY3pONm9UaG9FV3ZDT2l0QlhpcWVVb0RURnpBdGctdk5TVElIWnAyT1p6b19NLW1SMnFvTjVfNUdWLVJfZVBRSDFkYURldGFBdmlxZFBKSnh2dmhYTWhxUmp5UW9zUFhyUzdkSWs?oc=5" target="_blank" rel="noopener noreferrer">【即時新聞】京元電子逆勢收高，輝達Rubin GPU測試訂單可望增溫</a></td><td>CMoney投資網誌</td></tr>
+<tr><td>2026-05-27 16:46</td><td>籌碼</td><td>利空</td><td>偏空訊號；搭配法人買賣超與股價位置判斷承接力</td><td><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE56N1FaUS1FS1hGeEVhbzc2SlpsQ283SjlGR3JwU3NIdGZHUkZETzFHYUJRSWMyNFRENkhYYl9YQUdQZjRiZ0ZCMVRLckF4QXdaM3c0RG9qY2N0Z0U4UjJqVVpYSE9NdXFHM1E?oc=5" target="_blank" rel="noopener noreferrer">《台北股市》台股大漲731點！三大法人賣超榜出爐：遠東新居冠旺宏、京元電提款最狠- 上市櫃</a></td><td>旺得富理財網</td></tr>
+<tr><td>2026-05-26 18:00</td><td>產業</td><td>利多</td><td>偏多訊號；作為背景訊號，需確認是否直接影響公司</td><td><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQa1gtcHJPYTBDcllub3M0UDBmUXItNzhUOS1kMEFaTjM3M2hibmhQV05ZNHlGWnlMWEZRNkZpNk1lQ2tfSXpNcXNjVkJZMWRQSi1td0NJZ19ydXZ6WlZrbzhLQVVHbzI2SGhMdU9kMFhVWWpqNzZRck02Vml0NXJrQg?oc=5" target="_blank" rel="noopener noreferrer">力成、京元電、威剛…HBM顆粒被韓廠壟斷，台廠靠「3題材」吃補，10檔受惠股曝光，長短線怎麼布局？</a></td><td>今周刊</td></tr>
+<tr><td>2026-05-26 10:41</td><td>營收</td><td>利多</td><td>偏多訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPa3RRRkcyanVPcEFQTjl5aWQ2N0h3cmJEZjJKeFVhSWtFbWR4UzdmcVczeFdveW01cWpmQ05yNkpmMEFHbFV0UWNWZ1ZkOXZHY0tyV3E4eGNMUHo0cklZYzZLVER1bWZUTUFtVUZhRFg5WTI1ZmlEQUFrc29KV3RfaGwxdE9VVlFmeEhoR3Zn?oc=5" target="_blank" rel="noopener noreferrer">【10:41 即時新聞】京元電子(2449)亮燈漲停348.5元，受AI測試需求與營收創高加持＋均線多頭排列搭配外資連日回補</a></td><td>CMoney投資網誌</td></tr>
+<tr><td>2026-05-10 15:00</td><td>產業</td><td>利多</td><td>偏多訊號；作為背景訊號，需確認是否直接影響公司</td><td><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE0wSmFGT1EyZXE2U1Iwc0dNWGtNQ3RWbkJQZ2Fuc2FubUxrU1FFX3N4UUJLSnhDWWVaXzB3NDJIVjJKdHVSal9KTTlBQU1xQmZkeW10UXlzRmRPWkR0SWRpcXlxbWFBNkttUkctaURIdzVzMVpZWkE?oc=5" target="_blank" rel="noopener noreferrer">Factset 最新調查：京元電子(2449-TW)目標價調升至362.5元，幅度約3.57%｜新聞快訊｜豐雲學堂</a></td><td>sinotrade.com.tw</td></tr>
+<tr><td>2026-05-05 15:00</td><td>股價</td><td>利多</td><td>偏多訊號；屬市場反應，需回到量價與支撐壓力驗證</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQaU56N0lXSElfWHloRnFFN1o3VGthTXVxQ3pmRUpHVHpoQ1ZXcGdjcExHSTRvWHNCaHpLWmV6X3dxbkdHX3hCZnBKVkhUclhlbDJZLXA2YXU4Z1pORThuRjQ2OXl1OHNhOW1OTjVGRVJhdDQtcUJMYnBYYlJycW9IcGZJZmNYd2xhV3c?oc=5" target="_blank" rel="noopener noreferrer">京元電子(2449)二度上修資本支出，股價先行-朱家泓X林穎</a></td><td>CMoney投資網誌</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    <section class="panel">
+      <h2>進階分析與資料明細</h2>
+      <p class="notice">權證、ETF、集保與原始條列內容預設收合，需要時再展開。</p>
+    </section>
+    
+    <details class="panel detail-panel">
+      <summary>四、量價結構</summary>
+      <div class="detail-body"><ul><li>最新成交量 68,983,487，近 20 日均量 48,171,438，近 60 日均量 32,957,247。</li><li>最新量能約為近 20 日均量的 1.43 倍，近 20 日上漲日 11 天、下跌日 8 天。</li><li>量價型態：價漲量增。價格上漲且量能高於均量，屬較健康的偏多確認；若同步突破壓力，訊號可信度提高。</li><li>累積交易量分布可觀察過去一年成交量較集中的價格帶，作為籌碼密集區參考。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>四之二、乖離率與 ATR 波動區間</summary>
+      <div class="detail-body"><ul><li>MA5 乖離 1.42%：乖離接近中性</li><li>MA10 乖離 7.25%：正乖離偏高，趨勢偏強但不宜忽略追高風險</li><li>MA20 乖離 5.47%：正乖離偏高，趨勢偏強但不宜忽略追高風險</li><li>MA60 乖離 11.51%：正乖離偏高，趨勢偏強但不宜忽略追高風險</li><li>ATR14 約 18.04，以最新收盤估算，明日常態波動參考區間約 310.46～346.54；若開盤跳空或爆量，區間需重新評估。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七、同族群比較</summary>
+      <div class="detail-body"><ul><li>比較依據：主題規則：封測（中：同主題候選，但未細分產品/商業模式）</li><li>比較清單：京元電子(2449)、日月光投控(3711)、力成(6239)、南茂(8150)</li><li>同期間相對報酬排序：日月光投控(3711) 354.28%、南茂(8150) 310.16%、京元電子(2449) 255.14%、力成(6239) 233.92%</li><li>部分候選排除：矽品(2325): No TaiwanStockPrice rows for 2325</li><li>此圖標示為同產業候選比較，不等同精準子產業或主題族群。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之一、每日 ETF 持股該股增減名單</summary>
+      <div class="detail-body"><ul><li>ETF 持股最新快照：2026-05-29。</li><li>目前解析到 37 檔 ETF 持有此股，其中主動式候選 6 檔，已檢查 6 檔最近一次持股異動。</li><li>最近一次主動 ETF 異動未命中此股；目前主要持有 ETF：0056 0056、0050 0050、00878 00878、00981A 00981A主動、006208 006208、00881 00881、00891 00891、00939 00939。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之二、集保股權分散資訊</summary>
+      <div class="detail-body"><ul><li>集保戶數合計 233,682 人，集保股數合計 1,222,745,065 股。</li><li>小額持股（1～10,000 股）占 19.32%；中階持股（50,001～400,000 股）占 9.09%；大額持股（400,001 股以上）占 64.72%，其中百萬股以上占 58.19%。</li><li>集保結構判斷：大額持股集中度中等。籌碼結構不算分散，仍需搭配法人、融資與量價確認是否有人持續承接。</li><li>散戶化觀察：小額持股占比偏高，短線若遇利空或跌破支撐，籌碼容易比較浮動。</li><li>限制：TDCC 集保資料通常是每週最後營業日結束後的持股級距統計，能看籌碼集中或分散，但不能知道是哪位自然人或哪家主力在買賣。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十、主力名單及主力 / 散戶分佈限制</summary>
+      <div class="detail-body"><ul><li>不得宣稱可取得完整自然人大戶名單。</li><li>券商分點、法人與融資融券僅能作為主力 / 大戶疑似結構輔助，不等同真實大戶。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十一、產圖完成檢查表</summary>
+      <div class="detail-body"><ul><li>01～03 為真實 K 線圖；04～06 為狀態圖並列出資料限制。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>每日 ETF 持股該股增減名單表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>ETF代號</th>
+              <th>ETF名稱</th>
+              <th>動作</th>
+              <th>增減張數</th>
+              <th>比較區間</th>
+              <th>原始摘要</th>
+            </tr>
+          </thead>
+          <tbody><tr><td colspan="6">最近一次主動 ETF 持股異動未命中此股，或資料來源未提供可解析增減。</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保戶股權分散表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>級距</th>
+              <th>持股分級</th>
+              <th>人數</th>
+              <th>股數</th>
+              <th>占集保庫存比例</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>1</td><td>1-999 股</td><td class="cell-number">126,352</td><td class="cell-number">19,406,568</td><td class="cell-number">1.58%</td></tr>
+<tr><td>2</td><td>1,000-5,000 股</td><td class="cell-number">95,490</td><td class="cell-number">165,578,625</td><td class="cell-number">13.54%</td></tr>
+<tr><td>3</td><td>5,001-10,000 股</td><td class="cell-number">6,658</td><td class="cell-number">51,363,256</td><td class="cell-number">4.20%</td></tr>
+<tr><td>4</td><td>10,001-15,000 股</td><td class="cell-number">1,711</td><td class="cell-number">21,732,997</td><td class="cell-number">1.77%</td></tr>
+<tr><td>5</td><td>15,001-20,000 股</td><td class="cell-number">1,015</td><td class="cell-number">18,655,751</td><td class="cell-number">1.52%</td></tr>
+<tr><td>6</td><td>20,001-30,000 股</td><td class="cell-number">777</td><td class="cell-number">19,697,285</td><td class="cell-number">1.61%</td></tr>
+<tr><td>7</td><td>30,001-40,000 股</td><td class="cell-number">364</td><td class="cell-number">12,865,846</td><td class="cell-number">1.05%</td></tr>
+<tr><td>8</td><td>40,001-50,000 股</td><td class="cell-number">226</td><td class="cell-number">10,441,405</td><td class="cell-number">0.85%</td></tr>
+<tr><td>9</td><td>50,001-100,000 股</td><td class="cell-number">402</td><td class="cell-number">28,580,649</td><td class="cell-number">2.33%</td></tr>
+<tr><td>10</td><td>100,001-200,000 股</td><td class="cell-number">247</td><td class="cell-number">35,066,221</td><td class="cell-number">2.86%</td></tr>
+<tr><td>11</td><td>200,001-400,000 股</td><td class="cell-number">169</td><td class="cell-number">47,753,564</td><td class="cell-number">3.90%</td></tr>
+<tr><td>12</td><td>400,001-600,000 股</td><td class="cell-number">64</td><td class="cell-number">31,141,550</td><td class="cell-number">2.54%</td></tr>
+<tr><td>13</td><td>600,001-800,000 股</td><td class="cell-number">41</td><td class="cell-number">28,057,420</td><td class="cell-number">2.29%</td></tr>
+<tr><td>14</td><td>800,001-1,000,000 股</td><td class="cell-number">23</td><td class="cell-number">20,815,732</td><td class="cell-number">1.70%</td></tr>
+<tr><td>15</td><td>1,000,001 股以上</td><td class="cell-number">143</td><td class="cell-number">711,589,196</td><td class="cell-number">58.19%</td></tr>
+<tr><td>16</td><td>差異或調整數</td><td class="cell-number">1</td><td class="cell-number">1,000</td><td class="cell-number">0.00%</td></tr>
+<tr><td>17</td><td>合計</td><td class="cell-number">233,682</td><td class="cell-number">1,222,745,065</td><td class="cell-number">100.00%</td></tr></tbody>
+        </table>
+        </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保股權歷史趨勢表格</summary>
+      <div class="detail-body">
+        <p class="notice">目前資料源只提供單一期資料，先呈現最新集保分布；有歷史期數時會自動比較變化。</p>
+        <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>總戶數</th>
+              <th>小額 1～10,000 股</th>
+              <th>大額 400,001 股以上</th>
+              <th>大戶 1000 張以上</th>
+              <th>小額變化</th>
+              <th>大額變化</th>
+              <th>大戶變化</th>
+              <th>戶數變化</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>20260529</td><td class="cell-number">+233,682</td><td class="cell-number">19.32%</td><td class="cell-number">64.72%</td><td class="cell-number">58.19%</td><td class="cell-number">-</td><td class="cell-number">-</td><td class="cell-number">-</td><td class="cell-number">-</td></tr></tbody>
+        </table>
+        </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>權證輔助觀察</summary>
+      <div class="detail-body"><ul><li>權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫</li><li>認購成交占 99.08%，近價外認購 37 檔，前五大成交占 37.73%</li><li>現股低於認購主流履約價 10.95%，權證資金仍押續漲</li></ul>
+        <section class="panel chart-panel">
+          <h2>04_權證完整分析圖</h2>
+          <img src="04_權證完整分析圖.png?v=2026-05-31T02:25:44+08:00" alt="04_權證完整分析圖">
+        </section>
+        
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>權證代號</th>
+              <th>權證名稱</th>
+              <th>類型</th>
+              <th>履約價</th>
+              <th>成交金額</th>
+              <th>成交張數</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>067949</td><td>京元電群益5C購03</td><td>認購</td><td class="cell-number">366.00</td><td class="cell-number">6,150,030</td><td class="cell-number">2,862,000</td></tr>
+<tr><td>059778</td><td>京元電國泰5A購01</td><td>認購</td><td class="cell-number">350.00</td><td class="cell-number">4,414,410</td><td class="cell-number">2,622,000</td></tr>
+<tr><td>060016</td><td>京元電國泰5A購02</td><td>認購</td><td class="cell-number">320.00</td><td class="cell-number">4,351,050</td><td class="cell-number">2,203,000</td></tr>
+<tr><td>066302</td><td>京元電國泰5C購01</td><td>認購</td><td class="cell-number">400.00</td><td class="cell-number">4,036,570</td><td class="cell-number">2,473,000</td></tr>
+<tr><td>044185</td><td>京元電中信5B購02</td><td>認購</td><td class="cell-number">322.50</td><td class="cell-number">3,577,270</td><td class="cell-number">1,599,000</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+  </main>
+</body>
+</html>
