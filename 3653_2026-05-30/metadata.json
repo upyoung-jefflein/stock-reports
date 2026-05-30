@@ -25,7 +25,7 @@
   "tdcc_period": "20260522 (OK; rows=17)",
   "tdcc_latest_period": "20260522",
   "etf_latest_period": "2026-05-29",
-  "etf_holding_change_period": "2026-05-29 (OK; holders=32, active_candidates=11; changes=1)",
+  "etf_holding_change_period": "2026-05-29 (OK; holders=32, active_candidates=11; changes=0)",
   "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=健策(3653), 奇鋐(3017), 雙鴻(3324), 力致(3483), 尼得科超眾(6230), 泰碩(3338), 高力(8996); failures=none",
   "peer_display_list": "健策(3653)、奇鋐(3017)、雙鴻(3324)、力致(3483)、尼得科超眾(6230)、泰碩(3338)、高力(8996)",
   "peer_business_summary": "健策(3653) 定位：AI 散熱 / 熱管理解決方案；主要產品：均熱片、熱管、水冷散熱、伺服器散熱模組；同族群比較基準：AI散熱模組 / 熱管理。對照族群涵蓋：AI 散熱 / 熱管理、散熱模組 / 機構整合、散熱零組件 / 熱管理材料。",
@@ -33,6 +33,7 @@
     {
       "stock_id": "3653",
       "name": "健策",
+      "profile_scope": "個股資料",
       "chain_position": "AI 散熱 / 熱管理解決方案",
       "product_mix": "均熱片、熱管、水冷散熱、伺服器散熱模組",
       "growth_drivers": "AI 伺服器功耗提升、水冷滲透率、高階散熱單價提升",
@@ -43,6 +44,7 @@
     {
       "stock_id": "3017",
       "name": "奇鋐",
+      "profile_scope": "個股資料",
       "chain_position": "散熱模組 / 機構整合",
       "product_mix": "散熱模組、熱管、伺服器與 PC 散熱、機構件",
       "growth_drivers": "AI 伺服器散熱升級、水冷導入、伺服器產品組合改善",
@@ -53,6 +55,7 @@
     {
       "stock_id": "3324",
       "name": "雙鴻",
+      "profile_scope": "個股資料",
       "chain_position": "散熱零組件 / 熱管理材料",
       "product_mix": "熱管、散熱零組件、伺服器散熱應用",
       "growth_drivers": "高功耗平台散熱需求、AI 伺服器滲透、產品單價提升",
@@ -63,42 +66,46 @@
     {
       "stock_id": "3483",
       "name": "力致",
+      "profile_scope": "子族群模板",
       "chain_position": "AI 散熱 / 熱管理",
-      "product_mix": "散熱模組、熱管 / 均熱片、水冷",
+      "product_mix": "族群共通：散熱模組、熱管 / 均熱片、水冷",
       "growth_drivers": "AI 伺服器功耗提升、水冷滲透率、高階散熱單價",
       "valuation_logic": "以產品規格升級、認證進度、毛利率與產能放量比較。",
       "risks": "認證時程、擴產競爭、高估值修正",
-      "comparability": "高：散熱同業可比"
+      "comparability": "高：散熱同業可比；公司實際產品比重需以法說、年報或公告確認"
     },
     {
       "stock_id": "6230",
       "name": "尼得科超眾",
+      "profile_scope": "子族群模板",
       "chain_position": "AI 散熱 / 熱管理",
-      "product_mix": "散熱模組、熱管 / 均熱片、水冷",
+      "product_mix": "族群共通：散熱模組、熱管 / 均熱片、水冷",
       "growth_drivers": "AI 伺服器功耗提升、水冷滲透率、高階散熱單價",
       "valuation_logic": "以產品規格升級、認證進度、毛利率與產能放量比較。",
       "risks": "認證時程、擴產競爭、高估值修正",
-      "comparability": "高：散熱同業可比"
+      "comparability": "高：散熱同業可比；公司實際產品比重需以法說、年報或公告確認"
     },
     {
       "stock_id": "3338",
       "name": "泰碩",
+      "profile_scope": "子族群模板",
       "chain_position": "AI 散熱 / 熱管理",
-      "product_mix": "散熱模組、熱管 / 均熱片、水冷",
+      "product_mix": "族群共通：散熱模組、熱管 / 均熱片、水冷",
       "growth_drivers": "AI 伺服器功耗提升、水冷滲透率、高階散熱單價",
       "valuation_logic": "以產品規格升級、認證進度、毛利率與產能放量比較。",
       "risks": "認證時程、擴產競爭、高估值修正",
-      "comparability": "高：散熱同業可比"
+      "comparability": "高：散熱同業可比；公司實際產品比重需以法說、年報或公告確認"
     },
     {
       "stock_id": "8996",
       "name": "高力",
+      "profile_scope": "子族群模板",
       "chain_position": "AI 散熱 / 熱管理",
-      "product_mix": "散熱模組、熱管 / 均熱片、水冷",
+      "product_mix": "族群共通：散熱模組、熱管 / 均熱片、水冷",
       "growth_drivers": "AI 伺服器功耗提升、水冷滲透率、高階散熱單價",
       "valuation_logic": "以產品規格升級、認證進度、毛利率與產能放量比較。",
       "risks": "認證時程、擴產競爭、高估值修正",
-      "comparability": "高：散熱同業可比"
+      "comparability": "高：散熱同業可比；公司實際產品比重需以法說、年報或公告確認"
     }
   ],
   "peer_business_interpretation": [
@@ -106,14 +113,14 @@
     "估值比較應優先看產品組合與獲利率差異：以散熱規格升級、毛利率、客戶認證與產能放量評估，估值可高於傳統零組件。",
     "主要風險要和同族群分開看：客戶認證時程、競爭者擴產、高估值修正。"
   ],
-  "etf_display_status": "最新異動命中 1 檔",
+  "etf_display_status": "持有快照 2026-05-29，未命中最新異動",
   "tdcc_display_status": "20260522；大額 68.85% / 小額 7.04%",
   "warrant_display_status": "47 檔，認購 40 / 認售 7",
   "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
   "fundamental_profitability_summary": "2026Q1 毛利率 41.78%（年變化 -3.13 個百分點）、營業利益率 31.98%（年變化 -3.08 個百分點）",
   "fundamental_quarterly_summary": "2026Q1 營業費用率 9.80%（年變化 -0.06 個百分點）、稅後淨利率 26.47%（年變化 -2.45 個百分點）、ROE 4.63%（年變化 -5.20 個百分點）",
   "revenue_trend_summary": "2026-04 月營收 23.11 億元；MoM 6.82%；YoY 26.92%；近 3 個月累計 YoY 12.04%；近 12 個月滾動營收 YoY 26.24%；創近 24 個月新高；連續 2 個月年增為正",
-  "fundamental_price_estimate_summary": "保守 2224 元 / 中性 3303 元 / 樂觀 3670 元；近四季 EPS 36.70；估值本益比 60.6x / 90.0x / 100.0x；以目前 PER 98.1x 作為中性基準；歷史 PER 分位 Q25/Q50/Q75=60.6x/76.8x/91.3x；目前 PER 位於近一年 81% 分位；市場情境 20x/25x/30x=734/918/1101 元；ROE/PB 參考 223 元；現價 3545.00 元，較中性估值 +7.3%；現價接近中性估值",
+  "fundamental_price_estimate_summary": "保守 2224 元 / 中性 3637 元 / 樂觀 4343 元；近四季 EPS 36.70；前瞻 EPS 估 47.57（成長假設 +29.6%）；估值 PER 60.6x / 76.5x / 91.3x；目前 PER 98.1x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=60.6x/76.8x/91.3x；目前 PER 位於近一年 81% 分位；市場情境 20x/25x/30x=734/918/1101 元；ROE/PB 交叉參考 223 元；現價 3545.00 元，較中性估值 -2.5%；現價接近中性估值；合理偏低區：若技術面轉強，具估值修復條件",
   "fundamental_support_summary": "是否支持股價：支持度偏弱。理由：近 3 個月營收動能改善、最新月營收年增雙位數、PER 位階偏高，股價需要成長性支撐、正式 EPS 年減、毛利率較去年同期下滑、營業利益率較去年同期下滑、稅後淨利率較去年同期下滑、ROE 較去年同期下滑。",
   "chip_summary": {
     "margin_balance": 2875.0,
@@ -130,7 +137,7 @@
     "total_5d": -886185.0,
     "total_20d": -4079503.0
   },
-  "news_display_status": "新聞面偏利空（利多 2 / 利空 3 / 中性 5）",
+  "news_display_status": "新聞面中性（利多 3 / 利空 3 / 中性 5）",
   "disclosure_display_status": "近 120 天公告/法說追蹤 4 則（法說會 0 / 公告 4）",
   "summary_one_line": "中性偏弱，偏多震盪；站穩 MA10 3453.50 並突破 5320.00 才有續攻機會，跌破 MA20 3737.00 轉防守。",
   "summary_overall": "中性偏弱；收盤跌破 MA5, MA5 高於 MA10, MA10 上方但投信支撐不足",
@@ -174,7 +181,7 @@
   "summary_warrant_signal": "中性偏投機",
   "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
   "summary_warrant_price_view": "現股距認購主流履約價仍有 25.41% 空間，屬高想像但投機風險也高",
-  "generated_at": "2026-05-30T16:57:59+08:00",
+  "generated_at": "2026-05-30T22:02:54+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3653_2026-05-30\\01_日線完整技術與籌碼分析圖.png",
@@ -184,16 +191,7 @@
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3653_2026-05-30\\05_同族群比較分析圖.png",
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3653_2026-05-30\\06_基本面分析圖.png"
   ],
-  "etf_change_rows": [
-    {
-      "etf_id": "00999A",
-      "etf_name": "主動野村臺灣高息",
-      "period": "2026-05-28 → 2026-05-29・張數最小 1 張、金額以最新收盤價估算",
-      "action": "減碼",
-      "shares_change_lot": "-1",
-      "raw": "3653 健策精密工業 -1 張 -355 萬 減碼"
-    }
-  ],
+  "etf_change_rows": [],
   "tdcc_rows": [
     {
       "date": "20260522",
@@ -385,6 +383,16 @@
       "published_ts": "2026-05-26T02:19:50+08:00",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ZVmQzTE5Kd1Vyc3Z5TmY5ZlZtUEhsOENJMk9hWmljWF9NQlBDM3dVdXdBdWdkbUNxR2QtTm5CLWtsQlJLeTBNSXhUdXJYX2dIUUkxbERrQW4?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "title": "【11:00 即時新聞】健策(3653)攻上漲停3660，AI GPU散熱需求帶動買盤迴流＋技術面短線轉強吸引資金回補 - CMoney投資網誌",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-22 11:12",
+      "published_ts": "2026-05-22T11:12:49+08:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRGpXQlNDWTJuc3lNNXMtYjMwMnYwTExXVFFvb0ZBcVBoNlBJV3BHTFYwX0NvczBIVE5pVlpKMUtFXzlNaGI3SVlhREFfX00xYVNDU2x1Skh1RVV4N1VkNGpYdnRYaWtsSjBzY3Eydy1aQ3RDU0tPSzl5RkR3VE1vUkJIeVdpeWQ2S0pkY1B3?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字"
     },
     {
       "region": "國內",
