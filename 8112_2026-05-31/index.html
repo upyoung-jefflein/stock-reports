@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>至上(8112) 台股技術分析報告</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+      background: #f4f6fa;
+      color: #172033;
+    }
+    header { padding: 24px 18px 18px; background: #14213d; color: #fff; }
+    main { max-width: 1180px; margin: 0 auto; padding: 18px; }
+    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0; }
+    h2 { margin: 0 0 14px; font-size: 20px; }
+    .panel {
+      background: #fff;
+      border: 1px solid #dce2ee;
+      border-radius: 8px;
+      margin: 16px 0;
+      padding: 16px;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    .table-scroll { overflow-x: auto; width: 100%; }
+    th, td {
+      border-bottom: 1px solid #e7ebf2;
+      padding: 9px 8px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th { width: 230px; color: #526070; font-weight: 600; }
+    .cell-number { text-align: right; font-variant-numeric: tabular-nums; }
+    .cell-muted { display: inline-block; margin-top: 4px; color: #64748b; font-size: 12px; line-height: 1.45; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #e5e9f0;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .analysis ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .deep-analysis {
+      border-color: #b8c7dc;
+      background: #fbfdff;
+    }
+    .deep-analysis-body { line-height: 1.78; color: #243044; }
+    .deep-analysis-body h2,
+    .deep-analysis-body h3,
+    .deep-analysis-body h4 {
+      margin: 18px 0 8px;
+      font-size: 17px;
+      color: #14213d;
+    }
+    .deep-analysis-body p { margin: 8px 0; }
+    .deep-analysis-body ul,
+    .deep-analysis-body ol { margin: 8px 0 12px; padding-left: 22px; }
+    .deep-analysis-body li { margin: 4px 0; }
+    .detail-panel { padding: 0; overflow: hidden; }
+    details > summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      font-weight: 700;
+      color: #172033;
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary::after { content: "展開"; float: right; color: #64748b; font-weight: 500; }
+    details[open] > summary::after { content: "收合"; }
+    .detail-body { padding: 0 16px 16px; }
+    .detail-body ul { margin: 0; padding-left: 20px; line-height: 1.75; }
+    .summary-decision {
+      border-left: 4px solid #2563eb;
+      background: #eff6ff;
+      color: #0f172a;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      line-height: 1.55;
+    }
+    .summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+    .summary-card {
+      border: 1px solid #dde4ef;
+      border-radius: 8px;
+      padding: 12px;
+      background: #f8fafc;
+      min-height: 78px;
+    }
+    .summary-card span { display: block; color: #64748b; font-size: 13px; margin-bottom: 7px; }
+    .summary-card strong { display: block; color: #111827; font-size: 15px; line-height: 1.45; }
+    .freshness-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 10px; }
+    .freshness-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 10px;
+      background: #ffffff;
+    }
+    .freshness-card span { display: block; color: #64748b; font-size: 12px; margin-bottom: 5px; }
+    .freshness-card strong { display: block; color: #111827; font-size: 13px; line-height: 1.4; }
+    .freshness-list {
+      margin: 0;
+      padding-left: 20px;
+      columns: 2;
+      line-height: 1.75;
+    }
+    .freshness-list li { break-inside: avoid; padding-right: 12px; }
+    .freshness-list span { color: #64748b; margin-right: 6px; }
+    .freshness-list strong { color: #111827; font-weight: 600; }
+    .notice { line-height: 1.7; color: #3f4b5f; }
+    @media (max-width: 720px) {
+      header { padding: 18px 14px 14px; }
+      main { padding: 10px; }
+      h1 { font-size: 20px; line-height: 1.35; }
+      h2 { font-size: 16px; margin-bottom: 10px; }
+      .panel { border-radius: 6px; margin: 10px 0; padding: 10px; }
+      table, tbody, tr, th, td { display: block; width: 100%; }
+      tr { border-bottom: 1px solid #e7ebf2; padding: 8px 0; }
+      th, td { border-bottom: 0; padding: 2px 0; font-size: 13px; }
+      th { color: #64748b; }
+      .table-scroll th, .table-scroll td { display: table-cell; width: auto; min-width: 120px; padding: 7px 8px; border-bottom: 1px solid #e7ebf2; }
+      .table-scroll tr { display: table-row; border-bottom: 0; padding: 0; }
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .summary-decision { padding: 9px 10px; font-size: 13px; }
+      .summary-card { min-height: auto; padding: 9px; }
+      .summary-card strong { font-size: 13px; }
+      .freshness-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .freshness-card { padding: 8px; }
+      .freshness-card strong { font-size: 12px; }
+      .freshness-list { columns: 1; padding-left: 18px; font-size: 13px; }
+      .analysis ul { padding-left: 18px; font-size: 13px; }
+      .deep-analysis-body { font-size: 13px; }
+      .deep-analysis-body h2,
+      .deep-analysis-body h3,
+      .deep-analysis-body h4 { font-size: 15px; }
+      details > summary { padding: 11px 10px; font-size: 14px; }
+      .detail-body { padding: 0 10px 10px; font-size: 13px; }
+      .notice { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>至上(8112) 台股技術分析報告</h1>
+    <div>產生時間：2026-05-31T09:14:56+08:00</div>
+  </header>
+  <main>
+    
+    <section class="panel conclusion">
+      <h2>結論摘要</h2>
+      <div class="summary-decision">偏多強勢，偏多震盪 / 偏多震盪 / 中性 158 元；現價差 -44.0%；偏低估區：可優先觀察基本面是否止穩</div>
+      <div class="summary-grid"><div class="summary-card"><span>趨勢</span><strong>偏多強勢，偏多震盪</strong></div>
+<div class="summary-card"><span>估值</span><strong>中性 158 元；現價差 -44.0%；偏低估區：可優先觀察基本面是否止穩</strong></div>
+<div class="summary-card"><span>支撐 / 壓力</span><strong>第一 85.46 / 第二 85.07 / 強 84.89 / 壓力 90.50</strong></div>
+<div class="summary-card"><span>觀察</span><strong>量價中性偏多；MA5 85.46 / MA10 85.07</strong></div>
+<div class="summary-card"><span>買點</span><strong>靠近 85.07 守住，或放量突破 89.77 再加分</strong></div>
+<div class="summary-card"><span>賣點 / 風險</span><strong>跌破 85.07，先降權重；跌破 MA10 85.07 且放量，短線轉弱
+跌破 MA20 84.89 則整理擴大</strong></div>
+<div class="summary-card"><span>獲利率</span><strong>毛利率 3.85% / 營益率 3.10%</strong></div></div>
+    </section>
+    
+    
+    <section class="panel freshness">
+      <h2>資料截至</h2>
+      <ul class="freshness-list"><li><span>股價</span><strong>2026-05-29</strong></li>
+<li><span>月營收</span><strong>2026-04</strong></li>
+<li><span>季報</span><strong>2026-03-31</strong></li>
+<li><span>法人</span><strong>2026-05-29</strong></li>
+<li><span>融資融券</span><strong>2026-05-29</strong></li>
+<li><span>集保</span><strong>20260529</strong></li>
+<li><span>ETF</span><strong>2026-05-29</strong></li></ul>
+    </section>
+    
+    
+    
+        <section class="panel chart-panel">
+          <h2>01_日線完整技術與籌碼分析圖</h2>
+          <img src="01_日線完整技術與籌碼分析圖.png?v=2026-05-31T09:14:56+08:00" alt="01_日線完整技術與籌碼分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>02_周線完整技術與趨勢分析圖</h2>
+          <img src="02_周線完整技術與趨勢分析圖.png?v=2026-05-31T09:14:56+08:00" alt="02_周線完整技術與趨勢分析圖">
+        </section>
+        
+
+        <section class="panel chart-panel">
+          <h2>03_月線完整技術與長期趨勢分析圖</h2>
+          <img src="03_月線完整技術與長期趨勢分析圖.png?v=2026-05-31T09:14:56+08:00" alt="03_月線完整技術與長期趨勢分析圖">
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>八、基本面 EPS / 月營收</h2>
+          
+      <h3>估值情境表</h3>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>情境</th>
+              <th>推估價</th>
+              <th>PER 假設</th>
+              <th>EPS 假設</th>
+              <th>相對現價</th>
+              <th>說明</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>保守</td><td class="cell-number">109</td><td class="cell-number">12.6x</td><td class="cell-number">10.52</td><td class="cell-number">+23.0%</td><td>風險折價後的防守估值</td></tr>
+<tr><td>中性</td><td class="cell-number">158</td><td class="cell-number">15.0x</td><td class="cell-number">10.52</td><td class="cell-number">+78.3%</td><td>產業模型 + 歷史 PER + 前瞻 EPS</td></tr>
+<tr><td>樂觀</td><td class="cell-number">458</td><td class="cell-number">43.5x</td><td class="cell-number">10.52</td><td class="cell-number">+416.9%</td><td>催化溢價後的進攻估值</td></tr></tbody>
+        </table>
+      </div>
+    
+      <h3>多模型股價參考</h3>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>模型</th>
+              <th>參考價</th>
+              <th>依據</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>EPS/PER</td><td class="cell-number">158</td><td>前瞻 EPS 10.52 × 中性 PER 15.0x</td></tr>
+<tr><td>PBR/ROE</td><td class="cell-number">35</td><td>ROE 對應合理 PBR</td></tr>
+<tr><td>技術型態</td><td class="cell-number">94</td><td>下降三角整理 接近壓力，突破後上看</td></tr>
+<tr><td>法人籌碼成本</td><td class="cell-number">85</td><td>外資 / 投信近20與60日加碼成本</td></tr>
+<tr><td>同族群動能</td><td class="cell-number">89</td><td>同族群中位報酬 +76.3% / 本股 +75.4%</td></tr>
+<tr><td>殖利率</td><td class="cell-number">78</td><td>歷史殖利率中位數回推</td></tr></tbody>
+        </table>
+      </div>
+    
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>摘要</th>
+              <th>重點</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>月營收趨勢</td><td>2026-04 月營收 350.61 億元；MoM -34.24%；YoY 55.96%；近 3 個月累計 YoY 121.72%；近 12 個月滾動營收 YoY 32.53%；連續 7 個月年增為正</td><td>營收動能</td></tr>
+<tr><td>獲利率</td><td>2026Q1 毛利率 3.85%（年變化 +1.38 個百分點）、營業利益率 3.10%（年變化 +1.77 個百分點）</td><td>毛利率 / 營業利益率</td></tr>
+<tr><td>季報細項</td><td>2026Q1 營業費用率 0.74%（年變化 -0.39 個百分點）、稅後淨利率 1.98%（年變化 +1.42 個百分點）、ROE 1.93%（年變化 +0.53 個百分點）</td><td>營業費用率 / 稅後淨利率 / ROE</td></tr>
+<tr><td>財報推算股價</td><td>估值區間：保守 109 / 中性 158 / 樂觀 458 元<br>模型：通路低毛利 PER（PER 下限 7.0x / 上限 25.0x）<br>假設：EPS 10.52，PER 12.6x / 15.0x / 43.5x<br>多模型中位：89 元<br>現價：88.60 元，較中性估值 -44.0%<br>判讀：偏低估區：可優先觀察基本面是否止穩</td><td>EPS / ROE / 獲利率</td></tr>
+<tr><td>估值狀態</td><td>月營收、估值與正式 EPS 已取得</td><td>PER / PBR / EPS</td></tr></tbody>
+        </table>
+      </div>
+    
+          <ul><li>是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、PER 位階相對不高、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期改善。</li></ul>
+        </section>
+        
+    
+        <section class="panel chart-panel">
+          <h2>06_基本面分析圖</h2>
+          <img src="06_基本面分析圖.png?v=2026-05-31T09:14:56+08:00" alt="06_基本面分析圖">
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>五、融資融券與法人 / 籌碼成本</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>最新值</th>
+              <th>近 5 日</th>
+              <th>近 20 日</th>
+              <th>籌碼成本</th>
+              <th>說明</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>融資餘額</td><td class="cell-number">18,437</td><td class="cell-number">-12</td><td class="cell-number">-</td><td class="cell-number">-</td><td>槓桿籌碼</td></tr>
+<tr><td>融券餘額</td><td class="cell-number">374</td><td class="cell-number">-122</td><td class="cell-number">-</td><td class="cell-number">-</td><td>放空籌碼</td></tr>
+<tr><td>外資</td><td class="cell-number">4,280,770</td><td class="cell-number">-8,344,736</td><td class="cell-number">-27,974,622</td><td class="cell-number">-</td><td>法人主力</td></tr>
+<tr><td>投信</td><td class="cell-number">-31,000</td><td class="cell-number">-93,496</td><td class="cell-number">-929,190</td><td class="cell-number">-</td><td>內資趨勢</td></tr>
+<tr><td>法人合計</td><td class="cell-number">4,164,629</td><td class="cell-number">-7,985,068</td><td class="cell-number">-31,415,078</td><td class="cell-number">-</td><td>整體方向</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>同族群產業定位 / 產品組合</h2>
+          <ul><li>至上(8112) 定位：電子零件代理 / 通路服務；產品組合：半導體代理、電子零件通路、技術支援、庫存服務；資料層級：產業 / 主題推估；同族群比較基準：電子通路業。對照族群涵蓋：電子零件代理 / 通路服務。</li><li>估值比較應優先看產品組合與獲利率差異：以營收動能、庫存周轉、毛利率與代理產品線比較。</li><li>主要風險要和同族群分開看：庫存跌價、需求循環、代理線變動。</li></ul>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>公司</th>
+              <th>資料來源</th>
+              <th>產業鏈位置</th>
+              <th>產品組合</th>
+              <th>股價觀察重點</th>
+              <th>估值 / 風險</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>至上(8112)</td><td>產業 / 主題推估<br><span class="cell-muted">信心度：中；產業通用推估</span></td><td>電子零件代理 / 通路服務</td><td>半導體代理、電子零件通路、技術支援、庫存服務<br><span class="cell-muted">中：電子通路產業通用比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>下游客戶拉貨、代理線組合、庫存去化；同時看毛利率、營益率與月營收是否同步改善</td><td>以營收動能、庫存周轉、毛利率與代理產品線比較。<br><span class="cell-muted">風險：庫存跌價、需求循環、代理線變動</span></td></tr>
+<tr><td>擎亞(8096)</td><td>產業 / 主題推估<br><span class="cell-muted">信心度：中；產業通用推估</span></td><td>電子零件代理 / 通路服務</td><td>半導體代理、電子零件通路、技術支援、庫存服務<br><span class="cell-muted">中：電子通路產業通用比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>下游客戶拉貨、代理線組合、庫存去化；同時看毛利率、營益率與月營收是否同步改善</td><td>以營收動能、庫存周轉、毛利率與代理產品線比較。<br><span class="cell-muted">風險：庫存跌價、需求循環、代理線變動</span></td></tr>
+<tr><td>方土昶(6265)</td><td>產業 / 主題推估<br><span class="cell-muted">信心度：中；產業通用推估</span></td><td>電子零件代理 / 通路服務</td><td>半導體代理、電子零件通路、技術支援、庫存服務<br><span class="cell-muted">中：電子通路產業通用比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>下游客戶拉貨、代理線組合、庫存去化；同時看毛利率、營益率與月營收是否同步改善</td><td>以營收動能、庫存周轉、毛利率與代理產品線比較。<br><span class="cell-muted">風險：庫存跌價、需求循環、代理線變動</span></td></tr>
+<tr><td>建達(6118)</td><td>產業 / 主題推估<br><span class="cell-muted">信心度：中；產業通用推估</span></td><td>電子零件代理 / 通路服務</td><td>半導體代理、電子零件通路、技術支援、庫存服務<br><span class="cell-muted">中：電子通路產業通用比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>下游客戶拉貨、代理線組合、庫存去化；同時看毛利率、營益率與月營收是否同步改善</td><td>以營收動能、庫存周轉、毛利率與代理產品線比較。<br><span class="cell-muted">風險：庫存跌價、需求循環、代理線變動</span></td></tr>
+<tr><td>長華*(8070)</td><td>產業 / 主題推估<br><span class="cell-muted">信心度：中；產業通用推估</span></td><td>電子零件代理 / 通路服務</td><td>半導體代理、電子零件通路、技術支援、庫存服務<br><span class="cell-muted">中：電子通路產業通用比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>下游客戶拉貨、代理線組合、庫存去化；同時看毛利率、營益率與月營收是否同步改善</td><td>以營收動能、庫存周轉、毛利率與代理產品線比較。<br><span class="cell-muted">風險：庫存跌價、需求循環、代理線變動</span></td></tr>
+<tr><td>崇越(5434)</td><td>產業 / 主題推估<br><span class="cell-muted">信心度：中；產業通用推估</span></td><td>電子零件代理 / 通路服務</td><td>半導體代理、電子零件通路、技術支援、庫存服務<br><span class="cell-muted">中：電子通路產業通用比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>下游客戶拉貨、代理線組合、庫存去化；同時看毛利率、營益率與月營收是否同步改善</td><td>以營收動能、庫存周轉、毛利率與代理產品線比較。<br><span class="cell-muted">風險：庫存跌價、需求循環、代理線變動</span></td></tr>
+<tr><td>全達(8068)</td><td>產業 / 主題推估<br><span class="cell-muted">信心度：中；產業通用推估</span></td><td>電子零件代理 / 通路服務</td><td>半導體代理、電子零件通路、技術支援、庫存服務<br><span class="cell-muted">中：電子通路產業通用比較；公司實際產品比重需以法說、年報或公告確認</span></td><td>下游客戶拉貨、代理線組合、庫存去化；同時看毛利率、營益率與月營收是否同步改善</td><td>以營收動能、庫存周轉、毛利率與代理產品線比較。<br><span class="cell-muted">風險：庫存跌價、需求循環、代理線變動</span></td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel chart-panel">
+          <h2>05_同族群比較分析圖</h2>
+          <img src="05_同族群比較分析圖.png?v=2026-05-31T09:14:56+08:00" alt="05_同族群比較分析圖">
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>公司法說會 / 公告</h2>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>類型</th>
+              <th>初判</th>
+              <th>判讀重點</th>
+              <th>標題</th>
+              <th>來源</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>2026-05-15 15:00</td><td>公告</td><td>中性</td><td>觀察訊號；檢查 EPS、毛利率與營益率是否支撐估值</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOT2RWaEhFNU1zS1dGaC1sM2R6VUFTODBuM2ltZUV6RDEzWU8wNFJFMXI3cy1RLTBWVHNBTE5RU1RVcHMxVnVOdmVTbmU3X1lZaWtNV05oeHo5U0Jkd2tGajQxeC1vTk14Q0o5cVpRaURqUC05YlpMUlk4RXFoWXdvZ1I2SkxsQkFkTkE?oc=5" target="_blank" rel="noopener noreferrer">【26Q1財報公告】至上(8112) Q1 營收1,101.6454億元，創歷史新高，季增56.63%、年成長137.85%</a></td><td>CMoney投資網誌</td></tr>
+<tr><td>2026-05-08 15:00</td><td>公告</td><td>利多</td><td>偏多訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOaFZfRnRMWWtjQThFcnFES2czaEJCTGF3NUc1UHBjSm5pSVJsVEVUTHgzcEpBZF9oS1lZMUc4Z08xR0ZpVkdiN3V6aDd2a3BNandnTFJBTHcwRkk3RTh1bnBPM0tzb0hzSWJuOXN4eDh5VDVxczhCQS1lNWlaaXhuM0M2QW4yWmhRWlE?oc=5" target="_blank" rel="noopener noreferrer">【2026/04月營收公告】至上(8112) 四月營收月減年增，全年營運續看向上</a></td><td>CMoney投資網誌</td></tr>
+<tr><td>2026-04-27 15:00</td><td>法說會</td><td>中性</td><td>觀察訊號；追蹤管理層展望、訂單與獲利率指引</td><td><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE53VHZpYVdRVmpLendlVDRDSmFkaUlCOFgxT2tUb3dDY1luYnRvVzRjTVg0QkZOM245VE84YldhVW1GdHhCX3Q4MlBGZlhKcVlfSHFkNGo3SUZId9IBX0FVX3lxTE5pRHI2LURwbU04NzRXdWRQRHBHc19QMTctekhlN2pLTTNybjB0amRmS2JoMDBBQ3Y5ZU5icWpHUEtLc1VKQkR4T0tsb3lBWFJoa3hReUpaZXhZUE1vWElZ?oc=5" target="_blank" rel="noopener noreferrer">至上將於下午召開法說 早盤先漲半根</a></td><td>經濟日報</td></tr>
+<tr><td>2026-04-09 15:00</td><td>公告</td><td>中性</td><td>觀察訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1YVi1BbTU2UWpnQ3J5QU9pTHhFNkNZSUh0WFdkZzlLSWZ2dmc3NncwNVZJVEdjb2dYQXBSWV9iWDl0aHB4NjVrdGJQaE9LOUQ5Um1RYkpBczQ?oc=5" target="_blank" rel="noopener noreferrer">【營收快訊】至上(8112)公告03月營收</a></td><td>CMoney</td></tr>
+<tr><td>2026-03-06 18:29</td><td>公告</td><td>中性</td><td>觀察訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9GdEFGQmlJWFk5QWhRZVM5REhsSjlNVndaZXFhM2xXNEJVM1k4X2lwOHdXZlBQZ3B4SkhQUVpZVjV4ZFlvVXZKZi12OV9HZUo0NDBOTVltdkc?oc=5" target="_blank" rel="noopener noreferrer">8112 至上 - 【營收快訊】至上(8112)公告02月營收｜CMoney 股市爆料同學會</a></td><td>CMoney</td></tr>
+<tr><td>2026-03-06 16:00</td><td>公告</td><td>利多</td><td>偏多訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9rdmphNzFvQUlPWUYza1JBWXd0aW9VdmI5ZFZiakxGbWt2OTVzSTJhSmEtNzNJSTBwUWJjcWU3RE5reWI3V0dfUXVXZ04xdkF0OWFJMFpBaDVrMEhqdXV0dGkyX2U4WTA?oc=5" target="_blank" rel="noopener noreferrer">【2026/02月營收公告】至上(8112) 二月營收312.18億元，表現亮眼、呈現雙成長，創歷史新高，年增136.81%</a></td><td>CMoney</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    
+        <section class="panel analysis">
+          <h2>相關利多利空新聞</h2>
+          <ul><li>新聞面偏利多（利多 2 / 利空 0 / 中性 5）。</li><li>優先看事件類型與判讀重點，避免只因標題情緒追價。</li></ul>
+          
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>時間</th>
+              <th>事件</th>
+              <th>初判</th>
+              <th>判讀重點</th>
+              <th>新聞標題</th>
+              <th>來源</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>2026-05-26 09:24</td><td>籌碼</td><td>中性</td><td>觀察訊號；搭配法人買賣超與股價位置判斷承接力</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBScDF1UTRsaHhLb1VMQ2pvSkI5QTZ5czVUdm9yd2RPZmFmYVBsZVZSQ2Q1TzdlODAwRXhPYjhVOExBMU82YWFQcnd5ejFLODhPWVhDZHI4NWU?oc=5" target="_blank" rel="noopener noreferrer">熱門股》外資大買 至上股價連3漲</a></td><td>自由時報</td></tr>
+<tr><td>2026-05-23 20:03</td><td>股價</td><td>中性</td><td>觀察訊號；屬市場反應，需回到量價與支撐壓力驗證</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UNVZXYUtKR1hyWW9rNTFSQ2JhMWd0Wk9kQjgwRmUxZkN3R2l1Uk9Cd19RM1ZSbHRuQnZsR21SVmhVQmVSQWtRMk9mRnNiMEUxTnR5dTNRT2g?oc=5" target="_blank" rel="noopener noreferrer">8112 至上 - CB（可轉債）對股價影響簡表</a></td><td>CMoney</td></tr>
+<tr><td>2026-05-23 03:47</td><td>籌碼</td><td>中性</td><td>觀察訊號；搭配法人買賣超與股價位置判斷承接力</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBoaVdtRUxyYWpsbXNGVjFKTGY4UVNVbU9ncnNfUk9aclQ2eGEwTDgtdENhdkZkRF9mQ2lIbkVfOFY0LVMxOHY0RV9sX3ZhZWh0OTZhbjdPcXQ?oc=5" target="_blank" rel="noopener noreferrer">8112 至上 - 各位至上高手 今天外資拉上86去撞上面的套牢區後 放手滾出3...</a></td><td>CMoney</td></tr>
+<tr><td>2026-05-14 15:00</td><td>籌碼</td><td>中性</td><td>觀察訊號；搭配法人買賣超與股價位置判斷承接力</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE95YzdEcjREenFjLW93aVRRbGZqWFB1MktpZjVudG9vbFdGby1pR09oNXMwTFZtNkpzSkdVcktER0p4azlnUXFyU0tjdDNkc2puYjdHZXI4UUs?oc=5" target="_blank" rel="noopener noreferrer">8112 至上 - 【至上(8112)盤後解析】法人回補明顯，股價量能同步走高 ...</a></td><td>CMoney</td></tr>
+<tr><td>2026-05-12 15:00</td><td>股價</td><td>中性</td><td>觀察訊號；屬市場反應，需回到量價與支撐壓力驗證</td><td><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOOEU5dVNWeWlrWk5BOWdFLU5hbUd0bndhSUV4NEpzYnYxOGpOMGJUb3dqa2FqVms4MTdUZTAwSVozRG1pT0ZVS0ljaXFsVmE3SWtKODZrNmRyaWtpNHlva3VHQnJVRlVvaVVKUFFlcnEyOEV2QjBKcmJLMENHSTgwU3VFY1V0cTQ?oc=5" target="_blank" rel="noopener noreferrer">至上8112為何急殺？從預期修正與籌碼結構拆解股價暴跌原因-黃勢明</a></td><td>CMoney投資網誌</td></tr>
+<tr><td>2026-05-08 15:00</td><td>營收</td><td>利多</td><td>偏多訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE0zRGI3MUhxZ0RBcmdfbTVjRVNxSlVlZEsxT2N0bklndWdkRW9HNERSNHhhMXFqWGEtb1cxblQ3WlVKU1FwZ3I4UGQ0MWV3Q2R6a1JHUmZQQTY5d3paUU1PYkZvcWVZMV96dUp2YW9IVzVPdkpERkE?oc=5" target="_blank" rel="noopener noreferrer">營收速報 - 至上(8112)4月營收350.61億元年增率高達55.96％｜新聞快訊｜豐雲學堂</a></td><td>sinotrade.com.tw</td></tr>
+<tr><td>2026-05-06 08:21</td><td>財報</td><td>利多</td><td>偏多訊號；檢查 EPS、毛利率與營益率是否支撐估值</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE11WmVLWmVINHRTek0tZnd0dEQ4Q1NCUWN6U2ZQMzlYb01KQWJkalN3Zzh6X2RkYzZJYnVYM1dwZXh5VnJJbnQ4V3MyQjVxVTdLZU01b3NsWVQ?oc=5" target="_blank" rel="noopener noreferrer">8112 至上 - 獲利大好的公司 股價遲早會大噴 不懂看空的人在想啥 趨勢大浪...</a></td><td>CMoney</td></tr></tbody>
+        </table>
+      </div>
+    
+        </section>
+        
+    <section class="panel">
+      <h2>進階分析與資料明細</h2>
+      <p class="notice">權證、ETF、集保與原始條列內容預設收合，需要時再展開。</p>
+    </section>
+    
+    <details class="panel detail-panel">
+      <summary>四、量價結構</summary>
+      <div class="detail-body"><ul><li>最新成交量 29,849,104，近 20 日均量 25,007,572，近 60 日均量 24,143,686。</li><li>最新量能約為近 20 日均量的 1.19 倍，近 20 日上漲日 12 天、下跌日 6 天。</li><li>量價型態：量價中性偏多。價格收紅但量能接近均量，需等補量或突破確認。</li><li>累積交易量分布可觀察過去一年成交量較集中的價格帶，作為籌碼密集區參考。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>四之二、乖離率與 ATR 波動區間</summary>
+      <div class="detail-body"><ul><li>MA5 乖離 3.67%：乖離接近中性</li><li>MA10 乖離 4.15%：乖離接近中性</li><li>MA20 乖離 4.36%：乖離接近中性</li><li>MA60 乖離 6.67%：正乖離偏高，趨勢偏強但不宜忽略追高風險</li><li>ATR14 約 3.42，以最新收盤估算，明日常態波動參考區間約 85.18～92.02；若開盤跳空或爆量，區間需重新評估。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七、同族群比較</summary>
+      <div class="detail-body"><ul><li>比較依據：同產業相關性候選：電子通路業（中：同產業候選，將再依一年價格相關性篩選；一年日報酬相關性排序）</li><li>比較清單：至上(8112)、擎亞(8096)、方土昶(6265)、建達(6118)、長華*(8070)、崇越(5434)、全達(8068)</li><li>同期間相對報酬排序：方土昶(6265) 500.00%、擎亞(8096) 175.28%、崇越(5434) 76.26%、至上(8112) 75.45%、建達(6118) 15.03%、長華*(8070) 13.15%</li><li>相關性：擎亞(8096) 0.472、方土昶(6265) 0.349、建達(6118) 0.299、長華*(8070) 0.261、崇越(5434) 0.258、全達(8068) 0.251</li><li>部分候選排除：大傳(6119): No TaiwanStockPrice rows for 6119；奇普仕(3020): No TaiwanStockPrice rows for 3020；友尚(2403): No TaiwanStockPrice rows for 2403</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之一、每日 ETF 持股該股增減名單</summary>
+      <div class="detail-body"><ul><li>ETF 持股最新快照：2026-05-29。</li><li>目前解析到 9 檔 ETF 持有此股，其中主動式候選 2 檔，已檢查 2 檔最近一次持股異動。</li><li>最近一次主動 ETF 異動未命中此股；目前主要持有 ETF：00919 00919、00999A 00999A主動、00733 00733、00930 00930、00944 00944、00984A 00984A主動、00943 00943、006204 006204。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>七之二、集保股權分散資訊</summary>
+      <div class="detail-body"><ul><li>集保戶數合計 113,064 人，集保股數合計 525,293,058 股。</li><li>小額持股（1～10,000 股）占 31.91%；中階持股（50,001～400,000 股）占 12.69%；大額持股（400,001 股以上）占 38.68%，其中百萬股以上占 34.06%。</li><li>集保結構判斷：籌碼較分散。散戶與中小持股比重較高，股價上攻時更需要成交量與法人買盤配合。</li><li>散戶化觀察：小額持股占比偏高，短線若遇利空或跌破支撐，籌碼容易比較浮動。</li><li>限制：TDCC 集保資料通常是每週最後營業日結束後的持股級距統計，能看籌碼集中或分散，但不能知道是哪位自然人或哪家主力在買賣。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十、主力名單及主力 / 散戶分佈限制</summary>
+      <div class="detail-body"><ul><li>不得宣稱可取得完整自然人大戶名單。</li><li>券商分點、法人與融資融券僅能作為主力 / 大戶疑似結構輔助，不等同真實大戶。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>十一、產圖完成檢查表</summary>
+      <div class="detail-body"><ul><li>01～03 為真實 K 線圖；04～06 為狀態圖並列出資料限制。</li></ul></div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>每日 ETF 持股該股增減名單表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>ETF代號</th>
+              <th>ETF名稱</th>
+              <th>動作</th>
+              <th>增減張數</th>
+              <th>比較區間</th>
+              <th>原始摘要</th>
+            </tr>
+          </thead>
+          <tbody><tr><td colspan="6">最近一次主動 ETF 持股異動未命中此股，或資料來源未提供可解析增減。</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保戶股權分散表格</summary>
+      <div class="detail-body">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>級距</th>
+              <th>持股分級</th>
+              <th>人數</th>
+              <th>股數</th>
+              <th>占集保庫存比例</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>1</td><td>1-999 股</td><td class="cell-number">42,884</td><td class="cell-number">4,001,441</td><td class="cell-number">0.76%</td></tr>
+<tr><td>2</td><td>1,000-5,000 股</td><td class="cell-number">58,547</td><td class="cell-number">112,517,973</td><td class="cell-number">21.42%</td></tr>
+<tr><td>3</td><td>5,001-10,000 股</td><td class="cell-number">6,567</td><td class="cell-number">51,149,996</td><td class="cell-number">9.73%</td></tr>
+<tr><td>4</td><td>10,001-15,000 股</td><td class="cell-number">1,910</td><td class="cell-number">24,019,476</td><td class="cell-number">4.57%</td></tr>
+<tr><td>5</td><td>15,001-20,000 股</td><td class="cell-number">1,065</td><td class="cell-number">19,549,124</td><td class="cell-number">3.72%</td></tr>
+<tr><td>6</td><td>20,001-30,000 股</td><td class="cell-number">807</td><td class="cell-number">20,443,554</td><td class="cell-number">3.89%</td></tr>
+<tr><td>7</td><td>30,001-40,000 股</td><td class="cell-number">364</td><td class="cell-number">13,048,168</td><td class="cell-number">2.48%</td></tr>
+<tr><td>8</td><td>40,001-50,000 股</td><td class="cell-number">227</td><td class="cell-number">10,511,570</td><td class="cell-number">2.00%</td></tr>
+<tr><td>9</td><td>50,001-100,000 股</td><td class="cell-number">398</td><td class="cell-number">27,906,566</td><td class="cell-number">5.31%</td></tr>
+<tr><td>10</td><td>100,001-200,000 股</td><td class="cell-number">130</td><td class="cell-number">18,046,149</td><td class="cell-number">3.43%</td></tr>
+<tr><td>11</td><td>200,001-400,000 股</td><td class="cell-number">76</td><td class="cell-number">20,761,868</td><td class="cell-number">3.95%</td></tr>
+<tr><td>12</td><td>400,001-600,000 股</td><td class="cell-number">20</td><td class="cell-number">9,768,161</td><td class="cell-number">1.85%</td></tr>
+<tr><td>13</td><td>600,001-800,000 股</td><td class="cell-number">7</td><td class="cell-number">4,983,254</td><td class="cell-number">0.94%</td></tr>
+<tr><td>14</td><td>800,001-1,000,000 股</td><td class="cell-number">11</td><td class="cell-number">9,661,271</td><td class="cell-number">1.83%</td></tr>
+<tr><td>15</td><td>1,000,001 股以上</td><td class="cell-number">51</td><td class="cell-number">178,924,487</td><td class="cell-number">34.06%</td></tr>
+<tr><td>16</td><td>差異或調整數</td><td class="cell-number">0</td><td class="cell-number">0</td><td class="cell-number">0.00%</td></tr>
+<tr><td>17</td><td>合計</td><td class="cell-number">113,064</td><td class="cell-number">525,293,058</td><td class="cell-number">100.00%</td></tr></tbody>
+        </table>
+        </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>集保股權歷史趨勢表格</summary>
+      <div class="detail-body">
+        <p class="notice">目前資料源只提供單一期資料，先呈現最新集保分布；有歷史期數時會自動比較變化。</p>
+        <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>總戶數</th>
+              <th>小額 1～10,000 股</th>
+              <th>大額 400,001 股以上</th>
+              <th>大戶 1000 張以上</th>
+              <th>小額變化</th>
+              <th>大額變化</th>
+              <th>大戶變化</th>
+              <th>戶數變化</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>20260529</td><td class="cell-number">+113,064</td><td class="cell-number">31.91%</td><td class="cell-number">38.68%</td><td class="cell-number">34.06%</td><td class="cell-number">-</td><td class="cell-number">-</td><td class="cell-number">-</td><td class="cell-number">-</td></tr></tbody>
+        </table>
+        </div>
+    </div>
+    </details>
+    
+
+    <details class="panel detail-panel">
+      <summary>權證輔助觀察</summary>
+      <div class="detail-body"><ul><li>認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多</li><li>認購成交占 0.00%，近價外認購 30 檔，前五大成交占 0.00%</li><li>權證熱區不足，暫不評估股價位置</li></ul>
+        <section class="panel chart-panel">
+          <h2>04_權證完整分析圖</h2>
+          <img src="04_權證完整分析圖.png?v=2026-05-31T09:14:56+08:00" alt="04_權證完整分析圖">
+        </section>
+        
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>權證代號</th>
+              <th>權證名稱</th>
+              <th>類型</th>
+              <th>履約價</th>
+              <th>成交金額</th>
+              <th>成交張數</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>036944</td><td>至上永豐54購01</td><td>認購</td><td class="cell-number">53.87</td><td class="cell-number">0</td><td class="cell-number">0</td></tr>
+<tr><td>036956</td><td>至上國票54購01</td><td>認購</td><td class="cell-number">60.00</td><td class="cell-number">0</td><td class="cell-number">0</td></tr>
+<tr><td>037240</td><td>至上國泰54購01</td><td>認購</td><td class="cell-number">49.00</td><td class="cell-number">0</td><td class="cell-number">0</td></tr>
+<tr><td>037326</td><td>至上元大54購01</td><td>認購</td><td class="cell-number">50.43</td><td class="cell-number">0</td><td class="cell-number">0</td></tr>
+<tr><td>037465</td><td>至上永豐55購01</td><td>認購</td><td class="cell-number">63.52</td><td class="cell-number">0</td><td class="cell-number">0</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    </details>
+    
+  </main>
+</body>
+</html>
