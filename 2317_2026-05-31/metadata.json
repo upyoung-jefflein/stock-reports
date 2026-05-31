@@ -174,7 +174,7 @@
   "summary_warrant_signal": "中性",
   "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
   "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
-  "generated_at": "2026-05-31T17:48:49+08:00",
+  "generated_at": "2026-05-31T18:19:16+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2317_2026-05-31\\01_日線完整技術與籌碼分析圖.png",
@@ -356,12 +356,12 @@
     }
   ],
   "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2317_2026-05-31\\07_集保股權歷史趨勢圖.png",
-  "broker_trading_period": "2026-05-29 to 2026-05-29 (OK; local rows=12540, days=2, imported_files=2；HiStock brokertrace no usable rows；nStock 2026-05-29 rows=20)",
-  "broker_import_status": "券商分點：2026-05-29 to 2026-05-29；OK; local rows=12540, days=2, imported_files=2；HiStock brokertrace no usable rows；nStock 2026-05-29 rows=20",
+  "broker_trading_period": "2026-05-29 to 2026-05-29 (OK; local rows=40, days=2, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-05-29 rows=20)",
+  "broker_import_status": "券商分點：2026-05-29 to 2026-05-29；OK; local rows=40, days=2, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-05-29 rows=20",
   "broker_trading_latest_period": "2026-05-29",
   "broker_pattern_result": {
     "ok": true,
-    "message": "分點買賣後 5 / 30 交易日勝率回測",
+    "message": "券商歷史不足，改用公開網站近15日主力分點趨勢",
     "forward_days": 5,
     "rows": [
       {
@@ -592,7 +592,226 @@
         "horizon_label": "最新"
       }
     ],
-    "chart_series": []
+    "chart_series": [
+      {
+        "rank": 1,
+        "broker": "主力買超前10",
+        "horizon_days": 0,
+        "buy_win_rate": null,
+        "buy_signals": 0,
+        "metric_label": "近15日",
+        "records": [
+          {
+            "date": "2026-05-11",
+            "net_buy": 18371.0
+          },
+          {
+            "date": "2026-05-12",
+            "net_buy": 29373.0
+          },
+          {
+            "date": "2026-05-13",
+            "net_buy": 25137.0
+          },
+          {
+            "date": "2026-05-14",
+            "net_buy": 17423.0
+          },
+          {
+            "date": "2026-05-15",
+            "net_buy": 52605.0
+          },
+          {
+            "date": "2026-05-18",
+            "net_buy": 8657.0
+          },
+          {
+            "date": "2026-05-19",
+            "net_buy": 17144.0
+          },
+          {
+            "date": "2026-05-20",
+            "net_buy": 13318.0
+          },
+          {
+            "date": "2026-05-21",
+            "net_buy": 20378.0
+          },
+          {
+            "date": "2026-05-22",
+            "net_buy": 17659.0
+          },
+          {
+            "date": "2026-05-25",
+            "net_buy": 46574.0
+          },
+          {
+            "date": "2026-05-26",
+            "net_buy": 12782.0
+          },
+          {
+            "date": "2026-05-27",
+            "net_buy": 18239.0
+          },
+          {
+            "date": "2026-05-28",
+            "net_buy": 14698.0
+          },
+          {
+            "date": "2026-05-29",
+            "net_buy": 88790.0
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "broker": "主力賣超前10",
+        "horizon_days": 0,
+        "buy_win_rate": null,
+        "buy_signals": 0,
+        "metric_label": "近15日",
+        "records": [
+          {
+            "date": "2026-05-11",
+            "net_buy": -15305.0
+          },
+          {
+            "date": "2026-05-12",
+            "net_buy": -25470.0
+          },
+          {
+            "date": "2026-05-13",
+            "net_buy": -20856.0
+          },
+          {
+            "date": "2026-05-14",
+            "net_buy": -25211.0
+          },
+          {
+            "date": "2026-05-15",
+            "net_buy": -40530.0
+          },
+          {
+            "date": "2026-05-18",
+            "net_buy": -8404.0
+          },
+          {
+            "date": "2026-05-19",
+            "net_buy": -16032.0
+          },
+          {
+            "date": "2026-05-20",
+            "net_buy": -13063.0
+          },
+          {
+            "date": "2026-05-21",
+            "net_buy": -15316.0
+          },
+          {
+            "date": "2026-05-22",
+            "net_buy": -13605.0
+          },
+          {
+            "date": "2026-05-25",
+            "net_buy": -35726.0
+          },
+          {
+            "date": "2026-05-26",
+            "net_buy": -11251.0
+          },
+          {
+            "date": "2026-05-27",
+            "net_buy": -13609.0
+          },
+          {
+            "date": "2026-05-28",
+            "net_buy": -11111.0
+          },
+          {
+            "date": "2026-05-29",
+            "net_buy": -67634.0
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "broker": "主力淨買賣超",
+        "horizon_days": 0,
+        "buy_win_rate": null,
+        "buy_signals": 0,
+        "metric_label": "近15日",
+        "records": [
+          {
+            "date": "2026-05-11",
+            "net_buy": 3067.0
+          },
+          {
+            "date": "2026-05-12",
+            "net_buy": 3903.0
+          },
+          {
+            "date": "2026-05-13",
+            "net_buy": 4282.0
+          },
+          {
+            "date": "2026-05-14",
+            "net_buy": -7789.0
+          },
+          {
+            "date": "2026-05-15",
+            "net_buy": 12075.0
+          },
+          {
+            "date": "2026-05-18",
+            "net_buy": 253.0
+          },
+          {
+            "date": "2026-05-19",
+            "net_buy": 1112.0
+          },
+          {
+            "date": "2026-05-20",
+            "net_buy": 255.0
+          },
+          {
+            "date": "2026-05-21",
+            "net_buy": 5062.0
+          },
+          {
+            "date": "2026-05-22",
+            "net_buy": 4055.0
+          },
+          {
+            "date": "2026-05-25",
+            "net_buy": 10848.0
+          },
+          {
+            "date": "2026-05-26",
+            "net_buy": 1531.0
+          },
+          {
+            "date": "2026-05-27",
+            "net_buy": 4630.0
+          },
+          {
+            "date": "2026-05-28",
+            "net_buy": 3587.0
+          },
+          {
+            "date": "2026-05-29",
+            "net_buy": 21156.0
+          }
+        ]
+      }
+    ],
+    "public_broker_series_status": {
+      "ok": true,
+      "source": "Cnyes broker aggregate",
+      "message": "Cnyes 15-day aggregate rows=15",
+      "period": "2026-05-11 to 2026-05-29",
+      "url": "https://www.cnyes.com/twstock/main1.aspx?code=2317"
+    },
+    "public_broker_series_used": true
   },
   "news_rows": [
     {
