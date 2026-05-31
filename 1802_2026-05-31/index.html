@@ -35,6 +35,22 @@
     th { width: 230px; color: #526070; font-weight: 600; }
     .cell-number { text-align: right; font-variant-numeric: tabular-nums; }
     .cell-muted { display: inline-block; margin-top: 4px; color: #64748b; font-size: 12px; line-height: 1.45; }
+    .chart-note {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 0 0 10px;
+      padding: 9px 12px;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      background: #eff6ff;
+      color: #1e3a8a;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .chart-note strong { font-weight: 800; }
+    .chart-note span { color: #0f172a; font-weight: 700; }
     img {
       display: block;
       width: 100%;
@@ -145,15 +161,15 @@
 <body>
   <header>
     <h1>台玻(1802) 台股技術分析報告</h1>
-    <div>產生時間：2026-05-31T12:39:55+08:00</div>
+    <div>產生時間：2026-05-31T22:51:16+08:00</div>
   </header>
   <main>
     
     <section class="panel conclusion">
       <h2>結論摘要</h2>
-      <div class="summary-decision">中性偏多，偏多震盪 / 偏多震盪 / 中性 1 元；現價差 +5488.2%；偏高估區：不宜只用本益比追價</div>
+      <div class="summary-decision">中性偏多，偏多震盪 / 偏多震盪 / 中性 51 元；現價差 +40.5%；合理偏高區：續漲需要營收與法人同步確認</div>
       <div class="summary-grid"><div class="summary-card"><span>趨勢</span><strong>中性偏多，偏多震盪</strong></div>
-<div class="summary-card"><span>估值</span><strong>中性 1 元；現價差 +5488.2%；偏高估區：不宜只用本益比追價</strong></div>
+<div class="summary-card"><span>估值</span><strong>中性 51 元；現價差 +40.5%；合理偏高區：續漲需要營收與法人同步確認</strong></div>
 <div class="summary-card"><span>支撐 / 壓力</span><strong>第一 72.24 / 第二 69.08 / 強 69.08 / 壓力 81.20</strong></div>
 <div class="summary-card"><span>觀察</span><strong>價漲量縮；MA5 72.24 / MA10 69.08</strong></div>
 <div class="summary-card"><span>買點</span><strong>已突破 69.28 且站穩，回測不破可偏多續抱</strong></div>
@@ -199,19 +215,22 @@
     
         <section class="panel chart-panel">
           <h2>01_日線完整技術與籌碼分析圖</h2>
-          <img src="01_日線完整技術與籌碼分析圖.png?v=2026-05-31T12:39:55+08:00" alt="01_日線完整技術與籌碼分析圖">
+          <div class="chart-note"><strong>財報推算路徑已套用</strong><span>保守 25 / 中性 51 / 樂觀 112</span></div>
+          <img src="01_日線完整技術與籌碼分析圖.png?v=2026-05-31T22:51:16+08:00" alt="01_日線完整技術與籌碼分析圖">
         </section>
         
 
         <section class="panel chart-panel">
           <h2>02_周線完整技術與趨勢分析圖</h2>
-          <img src="02_周線完整技術與趨勢分析圖.png?v=2026-05-31T12:39:55+08:00" alt="02_周線完整技術與趨勢分析圖">
+          
+          <img src="02_周線完整技術與趨勢分析圖.png?v=2026-05-31T22:51:16+08:00" alt="02_周線完整技術與趨勢分析圖">
         </section>
         
 
         <section class="panel chart-panel">
           <h2>03_月線完整技術與長期趨勢分析圖</h2>
-          <img src="03_月線完整技術與長期趨勢分析圖.png?v=2026-05-31T12:39:55+08:00" alt="03_月線完整技術與長期趨勢分析圖">
+          
+          <img src="03_月線完整技術與長期趨勢分析圖.png?v=2026-05-31T22:51:16+08:00" alt="03_月線完整技術與長期趨勢分析圖">
         </section>
         
     
@@ -231,9 +250,9 @@
               <th>說明</th>
             </tr>
           </thead>
-          <tbody><tr><td>保守</td><td class="cell-number">1</td><td class="cell-number">8.2x</td><td class="cell-number">0.13</td><td class="cell-number">-98.6%</td><td>風險折價後的防守估值</td></tr>
-<tr><td>中性</td><td class="cell-number">1</td><td class="cell-number">9.7x</td><td class="cell-number">0.13</td><td class="cell-number">-98.6%</td><td>產業模型 + 歷史 PER + 前瞻 EPS</td></tr>
-<tr><td>樂觀</td><td class="cell-number">2</td><td class="cell-number">11.5x</td><td class="cell-number">0.13</td><td class="cell-number">-97.2%</td><td>催化溢價後的進攻估值</td></tr></tbody>
+          <tbody><tr><td>保守</td><td class="cell-number">25</td><td class="cell-number">8.2x</td><td class="cell-number">0.13</td><td class="cell-number">-65.2%</td><td>風險折價後的防守估值</td></tr>
+<tr><td>中性</td><td class="cell-number">51</td><td class="cell-number">9.7x</td><td class="cell-number">0.13</td><td class="cell-number">-29.1%</td><td>產業模型 + 歷史 PER + 前瞻 EPS</td></tr>
+<tr><td>樂觀</td><td class="cell-number">112</td><td class="cell-number">11.5x</td><td class="cell-number">0.13</td><td class="cell-number">+55.8%</td><td>催化溢價後的進攻估值</td></tr></tbody>
         </table>
       </div>
     
@@ -266,7 +285,7 @@
           <tbody><tr><td>月營收趨勢</td><td>2026-04 月營收 39.30 億元；MoM -5.03%；YoY 6.46%；近 3 個月累計 YoY 2.94%；近 12 個月滾動營收 YoY 0.48%；連續 2 個月年增為正</td><td>營收動能</td></tr>
 <tr><td>獲利率</td><td>2026Q1 毛利率 19.23%（年變化 +8.28 個百分點）、營業利益率 7.88%（年變化 +9.57 個百分點）</td><td>毛利率 / 營業利益率</td></tr>
 <tr><td>季報細項</td><td>2026Q1 營業費用率 11.44%（年變化 -1.26 個百分點）、稅後淨利率 5.71%（年變化 +9.96 個百分點）、ROE 0.64%（年變化 +1.43 個百分點）</td><td>營業費用率 / 稅後淨利率 / ROE</td></tr>
-<tr><td>財報推算股價</td><td>估值區間：保守 1 / 中性 1 / 樂觀 2 元<br>模型：一般產業 PER（PER 下限 6.0x / 上限 35.0x）<br>假設：EPS 0.13，PER 8.2x / 9.7x / 11.5x<br>多模型中位：71 元<br>現價：71.90 元，較中性估值 +5488.2%<br>判讀：偏高估區：不宜只用本益比追價</td><td>EPS / ROE / 獲利率</td></tr>
+<tr><td>財報推算股價</td><td>估值區間：保守 25 / 中性 51 / 樂觀 112 元<br>模型：一般產業 PER（PER 下限 6.0x / 上限 35.0x）<br>假設：EPS 0.13，PER 8.2x / 9.7x / 11.5x<br>多模型加權：51 元<br>現價：71.90 元，較中性估值 +40.5%<br>判讀：合理偏高區：續漲需要營收與法人同步確認</td><td>EPS / ROE / 獲利率</td></tr>
 <tr><td>估值狀態</td><td>月營收、估值與正式 EPS 已取得</td><td>PER / PBR / EPS</td></tr></tbody>
         </table>
       </div>
@@ -277,7 +296,8 @@
     
         <section class="panel chart-panel">
           <h2>06_基本面分析圖</h2>
-          <img src="06_基本面分析圖.png?v=2026-05-31T12:39:55+08:00" alt="06_基本面分析圖">
+          
+          <img src="06_基本面分析圖.png?v=2026-05-31T22:51:16+08:00" alt="06_基本面分析圖">
         </section>
         
     
@@ -365,7 +385,8 @@
     
         <section class="panel chart-panel">
           <h2>05_同族群比較分析圖</h2>
-          <img src="05_同族群比較分析圖.png?v=2026-05-31T12:39:55+08:00" alt="05_同族群比較分析圖">
+          
+          <img src="05_同族群比較分析圖.png?v=2026-05-31T22:51:16+08:00" alt="05_同族群比較分析圖">
         </section>
         
     
@@ -384,9 +405,9 @@
               <th>來源</th>
             </tr>
           </thead>
-          <tbody><tr><td>2026-05-14 15:00</td><td>公告</td><td>利空</td><td>偏空訊號；檢查 EPS、毛利率與營益率是否支撐估值</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQNTZEeVZULXp0SzZINzZBRGQ0TnpsT3VmWWdKWDlCUEhSSlUta3dYZmJBOUpKSXczdlJyU2ZzSGR4d1VsdWMtRDV2VFp3ZXFoRjZNQjZNR0JRVndjR2RlaE44bWU0TlNBZEJhcU1QdHQyZnFVMHRjWVlzMi12REFDZXdPUVBkV1FEYlE?oc=5" target="_blank" rel="noopener noreferrer">【26Q1財報公告】台玻(1802) Q1 營收102.4419億元，創下近4季新低，季減5.07%、年成長6.13%</a></td><td>CMoney投資網誌</td></tr>
-<tr><td>2026-05-11 15:00</td><td>公告</td><td>利多</td><td>偏多訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNVzNDb0o3TXhuMnMyTTUzRk1UMmxYN1dDVmJhUjNrajd6V05sbFk3RzQ1bHVabVNRTkw3dG9ndkhMbUFHWDZpNFZsdnhMMG5taWpkVzVWeldWZ3JQMWZwUU9SeDVOVHlvVkk3bFZnNGZ3czZkemZEOEhWWE0xSnQzZWZhZDZ6d3dmcFE?oc=5" target="_blank" rel="noopener noreferrer">【2026/04月營收公告】台玻(1802) 四月營收月減年增，全年營運續看向上</a></td><td>CMoney投資網誌</td></tr>
+          <tbody><tr><td>2026-05-11 15:00</td><td>公告</td><td>利多</td><td>偏多訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNVzNDb0o3TXhuMnMyTTUzRk1UMmxYN1dDVmJhUjNrajd6V05sbFk3RzQ1bHVabVNRTkw3dG9ndkhMbUFHWDZpNFZsdnhMMG5taWpkVzVWeldWZ3JQMWZwUU9SeDVOVHlvVkk3bFZnNGZ3czZkemZEOEhWWE0xSnQzZWZhZDZ6d3dmcFE?oc=5" target="_blank" rel="noopener noreferrer">【2026/04月營收公告】台玻(1802) 四月營收月減年增，全年營運續看向上</a></td><td>CMoney投資網誌</td></tr>
 <tr><td>2026-05-06 15:00</td><td>公告</td><td>利空</td><td>偏空訊號；檢查 EPS、毛利率與營益率是否支撐估值</td><td><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQb3BXbzQ3dVlLOGFFTE9KTzZGTWZLUTFpMEEweXdkelI2ME9iNG1heHpCeURDZE1uMXpQV1RFX1p6US1WcmhJQ2VGSzItSVoyakVDSTZpUFhGSGVsb2hrUWtYblhHazJ0VUh4ekZWanUtMGRoVjVHNjNqUEpTdGU0MDFZc1JwNzhJQ3c?oc=5" target="_blank" rel="noopener noreferrer">【25Q4財報公告】台玻(1802) Q4 營收107.9185億元，連3季成長，季增0.61%、年衰退6.65%</a></td><td>CMoney投資網誌</td></tr>
+<tr><td>2026-04-10 15:00</td><td>公告</td><td>利多</td><td>偏多訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5TV3Y5TU1vaVQzRDVUM25LNG5BcWJRV0pFVy1ySTVMVUgzYk81SEZwSDhHdWpPRTdqV2lxRTFFdncxbWpMS2tnZFJTQWhyMHZwUWNqWHNUdnd6OTA5eGhwVk5scDRlMkU?oc=5" target="_blank" rel="noopener noreferrer">【2026/03月營收公告】台玻(1802) 三月營收41.38億元，表現亮眼、呈現雙成長，創近31個月以來新高，年增16.36%</a></td><td>CMoney</td></tr>
 <tr><td>2026-03-10 15:00</td><td>公告</td><td>利空</td><td>偏空訊號；觀察月營收年增與近 3 個月動能是否延續</td><td><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAxZS1WNXI5c2RXZXNFNXBwQXowZmFDc2RRVWJsQ1VPbm5zaDJJN25FNC1yNEpzY3BveVJvaXQ4Mkc4XzRjT1Qyal9GQWpfZWVib2V1bTFmMjRpLVZHVVg0WFJPUTl5VkU?oc=5" target="_blank" rel="noopener noreferrer">【2026/02月營收公告】台玻(1802) 二月營收24.37億元，營收雙減，年減17.59％</a></td><td>CMoney</td></tr></tbody>
         </table>
       </div>
@@ -396,7 +417,7 @@
     
         <section class="panel analysis">
           <h2>相關利多利空新聞</h2>
-          <ul><li>新聞面偏利多（利多 6 / 利空 0 / 中性 2）。</li><li>優先看事件類型與判讀重點，避免只因標題情緒追價。</li></ul>
+          <ul><li>新聞面偏利多（利多 5 / 利空 0 / 中性 3）。</li><li>優先看事件類型與判讀重點，避免只因標題情緒追價。</li></ul>
           
       <div class="table-scroll">
         <table>
@@ -410,14 +431,14 @@
               <th>來源</th>
             </tr>
           </thead>
-          <tbody><tr><td>2026-05-31 03:00</td><td>產業</td><td>中性</td><td>觀察訊號；作為背景訊號，需確認是否直接影響公司</td><td><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBVU2UtSnBHakVLaEdOelNjWDBPMXBMU3JSU3VhNzA4MGZxUDlCTGM3eElLdmNySTZBZmRMRW1yYmdrZ1pISElSVkhmZVVNcUNhMVZCSmFpWTM3UFA0cEJN?oc=5" target="_blank" rel="noopener noreferrer">台玻玻纖布需求旺- 日報</a></td><td>工商時報</td></tr>
+          <tbody><tr><td>2026-05-31 20:32</td><td>產業</td><td>中性</td><td>觀察訊號；作為背景訊號，需確認是否直接影響公司</td><td><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wNV9DbW9uaDlTY2JiOFV3MGhZVURCLXJRY3lzVHktZXVlQ211VnBwOTlTRnI0V1A5TzBjY3RxVXFYanNOb05lazI1N0lTd1lZTzJJ?oc=5" target="_blank" rel="noopener noreferrer">台玻(1802) 個股概覽 | 個股 - 股市</a></td><td>CMoney</td></tr>
+<tr><td>2026-05-31 03:00</td><td>產業</td><td>中性</td><td>觀察訊號；作為背景訊號，需確認是否直接影響公司</td><td><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBVU2UtSnBHakVLaEdOelNjWDBPMXBMU3JSU3VhNzA4MGZxUDlCTGM3eElLdmNySTZBZmRMRW1yYmdrZ1pISElSVkhmZVVNcUNhMVZCSmFpWTM3UFA0cEJN?oc=5" target="_blank" rel="noopener noreferrer">台玻玻纖布需求旺- 日報</a></td><td>工商時報</td></tr>
+<tr><td>2026-05-29 18:04</td><td>產業</td><td>中性</td><td>觀察訊號；作為背景訊號，需確認是否直接影響公司</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1WOVFUaUVEY2ZLSkZrTmFZT2JBYXNxemUtcHlqYlVCeEpxbVlRXzBRRXF1elUwSWZyVGFIWnVzV01aUVpjU2dabWFmWDlqZXM1ZnV4M1NnbUI?oc=5" target="_blank" rel="noopener noreferrer">1802 台玻- 大戶持續增加</a></td><td>CMoney</td></tr>
 <tr><td>2026-05-27 20:13</td><td>股價</td><td>利多</td><td>偏多訊號；屬市場反應，需回到量價與支撐壓力驗證</td><td><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9iSVlVS3c2dWlsaGR3ZmhKTjFadGxlazlURmF5ZUw1R193amJvZklva0dfZDg3a3ZTNVJHT3N0MDNrdlVVdktEUWNCZW9uanc1S3EzWDhNMXVMbEJaQVFvZTZZVVI?oc=5" target="_blank" rel="noopener noreferrer">討論牆 | 盤中速報 - 台玻(1802)股價拉至漲停，漲停價81.2元，成交107,146張</a></td><td>LINE TODAY</td></tr>
-<tr><td>2026-05-26 19:39</td><td>產業</td><td>中性</td><td>觀察訊號；作為背景訊號，需確認是否直接影響公司</td><td><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOZFFFQ3lqYXc4NDRkWENvV05rVk9NQ0JCTHVlNldXVWFhdnlWUHdMd3F5d1JzakxaZkp4VnEwUGVzOFJVWV9rOHRRVG5NNW83YzNfQnlRSDFiNjFiZ1FhUWV6djV2X21CRzJJRlBSWFFLRTRNYXVIS1Y5S2JMX1V0UjZWdF9PWmNZb0JTYzhweUk?oc=5" target="_blank" rel="noopener noreferrer">【即時新聞】台玻(1802)成交金額大卻表現疲軟 列入26日弱勢股名單</a></td><td>CMoney投資網誌</td></tr>
 <tr><td>2026-05-17 15:00</td><td>訂單</td><td>利多</td><td>偏多訊號；確認訂單能見度、認列時程與毛利率</td><td><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE0yaFNncTh1T1pSeDVXSnMxeEQyNTBxQUJ1Z3U1VkJQNzRwVTRCZmRFS3JXVGY5dUUxTUxSNU5wYW42eXBJQzVHeERWczIzNVBjYzZDZmczRE4?oc=5" target="_blank" rel="noopener noreferrer">1802 台玻 - 一堆狂洗訂單資訊的？？ 這是誘高宰殺吧</a></td><td>CMoney</td></tr>
 <tr><td>2026-05-06 15:00</td><td>股價</td><td>利多</td><td>偏多訊號；屬市場反應，需回到量價與支撐壓力驗證</td><td><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE8yWWs4N3hSaDEyeHRjNkZOalhldFRtWlZ5UXlTcFJESDBwX3N1TjFEaUVjVFlPampYU2p2UmUzZDNUTFJqTEViNFQ3Tjk1aV9IUFktZnZlRGhwYkd6RVdn0gFkQVVfeXFMUFp0bnByMVpzdndac255a2hXUzIza2RFZWota1pOLTlndGY5aFZWY1Vjd29meDNOWmlkQ0xDQUlOZlAtUWprNEp0MTNFQmMzVjFaWWJwbUM2Z2VYc2ptTUpVR21pOA?oc=5" target="_blank" rel="noopener noreferrer">焦點股》台玻：隔日沖再現 爆量翻黑</a></td><td>自由財經</td></tr>
 <tr><td>2026-05-06 15:00</td><td>股價</td><td>利多</td><td>偏多訊號；屬市場反應，需回到量價與支撐壓力驗證</td><td><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5Jdkh6Vm9YSm5KWFhwTTFoT1NLbE5RUWZCWGRkVDN2MkhjZE44Z1A5V1dhd2hEMVlHZ2lYSXFfRUgyLWM5RkVrMG9GcG1vaDA?oc=5" target="_blank" rel="noopener noreferrer">〈焦點股〉中釉受惠高階晶片封裝題材發酵 量增價揚早早攻上漲停</a></td><td>news.cnyes.com</td></tr>
-<tr><td>2026-05-05 15:00</td><td>籌碼</td><td>利多</td><td>偏多訊號；搭配法人買賣超與股價位置判斷承接力</td><td><a href="https://news.google.com/rss/articles/CBMipAJBVV95cUxOektHamI4MTByVGNCMTdWVW01eW8zNUhMSkp4VklKWVI4ZVg1VS1yVDhCZ3g1WndoS1RjakMydFFGci16aGtIbkg2LXRyeXo2MDlVZHJHbWxjNlVqRFExR2VZSVkweG85WXhtbERTejEtOE5TbTVlLUhDVkl1aUFjdkJKNk9zQk5ZLXEtZ0w4QzNXTUoxbm1GZ1pOQWt4bUh3SEN0djRLLVRKYjc1cklIX3hGcEZhWUpHVlNRMFVRQkhwUFZzUkhWNGNZWUR3UnhoYWFXU05ZZ3RVR0NuWXJNdmdoRFl2ckJNYkZEUm4wcjVSSzdYR1hRRmpVeDlYZXRmdmpUbWg0NjdZcmdjbTVtUzZXV1lOSmlSX0QyQk5ycGdJMllI?oc=5" target="_blank" rel="noopener noreferrer">玻纖布漲價潮點火！外資掃貨「這2檔」7.7萬張、撒51億元敲進南亞 台玻漲停爆14萬張大量</a></td><td>Yahoo股市</td></tr>
-<tr><td>2026-05-05 15:00</td><td>股價</td><td>利多</td><td>偏多訊號；屬市場反應，需回到量價與支撐壓力驗證</td><td><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPT2lKaG1jendDblh2cjdfMmJmcjd4MFd2djNLWlNsRVdzMVJzMmRzclJSclBWSXdoSjhOM1c0bUNTMUtqTU0xY2Z6WnJMTEF3SmkteVduNGdXQ1lrOXFNZU1aRzBiVlFHamJoZ3IwTDN3a3dRc0RYbVduQ1U2WWtfNmtnY3dBWEJlWFVQZUdB?oc=5" target="_blank" rel="noopener noreferrer">【13:13 即時新聞】臺玻(1802)亮燈漲停72.8元，玻纖與平板玻璃題材發酵＋高檔籌碼換手後技術面轉強</a></td><td>CMoney投資網誌</td></tr></tbody>
+<tr><td>2026-05-05 15:00</td><td>籌碼</td><td>利多</td><td>偏多訊號；搭配法人買賣超與股價位置判斷承接力</td><td><a href="https://news.google.com/rss/articles/CBMipAJBVV95cUxOektHamI4MTByVGNCMTdWVW01eW8zNUhMSkp4VklKWVI4ZVg1VS1yVDhCZ3g1WndoS1RjakMydFFGci16aGtIbkg2LXRyeXo2MDlVZHJHbWxjNlVqRFExR2VZSVkweG85WXhtbERTejEtOE5TbTVlLUhDVkl1aUFjdkJKNk9zQk5ZLXEtZ0w4QzNXTUoxbm1GZ1pOQWt4bUh3SEN0djRLLVRKYjc1cklIX3hGcEZhWUpHVlNRMFVRQkhwUFZzUkhWNGNZWUR3UnhoYWFXU05ZZ3RVR0NuWXJNdmdoRFl2ckJNYkZEUm4wcjVSSzdYR1hRRmpVeDlYZXRmdmpUbWg0NjdZcmdjbTVtUzZXV1lOSmlSX0QyQk5ycGdJMllI?oc=5" target="_blank" rel="noopener noreferrer">玻纖布漲價潮點火！外資掃貨「這2檔」7.7萬張、撒51億元敲進南亞 台玻漲停爆14萬張大量</a></td><td>Yahoo股市</td></tr></tbody>
         </table>
       </div>
     
@@ -560,7 +581,8 @@
       <div class="detail-body"><ul><li>認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多</li><li>認購成交占 0.00%，近價外認購 11 檔，前五大成交占 0.00%</li><li>權證熱區不足，暫不評估股價位置</li></ul>
         <section class="panel chart-panel">
           <h2>04_權證完整分析圖</h2>
-          <img src="04_權證完整分析圖.png?v=2026-05-31T12:39:55+08:00" alt="04_權證完整分析圖">
+          
+          <img src="04_權證完整分析圖.png?v=2026-05-31T22:51:16+08:00" alt="04_權證完整分析圖">
         </section>
         
       <div class="table-scroll">
