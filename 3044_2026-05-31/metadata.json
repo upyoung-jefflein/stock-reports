@@ -16,8 +16,8 @@
   "institutional_latest_period": "2026-05-29",
   "margin_period": "2025-06-02 to 2026-05-29 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
   "margin_latest_period": "2026-05-29",
-  "warrant_period": "TWSE report_date=1150529 (OK; call=98, put=4, with_exercise_price=102)",
-  "warrant_latest_period": "TWSE report_date=1150529",
+  "warrant_period": "TWSE report_date=1150530 (OK; call=98, put=4, with_exercise_price=102)",
+  "warrant_latest_period": "TWSE report_date=1150530",
   "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-06-02 to 2026-05-29; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=243; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
   "revenue_latest_period": "2026-04",
   "quarterly_latest_period": "2026-03-31",
@@ -158,7 +158,7 @@
     "total_5d": 1059921.0,
     "total_20d": 3223613.0
   },
-  "news_display_status": "新聞面偏利多（利多 6 / 利空 0 / 中性 1）",
+  "news_display_status": "新聞面偏利多（利多 6 / 利空 0 / 中性 2）",
   "disclosure_display_status": "近 120 天公告/法說追蹤 4 則（法說會 1 / 公告 3）",
   "summary_one_line": "偏多強勢，偏多震盪；站穩 MA10 491.50 並突破 542.00 才有續攻機會，跌破 MA20 491.15 轉防守。",
   "summary_overall": "偏多強勢；收盤站上 MA5, MA5 高於 MA10, MA10 上方但投信支撐不足",
@@ -198,11 +198,11 @@
   "summary_atr": "ATR14 28.36，常態區間 492.64～549.36",
   "summary_key_watch": "量價中性偏多；明日觀察 MA5 508.50 / MA10 491.50",
   "summary_risk": "跌破 MA10 491.50 且放量，短線轉弱；跌破 MA20 491.15 則整理擴大",
-  "summary_warrant": "認購成交占 99.90%，近價外認購 9 檔，前五大成交占 37.67%",
-  "summary_warrant_signal": "中性偏投機",
-  "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
-  "summary_warrant_price_view": "現股距認購主流履約價仍有 15.83% 空間，屬高想像但投機風險也高",
-  "generated_at": "2026-05-31T00:37:26+08:00",
+  "summary_warrant": "認購成交占 0.00%，近價外認購 9 檔，前五大成交占 0.00%",
+  "summary_warrant_signal": "中性",
+  "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
+  "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
+  "generated_at": "2026-05-31T09:55:07+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3044_2026-05-31\\01_日線完整技術與籌碼分析圖.png",
@@ -435,6 +435,18 @@
     },
     {
       "region": "國內",
+      "bias": "中性",
+      "event_type": "股價",
+      "title": "健鼎(3044) 今日股價與討論",
+      "source": "CMoney",
+      "published": "2026-05-10 11:49",
+      "published_ts": "2026-05-10T11:49:23+08:00",
+      "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPdVFMaXlOLWx6WnVzdU8xbGIzc2xpODZOVlA2UkZ5RjE4bXl2b1F3cVRCZHUzOHJmeVZZNEoyTXdHeUxaRVQzVzJ5VW8zby0xbFlPRkQzUEJES3I4cFMyYW5EdnVGRFFLenRQVFdNMGJZT0FPQUZSMTlYWmoxNUtobWI0Ykh1SzhtRE1rTjN0SmJfZnJHWS1kdGJIekJVVGc1ZEZ3aFpYQVV5ZU1ob2c4TTBZRWpNTVl6TEhGMFNmbEt3cGEwN0k3MGFxdkpJYkx2Q1F4dnFNRmVLXzBLWXl6czdxZWFFMEMyOUFxRFN5Q29UX2RiZ2RDLTUwVVRTTUphTFY2clYxRFJxNWwyMzNYVFRuWldCOFQzZ0dQdmlfVmJwRWt0MXc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；屬市場反應，需回到量價與支撐壓力驗證"
+    },
+    {
+      "region": "國內",
       "bias": "利多",
       "event_type": "營收",
       "title": "營收速報 - 健鼎(3044)4月營收82.01億元年增率高達28.9％｜新聞快訊｜豐雲學堂",
@@ -526,44 +538,44 @@
   ],
   "warrant_top_rows": [
     {
-      "warrant_id": "067527",
-      "warrant_name": "健鼎元大5B購01",
+      "warrant_id": "030802",
+      "warrant_name": "健鼎凱基54購01",
       "call_put": "認購",
-      "exercise_price": 763.0,
-      "trading_money": 1857820.0,
-      "trading_volume": 1525000.0
+      "exercise_price": 421.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "068574",
-      "warrant_name": "健鼎元大5B購02",
+      "warrant_id": "031797",
+      "warrant_name": "健鼎永豐54購01",
       "call_put": "認購",
-      "exercise_price": 650.0,
-      "trading_money": 1515540.0,
-      "trading_volume": 886000.0
+      "exercise_price": 468.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "066722",
-      "warrant_name": "健鼎富邦5B購01",
+      "warrant_id": "031810",
+      "warrant_name": "健鼎兆豐54購02",
       "call_put": "認購",
-      "exercise_price": 590.0,
-      "trading_money": 1435360.0,
-      "trading_volume": 1561000.0
+      "exercise_price": 358.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "055685",
-      "warrant_name": "健鼎統一62購01",
+      "warrant_id": "031819",
+      "warrant_name": "健鼎富邦56購01",
       "call_put": "認購",
-      "exercise_price": 481.68,
-      "trading_money": 1383950.0,
-      "trading_volume": 1337000.0
+      "exercise_price": 408.88,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "067255",
-      "warrant_name": "健鼎永豐61購01",
+      "warrant_id": "035078",
+      "warrant_name": "健鼎統一59購01",
       "call_put": "認購",
-      "exercise_price": 793.5,
-      "trading_money": 871490.0,
-      "trading_volume": 1029000.0
+      "exercise_price": 332.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     }
   ],
   "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3044_2026-05-31\\index.html"
