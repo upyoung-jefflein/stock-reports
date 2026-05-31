@@ -16,8 +16,8 @@
   "institutional_latest_period": "2026-05-29",
   "margin_period": "2025-06-02 to 2026-05-29 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
   "margin_latest_period": "2026-05-29",
-  "warrant_period": "TWSE report_date=1150529 (OK; call=155, put=22, with_exercise_price=177)",
-  "warrant_latest_period": "TWSE report_date=1150529",
+  "warrant_period": "TWSE report_date=1150530 (OK; call=155, put=22, with_exercise_price=177)",
+  "warrant_latest_period": "TWSE report_date=1150530",
   "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-06-02 to 2026-05-29; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=243; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
   "revenue_latest_period": "2026-04",
   "quarterly_latest_period": "2026-03-31",
@@ -142,11 +142,11 @@
   "summary_atr": "ATR14 4.48，常態區間 67.42～76.38",
   "summary_key_watch": "價漲量縮；明日觀察 MA5 72.24 / MA10 69.08",
   "summary_risk": "跌破 MA10 69.08 且放量，短線轉弱；跌破 MA20 69.08 則整理擴大",
-  "summary_warrant": "認購成交占 95.26%，近價外認購 11 檔，前五大成交占 28.88%",
-  "summary_warrant_signal": "中性偏投機",
-  "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
-  "summary_warrant_price_view": "現股距認購主流履約價仍有 22.19% 空間，屬高想像但投機風險也高",
-  "generated_at": "2026-05-31T02:05:36+08:00",
+  "summary_warrant": "認購成交占 0.00%，近價外認購 11 檔，前五大成交占 0.00%",
+  "summary_warrant_signal": "中性",
+  "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
+  "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
+  "generated_at": "2026-05-31T12:39:55+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1802_2026-05-31\\01_日線完整技術與籌碼分析圖.png",
@@ -328,7 +328,257 @@
     }
   ],
   "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1802_2026-05-31\\07_集保股權歷史趨勢圖.png",
+  "broker_trading_period": "2026-05-29 to 2026-05-29 (no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-05-29 rows=20)",
+  "broker_import_status": "券商分點：2026-05-29 to 2026-05-29；no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-05-29 rows=20",
+  "broker_trading_latest_period": "2026-05-29",
+  "broker_pattern_result": {
+    "ok": true,
+    "message": "分點買賣後 5 / 30 交易日勝率回測",
+    "forward_days": 5,
+    "rows": [
+      {
+        "broker": "美林",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -3516.0,
+        "net20": -3516.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "摩根士丹利",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -1999.0,
+        "net20": -1999.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "元大",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": 1775.0,
+        "net20": 1775.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "凱基-台北",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -1317.0,
+        "net20": -1317.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "港商野村",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -1263.0,
+        "net20": -1263.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "新加坡商瑞銀",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -1151.0,
+        "net20": -1151.0,
+        "score": 0,
+        "horizon_label": "最新"
+      }
+    ],
+    "best": null,
+    "signals": [
+      {
+        "date": "2026-05-29",
+        "net_buy": -3516.0,
+        "action": "賣超",
+        "horizon_days": 0,
+        "broker": "美林"
+      },
+      {
+        "date": "2026-05-29",
+        "net_buy": -1999.0,
+        "action": "賣超",
+        "horizon_days": 0,
+        "broker": "摩根士丹利"
+      },
+      {
+        "date": "2026-05-29",
+        "net_buy": 1775.0,
+        "action": "買超",
+        "horizon_days": 0,
+        "broker": "元大"
+      },
+      {
+        "date": "2026-05-29",
+        "net_buy": -1317.0,
+        "action": "賣超",
+        "horizon_days": 0,
+        "broker": "凱基-台北"
+      },
+      {
+        "date": "2026-05-29",
+        "net_buy": -1263.0,
+        "action": "賣超",
+        "horizon_days": 0,
+        "broker": "港商野村"
+      },
+      {
+        "date": "2026-05-29",
+        "net_buy": -1151.0,
+        "action": "賣超",
+        "horizon_days": 0,
+        "broker": "新加坡商瑞銀"
+      }
+    ],
+    "horizons": {
+      "5": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      },
+      "30": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      }
+    },
+    "latest_rows": [
+      {
+        "broker": "美林",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -3516.0,
+        "net20": -3516.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "摩根士丹利",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -1999.0,
+        "net20": -1999.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "元大",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": 1775.0,
+        "net20": 1775.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "凱基-台北",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -1317.0,
+        "net20": -1317.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "港商野村",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -1263.0,
+        "net20": -1263.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "新加坡商瑞銀",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -1151.0,
+        "net20": -1151.0,
+        "score": 0,
+        "horizon_label": "最新"
+      }
+    ],
+    "chart_series": []
+  },
   "news_rows": [
+    {
+      "region": "國內",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "台玻玻纖布需求旺- 日報",
+      "source": "工商時報",
+      "published": "2026-05-31 03:00",
+      "published_ts": "2026-05-31T03:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBVU2UtSnBHakVLaEdOelNjWDBPMXBMU3JSU3VhNzA4MGZxUDlCTGM3eElLdmNySTZBZmRMRW1yYmdrZ1pISElSVkhmZVVNcUNhMVZCSmFpWTM3UFA0cEJN?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司"
+    },
     {
       "region": "國內",
       "bias": "利多",
@@ -355,27 +605,15 @@
     },
     {
       "region": "國內",
-      "bias": "中性",
-      "event_type": "籌碼",
-      "title": "【即時新聞】台玻(1802)爆16萬張天量獲外資狂掃，這「2檔概念股」留意輪動？",
-      "source": "CMoney投資網誌",
-      "published": "2026-05-26 11:18",
-      "published_ts": "2026-05-26T11:18:38+08:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeUd2WjF1Tjd0T2YtLWZjVEE3dkdLejFpUVY0LW9ET3FnV05vRWZ3T2ZueDllNWYyMVdMYWV2M3c2MWNmbUo4MHh2Y2poblBKZ25yY3NCVmJfNXRwS2RBYzdiTHJ4M3BXLV9WZVZqOUhGM2RHVnRfY1YyelJYWTU1QW0waVN1UmNYa1lMV2xjUkY?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字",
-      "key_point": "觀察訊號；搭配法人買賣超與股價位置判斷承接力"
-    },
-    {
-      "region": "國內",
       "bias": "利多",
-      "event_type": "籌碼",
-      "title": "【即時新聞】最新台玻爆量16萬張亮燈，外資狂掃這4檔概念股還能追嗎？",
-      "source": "CMoney投資網誌",
-      "published": "2026-05-26 10:41",
-      "published_ts": "2026-05-26T10:41:20+08:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNakdhS2twdjhOV1dDX2NTRmUxX0dybU1xSmMxWDNGb3dzanMzeUwtMnlTNFRvU2p4U3dVSFN1ck1VRG02Q0pLc3Q3aVRLeWVteGdTUGpGbUZXamJxSExnYWVBT3FWMTkxSTYxUUdPcXh6YS1DQ3hfN1ZiaWNBZWFIZ1YtVFY5WEdwYnYzR3A3cGM?oc=5",
+      "event_type": "訂單",
+      "title": "1802 台玻 - 一堆狂洗訂單資訊的？？ 這是誘高宰殺吧",
+      "source": "CMoney",
+      "published": "2026-05-17 15:00",
+      "published_ts": "2026-05-17T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0yaFNncTh1T1pSeDVXSnMxeEQyNTBxQUJ1Z3U1VkJQNzRwVTRCZmRFS3JXVGY5dUUxTUxSNU5wYW42eXBJQzVHeERWczIzNVBjYzZDZmczRE4?oc=5",
       "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "key_point": "偏多訊號；搭配法人買賣超與股價位置判斷承接力"
+      "key_point": "偏多訊號；確認訂單能見度、認列時程與毛利率"
     },
     {
       "region": "國內",
@@ -482,44 +720,44 @@
   ],
   "warrant_top_rows": [
     {
-      "warrant_id": "064689",
-      "warrant_name": "台玻統一64購04",
+      "warrant_id": "030021",
+      "warrant_name": "台玻群益56購01",
       "call_put": "認購",
-      "exercise_price": 94.32,
-      "trading_money": 3102540.0,
-      "trading_volume": 5155000.0
+      "exercise_price": 28.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "065965",
-      "warrant_name": "台玻台新62購01",
+      "warrant_id": "030081",
+      "warrant_name": "台玻統一56購03",
       "call_put": "認購",
-      "exercise_price": 88.88,
-      "trading_money": 2411020.0,
-      "trading_volume": 1432000.0
+      "exercise_price": 26.25,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "067436",
-      "warrant_name": "台玻富邦61購01",
+      "warrant_id": "030082",
+      "warrant_name": "台玻統一56購04",
       "call_put": "認購",
-      "exercise_price": 89.0,
-      "trading_money": 1320880.0,
-      "trading_volume": 1630000.0
+      "exercise_price": 27.39,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "065649",
-      "warrant_name": "台玻中信63購01",
+      "warrant_id": "030244",
+      "warrant_name": "台玻統一58購01",
       "call_put": "認購",
-      "exercise_price": 99.0,
-      "trading_money": 1289090.0,
-      "trading_volume": 2004000.0
+      "exercise_price": 28.12,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     },
     {
-      "warrant_id": "064690",
-      "warrant_name": "台玻統一64購05",
+      "warrant_id": "030245",
+      "warrant_name": "台玻統一5A購01",
       "call_put": "認購",
-      "exercise_price": 101.57,
-      "trading_money": 1271170.0,
-      "trading_volume": 2241000.0
+      "exercise_price": 29.99,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
     }
   ],
   "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1802_2026-05-31\\index.html"
