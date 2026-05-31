@@ -1,0 +1,778 @@
+{
+  "stock_id": "8358",
+  "stock_name": "金居",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "電子零組件業",
+  "data_period": "2025-06-02 to 2026-05-29",
+  "data_date": "2026-05-29",
+  "ohlcv_start": "2025-06-02",
+  "ohlcv_end": "2026-05-29",
+  "last_daily_k_date": "2026-05-29",
+  "valid_trading_days": 243,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-06-02 to 2026-05-29 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "institutional_latest_period": "2026-05-29",
+  "margin_period": "2025-06-02 to 2026-05-29 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_latest_period": "2026-05-29",
+  "warrant_period": "TWSE report_date=2026-05-29 (OK; call=148, put=15, with_exercise_price=0)",
+  "warrant_latest_period": "TWSE report_date=2026-05-29",
+  "fundamental_period": "revenue 2023-12-01 to 2026-05-01; PER/PBR 2025-06-02 to 2026-05-29; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=243; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
+  "revenue_latest_period": "2026-04",
+  "quarterly_latest_period": "2026-03-31",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260529 (OK; rows=17)",
+  "tdcc_latest_period": "20260529",
+  "etf_latest_period": "2026-05-29",
+  "etf_holding_change_period": "2026-05-29 (OK; holders=8, active_candidates=5; changes=0)",
+  "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=金居(8358), 台光電(2383), 聯茂(6213), 台燿(6274), 台虹(8039); failures=none",
+  "peer_display_list": "金居(8358)、台光電(2383)、聯茂(6213)、台燿(6274)、台虹(8039)",
+  "peer_business_summary": "金居(8358) 定位：PCB / 板材供應鏈；產品組合：PCB、HDI、載板 / CCL；資料層級：產業 / 主題推估；同族群比較基準：銅箔基板 / CCL。對照族群涵蓋：PCB / 板材供應鏈、銅箔基板 / CCL。",
+  "peer_business_rows": [
+    {
+      "stock_id": "8358",
+      "name": "金居",
+      "profile_scope": "主題模板",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "PCB / 板材供應鏈",
+      "product_mix": "PCB、HDI、載板 / CCL",
+      "growth_drivers": "AI 伺服器板材升級、高階製程需求、稼動率改善",
+      "valuation_logic": "以產品層級、毛利率、稼動率與 AI 伺服器曝險比較。",
+      "risks": "價格競爭、良率、終端需求循環",
+      "stock_price_watch": "AI 伺服器板材升級、高階製程需求、稼動率改善；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：同屬 PCB 供應鏈，但產品層級差異大；公司實際產品比重需以法說、年報或公告確認"
+    },
+    {
+      "stock_id": "2383",
+      "name": "台光電",
+      "profile_scope": "個股資料",
+      "data_confidence": "高",
+      "product_basis": "公司產品資料",
+      "chain_position": "銅箔基板 / CCL",
+      "product_mix": "銅箔基板、高階板材、伺服器 / 網通 / 車用材料",
+      "growth_drivers": "AI 伺服器高階材料、高速傳輸需求、產品組合升級",
+      "valuation_logic": "以高階材料占比、毛利率、報價與 AI 伺服器曝險比較。",
+      "risks": "原料價格、板材報價循環、競爭擴產",
+      "stock_price_watch": "AI 伺服器高階材料、高速傳輸需求、產品組合升級；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：PCB 上游材料，不宜和板廠完全同估值"
+    },
+    {
+      "stock_id": "6213",
+      "name": "聯茂",
+      "profile_scope": "主題模板",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "PCB / 板材供應鏈",
+      "product_mix": "PCB、HDI、載板 / CCL",
+      "growth_drivers": "AI 伺服器板材升級、高階製程需求、稼動率改善",
+      "valuation_logic": "以產品層級、毛利率、稼動率與 AI 伺服器曝險比較。",
+      "risks": "價格競爭、良率、終端需求循環",
+      "stock_price_watch": "AI 伺服器板材升級、高階製程需求、稼動率改善；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：同屬 PCB 供應鏈，但產品層級差異大；公司實際產品比重需以法說、年報或公告確認"
+    },
+    {
+      "stock_id": "6274",
+      "name": "台燿",
+      "profile_scope": "主題模板",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "PCB / 板材供應鏈",
+      "product_mix": "PCB、HDI、載板 / CCL",
+      "growth_drivers": "AI 伺服器板材升級、高階製程需求、稼動率改善",
+      "valuation_logic": "以產品層級、毛利率、稼動率與 AI 伺服器曝險比較。",
+      "risks": "價格競爭、良率、終端需求循環",
+      "stock_price_watch": "AI 伺服器板材升級、高階製程需求、稼動率改善；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：同屬 PCB 供應鏈，但產品層級差異大；公司實際產品比重需以法說、年報或公告確認"
+    },
+    {
+      "stock_id": "8039",
+      "name": "台虹",
+      "profile_scope": "主題模板",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "PCB / 板材供應鏈",
+      "product_mix": "PCB、HDI、載板 / CCL",
+      "growth_drivers": "AI 伺服器板材升級、高階製程需求、稼動率改善",
+      "valuation_logic": "以產品層級、毛利率、稼動率與 AI 伺服器曝險比較。",
+      "risks": "價格競爭、良率、終端需求循環",
+      "stock_price_watch": "AI 伺服器板材升級、高階製程需求、稼動率改善；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：同屬 PCB 供應鏈，但產品層級差異大；公司實際產品比重需以法說、年報或公告確認"
+    }
+  ],
+  "peer_business_interpretation": [
+    "金居(8358) 定位：PCB / 板材供應鏈；產品組合：PCB、HDI、載板 / CCL；資料層級：產業 / 主題推估；同族群比較基準：銅箔基板 / CCL。對照族群涵蓋：PCB / 板材供應鏈、銅箔基板 / CCL。",
+    "估值比較應優先看產品組合與獲利率差異：以產品層級、毛利率、稼動率與 AI 伺服器曝險比較。",
+    "主要風險要和同族群分開看：價格競爭、良率、終端需求循環。"
+  ],
+  "etf_display_status": "持有快照 2026-05-29，未命中最新異動",
+  "tdcc_display_status": "20260529；大額 60.67% / 小額 22.05%",
+  "warrant_display_status": "OK; call=148, put=15, with_exercise_price=0",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "2026Q1 毛利率 28.71%（年變化 +7.72 個百分點）、營業利益率 25.63%（年變化 +7.94 個百分點）",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 3.08%（年變化 -0.22 個百分點）、稅後淨利率 20.52%（年變化 +5.19 個百分點）、ROE 4.87%（年變化 +0.97 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 9.01 億元；MoM 4.66%；YoY 35.81%；近 3 個月累計 YoY 42.83%；近 12 個月滾動營收 YoY 24.70%；創近 24 個月新高；連續 17 個月年增為正",
+  "fundamental_price_estimate_summary": "保守 280 元 / 中性 579 元 / 樂觀 697 元；產業模型：零組件景氣 PER（PER 下限 9.0x / 上限 35.0x）；近四季 EPS 5.22；前瞻 EPS 估 6.97（成長假設 +33.5%）；估值 PER 53.6x / 83.1x / 100.0x；催化溢價：月營收年增雙位數、近四季 EPS 明顯成長、營業利益率具支撐（+12%）；目前 PER 116.7x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=53.6x/66.6x/76.3x；目前 PER 位於近一年 100% 分位；市場情境 20x/25x/30x=104/131/157 元；模型推估：EPS/PER 579 元（前瞻 EPS 6.97 × 中性 PER 83.1x）、PBR/ROE 52 元（ROE 對應合理 PBR）、技術型態 696 元（上升通道 突破量測目標）、法人籌碼成本 409 元（外資 / 投信近20與60日加碼成本）、同族群動能 456 元（同族群中位報酬 +575.5% / 本股 +1045.0%）、殖利率 314 元（歷史殖利率中位數回推）；多模型中位參考 456 元；歷史 PBR 分位 Q25/Q50/Q75=7.46x/8.45x/9.58x；ROE/PB 交叉參考 52 元；技術型態目標 696 元（90日上升通道 / 有效 7.4）；法人籌碼成本 外資 412 元 / 投信 406 元；同族群相對動能參考 456 元（同族群中位報酬 +575.5% / 本股 +1045.0%）；殖利率模型 314 元（現殖利率 0.33% / 中位 0.64%）；現價 608.00 元，較中性估值 +4.9%；現價接近中性估值；合理偏高區：續漲需要營收與法人同步確認",
+  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、PER 位階偏高，股價需要成長性支撐、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期改善。",
+  "chip_summary": {
+    "margin_balance": 18262.0,
+    "margin_5d_change": -1401.0,
+    "short_balance": 727.0,
+    "short_5d_change": 85.0,
+    "foreign_latest": 279224.0,
+    "foreign_5d": 2983381.0,
+    "foreign_20d": 23712655.0,
+    "trust_latest": 17000.0,
+    "trust_5d": 53500.0,
+    "trust_20d": -5471628.0,
+    "total_latest": -81732.0,
+    "total_5d": 2637157.0,
+    "total_20d": 18130512.0
+  },
+  "news_display_status": "新聞面偏利多（利多 8 / 利空 0 / 中性 0）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 3 則（法說會 0 / 公告 3）",
+  "summary_one_line": "偏多強勢，偏多震盪；站穩 MA10 513.60 並突破 608.00 才有續攻機會，跌破 MA20 478.25 轉防守。",
+  "summary_overall": "偏多強勢；收盤站上 MA5, MA5 高於 MA10, MA10 上方且投信 5/10 日偏買",
+  "summary_tomorrow": "偏多震盪",
+  "summary_one_month": "偏多延續",
+  "summary_support": "第一 559.80 / 第二 513.60 / 強 478.25",
+  "summary_pressure": "608.00",
+  "summary_price_pattern": "近90日上升通道 有效7.4 / 突破；近45日緩步上行 有效4.8 / 突破",
+  "summary_price_pattern_brief": "近90日上升通道 有效7.4 / 突破；近45日緩步上行 有效4.8 / 突破",
+  "summary_trade_plan": "買點：已突破 489.00 且站穩，回測不破可偏多續抱；賣點：跌破 478.25，先降權重。依據：上升通道有效分數 7.4。",
+  "price_pattern_rows": [
+    {
+      "lookback": 90,
+      "label": "上升通道",
+      "support": 229.9,
+      "resistance": 489.0000000000001,
+      "score": 7.3500000000000005,
+      "touch_count": 49,
+      "slope_stability": 0.0,
+      "volume_confirmation": "量能確認",
+      "breakout_status": "突破",
+      "confirm_status": "站穩"
+    },
+    {
+      "lookback": 45,
+      "label": "緩步上行",
+      "support": 230.6,
+      "resistance": 538.8000000000001,
+      "score": 4.75,
+      "touch_count": 57,
+      "slope_stability": 0.0,
+      "volume_confirmation": "量能確認",
+      "breakout_status": "突破",
+      "confirm_status": "站穩"
+    }
+  ],
+  "summary_atr": "ATR14 36.25，常態區間 571.75～644.25",
+  "summary_key_watch": "價漲量增；明日觀察 MA5 559.80 / MA10 513.60",
+  "summary_risk": "跌破 MA10 513.60 且放量，短線轉弱；跌破 MA20 478.25 則整理擴大",
+  "summary_warrant": "權證資料未完整取得",
+  "summary_warrant_signal": "中性",
+  "summary_warrant_plain": "權證資料不足，暫不做白話解讀",
+  "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
+  "generated_at": "2026-05-31T19:26:35+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\8358_2026-05-31\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\8358_2026-05-31\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\8358_2026-05-31\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\8358_2026-05-31\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\8358_2026-05-31\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\8358_2026-05-31\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [],
+  "tdcc_rows": [
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 63742,
+      "shares": 5206546,
+      "ratio": 2.06
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 25036,
+      "shares": 40246409,
+      "ratio": 15.93
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 1300,
+      "shares": 10262787,
+      "ratio": 4.06
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 316,
+      "shares": 4037082,
+      "ratio": 1.59
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 210,
+      "shares": 3907848,
+      "ratio": 1.54
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 141,
+      "shares": 3543014,
+      "ratio": 1.4
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 76,
+      "shares": 2729286,
+      "ratio": 1.08
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 44,
+      "shares": 2074265,
+      "ratio": 0.82
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 102,
+      "shares": 7260885,
+      "ratio": 2.87
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 56,
+      "shares": 8176428,
+      "ratio": 3.23
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 42,
+      "shares": 11834250,
+      "ratio": 4.68
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 11,
+      "shares": 5833385,
+      "ratio": 2.3
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 10,
+      "shares": 6970273,
+      "ratio": 2.75
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 6,
+      "shares": 5570800,
+      "ratio": 2.2
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 36,
+      "shares": 134934742,
+      "ratio": 53.42
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 0,
+      "shares": 0,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260529",
+      "stock_id": "8358",
+      "level": 17,
+      "level_label": "合計",
+      "people": 91128,
+      "shares": 252588000,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260529",
+      "total_people": 91128,
+      "total_shares": 252588000,
+      "small_ratio": 22.05,
+      "mid_ratio": 10.78,
+      "large_ratio": 60.67,
+      "million_ratio": 53.42,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\8358_2026-05-31\\07_集保股權歷史趨勢圖.png",
+  "broker_trading_period": "2026-05-29 to 2026-05-29 (no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-05-29 rows=20)",
+  "broker_import_status": "券商分點：2026-05-29 to 2026-05-29；no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-05-29 rows=20",
+  "broker_trading_latest_period": "2026-05-29",
+  "broker_pattern_result": {
+    "ok": true,
+    "message": "分點買賣後 5 / 30 交易日勝率回測",
+    "forward_days": 5,
+    "rows": [
+      {
+        "broker": "美林",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": 1586.0,
+        "net20": 1586.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "元大-土城永寧",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -954.0,
+        "net20": -954.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "群益金鼎-敦南",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": 417.0,
+        "net20": 417.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "摩根士丹利",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -394.0,
+        "net20": -394.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "凱基-台北",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": 380.0,
+        "net20": 380.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "元大",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": 361.0,
+        "net20": 361.0,
+        "score": 0,
+        "horizon_label": "最新"
+      }
+    ],
+    "best": null,
+    "signals": [
+      {
+        "date": "2026-05-29",
+        "net_buy": 1586.0,
+        "action": "買超",
+        "horizon_days": 0,
+        "broker": "美林"
+      },
+      {
+        "date": "2026-05-29",
+        "net_buy": -954.0,
+        "action": "賣超",
+        "horizon_days": 0,
+        "broker": "元大-土城永寧"
+      },
+      {
+        "date": "2026-05-29",
+        "net_buy": 417.0,
+        "action": "買超",
+        "horizon_days": 0,
+        "broker": "群益金鼎-敦南"
+      },
+      {
+        "date": "2026-05-29",
+        "net_buy": -394.0,
+        "action": "賣超",
+        "horizon_days": 0,
+        "broker": "摩根士丹利"
+      },
+      {
+        "date": "2026-05-29",
+        "net_buy": 380.0,
+        "action": "買超",
+        "horizon_days": 0,
+        "broker": "凱基-台北"
+      },
+      {
+        "date": "2026-05-29",
+        "net_buy": 361.0,
+        "action": "買超",
+        "horizon_days": 0,
+        "broker": "元大"
+      }
+    ],
+    "horizons": {
+      "5": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      },
+      "30": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      }
+    },
+    "latest_rows": [
+      {
+        "broker": "美林",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": 1586.0,
+        "net20": 1586.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "元大-土城永寧",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -954.0,
+        "net20": -954.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "群益金鼎-敦南",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": 417.0,
+        "net20": 417.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "摩根士丹利",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": -394.0,
+        "net20": -394.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "凱基-台北",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": 380.0,
+        "net20": 380.0,
+        "score": 0,
+        "horizon_label": "最新"
+      },
+      {
+        "broker": "元大",
+        "horizon_days": 0,
+        "buy_signals": 0,
+        "buy_win_rate": null,
+        "buy_avg_return": 0,
+        "sell_signals": 0,
+        "sell_win_rate": null,
+        "sell_avg_return": 0,
+        "latest_net_buy": 361.0,
+        "net20": 361.0,
+        "score": 0,
+        "horizon_label": "最新"
+      }
+    ],
+    "chart_series": [
+      {
+        "rank": 1,
+        "broker": "美林",
+        "horizon_days": 0,
+        "buy_win_rate": null,
+        "buy_signals": 0,
+        "records": [
+          {
+            "date": "2026-05-29",
+            "net_buy": 1586.0
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "broker": "元大-土城永寧",
+        "horizon_days": 0,
+        "buy_win_rate": null,
+        "buy_signals": 0,
+        "records": [
+          {
+            "date": "2026-05-29",
+            "net_buy": -954.0
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "broker": "群益金鼎-敦南",
+        "horizon_days": 0,
+        "buy_win_rate": null,
+        "buy_signals": 0,
+        "records": [
+          {
+            "date": "2026-05-29",
+            "net_buy": 417.0
+          }
+        ]
+      }
+    ]
+  },
+  "news_rows": [
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "討論牆 | 盤中速報 - 金居(8358)股價拉至漲停，漲停價608.0元，成交10,419張",
+      "source": "LINE TODAY",
+      "published": "2026-05-30 18:59",
+      "published_ts": "2026-05-30T18:59:58+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9PMFo0MklQOGViTXJCTDdkRnM2aDNlWHZOdUEya0NXYWFKNXRQalc0UVJMaVJjZzN0Y1J1bVBpRVFvYjVhRUlRd3o2REZKTUNtM2MxYVJuS09KUzI1amRsb29rem0?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "籌碼",
+      "title": "銅箔熱潮再引爆！「這檔」被外資喊驚人目標價900元奔漲停 本土法人曝3大利多",
+      "source": "FTNN 新聞網",
+      "published": "2026-05-29 13:55",
+      "published_ts": "2026-05-29T13:55:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5nRTVBYzRmNmJZM2xWUkFoSFRSNUpIY1R1ckxibXVGc1A4QlU1WG9lVDBGVEpTNkYxZXpQcG1DYmltcDlTYmRVUVNDNA?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；搭配法人買賣超與股價位置判斷承接力"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "【即時新聞】金居(8358)迎AI爆發強勢鎖漲停，這「3檔概念股」買盤接棒狂湧！",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-29 11:16",
+      "published_ts": "2026-05-29T11:16:10+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUFZCbGhRanJ5ZjVBM1JacTNlTlVzVGJBQ3h0ZXMxcGM1TU8tWENOb0xHX2YtdmFXYVJpaTJMQnozLVRQamxUYzY1MFYyMlFJd3VWcWs5OC0zN1pnVGFBSndLTk1LR0ltR3lPbG5Za0hZZ2U1ZHNTd3owLUMtQlNaS3NUTXRIWkwxcXMtQ1R5VlQ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "籌碼",
+      "title": "金居飆上608元新天價！外資連15買卡位 本土法人看到什麼關鍵利多？",
+      "source": "經濟日報",
+      "published": "2026-05-29 11:10",
+      "published_ts": "2026-05-29T11:10:34+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBvUDRsRTdOcDl5VVYxRDhieWlzV0VXc2N6RXcxTVgwb0N6UWkxS0VGRlhyWjBDSUJncHZiZ3Y2cGYxWTVaNGhtRnNuWWVMRVd0QnN0NXhUTTJDVUXSAWBBVV95cUxNamV6UzhsLVB2dk00bFFTVno5QzJsQkRBdjR5Nl9uVmRGc0JWU2JOLUpQQU5UREtqY3M5UUFkcWlrb0JELTkybnROY3BSRDZiUDlMLXJiYjkyazZCNFN4cmE?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；搭配法人買賣超與股價位置判斷承接力"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "產業",
+      "title": "【追蹤報導】AI材料稀缺爆單 驚砸11億狂擴產！金居(8358)飆破600 元大關",
+      "source": "理財周刊",
+      "published": "2026-05-29 10:18",
+      "published_ts": "2026-05-29T10:18:13+08:00",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE00RTM0Vy1tc3g5T0pFeUNiOGtpU2g1UkgzRHcxeTFlYnhFWnBlY0F3MzFhWnFRTDNFY255RkRJVzE2SUdJc19taFJ5ZFZXNElPd1VzWEU3d29LbTFkZHlsTk1PQ0hHX2cwZDhYNnFrYw?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；作為背景訊號，需確認是否直接影響公司"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "籌碼",
+      "title": "【09:57 即時新聞】金居(8358)亮燈漲停608元，AI高階銅箔題材發酵＋外資主力連買推升強多結構",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-29 09:57",
+      "published_ts": "2026-05-29T09:57:40+08:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQN09NY3h2SWtmd1NITjJqbXAzYkRXQXBETDVIV0t5QnJoSU1tR2ZaeVFSZ2N1ejJ6NXU5a2p3V3BUNUsxU3pfaC1XdHk3a2FRbm16T1hZQzhFSUwzVG9TODBhcFA3ZmdQd0kwdzdQMWN6UVhoci1Hd1c0a2ZzLWVtaURHR2liOHY5TlBReWt3?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；搭配法人買賣超與股價位置判斷承接力"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "營收",
+      "title": "【12:40 即時新聞】金居(8358)股價上攻逾6%，受惠AI高階銅箔需求與營收創高，外資買盤點火支撐多頭結構",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-20 15:00",
+      "published_ts": "2026-05-20T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeVRhRVlxaUEzY2UxWGpmR2hrOTJUNWxDLVRKSzk0akdTUkYtVVByTHJuQU1sTUtxNS01S1libmt1Vk1lZkFRek9SdEhxX2lCT3RYS0M0ZVZYX1lEOVVHcTdMX2kwNGFGVFFCQ1REOF9IeHQtck9LcFNtOE1TOUVrOUJIS1U5LTI2UEtzVF9B?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；觀察月營收年增與近 3 個月動能是否延續"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "財報",
+      "title": "外資大進場！金居(8358)首季EPS 翻倍專家解析最佳技術面進場策略",
+      "source": "理財周刊",
+      "published": "2026-05-19 15:00",
+      "published_ts": "2026-05-19T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5DcU1FRTNTdXItX1ZwTzUyRHJtVlp1YUdWUlJJZ1pJcGkycU94Yi1LNGtpWkFGOEo3Y3JtaWlHMGlyN3JROEZKcDY2aDE3WktkSUJOZl9fRkpzakVLb0lsbkgzQ3puUDk0NEkzTGVCUQ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；檢查 EPS、毛利率與營益率是否支撐估值"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "【05/15處置股公告】金居(8358) 05/15到05/28列入處置股，約每20分鐘撮合一次",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-15 15:00",
+      "published_ts": "2026-05-15T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPa1F1MHlfWTVZWUFseVh1eUEtM3AzbHN3QmxTNXplV2pNOThsaXk5c3NxamtoTHZaSElVaHpBaXRGTW9tY3ExMG05dndtVGtCYXJwc3d5eUxaMDdIV0F6WmFOTWNzcUFSc3F1WDd0WG1TYVJWTTNmR3hzbDg4MmNoX0RFNG5TNWZzWkE?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "營收",
+      "title": "【營收快訊】金居(8358)公告04月營收",
+      "source": "CMoney",
+      "published": "2026-05-08 15:00",
+      "published_ts": "2026-05-08T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBxODAzQ3BzWkRvUEdPMHhFbDk3Y0VuRGhhaDdnXzlJQ0pOQmNyQjNqR1VRNG9PMkNaSjZnTWstSXpVT2xURXBEcjFnVktaXzk4Wld4WXdZcHc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "營收",
+      "title": "【營收快訊】金居(8358)公告03月營收",
+      "source": "CMoney",
+      "published": "2026-04-09 15:00",
+      "published_ts": "2026-04-09T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9lbGVodkRFbFRCSEZSVlZMNWJxMkR4U1FSVE55WS1oa0hUNWRjbzBVMngzUEVHS19JcVJBTVZSanFJTm1ia3g0ODRKMXVucThvX3dWN2ZvUVo?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "kind": "公告"
+    }
+  ],
+  "warrant_top_rows": [],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\8358_2026-05-31\\index.html"
+}
