@@ -1,0 +1,716 @@
+{
+  "stock_id": "2344",
+  "stock_name": "華邦電",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "半導體業",
+  "data_period": "2025-06-02 to 2026-06-02",
+  "data_date": "2026-06-02",
+  "ohlcv_start": "2025-06-02",
+  "ohlcv_end": "2026-06-02",
+  "last_daily_k_date": "2026-06-02",
+  "valid_trading_days": 245,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-06-02 to 2026-06-02 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "institutional_latest_period": "2026-06-02",
+  "margin_period": "2025-06-02 to 2026-06-01 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_latest_period": "2026-06-01",
+  "warrant_period": "TWSE report_date=1150601 (OK; call=272, put=50, with_exercise_price=322)",
+  "warrant_latest_period": "TWSE report_date=1150601",
+  "fundamental_period": "revenue 2024-01-01 to 2026-05-01; PER/PBR 2025-06-02 to 2026-06-02; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=29; per_rows=245; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
+  "revenue_latest_period": "2026-04",
+  "quarterly_latest_period": "2026-03-31",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260529 (OK; rows=17)",
+  "tdcc_latest_period": "20260529",
+  "etf_latest_period": "2026-06-02",
+  "etf_holding_change_period": "2026-06-02 (OK; holders=29, active_candidates=9; changes=0)",
+  "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=華邦電(2344), 南亞科(2408), 旺宏(2337), 晶豪科(3006), 群聯(8299); failures=none",
+  "peer_display_list": "華邦電(2344)、南亞科(2408)、旺宏(2337)、晶豪科(3006)、群聯(8299)",
+  "peer_business_summary": "華邦電(2344) 定位：記憶體 IC / DRAM 相關；產品組合：DRAM（占比待補）、記憶體產品（占比待補）、利基型應用（占比待補）；資料層級：公司產品資料；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：DRAM / 記憶體製造、PCB / 載板 / CCL 供應鏈、記憶體與半導體製造。",
+  "peer_business_rows": [
+    {
+      "stock_id": "2344",
+      "name": "華邦電",
+      "profile_scope": "個股資料",
+      "data_confidence": "高",
+      "product_basis": "公司產品資料",
+      "chain_position": "記憶體 IC / DRAM 相關",
+      "product_mix": "DRAM（占比待補）、記憶體產品（占比待補）、利基型應用（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "記憶體產品",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基型應用",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "記憶體報價回升、利基型需求、庫存循環",
+      "valuation_logic": "以記憶體循環、毛利率與 PBR 區間為主。",
+      "risks": "報價波動、需求循環、同業產能競爭",
+      "stock_price_watch": "記憶體報價回升、利基型需求、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：記憶體製造 / IC 同業",
+      "evidence_keywords": "-",
+      "evidence_sources": "-"
+    },
+    {
+      "stock_id": "2408",
+      "name": "南亞科",
+      "profile_scope": "個股資料",
+      "data_confidence": "高",
+      "product_basis": "公司產品資料",
+      "chain_position": "DRAM / 記憶體製造",
+      "product_mix": "DRAM（占比待補）、利基型記憶體（占比待補）、記憶體晶圓（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基型記憶體",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "記憶體晶圓",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "DRAM 報價循環、AI 帶動記憶體需求、庫存回補",
+      "valuation_logic": "以記憶體報價、毛利率循環與淨值比評估，EPS 波動較大。",
+      "risks": "報價反轉、景氣循環、庫存與資本支出",
+      "stock_price_watch": "DRAM 報價循環、AI 帶動記憶體需求、庫存回補；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：記憶體製造同業；產品重疊：DRAM",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 1.0,
+      "matched_products": "DRAM"
+    },
+    {
+      "stock_id": "8299",
+      "name": "群聯",
+      "profile_scope": "子族群模板",
+      "data_confidence": "中高",
+      "product_basis": "子族群推估",
+      "chain_position": "記憶體製造 / IC",
+      "product_mix": "DRAM（占比待補）、NAND / NOR（占比待補）、利基型記憶體（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "NAND / NOR",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基型記憶體",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "記憶體報價、庫存回補、AI 帶動容量需求",
+      "valuation_logic": "以記憶體報價循環、毛利率與 PBR 區間比較。",
+      "risks": "報價波動、景氣循環、庫存調整",
+      "stock_price_watch": "記憶體報價、庫存回補、AI 帶動容量需求；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：記憶體循環同業可比；公司實際產品比重需以法說、年報或公告確認；產品重疊：DRAM",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 1.0,
+      "matched_products": "DRAM"
+    },
+    {
+      "stock_id": "2337",
+      "name": "旺宏",
+      "profile_scope": "個股資料",
+      "data_confidence": "高",
+      "product_basis": "公司產品資料",
+      "chain_position": "記憶體與半導體製造",
+      "product_mix": "DRAM 相關（占比待補）、記憶體晶片（占比待補）、利基應用（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM 相關",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "記憶體晶片",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基應用",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "記憶體價格循環、需求回補、產品組合改善",
+      "valuation_logic": "以循環股方式看 PBR、毛利率與報價趨勢。",
+      "risks": "營運波動大、報價下行、庫存調整",
+      "stock_price_watch": "記憶體價格循環、需求回補、產品組合改善；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：記憶體族群可比",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 0.0,
+      "matched_products": "-"
+    },
+    {
+      "stock_id": "3006",
+      "name": "晶豪科",
+      "profile_scope": "官網 / 公開資訊佐證",
+      "data_confidence": "高",
+      "product_basis": "官網 / 公開資訊佐證",
+      "chain_position": "PCB / 載板 / CCL 供應鏈",
+      "product_mix": "PCB（占比待補）、HDI（占比待補）、IC 載板（占比待補）、CCL（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "PCB",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "HDI",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "IC 載板",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "CCL",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI 伺服器板材需求、高階製程升級、產能利用率",
+      "valuation_logic": "以產品層級、產能利用率、毛利率、AI 伺服器材料需求與景氣循環評估。",
+      "risks": "報價波動、景氣循環、庫存調整",
+      "stock_price_watch": "AI 伺服器板材需求、高階製程升級、產能利用率；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：記憶體循環同業可比；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：PCB",
+      "evidence_keywords": "PCB",
+      "evidence_sources": "TWSE 公司基本資料 / 官網：https://www.esmt.com.tw、官網延伸頁：https://www.esmt.com.tw/zh-tw/Products",
+      "product_overlap_score": 0.0,
+      "matched_products": "-"
+    }
+  ],
+  "peer_business_interpretation": [
+    "華邦電(2344) 定位：記憶體 IC / DRAM 相關；產品組合：DRAM（占比待補）、記憶體產品（占比待補）、利基型應用（占比待補）；資料層級：公司產品資料；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：DRAM / 記憶體製造、PCB / 載板 / CCL 供應鏈、記憶體與半導體製造。",
+    "估值比較應優先看產品組合與獲利率差異：以記憶體循環、毛利率與 PBR 區間為主。",
+    "主要風險要和同族群分開看：報價波動、需求循環、同業產能競爭。"
+  ],
+  "etf_display_status": "持有快照 2026-06-02，未命中最新異動",
+  "tdcc_display_status": "20260529；大額 74.03% / 小額 13.02%",
+  "warrant_display_status": "322 檔，認購 272 / 認售 50",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "2026Q1 毛利率 53.37%（年變化 +27.75 個百分點）、營業利益率 32.81%（年變化 +37.64 個百分點）",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 20.56%（年變化 -9.89 個百分點）、稅後淨利率 26.45%（年變化 +31.39 個百分點）、ROE 4.40%（年變化 +5.41 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 192.45 億元；MoM 32.71%；YoY 182.22%；近 3 個月累計 YoY 120.38%；近 12 個月滾動營收 YoY 47.68%；創近 24 個月新高；連續 9 個月年增為正",
+  "fundamental_price_estimate_summary": "悲觀 127 元 / 中性 228 元 / 樂觀 341 元；產業模型：成長型 PER（PER 下限 12.0x / 上限 45.0x）；加權框架：成長電子；近四季 EPS 3.37；前瞻 EPS 估 4.50（成長假設 +33.5%）；估值 PER 45.2x / 63.6x / 100.0x；催化溢價：月營收年增雙位數、近四季 EPS 明顯成長、營業利益率具支撐（+12%）；目前 PER 54.8x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=45.2x/104.7x/120.2x；目前 PER 位於近一年 31% 分位；市場情境 20x/25x/30x=67/84/101 元；模型推估：EPS/PER 286 元（前瞻 EPS 4.50 × 中性 PER 63.6x）、PBR/ROE 38 元（ROE 對應合理 PBR）、技術型態 170 元（上升通道 突破量測目標）、法人籌碼成本 127 元（外資 / 投信近20與60日加碼成本）、同族群動能 138 元（同族群中位報酬 +712.5% / 本股 +991.7%）、殖利率 106 元（歷史殖利率中位數回推）；多模型加權參考 228 元；歷史 PBR 分位 Q25/Q50/Q75=1.01x/2.86x/4.40x；ROE/PB 交叉參考 38 元；技術型態目標 170 元（90日上升通道 / 有效 7.0）；法人籌碼成本 外資 125 元 / 投信 130 元；同族群相對動能參考 138 元（同族群中位報酬 +712.5% / 本股 +991.7%）；殖利率模型 106 元（現殖利率 0.27% / 中位 0.47%）；現價 184.50 元，較中性估值 -19.2%；現價略低於中性估值；合理偏低區：若技術面轉強，具估值修復條件",
+  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、PER 位階偏高，股價需要成長性支撐、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期改善、營業費用率較去年同期下降。",
+  "chip_summary": {
+    "margin_balance": 139920.0,
+    "margin_5d_change": 23014.0,
+    "short_balance": 4637.0,
+    "short_5d_change": 1530.0,
+    "foreign_latest": 12925256.0,
+    "foreign_5d": 22780777.0,
+    "foreign_20d": 247505179.0,
+    "trust_latest": 12930000.0,
+    "trust_5d": 51662076.0,
+    "trust_20d": 150347067.0,
+    "total_latest": 25833459.0,
+    "total_5d": 75661480.0,
+    "total_20d": 404991948.0
+  },
+  "news_display_status": "新聞面偏利多（利多 6 / 利空 0 / 中性 2；高可信 5 則）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 4 則（法說會 2 / 公告 2）",
+  "summary_one_line": "偏多強勢，偏多震盪；站穩 MA10 143.35 並突破 184.50 才有續攻機會，跌破 MA20 131.78 轉防守。",
+  "summary_overall": "偏多強勢；收盤站上 MA5, MA5 高於 MA10, MA10 上方且投信 5/10 日偏買",
+  "summary_tomorrow": "偏多震盪",
+  "summary_one_month": "偏多延續",
+  "summary_support": "第一 161.90 / 第二 143.35 / 強 131.78",
+  "summary_pressure": "184.50",
+  "summary_price_pattern": "近90日上升通道 有效7.0 / 突破；近45日緩步上行 有效4.4 / 突破",
+  "summary_price_pattern_brief": "近90日上升通道 有效7.0 / 突破；近45日緩步上行 有效4.4 / 突破",
+  "summary_trade_plan": "買點：已突破 134.20 且站穩，回測不破可偏多續抱；賣點：跌破 131.78，先降權重。依據：上升通道有效分數 7.0。",
+  "price_pattern_rows": [
+    {
+      "lookback": 90,
+      "label": "上升通道",
+      "support": 88.89,
+      "resistance": 134.20000000000002,
+      "score": 7.000000000000001,
+      "touch_count": 42,
+      "slope_stability": 0.0,
+      "volume_confirmation": "量能中性",
+      "breakout_status": "突破",
+      "confirm_status": "站穩"
+    },
+    {
+      "lookback": 45,
+      "label": "緩步上行",
+      "support": 86.96,
+      "resistance": 149.40000000000003,
+      "score": 4.4,
+      "touch_count": 19,
+      "slope_stability": 0.0,
+      "volume_confirmation": "量能中性",
+      "breakout_status": "突破",
+      "confirm_status": "站穩"
+    }
+  ],
+  "summary_atr": "ATR14 12.64，常態區間 171.86～197.14",
+  "summary_key_watch": "量價中性偏多；明日觀察 MA5 161.90 / MA10 143.35",
+  "summary_risk": "跌破 MA10 143.35 且放量，短線轉弱；跌破 MA20 131.78 則整理擴大",
+  "summary_warrant": "認購成交占 99.29%，近價外認購 17 檔，前五大成交占 23.62%",
+  "summary_warrant_signal": "小幅加分",
+  "summary_warrant_plain": "權證略偏多，但只能當輔助，仍需現股突破壓力確認",
+  "summary_warrant_price_view": "現股已高於認購主流履約價，權證追價熱度可能開始降溫",
+  "generated_at": "2026-06-02T20:29:55+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2344_2026-06-02\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2344_2026-06-02\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2344_2026-06-02\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2344_2026-06-02\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2344_2026-06-02\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2344_2026-06-02\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [],
+  "tdcc_rows": [
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 150783,
+      "shares": 26933996,
+      "ratio": 0.59
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 213005,
+      "shares": 393596179,
+      "ratio": 8.74
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 21557,
+      "shares": 166466715,
+      "ratio": 3.69
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 6198,
+      "shares": 77593080,
+      "ratio": 1.72
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 3512,
+      "shares": 64571446,
+      "ratio": 1.43
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 2865,
+      "shares": 72250047,
+      "ratio": 1.6
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 1399,
+      "shares": 49509114,
+      "ratio": 1.1
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 826,
+      "shares": 38313759,
+      "ratio": 0.85
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 1408,
+      "shares": 100210091,
+      "ratio": 2.22
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 657,
+      "shares": 92118971,
+      "ratio": 2.04
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 309,
+      "shares": 86677838,
+      "ratio": 1.92
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 108,
+      "shares": 54112742,
+      "ratio": 1.2
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 62,
+      "shares": 43291879,
+      "ratio": 0.96
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 37,
+      "shares": 33560005,
+      "ratio": 0.74
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 244,
+      "shares": 3200901331,
+      "ratio": 71.13
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 1,
+      "shares": 107000,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2344",
+      "level": 17,
+      "level_label": "合計",
+      "people": 402970,
+      "shares": 4500000193,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260529",
+      "total_people": 402970,
+      "total_shares": 4500000193,
+      "small_ratio": 13.02,
+      "mid_ratio": 6.18,
+      "large_ratio": 74.03,
+      "million_ratio": 71.13,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2344_2026-06-02\\07_集保股權歷史趨勢圖.png",
+  "broker_trading_period": "2026-06-02 to 2026-06-02 (no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-06-02 rows=20)",
+  "broker_import_status": "券商分點：2026-06-02 to 2026-06-02；no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-06-02 rows=20",
+  "broker_trading_latest_period": "2026-06-02",
+  "broker_pattern_result": {
+    "ok": false,
+    "message": "分點買賣後 5 / 30 交易日勝率回測",
+    "forward_days": 5,
+    "rows": [],
+    "best": null,
+    "signals": [],
+    "horizons": {
+      "5": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      },
+      "30": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      }
+    },
+    "latest_rows": [],
+    "chart_series": []
+  },
+  "news_rows": [
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "華邦電漲停飆天價！00403A神級卡位 抱63億元市值成最大贏家",
+      "source": "news.cnyes.com",
+      "published": "2026-06-02 17:27",
+      "published_ts": "2026-06-02T17:27:48+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBWdndsdE94eW9ycTlVWnlDY3U5NjFKUFE3aGlCbFFHcXFQaXRFYjB1eVM4UlkwOGM1eUt0V29kOURuQ3NUcksyWDBjTW5aM1k?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "今日漲停股｜COMPUTEX 盛大開幕，AI PC 與記憶體強勢領軍，友達、緯創、華邦電領漲0602｜豐雲學堂2026 年 06 月",
+      "source": "sinotrade.com.tw",
+      "published": "2026-06-02 15:13",
+      "published_ts": "2026-06-02T15:13:50+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi1gNBVV95cUxPUjBXYmRlTnFCRlhxNDZ2YTdYdjJhN1dyRW1fM0Y1MzFNbVFpVmIzRnVnX1RncWlvaXpUc3Y3ajI5XzlLSGY4b1NwQ3hxQlAyVkNPcm4yVWtwYnpVWGdTQXdKc1E3enVpcG1yUFVfV2xyaG9JTzA4akt6NGVUalVZNGxyVzJCMHFUeFR2aTBsTW12ci1sVzkyUmN1bERLMW5QUlFadXAwR0JCOXlmVlJScExPeWFzekpRcTNUZG42MU1NeERmY1ppbzFCZDh0emdRV0R0cklkRDJsQVFjMWxVSnZISGxOcjdRN2M2ZW50MjhsN3NvTmZ2WHh6aHBzLW5RRjRURDNmbmZjclQyQmZsNXdDMVNwaVVUOTRwV2Rmdk9aNG9DdndjbEZnYnlNRlhLd1JFLVVVUkhTSGptdTJuSmg2X3dnZ0pyMEt1R0ViSkh2T3d5UXJjNlZfQnBmcEVNQUx3blZWZWRobkd0U1VVdUhxcEpXR01vLUFCc1BuVlp3SWNhVVRzRXA5YmExRjVqTkM3SkxVMzRCSnJvTjRvTlMxQk9pWFd4YXRtbFhaZTFUOXVVT3NMZ2JrS280VVViSnU2LXc0TzZJQnlNNnU1TDdvV1d6QQ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "記憶體成撐盤主力！「這檔」連4漲43.3%帶南亞科、華邦電漲停 旺宏寫天價、晶豪科攻7%",
+      "source": "FTNN 新聞網",
+      "published": "2026-06-02 14:50",
+      "published_ts": "2026-06-02T14:50:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE05R2hXcG9XejBxLUh6QnBPbEZvNWlEb3FtTC1wcWJ4R3dxdE5zTGlTSWVDOGwwVDNHUE5KU1JoaU5nSDREQmJZeVlnOA?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "event_type": "籌碼",
+      "title": "記憶體飆漲列車還沒到站！華邦電均價狂飆5成 力積電獲外資欽點迎產能荒紅利",
+      "source": "Yahoo股市",
+      "published": "2026-06-02 14:33",
+      "published_ts": "2026-06-02T14:33:32+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi6wNBVV95cUxPeXd1S3ZjdzZPZkF0dXFlVDNWZVVyeWV3V2FPSGp5SnpQX0pIT253SmxvaWtzeGNnQ2VEX2c0eUJXQjJMVl9ldzNxblZCQXZyWUhVOWZlZ2t3eDJQbHBHclVzMEJ2SzJBRC1WNXN5R3NHZ0NKNzNIampaUk1DUzVXT2RrNUJNa3o5UDdaZTNDLWFSUS1BQlItYzc3MDZ5RXVnblZyeXp1M0FpbTBxU3BzUHFNWUF4RGZPZ1U2SWFHaDFqRG1wUTIwTFZmLTNVd3hnMVdndG1jdmNISHJKa1pHa2ZDUnVQdHJlZUtETWVVUDExaTdvUW1wM2VIekktNXpNUjNGb2swYzNIY2JZR0JwQzdYcVNZZDJSeS1CVHVwaGdnSkZUaDlSWEVCT1FpSFMyWHo5UWd0MnZXRTR4Z1hPOV80WDk4TW1yOGZvbUtHZHUtNVhzRzBPaW8zb2s0OHczSVNJTXAwQjkzWjZUZ2llMWswSHhkRUN4U054Mm9XSjdtdTVkd0ZhS0ZkRVJqTFBTcjR0QXEwcVFra2owR3pMVzhfSUNwc0xPbFFMVlI0d1ZiZVpPYmlwaDd5eEZqV0NNSVROR1k0ZjdPZG9XREJQVEY0d1MwTXkzcGd1LWRGX0tQZlNfcmw0a3NuRQ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；搭配法人買賣超與股價位置判斷承接力",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "〈台股盤後〉4萬6關前拉回 台積電、代工族群續強 漲219點收45557點新高",
+      "source": "news.cnyes.com",
+      "published": "2026-06-02 14:25",
+      "published_ts": "2026-06-02T14:25:50+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5JV3dpTXFLVUV2dGJpQmFLUDFkVklteGZoajN4WEZKbkdsM1VLOUdkb0tidUZnYVBPaGhmUnJBZU00STRBMU1xUlhuajdZZzA?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "記憶體缺貨潮燒到2028？華邦電亮燈衝漲停 南亞科攻破400元大關",
+      "source": "FTNN 新聞網",
+      "published": "2026-06-02 12:15",
+      "published_ts": "2026-06-02T12:15:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE45UGRuVU9sWlNldGQzN2NGWUk4SXRCMU1mUGlGQ1lxbzhIenJNeHU1dXBWeWFtcFZCZUVKazdFYlhUMnhSbVRtUmZnOA?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "財報",
+      "title": "記憶體族群獲利大爆發！愛普年增翻倍、旺宏8倍、華邦電216倍大摩認錯調高「雙雄」目標價- 日報",
+      "source": "工商時報",
+      "published": "2026-06-02 03:00",
+      "published_ts": "2026-06-02T03:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1qLXFjYlVhNk1qREF6aWFKQTh6OW5NOHpZZTdUTXd4em1qbWhvWnFSNkpoVk01OElMZU5kTmktdkJHZUFpLVgxM2psUWoxdFNXMlY5TWp0ekhta1k0aW1j?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；檢查 EPS、毛利率與營益率是否支撐估值",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    },
+    {
+      "region": "產業",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "南茂、雲嘉南再飆漲停！電子股瘋漲緯創、台燿、強茂齊亮燈 華邦電、英業達、仁寶攻頂鎖不住",
+      "source": "Yahoo股市",
+      "published": "2026-05-29 09:59",
+      "published_ts": "2026-05-29T09:59:01+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxPa2lYNjlMREV6NzJjdURBZlVHNEV5MktIckJ1d3ozcWo2dnpha1ZuMFd0QVVIY3VNeHhwYzIySWZNVjFpTE9qbF95cGdRYjNEYUNoT3U1cFJvS1FVMkgzSTY3Rm1VUEdURFo4WnFrUUQ5VzhtaHZ5YTJ3Vkt0UlFDOEU4M09BSG1JckhqNjhRVVc0YWNtVDRidTJ6YUZXX0lPdjhLc2VJUElKZG5sOU90X2xQS2xEbzlJNHNYR0dCeVhjNWo5dTV5SGUwYmlJY0gwQzVxeE9rNTF3c21QQWV3cVJWN3B0Zk9zQlhYUjljYmsyUms5SFNYQ3hGekJ6X3hDTkxMMXVMZXlPRWYwcEpQRThnazVTOFozM2FxVm5aem9LZzJkVnctRVNwM25VRWNyaWZzcHNiU3QwTHhHSUtoMkgtdWEzdERRUFJWckhNa2RGZHZSVXNHbVEzTjBheXdsZjhYM0xjc3JTYVhSVVV4bElwRms?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "華邦電 公告本公司薪資報酬委員會成員異動",
+      "source": "CMoney",
+      "published": "2026-05-29 07:58",
+      "published_ts": "2026-05-29T07:58:45+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1GbUdCV19pMnBRYlhpNkJfSGo1R2FfQlJsLVo0cTZIVUU5ZFhoemQzVWV1VmlFa19GX1lxS2Q1R2U3dkxkenVmTW1vVlg5dWROYlZqSExCWXY?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "法說",
+      "title": "(2344) 華邦電子法說會 2026/05、華邦電子財報、華邦電子展望、華邦電子財報投資亮點｜理柴知道:法說最速報! - 方格子",
+      "source": "Vocus",
+      "published": "2026-05-05 15:00",
+      "published_ts": "2026-05-05T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBzWnRCSlJGX2VpMGdnQkRGSHpFTEp4WmdzREtaRGtsZ3VuaTFCc0hla1dPUUtNaFNWaXIxQ2R2RkZDZWUzN0NqbXUzRUVKbUZGUkhGTGhCYU1Cbkw5SlHSAWNBVV95cUxNWU04RWxGQ2Vhei1vbE5STFZGaUlnbEkxWnVGeUZENElYcktzaEE1eW5NWFp5b2dkN1JfWXNDMEVKd0VQRGhLX3VPZktlNXJackc2eTR0SUdpM18zUHNhd256YTQ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；追蹤管理層展望、訂單與獲利率指引",
+      "source_score": 4,
+      "source_tier": "官方 / 公告",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "event_type": "財報",
+      "title": "華邦電財報｜Q1獲利大賺百億！毛利率彈至53.4% CMS業務季增逾9成",
+      "source": "壹蘋新聞網",
+      "published": "2026-05-05 15:00",
+      "published_ts": "2026-05-05T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9jUXlBeVAwVlhYcUhWYjFqLTJGb1JwVm82eGJvX2d6RDc4QjNKbnJVUEI0eVQ5N3BQa0hoNFc4VHRaWjdZYUd0dEtsTThMWll1Z0ZaX2ZJcUVEMS12R3BZYnBnZGNuc28wQ0ZhZ3JkUTBKU2VYblJEbWJDMUpxQQ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；檢查 EPS、毛利率與營益率是否支撐估值",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "法說",
+      "title": "華邦電 (2344) 法說速覽：走出谷底，然後呢？",
+      "source": "CMoney",
+      "published": "2026-02-10 16:00",
+      "published_ts": "2026-02-10T16:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBoRTRKSlBjVFVROWVZM2ZoLUpueFJSenZHUV95elJ4T2tjMGxMVlRoSWtQaXZMX1c2bGNJZ0RrZ0xPanNob1N1SVcwc0E4QnFsdTdzeFhBNEk?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；追蹤管理層展望、訂單與獲利率指引",
+      "source_score": 4,
+      "source_tier": "官方 / 公告",
+      "kind": "法說會"
+    }
+  ],
+  "warrant_top_rows": [
+    {
+      "warrant_id": "069505",
+      "warrant_name": "華邦電台新5B購08",
+      "call_put": "認購",
+      "exercise_price": 232.0,
+      "trading_money": 7068710.0,
+      "trading_volume": 4530000.0
+    },
+    {
+      "warrant_id": "068010",
+      "warrant_name": "華邦電統一65購02",
+      "call_put": "認購",
+      "exercise_price": 168.93,
+      "trading_money": 6150630.0,
+      "trading_volume": 4816000.0
+    },
+    {
+      "warrant_id": "068411",
+      "warrant_name": "華邦電群益65購01",
+      "call_put": "認購",
+      "exercise_price": 155.0,
+      "trading_money": 5455850.0,
+      "trading_volume": 1029000.0
+    },
+    {
+      "warrant_id": "066918",
+      "warrant_name": "華邦電兆豐65購03",
+      "call_put": "認購",
+      "exercise_price": 148.0,
+      "trading_money": 5423990.0,
+      "trading_volume": 2107000.0
+    },
+    {
+      "warrant_id": "067549",
+      "warrant_name": "華邦電群益5B購06",
+      "call_put": "認購",
+      "exercise_price": 186.66,
+      "trading_money": 3769460.0,
+      "trading_volume": 1965000.0
+    }
+  ],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2344_2026-06-02\\index.html"
+}
