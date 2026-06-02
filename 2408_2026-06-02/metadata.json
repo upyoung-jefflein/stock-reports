@@ -1,0 +1,746 @@
+{
+  "stock_id": "2408",
+  "stock_name": "南亞科",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "半導體業",
+  "data_period": "2025-06-02 to 2026-06-02",
+  "data_date": "2026-06-02",
+  "ohlcv_start": "2025-06-02",
+  "ohlcv_end": "2026-06-02",
+  "last_daily_k_date": "2026-06-02",
+  "valid_trading_days": 245,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-06-02 to 2026-06-02 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "institutional_latest_period": "2026-06-02",
+  "margin_period": "2025-06-02 to 2026-06-01 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_latest_period": "2026-06-01",
+  "warrant_period": "TWSE report_date=1150601 (OK; call=239, put=25, with_exercise_price=264)",
+  "warrant_latest_period": "TWSE report_date=1150601",
+  "fundamental_period": "revenue 2024-01-01 to 2026-05-01; PER/PBR 2025-06-02 to 2026-06-02; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=29; per_rows=245; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
+  "revenue_latest_period": "2026-04",
+  "quarterly_latest_period": "2026-03-31",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260529 (OK; rows=17)",
+  "tdcc_latest_period": "20260529",
+  "etf_latest_period": "2026-06-02",
+  "etf_holding_change_period": "2026-06-02 (OK; holders=26, active_candidates=8; changes=0)",
+  "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=南亞科(2408), 華邦電(2344), 旺宏(2337), 晶豪科(3006), 群聯(8299); failures=none",
+  "peer_display_list": "南亞科(2408)、華邦電(2344)、旺宏(2337)、晶豪科(3006)、群聯(8299)",
+  "peer_business_summary": "南亞科(2408) 定位：DRAM / 記憶體製造；產品組合：DRAM（占比待補）、利基型記憶體（占比待補）、記憶體晶圓（占比待補）；資料層級：公司產品資料；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：PCB / 載板 / CCL 供應鏈、記憶體 IC / DRAM 相關、記憶體與半導體製造。",
+  "peer_business_rows": [
+    {
+      "stock_id": "2408",
+      "name": "南亞科",
+      "profile_scope": "個股資料",
+      "data_confidence": "高",
+      "product_basis": "公司產品資料",
+      "chain_position": "DRAM / 記憶體製造",
+      "product_mix": "DRAM（占比待補）、利基型記憶體（占比待補）、記憶體晶圓（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基型記憶體",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "記憶體晶圓",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "DRAM 報價循環、AI 帶動記憶體需求、庫存回補",
+      "valuation_logic": "以記憶體報價、毛利率循環與淨值比評估，EPS 波動較大。",
+      "risks": "報價反轉、景氣循環、庫存與資本支出",
+      "stock_price_watch": "DRAM 報價循環、AI 帶動記憶體需求、庫存回補；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：記憶體製造同業",
+      "evidence_keywords": "-",
+      "evidence_sources": "-"
+    },
+    {
+      "stock_id": "8299",
+      "name": "群聯",
+      "profile_scope": "子族群模板",
+      "data_confidence": "中高",
+      "product_basis": "子族群推估",
+      "chain_position": "記憶體製造 / IC",
+      "product_mix": "DRAM（占比待補）、NAND / NOR（占比待補）、利基型記憶體（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "NAND / NOR",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基型記憶體",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "記憶體報價、庫存回補、AI 帶動容量需求",
+      "valuation_logic": "以記憶體報價循環、毛利率與 PBR 區間比較。",
+      "risks": "報價波動、景氣循環、庫存調整",
+      "stock_price_watch": "記憶體報價、庫存回補、AI 帶動容量需求；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：記憶體循環同業可比；公司實際產品比重需以法說、年報或公告確認；產品重疊：DRAM、利基型記憶體",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 2.0,
+      "matched_products": "DRAM、利基型記憶體"
+    },
+    {
+      "stock_id": "2344",
+      "name": "華邦電",
+      "profile_scope": "個股資料",
+      "data_confidence": "高",
+      "product_basis": "公司產品資料",
+      "chain_position": "記憶體 IC / DRAM 相關",
+      "product_mix": "DRAM（占比待補）、記憶體產品（占比待補）、利基型應用（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "記憶體產品",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基型應用",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "記憶體報價回升、利基型需求、庫存循環",
+      "valuation_logic": "以記憶體循環、毛利率與 PBR 區間為主。",
+      "risks": "報價波動、需求循環、同業產能競爭",
+      "stock_price_watch": "記憶體報價回升、利基型需求、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：記憶體製造 / IC 同業；產品重疊：DRAM",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 1.0,
+      "matched_products": "DRAM"
+    },
+    {
+      "stock_id": "2337",
+      "name": "旺宏",
+      "profile_scope": "個股資料",
+      "data_confidence": "高",
+      "product_basis": "公司產品資料",
+      "chain_position": "記憶體與半導體製造",
+      "product_mix": "DRAM 相關（占比待補）、記憶體晶片（占比待補）、利基應用（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM 相關",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "記憶體晶片",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基應用",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "記憶體價格循環、需求回補、產品組合改善",
+      "valuation_logic": "以循環股方式看 PBR、毛利率與報價趨勢。",
+      "risks": "營運波動大、報價下行、庫存調整",
+      "stock_price_watch": "記憶體價格循環、需求回補、產品組合改善；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：記憶體族群可比",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 0.0,
+      "matched_products": "-"
+    },
+    {
+      "stock_id": "3006",
+      "name": "晶豪科",
+      "profile_scope": "官網 / 公開資訊佐證",
+      "data_confidence": "高",
+      "product_basis": "官網 / 公開資訊佐證",
+      "chain_position": "PCB / 載板 / CCL 供應鏈",
+      "product_mix": "PCB（占比待補）、HDI（占比待補）、IC 載板（占比待補）、CCL（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "PCB",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "HDI",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "IC 載板",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "CCL",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI 伺服器板材需求、高階製程升級、產能利用率",
+      "valuation_logic": "以產品層級、產能利用率、毛利率、AI 伺服器材料需求與景氣循環評估。",
+      "risks": "報價波動、景氣循環、庫存調整",
+      "stock_price_watch": "AI 伺服器板材需求、高階製程升級、產能利用率；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：記憶體循環同業可比；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：PCB",
+      "evidence_keywords": "PCB",
+      "evidence_sources": "TWSE 公司基本資料 / 官網：https://www.esmt.com.tw、官網延伸頁：https://www.esmt.com.tw/zh-tw/Products",
+      "product_overlap_score": 0.0,
+      "matched_products": "-"
+    }
+  ],
+  "peer_business_interpretation": [
+    "南亞科(2408) 定位：DRAM / 記憶體製造；產品組合：DRAM（占比待補）、利基型記憶體（占比待補）、記憶體晶圓（占比待補）；資料層級：公司產品資料；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：PCB / 載板 / CCL 供應鏈、記憶體 IC / DRAM 相關、記憶體與半導體製造。",
+    "估值比較應優先看產品組合與獲利率差異：以記憶體報價、毛利率循環與淨值比評估，EPS 波動較大。",
+    "主要風險要和同族群分開看：報價反轉、景氣循環、庫存與資本支出。"
+  ],
+  "etf_display_status": "持有快照 2026-06-02，未命中最新異動",
+  "tdcc_display_status": "20260529；大額 82.35% / 小額 9.41%",
+  "warrant_display_status": "264 檔，認購 239 / 認售 25",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "2026Q1 毛利率 67.89%（年變化 +82.84 個百分點）、營業利益率 61.34%（年變化 +105.24 個百分點）",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 6.53%（年變化 -22.42 個百分點）、稅後淨利率 53.09%（年變化 +80.08 個百分點）、ROE 10.81%（年變化 +12.00 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 254.91 億元；MoM 40.29%；YoY 717.33%；近 3 個月累計 YoY 627.72%；近 12 個月滾動營收 YoY 312.42%；創近 24 個月新高；連續 11 個月年增為正",
+  "fundamental_price_estimate_summary": "悲觀 309 元 / 中性 537 元 / 樂觀 776 元；產業模型：成長型 PER（PER 下限 12.0x / 上限 45.0x）；加權框架：成長電子；近四季 EPS 11.17；前瞻 EPS 估 12.76（成長假設 +14.3%）；估值 PER 29.4x / 53.9x / 100.0x；催化溢價：月營收年增雙位數、營業利益率具支撐、ROE 支撐評價（+9%）；目前 PER 37.6x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=29.4x/99.8x/107.9x；目前 PER 位於近一年 32% 分位；市場情境 20x/25x/30x=223/279/335 元；模型推估：EPS/PER 688 元（前瞻 EPS 12.76 × 中性 PER 53.9x）、PBR/ROE 224 元（ROE 對應合理 PBR）、技術型態 417 元（上升通道 突破量測目標）、法人籌碼成本 309 元（外資 / 投信近20與60日加碼成本）、同族群動能 315 元（同族群中位報酬 +712.5% / 本股 +815.9%）、殖利率 240 元（歷史殖利率中位數回推）；多模型加權參考 537 元；歷史 PBR 分位 Q25/Q50/Q75=1.02x/3.06x/4.32x；ROE/PB 交叉參考 224 元；技術型態目標 417 元（90日上升通道 / 有效 7.0）；法人籌碼成本 外資 308 元 / 投信 310 元；同族群相對動能參考 315 元（同族群中位報酬 +712.5% / 本股 +815.9%）；殖利率模型 240 元（現殖利率 0.36% / 中位 0.63%）；現價 419.50 元，較中性估值 -21.9%；現價低於中性估值，具估值修復空間；合理偏低區：若技術面轉強，具估值修復條件",
+  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期改善、營業費用率較去年同期下降。",
+  "chip_summary": {
+    "margin_balance": 103940.0,
+    "margin_5d_change": -5527.0,
+    "short_balance": 2221.0,
+    "short_5d_change": 902.0,
+    "foreign_latest": 18321681.0,
+    "foreign_5d": 132735501.0,
+    "foreign_20d": 147908374.0,
+    "trust_latest": 4447000.0,
+    "trust_5d": 12187331.0,
+    "trust_20d": 14439524.0,
+    "total_latest": 22871379.0,
+    "total_5d": 144829791.0,
+    "total_20d": 159091432.0
+  },
+  "news_display_status": "新聞面偏利多（利多 5 / 利空 2 / 中性 1；高可信 1 則）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 6 則（法說會 5 / 公告 1）",
+  "summary_one_line": "偏多強勢，偏多震盪；站穩 MA10 326.20 並突破 419.50 才有續攻機會，跌破 MA20 314.00 轉防守。",
+  "summary_overall": "偏多強勢；收盤站上 MA5, MA5 高於 MA10, MA10 上方但投信支撐不足",
+  "summary_tomorrow": "偏多震盪",
+  "summary_one_month": "偏多延續",
+  "summary_support": "第一 356.80 / 第二 326.20 / 強 314.00",
+  "summary_pressure": "419.50",
+  "summary_price_pattern": "近90日上升通道 有效7.0 / 突破；近44日緩步上行 有效4.4 / 突破",
+  "summary_price_pattern_brief": "近90日上升通道 有效7.0 / 突破；近44日緩步上行 有效4.4 / 突破",
+  "summary_trade_plan": "買點：已突破 322.75 且站穩，回測不破可偏多續抱；賣點：跌破 314.00，先降權重。依據：上升通道有效分數 7.0。",
+  "price_pattern_rows": [
+    {
+      "lookback": 90,
+      "label": "上升通道",
+      "support": 205.0,
+      "resistance": 322.75,
+      "score": 7.000000000000001,
+      "touch_count": 21,
+      "slope_stability": 0.0,
+      "volume_confirmation": "量能中性",
+      "breakout_status": "突破",
+      "confirm_status": "站穩"
+    },
+    {
+      "lookback": 44,
+      "label": "緩步上行",
+      "support": 202.95,
+      "resistance": 337.65000000000003,
+      "score": 4.4,
+      "touch_count": 22,
+      "slope_stability": 0.0,
+      "volume_confirmation": "量能中性",
+      "breakout_status": "突破",
+      "confirm_status": "站穩"
+    }
+  ],
+  "summary_atr": "ATR14 27.93，常態區間 391.57～447.43",
+  "summary_key_watch": "量價中性偏多；明日觀察 MA5 356.80 / MA10 326.20",
+  "summary_risk": "跌破 MA10 326.20 且放量，短線轉弱；跌破 MA20 314.00 則整理擴大",
+  "summary_warrant": "認購成交占 99.16%，近價外認購 22 檔，前五大成交占 22.01%",
+  "summary_warrant_signal": "小幅加分",
+  "summary_warrant_plain": "權證略偏多，但只能當輔助，仍需現股突破壓力確認",
+  "summary_warrant_price_view": "現股已高於認購主流履約價，權證追價熱度可能開始降溫",
+  "generated_at": "2026-06-02T18:27:50+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-02\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-02\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-02\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-02\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-02\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-02\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [],
+  "tdcc_rows": [
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 169460,
+      "shares": 26165230,
+      "ratio": 0.75
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 126649,
+      "shares": 222479376,
+      "ratio": 6.44
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 9755,
+      "shares": 76716520,
+      "ratio": 2.22
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 2655,
+      "shares": 34214039,
+      "ratio": 0.99
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 1640,
+      "shares": 30544572,
+      "ratio": 0.88
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 1358,
+      "shares": 35029492,
+      "ratio": 1.01
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 599,
+      "shares": 21511123,
+      "ratio": 0.62
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 379,
+      "shares": 17768702,
+      "ratio": 0.51
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 657,
+      "shares": 47597042,
+      "ratio": 1.37
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 321,
+      "shares": 46580582,
+      "ratio": 1.35
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 180,
+      "shares": 49727607,
+      "ratio": 1.44
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 62,
+      "shares": 29834023,
+      "ratio": 0.86
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 30,
+      "shares": 21289387,
+      "ratio": 0.61
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 22,
+      "shares": 20220481,
+      "ratio": 0.58
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 141,
+      "shares": 2770532718,
+      "ratio": 80.3
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 2,
+      "shares": 5000,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2408",
+      "level": 17,
+      "level_label": "合計",
+      "people": 313908,
+      "shares": 3450205894,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260529",
+      "total_people": 313908,
+      "total_shares": 3450205894,
+      "small_ratio": 9.41,
+      "mid_ratio": 4.16,
+      "large_ratio": 82.35,
+      "million_ratio": 80.3,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-02\\07_集保股權歷史趨勢圖.png",
+  "broker_trading_period": "2026-05-29 to 2026-06-02 (OK; local rows=20, days=1, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-02 rows=20)",
+  "broker_import_status": "券商分點：2026-05-29 to 2026-06-02；OK; local rows=20, days=1, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-02 rows=20",
+  "broker_trading_latest_period": "2026-06-02",
+  "broker_pattern_result": {
+    "ok": false,
+    "message": "分點買賣後 5 / 30 交易日勝率回測",
+    "forward_days": 5,
+    "rows": [],
+    "best": null,
+    "signals": [],
+    "horizons": {
+      "5": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      },
+      "30": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      }
+    },
+    "latest_rows": [],
+    "chart_series": []
+  },
+  "news_rows": [
+    {
+      "region": "國內",
+      "bias": "利空",
+      "event_type": "籌碼",
+      "title": "三大法人買賣超 – 外資買超(2454)聯發科、(2408)南亞科，投信買超(2603)長榮、(2382)廣達，法人合計買超367.41億元",
+      "source": "sinotrade.com.tw",
+      "published": "2026-06-02 18:10",
+      "published_ts": "2026-06-02T18:10:38+08:00",
+      "link": "https://news.google.com/rss/articles/CBMizgRBVV95cUxQS1lpU2NvNXJNQURDOEloOXdTQ3o4UmNVWDNXaW9LMkxhTFo2eVFraTZKX0g1ckZGR2x4SDdzWkthUGxpYXFlWE9RS3d5UGJoMmZuQzBSWlBNeXlKRXc3NGh6d0xMZUJCVmYzUnN4c3RfaVh3TmRnaWcwbHFPajA1QzRkMXBBaldvTjl2ZVlhZmJENjI4c3dVb0I1TjNhTXZjQ2NudXVCMndfZ014UzNYUjRLVkdWZXB6dmdlOFhqYm5zVHhuNWg4aUd4WW9UcjZvLWNNNTh6X1Q2Vk5sQXhGenUyRFF6cDMta2EzT3V4VnNnQUNhbnNfQmNCV1dlbG15S3RzcHdMZ3Z6TkxSWXExUmdQQXU4eWNDclRtQ2p5MHNrOFNvVnltV0h3aXRLdVlPMy1xRHh2cTBmOGF0aVlKUWk5bGJuM0c3VmRBRlpSZ1RZS2hMaHhvZWNJMWdyUnhlWVF1Z2hQZzlNUHJWd2prUDZ5dlp0UHpTNTNjSV9nTkp5dkc5a3pIWGcya0xuaHV0OEVIT2tLWW5GdEtBUElON0g4aENRR3RaUnViV0dvM29JZTZxRjZ3NndROTNJMkZ3ZU9rOURLV012LXAzRmRTalNDUUVwWnZnQi1qWTdvcjJwUndmSHJmc1hUVjItb0lSVEk0VmRiejB1R0lYV0RtV05naE9Mb2FOaXozZHRvbTZnWUVRWEtIaVBSbmN0a3RicUczWEV3OFk1Uk1xVzZzNWU2MFhTZGtXbnk1b2lTQ09rSTFwYnBMc3l5T3N3QQ?oc=5",
+      "reason": "標題含需求疲弱、報價下跌、虧損或評等偏負向關鍵字",
+      "key_point": "偏空訊號；搭配法人買賣超與股價位置判斷承接力",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "產業",
+      "bias": "利多",
+      "event_type": "產業",
+      "title": "COMPUTEX 6月2號開展，全面引爆 AI概念股強漲，輝達Rubin800V架構將帶動導線架與功率半導體?【研究觀點】",
+      "source": "sinotrade.com.tw",
+      "published": "2026-06-02 17:58",
+      "published_ts": "2026-06-02T17:58:33+08:00",
+      "link": "https://news.google.com/rss/articles/CBMirARBVV95cUxQYVNIbkZONWdtVDF6eGV5YjlqemtTajhNVjBYdDlqT213WmV0MkJ2QkdWWXJGSU1sbHZYSVR2WW1fOVZvV0E1ck1yMHZRYWo5Ym5ubFFQalV4RkVnb2J1RmRXRW8zeThyQjBxbktweUtSUklYSklLckticUNEcnZwWi1kdm5OV3hkbk84aGtrUTNWVE5XNnUzUmJyaVNUT3JnR0h5TFZySGYxSERkZHNRUE4yOU1tSXFBOWtfWFVRajVGU1hXWExNYnJNWjY4aVAtWXBJWWJJdXNaS1h6UDV0dUZmZWFjc1NxR2tqbmgtVk1CcGtSaS0tM19VVmk5LW5xU0F3TUlwRnY0M0xqTWxlVXFHb2Y0dVNvQXgzNDJ5MFVzMDM5WU1MMEp6MVd0Tk9RTHJQMHRJVkV2bDZZZ0QwQ0tsenJveGJuRG5VTzRad2VlWVNhRm9JTTd3VElFcmJrU05RdDZqeDlmS3Bzd2hnTUQ3a3lYRV9ScThTT3hIZUwzOHcxUlRpQkRPVFUxYkdjYnhGZjFudXdPTFJzWGZRb0hLU0dHMnZQdnhVUnpLa0xOWlZsX3Q5S0lnRXd6R0loR0NtREpxVmVCNTdqRjZQaTRGSndFSl9QVDNWUGEtc01INlo5d0NKa25uejR1SFByR0FReVphcUhDYzhubGliQXVGSWh3aDFVVmtiTmhyUG82WW10ejNUVnVhc3J3NjgxdUROMFVFSGZLejc4?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "華邦電、威剛、南亞科、旺宏…漲停還會有幾根？記憶體市場規模破表，最新目標價揭有多少肉可吃",
+      "source": "今周刊",
+      "published": "2026-06-02 11:06",
+      "published_ts": "2026-06-02T11:06:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOb2ZTTUFLY0RXekZBdlFfcEhWdEdiYlVJSDdJWGVkX25Ud1ZhcFlpY004Tlp2cW1OaURFRnpTU2RjeDlzdTk0NDFDOEpiSFN2TXhxQ1ZYY1hwdXNQWjZHeDVzZzVQMHpQOUFiQzVwOVFRak1WZFAzc202OW1yTndfQw?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "奔向5萬點2／記憶體大廠南亞科股價創高 PC換機潮躍躍欲試 | 財經 | CTWANT",
+      "source": "CTWANT",
+      "published": "2026-06-02 06:00",
+      "published_ts": "2026-06-02T06:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PNFpNSVpRbnQzVEUwbGp2QzhFb21RQlAtM0ZrdVpRVzRNb21CcnVQUXZ5a19HNHc1cmkxX3dnUWFIMkhibWlFVTJJSVFyR3PSAVRBVV95cUxOdm9iVGN1WHphVVFyYVRrMjJJbGZiTU9GcWh5cjExOHJ6bXJTaF8zNER3b3V6MTIxZVFTbk1aTkZiMmVWWkhoNHhWbzNjNnliU2VTTFA?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "群創(3481)漲停56元、南亞科(2408)股價381元還能買？友達(2409)、聯電(2303)會更好？最新目標價曝光！杜金龍揭操作策略",
+      "source": "今周刊",
+      "published": "2026-06-01 19:38",
+      "published_ts": "2026-06-01T19:38:23+08:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUk1OMFljNGxfSjVOcUZLN00yblUweHY2ZXhmQUYyV21JWmFpZ0hkMElOYkdYajE1YmJvUExFczJOaThUNWZva19xQTJxRzNIelA4TjduWmFNQkg5aFpMQ25PNVJ5QWtYdlh1MHRaUXBhVUpMcDl6WFlWd19zU0lvSQ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "焦點股》南亞科攻破4百元、華邦電漲停 雙創新高",
+      "source": "自由時報",
+      "published": "2026-06-01 18:48",
+      "published_ts": "2026-06-01T18:48:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmZTlrVy0tTUFKdW5qbnZUWkk5dHFXLS1jNHpLbEdoN3F1Tm9KWDVxem04dkFZWjBmb2gtU29RMWFralh6c0lkcEpXdmlJS3A1SGxyOEQxY2Y?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "國內",
+      "bias": "利空",
+      "event_type": "籌碼",
+      "title": "三大法人買賣超 – 外資買超(2408)南亞科、(2337)旺宏，投信買超(2382)廣達、(7769)鴻勁，法人合計賣超604.81億元",
+      "source": "sinotrade.com.tw",
+      "published": "2026-05-28 16:33",
+      "published_ts": "2026-05-28T16:33:32+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiwgRBVV95cUxObElXSkRwZkZPbGp4bTJ2THRxai0tQ3BUWHhqT29XWWtQeHFoYllHXzhaaDh4VDIwOGFjVlRNdkdDSEFRQ29zWHVCdnhWR2YtQTE0ZFNZbzR1SDE4bEJZSzhFYVI4SG16SnJNWklydXNGUUdseEFWaTkzbmxGQkx3Q1VTRXZ0cjRaM1ZUQlMyS003MTRQY195TXVkV0ZINXV5WmFEdjhmOXJXYUprZ0xlWC1fTTQ3MXlqSnFuSFZyY0d0OGtpbm9EcDY4YVpLbEdwOFlwaWxJZS1LcUl1d0ZYcXVNcmdSMjJpOWtBSWZUQW5qT0NKRDNQX0JYenBMQzc5REJodFJxLXNyVHlIcG1OSWJUaGE2X2cxeWNfMXdjc09ackUzdHM1SGlEUW1YTUZmUThTT040UzFsQWl3Rm1Qa1FaTWc2NW1kRWpGNmJsTTRDTExiS2xXVmhKNzBRbWFwM0xzZW13N0Q2aV9KTVNXdHNzV1pCWHJwMjFTeUc4bV9paTZJc0YwVW41Q2huVlprODRGQ2ZkNTJtYnladmUxUzNValBVdFk2eVh4UmV5RmpJY0pyZzVOYWtLWElUbDlzZVRONEJ4bllkTUVyMVlINWpFTUlFTnhSa2ljbmxOeEc5YU85WEw3eENPNEp0WFVjWVdOTFlNWHlSN3Z3Mk1tVFFpSnFTbW95N3JtZ0NsS2hiUHF6TzlfeUR4YXlrQ05UUUgxSE04d1JrQjR3Z3lIZ1N1ZFpXOHlrUTJ2WXZ0VWZlZw?oc=5",
+      "reason": "標題含需求疲弱、報價下跌、虧損或評等偏負向關鍵字",
+      "key_point": "偏空訊號；搭配法人買賣超與股價位置判斷承接力",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "產業",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "009816、00940大換血！南亞科強勢入列、英業達等10檔被爆買 廣達竟遭踢出",
+      "source": "Yahoo股市",
+      "published": "2026-05-19 15:00",
+      "published_ts": "2026-05-19T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikgNBVV95cUxNVkRCa1Vid2VnVTQwMmdOQURMQnRNUkFhZnJJTEllQjBKWWtvWmpndTlPSGxqV0pUZ2xnYnpOQ1I5Yk1lV2FNZWdnQ0szcnJlM2hLLUZ4aG1Qb1NqSXNxS3hTRjlBTk5XZ2xjMUdOdFpDM1pkLUs4LXdzVWxHT1RaUV8tZFptMGNSSUYwbGZwSmxKbWNLOFNRWTZGaWxnUFFOSXNMeXBoM0xnRGJLM0pRcFhSY2lxZFBoREllZ25rRmIwWDNUdFVpX2toak9ocW5HQWFtUmRhMEp5YXA1WXROcnZCcWVhNk1TYUFTZUVpVkstNVBWdlAyYkc2T0VhXzBweGRQUkVwTHlqdkd2UW03cDJ6VzA0S0x4VUNINU5NbGVQMGEwRTgxQmtOanlpYUxESjJUWE9VMEN3VUktQXI4a3JwT05fZk9UVmx0bWQ4SnBXMVA2aEctU183ZGtsS0VnZllVQkVuN0hQOWNLODZfeG5tOG1xT2lXam15c2lhVVJELXJWTUdiaTRpSWljRmNZbWc?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "event_type": "法說",
+      "title": "個股：南亞科(2408)6/2受邀參加Daiwa Investment Conference New York",
+      "source": "富聯網",
+      "published": "2026-06-01 14:01",
+      "published_ts": "2026-06-01T14:01:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWFdLcEpwWi1VYkRPOXZ5bWMwVWtWREFtRGo1LTZndU9wWGlNQktuanhrbWlFa1I4amdROUhXRzN3eWdoeHFpZ0VERUxXTzR3b1RDUFBwRk41WmJOMFU3ZGx2Y3lOV3ppOHA5dDFfVE9oUHExM3NZSFIxdkxKZEVrTW5rLXpUSUtD?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；追蹤管理層展望、訂單與獲利率指引",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "event_type": "法說",
+      "title": "個股：南亞科(2408)受邀參加6/1 HSBC Taiwan Conference",
+      "source": "富聯網",
+      "published": "2026-05-29 14:33",
+      "published_ts": "2026-05-29T14:33:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZ3VMeXE1aFE0Qm8zOERsRXRRR1JZYVR5eDVjdkR0dTE0QU9ickxIbVJfYUJtN3NXakhqQXllRDNmZ29CWkVJbjZLSmFmMjV1ZG95Z3psSDNnYlZpZEhaMDUwSF9fX0dwNFpUeVloSHhCeko2cEJUMVFEblZlN3VoaHhDeE1LMWN6?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；追蹤管理層展望、訂單與獲利率指引",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "南亞科（2408）重大訊息公告",
+      "source": "CMoney",
+      "published": "2026-04-27 15:00",
+      "published_ts": "2026-04-27T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE52SmpILTFTSUgwaU9iSEo4d3pSdEZDenlfakpEd3RpS3FNZGJlTHVXOTZoRHd4V0ZYV0g2bnQ3Nk0xQm5SRmo2aTd5dWR0MWhJSlRYLXlXd0E?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "法說",
+      "title": "(2408) 南亞科法說會 2026/04、南亞科財報、南亞科展望、南亞科財報投資亮點｜理柴知道:法說最速報! - 方格子",
+      "source": "Vocus",
+      "published": "2026-04-14 15:00",
+      "published_ts": "2026-04-14T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qMXhKNmkwVGpMeHJkMDhLaGJxcHdsclpaNUZfLXpBVk1hV0M2QTYxZzhUZVZRR01UYVVrTDVUSng5MzFNUGdyZkxZUGh2UDl1VWlNOXdsWjRacFhxQmfSAWNBVV95cUxPZF9hWGxBS1I1NkxMa0lCbDNMQTFlMjlnZ2t3RG0zanlCMzlWME91Qk1RanMxUGFHU0x4TWttRWtfOXZPT21lXzdJbzlIelo1NkR3TVFSY2taMkFXRlF0WVpfN3c?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；追蹤管理層展望、訂單與獲利率指引",
+      "source_score": 4,
+      "source_tier": "官方 / 公告",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "法說",
+      "title": "南亞科今日15時30分舉行重訊說明會",
+      "source": "經濟日報",
+      "published": "2026-04-14 15:00",
+      "published_ts": "2026-04-14T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQZDI0RGUtVFZ4cGF4aHVWY051djhzQ1Y3UzdUTXlBSlN2bmh5SmkzenFHa3MtR0o0NElrUjk3N05LQ3NVZXlKY1NrQU9ydE5vQXhQU3c0dEMwQdIBX0FVX3lxTE1ROExuejd3MjRzdXNmYlFLRTgwVVJpSS1ybVRoRkVqV2pDb005bTZDV09KbTBmRVl2aXUtblFlRUJQV0xoU19acDM5ZzZsbnNEdWZzVC1MMlRpWU5SWE5J?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；追蹤管理層展望、訂單與獲利率指引",
+      "source_score": 4,
+      "source_tier": "官方 / 公告",
+      "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "法說",
+      "title": "快訊／南亞科法說後收黑 突公告15：30召開重訊記者會",
+      "source": "ETtoday財經雲",
+      "published": "2026-04-14 15:00",
+      "published_ts": "2026-04-14T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5FZ1VsTk9QVWZMckdJa3hXakNpSFo2VmpBQ040eFhNZHRLNjNzdE5uTVR0UGlXcTUwbG95WEJHemNaUXdpaklLRGVVUy05Y2kxLUHSAW5BVV95cUxQd3NBUHRpQ3JMcG53cXp3TFJQU29RTHBtMWZmQmE5WXFPNFpIb1NmMU9wanQxNWJwd1h1bkE5NThqOWsyTVppYjk2djZQLW50b2xhWEY5SFVkWEVmNGdBcUdFUGZIZFhLZDlHZk13QQ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；追蹤管理層展望、訂單與獲利率指引",
+      "source_score": 4,
+      "source_tier": "官方 / 公告",
+      "kind": "法說會"
+    }
+  ],
+  "warrant_top_rows": [
+    {
+      "warrant_id": "065636",
+      "warrant_name": "南亞科國泰63購01",
+      "call_put": "認購",
+      "exercise_price": 350.0,
+      "trading_money": 8849930.0,
+      "trading_volume": 2132000.0
+    },
+    {
+      "warrant_id": "065458",
+      "warrant_name": "南亞科中信5B購01",
+      "call_put": "認購",
+      "exercise_price": 350.0,
+      "trading_money": 7578640.0,
+      "trading_volume": 3877000.0
+    },
+    {
+      "warrant_id": "066347",
+      "warrant_name": "南亞科群益5B購07",
+      "call_put": "認購",
+      "exercise_price": 380.0,
+      "trading_money": 4700000.0,
+      "trading_volume": 1314000.0
+    },
+    {
+      "warrant_id": "064497",
+      "warrant_name": "南亞科國票5B購01",
+      "call_put": "認購",
+      "exercise_price": 320.0,
+      "trading_money": 4326380.0,
+      "trading_volume": 888000.0
+    },
+    {
+      "warrant_id": "064535",
+      "warrant_name": "南亞科永豐67購01",
+      "call_put": "認購",
+      "exercise_price": 312.75,
+      "trading_money": 4204080.0,
+      "trading_volume": 1640000.0
+    }
+  ],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-02\\index.html"
+}
