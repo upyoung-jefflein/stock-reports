@@ -1,0 +1,727 @@
+{
+  "stock_id": "5483",
+  "stock_name": "中美晶",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "半導體業",
+  "data_period": "2025-06-03 to 2026-06-02",
+  "data_date": "2026-06-02",
+  "ohlcv_start": "2025-06-03",
+  "ohlcv_end": "2026-06-02",
+  "last_daily_k_date": "2026-06-02",
+  "valid_trading_days": 244,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-06-03 to 2026-06-02 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "institutional_latest_period": "2026-06-02",
+  "margin_period": "2025-06-03 to 2026-06-02 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_latest_period": "2026-06-02",
+  "warrant_period": "TWSE report_date=2026-06-02 (OK; call=493, put=25, with_exercise_price=0)",
+  "warrant_latest_period": "TWSE report_date=2026-06-02",
+  "fundamental_period": "revenue 2024-01-01 to 2026-05-01; PER/PBR 2025-06-03 to 2026-06-02; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=29; per_rows=244; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
+  "revenue_latest_period": "2026-04",
+  "quarterly_latest_period": "2026-03-31",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260529 (OK; rows=17)",
+  "tdcc_latest_period": "20260529",
+  "etf_latest_period": "2026-06-02",
+  "etf_holding_change_period": "2026-06-02 (OK; holders=10, active_candidates=1; changes=0)",
+  "peer_source_and_list": "FinMind TaiwanStockInfo industry_category candidates + TaiwanStockPrice OHLCV correlation filter; compared=中美晶(5483), 陞達科技(4945), 點序(6485), 立萬利(3054), 倚強股份(3219), 世紀*(5314), 瑞築(6198); failures=展匯科(6594): No TaiwanStockPrice rows for 6594; 奕力(3598): No TaiwanStockPrice rows for 3598; 其樂達(3271): No TaiwanStockPrice rows for 3271; 雷凌(3534): No TaiwanStockPrice rows for 3534; F-IML(3638): No TaiwanStockPrice rows for 3638; 華亞科(3474): No TaiwanStockPrice rows for 3474; 誠致(3614): No TaiwanStockPrice rows for 3614; F-晨星(3697): No TaiwanStockPrice rows for 3697; 全懋(2446): No TaiwanStockPrice rows for 2446; 飛信(3063): No TaiwanStockPrice rows for 3063; 思源(2473): No TaiwanStockPrice rows for 2473; F-敦泰(5280): No TaiwanStockPrice rows for 5280; 立錡(6286): No TaiwanStockPrice rows for 6286; 紘康(6457): No TaiwanStockPrice rows for 6457; 元隆(6287): 有效交易日少於 60; 全智科(3559): No TaiwanStockPrice rows for 3559; 尚志(3579): No TaiwanStockPrice rows for 3579; 誠創(3536): No TaiwanStockPrice rows for 3536; 矽品(2325): No TaiwanStockPrice rows for 2325; 日月光(2311): No TaiwanStockPrice rows for 2311; 敦南(5305): No TaiwanStockPrice rows for 5305; 綠能(3519): No TaiwanStockPrice rows for 3519",
+  "peer_display_list": "中美晶(5483)、陞達科技(4945)、點序(6485)、立萬利(3054)、倚強股份(3219)、世紀*(5314)、瑞築(6198)",
+  "peer_business_summary": "中美晶(5483) 定位：半導體供應鏈；產品組合：晶圓代工 / IC 設計 / 封測（占比待補）、半導體材料（占比待補）、設備與零組件（占比待補）；資料層級：產業 / 主題推估；同族群比較基準：半導體業。對照族群涵蓋：半導體供應鏈。",
+  "peer_business_rows": [
+    {
+      "stock_id": "5483",
+      "name": "中美晶",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "半導體供應鏈",
+      "product_mix": "晶圓代工 / IC 設計 / 封測（占比待補）、半導體材料（占比待補）、設備與零組件（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "晶圓代工 / IC 設計 / 封測",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "半導體材料",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "設備與零組件",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI / HPC 需求、製程升級、庫存循環",
+      "valuation_logic": "以景氣循環、毛利率、產能利用率與產品組合判斷。",
+      "risks": "景氣循環、庫存調整、資本支出波動",
+      "stock_price_watch": "AI / HPC 需求、製程升級、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：半導體產業通用比較；公司實際產品比重需以法說、年報或公告確認",
+      "evidence_keywords": "-",
+      "evidence_sources": "-"
+    },
+    {
+      "stock_id": "4945",
+      "name": "陞達科技",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "半導體供應鏈",
+      "product_mix": "晶圓代工 / IC 設計 / 封測（占比待補）、半導體材料（占比待補）、設備與零組件（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "晶圓代工 / IC 設計 / 封測",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "半導體材料",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "設備與零組件",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI / HPC 需求、製程升級、庫存循環",
+      "valuation_logic": "以景氣循環、毛利率、產能利用率與產品組合判斷。",
+      "risks": "景氣循環、庫存調整、資本支出波動",
+      "stock_price_watch": "AI / HPC 需求、製程升級、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：半導體產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 3.0,
+      "matched_products": "半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件"
+    },
+    {
+      "stock_id": "6485",
+      "name": "點序",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "半導體供應鏈",
+      "product_mix": "晶圓代工 / IC 設計 / 封測（占比待補）、半導體材料（占比待補）、設備與零組件（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "晶圓代工 / IC 設計 / 封測",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "半導體材料",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "設備與零組件",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI / HPC 需求、製程升級、庫存循環",
+      "valuation_logic": "以景氣循環、毛利率、產能利用率與產品組合判斷。",
+      "risks": "景氣循環、庫存調整、資本支出波動",
+      "stock_price_watch": "AI / HPC 需求、製程升級、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：半導體產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 3.0,
+      "matched_products": "半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件"
+    },
+    {
+      "stock_id": "3054",
+      "name": "立萬利",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "半導體供應鏈",
+      "product_mix": "晶圓代工 / IC 設計 / 封測（占比待補）、半導體材料（占比待補）、設備與零組件（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "晶圓代工 / IC 設計 / 封測",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "半導體材料",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "設備與零組件",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI / HPC 需求、製程升級、庫存循環",
+      "valuation_logic": "以景氣循環、毛利率、產能利用率與產品組合判斷。",
+      "risks": "景氣循環、庫存調整、資本支出波動",
+      "stock_price_watch": "AI / HPC 需求、製程升級、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：半導體產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 3.0,
+      "matched_products": "半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件"
+    },
+    {
+      "stock_id": "3219",
+      "name": "倚強股份",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "半導體供應鏈",
+      "product_mix": "晶圓代工 / IC 設計 / 封測（占比待補）、半導體材料（占比待補）、設備與零組件（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "晶圓代工 / IC 設計 / 封測",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "半導體材料",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "設備與零組件",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI / HPC 需求、製程升級、庫存循環",
+      "valuation_logic": "以景氣循環、毛利率、產能利用率與產品組合判斷。",
+      "risks": "景氣循環、庫存調整、資本支出波動",
+      "stock_price_watch": "AI / HPC 需求、製程升級、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：半導體產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 3.0,
+      "matched_products": "半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件"
+    },
+    {
+      "stock_id": "5314",
+      "name": "世紀*",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "半導體供應鏈",
+      "product_mix": "晶圓代工 / IC 設計 / 封測（占比待補）、半導體材料（占比待補）、設備與零組件（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "晶圓代工 / IC 設計 / 封測",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "半導體材料",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "設備與零組件",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI / HPC 需求、製程升級、庫存循環",
+      "valuation_logic": "以景氣循環、毛利率、產能利用率與產品組合判斷。",
+      "risks": "景氣循環、庫存調整、資本支出波動",
+      "stock_price_watch": "AI / HPC 需求、製程升級、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：半導體產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 3.0,
+      "matched_products": "半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件"
+    },
+    {
+      "stock_id": "6198",
+      "name": "瑞築",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "半導體供應鏈",
+      "product_mix": "晶圓代工 / IC 設計 / 封測（占比待補）、半導體材料（占比待補）、設備與零組件（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "晶圓代工 / IC 設計 / 封測",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "半導體材料",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "設備與零組件",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI / HPC 需求、製程升級、庫存循環",
+      "valuation_logic": "以景氣循環、毛利率、產能利用率與產品組合判斷。",
+      "risks": "景氣循環、庫存調整、資本支出波動",
+      "stock_price_watch": "AI / HPC 需求、製程升級、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：半導體產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 3.0,
+      "matched_products": "半導體材料、晶圓代工 / IC 設計 / 封測、設備與零組件"
+    }
+  ],
+  "peer_business_interpretation": [
+    "中美晶(5483) 定位：半導體供應鏈；產品組合：晶圓代工 / IC 設計 / 封測（占比待補）、半導體材料（占比待補）、設備與零組件（占比待補）；資料層級：產業 / 主題推估；同族群比較基準：半導體業。對照族群涵蓋：半導體供應鏈。",
+    "估值比較應優先看產品組合與獲利率差異：以景氣循環、毛利率、產能利用率與產品組合判斷。",
+    "主要風險要和同族群分開看：景氣循環、庫存調整、資本支出波動。"
+  ],
+  "etf_display_status": "持有快照 2026-06-02，未命中最新異動",
+  "tdcc_display_status": "20260529；大額 61.20% / 小額 19.83%",
+  "warrant_display_status": "OK; call=493, put=25, with_exercise_price=0",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "2026Q1 毛利率 23.24%（年變化 -2.95 個百分點）、營業利益率 11.88%（年變化 -3.24 個百分點）",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 11.36%（年變化 +0.29 個百分點）、稅後淨利率 13.46%（年變化 +4.19 個百分點）、ROE 1.00%（年變化 -0.57 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 66.99 億元；MoM -9.12%；YoY -0.26%；近 3 個月累計 YoY 0.33%；近 12 個月滾動營收 YoY -1.95%",
+  "fundamental_price_estimate_summary": "悲觀 123 元 / 中性 153 元 / 樂觀 198 元；產業模型：成長型 PER（PER 下限 12.0x / 上限 45.0x）；加權框架：成長電子；近四季 EPS 7.35；前瞻 EPS 估 7.54（成長假設 +2.5%）；估值 PER 16.8x / 20.8x / 24.6x；風險折價：年化 ROE 偏低（-4%）；目前 PER 23.4x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=17.5x/21.7x/23.8x；目前 PER 位於近一年 73% 分位；市場情境 20x/25x/30x=147/184/220 元；模型推估：EPS/PER 157 元（前瞻 EPS 7.54 × 中性 PER 20.8x）、技術型態 198 元（上升通道 突破量測目標）、法人籌碼成本 149 元（外資 / 投信近20與60日加碼成本）、同族群動能 123 元（同族群中位報酬 +33.4% / 本股 +68.5%）、殖利率 62 元（歷史殖利率中位數回推）；多模型加權參考 153 元；歷史 PBR 分位 Q25/Q50/Q75=1.34x/1.45x/1.61x；技術型態目標 198 元（90日上升通道 / 有效 7.0）；法人籌碼成本 外資 146 元 / 投信 152 元；同族群相對動能參考 123 元（同族群中位報酬 +33.4% / 本股 +68.5%）；殖利率模型 62 元（現殖利率 2.13% / 中位 5.69%）；現價 164.50 元，較中性估值 +7.3%；現價接近中性估值；合理偏高區：續漲需要營收與法人同步確認",
+  "fundamental_support_summary": "是否支持股價：支持度偏弱。理由：近 3 個月營收動能改善、最新月營收年增偏弱、正式 EPS 年增、毛利率較去年同期下滑、營業利益率較去年同期下滑、稅後淨利率較去年同期改善、ROE 較去年同期下滑。",
+  "chip_summary": {
+    "margin_balance": 12056.0,
+    "margin_5d_change": -1623.0,
+    "short_balance": 252.0,
+    "short_5d_change": 181.0,
+    "foreign_latest": 260735.0,
+    "foreign_5d": 984754.0,
+    "foreign_20d": -8177432.0,
+    "trust_latest": -1027777.0,
+    "trust_5d": -1769631.0,
+    "trust_20d": 12300954.0,
+    "total_latest": -1268182.0,
+    "total_5d": -1300924.0,
+    "total_20d": 3433060.0
+  },
+  "news_display_status": "新聞面偏利多（利多 2 / 利空 0 / 中性 6；高可信 6 則）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 3 則（法說會 0 / 公告 3）",
+  "summary_one_line": "偏多強勢，區間震盪；站穩 MA10 157.10 並突破 179.50 才有續攻機會，跌破 MA20 152.62 轉防守。",
+  "summary_overall": "偏多強勢；收盤跌破 MA5, MA5 高於 MA10, MA10 上方但投信支撐不足",
+  "summary_tomorrow": "區間震盪",
+  "summary_one_month": "高波動區間震盪",
+  "summary_support": "第一 165.50 / 第二 157.10 / 強 152.62",
+  "summary_pressure": "179.50",
+  "summary_price_pattern": "近90日上升通道 有效7.0 / 突破；近10日緩步上行 有效2.9 / 區間內",
+  "summary_price_pattern_brief": "近90日上升通道 有效7.0 / 突破；近10日緩步上行 有效2.9 / 區間內",
+  "summary_trade_plan": "買點：已突破 158.10 且站穩，回測不破可偏多續抱；賣點：跌破 157.10，先降權重。依據：上升通道有效分數 7.0。",
+  "price_pattern_rows": [
+    {
+      "lookback": 90,
+      "label": "上升通道",
+      "support": 107.95,
+      "resistance": 158.10000000000002,
+      "score": 7.000000000000001,
+      "touch_count": 48,
+      "slope_stability": 0.0,
+      "volume_confirmation": "量能中性",
+      "breakout_status": "突破",
+      "confirm_status": "站穩"
+    },
+    {
+      "lookback": 10,
+      "label": "緩步上行",
+      "support": 139.85,
+      "resistance": 175.45,
+      "score": 2.9000000000000004,
+      "touch_count": 7,
+      "slope_stability": 40.14789038712486,
+      "volume_confirmation": "量能中性",
+      "breakout_status": "區間內",
+      "confirm_status": "待確認"
+    }
+  ],
+  "summary_atr": "ATR14 10.00，常態區間 154.50～174.50",
+  "summary_key_watch": "量價中性偏弱；明日觀察 MA5 165.50 / MA10 157.10",
+  "summary_risk": "跌破 MA10 157.10 且放量，短線轉弱；跌破 MA20 152.62 則整理擴大",
+  "summary_warrant": "權證資料未完整取得",
+  "summary_warrant_signal": "中性",
+  "summary_warrant_plain": "權證資料不足，暫不做白話解讀",
+  "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
+  "generated_at": "2026-06-03T13:12:21+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\5483_2026-06-03\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\5483_2026-06-03\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\5483_2026-06-03\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\5483_2026-06-03\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\5483_2026-06-03\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\5483_2026-06-03\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [],
+  "tdcc_rows": [
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 67870,
+      "shares": 5427661,
+      "ratio": 0.84
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 48011,
+      "shares": 87754710,
+      "ratio": 13.68
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 4412,
+      "shares": 34056694,
+      "ratio": 5.31
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 1232,
+      "shares": 15606717,
+      "ratio": 2.43
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 740,
+      "shares": 13589360,
+      "ratio": 2.11
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 613,
+      "shares": 15560698,
+      "ratio": 2.42
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 272,
+      "shares": 9604666,
+      "ratio": 1.49
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 175,
+      "shares": 8060504,
+      "ratio": 1.25
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 314,
+      "shares": 22551597,
+      "ratio": 3.51
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 118,
+      "shares": 16640710,
+      "ratio": 2.59
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 69,
+      "shares": 19770307,
+      "ratio": 3.08
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 42,
+      "shares": 19601034,
+      "ratio": 3.05
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 17,
+      "shares": 11730885,
+      "ratio": 1.82
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 15,
+      "shares": 13693734,
+      "ratio": 2.13
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 84,
+      "shares": 347572374,
+      "ratio": 54.2
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 0,
+      "shares": 0,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260529",
+      "stock_id": "5483",
+      "level": 17,
+      "level_label": "合計",
+      "people": 123984,
+      "shares": 641221651,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260529",
+      "total_people": 123984,
+      "total_shares": 641221651,
+      "small_ratio": 19.83,
+      "mid_ratio": 9.18,
+      "large_ratio": 61.2,
+      "million_ratio": 54.2,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\5483_2026-06-03\\07_集保股權歷史趨勢圖.png",
+  "broker_trading_period": "2026-06-02 to 2026-06-02 (no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-06-02 rows=20)",
+  "broker_import_status": "券商分點：2026-06-02 to 2026-06-02；no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-06-02 rows=20",
+  "broker_trading_latest_period": "2026-06-02",
+  "broker_pattern_result": {
+    "ok": false,
+    "message": "分點買賣後 5 / 30 交易日勝率回測",
+    "forward_days": 5,
+    "rows": [],
+    "best": null,
+    "signals": [],
+    "horizons": {
+      "5": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      },
+      "30": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      }
+    },
+    "latest_rows": [],
+    "chart_series": []
+  },
+  "news_rows": [
+    {
+      "region": "產業",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "矽晶圓是什麼？矽晶圓三雄是誰？矽晶圓族群與產業介紹！",
+      "source": "StockFeel 股感",
+      "published": "2026-05-27 15:00",
+      "published_ts": "2026-05-27T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNQVhaZm1nZEhMa2xwYjN6T2ZuVzMyRU1LcUxCc0x4alpmcVVBTERPa2k4N0RnM3JlRWVoOHlqSVNoZDNzbTBGODRsc204cVFTd0YybmlPUEhKZi13OUFvTTdHblRtYU0xREwzTWI5MzdNUWM4WDRNZ1FQZGtTNnlwdUkzRFJMQjd6RjdWX3hvTzdpY01URjhkSHl5M3RBMWtEUWNXOENkbTRPNVIxTlhTOTI5bWRNUFNhTmV3SzNMNUc3ajFjTXlSQmpfX3pEdnNxalJSS0szYnQ2S1UwQjA0SmlLRQ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "event_type": "籌碼",
+      "title": "〈台股盤前要聞〉4萬4過關折返 外資甩賣面板、穎崴客戶催產能、中美晶搶太空太陽能商機",
+      "source": "news.cnyes.com",
+      "published": "2026-05-27 05:57",
+      "published_ts": "2026-05-27T05:57:29+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9TY2IwV0RGaDdmQmh2RlBDMDlfZW00TmVrbmtIN0hUcmVUaktxc1hfWW1jTWdnbzhXRlh3a3VmVGdVU2Y3WjItYUVub1RCUlk?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；搭配法人買賣超與股價位置判斷承接力",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "中美晶攻太空太陽能 將視情況擴充設備搶市",
+      "source": "經濟日報",
+      "published": "2026-05-27 00:31",
+      "published_ts": "2026-05-27T00:31:26+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9mWE4zSHRBSnJyWUdUMDdJX21NOWo2aGJsVlhrcE5BcFlHUWpzTkpZTGdXQWtjSld6VDZMV2J3ZEJ0MmVRVFdNd2otbldCNHBjYVRkOHZIbkoydDTSAWBBVV95cUxON09sXzZlcGUtdF8tNWYwbTg1NTRiRTFaMDRIWXdNai1VcVVvd1VuQXNGUmt0a3Zad1NaUS1pR0k4dlJ3TkVLX1E5YlNkUkw3eFdacHdNRU5rNmNKVGhMQms?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "event_type": "訂單",
+      "title": "中美晶太陽能電池上太空 已出貨給2家美國客戶",
+      "source": "news.cnyes.com",
+      "published": "2026-05-26 18:07",
+      "published_ts": "2026-05-26T18:07:42+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8taWRlcHJYSER5T0dWcnFNbE5xRzVSREktV1RJSHdPZ2VnVkhrTi1Ca3FDNnpSNnR3X1lDQnNsLWtSd0hSemxlRzZpRURQS1E?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；確認訂單能見度、認列時程與毛利率",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "比矽晶圓還稀缺！半導體老廠轉型「1服務」強攻漲停，還能買？什麼是220億合約，股價還能有上漲空間| 下班經濟學| 財經",
+      "source": "風傳媒",
+      "published": "2026-05-11 15:00",
+      "published_ts": "2026-05-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5zcEl6S0xYYzlmMkJ1Skt2RmNJVDliZEsxd1JUdEtmOW0zdXlkZ3B1V2NoeFRtTVFUSWRob0xNamtadEUwZ0h3V0V3UXh4UQ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "財報",
+      "title": "再生能源業務強勁成長 中美晶首季EPS1.83元",
+      "source": "自由財經",
+      "published": "2026-05-10 15:00",
+      "published_ts": "2026-05-10T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1nT2xhS19pcmtteU03NWlYTFU2QUl4TGNfb2tMcWlBZVFCVXEtSXQzOTg1dkcxbG5MRUpmTkpSc3JVckpOMkZ0azhwTDFQSjkzMkx0VFZScDNWWWUxYmM00gFkQVVfeXFMUFhzY19UemNBa2lHajhISlN1dzhOUTlQbGV5RjZsQ19xU1dmN1FISENlQ2JsVlZUY3o3MzFXaGRJZmhGZU1KQ3QwdHBNbXNZX2tiOVlwejViY0N2SzRJQzk4OVd4cg?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；檢查 EPS、毛利率與營益率是否支撐估值",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "event_type": "股價",
+      "title": "焦點股》中美晶：母憑子貴 股價大漲",
+      "source": "自由財經",
+      "published": "2026-05-05 15:00",
+      "published_ts": "2026-05-05T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE94TWlLNEQ5RjdTR2tWS2hEcXF4N2tvOTBhUmZFS0I4VXRxQ0lVQVZBTDl5N09iOURlSUd3ejRBZXp6enF4TjhOX05uUjNqRUg5TmppUTBWQ24xWTltTm1R0gFkQVVfeXFMT0RQR3BOZjhiN1hqZ0M0Uk9WSUR5SmpnaDJpSnBpUElhTHlteFU3RS1URUlUMTgwaE9KWmhHU0stTWhqQXBBQkJGclcxdXVfUHhaZU1XMEdsMlA4aHVublcyLU5iSw?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    },
+    {
+      "region": "產業",
+      "bias": "中性",
+      "event_type": "籌碼",
+      "title": "矽晶圓拚復甦 法人按讚雙強",
+      "source": "Yahoo股市",
+      "published": "2026-05-04 15:00",
+      "published_ts": "2026-05-04T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPM2c1X3R0bE8wcktqMjJXR1V3SlNoQWN2a29BYTdoLWFmSWFzRXVMc3hrdVN5b21mcGpMR3hQTC1EOXkwd1ZMNGUxNHNJYmhScTV4OTlNbWppa3JKMmlQdHlDVDB6akNCeWJBYklIX3NBZWhNLXpfeUt5dG1Rc1A4Q1lfdFR2RG83eW1kNUJCZHVzT0szakZUNUl1OElfdTdnbUJVZGVZNl9uRzBhTVdKVXN3Mk1Zb21ERTFBSUliaTdWSFBDclNZaWlJSlJycUhKMmJBTDFMbmMwTW1mLUpDeWNCYzliTjJkdVNwTg?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；搭配法人買賣超與股價位置判斷承接力",
+      "source_score": 3,
+      "source_tier": "主流財經"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "利空",
+      "event_type": "財報",
+      "title": "【26Q1財報公告】中美晶(5483) Q1 營收193.8179億元，創下近2季新低，季減0.52%、年成長0.04%",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-15 15:00",
+      "published_ts": "2026-05-15T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRmh6T2l5U050bUkzZ0UzT1BHOVRVTGJ2Tk9kMGFqT3A1a2pUMUxKR1AtUUZ1SG1YMlo1VFNtd0JmWVVETkI2TzV3MGo5Z1JPQl9HQXItMlhOWUo5WWc3NF9KcTJzNmw2S1kyU3V2SjhQeEFfMGdGeUVYZDRQVlJBWGxyckVaVjlJZXc?oc=5",
+      "reason": "標題含需求疲弱、報價下跌、虧損或評等偏負向關鍵字",
+      "key_point": "偏空訊號；檢查 EPS、毛利率與營益率是否支撐估值",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利空",
+      "event_type": "營收",
+      "title": "【2026/04月營收公告】中美晶(5483) 四月營收66.99億元，營收雙減，年減0.26%",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-11 15:00",
+      "published_ts": "2026-05-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOV004Z1ZhcWxCVGdVUTAwR0l4cDVydjFndXNDSS10dUc5ZTJ2cXREOFh3UmxrczJwVmZCblZ2bjc5Ym9lRFB6WjNqSHhnZGRza2tQclhtODYwcWtDVVQ2SUhqaVZVdmFjSGZ0dnpUclI3WEt6NjdvRzRWT284XzJVZFBCMjlhZnJ6QVE?oc=5",
+      "reason": "標題含需求疲弱、報價下跌、虧損或評等偏負向關鍵字",
+      "key_point": "偏空訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "event_type": "營收",
+      "title": "【2026/03月營收公告】中美晶(5483) 三月營收73.72億元，表現亮眼、呈現雙成長，創近6個月以來新高，年增9.19%",
+      "source": "CMoney",
+      "published": "2026-04-09 15:00",
+      "published_ts": "2026-04-09T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9pYk9YeDlTUVFNQldNLVdINkw0aGY1R3dkeTVpbGJJZ1pjTms4Y1JETE4tRThraTV6M19NMENyenRJRV82SjU5THpodmZQMXJyQi1fQ0hXQkg0MDQ2QlNaNlc1cGs5ekk?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "kind": "公告"
+    }
+  ],
+  "warrant_top_rows": [],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\5483_2026-06-03\\index.html"
+}
