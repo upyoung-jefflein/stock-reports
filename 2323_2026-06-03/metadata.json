@@ -1,0 +1,720 @@
+{
+  "stock_id": "2323",
+  "stock_name": "中環",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "光電業",
+  "data_period": "2025-06-03 to 2026-06-02",
+  "data_date": "2026-06-02",
+  "ohlcv_start": "2025-06-03",
+  "ohlcv_end": "2026-06-02",
+  "last_daily_k_date": "2026-06-02",
+  "valid_trading_days": 244,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-06-03 to 2026-06-02 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "institutional_latest_period": "2026-06-02",
+  "margin_period": "2025-06-03 to 2026-06-02 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_latest_period": "2026-06-02",
+  "warrant_period": "TWSE report_date=1150602 (OK; call=10, put=0, with_exercise_price=10)",
+  "warrant_latest_period": "TWSE report_date=1150602",
+  "fundamental_period": "revenue 2024-01-01 to 2026-05-01; PER/PBR 2025-06-03 to 2026-06-02; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=29; per_rows=244; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
+  "revenue_latest_period": "2026-04",
+  "quarterly_latest_period": "2026-03-31",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260529 (OK; rows=17)",
+  "tdcc_latest_period": "20260529",
+  "etf_latest_period": "2026-06-02",
+  "etf_holding_change_period": "2026-06-02 (OK; holders=1, active_candidates=0; changes=0)",
+  "peer_source_and_list": "FinMind TaiwanStockInfo industry_category candidates + TaiwanStockPrice OHLCV correlation filter; compared=中環(2323), 台亞(2340), 新門(5432), 圓展(3669), 新晶投控(3713), 光麗-KY(6431), 元創精密(3685); failures=大峽谷-KY(5281): No TaiwanStockPrice rows for 5281; 兆遠(4944): No TaiwanStockPrice rows for 4944; 華信科(3627): No TaiwanStockPrice rows for 3627; 奈普(6255): No TaiwanStockPrice rows for 6255; 穎台(3573): No TaiwanStockPrice rows for 3573; 介面(3584): No TaiwanStockPrice rows for 3584; 旺能(3599): No TaiwanStockPrice rows for 3599; 勝華(2384): No TaiwanStockPrice rows for 2384; 奇美電(3009): No TaiwanStockPrice rows for 3009; 精碟(2396): No TaiwanStockPrice rows for 2396; 威力盟(3080): No TaiwanStockPrice rows for 3080; 璨圓(3061): No TaiwanStockPrice rows for 3061",
+  "peer_display_list": "中環(2323)、台亞(2340)、新門(5432)、圓展(3669)、新晶投控(3713)、光麗-KY(6431)、元創精密(3685)",
+  "peer_business_summary": "中環(2323) 定位：面板 / 光學 / 顯示與光電元件；產品組合：面板（占比待補）、背光 / 光學元件（占比待補）、顯示模組（占比待補）、光電材料（占比待補）；資料層級：產業 / 主題推估；同族群比較基準：光電業。對照族群涵蓋：AI 伺服器 / 雲端硬體供應鏈、面板 / 光學 / 顯示與光電元件。",
+  "peer_business_rows": [
+    {
+      "stock_id": "2323",
+      "name": "中環",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "面板 / 光學 / 顯示與光電元件",
+      "product_mix": "面板（占比待補）、背光 / 光學元件（占比待補）、顯示模組（占比待補）、光電材料（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "面板",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "背光 / 光學元件",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "顯示模組",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "光電材料",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "面板報價、車用 / 工控需求、產品規格升級",
+      "valuation_logic": "以報價循環、稼動率、毛利率與庫存水位比較。",
+      "risks": "報價循環、供需失衡、中國產能競爭",
+      "stock_price_watch": "面板報價、車用 / 工控需求、產品規格升級；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：光電產業通用比較；公司實際產品比重需以法說、年報或公告確認",
+      "evidence_keywords": "-",
+      "evidence_sources": "-"
+    },
+    {
+      "stock_id": "5432",
+      "name": "新門",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "面板 / 光學 / 顯示與光電元件",
+      "product_mix": "面板（占比待補）、背光 / 光學元件（占比待補）、顯示模組（占比待補）、光電材料（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "面板",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "背光 / 光學元件",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "顯示模組",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "光電材料",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "面板報價、車用 / 工控需求、產品規格升級",
+      "valuation_logic": "以報價循環、稼動率、毛利率與庫存水位比較。",
+      "risks": "報價循環、供需失衡、中國產能競爭",
+      "stock_price_watch": "面板報價、車用 / 工控需求、產品規格升級；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：光電產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：光電材料、背光 / 光學元件、面板、顯示模組",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 4.0,
+      "matched_products": "光電材料、背光 / 光學元件、面板、顯示模組"
+    },
+    {
+      "stock_id": "3669",
+      "name": "圓展",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "面板 / 光學 / 顯示與光電元件",
+      "product_mix": "面板（占比待補）、背光 / 光學元件（占比待補）、顯示模組（占比待補）、光電材料（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "面板",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "背光 / 光學元件",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "顯示模組",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "光電材料",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "面板報價、車用 / 工控需求、產品規格升級",
+      "valuation_logic": "以報價循環、稼動率、毛利率與庫存水位比較。",
+      "risks": "報價循環、供需失衡、中國產能競爭",
+      "stock_price_watch": "面板報價、車用 / 工控需求、產品規格升級；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：光電產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：光電材料、背光 / 光學元件、面板、顯示模組",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 4.0,
+      "matched_products": "光電材料、背光 / 光學元件、面板、顯示模組"
+    },
+    {
+      "stock_id": "3713",
+      "name": "新晶投控",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "面板 / 光學 / 顯示與光電元件",
+      "product_mix": "面板（占比待補）、背光 / 光學元件（占比待補）、顯示模組（占比待補）、光電材料（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "面板",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "背光 / 光學元件",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "顯示模組",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "光電材料",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "面板報價、車用 / 工控需求、產品規格升級",
+      "valuation_logic": "以報價循環、稼動率、毛利率與庫存水位比較。",
+      "risks": "報價循環、供需失衡、中國產能競爭",
+      "stock_price_watch": "面板報價、車用 / 工控需求、產品規格升級；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：光電產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：光電材料、背光 / 光學元件、面板、顯示模組",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 4.0,
+      "matched_products": "光電材料、背光 / 光學元件、面板、顯示模組"
+    },
+    {
+      "stock_id": "3685",
+      "name": "元創精密",
+      "profile_scope": "產業通用推估",
+      "data_confidence": "中",
+      "product_basis": "產業 / 主題推估",
+      "chain_position": "面板 / 光學 / 顯示與光電元件",
+      "product_mix": "面板（占比待補）、背光 / 光學元件（占比待補）、顯示模組（占比待補）、光電材料（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "面板",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "背光 / 光學元件",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "顯示模組",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "光電材料",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "面板報價、車用 / 工控需求、產品規格升級",
+      "valuation_logic": "以報價循環、稼動率、毛利率與庫存水位比較。",
+      "risks": "報價循環、供需失衡、中國產能競爭",
+      "stock_price_watch": "面板報價、車用 / 工控需求、產品規格升級；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：光電產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：光電材料、背光 / 光學元件、面板、顯示模組",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 4.0,
+      "matched_products": "光電材料、背光 / 光學元件、面板、顯示模組"
+    },
+    {
+      "stock_id": "2340",
+      "name": "台亞",
+      "profile_scope": "官網 / 公開資訊佐證",
+      "data_confidence": "高",
+      "product_basis": "官網 / 公開資訊佐證",
+      "chain_position": "AI 伺服器 / 雲端硬體供應鏈",
+      "product_mix": "AI 伺服器（占比待補）、雲端設備（占比待補）、伺服器 ODM / EMS（占比待補）、資料中心硬體（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "AI 伺服器",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "雲端設備",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "伺服器 ODM / EMS",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "資料中心硬體",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI 伺服器出貨、雲端資本支出、產品單價提升",
+      "valuation_logic": "以 AI 伺服器占比、毛利率、訂單能見度與 EPS 成長評估。",
+      "risks": "報價循環、供需失衡、中國產能競爭",
+      "stock_price_watch": "AI 伺服器出貨、雲端資本支出、產品單價提升；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：光電產業通用比較；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：伺服器",
+      "evidence_keywords": "伺服器",
+      "evidence_sources": "TWSE 公司基本資料 / 官網：https://www.tascsemi.com/、官網延伸頁：https://www.tascsemi.com/product-information/",
+      "product_overlap_score": 0.0,
+      "matched_products": "-"
+    },
+    {
+      "stock_id": "6431",
+      "name": "光麗-KY",
+      "profile_scope": "官網 / 公開資訊佐證",
+      "data_confidence": "高",
+      "product_basis": "官網 / 公開資訊佐證",
+      "chain_position": "AI 伺服器 / 雲端硬體供應鏈",
+      "product_mix": "AI 伺服器（占比待補）、雲端設備（占比待補）、伺服器 ODM / EMS（占比待補）、資料中心硬體（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "AI 伺服器",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "雲端設備",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "伺服器 ODM / EMS",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "資料中心硬體",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "AI 伺服器出貨、雲端資本支出、產品單價提升",
+      "valuation_logic": "以 AI 伺服器占比、毛利率、訂單能見度與 EPS 成長評估。",
+      "risks": "報價循環、供需失衡、中國產能競爭",
+      "stock_price_watch": "AI 伺服器出貨、雲端資本支出、產品單價提升；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：光電產業通用比較；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：ODM",
+      "evidence_keywords": "ODM",
+      "evidence_sources": "TWSE 公司基本資料 / 官網：http://www.kl-holdings.com/、官網延伸頁：http://www.kl-holdings.com/about/person#department",
+      "product_overlap_score": 0.0,
+      "matched_products": "-"
+    }
+  ],
+  "peer_business_interpretation": [
+    "中環(2323) 定位：面板 / 光學 / 顯示與光電元件；產品組合：面板（占比待補）、背光 / 光學元件（占比待補）、顯示模組（占比待補）、光電材料（占比待補）；資料層級：產業 / 主題推估；同族群比較基準：光電業。對照族群涵蓋：AI 伺服器 / 雲端硬體供應鏈、面板 / 光學 / 顯示與光電元件。",
+    "估值比較應優先看產品組合與獲利率差異：以報價循環、稼動率、毛利率與庫存水位比較。",
+    "主要風險要和同族群分開看：報價循環、供需失衡、中國產能競爭。"
+  ],
+  "etf_display_status": "持有快照 2026-06-02，未命中最新異動",
+  "tdcc_display_status": "20260529；大額 44.24% / 小額 18.10%",
+  "warrant_display_status": "10 檔，認購 10 / 認售 0",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "2026Q1 毛利率 26.38%（年變化 +3.30 個百分點）、營業利益率 6.21%（年變化 +8.60 個百分點）",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 20.17%（年變化 -5.30 個百分點）、稅後淨利率 -21.55%（年變化 +39.97 個百分點）、ROE -1.56%（年變化 +4.90 個百分點）",
+  "revenue_trend_summary": "2026-04 月營收 6.02 億元；MoM -8.19%；YoY -1.53%；近 3 個月累計 YoY 5.90%；近 12 個月滾動營收 YoY 1.43%",
+  "fundamental_price_estimate_summary": "悲觀 9 元 / 中性 12 元 / 樂觀 16 元；產業模型：景氣循環 PER（PER 下限 6.0x / 上限 25.0x）；加權框架：成長電子；近四季 EPS 2.18；前瞻 EPS 估 2.17（成長假設 -0.4%）；估值 PER 6.0x / 6.1x / 7.2x；風險折價：年化 ROE 偏低（-4%）；目前 PER 5.3x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=6.4x/6.7x/6.9x；目前 PER 位於近一年 24% 分位；市場情境 20x/25x/30x=44/54/65 元；模型推估：EPS/PER 13 元（前瞻 EPS 2.17 × 中性 PER 6.1x）、技術型態 12 元（下降通道 突破量測目標）、法人籌碼成本 10 元（外資 / 投信近20與60日加碼成本）、同族群動能 9 元（同族群中位報酬 +26.6% / 本股 +45.9%）、殖利率 6 元（歷史殖利率中位數回推）；多模型加權參考 12 元；歷史 PBR 分位 Q25/Q50/Q75=0.57x/0.60x/0.63x；技術型態目標 12 元（45日下降通道 / 有效 7.2）；法人籌碼成本 外資 11 元 / 投信 10 元；同族群相對動能參考 9 元（同族群中位報酬 +26.6% / 本股 +45.9%）；殖利率模型 6 元（現殖利率 1.72% / 中位 3.15%）；現價 11.60 元，較中性估值 -4.4%；現價接近中性估值；合理偏低區：若技術面轉強，具估值修復條件",
+  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能轉弱、最新月營收年增偏弱、PER 位階相對不高、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期改善、營業費用率較去年同期下降。",
+  "chip_summary": {
+    "margin_balance": 30236.0,
+    "margin_5d_change": 331.0,
+    "short_balance": 90.0,
+    "short_5d_change": 46.0,
+    "foreign_latest": 4651946.0,
+    "foreign_5d": 10004815.0,
+    "foreign_20d": -4516736.0,
+    "trust_latest": 17000.0,
+    "trust_5d": 79000.0,
+    "trust_20d": 4166000.0,
+    "total_latest": 6404292.0,
+    "total_5d": 11963462.0,
+    "total_20d": 1766286.0
+  },
+  "news_display_status": "新聞面中性（利多 0 / 利空 0 / 中性 0；高可信 0 則）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 5 則（法說會 1 / 公告 4）",
+  "summary_one_line": "偏多強勢，偏多震盪；站穩 MA10 10.33 並突破 11.60 才有續攻機會，跌破 MA20 10.28 轉防守。",
+  "summary_overall": "偏多強勢；收盤站上 MA5, MA5 高於 MA10, MA10 上方且投信 5/10 日偏買",
+  "summary_tomorrow": "偏多震盪",
+  "summary_one_month": "偏多延續",
+  "summary_support": "第一 10.59 / 第二 10.33 / 強 10.28",
+  "summary_pressure": "11.60",
+  "summary_price_pattern": "近45日下降通道 有效7.2 / 突破；近180日上升通道 有效6.6 / 突破",
+  "summary_price_pattern_brief": "近45日下降通道 有效7.2 / 突破；近180日上升通道 有效6.6 / 突破",
+  "summary_trade_plan": "買點：突破 11.20 後需再站穩，未確認前避免追價；賣點：跌破 10.33，先降權重。依據：下降通道有效分數 7.2。",
+  "price_pattern_rows": [
+    {
+      "lookback": 45,
+      "label": "下降通道",
+      "support": 9.784,
+      "resistance": 11.2,
+      "score": 7.25,
+      "touch_count": 21,
+      "slope_stability": 39.99531186068787,
+      "volume_confirmation": "量能確認",
+      "breakout_status": "突破",
+      "confirm_status": "待確認"
+    },
+    {
+      "lookback": 180,
+      "label": "上升通道",
+      "support": 8.979000000000001,
+      "resistance": 11.35,
+      "score": 6.6000000000000005,
+      "touch_count": 71,
+      "slope_stability": 0.0,
+      "volume_confirmation": "量能確認",
+      "breakout_status": "突破",
+      "confirm_status": "待確認"
+    }
+  ],
+  "summary_atr": "ATR14 0.46，常態區間 11.14～12.06",
+  "summary_key_watch": "價漲量增；明日觀察 MA5 10.59 / MA10 10.33",
+  "summary_risk": "跌破 MA10 10.33 且放量，短線轉弱；跌破 MA20 10.28 則整理擴大",
+  "summary_warrant": "認購成交占 100.00%，近價外認購 3 檔，前五大成交占 90.63%",
+  "summary_warrant_signal": "中性偏投機",
+  "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
+  "summary_warrant_price_view": "現股距認購主流履約價仍有 30.17% 空間，屬高想像但投機風險也高",
+  "generated_at": "2026-06-03T13:08:54+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2323_2026-06-03\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2323_2026-06-03\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2323_2026-06-03\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2323_2026-06-03\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2323_2026-06-03\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2323_2026-06-03\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [],
+  "tdcc_rows": [
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 69709,
+      "shares": 13628877,
+      "ratio": 1.25
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 45986,
+      "shares": 101979947,
+      "ratio": 9.36
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 10987,
+      "shares": 81617606,
+      "ratio": 7.49
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 3452,
+      "shares": 42417568,
+      "ratio": 3.89
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 2231,
+      "shares": 40766861,
+      "ratio": 3.74
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 1896,
+      "shares": 48237165,
+      "ratio": 4.42
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 882,
+      "shares": 31399586,
+      "ratio": 2.88
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 598,
+      "shares": 27998927,
+      "ratio": 2.57
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 1120,
+      "shares": 81140704,
+      "ratio": 7.44
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 537,
+      "shares": 76564348,
+      "ratio": 7.02
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 224,
+      "shares": 61501597,
+      "ratio": 5.64
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 78,
+      "shares": 37854611,
+      "ratio": 3.47
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 31,
+      "shares": 21896739,
+      "ratio": 2.01
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 20,
+      "shares": 18273583,
+      "ratio": 1.67
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 74,
+      "shares": 404070209,
+      "ratio": 37.09
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 0,
+      "shares": 0,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260529",
+      "stock_id": "2323",
+      "level": 17,
+      "level_label": "合計",
+      "people": 137825,
+      "shares": 1089348328,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260529",
+      "total_people": 137825,
+      "total_shares": 1089348328,
+      "small_ratio": 18.1,
+      "mid_ratio": 20.1,
+      "large_ratio": 44.24,
+      "million_ratio": 37.09,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2323_2026-06-03\\07_集保股權歷史趨勢圖.png",
+  "broker_trading_period": "2026-06-02 to 2026-06-02 (no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-06-02 rows=20)",
+  "broker_import_status": "券商分點：2026-06-02 to 2026-06-02；no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-06-02 rows=20",
+  "broker_trading_latest_period": "2026-06-02",
+  "broker_pattern_result": {
+    "ok": false,
+    "message": "分點買賣後 5 / 30 交易日勝率回測",
+    "forward_days": 5,
+    "rows": [],
+    "best": null,
+    "signals": [],
+    "horizons": {
+      "5": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      },
+      "30": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      }
+    },
+    "latest_rows": [],
+    "chart_series": []
+  },
+  "news_rows": [],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "財報",
+      "title": "【26Q1財報公告】中環(2323) Q1 營收20.7546億元，連3季成長，季增8.29%、年成長15.95%",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-15 15:00",
+      "published_ts": "2026-05-15T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVlFtTl94WkJENGVZdkhYS3dhSzh3QXRpZUN0UzVWbmFsY00tM1dEU3VwYVV1U1Y1a2djYlV2U1hJZDFDX2VFT0pvWVI3endTX2EwRjZMS2dTQ0RrV1g4a2JOTThKTGREOTJ0YWNrdFpYTmZxdXdQY3NpYkRiT3VrVVFQQ1pjWHFQY0E?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；檢查 EPS、毛利率與營益率是否支撐估值",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利空",
+      "event_type": "營收",
+      "title": "【2026/04月營收公告】中環(2323) 四月營收6.02億元，營收雙減，年減1.53%",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-11 15:00",
+      "published_ts": "2026-05-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOFRobWVNbHNndFFOZ1hhTlFwMzBzTVVQVzQxeTdPakUyVVM4bVo1M2R4eUFBNm9SWWpSelNmTTdrWTUtWDUwdjlhS2ZBYldnUzlGX3dzbnNfTWVLSmhXOHRIdWhHajBBVllkZWJIbGdlOVlfcWtSc3p6ampDMXlnSlIzRG1kM1dLeXc?oc=5",
+      "reason": "標題含需求疲弱、報價下跌、虧損或評等偏負向關鍵字",
+      "key_point": "偏空訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "營收",
+      "title": "2323 中環 - 【營收快訊】中環(2323)公告04月營收",
+      "source": "CMoney",
+      "published": "2026-05-10 23:07",
+      "published_ts": "2026-05-10T23:07:59+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5rR2F0WjZBNjI1blVmUUhhT25uakJNS0RuVi01ZmNMTkRfb0d0U1ZHSWxrZ2hYcmVjVDk4c21hd09xd2JQZ1JqWEFJcGtseUsxcG92V3lLMTI?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "營收",
+      "title": "2323 中環 - 【營收快訊】中環(2323)公告03月營收",
+      "source": "CMoney",
+      "published": "2026-04-10 15:00",
+      "published_ts": "2026-04-10T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBONnVuclNjWEYtcUEzZVBFb2JWbDlEZXU3V0UzdEF0V1dySkxLeUlVRTJYalVpaXJvMnRmMGlUSC0xZDhaRjZMNTdPbGlMOU11cE5NTmxIcHE?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "中性",
+      "event_type": "法說",
+      "title": "中環下午6點舉行重大訊息說明會 說明現金減資退還股款",
+      "source": "UDN",
+      "published": "2026-03-12 15:00",
+      "published_ts": "2026-03-12T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZemtHX1duaE5JQm00ajZpZklRcUhLbnJJRzVRNXVVRklpSWd1ZWRkVmlJU0toV3l6b2hvWlAyM3BSTUpLRGQwWHprd1BHUElM0gFWQVVfeXFMUFFhUW5KOHRqeS1XMm1oalhKQ3liTnpUSzZmb0V3aHgxb0RQc0FBVmVQME9zZ0s0MFF3Q0NTTmZEQUlQRXVQdndralBGSmJKWUF2RXNvM3c?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；追蹤管理層展望、訂單與獲利率指引",
+      "source_score": 4,
+      "source_tier": "官方 / 公告",
+      "kind": "法說會"
+    }
+  ],
+  "warrant_top_rows": [
+    {
+      "warrant_id": "062826",
+      "warrant_name": "中環元大5A購01",
+      "call_put": "認購",
+      "exercise_price": 15.16,
+      "trading_money": 783710.0,
+      "trading_volume": 1497000.0
+    },
+    {
+      "warrant_id": "061215",
+      "warrant_name": "中環群益63購01",
+      "call_put": "認購",
+      "exercise_price": 18.0,
+      "trading_money": 647240.0,
+      "trading_volume": 650000.0
+    },
+    {
+      "warrant_id": "061469",
+      "warrant_name": "中環國泰5A購01",
+      "call_put": "認購",
+      "exercise_price": 15.0,
+      "trading_money": 542160.0,
+      "trading_volume": 1122000.0
+    },
+    {
+      "warrant_id": "060097",
+      "warrant_name": "中環國票59購01",
+      "call_put": "認購",
+      "exercise_price": 12.5,
+      "trading_money": 271760.0,
+      "trading_volume": 327000.0
+    },
+    {
+      "warrant_id": "065542",
+      "warrant_name": "中環國票5B購01",
+      "call_put": "認購",
+      "exercise_price": 10.5,
+      "trading_money": 238940.0,
+      "trading_volume": 321000.0
+    }
+  ],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2323_2026-06-03\\index.html"
+}
