@@ -14,8 +14,8 @@
   "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
   "institutional_period": "2025-06-18 to 2026-06-18 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
   "institutional_latest_period": "2026-06-18",
-  "margin_period": "2025-06-18 to 2026-06-17 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
-  "margin_latest_period": "2026-06-17",
+  "margin_period": "2025-06-18 to 2026-06-18 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_latest_period": "2026-06-18",
   "warrant_period": "TWSE report_date=1150617 (OK; call=112, put=2, with_exercise_price=114)",
   "warrant_latest_period": "TWSE report_date=1150617",
   "fundamental_period": "revenue 2024-01-01 to 2026-06-01; PER/PBR 2025-06-18 to 2026-06-18; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=245; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
@@ -693,10 +693,10 @@
     "summary": "大盤風險正常（ATR4.8%）"
   },
   "chip_summary": {
-    "margin_balance": 10438.0,
-    "margin_5d_change": -1078.0,
-    "short_balance": 47.0,
-    "short_5d_change": 2.0,
+    "margin_balance": 10015.0,
+    "margin_5d_change": -1462.0,
+    "short_balance": 62.0,
+    "short_5d_change": 22.0,
     "foreign_latest": -1833994.0,
     "foreign_5d": -11961.0,
     "foreign_20d": -6280561.0,
@@ -761,7 +761,7 @@
   "summary_warrant_signal": "中性偏投機",
   "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
   "summary_warrant_price_view": "現股距認購主流履約價仍有 16.86% 空間，屬高想像但投機風險也高",
-  "generated_at": "2026-06-18T18:04:05+08:00",
+  "generated_at": "2026-06-18T23:04:16+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1513_2026-06-18\\01_日線完整技術與籌碼分析圖.png",
@@ -943,8 +943,8 @@
     }
   ],
   "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\1513_2026-06-18\\07_集保股權歷史趨勢圖.png",
-  "broker_trading_period": "2026-03-24 to 2026-06-18 (OK; local rows=8145, days=250, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-18 rows=20)",
-  "broker_import_status": "券商分點：2026-03-24 to 2026-06-18；OK; local rows=8145, days=250, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-18 rows=20",
+  "broker_trading_period": "2026-03-24 to 2026-06-18 (OK; local rows=8165, days=251, imported_files=0；HiStock branch fetch failed: HTTP Error 503: Service Unavailable；nStock 2026-06-18 rows=20)",
+  "broker_import_status": "券商分點：2026-03-24 to 2026-06-18；OK; local rows=8165, days=251, imported_files=0；HiStock branch fetch failed: HTTP Error 503: Service Unavailable；nStock 2026-06-18 rows=20",
   "broker_trading_latest_period": "2026-06-18",
   "broker_pattern_result": {
     "ok": true,
