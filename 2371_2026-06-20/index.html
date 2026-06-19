@@ -98,6 +98,17 @@
       font-weight: 700;
       line-height: 1.55;
     }
+    .decision-table th {
+      width: 110px;
+      color: #334155;
+      background: #f8fafc;
+      font-weight: 800;
+    }
+    .decision-table td {
+      font-size: 15px;
+      line-height: 1.55;
+      color: #111827;
+    }
     .summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
     .summary-card {
       border: 1px solid #dde4ef;
@@ -137,6 +148,9 @@
     .freshness-list span { color: #64748b; margin-right: 6px; }
     .freshness-list strong { color: #111827; font-weight: 600; }
     .notice { line-height: 1.7; color: #3f4b5f; }
+    .trade-basis { margin-top: 12px; }
+    .trade-basis h3 { margin: 0 0 8px; font-size: 16px; }
+    .trade-basis th { width: auto; }
     @media (max-width: 720px) {
       header { padding: 18px 14px 14px; }
       main { padding: 10px; }
@@ -151,6 +165,7 @@
       .table-scroll tr { display: table-row; border-bottom: 0; padding: 0; }
       .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
       .summary-decision { padding: 9px 10px; font-size: 13px; }
+      .decision-table td { font-size: 13px; }
       .summary-card { min-height: auto; padding: 9px; }
       .summary-card strong { font-size: 13px; }
       .mini-kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
@@ -174,22 +189,17 @@
 <body>
   <header>
     <h1>大同(2371) 台股技術分析報告</h1>
-    <div>產生時間：2026-06-20T01:34:14+08:00</div>
+    <div>產生時間：2026-06-20T02:06:38+08:00</div>
   </header>
   <main>
     
     <section class="panel conclusion">
       <h2>結論摘要</h2>
-      <div class="summary-decision">偏空弱勢，區間震盪 / 區間震盪 / 中性 29 元；現價差 -3.6%</div>
-      <div class="summary-grid"><div class="summary-card"><span>趨勢</span><strong>偏空弱勢，區間震盪</strong></div>
-<div class="summary-card"><span>估值</span><strong>中性 29 元；現價差 -3.6%</strong></div>
-<div class="summary-card"><span>技術可行性</span><strong>低（26）；收盤跌破MA20、跌破MA60</strong></div>
-<div class="summary-card"><span>支撐 / 壓力</span><strong>第一 28.24 / 第二 28.54 / 強 29.35 / 壓力 32.80</strong></div>
-<div class="summary-card"><span>觀察</span><strong>價漲量縮；MA5 28.24 / MA10 28.54</strong></div>
-<div class="summary-card"><span>買點</span><strong>靠近 29.37 守住，或放量突破 39.76 再加分</strong></div>
-<div class="summary-card"><span>賣點 / 風險</span><strong>已跌破 29.37，反彈未站回前偏防守；跌破 MA10 28.54 且放量，短線轉弱
-跌破 MA20 29.35 則整理擴大</strong></div>
-<div class="summary-card"><span>獲利率</span><strong>毛利率 16.44% / 營益率 3.77%</strong></div></div>
+      <table class="decision-table"><tbody><tr><th>今日狀態</th><td>偏空弱勢，區間震盪；技術低（26）；中性 29 元；現價差 -3.6%</td></tr>
+<tr><th>短線方向</th><td>區間震盪；價漲量縮；MA5 28.24 / MA10 28.54</td></tr>
+<tr><th>關鍵價位</th><td>支撐 第一 28.24 / 第二 28.54 / 強 29.35；壓力 32.80</td></tr>
+<tr><th>風險 / 操作</th><td>買點 靠近 29.37 守住，或放量突破 39.76 再加分；賣點 已跌破 29.37，反彈未站回前偏防守；跌破 MA10 28.54 且放量，短線轉弱
+跌破 MA20 29.35 則整理擴大</td></tr></tbody></table>
     </section>
     
     
@@ -209,27 +219,55 @@
         <section class="panel chart-panel">
           <h2>01_日線完整技術與籌碼分析圖</h2>
           <div class="chart-note"><strong>財報估值參考</strong><span>悲觀 23 / 中性 29 / 樂觀 43</span></div>
-          <img src="01_日線完整技術與籌碼分析圖.png?v=2026-06-20T01:34:14+08:00" alt="01_日線完整技術與籌碼分析圖">
+          <img src="01_日線完整技術與籌碼分析圖.png?v=2026-06-20T02:06:38+08:00" alt="01_日線完整技術與籌碼分析圖">
+          
+      <div class="trade-basis">
+        <h3>買賣點依據</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>類型</th><th>條件</th><th>依據</th></tr></thead>
+            <tbody><tr><td>買點</td><td>靠近 29.37 守住，或放量突破 39.76 再加分</td><td>近180日下降通道 有效6.5 / 跌破；近20日緩步下行 有效3.2 / 區間內</td></tr>
+<tr><td>賣點</td><td>已跌破 29.37，反彈未站回前偏防守</td><td>壓力 / 型態 / 估值</td></tr>
+<tr><td>停損 / 轉弱</td><td>跌破 MA10 28.54 且放量，短線轉弱；跌破 MA20 29.35 則整理擴大</td><td>MA10 / MA20 / 量能</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    
         </section>
         
 
         <section class="panel chart-panel">
           <h2>02_周線完整技術與趨勢分析圖</h2>
           
-          <img src="02_周線完整技術與趨勢分析圖.png?v=2026-06-20T01:34:14+08:00" alt="02_周線完整技術與趨勢分析圖">
+          <img src="02_周線完整技術與趨勢分析圖.png?v=2026-06-20T02:06:38+08:00" alt="02_周線完整技術與趨勢分析圖">
+          
         </section>
         
 
         <section class="panel chart-panel">
           <h2>03_月線完整技術與長期趨勢分析圖</h2>
           
-          <img src="03_月線完整技術與長期趨勢分析圖.png?v=2026-06-20T01:34:14+08:00" alt="03_月線完整技術與長期趨勢分析圖">
+          <img src="03_月線完整技術與長期趨勢分析圖.png?v=2026-06-20T02:06:38+08:00" alt="03_月線完整技術與長期趨勢分析圖">
+          
         </section>
         
     
         <section class="panel analysis">
-          <h2>八、基本面 EPS / 月營收</h2>
+          <h2>基本面 / 預測股價</h2>
           
+      <h3>預測股價摘要</h3>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>項目</th><th>數值</th><th>依據</th></tr></thead>
+          <tbody><tr><td>悲觀</td><td class="cell-number">23</td><td>基本面防守估值</td></tr>
+<tr><td>中性</td><td class="cell-number">29</td><td>主要合理價</td></tr>
+<tr><td>樂觀</td><td class="cell-number">43</td><td>一個月內需量價配合</td></tr>
+<tr><td>5 日預測區間</td><td class="cell-number">25.9 - 30.6</td><td>技術 / 事件 / 波動收斂</td></tr>
+<tr><td>一個月合理區間</td><td class="cell-number">27.4 - 29.3</td><td>多模型收斂</td></tr>
+<tr><td>失效條件</td><td class="cell-number">跌破 MA10 28.54 且放量，短線轉弱；跌破 MA20 29.35 則整理擴大</td><td>風險控管</td></tr></tbody>
+        </table>
+      </div>
+    
       <h3>多模型股價參考</h3>
       <div class="table-scroll">
         <table>
@@ -375,7 +413,6 @@
         </table>
       </div>
     
-          <ul><li>是否支持股價：支持度偏弱。理由：最新月營收年減雙位數、正式 EPS 年減、毛利率較去年同期下滑、稅後淨利率較去年同期下滑、營業費用率較去年同期下降。</li></ul>
         </section>
         
     
@@ -447,7 +484,8 @@
         <section class="panel chart-panel">
           <h2>06_基本面分析圖</h2>
           
-          <img src="06_基本面分析圖.png?v=2026-06-20T01:34:14+08:00" alt="06_基本面分析圖">
+          <img src="06_基本面分析圖.png?v=2026-06-20T02:06:38+08:00" alt="06_基本面分析圖">
+          
         </section>
         
     
@@ -565,7 +603,8 @@
         <section class="panel chart-panel">
           <h2>05_同族群比較分析圖</h2>
           
-          <img src="05_同族群比較分析圖.png?v=2026-06-20T01:34:14+08:00" alt="05_同族群比較分析圖">
+          <img src="05_同族群比較分析圖.png?v=2026-06-20T02:06:38+08:00" alt="05_同族群比較分析圖">
+          
         </section>
         
     
@@ -756,7 +795,8 @@
         <section class="panel chart-panel">
           <h2>04_權證完整分析圖</h2>
           
-          <img src="04_權證完整分析圖.png?v=2026-06-20T01:34:14+08:00" alt="04_權證完整分析圖">
+          <img src="04_權證完整分析圖.png?v=2026-06-20T02:06:38+08:00" alt="04_權證完整分析圖">
+          
         </section>
         
       <div class="table-scroll">

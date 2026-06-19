@@ -1022,7 +1022,7 @@
   "summary_warrant_signal": "中性偏投機",
   "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
   "summary_warrant_price_view": "現股距認購主流履約價仍有 62.13% 空間，屬高想像但投機風險也高",
-  "generated_at": "2026-06-20T01:34:14+08:00",
+  "generated_at": "2026-06-20T02:06:38+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2371_2026-06-20\\01_日線完整技術與籌碼分析圖.png",
@@ -3669,23 +3669,23 @@
   "prediction_history_status": "已記錄本次預測快照，待後續交易日回測校準",
   "llm_training_status": {
     "ok": true,
-    "count": 689,
+    "count": 690,
     "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\llm_technical_training_examples.jsonl",
     "dashboard": {
       "ok": true,
       "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\technical_training_dashboard.html",
       "summary": {
-        "generated_at": "2026-06-20T01:34:19+08:00",
-        "examples": 689,
+        "generated_at": "2026-06-20T02:06:43+08:00",
+        "examples": 690,
         "stocks": 11,
         "quality_counts": {
-          "高": 639,
+          "高": 640,
           "未標記": 26,
           "中": 24
         },
         "industry_counts": {
           "半導體業": 170,
-          "電子工業": 160,
+          "電子工業": 161,
           "電機機械": 89,
           "通信網路業": 86,
           "其他電子業": 80,
@@ -3698,7 +3698,7 @@
           {
             "industry": "半導體業",
             "examples": 170,
-            "example_pct": 24.7,
+            "example_pct": 24.6,
             "stocks": 2,
             "high_quality": 156,
             "mid_quality": 14,
@@ -3710,16 +3710,16 @@
           },
           {
             "industry": "電子工業",
-            "examples": 160,
-            "example_pct": 23.2,
+            "examples": 161,
+            "example_pct": 23.3,
             "stocks": 2,
-            "high_quality": 160,
+            "high_quality": 161,
             "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "CCL / 銅箔基板、PCB / HDI、電子工業通用樣本",
-            "latest_sample_date": "2026-02-05"
+            "top_tags": "電子工業通用樣本、CCL / 銅箔基板、PCB / HDI",
+            "latest_sample_date": "2026-02-06"
           },
           {
             "industry": "電機機械",
@@ -3832,12 +3832,12 @@
           "MPO / 光纖配線盒": 86,
           "Optical Engine光引擎": 86,
           "光通訊模組": 86,
+          "電子工業通用樣本": 81,
           "AI伺服器 / GPU伺服器": 80,
           "AI伺服器ODM / EMS": 80,
           "CCL / 銅箔基板": 80,
           "PCB / HDI": 80,
           "鋼鐵工業通用樣本": 80,
-          "電子工業通用樣本": 80,
           "文化創意業通用樣本": 8,
           "電子零組件業通用樣本": 8,
           "電腦及週邊設備業通用樣本": 8
@@ -3846,7 +3846,7 @@
           {
             "tag": "DDR4 / DDR5",
             "examples": 170,
-            "example_pct": 24.7,
+            "example_pct": 24.6,
             "stocks": 2,
             "top_industry": "半導體業",
             "high_quality": 156,
@@ -3858,7 +3858,7 @@
           {
             "tag": "DRAM / 利基型記憶體",
             "examples": 170,
-            "example_pct": 24.7,
+            "example_pct": 24.6,
             "stocks": 2,
             "top_industry": "半導體業",
             "high_quality": 156,
@@ -3870,7 +3870,7 @@
           {
             "tag": "NAND / NOR Flash",
             "examples": 170,
-            "example_pct": 24.7,
+            "example_pct": 24.6,
             "stocks": 2,
             "top_industry": "半導體業",
             "high_quality": 156,
@@ -3882,7 +3882,7 @@
           {
             "tag": "NAND Flash",
             "examples": 170,
-            "example_pct": 24.7,
+            "example_pct": 24.6,
             "stocks": 2,
             "top_industry": "半導體業",
             "high_quality": 156,
@@ -3894,7 +3894,7 @@
           {
             "tag": "NOR Flash",
             "examples": 170,
-            "example_pct": 24.7,
+            "example_pct": 24.6,
             "stocks": 2,
             "top_industry": "半導體業",
             "high_quality": 156,
@@ -4060,6 +4060,18 @@
             "latest_sample_date": "2026-04-27"
           },
           {
+            "tag": "電子工業通用樣本",
+            "examples": 81,
+            "example_pct": 11.7,
+            "stocks": 1,
+            "top_industry": "電子工業",
+            "high_quality": 81,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-02-06"
+          },
+          {
             "tag": "AI伺服器 / GPU伺服器",
             "examples": 80,
             "example_pct": 11.6,
@@ -4120,18 +4132,6 @@
             "latest_sample_date": "2026-02-05"
           },
           {
-            "tag": "電子工業通用樣本",
-            "examples": 80,
-            "example_pct": 11.6,
-            "stocks": 1,
-            "top_industry": "電子工業",
-            "high_quality": 80,
-            "mid_quality": 0,
-            "low_quality": 0,
-            "unlabeled_quality": 0,
-            "latest_sample_date": "2026-02-05"
-          },
-          {
             "tag": "文化創意業通用樣本",
             "examples": 8,
             "example_pct": 1.2,
@@ -4169,7 +4169,7 @@
           }
         ],
         "source_counts": {
-          "rolling_ohlcv_backtest": 689
+          "rolling_ohlcv_backtest": 690
         },
         "latest_sample_date": "2026-04-30",
         "manifest": {
@@ -4180,6 +4180,6 @@
         }
       }
     },
-    "message": "已輸出 689 筆 LLM 技術訓練樣本"
+    "message": "已輸出 690 筆 LLM 技術訓練樣本"
   }
 }
