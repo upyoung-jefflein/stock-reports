@@ -28,7 +28,7 @@
   "etf_holding_change_period": "2026-06-18 (OK; holders=30, active_candidates=10; changes=0)",
   "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=南亞科(2408), 華邦電(2344), 旺宏(2337), 晶豪科(3006), 群聯(8299); failures=none",
   "peer_display_list": "南亞科(2408)、華邦電(2344)、旺宏(2337)、晶豪科(3006)、群聯(8299)",
-  "peer_business_summary": "南亞科(2408) 定位：記憶體 / DRAM / Flash 供應鏈；產品組合：DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）；資料層級：官網 / 公開資訊佐證；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：記憶體 / DRAM / Flash 供應鏈、記憶體與半導體製造、記憶體製造 / IC。",
+  "peer_business_summary": "南亞科(2408) 定位：記憶體 / DRAM / Flash 供應鏈；產品組合：DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）；資料層級：官網 / 公開資訊佐證；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：記憶體 / DRAM / Flash 供應鏈、記憶體 IC / DRAM 相關、記憶體與半導體製造。",
   "peer_business_rows": [
     {
       "stock_id": "2408",
@@ -73,52 +73,6 @@
       "comparability": "高：記憶體製造同業；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：DRAM、DDR、DDR4、DDR5",
       "evidence_keywords": "DRAM、DDR、DDR4、DDR5",
       "evidence_sources": "TWSE 公司基本資料 / 官網：https://www.nanya.com、官網延伸頁：https://www.nanya.com/en/Product/List/450/2478"
-    },
-    {
-      "stock_id": "2344",
-      "name": "華邦電",
-      "profile_scope": "官網 / 公開資訊佐證",
-      "data_confidence": "高",
-      "product_basis": "官網 / 公開資訊佐證",
-      "chain_position": "記憶體 / DRAM / Flash 供應鏈",
-      "product_mix": "DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）",
-      "product_mix_items": [
-        {
-          "product": "DRAM",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "利基型記憶體",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "NAND Flash",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "NOR Flash",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "記憶體晶片 / 模組",
-          "percent": null,
-          "source": ""
-        }
-      ],
-      "product_mix_has_percent": false,
-      "growth_drivers": "DRAM / Flash 報價循環、庫存去化、稼動率回升",
-      "valuation_logic": "以記憶體報價、庫存水位、稼動率、毛利率修復與 PBR/PER 區間交叉評估；虧轉盈或 EPS 低檔時不宜只看 PER。",
-      "risks": "報價波動、需求循環、同業產能競爭",
-      "stock_price_watch": "DRAM / Flash 報價循環、庫存去化、稼動率回升；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：記憶體製造 / IC 同業；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：記憶體、DRAM；產品重疊：DRAM、NAND Flash、NOR Flash、利基型記憶體、記憶體晶片 / 模組",
-      "evidence_keywords": "記憶體、DRAM",
-      "evidence_sources": "TWSE 公司基本資料 / 官網：https://WWW.WINBOND.COM、Yahoo股市",
-      "product_overlap_score": 5.0,
-      "matched_products": "DRAM、NAND Flash、NOR Flash、利基型記憶體、記憶體晶片 / 模組"
     },
     {
       "stock_id": "3006",
@@ -203,6 +157,42 @@
       "matched_products": "DRAM、利基型記憶體、NAND Flash、NOR Flash、記憶體晶片 / 模組"
     },
     {
+      "stock_id": "2344",
+      "name": "華邦電",
+      "profile_scope": "個股資料",
+      "data_confidence": "高",
+      "product_basis": "公司產品資料",
+      "chain_position": "記憶體 IC / DRAM 相關",
+      "product_mix": "DRAM（占比待補）、記憶體產品（占比待補）、利基型應用（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "記憶體產品",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基型應用",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "記憶體報價回升、利基型需求、庫存循環",
+      "valuation_logic": "以記憶體循環、毛利率與 PBR 區間為主。",
+      "risks": "報價波動、需求循環、同業產能競爭",
+      "stock_price_watch": "記憶體報價回升、利基型需求、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：記憶體製造 / IC 同業；產品重疊：DRAM、利基型記憶體、記憶體晶片 / 模組",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 1.94,
+      "matched_products": "DRAM、利基型記憶體、記憶體晶片 / 模組"
+    },
+    {
       "stock_id": "2337",
       "name": "旺宏",
       "profile_scope": "個股資料",
@@ -240,7 +230,7 @@
     }
   ],
   "peer_business_interpretation": [
-    "南亞科(2408) 定位：記憶體 / DRAM / Flash 供應鏈；產品組合：DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）；資料層級：官網 / 公開資訊佐證；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：記憶體 / DRAM / Flash 供應鏈、記憶體與半導體製造、記憶體製造 / IC。",
+    "南亞科(2408) 定位：記憶體 / DRAM / Flash 供應鏈；產品組合：DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）；資料層級：官網 / 公開資訊佐證；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：記憶體 / DRAM / Flash 供應鏈、記憶體 IC / DRAM 相關、記憶體與半導體製造。",
     "估值比較應優先看產品組合與獲利率差異：以記憶體報價、庫存水位、稼動率、毛利率修復與 PBR/PER 區間交叉評估；虧轉盈或 EPS 低檔時不宜只看 PER。",
     "主要風險要和同族群分開看：報價反轉、景氣循環、庫存與資本支出。"
   ],
@@ -712,7 +702,40 @@
     "total_5d": 90583023.0,
     "total_20d": 166864542.0
   },
-  "news_display_status": "新聞面偏利多（利多 4 / 利空 2 / 中性 2；高可信 0 則）",
+  "technical_feasibility": {
+    "ok": true,
+    "score": 91.5,
+    "grade": "高",
+    "trend": "多頭排列",
+    "close": 459.5,
+    "ma5": 418.2,
+    "ma10": 382.65,
+    "ma20": 365.85,
+    "ma60": 283.65,
+    "atr14_pct": 6.86,
+    "volume_ratio20": 1.0,
+    "pattern_label": "上升通道",
+    "pattern_lookback": 90,
+    "pattern_validity": 100.0,
+    "pattern_hit_rate": 50.0,
+    "foreign_5d": 64491462.0,
+    "trust_5d": 23599211.0,
+    "score_reasons": [
+      "短均多頭排列",
+      "站上MA60",
+      "型態有效性加分",
+      "ATR偏高",
+      "外資投信同步偏買"
+    ],
+    "training_calibration": {
+      "sample_count": 190,
+      "industry_sample_count": 0,
+      "score_adjust": 0.0,
+      "reason": ""
+    },
+    "summary": "技術可行性高（92）；多頭排列，型態可信100，量比1.00，ATR 6.9%"
+  },
+  "news_display_status": "新聞面偏利多（利多 3 / 利空 2 / 中性 3；高可信 0 則）",
   "disclosure_display_status": "近 120 天公告/法說追蹤 8 則（法說會 4 / 公告 4）",
   "summary_one_line": "偏多強勢，偏多震盪；站穩 MA10 382.65 並突破 459.50 才有續攻機會，跌破 MA20 365.85 轉防守。",
   "summary_overall": "偏多強勢；收盤站上 MA5, MA5 高於 MA10, MA10 上方且投信 5/10 日偏買",
@@ -766,7 +789,7 @@
   "summary_warrant_signal": "小幅加分",
   "summary_warrant_plain": "權證略偏多，但只能當輔助，仍需現股突破壓力確認",
   "summary_warrant_price_view": "現股已高於認購主流履約價，權證追價熱度可能開始降溫",
-  "generated_at": "2026-06-19T08:33:12+08:00",
+  "generated_at": "2026-06-19T11:12:57+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-19\\01_日線完整技術與籌碼分析圖.png",
@@ -948,8 +971,8 @@
     }
   ],
   "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-19\\07_集保股權歷史趨勢圖.png",
-  "broker_trading_period": "2026-03-24 to 2026-06-18 (OK; local rows=5550, days=249, imported_files=0；HiStock history brokers=15, days=242, rows=3561；nStock 2026-06-18 rows=20)",
-  "broker_import_status": "券商分點：2026-03-24 to 2026-06-18；OK; local rows=5550, days=249, imported_files=0；HiStock history brokers=15, days=242, rows=3561；nStock 2026-06-18 rows=20",
+  "broker_trading_period": "2026-03-24 to 2026-06-18 (OK; local rows=7007, days=251, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-18 rows=20)",
+  "broker_import_status": "券商分點：2026-03-24 to 2026-06-18；OK; local rows=7007, days=251, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-18 rows=20",
   "broker_trading_latest_period": "2026-06-18",
   "broker_pattern_result": {
     "ok": true,
@@ -3432,54 +3455,6 @@
     },
     {
       "region": "國內",
-      "bias": "中性",
-      "event_type": "產業",
-      "title": "全民權證／南亞科 兩檔有勁",
-      "source": "UDN",
-      "published": "2026-06-17 00:48",
-      "published_ts": "2026-06-17T00:48:11+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1zdXc3X2lJRFp0di10cmJYVV8yVFUxb2w5RW81WmJGcEhyUjJYcVBXYjdpSi13dFB2WVNXZ0RzdVFiQmM2R1dNZi1ybEdha0FI0gFWQVVfeXFMTTZPaVdCQXpEWE5zMmI5MmRsa0FBTXJTdVJKSUYwdkF5UjFpVnhJeXNvRW1VTHJtWXlIamNhd1FIN2FnQW85TENfdmRxMmtfempWbDJNc0E?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字",
-      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
-      "source_score": 2,
-      "source_tier": "一般來源",
-      "signal_grade": "B",
-      "signal_grade_note": "一般可信，需搭配量價確認"
-    },
-    {
-      "region": "國內",
-      "bias": "利多",
-      "event_type": "籌碼",
-      "title": "記憶體火力全開！南亞科、華邦電受AI、DRAM漲價雙利多助攻 獲外資豪撒265億押寶",
-      "source": "Yahoo股市",
-      "published": "2026-06-16 20:00",
-      "published_ts": "2026-06-16T20:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiyANBVV95cUxPdHJHVmJjUDBUdFpQc3RSY21RRENIVG55aGo0SmlKdHp0YUhQdWRPNGotSTJuZk95QzhObUY1RW40NlhvVUx5cVVaYUN3UWZ4TXdUbDEwZGowRnpRdXdiVGVMZ2t5UTRmc2JhbXBZYlZvVHY1MzA5TG8tNzFwN19CV0lyUGRySDZmWks2c0U1UlA1cFZXTUU4RHBjdjR5WXhERmhfTGxhN0ZJSlNBTS1mZWE2VUxMdTViUHBFWEljM2xOYUJQMGlqTW5kdURDYzB5RkgwdmtEQ2pzd3dNWjBEdkFaRXhsLTlIeGhjaUp1bzdXUlJhUlVFMk1ZZGdYdDFtMHgwUk5NbjNCSlBXRTN1a0VwR3JKSzBJdWFxcDhQTmUzeEpPU1pSYmxTd0VaX0NNamJxaDJiZDZzOHdkWG4tM1lfbEduYWNpMUFEbC1JYmJQLXNKY2ZHZVJTdFVVQ1hrcDZsX3ZZOS1hdjFIa0laTUV4bkFmb1hkQk4wU1pUUXVLOEFmV2xDZE9pU0Y1cTFFZXdEUndCTy14LW05NGlXMXFMMHVMV3NHUlpmN01NQ3psam5hTDQwUDVUVkZXN0l2REZ1X2hUOXk?oc=5",
-      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "key_point": "偏多訊號；搭配法人買賣超與股價位置判斷承接力",
-      "source_score": 3,
-      "source_tier": "主流財經",
-      "signal_grade": "B",
-      "signal_grade_note": "中可信，可作方向輔助"
-    },
-    {
-      "region": "國內",
-      "bias": "中性",
-      "event_type": "產業",
-      "title": "南亞科狂飆天價！最大功臣是「這群人」 34萬股東樂翻天",
-      "source": "自由財經",
-      "published": "2026-06-16 16:41",
-      "published_ts": "2026-06-16T16:41:43+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9DOFZieDN6LTc2b1pVRENQY21DSHVTbXhTUWQ3UG5hekRaTEQ1d0kwS0VqbnZLOGtDV05Jc2JEQXpFUUZkREd3N2xxbW5mS1RzNjVjZERsb01VS21vZW1z0gFkQVVfeXFMTWlmVWE1MGM3SkhYRDBmQjZscmotWU1rVXVuZTA0akxYTXpuekp2QXdDQzhPM1hMcVd2cXhVaFd0UjZUT2Z6RjNOMkQ1OUQ1UkNnR0tTM2VFZUM5Mkp6V1h1T2ZDQg?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字",
-      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
-      "source_score": 3,
-      "source_tier": "主流財經",
-      "signal_grade": "B",
-      "signal_grade_note": "一般可信，需搭配量價確認"
-    },
-    {
-      "region": "國內",
       "bias": "利空",
       "event_type": "籌碼",
       "title": "三大法人買賣超 – 外資買超(2408)南亞科、(2344)華邦電，投信買超(2330)台積電、(2327)國巨*，法人合計買超582.74億元",
@@ -3493,6 +3468,54 @@
       "source_tier": "一般來源",
       "signal_grade": "B",
       "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "台積電要站穩●元，才是台股轉強關鍵？大戶連4周砍群聯，南亞科、華邦電還能買？9檔「低接好股」一次看",
+      "source": "今周刊",
+      "published": "2026-06-15 15:00",
+      "published_ts": "2026-06-15T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS3p6VzVjbi1NUFJLaUlUdUk2dk1Gb19ibDkxUDlqb3VXMFVTWE5KbjdXQU1BZHhiSTNRSnBURHBjTE5YT0VmalIwTm03ZXpfUjE3eDh1Mm51Tm5ISV9oeUVnUjE1WGxzRTRLUlEtenM3VTlsUUp0NjJ0QlBGQVltYg?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "華邦電(2344)、南亞科(2408)...端午變盤本週不賣股後悔莫及？老手洩露9檔主力鎖碼股，拉回就是財富重分配機會",
+      "source": "今周刊",
+      "published": "2026-06-15 13:59",
+      "published_ts": "2026-06-15T13:59:44+08:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdGV5aWhZd0lvcnlMMmtBOFFsclJSdFJ2blQxVkZTSUhWOXFEdkYxcWVBV05tSTZQSzlSQTBpWVJGVHJTTzZIS0trRHFTYkJvN3ExY1Y0WmZUWjRjSDZnb0RQdUNJRWN5LURpVk1kTTI5OTZwT2lySTZZTnBSdmRWbw?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認"
+    },
+    {
+      "region": "產業",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "先進製程根留台灣 台積電南科擴廠用地定案",
+      "source": "自由時報",
+      "published": "2026-06-10 21:28",
+      "published_ts": "2026-06-10T21:28:43+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzT19LZVhrRThXaUFEV29qdzBEVkd1UjVaTlNmWTRBOEc4alZuWGpnMlF2ekRHbV9XeHVBSUFfS2xaeUUweWNTQlR3dWVieVZqMkh5b2xxamQ?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認"
     },
     {
       "region": "國內",
@@ -3724,5 +3747,11 @@
     }
   ],
   "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-19\\index.html",
-  "prediction_history_status": "已記錄本次預測快照，待後續交易日回測校準"
+  "prediction_history_status": "已記錄本次預測快照，待後續交易日回測校準",
+  "llm_training_status": {
+    "ok": true,
+    "count": 270,
+    "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\llm_technical_training_examples.jsonl",
+    "message": "已輸出 270 筆 LLM 技術訓練樣本"
+  }
 }
