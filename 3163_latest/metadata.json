@@ -790,7 +790,7 @@
   },
   "technical_feasibility": {
     "ok": true,
-    "score": 12.9,
+    "score": 16.9,
     "grade": "低",
     "trend": "震盪",
     "close": 893.0,
@@ -806,10 +806,23 @@
     "pattern_hit_rate": 15.4,
     "foreign_5d": -481179.0,
     "trust_5d": -1066400.0,
-    "summary": "技術可行性低（13）；震盪，型態可信55，量比1.00，ATR 9.1%"
+    "score_reasons": [
+      "收盤跌破MA20",
+      "跌破MA60",
+      "型態命中率弱",
+      "ATR風險偏高",
+      "外資投信同步偏賣"
+    ],
+    "training_calibration": {
+      "sample_count": 86,
+      "industry_sample_count": 86,
+      "score_adjust": 4.0,
+      "reason": "訓練樣本支持技術分數（高分勝率69%）"
+    },
+    "summary": "技術可行性低（17）；震盪，型態可信55，量比1.00，ATR 9.1%"
   },
   "news_display_status": "新聞面偏利多（利多 1 / 利空 0 / 中性 5；高可信 0 則）",
-  "disclosure_display_status": "近 120 天公告/法說追蹤 3 則（法說會 1 / 公告 2）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 4 則（法說會 1 / 公告 3）",
   "summary_one_line": "偏空弱勢，偏弱震盪；站穩 MA10 907.60 並突破 1255.00 才有續攻機會，跌破 MA20 997.70 轉防守。",
   "summary_overall": "偏空弱勢；收盤站上 MA5, MA5 低於 MA10, 跌破 MA10 且投信偏賣",
   "summary_tomorrow": "偏弱震盪",
@@ -862,7 +875,7 @@
   "summary_warrant_signal": "中性",
   "summary_warrant_plain": "權證資料不足，暫不做白話解讀",
   "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
-  "generated_at": "2026-06-19T10:41:04+08:00",
+  "generated_at": "2026-06-19T14:51:56+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3163_2026-06-19\\01_日線完整技術與籌碼分析圖.png",
@@ -1218,6 +1231,23 @@
       "signal_grade": "A",
       "signal_grade_note": "高可信，可納入估值/風險判讀",
       "kind": "法說會"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "event_type": "營收",
+      "title": "【2026/02月營收公告】波若威(3163) 二月營收1.74億元，年增5.34％",
+      "source": "CMoney",
+      "published": "2026-03-09 15:00",
+      "published_ts": "2026-03-09T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsRUdCNF9UV2JKWDVqc21XNmttOWdxYnVkWThUampzUmYxUGJTaGJBQkxTWFQ3Y3NEZFpCdGM1NXlLUVJnS1psdno2NnFXaEwtQ1dHT0pfQ0VRX3FsSkFSd3NEWXRPbzg?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認",
+      "kind": "公告"
     }
   ],
   "warrant_top_rows": [],
@@ -1225,8 +1255,8 @@
   "prediction_history_status": "已記錄本次預測快照，待後續交易日回測校準",
   "llm_training_status": {
     "ok": true,
-    "count": 80,
+    "count": 430,
     "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\llm_technical_training_examples.jsonl",
-    "message": "已輸出 80 筆 LLM 技術訓練樣本"
+    "message": "已輸出 430 筆 LLM 技術訓練樣本"
   }
 }
