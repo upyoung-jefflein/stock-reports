@@ -26,305 +26,289 @@
   "tdcc_latest_period": "20260612",
   "etf_latest_period": "2026-06-18",
   "etf_holding_change_period": "2026-06-18 (OK; holders=11, active_candidates=5; changes=0)",
-  "peer_source_and_list": "FinMind TaiwanStockInfo industry_category candidates + TaiwanStockPrice OHLCV correlation filter; compared=上銀(2049), 易發(6425), 千附精密(6829), 巧新(1563), 豐祥-KY(5288), 公準(3178), 駿吉-KY(1591); failures=總格精密(4578): No TaiwanStockPrice rows for 4578; 東元精電(8041): No TaiwanStockPrice rows for 8041; 開億(1523): No TaiwanStockPrice rows for 1523; 永大(1507): 有效交易日少於 60",
-  "peer_display_list": "上銀(2049)、易發(6425)、千附精密(6829)、巧新(1563)、豐祥-KY(5288)、公準(3178)、駿吉-KY(1591)",
-  "peer_business_summary": "上銀(2049) 定位：機械設備 / 重電 / 自動化；產品組合：機械設備（占比待補）、電力設備（占比待補）、自動化設備（占比待補）、工程服務（占比待補）；資料層級：產業 / 主題推估；同族群比較基準：電機機械。對照族群涵蓋：機械設備 / 重電 / 自動化、記憶體 / DRAM / Flash 供應鏈。",
+  "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=上銀(2049), 直得(1597), 大銀微系統(4576), 亞德客-KY(1590), 全球傳動(4540), 和大(1536); failures=none",
+  "peer_display_list": "上銀(2049)、直得(1597)、大銀微系統(4576)、亞德客-KY(1590)、全球傳動(4540)、和大(1536)",
+  "peer_business_summary": "上銀(2049) 定位：精密傳動 / 自動化零組件；產品組合：線性滑軌（占比待補）、滾珠螺桿（占比待補）、工業機器人 / 單軸機器人（占比待補）、線性馬達 / 力矩馬達（占比待補）、醫療與自動化系統（占比待補）；資料層級：官方產品資料；同族群比較基準：線性傳動 / 滾珠螺桿 / 自動化零組件。對照族群涵蓋：微型線性傳動 / 精密定位模組、氣動元件 / 工業自動化、直驅馬達 / 運動控制系統。",
   "peer_business_rows": [
     {
       "stock_id": "2049",
       "name": "上銀",
-      "profile_scope": "產業通用推估",
-      "data_confidence": "中",
-      "product_basis": "產業 / 主題推估",
-      "chain_position": "機械設備 / 重電 / 自動化",
-      "product_mix": "機械設備（占比待補）、電力設備（占比待補）、自動化設備（占比待補）、工程服務（占比待補）",
-      "product_mix_items": [
-        {
-          "product": "機械設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "電力設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "自動化設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "工程服務",
-          "percent": null,
-          "source": ""
-        }
-      ],
-      "product_mix_has_percent": false,
-      "growth_drivers": "設備投資、電網建設、自動化需求",
-      "valuation_logic": "以訂單能見度、交期、毛利率與景氣循環比較。",
-      "risks": "標案時程、原料成本、景氣循環",
-      "stock_price_watch": "設備投資、電網建設、自動化需求；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "中：電機機械產業通用比較；公司實際產品比重需以法說、年報或公告確認",
-      "evidence_keywords": "-",
-      "evidence_sources": "-"
-    },
-    {
-      "stock_id": "6425",
-      "name": "易發",
-      "profile_scope": "產業通用推估",
-      "data_confidence": "中",
-      "product_basis": "產業 / 主題推估",
-      "chain_position": "機械設備 / 重電 / 自動化",
-      "product_mix": "機械設備（占比待補）、電力設備（占比待補）、自動化設備（占比待補）、工程服務（占比待補）",
-      "product_mix_items": [
-        {
-          "product": "機械設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "電力設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "自動化設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "工程服務",
-          "percent": null,
-          "source": ""
-        }
-      ],
-      "product_mix_has_percent": false,
-      "growth_drivers": "設備投資、電網建設、自動化需求",
-      "valuation_logic": "以訂單能見度、交期、毛利率與景氣循環比較。",
-      "risks": "標案時程、原料成本、景氣循環",
-      "stock_price_watch": "設備投資、電網建設、自動化需求；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "中：電機機械產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：工程服務、機械設備、自動化設備、電力設備",
-      "evidence_keywords": "-",
-      "evidence_sources": "-",
-      "product_overlap_score": 4.0,
-      "matched_products": "工程服務、機械設備、自動化設備、電力設備"
-    },
-    {
-      "stock_id": "6829",
-      "name": "千附精密",
-      "profile_scope": "產業通用推估",
-      "data_confidence": "中",
-      "product_basis": "產業 / 主題推估",
-      "chain_position": "機械設備 / 重電 / 自動化",
-      "product_mix": "機械設備（占比待補）、電力設備（占比待補）、自動化設備（占比待補）、工程服務（占比待補）",
-      "product_mix_items": [
-        {
-          "product": "機械設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "電力設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "自動化設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "工程服務",
-          "percent": null,
-          "source": ""
-        }
-      ],
-      "product_mix_has_percent": false,
-      "growth_drivers": "設備投資、電網建設、自動化需求",
-      "valuation_logic": "以訂單能見度、交期、毛利率與景氣循環比較。",
-      "risks": "標案時程、原料成本、景氣循環",
-      "stock_price_watch": "設備投資、電網建設、自動化需求；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "中：電機機械產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：工程服務、機械設備、自動化設備、電力設備",
-      "evidence_keywords": "-",
-      "evidence_sources": "-",
-      "product_overlap_score": 4.0,
-      "matched_products": "工程服務、機械設備、自動化設備、電力設備"
-    },
-    {
-      "stock_id": "5288",
-      "name": "豐祥-KY",
-      "profile_scope": "產業通用推估",
-      "data_confidence": "中",
-      "product_basis": "產業 / 主題推估",
-      "chain_position": "機械設備 / 重電 / 自動化",
-      "product_mix": "機械設備（占比待補）、電力設備（占比待補）、自動化設備（占比待補）、工程服務（占比待補）",
-      "product_mix_items": [
-        {
-          "product": "機械設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "電力設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "自動化設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "工程服務",
-          "percent": null,
-          "source": ""
-        }
-      ],
-      "product_mix_has_percent": false,
-      "growth_drivers": "設備投資、電網建設、自動化需求",
-      "valuation_logic": "以訂單能見度、交期、毛利率與景氣循環比較。",
-      "risks": "標案時程、原料成本、景氣循環",
-      "stock_price_watch": "設備投資、電網建設、自動化需求；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "中：電機機械產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：工程服務、機械設備、自動化設備、電力設備",
-      "evidence_keywords": "-",
-      "evidence_sources": "-",
-      "product_overlap_score": 4.0,
-      "matched_products": "工程服務、機械設備、自動化設備、電力設備"
-    },
-    {
-      "stock_id": "3178",
-      "name": "公準",
-      "profile_scope": "產業通用推估",
-      "data_confidence": "中",
-      "product_basis": "產業 / 主題推估",
-      "chain_position": "機械設備 / 重電 / 自動化",
-      "product_mix": "機械設備（占比待補）、電力設備（占比待補）、自動化設備（占比待補）、工程服務（占比待補）",
-      "product_mix_items": [
-        {
-          "product": "機械設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "電力設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "自動化設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "工程服務",
-          "percent": null,
-          "source": ""
-        }
-      ],
-      "product_mix_has_percent": false,
-      "growth_drivers": "設備投資、電網建設、自動化需求",
-      "valuation_logic": "以訂單能見度、交期、毛利率與景氣循環比較。",
-      "risks": "標案時程、原料成本、景氣循環",
-      "stock_price_watch": "設備投資、電網建設、自動化需求；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "中：電機機械產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：工程服務、機械設備、自動化設備、電力設備",
-      "evidence_keywords": "-",
-      "evidence_sources": "-",
-      "product_overlap_score": 4.0,
-      "matched_products": "工程服務、機械設備、自動化設備、電力設備"
-    },
-    {
-      "stock_id": "1591",
-      "name": "駿吉-KY",
-      "profile_scope": "產業通用推估",
-      "data_confidence": "中",
-      "product_basis": "產業 / 主題推估",
-      "chain_position": "機械設備 / 重電 / 自動化",
-      "product_mix": "機械設備（占比待補）、電力設備（占比待補）、自動化設備（占比待補）、工程服務（占比待補）",
-      "product_mix_items": [
-        {
-          "product": "機械設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "電力設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "自動化設備",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "工程服務",
-          "percent": null,
-          "source": ""
-        }
-      ],
-      "product_mix_has_percent": false,
-      "growth_drivers": "設備投資、電網建設、自動化需求",
-      "valuation_logic": "以訂單能見度、交期、毛利率與景氣循環比較。",
-      "risks": "標案時程、原料成本、景氣循環",
-      "stock_price_watch": "設備投資、電網建設、自動化需求；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "中：電機機械產業通用比較；公司實際產品比重需以法說、年報或公告確認；產品重疊：工程服務、機械設備、自動化設備、電力設備",
-      "evidence_keywords": "-",
-      "evidence_sources": "-",
-      "product_overlap_score": 4.0,
-      "matched_products": "工程服務、機械設備、自動化設備、電力設備"
-    },
-    {
-      "stock_id": "1563",
-      "name": "巧新",
-      "profile_scope": "官網 / 公開資訊佐證",
+      "profile_scope": "官方產品資料",
       "data_confidence": "高",
-      "product_basis": "官網 / 公開資訊佐證",
-      "chain_position": "記憶體 / DRAM / Flash 供應鏈",
-      "product_mix": "DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）",
+      "product_basis": "官方產品資料",
+      "chain_position": "精密傳動 / 自動化零組件",
+      "product_mix": "線性滑軌（占比待補）、滾珠螺桿（占比待補）、工業機器人 / 單軸機器人（占比待補）、線性馬達 / 力矩馬達（占比待補）、醫療與自動化系統（占比待補）",
       "product_mix_items": [
         {
-          "product": "DRAM",
+          "product": "線性滑軌",
           "percent": null,
-          "source": ""
+          "source": "上銀官網產品分類"
         },
         {
-          "product": "利基型記憶體",
+          "product": "滾珠螺桿",
           "percent": null,
-          "source": ""
+          "source": "上銀官網產品分類"
         },
         {
-          "product": "NAND Flash",
+          "product": "工業機器人 / 單軸機器人",
           "percent": null,
-          "source": ""
+          "source": "上銀官網產品分類"
         },
         {
-          "product": "NOR Flash",
+          "product": "線性馬達 / 力矩馬達",
           "percent": null,
-          "source": ""
+          "source": "上銀官網產品分類"
         },
         {
-          "product": "記憶體晶片 / 模組",
+          "product": "醫療與自動化系統",
           "percent": null,
-          "source": ""
+          "source": "上銀官網產品分類"
         }
       ],
       "product_mix_has_percent": false,
-      "growth_drivers": "DRAM / Flash 報價循環、庫存去化、稼動率回升",
-      "valuation_logic": "以記憶體報價、庫存水位、稼動率、毛利率修復與 PBR/PER 區間交叉評估；虧轉盈或 EPS 低檔時不宜只看 PER。",
-      "risks": "標案時程、原料成本、景氣循環",
-      "stock_price_watch": "DRAM / Flash 報價循環、庫存去化、稼動率回升；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "中：電機機械產業通用比較；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：NOR",
-      "evidence_keywords": "NOR",
-      "evidence_sources": "TWSE 公司基本資料 / 官網：https://www.superalloy.tw、官網延伸頁：https://www.superalloy.tw/investors/",
+      "growth_drivers": "半導體與電子設備投資、工具機與自動化需求、機器人應用",
+      "valuation_logic": "以 EPS / 前瞻 EPS 對應合理 PER 為主；毛利率與營業利益率判斷本業品質，稅後淨利率作輔助，ROE 檢查資本效率。",
+      "risks": "設備投資循環、工具機景氣、匯率與原料成本",
+      "stock_price_watch": "半導體與電子設備投資、工具機與自動化需求、機器人應用；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：精密傳動與自動化零組件可比，但需區分氣動元件、線性傳動、馬達與系統整合比重。；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：線性滑軌、滾珠螺桿、工業機器人、線性馬達、力矩馬達",
+      "evidence_keywords": "線性滑軌、滾珠螺桿、工業機器人、線性馬達、力矩馬達",
+      "evidence_sources": "上銀官網產品分類 / 法說與公開資訊、TWSE 公司基本資料 / 官網：http://www.hiwin.tw"
+    },
+    {
+      "stock_id": "4540",
+      "name": "全球傳動",
+      "profile_scope": "官方產品資料",
+      "data_confidence": "高",
+      "product_basis": "官方產品資料",
+      "chain_position": "線性傳動 / 滾珠螺桿",
+      "product_mix": "滾珠螺桿（占比待補）、線性滑軌（占比待補）、精密傳動元件（占比待補）、自動化設備零組件（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "滾珠螺桿",
+          "percent": null,
+          "source": "全球傳動公開產品資訊"
+        },
+        {
+          "product": "線性滑軌",
+          "percent": null,
+          "source": "全球傳動公開產品資訊"
+        },
+        {
+          "product": "精密傳動元件",
+          "percent": null,
+          "source": "全球傳動公開產品資訊"
+        },
+        {
+          "product": "自動化設備零組件",
+          "percent": null,
+          "source": "全球傳動公開產品資訊"
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "工具機需求、自動化設備、半導體與電子設備投資",
+      "valuation_logic": "以 EPS / 前瞻 EPS、毛利率與營業利益率判斷線性傳動景氣；稅後淨利率作為匯率與業外後的輔助確認。",
+      "risks": "工具機景氣循環、價格競爭、庫存調整",
+      "stock_price_watch": "工具機需求、自動化設備、半導體與電子設備投資；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：與上銀在線性傳動與滾珠螺桿具高度可比性。；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：滾珠螺桿、線性滑軌、線性傳動、自動化；產品重疊：滾珠螺桿、線性滑軌",
+      "evidence_keywords": "滾珠螺桿、線性滑軌、線性傳動、自動化",
+      "evidence_sources": "全球傳動公開產品資訊、TWSE 公司基本資料 / 官網：https://www.tbimotion.com.tw",
+      "product_overlap_score": 2.0,
+      "matched_products": "滾珠螺桿、線性滑軌"
+    },
+    {
+      "stock_id": "1597",
+      "name": "直得",
+      "profile_scope": "官方產品資料",
+      "data_confidence": "高",
+      "product_basis": "官方產品資料",
+      "chain_position": "微型線性傳動 / 精密定位模組",
+      "product_mix": "微型線性滑軌（占比待補）、標準線性滑軌（占比待補）、線性馬達定位平台（占比待補）、精密定位平台（占比待補）、自動化模組（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "微型線性滑軌",
+          "percent": null,
+          "source": "直得官網產品分類"
+        },
+        {
+          "product": "標準線性滑軌",
+          "percent": null,
+          "source": "直得官網產品分類"
+        },
+        {
+          "product": "線性馬達定位平台",
+          "percent": null,
+          "source": "直得官網產品分類"
+        },
+        {
+          "product": "精密定位平台",
+          "percent": null,
+          "source": "直得官網產品分類"
+        },
+        {
+          "product": "自動化模組",
+          "percent": null,
+          "source": "直得官網產品分類"
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "半導體與光電設備、醫療與電子自動化、小型化精密定位需求",
+      "valuation_logic": "以 EPS / 前瞻 EPS 與營收動能為主；毛利率與營業利益率確認精密定位產品組合是否改善，稅後淨利率僅作輔助。",
+      "risks": "設備投資循環、客戶拉貨波動、小型線性滑軌價格競爭",
+      "stock_price_watch": "半導體與光電設備、醫療與電子自動化、小型化精密定位需求；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：與上銀同屬線性傳動供應鏈，但直得更偏微型滑軌與精密定位平台。；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：線性滑軌、線性馬達、精密定位、自動化模組；產品重疊：線性滑軌、線性馬達 / 力矩馬達",
+      "evidence_keywords": "線性滑軌、線性馬達、精密定位、自動化模組",
+      "evidence_sources": "直得官網產品分類 / 公開資訊、TWSE 公司基本資料 / 官網：http://www.chieftek.com/",
+      "product_overlap_score": 1.0599999999999998,
+      "matched_products": "線性滑軌、線性馬達 / 力矩馬達"
+    },
+    {
+      "stock_id": "1590",
+      "name": "亞德客-KY",
+      "profile_scope": "官方產品資料",
+      "data_confidence": "高",
+      "product_basis": "官方產品資料",
+      "chain_position": "氣動元件 / 工業自動化",
+      "product_mix": "氣動執行元件（占比待補）、氣源處理元件（占比待補）、控制元件 / 電磁閥（占比待補）、電動缸 / 電動執行器（占比待補）、線性滑軌（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "氣動執行元件",
+          "percent": null,
+          "source": "亞德客官網產品分類"
+        },
+        {
+          "product": "氣源處理元件",
+          "percent": null,
+          "source": "亞德客官網產品分類"
+        },
+        {
+          "product": "控制元件 / 電磁閥",
+          "percent": null,
+          "source": "亞德客官網產品分類"
+        },
+        {
+          "product": "電動缸 / 電動執行器",
+          "percent": null,
+          "source": "亞德客官網產品分類"
+        },
+        {
+          "product": "線性滑軌",
+          "percent": null,
+          "source": "亞德客官網產品分類"
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "工廠自動化、電子與半導體設備需求、中國與亞洲製造業資本支出",
+      "valuation_logic": "以營收成長、毛利率與營業利益率穩定度評估品牌與規模優勢；稅後淨利率作為費用與匯率後的輔助檢查。",
+      "risks": "製造業景氣循環、中國需求波動、價格競爭",
+      "stock_price_watch": "工廠自動化、電子與半導體設備需求、中國與亞洲製造業資本支出；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：同屬工業自動化零組件，但亞德客偏氣動與電動執行元件，與上銀線性傳動不同。；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：氣動元件、電磁閥、電動缸、線性滑軌、工業自動化；產品重疊：線性滑軌",
+      "evidence_keywords": "氣動元件、電磁閥、電動缸、線性滑軌、工業自動化",
+      "evidence_sources": "亞德客官網產品分類 / 公開資訊、TWSE 公司基本資料 / 官網：http://www.airtac.com/",
+      "product_overlap_score": 1.0,
+      "matched_products": "線性滑軌"
+    },
+    {
+      "stock_id": "4576",
+      "name": "大銀微系統",
+      "profile_scope": "官方產品資料",
+      "data_confidence": "高",
+      "product_basis": "官方產品資料",
+      "chain_position": "直驅馬達 / 運動控制系統",
+      "product_mix": "線性馬達定位平台（占比待補）、線性馬達（占比待補）、直驅馬達（占比待補）、力矩馬達（占比待補）、單軸機器人（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "線性馬達定位平台",
+          "percent": null,
+          "source": "大銀微系統官網產品分類"
+        },
+        {
+          "product": "線性馬達",
+          "percent": null,
+          "source": "大銀微系統官網產品分類"
+        },
+        {
+          "product": "直驅馬達",
+          "percent": null,
+          "source": "大銀微系統官網產品分類"
+        },
+        {
+          "product": "力矩馬達",
+          "percent": null,
+          "source": "大銀微系統官網產品分類"
+        },
+        {
+          "product": "單軸機器人",
+          "percent": null,
+          "source": "大銀微系統官網產品分類"
+        },
+        {
+          "product": "控制器與驅動器",
+          "percent": null,
+          "source": "大銀微系統官網產品分類"
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "半導體設備、智慧自動化、高精度運動控制",
+      "valuation_logic": "以高階運動控制產品帶動的 EPS 成長與毛利率為主；營業利益率確認規模化，稅後淨利率避免被一次性損益誤導。",
+      "risks": "設備投資循環、研發與客戶認證時程、高階產品放量不確定",
+      "stock_price_watch": "半導體設備、智慧自動化、高精度運動控制；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：與上銀同集團且同屬自動化零組件，但大銀微更偏線性馬達、直驅馬達與控制系統。；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：線性馬達、直驅馬達、力矩馬達、單軸機器人、控制器；產品重疊：工業機器人 / 單軸機器人、線性馬達 / 力矩馬達",
+      "evidence_keywords": "線性馬達、直驅馬達、力矩馬達、單軸機器人、控制器",
+      "evidence_sources": "大銀微系統官網產品介紹、TWSE 公司基本資料 / 官網：http://www.hiwinmikro.tw",
+      "product_overlap_score": 0.9399999999999998,
+      "matched_products": "工業機器人 / 單軸機器人、線性馬達 / 力矩馬達"
+    },
+    {
+      "stock_id": "1536",
+      "name": "和大",
+      "profile_scope": "官方產品資料",
+      "data_confidence": "高",
+      "product_basis": "官方產品資料",
+      "chain_position": "車用齒輪 / 傳動系統零組件",
+      "product_mix": "汽車齒輪（占比待補）、電動車傳動零組件（占比待補）、減速齒輪（占比待補）、變速箱 / 傳動系統零件（占比待補）、精密金屬加工（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "汽車齒輪",
+          "percent": null,
+          "source": "和大官網產品分類"
+        },
+        {
+          "product": "電動車傳動零組件",
+          "percent": null,
+          "source": "和大官網產品分類"
+        },
+        {
+          "product": "減速齒輪",
+          "percent": null,
+          "source": "和大官網產品分類"
+        },
+        {
+          "product": "變速箱 / 傳動系統零件",
+          "percent": null,
+          "source": "和大官網產品分類"
+        },
+        {
+          "product": "精密金屬加工",
+          "percent": null,
+          "source": "和大官網產品分類"
+        }
+      ],
+      "product_mix_has_percent": false,
+      "growth_drivers": "電動車傳動系統、車用齒輪訂單、北美與全球車市需求",
+      "valuation_logic": "以車用訂單能見度、EPS、毛利率與稼動率為主；因車市循環與客戶集中，估值應低於純高成長自動化零組件。",
+      "risks": "車市循環、客戶集中、匯率",
+      "stock_price_watch": "電動車傳動系統、車用齒輪訂單、北美與全球車市需求；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "低到中：同屬精密傳動零件，但和大偏車用齒輪與傳動系統，與上銀線性傳動可比性較低。；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：齒輪、電動車、傳動系統、變速箱、精密加工",
+      "evidence_keywords": "齒輪、電動車、傳動系統、變速箱、精密加工",
+      "evidence_sources": "和大官網產品分類 / 公開資訊、TWSE 公司基本資料 / 官網：https://www.hota.com.tw",
       "product_overlap_score": 0.0,
       "matched_products": "-"
     }
   ],
   "peer_business_interpretation": [
-    "上銀(2049) 定位：機械設備 / 重電 / 自動化；產品組合：機械設備（占比待補）、電力設備（占比待補）、自動化設備（占比待補）、工程服務（占比待補）；資料層級：產業 / 主題推估；同族群比較基準：電機機械。對照族群涵蓋：機械設備 / 重電 / 自動化、記憶體 / DRAM / Flash 供應鏈。",
-    "估值比較應優先看產品組合與獲利率差異：以訂單能見度、交期、毛利率與景氣循環比較。",
-    "主要風險要和同族群分開看：標案時程、原料成本、景氣循環。"
+    "上銀(2049) 定位：精密傳動 / 自動化零組件；產品組合：線性滑軌（占比待補）、滾珠螺桿（占比待補）、工業機器人 / 單軸機器人（占比待補）、線性馬達 / 力矩馬達（占比待補）、醫療與自動化系統（占比待補）；資料層級：官方產品資料；同族群比較基準：線性傳動 / 滾珠螺桿 / 自動化零組件。對照族群涵蓋：微型線性傳動 / 精密定位模組、氣動元件 / 工業自動化、直驅馬達 / 運動控制系統。",
+    "估值比較應優先看產品組合與獲利率差異：以 EPS / 前瞻 EPS 對應合理 PER 為主；毛利率與營業利益率判斷本業品質，稅後淨利率作輔助，ROE 檢查資本效率。",
+    "主要風險要和同族群分開看：設備投資循環、工具機景氣、匯率與原料成本。"
   ],
   "etf_display_status": "持有快照 2026-06-18，未命中最新異動",
   "tdcc_display_status": "20260612；大額 68.67% / 小額 14.76%",
@@ -333,7 +317,7 @@
   "fundamental_profitability_summary": "2026Q1 毛利率 31.94%（年變化 +2.10 個百分點）、營業利益率 9.88%（年變化 +2.71 個百分點）",
   "fundamental_quarterly_summary": "2026Q1 營業費用率 22.06%（年變化 -0.61 個百分點）、稅後淨利率 8.61%（年變化 +0.76 個百分點）、ROE 1.00%（年變化 -0.25 個百分點）",
   "revenue_trend_summary": "2026-05 月營收 24.80 億元；MoM 0.24%；YoY 28.17%；近 3 個月累計 YoY 22.00%；近 12 個月滾動營收 YoY 4.64%；創近 24 個月新高；連續 3 個月年增為正",
-  "fundamental_price_estimate_summary": "悲觀 193 元 / 中性 324 元 / 樂觀 377 元；產業模型：訂單能見度 PER（PER 下限 9.0x / 上限 35.0x）；加權框架：一般產業；近四季 EPS 4.58；前瞻 EPS 估 5.76（成長假設 -5.5%）；估值 PER 42.1x / 51.0x / 63.7x；月營收推下一季 EPS 1.88（年化 7.51；季節性係數 1.01 / 歷史營收轉EPS效率 / 近3月營收YoY +22.0% / 最新月營收YoY +28.2% / 近12月營收YoY +4.6% / 毛利率年變化 +2.1ppt）；風險折價：近四季 EPS 衰退、年化 ROE 偏低（-8%）；催化溢價：月營收年增雙位數（+3%）；目前 PER 73.0x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=46.8x/49.8x/58.7x；目前 PER 位於近一年 90% 分位；市場情境 20x/25x/30x=92/114/137 元；模型推估：EPS/PER 294 元（前瞻 EPS 5.76 × 中性 PER 51.0x）、月營收推估EPS 383 元（下一季EPS估 1.88 ×4 × PER 51.0x / 信心高）、技術型態 387 元（上升通道 區間上緣 / 量能待確認 / 有效性高70）、法人籌碼成本 356 元（外資 / 投信近20與60日加碼成本）、同族群動能 264 元（同族群中位報酬 +41.6% / 本股 +62.6%）、事件影響 354 元（未來45天 三巫日、月底作帳、季底作帳；政策訂單型加權 +5.8% / 當日震盪 4.1%）、歷史相似 405 元（相似樣本19筆 / 5日勝率63% / 5日中位+1.9% / 20日中位+21.0% / 可信59）、殖利率 183 元（歷史殖利率中位數回推）；多模型加權參考 324 元；歷史 PBR 分位 Q25/Q50/Q75=2.02x/2.12x/2.29x；技術型態目標 387 元（90日上升通道 / 型態分 5.5 / 目標可信高70）；法人籌碼成本 外資 331 元 / 投信 381 元；同族群相對動能參考 264 元（同族群中位報酬 +41.6% / 本股 +62.6%）；殖利率模型 183 元（現殖利率 0.60% / 中位 1.10%）；現價 335.00 元，較中性估值 +3.5%；現價接近中性估值；合理偏高區：續漲需要營收與法人同步確認",
+  "fundamental_price_estimate_summary": "悲觀 193 元 / 中性 332 元 / 樂觀 379 元；產業模型：精密傳動/自動化零組件（PER 下限 10.0x / 上限 42.0x）；加權框架：成長電子；近四季 EPS 4.58；前瞻 EPS 估 5.76（成長假設 -5.5%）；估值 PER 42.2x / 51.2x / 64.0x；月營收推下一季 EPS 1.88（年化 7.51；季節性係數 1.01 / 歷史營收轉EPS效率 / 近3月營收YoY +22.0% / 最新月營收YoY +28.2% / 近12月營收YoY +4.6% / 毛利率年變化 +2.1ppt）；風險折價：近四季 EPS 衰退、年化 ROE 偏低（-8%）；催化溢價：月營收年增雙位數（+3%）；目前 PER 73.0x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=46.8x/49.8x/58.7x；目前 PER 位於近一年 90% 分位；市場情境 20x/25x/30x=92/114/137 元；模型推估：EPS/PER 295 元（前瞻 EPS 5.76 × 中性 PER 51.2x）、月營收推估EPS 384 元（下一季EPS估 1.88 ×4 × PER 51.2x / 信心高）、技術型態 387 元（上升通道 區間上緣 / 量能待確認 / 有效性高70）、法人籌碼成本 356 元（外資 / 投信近20與60日加碼成本）、同族群動能 331 元（同族群中位報酬 +61.5% / 本股 +62.6%）、事件影響 354 元（未來45天 三巫日、月底作帳、季底作帳；政策訂單型加權 +5.8% / 當日震盪 4.1%）、歷史相似 405 元（相似樣本19筆 / 5日勝率63% / 5日中位+1.9% / 20日中位+21.0% / 可信59）、殖利率 183 元（歷史殖利率中位數回推）；多模型加權參考 332 元；歷史 PBR 分位 Q25/Q50/Q75=2.02x/2.12x/2.29x；技術型態目標 387 元（90日上升通道 / 型態分 5.5 / 目標可信高70）；法人籌碼成本 外資 331 元 / 投信 381 元；同族群相對動能參考 331 元（同族群中位報酬 +61.5% / 本股 +62.6%）；殖利率模型 183 元（現殖利率 0.60% / 中位 1.10%）；現價 335.00 元，較中性估值 +0.9%；現價接近中性估值；合理偏高區：續漲需要營收與法人同步確認",
   "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、PER 位階偏高，股價需要成長性支撐、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、營業費用率較去年同期下降。",
   "prediction_backtest_dashboard": {
     "sample_count": 0,
@@ -341,89 +325,77 @@
     "rows": []
   },
   "peer_strength_ranking": {
-    "summary": "上銀(2049) 族群強弱排名第 2/7，期間報酬 +62.6%，相對中位數 +21.0%，屬於領先股",
+    "summary": "上銀(2049) 族群強弱排名第 3/6，期間報酬 +62.6%，相對中位數 +0.6%，屬於中段股",
     "rows": [
       {
         "rank": 1,
-        "label": "易發(6425)",
-        "stock_id": "6425",
-        "return_pct": 83.62168396770471,
-        "relative_to_median": 42.04865025983955,
-        "product_overlap_score": 1.0,
-        "correlation": 0.345,
-        "strength_score": 99.38,
+        "label": "大銀微系統(4576)",
+        "stock_id": "4576",
+        "return_pct": 90.51724137931035,
+        "relative_to_median": 28.467775487976482,
+        "product_overlap_score": 0.9399999999999998,
+        "correlation": null,
+        "strength_score": 97.64,
         "position": "領先",
         "is_target": false
       },
       {
         "rank": 2,
-        "label": "上銀(2049)",
-        "stock_id": "2049",
-        "return_pct": 62.62135922330097,
-        "relative_to_median": 21.048325515435806,
+        "label": "直得(1597)",
+        "stock_id": "1597",
+        "return_pct": 88.54415274463008,
+        "relative_to_median": 26.494686853296216,
         "product_overlap_score": 1.0,
         "correlation": null,
-        "strength_score": 85.40213083160612,
+        "strength_score": 84.4,
         "position": "領先",
-        "is_target": true
-      },
-      {
-        "rank": 3,
-        "label": "千附精密(6829)",
-        "stock_id": "6829",
-        "return_pct": 62.151394422310744,
-        "relative_to_median": 20.57836071444558,
-        "product_overlap_score": 1.0,
-        "correlation": 0.323,
-        "strength_score": 75.21040876195593,
-        "position": "中段",
         "is_target": false
       },
       {
-        "rank": 4,
-        "label": "豐祥-KY(5288)",
-        "stock_id": "5288",
-        "return_pct": 41.573033707865164,
-        "relative_to_median": 0.0,
+        "rank": 3,
+        "label": "上銀(2049)",
+        "stock_id": "2049",
+        "return_pct": 62.62135922330097,
+        "relative_to_median": 0.5718933319671038,
         "product_overlap_score": 1.0,
-        "correlation": 0.256,
-        "strength_score": 57.024,
+        "correlation": null,
+        "strength_score": 62.983005866229476,
+        "position": "中段",
+        "is_target": true
+      },
+      {
+        "rank": 4,
+        "label": "全球傳動(4540)",
+        "stock_id": "4540",
+        "return_pct": 61.47757255936676,
+        "relative_to_median": -0.5718933319671038,
+        "product_overlap_score": 1.0,
+        "correlation": null,
+        "strength_score": 49.01699413377053,
         "position": "中段",
         "is_target": false
       },
       {
         "rank": 5,
-        "label": "公準(3178)",
-        "stock_id": "3178",
-        "return_pct": 41.07526881720429,
-        "relative_to_median": -0.4977648906608749,
+        "label": "亞德客-KY(1590)",
+        "stock_id": "1590",
+        "return_pct": 59.353348729792145,
+        "relative_to_median": -2.6961171615417214,
         "product_overlap_score": 1.0,
-        "correlation": 0.248,
-        "strength_score": 45.49938190165519,
+        "correlation": null,
+        "strength_score": 34.73724250830665,
         "position": "落後",
         "is_target": false
       },
       {
         "rank": 6,
-        "label": "巧新(1563)",
-        "stock_id": "1563",
-        "return_pct": 22.423146473779383,
-        "relative_to_median": -19.14988723408578,
+        "label": "和大(1536)",
+        "stock_id": "1536",
+        "return_pct": -17.457627118644055,
+        "relative_to_median": -79.50709300997792,
         "product_overlap_score": 0.0,
-        "correlation": 0.275,
-        "strength_score": 22.305369418425887,
-        "position": "落後",
-        "is_target": false
-      },
-      {
-        "rank": 7,
-        "label": "駿吉-KY(1591)",
-        "stock_id": "1591",
-        "return_pct": -35.23908523908524,
-        "relative_to_median": -76.8121189469504,
-        "product_overlap_score": 1.0,
-        "correlation": 0.231,
-        "strength_score": 14.924,
+        "correlation": null,
+        "strength_score": 8.0,
         "position": "落後",
         "is_target": false
       }
@@ -539,7 +511,7 @@
       },
       {
         "factor": "估值/技術上緣",
-        "value": "324.0 / 377.0 / 386.7",
+        "value": "332.0 / 379.0 / 386.7",
         "effect": "避免單一模型喊價"
       },
       {
@@ -818,7 +790,7 @@
     "total_5d": -127112.0,
     "total_20d": 112932.0
   },
-  "news_display_status": "新聞面偏利多（利多 2 / 利空 0 / 中性 3；高可信 0 則）",
+  "news_display_status": "新聞面偏利多（利多 1 / 利空 0 / 中性 3；高可信 0 則）",
   "disclosure_display_status": "近 120 天公告/法說追蹤 5 則（法說會 1 / 公告 4）",
   "summary_one_line": "中性偏多，偏多震盪；站穩 MA10 330.05 並突破 426.00 才有續攻機會，跌破 MA20 357.30 轉防守。",
   "summary_overall": "中性偏多；收盤站上 MA5, MA5 低於 MA10, MA10 上方但投信支撐不足",
@@ -872,7 +844,7 @@
   "summary_warrant_signal": "中性偏投機",
   "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
   "summary_warrant_price_view": "現股距認購主流履約價仍有 13.80% 空間，屬高想像但投機風險也高",
-  "generated_at": "2026-06-19T08:52:47+08:00",
+  "generated_at": "2026-06-19T10:14:38+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2049_2026-06-19\\01_日線完整技術與籌碼分析圖.png",
@@ -1054,8 +1026,8 @@
     }
   ],
   "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2049_2026-06-19\\07_集保股權歷史趨勢圖.png",
-  "broker_trading_period": "2026-06-18 to 2026-06-18 (no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-06-18 rows=20)",
-  "broker_import_status": "券商分點：2026-06-18 to 2026-06-18；no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-06-18 rows=20",
+  "broker_trading_period": "2026-06-18 to 2026-06-18 (OK; local rows=20, days=1, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-18 rows=20)",
+  "broker_import_status": "券商分點：2026-06-18 to 2026-06-18；OK; local rows=20, days=1, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-18 rows=20",
   "broker_trading_latest_period": "2026-06-18",
   "broker_pattern_result": {
     "ok": false,
@@ -1143,22 +1115,6 @@
       "source_tier": "主流財經",
       "signal_grade": "B",
       "signal_grade_note": "一般可信，需搭配量價確認"
-    },
-    {
-      "region": "國內",
-      "bias": "利多",
-      "event_type": "財報",
-      "title": "AI 驅動半導體應用強勁需求 法人調升上銀獲利預估及目標價",
-      "source": "UDN",
-      "published": "2026-06-01 15:00",
-      "published_ts": "2026-06-01T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5qTXV1RUhaWWFvX2NLRHI5VG0wZ29nQmJFQ21ucUJvM0c3X1NFNWV5ZC1hYVB2MFUxRUdGVl9sSEhvWjhTazJrdlkxcmlkUHVI0gFWQVVfeXFMTkZYelR0aVFxMHlieWI3eGVDbm1ZWXNMcFd1dzFiaWFpZnhUSWtrVndfNEpSdFh0eWFFM0VwTEJSMkVhRDBfenktTHFlUS0yYVRsUEhhbHc?oc=5",
-      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "key_point": "偏多訊號；檢查 EPS、毛利率與營益率是否支撐估值",
-      "source_score": 2,
-      "source_tier": "一般來源",
-      "signal_grade": "B",
-      "signal_grade_note": "中可信，可作方向輔助"
     }
   ],
   "disclosure_rows": [
