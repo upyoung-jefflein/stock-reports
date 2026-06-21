@@ -28,7 +28,7 @@
   "etf_holding_change_period": "2026-06-18 (OK; holders=30, active_candidates=10; changes=0)",
   "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=南亞科(2408), 華邦電(2344), 旺宏(2337), 晶豪科(3006), 群聯(8299); failures=none",
   "peer_display_list": "南亞科(2408)、華邦電(2344)、旺宏(2337)、晶豪科(3006)、群聯(8299)",
-  "peer_business_summary": "南亞科(2408) 定位：記憶體 / DRAM / Flash 供應鏈；產品組合：DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）；資料層級：官網 / 公開資訊佐證；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：記憶體 / DRAM / Flash 供應鏈、記憶體 IC / DRAM 相關、記憶體與半導體製造。",
+  "peer_business_summary": "南亞科(2408) 定位：記憶體 / DRAM / Flash 供應鏈；產品組合：DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）；資料層級：官網 / 公開資訊佐證；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：記憶體 / DRAM / Flash 供應鏈、記憶體 IC / DRAM 相關、記憶體製造 / IC。",
   "peer_business_rows": [
     {
       "stock_id": "2408",
@@ -107,6 +107,84 @@
       "evidence_sources": "TWSE 公司基本資料 / 官網：https://www.nanya.com、官網延伸頁：https://www.nanya.com/en/Product/List/450/2478"
     },
     {
+      "stock_id": "2337",
+      "name": "旺宏",
+      "profile_scope": "官網 / 公開資訊佐證",
+      "data_confidence": "高",
+      "product_basis": "官網 / 公開資訊佐證",
+      "chain_position": "記憶體 / DRAM / Flash 供應鏈",
+      "product_mix": "DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基型記憶體",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "NAND Flash",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "NOR Flash",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "記憶體晶片 / 模組",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "supply_chain_nodes": [
+        {
+          "theme": "記憶體 / 儲存",
+          "layer": "Flash",
+          "product": "NAND / NOR Flash",
+          "role": "核心產品",
+          "directness": "高",
+          "evidence_level": "A",
+          "matched_keywords": [
+            "NAND",
+            "NOR",
+            "Flash"
+          ],
+          "stock_price_relevance": "看報價循環、需求復甦與產品組合",
+          "score": 7
+        },
+        {
+          "theme": "記憶體 / 儲存",
+          "layer": "DRAM",
+          "product": "DRAM / 利基型記憶體",
+          "role": "核心產品",
+          "directness": "高",
+          "evidence_level": "A",
+          "matched_keywords": [
+            "DRAM",
+            "利基型記憶體"
+          ],
+          "stock_price_relevance": "看報價、庫存、位元出貨與毛利率",
+          "score": 5
+        }
+      ],
+      "supply_chain_summary": "NAND / NOR Flash（高，證據A）、DRAM / 利基型記憶體（高，證據A）",
+      "growth_drivers": "DRAM / Flash 報價循環、庫存去化、稼動率回升",
+      "valuation_logic": "以記憶體報價、庫存水位、稼動率、毛利率修復與 PBR/PER 區間交叉評估；虧轉盈或 EPS 低檔時不宜只看 PER。",
+      "risks": "營運波動大、報價下行、庫存調整",
+      "stock_price_watch": "DRAM / Flash 報價循環、庫存去化、稼動率回升；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：記憶體族群可比；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：記憶體、NOR Flash、Flash、快閃記憶體；產品重疊：DRAM、NAND Flash、NOR Flash、利基型記憶體、記憶體晶片 / 模組、DRAM / 利基型記憶體、NAND / NOR Flash",
+      "evidence_keywords": "記憶體、NOR Flash、Flash、快閃記憶體",
+      "evidence_sources": "TWSE 公司基本資料 / 官網：http://www.macronix.com、官網延伸頁：http://www.macronix.com/zh-tw/products/Pages/product-search.aspx",
+      "product_overlap_score": 7.8,
+      "matched_products": "DRAM、NAND Flash、NOR Flash、利基型記憶體、記憶體晶片 / 模組、DRAM / 利基型記憶體、NAND / NOR Flash"
+    },
+    {
       "stock_id": "3006",
       "name": "晶豪科",
       "profile_scope": "官網 / 公開資訊佐證",
@@ -178,11 +256,11 @@
       "valuation_logic": "以記憶體報價、庫存水位、稼動率、毛利率修復與 PBR/PER 區間交叉評估；虧轉盈或 EPS 低檔時不宜只看 PER。",
       "risks": "報價波動、景氣循環、庫存調整",
       "stock_price_watch": "DRAM / Flash 報價循環、庫存去化、稼動率回升；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：記憶體循環同業可比；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：記憶體、DRAM、NAND、Flash；產品重疊：DRAM、NAND Flash、NOR Flash、利基型記憶體、記憶體晶片 / 模組、NAND / NOR Flash、DRAM / 利基型記憶體",
+      "comparability": "高：記憶體循環同業可比；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：記憶體、DRAM、NAND、Flash；產品重疊：DRAM、NAND Flash、NOR Flash、利基型記憶體、記憶體晶片 / 模組、DRAM / 利基型記憶體、NAND / NOR Flash",
       "evidence_keywords": "記憶體、DRAM、NAND、Flash",
       "evidence_sources": "TWSE 公司基本資料 / 官網：https://www.esmt.com.tw、官網延伸頁：https://www.esmt.com.tw/zh-tw/Products",
       "product_overlap_score": 7.8,
-      "matched_products": "DRAM、NAND Flash、NOR Flash、利基型記憶體、記憶體晶片 / 模組、NAND / NOR Flash、DRAM / 利基型記憶體"
+      "matched_products": "DRAM、NAND Flash、NOR Flash、利基型記憶體、記憶體晶片 / 模組、DRAM / 利基型記憶體、NAND / NOR Flash"
     },
     {
       "stock_id": "8299",
@@ -245,11 +323,11 @@
       "valuation_logic": "以記憶體報價循環、毛利率與 PBR 區間比較。",
       "risks": "報價波動、景氣循環、庫存調整",
       "stock_price_watch": "記憶體報價、庫存回補、AI 帶動容量需求；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：記憶體循環同業可比；公司實際產品比重需以法說、年報或公告確認；產品重疊：DRAM、利基型記憶體、NAND Flash、NOR Flash、記憶體晶片 / 模組、NAND / NOR Flash、DRAM / 利基型記憶體",
+      "comparability": "高：記憶體循環同業可比；公司實際產品比重需以法說、年報或公告確認；產品重疊：DRAM、利基型記憶體、NAND Flash、NOR Flash、記憶體晶片 / 模組、DRAM / 利基型記憶體、NAND / NOR Flash",
       "evidence_keywords": "-",
       "evidence_sources": "-",
       "product_overlap_score": 6.209999999999999,
-      "matched_products": "DRAM、利基型記憶體、NAND Flash、NOR Flash、記憶體晶片 / 模組、NAND / NOR Flash、DRAM / 利基型記憶體"
+      "matched_products": "DRAM、利基型記憶體、NAND Flash、NOR Flash、記憶體晶片 / 模組、DRAM / 利基型記憶體、NAND / NOR Flash"
     },
     {
       "stock_id": "2344",
@@ -302,62 +380,10 @@
       "evidence_sources": "-",
       "product_overlap_score": 3.34,
       "matched_products": "DRAM、利基型記憶體、記憶體晶片 / 模組、DRAM / 利基型記憶體"
-    },
-    {
-      "stock_id": "2337",
-      "name": "旺宏",
-      "profile_scope": "個股資料",
-      "data_confidence": "高",
-      "product_basis": "公司產品資料",
-      "chain_position": "記憶體與半導體製造",
-      "product_mix": "DRAM 相關（占比待補）、記憶體晶片（占比待補）、利基應用（占比待補）",
-      "product_mix_items": [
-        {
-          "product": "DRAM 相關",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "記憶體晶片",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "利基應用",
-          "percent": null,
-          "source": ""
-        }
-      ],
-      "product_mix_has_percent": false,
-      "supply_chain_nodes": [
-        {
-          "theme": "記憶體 / 儲存",
-          "layer": "DRAM",
-          "product": "DRAM / 利基型記憶體",
-          "role": "核心產品",
-          "directness": "高",
-          "evidence_level": "A",
-          "matched_keywords": [
-            "DRAM"
-          ],
-          "stock_price_relevance": "看報價、庫存、位元出貨與毛利率",
-          "score": 3
-        }
-      ],
-      "supply_chain_summary": "DRAM / 利基型記憶體（高，證據A）",
-      "growth_drivers": "記憶體價格循環、需求回補、產品組合改善",
-      "valuation_logic": "以循環股方式看 PBR、毛利率與報價趨勢。",
-      "risks": "營運波動大、報價下行、庫存調整",
-      "stock_price_watch": "記憶體價格循環、需求回補、產品組合改善；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "中高：記憶體族群可比；產品重疊：DRAM、利基型記憶體、記憶體晶片 / 模組、DRAM / 利基型記憶體",
-      "evidence_keywords": "-",
-      "evidence_sources": "-",
-      "product_overlap_score": 2.9299999999999997,
-      "matched_products": "DRAM、利基型記憶體、記憶體晶片 / 模組、DRAM / 利基型記憶體"
     }
   ],
   "peer_business_interpretation": [
-    "南亞科(2408) 定位：記憶體 / DRAM / Flash 供應鏈；產品組合：DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）；資料層級：官網 / 公開資訊佐證；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：記憶體 / DRAM / Flash 供應鏈、記憶體 IC / DRAM 相關、記憶體與半導體製造。",
+    "南亞科(2408) 定位：記憶體 / DRAM / Flash 供應鏈；產品組合：DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）；資料層級：官網 / 公開資訊佐證；同族群比較基準：記憶體製造 / IC。對照族群涵蓋：記憶體 / DRAM / Flash 供應鏈、記憶體 IC / DRAM 相關、記憶體製造 / IC。",
     "估值比較應優先看產品組合與獲利率差異：以記憶體報價、庫存水位、稼動率、毛利率修復與 PBR/PER 區間交叉評估；虧轉盈或 EPS 低檔時不宜只看 PER。",
     "主要風險要和同族群分開看：報價反轉、景氣循環、庫存與資本支出。"
   ],
@@ -929,7 +955,7 @@
   "summary_warrant_signal": "中性",
   "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
   "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
-  "generated_at": "2026-06-21T19:23:12+08:00",
+  "generated_at": "2026-06-21T23:31:52+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2408_2026-06-21\\01_日線完整技術與籌碼分析圖.png",
@@ -3579,6 +3605,22 @@
   "news_rows": [
     {
       "region": "國內",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "〈熱門股〉南亞轉型電子材料題材噴火 5天漲4根停板飆得比南亞科還兇",
+      "source": "news.cnyes.com",
+      "published": "2026-06-21 10:52",
+      "published_ts": "2026-06-21T10:52:02+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBtRy0xamJSUHZIVEhyX2RKeWRwc0pSTHZfRmx4aEhpeWlxRWdleXdqTkpCSjZRT3RNWTBPbXRlVVdEUkVGN0EyYnpNU1Q2TDg?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 3,
+      "source_tier": "主流財經",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認"
+    },
+    {
+      "region": "國內",
       "bias": "利多",
       "event_type": "財報",
       "title": "鉅亨速報 - Factset 最新調查：南亞科(2408-TW)EPS預估上修至50.95元，預估目標價為370元",
@@ -3643,22 +3685,6 @@
     },
     {
       "region": "國內",
-      "bias": "中性",
-      "event_type": "股價",
-      "title": "華邦電(2344)、南亞科(2408)股價翻10倍才剛起飛？國巨(2327)、華新科(2492)呢？億元教授鎖定「2檔低基期黑馬股」股價不到百元",
-      "source": "今周刊",
-      "published": "2026-06-04 15:00",
-      "published_ts": "2026-06-04T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQU2QycWVWMlRuemdJV3JXUXRHMkVmMk5SNkhjYUFsNjBKU3B3dk1HcHNoWWhfcXRLRi1TdzJqOU41YlJ6NUJxZUp2UWZiMkhoV0FLODl3WUxZb1lQSU5EMlhJZ1VzU3d4LTlhd0pZTWtiTjZadGhaQU4yYW5oSWlPSQ?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字",
-      "key_point": "觀察訊號；屬市場反應，需回到量價與支撐壓力驗證",
-      "source_score": 2,
-      "source_tier": "一般來源",
-      "signal_grade": "B",
-      "signal_grade_note": "一般可信，需搭配量價確認"
-    },
-    {
-      "region": "國內",
       "bias": "利多",
       "event_type": "營收",
       "title": "南亞科（2408）｜5月營收不如預期，營收增速放緩，漲價主軸未變【豐學PRIME盤後精選】｜豐雲學堂2026 年 06 月",
@@ -3675,22 +3701,6 @@
     },
     {
       "region": "國內",
-      "bias": "中性",
-      "event_type": "產業",
-      "title": "台股焦點：南亞科(2408.TW)",
-      "source": "台視全球資訊網",
-      "published": "2026-06-02 15:00",
-      "published_ts": "2026-06-02T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPM0ZMdTVoREt6R29ORUJ5NTRUYnBIYmJES1pxcFZpaVFudFFRb2VyU1BIMWk2MVZManJVVVAzdGJueTNhYU95Q056cFhSTnJXRFJ2YW5GY08tZGsyR2c4VC11YlE3cmx0ODlkZVY1N0ZwMWt5NW9KMFBUU2ZSVl9pZW0wb081ejg3UlNyYmQ5UWFsdw?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字",
-      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
-      "source_score": 2,
-      "source_tier": "一般來源",
-      "signal_grade": "B",
-      "signal_grade_note": "一般可信，需搭配量價確認"
-    },
-    {
-      "region": "國內",
       "bias": "利多",
       "event_type": "股價",
       "title": "【Hot台股】南亞科亮燈漲停！網嗨「超級落後補漲」 分析師：記憶體行情還沒完",
@@ -3704,6 +3714,22 @@
       "source_tier": "主流財經",
       "signal_grade": "B",
       "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "國內",
+      "bias": "中性",
+      "event_type": "籌碼",
+      "title": "目標價達標還能抱？南亞科股價大起大落 法人「 1原因」 續喊加碼",
+      "source": "Yahoo股市",
+      "published": "2026-05-23 15:00",
+      "published_ts": "2026-05-23T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMijgNBVV95cUxPd19objM1TUxKVWNqSnA1dmhjZTRLelo0VHNsWEZybURBQkdhU2VWNUNfTmd2Y2FFYWh2ZXkxNjFZTE51X3ZSUmN2U3packdHRDdkdFRKY0dvekY4UjV6X2JZdnlyVlMxeGNkel9qQlJBeVkxZUltMmZ4U2VOVW5zZm5VUkp1cEpwcWs3TS1Ba0lMWjZ1MWFRYzJ6OGNCaG1BblVyU1FQYUs0THNfSHFlMlJfMmJIVWY0ZElCZEo2cXBfbGNPX19Wa01kajJJRzhCTlR2X010aG5jTjNwOWNsUE9DY3BRVmFxU1FleVNHN1kzUnJYVEZJVktMUFpCejI1QVFrZEdWLWRVamVsY2Z6cEQxel9TYTFpU3VUUEdULUVnVFhPSy1oVk5ocS11QjYtTHhIZE4xRUhYVV9ZYXhJUkcwNWt1NXhOLTBrNjdUWU90QVNvbWZWT3k0MG0yU1ptSHdTZzhRR2pDbXV5eWxUbVozQzc5dTg2QjZxb0F0c3E3Q2lhY1hraHpsNzM5dw?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；搭配法人買賣超與股價位置判斷承接力",
+      "source_score": 3,
+      "source_tier": "主流財經",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認"
     }
   ],
   "disclosure_rows": [
@@ -3856,30 +3882,31 @@
   "prediction_history_status": "已記錄本次預測快照，待後續交易日回測校準",
   "llm_training_status": {
     "ok": true,
-    "count": 2723,
+    "count": 2965,
     "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\llm_technical_training_examples.jsonl",
     "dashboard": {
       "ok": true,
       "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\technical_training_dashboard.html",
       "summary": {
-        "generated_at": "2026-06-21T19:23:23+08:00",
-        "examples": 2723,
-        "stocks": 26,
+        "generated_at": "2026-06-21T23:32:04+08:00",
+        "examples": 2965,
+        "stocks": 29,
         "quality_counts": {
-          "高": 2663,
-          "中": 33,
+          "高": 2902,
+          "中": 36,
           "未標記": 26,
           "低": 1
         },
         "industry_counts": {
-          "電子工業": 836,
+          "電子工業": 921,
           "半導體業": 520,
           "電機機械": 279,
           "其他電子業": 241,
           "通信網路業": 223,
-          "玻璃陶瓷": 135,
+          "電子零組件業": 204,
+          "玻璃陶瓷": 136,
           "鋼鐵工業": 135,
-          "電子零組件業": 128,
+          "航運業": 80,
           "光電業": 75,
           "化學生技醫療": 75,
           "生技醫療業": 60,
@@ -3889,21 +3916,21 @@
         "industry_detail_rows": [
           {
             "industry": "電子工業",
-            "examples": 836,
-            "example_pct": 30.7,
-            "stocks": 12,
-            "high_quality": 833,
-            "mid_quality": 3,
+            "examples": 921,
+            "example_pct": 31.1,
+            "stocks": 14,
+            "high_quality": 916,
+            "mid_quality": 5,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "電子工業通用樣本、CCL / 銅箔基板、PCB / HDI、液冷 / 散熱",
+            "top_tags": "電子工業通用樣本、AI伺服器 / GPU伺服器、AI伺服器ODM / EMS、PCB / HDI",
             "latest_sample_date": "2026-04-07"
           },
           {
             "industry": "半導體業",
             "examples": 520,
-            "example_pct": 19.1,
+            "example_pct": 17.5,
             "stocks": 6,
             "high_quality": 506,
             "mid_quality": 14,
@@ -3916,7 +3943,7 @@
           {
             "industry": "電機機械",
             "examples": 279,
-            "example_pct": 10.2,
+            "example_pct": 9.4,
             "stocks": 2,
             "high_quality": 279,
             "mid_quality": 0,
@@ -3929,7 +3956,7 @@
           {
             "industry": "其他電子業",
             "examples": 241,
-            "example_pct": 8.9,
+            "example_pct": 8.1,
             "stocks": 3,
             "high_quality": 240,
             "mid_quality": 1,
@@ -3942,7 +3969,7 @@
           {
             "industry": "通信網路業",
             "examples": 223,
-            "example_pct": 8.2,
+            "example_pct": 7.5,
             "stocks": 2,
             "high_quality": 209,
             "mid_quality": 11,
@@ -3953,12 +3980,25 @@
             "latest_sample_date": "2026-04-27"
           },
           {
+            "industry": "電子零組件業",
+            "examples": 204,
+            "example_pct": 6.9,
+            "stocks": 3,
+            "high_quality": 195,
+            "mid_quality": 1,
+            "low_quality": 0,
+            "unlabeled_quality": 8,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "CPO / 矽光子、PCB / HDI、工業機器人 / 自動化系統、線性馬達 / 自動化",
+            "latest_sample_date": "2026-04-30"
+          },
+          {
             "industry": "玻璃陶瓷",
-            "examples": 135,
-            "example_pct": 5.0,
+            "examples": 136,
+            "example_pct": 4.6,
             "stocks": 1,
             "high_quality": 132,
-            "mid_quality": 3,
+            "mid_quality": 4,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
@@ -3968,7 +4008,7 @@
           {
             "industry": "鋼鐵工業",
             "examples": 135,
-            "example_pct": 5.0,
+            "example_pct": 4.6,
             "stocks": 1,
             "high_quality": 135,
             "mid_quality": 0,
@@ -3979,22 +4019,22 @@
             "latest_sample_date": "2026-03-05"
           },
           {
-            "industry": "電子零組件業",
-            "examples": 128,
-            "example_pct": 4.7,
-            "stocks": 3,
-            "high_quality": 119,
-            "mid_quality": 1,
+            "industry": "航運業",
+            "examples": 80,
+            "example_pct": 2.7,
+            "stocks": 1,
+            "high_quality": 80,
+            "mid_quality": 0,
             "low_quality": 0,
-            "unlabeled_quality": 8,
+            "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "CCL / 銅箔基板、PCB / HDI、液冷 / 散熱、液冷 / 水冷 / 散熱模組",
-            "latest_sample_date": "2026-04-30"
+            "top_tags": "航運業通用樣本",
+            "latest_sample_date": "2026-02-09"
           },
           {
             "industry": "光電業",
             "examples": 75,
-            "example_pct": 2.8,
+            "example_pct": 2.5,
             "stocks": 1,
             "high_quality": 75,
             "mid_quality": 0,
@@ -4007,7 +4047,7 @@
           {
             "industry": "化學生技醫療",
             "examples": 75,
-            "example_pct": 2.8,
+            "example_pct": 2.5,
             "stocks": 1,
             "high_quality": 75,
             "mid_quality": 0,
@@ -4020,7 +4060,7 @@
           {
             "industry": "生技醫療業",
             "examples": 60,
-            "example_pct": 2.2,
+            "example_pct": 2.0,
             "stocks": 1,
             "high_quality": 60,
             "mid_quality": 0,
@@ -4059,41 +4099,41 @@
         ],
         "tag_counts": {
           "電子工業通用樣本": 493,
+          "CPO / 矽光子": 360,
+          "儲能 / 電網": 359,
+          "儲能系統": 359,
+          "變壓器": 359,
+          "變壓器 / 重電": 359,
           "半導體業通用樣本": 295,
           "DDR4 / DDR5": 281,
           "DRAM / 利基型記憶體": 281,
           "NAND / NOR Flash": 281,
           "NAND Flash": 281,
           "NOR Flash": 281,
-          "儲能 / 電網": 279,
-          "儲能系統": 279,
-          "變壓器": 279,
-          "變壓器 / 重電": 279,
           "開關設備 / 配電盤": 279,
-          "CPO / 矽光子": 223,
           "Fiber Shuffle": 223,
           "MPO / 光纖連接": 223,
           "Optical Engine光引擎": 223,
           "光通訊模組": 223,
-          "CCL / 銅箔基板": 216,
-          "PCB / HDI": 216,
+          "AI伺服器 / GPU伺服器": 217,
+          "AI伺服器ODM / EMS": 217,
+          "PCB / HDI": 217,
+          "工業機器人 / 自動化系統": 217,
+          "線性馬達 / 自動化": 217,
           "FAU / Fiber Shuffle": 143,
           "FAU光纖陣列": 143,
           "MPO / 光纖配線盒": 143,
-          "AI伺服器 / GPU伺服器": 137,
-          "AI伺服器ODM / EMS": 137,
+          "玻璃陶瓷通用樣本": 136,
           "液冷 / 散熱": 135,
           "液冷 / 水冷 / 散熱模組": 135,
-          "玻璃陶瓷通用樣本": 135,
           "鋼鐵工業通用樣本": 135,
-          "其他電子業通用樣本": 80,
-          "工業機器人 / 自動化系統": 80
+          "CCL / 銅箔基板": 80
         },
         "tag_detail_rows": [
           {
             "tag": "電子工業通用樣本",
             "examples": 493,
-            "example_pct": 18.1,
+            "example_pct": 16.6,
             "stocks": 7,
             "top_industry": "電子工業",
             "high_quality": 491,
@@ -4103,9 +4143,69 @@
             "latest_sample_date": "2026-04-07"
           },
           {
+            "tag": "CPO / 矽光子",
+            "examples": 360,
+            "example_pct": 12.1,
+            "stocks": 3,
+            "top_industry": "通信網路業",
+            "high_quality": 347,
+            "mid_quality": 11,
+            "low_quality": 0,
+            "unlabeled_quality": 2,
+            "latest_sample_date": "2026-04-27"
+          },
+          {
+            "tag": "儲能 / 電網",
+            "examples": 359,
+            "example_pct": 12.1,
+            "stocks": 3,
+            "top_industry": "電機機械",
+            "high_quality": 357,
+            "mid_quality": 2,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-16"
+          },
+          {
+            "tag": "儲能系統",
+            "examples": 359,
+            "example_pct": 12.1,
+            "stocks": 3,
+            "top_industry": "電機機械",
+            "high_quality": 357,
+            "mid_quality": 2,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-16"
+          },
+          {
+            "tag": "變壓器",
+            "examples": 359,
+            "example_pct": 12.1,
+            "stocks": 3,
+            "top_industry": "電機機械",
+            "high_quality": 357,
+            "mid_quality": 2,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-16"
+          },
+          {
+            "tag": "變壓器 / 重電",
+            "examples": 359,
+            "example_pct": 12.1,
+            "stocks": 3,
+            "top_industry": "電機機械",
+            "high_quality": 357,
+            "mid_quality": 2,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-16"
+          },
+          {
             "tag": "半導體業通用樣本",
             "examples": 295,
-            "example_pct": 10.8,
+            "example_pct": 9.9,
             "stocks": 4,
             "top_industry": "半導體業",
             "high_quality": 295,
@@ -4117,7 +4217,7 @@
           {
             "tag": "DDR4 / DDR5",
             "examples": 281,
-            "example_pct": 10.3,
+            "example_pct": 9.5,
             "stocks": 2,
             "top_industry": "半導體業",
             "high_quality": 267,
@@ -4129,7 +4229,7 @@
           {
             "tag": "DRAM / 利基型記憶體",
             "examples": 281,
-            "example_pct": 10.3,
+            "example_pct": 9.5,
             "stocks": 2,
             "top_industry": "半導體業",
             "high_quality": 267,
@@ -4141,7 +4241,7 @@
           {
             "tag": "NAND / NOR Flash",
             "examples": 281,
-            "example_pct": 10.3,
+            "example_pct": 9.5,
             "stocks": 2,
             "top_industry": "半導體業",
             "high_quality": 267,
@@ -4153,7 +4253,7 @@
           {
             "tag": "NAND Flash",
             "examples": 281,
-            "example_pct": 10.3,
+            "example_pct": 9.5,
             "stocks": 2,
             "top_industry": "半導體業",
             "high_quality": 267,
@@ -4165,7 +4265,7 @@
           {
             "tag": "NOR Flash",
             "examples": 281,
-            "example_pct": 10.3,
+            "example_pct": 9.5,
             "stocks": 2,
             "top_industry": "半導體業",
             "high_quality": 267,
@@ -4175,57 +4275,9 @@
             "latest_sample_date": "2026-03-06"
           },
           {
-            "tag": "儲能 / 電網",
-            "examples": 279,
-            "example_pct": 10.2,
-            "stocks": 2,
-            "top_industry": "電機機械",
-            "high_quality": 279,
-            "mid_quality": 0,
-            "low_quality": 0,
-            "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-16"
-          },
-          {
-            "tag": "儲能系統",
-            "examples": 279,
-            "example_pct": 10.2,
-            "stocks": 2,
-            "top_industry": "電機機械",
-            "high_quality": 279,
-            "mid_quality": 0,
-            "low_quality": 0,
-            "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-16"
-          },
-          {
-            "tag": "變壓器",
-            "examples": 279,
-            "example_pct": 10.2,
-            "stocks": 2,
-            "top_industry": "電機機械",
-            "high_quality": 279,
-            "mid_quality": 0,
-            "low_quality": 0,
-            "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-16"
-          },
-          {
-            "tag": "變壓器 / 重電",
-            "examples": 279,
-            "example_pct": 10.2,
-            "stocks": 2,
-            "top_industry": "電機機械",
-            "high_quality": 279,
-            "mid_quality": 0,
-            "low_quality": 0,
-            "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-16"
-          },
-          {
             "tag": "開關設備 / 配電盤",
             "examples": 279,
-            "example_pct": 10.2,
+            "example_pct": 9.4,
             "stocks": 2,
             "top_industry": "電機機械",
             "high_quality": 279,
@@ -4233,23 +4285,11 @@
             "low_quality": 0,
             "unlabeled_quality": 0,
             "latest_sample_date": "2026-03-16"
-          },
-          {
-            "tag": "CPO / 矽光子",
-            "examples": 223,
-            "example_pct": 8.2,
-            "stocks": 2,
-            "top_industry": "通信網路業",
-            "high_quality": 210,
-            "mid_quality": 11,
-            "low_quality": 0,
-            "unlabeled_quality": 2,
-            "latest_sample_date": "2026-04-27"
           },
           {
             "tag": "Fiber Shuffle",
             "examples": 223,
-            "example_pct": 8.2,
+            "example_pct": 7.5,
             "stocks": 2,
             "top_industry": "通信網路業",
             "high_quality": 209,
@@ -4261,7 +4301,7 @@
           {
             "tag": "MPO / 光纖連接",
             "examples": 223,
-            "example_pct": 8.2,
+            "example_pct": 7.5,
             "stocks": 2,
             "top_industry": "通信網路業",
             "high_quality": 209,
@@ -4273,7 +4313,7 @@
           {
             "tag": "Optical Engine光引擎",
             "examples": 223,
-            "example_pct": 8.2,
+            "example_pct": 7.5,
             "stocks": 2,
             "top_industry": "通信網路業",
             "high_quality": 209,
@@ -4285,7 +4325,7 @@
           {
             "tag": "光通訊模組",
             "examples": 223,
-            "example_pct": 8.2,
+            "example_pct": 7.5,
             "stocks": 2,
             "top_industry": "通信網路業",
             "high_quality": 209,
@@ -4295,25 +4335,61 @@
             "latest_sample_date": "2026-04-27"
           },
           {
-            "tag": "CCL / 銅箔基板",
-            "examples": 216,
-            "example_pct": 7.9,
+            "tag": "AI伺服器 / GPU伺服器",
+            "examples": 217,
+            "example_pct": 7.3,
             "stocks": 2,
             "top_industry": "電子工業",
-            "high_quality": 215,
+            "high_quality": 217,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-06"
+          },
+          {
+            "tag": "AI伺服器ODM / EMS",
+            "examples": 217,
+            "example_pct": 7.3,
+            "stocks": 2,
+            "top_industry": "電子工業",
+            "high_quality": 217,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-06"
+          },
+          {
+            "tag": "PCB / HDI",
+            "examples": 217,
+            "example_pct": 7.3,
+            "stocks": 2,
+            "top_industry": "電子零組件業",
+            "high_quality": 216,
             "mid_quality": 1,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "latest_sample_date": "2026-03-05"
           },
           {
-            "tag": "PCB / HDI",
-            "examples": 216,
-            "example_pct": 7.9,
+            "tag": "工業機器人 / 自動化系統",
+            "examples": 217,
+            "example_pct": 7.3,
             "stocks": 2,
-            "top_industry": "電子工業",
-            "high_quality": 215,
-            "mid_quality": 1,
+            "top_industry": "電子零組件業",
+            "high_quality": 217,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "tag": "線性馬達 / 自動化",
+            "examples": 217,
+            "example_pct": 7.3,
+            "stocks": 2,
+            "top_industry": "電子零組件業",
+            "high_quality": 217,
+            "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "latest_sample_date": "2026-03-05"
@@ -4321,7 +4397,7 @@
           {
             "tag": "FAU / Fiber Shuffle",
             "examples": 143,
-            "example_pct": 5.3,
+            "example_pct": 4.8,
             "stocks": 1,
             "top_industry": "通信網路業",
             "high_quality": 130,
@@ -4333,7 +4409,7 @@
           {
             "tag": "FAU光纖陣列",
             "examples": 143,
-            "example_pct": 5.3,
+            "example_pct": 4.8,
             "stocks": 1,
             "top_industry": "通信網路業",
             "high_quality": 130,
@@ -4345,7 +4421,7 @@
           {
             "tag": "MPO / 光纖配線盒",
             "examples": 143,
-            "example_pct": 5.3,
+            "example_pct": 4.8,
             "stocks": 1,
             "top_industry": "通信網路業",
             "high_quality": 130,
@@ -4355,33 +4431,21 @@
             "latest_sample_date": "2026-04-27"
           },
           {
-            "tag": "AI伺服器 / GPU伺服器",
-            "examples": 137,
-            "example_pct": 5.0,
+            "tag": "玻璃陶瓷通用樣本",
+            "examples": 136,
+            "example_pct": 4.6,
             "stocks": 1,
-            "top_industry": "其他電子業",
-            "high_quality": 137,
-            "mid_quality": 0,
+            "top_industry": "玻璃陶瓷",
+            "high_quality": 132,
+            "mid_quality": 4,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-06"
-          },
-          {
-            "tag": "AI伺服器ODM / EMS",
-            "examples": 137,
-            "example_pct": 5.0,
-            "stocks": 1,
-            "top_industry": "其他電子業",
-            "high_quality": 137,
-            "mid_quality": 0,
-            "low_quality": 0,
-            "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-06"
+            "latest_sample_date": "2026-03-05"
           },
           {
             "tag": "液冷 / 散熱",
             "examples": 135,
-            "example_pct": 5.0,
+            "example_pct": 4.6,
             "stocks": 1,
             "top_industry": "電子工業",
             "high_quality": 134,
@@ -4393,7 +4457,7 @@
           {
             "tag": "液冷 / 水冷 / 散熱模組",
             "examples": 135,
-            "example_pct": 5.0,
+            "example_pct": 4.6,
             "stocks": 1,
             "top_industry": "電子工業",
             "high_quality": 134,
@@ -4403,21 +4467,9 @@
             "latest_sample_date": "2026-03-05"
           },
           {
-            "tag": "玻璃陶瓷通用樣本",
-            "examples": 135,
-            "example_pct": 5.0,
-            "stocks": 1,
-            "top_industry": "玻璃陶瓷",
-            "high_quality": 132,
-            "mid_quality": 3,
-            "low_quality": 0,
-            "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-05"
-          },
-          {
             "tag": "鋼鐵工業通用樣本",
             "examples": 135,
-            "example_pct": 5.0,
+            "example_pct": 4.6,
             "stocks": 1,
             "top_industry": "鋼鐵工業",
             "high_quality": 135,
@@ -4427,9 +4479,21 @@
             "latest_sample_date": "2026-03-05"
           },
           {
+            "tag": "CCL / 銅箔基板",
+            "examples": 80,
+            "example_pct": 2.7,
+            "stocks": 1,
+            "top_industry": "電子工業",
+            "high_quality": 79,
+            "mid_quality": 1,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-02-09"
+          },
+          {
             "tag": "其他電子業通用樣本",
             "examples": 80,
-            "example_pct": 2.9,
+            "example_pct": 2.7,
             "stocks": 1,
             "top_industry": "其他電子業",
             "high_quality": 79,
@@ -4439,11 +4503,11 @@
             "latest_sample_date": "2026-04-01"
           },
           {
-            "tag": "工業機器人 / 自動化系統",
+            "tag": "航運業通用樣本",
             "examples": 80,
-            "example_pct": 2.9,
+            "example_pct": 2.7,
             "stocks": 1,
-            "top_industry": "其他電子業",
+            "top_industry": "航運業",
             "high_quality": 80,
             "mid_quality": 0,
             "low_quality": 0,
@@ -4451,13 +4515,13 @@
             "latest_sample_date": "2026-02-09"
           },
           {
-            "tag": "線性馬達 / 自動化",
+            "tag": "電源供應器 / 電源管理",
             "examples": 80,
-            "example_pct": 2.9,
+            "example_pct": 2.7,
             "stocks": 1,
-            "top_industry": "其他電子業",
-            "high_quality": 80,
-            "mid_quality": 0,
+            "top_industry": "電子工業",
+            "high_quality": 78,
+            "mid_quality": 2,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "latest_sample_date": "2026-02-09"
@@ -4465,7 +4529,7 @@
           {
             "tag": "光電業通用樣本",
             "examples": 75,
-            "example_pct": 2.8,
+            "example_pct": 2.5,
             "stocks": 1,
             "top_industry": "光電業",
             "high_quality": 75,
@@ -4477,7 +4541,7 @@
           {
             "tag": "化學生技醫療通用樣本",
             "examples": 75,
-            "example_pct": 2.8,
+            "example_pct": 2.5,
             "stocks": 1,
             "top_industry": "化學生技醫療",
             "high_quality": 75,
@@ -4489,7 +4553,7 @@
           {
             "tag": "生技醫療業通用樣本",
             "examples": 60,
-            "example_pct": 2.2,
+            "example_pct": 2.0,
             "stocks": 1,
             "top_industry": "生技醫療業",
             "high_quality": 60,
@@ -4536,7 +4600,7 @@
           }
         ],
         "source_counts": {
-          "rolling_ohlcv_backtest": 2723
+          "rolling_ohlcv_backtest": 2965
         },
         "latest_sample_date": "2026-04-30",
         "manifest": {
@@ -4547,6 +4611,6 @@
         }
       }
     },
-    "message": "已輸出 2723 筆 LLM 技術訓練樣本"
+    "message": "已輸出 2965 筆 LLM 技術訓練樣本"
   }
 }
