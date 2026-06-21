@@ -1,0 +1,2126 @@
+{
+  "stock_id": "6282",
+  "stock_name": "康舒",
+  "source": "FinMind TaiwanStockPrice",
+  "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "industry_category": "電子工業",
+  "data_period": "2025-06-23 to 2026-06-18",
+  "data_date": "2026-06-18",
+  "ohlcv_start": "2025-06-23",
+  "ohlcv_end": "2026-06-18",
+  "last_daily_k_date": "2026-06-18",
+  "valid_trading_days": 242,
+  "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
+  "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
+  "institutional_period": "2025-06-23 to 2026-06-19 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "institutional_latest_period": "2026-06-19",
+  "margin_period": "2025-06-23 to 2026-06-18 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance)",
+  "margin_latest_period": "2026-06-18",
+  "warrant_period": "TWSE report_date=1150620 (OK; call=196, put=9, with_exercise_price=205)",
+  "warrant_latest_period": "TWSE report_date=1150620",
+  "fundamental_period": "revenue 2024-01-01 to 2026-06-01; PER/PBR 2025-06-23 to 2026-06-19; EPS 2021-06-30 to 2026-03-31; profitability 2021-06-30 to 2026-03-31; quarterly_detail 2021-06-30 to 2026-03-31 (OK revenue_rows=30; per_rows=243; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
+  "revenue_latest_period": "2026-05",
+  "quarterly_latest_period": "2026-03-31",
+  "major_holder_period": "not available; no complete natural person major-holder list claimed",
+  "tdcc_period": "20260618 (OK; rows=17)",
+  "tdcc_latest_period": "20260618",
+  "etf_latest_period": "2026-06-18",
+  "etf_holding_change_period": "2026-06-18 (OK; holders=3, active_candidates=0; changes=0)",
+  "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=康舒(6282), 台達電(2308), 群電(6412), 全漢(3015), 光寶科(2301); failures=none",
+  "peer_display_list": "康舒(6282)、台達電(2308)、群電(6412)、全漢(3015)、光寶科(2301)",
+  "peer_business_summary": "康舒(6282) 定位：電源供應器 / 伺服器與工業電源 / EV 充電與能源管理系統；產品組合：電源供應器 PSU / 電源模組（占比待補）、伺服器 / 資料中心電源（占比待補）、工業電源 / 通訊電源 / 網通電源（占比待補）、EV 充電樁 / 電動車充電解決方案（占比待補）、能源管理 / 儲能與電力轉換系統（占比待補）；資料層級：官方產品資料；同族群比較基準：電源供應器 / 電源模組。對照族群涵蓋：AI 3D 機器視覺 / 工業自動化解決方案、電子零組件 / 模組 / 材料、電源供應 / 光電元件 / 雲端與車用電子解決方案。",
+  "peer_business_rows": [
+    {
+      "stock_id": "6282",
+      "name": "康舒",
+      "profile_scope": "官方產品資料",
+      "data_confidence": "高",
+      "product_basis": "官方產品資料",
+      "chain_position": "電源供應器 / 伺服器與工業電源 / EV 充電與能源管理系統",
+      "product_mix": "電源供應器 PSU / 電源模組（占比待補）、伺服器 / 資料中心電源（占比待補）、工業電源 / 通訊電源 / 網通電源（占比待補）、EV 充電樁 / 電動車充電解決方案（占比待補）、能源管理 / 儲能與電力轉換系統（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "電源供應器 PSU / 電源模組",
+          "percent": null,
+          "source": "康舒公開產品資訊 / 年報 / 法說"
+        },
+        {
+          "product": "伺服器 / 資料中心電源",
+          "percent": null,
+          "source": "康舒公開產品資訊 / 年報 / 法說"
+        },
+        {
+          "product": "工業電源 / 通訊電源 / 網通電源",
+          "percent": null,
+          "source": "康舒公開產品資訊 / 年報 / 法說"
+        },
+        {
+          "product": "EV 充電樁 / 電動車充電解決方案",
+          "percent": null,
+          "source": "康舒公開產品資訊 / 年報 / 法說"
+        },
+        {
+          "product": "能源管理 / 儲能與電力轉換系統",
+          "percent": null,
+          "source": "康舒公開產品資訊 / 年報 / 法說"
+        },
+        {
+          "product": "消費性電子電源 / 變壓器與轉接器",
+          "percent": null,
+          "source": "康舒公開產品資訊 / 年報 / 法說"
+        }
+      ],
+      "product_mix_has_percent": false,
+      "supply_chain_nodes": [
+        {
+          "theme": "AI伺服器 / 雲端資料中心",
+          "layer": "電源",
+          "product": "電源供應器 / 電源管理",
+          "role": "關鍵零組件",
+          "directness": "高",
+          "evidence_level": "A",
+          "matched_keywords": [
+            "電源供應器",
+            "PSU",
+            "Power"
+          ],
+          "stock_price_relevance": "看高功率伺服器滲透率",
+          "score": 7
+        },
+        {
+          "theme": "重電 / 電網設備",
+          "layer": "儲能",
+          "product": "儲能系統",
+          "role": "成長產品",
+          "directness": "高",
+          "evidence_level": "A",
+          "matched_keywords": [
+            "儲能"
+          ],
+          "stock_price_relevance": "看案場認列、併網與政策補助",
+          "score": 3
+        },
+        {
+          "theme": "重電 / 電網設備",
+          "layer": "輸配電",
+          "product": "變壓器",
+          "role": "核心產品",
+          "directness": "高",
+          "evidence_level": "A",
+          "matched_keywords": [
+            "變壓器"
+          ],
+          "stock_price_relevance": "看台電強韌電網、外銷訂單與毛利率",
+          "score": 3
+        }
+      ],
+      "supply_chain_summary": "電源供應器 / 電源管理（高，證據A）、儲能系統（高，證據A）、變壓器（高，證據A）",
+      "growth_drivers": "AI 伺服器與資料中心電源需求、高瓦數 / 高效率電源規格升級、EV 充電基礎建設",
+      "valuation_logic": "以高階電源占比、伺服器 / 資料中心需求、EV 充電與能源管理放量、毛利率與營業利益率改善判斷；估值需和一般消費性電源供應器分開，並與台達電、光寶科、飛宏、全漢等電源與能源管理同業比較。",
+      "risks": "消費性電源需求疲弱、伺服器客戶拉貨波動、EV 充電建置時程不如預期",
+      "stock_price_watch": "AI 伺服器與資料中心電源需求、高瓦數 / 高效率電源規格升級、EV 充電基礎建設；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：與台達電、光寶科、飛宏、全漢同屬電源供應與能源管理鏈，但康舒需特別區分伺服器電源、工業通訊電源、EV 充電與消費性電源占比。；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：電源供應器、PSU、Power Supply、伺服器電源、資料中心電源",
+      "evidence_keywords": "電源供應器、PSU、Power Supply、伺服器電源、資料中心電源",
+      "evidence_sources": "康舒公開產品資訊 / 年報 / 法說、TWSE 公司基本資料 / 官網：http://www.acbel.com"
+    },
+    {
+      "stock_id": "3015",
+      "name": "全漢",
+      "profile_scope": "全市場分類",
+      "data_confidence": "低",
+      "product_basis": "通用推估",
+      "chain_position": "電源供應 / 電源模組 / 能源管理",
+      "product_mix": "電源供應器（占比待補）、電源模組（占比待補）、伺服器電源（占比待補）、資料中心電力設備（占比待補）、能源管理（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "電源供應器",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "電源模組",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "伺服器電源",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "資料中心電力設備",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "能源管理",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "supply_chain_nodes": [
+        {
+          "theme": "AI伺服器 / 雲端資料中心",
+          "layer": "電源",
+          "product": "電源供應器 / 電源管理",
+          "role": "關鍵零組件",
+          "directness": "高",
+          "evidence_level": "B",
+          "matched_keywords": [
+            "電源供應器"
+          ],
+          "stock_price_relevance": "看高功率伺服器滲透率",
+          "score": 3
+        }
+      ],
+      "supply_chain_summary": "電源供應器 / 電源管理（高，證據B）",
+      "growth_drivers": "AI 伺服器與資料中心電力需求、高效率電源規格升級、雲端資本支出",
+      "valuation_logic": "以伺服器 / 資料中心電源占比、毛利率、電源規格升級與客戶拉貨評估；若具自動化或能源管理業務，估值不可只看傳統 PSU。",
+      "risks": "電源報價競爭、雲端拉貨波動、原物料與匯率",
+      "stock_price_watch": "AI 伺服器與資料中心電力需求、高效率電源規格升級、雲端資本支出；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：同屬電源供應與電源模組，但需區分消費電源、伺服器電源、UPS 與能源管理占比；公司實際產品比重需以法說、年報或公告確認；產品重疊：電源供應器 PSU / 電源模組、伺服器 / 資料中心電源、工業電源 / 通訊電源 / 網通電源、能源管理 / 儲能與電力轉換系統、消費性電子電源 / 變壓器與轉接器、電源供應器 / 電源管理",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 3.8699999999999997,
+      "matched_products": "電源供應器 PSU / 電源模組、伺服器 / 資料中心電源、工業電源 / 通訊電源 / 網通電源、能源管理 / 儲能與電力轉換系統、消費性電子電源 / 變壓器與轉接器、電源供應器 / 電源管理"
+    },
+    {
+      "stock_id": "2301",
+      "name": "光寶科",
+      "profile_scope": "官方產品資料",
+      "data_confidence": "高",
+      "product_basis": "官方產品資料",
+      "chain_position": "電源供應 / 光電元件 / 雲端與車用電子解決方案",
+      "product_mix": "電源供應器 PSU / 電源轉換模組（占比待補）、雲端 / AI 伺服器與資料中心電源（占比待補）、光電元件 / LED / 感測與光學元件（占比待補）、車用電子 / 車用電源與照明相關模組（占比待補）、消費性電子電源 / 充電器 / 轉接器（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "電源供應器 PSU / 電源轉換模組",
+          "percent": null,
+          "source": "光寶科公開產品資訊 / 年報 / 法說"
+        },
+        {
+          "product": "雲端 / AI 伺服器與資料中心電源",
+          "percent": null,
+          "source": "光寶科公開產品資訊 / 年報 / 法說"
+        },
+        {
+          "product": "光電元件 / LED / 感測與光學元件",
+          "percent": null,
+          "source": "光寶科公開產品資訊 / 年報 / 法說"
+        },
+        {
+          "product": "車用電子 / 車用電源與照明相關模組",
+          "percent": null,
+          "source": "光寶科公開產品資訊 / 年報 / 法說"
+        },
+        {
+          "product": "消費性電子電源 / 充電器 / 轉接器",
+          "percent": null,
+          "source": "光寶科公開產品資訊 / 年報 / 法說"
+        },
+        {
+          "product": "工業 / 通訊 / 能源管理相關電源應用",
+          "percent": null,
+          "source": "光寶科公開產品資訊 / 年報 / 法說"
+        }
+      ],
+      "product_mix_has_percent": false,
+      "supply_chain_nodes": [
+        {
+          "theme": "AI伺服器 / 雲端資料中心",
+          "layer": "電源",
+          "product": "電源供應器 / 電源管理",
+          "role": "關鍵零組件",
+          "directness": "高",
+          "evidence_level": "A",
+          "matched_keywords": [
+            "電源供應器",
+            "PSU",
+            "Power"
+          ],
+          "stock_price_relevance": "看高功率伺服器滲透率",
+          "score": 7
+        }
+      ],
+      "supply_chain_summary": "電源供應器 / 電源管理（高，證據A）",
+      "growth_drivers": "AI 伺服器與資料中心電源需求、高瓦數高效率電源規格升級、車用電子與電動車電源應用",
+      "valuation_logic": "以高階電源占比、雲端 / AI 伺服器拉貨、車用電子放量、光電產品組合與毛利率改善判斷；估值需和台達電、群電、康舒、全漢等電源同業比較，但光寶科另有光電與車用電子屬性。",
+      "risks": "雲端客戶拉貨波動、消費性電源價格競爭、光電元件需求循環",
+      "stock_price_watch": "AI 伺服器與資料中心電源需求、高瓦數高效率電源規格升級、車用電子與電動車電源應用；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：與台達電、群電、康舒、全漢同屬電源供應鏈，但光寶科同時具光電元件、車用電子與消費電子電源比重，需拆分比較。；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：電源供應器、PSU、Power Supply、伺服器電源、資料中心電源；產品重疊：電源供應器 PSU / 電源模組、伺服器 / 資料中心電源、工業電源 / 通訊電源 / 網通電源、消費性電子電源 / 變壓器與轉接器、電源供應器 / 電源管理",
+      "evidence_keywords": "電源供應器、PSU、Power Supply、伺服器電源、資料中心電源",
+      "evidence_sources": "光寶科公開產品資訊 / 年報 / 法說、TWSE 公司基本資料 / 官網：http://www.liteon.com/",
+      "product_overlap_score": 3.51,
+      "matched_products": "電源供應器 PSU / 電源模組、伺服器 / 資料中心電源、工業電源 / 通訊電源 / 網通電源、消費性電子電源 / 變壓器與轉接器、電源供應器 / 電源管理"
+    },
+    {
+      "stock_id": "2308",
+      "name": "台達電",
+      "profile_scope": "官網 / 公開資訊佐證",
+      "data_confidence": "高",
+      "product_basis": "官網 / 公開資訊佐證",
+      "chain_position": "AI 3D 機器視覺 / 工業自動化解決方案",
+      "product_mix": "AI 視覺檢測系統（占比待補）、3D Bin Picking（占比待補）、機器人視覺導引（占比待補）、AR + AI 輔助作業（占比待補）、工業自動化軟硬體（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "AI 視覺檢測系統",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "3D Bin Picking",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "機器人視覺導引",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "AR + AI 輔助作業",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "工業自動化軟硬體",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "supply_chain_nodes": [
+        {
+          "theme": "精密傳動 / 自動化",
+          "layer": "系統",
+          "product": "工業機器人 / 自動化系統",
+          "role": "系統應用",
+          "directness": "高",
+          "evidence_level": "A",
+          "matched_keywords": [
+            "機器人"
+          ],
+          "stock_price_relevance": "看資本支出循環與新應用",
+          "score": 3
+        },
+        {
+          "theme": "AI伺服器 / 雲端資料中心",
+          "layer": "電源",
+          "product": "電源供應器 / 電源管理",
+          "role": "關鍵零組件",
+          "directness": "中高",
+          "evidence_level": "A",
+          "matched_keywords": [
+            "電源供應器"
+          ],
+          "stock_price_relevance": "看高功率伺服器滲透率",
+          "score": 3
+        }
+      ],
+      "supply_chain_summary": "工業機器人 / 自動化系統（高，證據A）、電源供應器 / 電源管理（中高，證據A）",
+      "growth_drivers": "AI 視覺導入、機器人自動化需求、智慧物流與智慧製造",
+      "valuation_logic": "以專案導入速度、軟硬體解決方案占比、毛利率、營收成長與客戶產業擴散度評估；不宜直接套 EMS / ODM 低毛利估值。",
+      "risks": "資料中心資本支出波動、工業自動化景氣循環、電源產品價格競爭",
+      "stock_price_watch": "AI 視覺導入、機器人自動化需求、智慧物流與智慧製造；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中高：需同時與電源模組、能源管理、工業自動化與資料中心基礎設施公司比較；比純電源供應器同業更多元；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：智慧製造；產品重疊：電源供應器 / 電源管理",
+      "evidence_keywords": "智慧製造",
+      "evidence_sources": "TWSE 公司基本資料 / 官網：https://www.deltaww.com/zh-TW/index、官網延伸頁：https://www.deltaww.com/zh-TW/investors",
+      "product_overlap_score": 1.4,
+      "matched_products": "電源供應器 / 電源管理"
+    },
+    {
+      "stock_id": "6412",
+      "name": "群電",
+      "profile_scope": "全市場分類",
+      "data_confidence": "低",
+      "product_basis": "通用推估",
+      "chain_position": "電子零組件 / 模組 / 材料",
+      "product_mix": "連接器（占比待補）、PCB / 板材（占比待補）、被動元件（占比待補）、機構件 / 模組（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "連接器",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "PCB / 板材",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "被動元件",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "機構件 / 模組",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "supply_chain_nodes": [
+        {
+          "theme": "PCB / 載板 / CCL",
+          "layer": "PCB",
+          "product": "PCB / HDI",
+          "role": "核心製造",
+          "directness": "高",
+          "evidence_level": "B",
+          "matched_keywords": [
+            "PCB"
+          ],
+          "stock_price_relevance": "看產品層數、良率與高階板占比",
+          "score": 3
+        },
+        {
+          "theme": "AI伺服器 / 雲端資料中心",
+          "layer": "高速互連",
+          "product": "高速線束 / 連接器",
+          "role": "關鍵零組件",
+          "directness": "高",
+          "evidence_level": "B",
+          "matched_keywords": [
+            "連接器"
+          ],
+          "stock_price_relevance": "看平台世代與單機用量提升",
+          "score": 2
+        }
+      ],
+      "supply_chain_summary": "PCB / HDI（高，證據B）、高速線束 / 連接器（高，證據B）",
+      "growth_drivers": "AI 伺服器升級、車用電子、產品規格提升",
+      "valuation_logic": "以產品組合、毛利率、產能利用率與下游客戶需求比較。",
+      "risks": "原料成本、庫存調整、客戶集中",
+      "stock_price_watch": "AI 伺服器升級、車用電子、產品規格提升；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "中：電子零組件產業通用比較；公司實際產品比重需以法說、年報或公告確認",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 0.0,
+      "matched_products": "-"
+    }
+  ],
+  "peer_business_interpretation": [
+    "康舒(6282) 定位：電源供應器 / 伺服器與工業電源 / EV 充電與能源管理系統；產品組合：電源供應器 PSU / 電源模組（占比待補）、伺服器 / 資料中心電源（占比待補）、工業電源 / 通訊電源 / 網通電源（占比待補）、EV 充電樁 / 電動車充電解決方案（占比待補）、能源管理 / 儲能與電力轉換系統（占比待補）；資料層級：官方產品資料；同族群比較基準：電源供應器 / 電源模組。對照族群涵蓋：AI 3D 機器視覺 / 工業自動化解決方案、電子零組件 / 模組 / 材料、電源供應 / 光電元件 / 雲端與車用電子解決方案。",
+    "估值比較應優先看產品組合與獲利率差異：以高階電源占比、伺服器 / 資料中心需求、EV 充電與能源管理放量、毛利率與營業利益率改善判斷；估值需和一般消費性電源供應器分開，並與台達電、光寶科、飛宏、全漢等電源與能源管理同業比較。",
+    "主要風險要和同族群分開看：消費性電源需求疲弱、伺服器客戶拉貨波動、EV 充電建置時程不如預期。"
+  ],
+  "etf_display_status": "持有快照 2026-06-18，未命中最新異動",
+  "tdcc_display_status": "20260618；大額 48.05% / 小額 27.31%",
+  "warrant_display_status": "205 檔，認購 196 / 認售 9",
+  "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
+  "fundamental_profitability_summary": "2026Q1 毛利率 24.39%（年變化 -1.20 個百分點）、營業利益率 2.93%（年變化 +3.39 個百分點）",
+  "fundamental_quarterly_summary": "2026Q1 營業費用率 21.46%（年變化 -4.59 個百分點）、稅後淨利率 2.70%（年變化 +3.42 個百分點）、ROE 0.44%（年變化 +0.67 個百分點）",
+  "revenue_trend_summary": "2026-05 月營收 29.40 億元；MoM -6.73%；YoY 26.19%；近 3 個月累計 YoY 25.64%；近 12 個月滾動營收 YoY 9.30%；連續 8 個月年增為正",
+  "fundamental_price_estimate_summary": "悲觀 38 元 / 中性 82 元 / 樂觀 107 元；產業模型：一般產業 PER（PER 下限 6.0x / 上限 35.0x）；加權框架：成長電子；近四季 EPS 0.50；前瞻 EPS 估 0.99（成長假設 +21.5%）；估值 PER 76.2x / 90.0x / 100.0x；月營收推下一季 EPS 0.36（年化 1.45；季節性係數 1.16 / 歷史營收轉EPS效率 / 近3月營收YoY +25.6% / 最新月營收YoY +26.2% / 近12月營收YoY +9.3% / 毛利率年變化 -1.2ppt）；風險折價：營業利益率偏低、年化 ROE 偏低（-8%）；催化溢價：月營收年增雙位數、近四季 EPS 明顯成長（+6%）；目前 PER 26.6x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=129.5x/272.5x/2571.2x；目前 PER 位於近一年 1% 分位；市場情境 20x/25x/30x=10/12/15 元；模型推估：EPS/PER 89 元（前瞻 EPS 0.99 × 中性 PER 90.0x）、月營收推估EPS 131 元（下一季EPS估 0.36 ×4 × PER 90.0x / 信心高）、技術型態 63 元（上升通道 區間上緣 / 量能不足 / 有效性中52）、法人籌碼成本 60 元（外資 / 投信近20與60日加碼成本）、同族群動能 44 元（同族群中位報酬 +98.6% / 本股 +131.5%）、事件影響 63 元（未來45天 三巫日、月底作帳、季底作帳；科技出口型加權 +8.8% / 當日震盪 6.6%）、歷史相似 60 元（相似樣本12筆 / 5日勝率50% / 20日勝率83% / 5日中位+0.8% / 20日中位+4.5% / 5/20日同向 / 可信45）、殖利率 78 元（現殖利率 6.50% / 中位 1.52% / 異常高值收斂）；多模型加權參考 82 元；歷史 PBR 分位 Q25/Q50/Q75=1.23x/1.67x/1.91x；技術型態目標 63 元（90日上升通道 / 型態分 5.5 / 目標可信中52）；法人籌碼成本 外資 60 元 / 投信 60 元；同族群相對動能參考 44 元（同族群中位報酬 +98.6% / 本股 +131.5%）；殖利率模型 78 元（現殖利率 6.50% / 中位 1.52% / 異常高值收斂）；現價 58.10 元，較中性估值 -29.4%；現價低於中性估值，具估值修復空間；合理偏低區：若技術面轉強，具估值修復條件",
+  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、正式 EPS 年增、毛利率較去年同期下滑、營業利益率較去年同期改善、稅後淨利率較去年同期改善、ROE 較去年同期改善、營業費用率較去年同期下降。",
+  "prediction_backtest_dashboard": {
+    "sample_count": 0,
+    "summary": "回測樣本不足，已開始累積預測快照",
+    "rows": []
+  },
+  "peer_strength_ranking": {
+    "summary": "康舒(6282) 族群強弱排名第 2/5，期間報酬 +131.5%，相對中位數 +32.9%，屬於中段股",
+    "rows": [
+      {
+        "rank": 1,
+        "label": "台達電(2308)",
+        "stock_id": "2308",
+        "return_pct": 437.5,
+        "relative_to_median": 338.91509433962267,
+        "product_overlap_score": 1.0,
+        "correlation": null,
+        "strength_score": 98.0,
+        "position": "領先",
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "label": "康舒(6282)",
+        "stock_id": "6282",
+        "return_pct": 131.47410358565733,
+        "relative_to_median": 32.88919792527997,
+        "product_overlap_score": 1.0,
+        "correlation": null,
+        "strength_score": 81.0,
+        "position": "中段",
+        "is_target": true
+      },
+      {
+        "rank": 3,
+        "label": "光寶科(2301)",
+        "stock_id": "2301",
+        "return_pct": 98.58490566037736,
+        "relative_to_median": 0.0,
+        "product_overlap_score": 1.0,
+        "correlation": null,
+        "strength_score": 56.0,
+        "position": "中段",
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "label": "全漢(3015)",
+        "stock_id": "3015",
+        "return_pct": 11.334552102376591,
+        "relative_to_median": -87.25035355800077,
+        "product_overlap_score": 1.0,
+        "correlation": null,
+        "strength_score": 31.0,
+        "position": "落後",
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "label": "群電(6412)",
+        "stock_id": "6412",
+        "return_pct": -15.576036866359459,
+        "relative_to_median": -114.16094252673682,
+        "product_overlap_score": 0.0,
+        "correlation": null,
+        "strength_score": 8.0,
+        "position": "落後",
+        "is_target": false
+      }
+    ]
+  },
+  "historical_similarity_forecast": {
+    "summary": "相似樣本 12 筆；5日中位 +0.8% / 勝率 50%；20日中位 +4.5% / 勝率 83%",
+    "sample_count": 12,
+    "selection_method": "動態距離門檻",
+    "candidate_count": 1136,
+    "sample_pool_start": "2021-09-10",
+    "sample_pool_end": "2026-05-21",
+    "distance_cutoff": 2.339301417053145,
+    "median_distance": 2.050132610932155,
+    "target5": 58.54506803222321,
+    "target20": 60.73036302996008,
+    "low5": 54.51818169112508,
+    "high5": 62.9486101272828,
+    "median_return5": 0.7660379212103441,
+    "average_return5": 2.7096311237409503,
+    "median_return20": 4.52730297755608,
+    "average_return20": 3.8471305444821913,
+    "win_rate5": 50.0,
+    "win_rate20": 83.33333333333334,
+    "bias_pct": 1.2362353926257836,
+    "upper_mult": 1.067992946594418,
+    "lower_mult": 0.9690941151843554,
+    "confidence": 45.09059372691956,
+    "rows": [
+      {
+        "date": "2026-02-04",
+        "distance": 1.024417565857558,
+        "future5_return": -5.138339920948621,
+        "future20_return": -9.58498023715415,
+        "range_pos": 35.30655391120507,
+        "atr_pct": 8.349802371541502
+      },
+      {
+        "date": "2026-02-05",
+        "distance": 1.1788653210257047,
+        "future5_return": 3.9094650205761194,
+        "future20_return": 3.4979423868312765,
+        "range_pos": 22.767857142857142,
+        "atr_pct": 8.215755437977661
+      },
+      {
+        "date": "2026-02-09",
+        "distance": 1.4705551884145858,
+        "future5_return": 5.4470709146968055,
+        "future20_return": 2.7749229188078095,
+        "range_pos": 15.024630541871902,
+        "atr_pct": 7.326383790926442
+      },
+      {
+        "date": "2025-11-14",
+        "distance": 1.5594165841594618,
+        "future5_return": -4.654088050314464,
+        "future20_return": 6.91823899371069,
+        "range_pos": 28.71621621621622,
+        "atr_pct": 6.729559748427672
+      },
+      {
+        "date": "2025-11-12",
+        "distance": 1.9579993219449168,
+        "future5_return": -0.12820512820511665,
+        "future20_return": 4.743589743589749,
+        "range_pos": 26.14379084967321,
+        "atr_pct": 6.968864468864466
+      },
+      {
+        "date": "2025-11-18",
+        "distance": 2.043965649498166,
+        "future5_return": -3.7688442211055273,
+        "future20_return": 4.648241206030157,
+        "range_pos": 11.764705882352931,
+        "atr_pct": 5.895549174443645
+      },
+      {
+        "date": "2025-11-17",
+        "distance": 2.0562995723661444,
+        "future5_return": -8.69033047735619,
+        "future20_return": 4.4063647490820035,
+        "range_pos": 32.25806451612904,
+        "atr_pct": 6.093722678789995
+      },
+      {
+        "date": "2023-08-04",
+        "distance": 2.0894878621939394,
+        "future5_return": -2.6768642447418722,
+        "future20_return": -11.376673040152951,
+        "range_pos": 24.999999999999982,
+        "atr_pct": 6.180005462988252
+      }
+    ]
+  },
+  "short_term_price_convergence": {
+    "summary": "一個月收斂區間 54.5 - 60.7；ATR14 4.87（8.4%）；趨勢偏多",
+    "lower": 54.51818169112508,
+    "upper": 60.73036302996008,
+    "mid": 57.62427236054258,
+    "atr14": 4.871428571428571,
+    "atr_pct": 8.3845586427342,
+    "trend_label": "偏多",
+    "five_day_lower": 53.161500000000004,
+    "five_day_upper": 63.6195,
+    "rows": [
+      {
+        "factor": "5日可達區間",
+        "value": "53.2 - 63.6",
+        "effect": "日K未來5日預測線優先參考"
+      },
+      {
+        "factor": "ATR 風險範圍",
+        "value": "43.5 - 78.6",
+        "effect": "限制短期過度樂觀/悲觀"
+      },
+      {
+        "factor": "20/60日支撐壓力",
+        "value": "43.5 - 70.8",
+        "effect": "貼近日K可操作區"
+      },
+      {
+        "factor": "歷史相似樣本",
+        "value": "54.5 - 62.9 / 20日 60.7",
+        "effect": "相似樣本 12 筆；5日中位 +0.8% / 勝率 50%；20日中位 +4.5% / 勝率 83%"
+      },
+      {
+        "factor": "估值/技術上緣",
+        "value": "82.0 / 107.0 / 63.2",
+        "effect": "避免單一模型喊價"
+      },
+      {
+        "factor": "收斂後中位",
+        "value": "57.6",
+        "effect": "供未來5日預測與買賣點參考"
+      }
+    ]
+  },
+  "event_calendar_backtest": {
+    "summary": "市場事件樣本偏多；未來45天事件 8 筆，20日影響分數 +14.4",
+    "rows": [
+      {
+        "event_type": "台指期結算",
+        "signal": "中性",
+        "count": 15,
+        "latest_date": "2026-06-17",
+        "avg_0d": -0.03283420705342554,
+        "win_0d": 33.33333333333333,
+        "avg_range_0d": 5.306803297676878,
+        "avg_5d": 2.74373224488319,
+        "win_5d": 64.28571428571429,
+        "avg_20d": 7.557334503365234,
+        "win_20d": 71.42857142857143,
+        "avg_60d": 24.03396161618861,
+        "win_60d": 91.66666666666666,
+        "direction": "偏多"
+      },
+      {
+        "event_type": "FOMC",
+        "signal": "中性",
+        "count": 1,
+        "latest_date": "2026-06-17",
+        "avg_0d": -0.519930675909886,
+        "win_0d": 0.0,
+        "avg_range_0d": 2.9462738301559717,
+        "avg_5d": null,
+        "win_5d": null,
+        "avg_20d": null,
+        "win_20d": null,
+        "avg_60d": null,
+        "win_60d": null,
+        "direction": "資料不足"
+      },
+      {
+        "event_type": "CPI",
+        "signal": "中性",
+        "count": 1,
+        "latest_date": "2026-06-10",
+        "avg_0d": -7.436708860759497,
+        "win_0d": 0.0,
+        "avg_range_0d": 14.082278481012656,
+        "avg_5d": -1.8803418803418828,
+        "win_5d": 0.0,
+        "avg_20d": null,
+        "win_20d": null,
+        "avg_60d": null,
+        "win_60d": null,
+        "direction": "資料不足"
+      },
+      {
+        "event_type": "非農就業",
+        "signal": "中性",
+        "count": 1,
+        "latest_date": "2026-06-05",
+        "avg_0d": -9.887005649717514,
+        "win_0d": 0.0,
+        "avg_range_0d": 7.062146892655368,
+        "avg_5d": -8.934169278996858,
+        "win_5d": 0.0,
+        "avg_20d": null,
+        "win_20d": null,
+        "avg_60d": null,
+        "win_60d": null,
+        "direction": "資料不足"
+      },
+      {
+        "event_type": "月底作帳",
+        "signal": "中性",
+        "count": 14,
+        "latest_date": "2026-05-29",
+        "avg_0d": -1.564263393142596,
+        "win_0d": 16.666666666666664,
+        "avg_range_0d": 5.0615212663646085,
+        "avg_5d": 0.19702570884543497,
+        "win_5d": 57.14285714285714,
+        "avg_20d": 8.393800333210809,
+        "win_20d": 76.92307692307693,
+        "avg_60d": 26.001360721411757,
+        "win_60d": 100.0,
+        "direction": "偏多"
+      },
+      {
+        "event_type": "MSCI調整",
+        "signal": "中性",
+        "count": 5,
+        "latest_date": "2026-05-29",
+        "avg_0d": 0.20826344951313147,
+        "win_0d": 25.0,
+        "avg_range_0d": 4.009771017330081,
+        "avg_5d": -1.675725746358042,
+        "win_5d": 40.0,
+        "avg_20d": 1.9819599475650933,
+        "win_20d": 75.0,
+        "avg_60d": 23.987954664067026,
+        "win_60d": 100.0,
+        "direction": "略偏多"
+      },
+      {
+        "event_type": "季底作帳",
+        "signal": "中性",
+        "count": 4,
+        "latest_date": "2026-03-31",
+        "avg_0d": -1.106735334516834,
+        "win_0d": 25.0,
+        "avg_range_0d": 4.350664895782744,
+        "avg_5d": 1.0548027312578092,
+        "win_5d": 75.0,
+        "avg_20d": 19.94757896009346,
+        "win_20d": 100.0,
+        "avg_60d": 19.2324666729805,
+        "win_60d": 100.0,
+        "direction": "偏多"
+      },
+      {
+        "event_type": "三巫日",
+        "signal": "中性",
+        "count": 4,
+        "latest_date": "2026-03-20",
+        "avg_0d": -0.5384008621070404,
+        "win_0d": 33.33333333333333,
+        "avg_range_0d": 3.7230369704493227,
+        "avg_5d": 0.4831260754853407,
+        "win_5d": 50.0,
+        "avg_20d": 27.025250294512308,
+        "win_20d": 100.0,
+        "avg_60d": 25.35845995029539,
+        "win_60d": 100.0,
+        "direction": "偏多"
+      }
+    ],
+    "latest_events": [
+      {
+        "date": "2026-06-19",
+        "event_type": "三巫日",
+        "signal": "中性",
+        "label": "美股三巫日",
+        "strength": 72.0,
+        "basis": "3/6/9/12月第三個星期五",
+        "expected_0d": -0.5384008621070404,
+        "expected_day_range": 3.7230369704493227,
+        "expected_5d": 0.4831260754853407,
+        "expected_20d": 27.025250294512308,
+        "win_20d": 100.0,
+        "direction": "偏多"
+      },
+      {
+        "date": "2026-06-30",
+        "event_type": "月底作帳",
+        "signal": "中性",
+        "label": "月底資金調整",
+        "strength": 48.0,
+        "basis": "每月最後一個營業日",
+        "expected_0d": -1.564263393142596,
+        "expected_day_range": 5.0615212663646085,
+        "expected_5d": 0.19702570884543497,
+        "expected_20d": 8.393800333210809,
+        "win_20d": 76.92307692307693,
+        "direction": "偏多"
+      },
+      {
+        "date": "2026-06-30",
+        "event_type": "季底作帳",
+        "signal": "中性",
+        "label": "季底資金調整",
+        "strength": 58.0,
+        "basis": "季底最後一個營業日",
+        "expected_0d": -1.106735334516834,
+        "expected_day_range": 4.350664895782744,
+        "expected_5d": 1.0548027312578092,
+        "expected_20d": 19.94757896009346,
+        "win_20d": 100.0,
+        "direction": "偏多"
+      },
+      {
+        "date": "2026-07-02",
+        "event_type": "非農就業",
+        "signal": "中性",
+        "label": "美國非農就業公布",
+        "strength": 72.0,
+        "basis": "BLS Employment Situation release schedule",
+        "expected_0d": -9.887005649717514,
+        "expected_day_range": 7.062146892655368,
+        "expected_5d": -8.934169278996858,
+        "expected_20d": null,
+        "win_20d": null,
+        "direction": "資料不足"
+      },
+      {
+        "date": "2026-07-14",
+        "event_type": "CPI",
+        "signal": "中性",
+        "label": "美國CPI公布",
+        "strength": 78.0,
+        "basis": "BLS CPI release schedule",
+        "expected_0d": -7.436708860759497,
+        "expected_day_range": 14.082278481012656,
+        "expected_5d": -1.8803418803418828,
+        "expected_20d": null,
+        "win_20d": null,
+        "direction": "資料不足"
+      },
+      {
+        "date": "2026-07-15",
+        "event_type": "台指期結算",
+        "signal": "中性",
+        "label": "台指期月結算",
+        "strength": 68.0,
+        "basis": "每月第三個星期三",
+        "expected_0d": -0.03283420705342554,
+        "expected_day_range": 5.306803297676878,
+        "expected_5d": 2.74373224488319,
+        "expected_20d": 7.557334503365234,
+        "win_20d": 71.42857142857143,
+        "direction": "偏多"
+      },
+      {
+        "date": "2026-07-29",
+        "event_type": "FOMC",
+        "signal": "中性",
+        "label": "聯準會利率決議",
+        "strength": 80.0,
+        "basis": "Federal Reserve 2026 FOMC calendar",
+        "expected_0d": -0.519930675909886,
+        "expected_day_range": 2.9462738301559717,
+        "expected_5d": null,
+        "expected_20d": null,
+        "win_20d": null,
+        "direction": "資料不足"
+      },
+      {
+        "date": "2026-07-31",
+        "event_type": "月底作帳",
+        "signal": "中性",
+        "label": "月底資金調整",
+        "strength": 48.0,
+        "basis": "每月最後一個營業日",
+        "expected_0d": -1.564263393142596,
+        "expected_day_range": 5.0615212663646085,
+        "expected_5d": 0.19702570884543497,
+        "expected_20d": 8.393800333210809,
+        "win_20d": 76.92307692307693,
+        "direction": "偏多"
+      }
+    ]
+  },
+  "market_risk_switch": {
+    "risk_score": 42.0,
+    "bias_pct": 0.0,
+    "upper_mult": 1.0,
+    "lower_mult": 1.0,
+    "summary": "大盤風險正常（跌破MA20、ATR8.4%）"
+  },
+  "chip_summary": {
+    "margin_balance": 30738.0,
+    "margin_5d_change": -1008.0,
+    "short_balance": 496.0,
+    "short_5d_change": -29.0,
+    "foreign_latest": -1000.0,
+    "foreign_5d": -5365898.0,
+    "foreign_20d": -8812145.0,
+    "trust_latest": 0.0,
+    "trust_5d": 14000.0,
+    "trust_20d": 2000.0,
+    "total_latest": -4000.0,
+    "total_5d": -6228228.0,
+    "total_20d": -15718770.0
+  },
+  "technical_feasibility": {
+    "ok": true,
+    "score": 47.7,
+    "grade": "中",
+    "trend": "震盪",
+    "close": 58.1,
+    "ma5": 57.92,
+    "ma10": 59.11,
+    "ma20": 60.75,
+    "ma60": 52.87,
+    "atr14_pct": 8.38,
+    "volume_ratio20": 1.0,
+    "pattern_label": "上升通道",
+    "pattern_lookback": 90,
+    "pattern_validity": 51.9,
+    "pattern_hit_rate": 57.1,
+    "foreign_5d": -5365898.0,
+    "trust_5d": 14000.0,
+    "score_reasons": [
+      "收盤跌破MA20",
+      "站上MA60",
+      "ATR風險偏高",
+      "訓練樣本支持技術分數（高分勝率62%）"
+    ],
+    "training_calibration": {
+      "sample_count": 761,
+      "industry_sample_count": 761,
+      "score_adjust": 4.0,
+      "reason": "訓練樣本支持技術分數（高分勝率62%）"
+    },
+    "summary": "技術可行性中（48）；震盪，型態可信52，量比1.00，ATR 8.4%"
+  },
+  "news_display_status": "新聞面偏利多（利多 7 / 利空 0 / 中性 0；高可信 0 則）",
+  "disclosure_display_status": "近 120 天公告/法說追蹤 3 則（法說會 0 / 公告 3）",
+  "summary_one_line": "區間整理，區間震盪；站穩 MA10 59.11 並突破 70.80 才有續攻機會，跌破 MA20 60.75 轉防守。",
+  "summary_overall": "區間整理；收盤站上 MA5, MA5 低於 MA10, 跌破 MA10，但投信仍偏買",
+  "summary_tomorrow": "區間震盪",
+  "summary_one_month": "高波動區間震盪",
+  "summary_support": "第一 57.92 / 第二 59.11 / 強 60.75",
+  "summary_pressure": "70.80",
+  "summary_price_pattern": "近90日上升通道 有效5.5 / 區間內；近20日緩步下行 有效2.9 / 區間內",
+  "summary_price_pattern_brief": "近90日上升通道 有效5.5 / 區間內；近20日緩步下行 有效2.9 / 區間內",
+  "summary_trade_plan": "買點：靠近 60.75 守住，或放量突破 63.16 再加分；賣點：跌破 60.75，先降權重。依據：上升通道有效分數 5.5。",
+  "price_pattern_rows": [
+    {
+      "lookback": 90,
+      "label": "上升通道",
+      "support": 44.985,
+      "resistance": 63.160000000000004,
+      "score": 5.45,
+      "validity": 51.885714285714286,
+      "validity_grade": "中",
+      "touch_count": 41,
+      "slope_stability": 0.0,
+      "volume_confirmation": "量能不足",
+      "breakout_status": "區間內",
+      "confirm_status": "待確認",
+      "hit_rate": 57.14285714285714,
+      "hit_sample_count": 21,
+      "hit_rate_note": "支撐/壓力命中 57%（21次）"
+    },
+    {
+      "lookback": 20,
+      "label": "緩步下行",
+      "support": 56.1,
+      "resistance": 67.9,
+      "score": 2.85,
+      "validity": 34.3521431373962,
+      "validity_grade": "低",
+      "touch_count": 10,
+      "slope_stability": 5.374282351245611,
+      "volume_confirmation": "量能不足",
+      "breakout_status": "區間內",
+      "confirm_status": "待確認",
+      "hit_rate": 0.0,
+      "hit_sample_count": 2,
+      "hit_rate_note": "支撐/壓力命中 0%（2次）"
+    }
+  ],
+  "summary_atr": "ATR14 4.87，常態區間 53.23～62.97",
+  "summary_key_watch": "價漲量縮；明日觀察 MA5 57.92 / MA10 59.11",
+  "summary_risk": "跌破 MA10 59.11 且放量，短線轉弱；跌破 MA20 60.75 則整理擴大",
+  "summary_warrant": "認購成交占 0.00%，近價外認購 24 檔，前五大成交占 0.00%",
+  "summary_warrant_signal": "中性",
+  "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
+  "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
+  "generated_at": "2026-06-21T20:45:41+08:00",
+  "timezone": "台北標準時間",
+  "charts": [
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-06-21\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-06-21\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-06-21\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-06-21\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-06-21\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-06-21\\06_基本面分析圖.png"
+  ],
+  "etf_change_rows": [],
+  "tdcc_rows": [
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 1,
+      "level_label": "1-999 股",
+      "people": 57550,
+      "shares": 5593249,
+      "ratio": 0.65
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 2,
+      "level_label": "1,000-5,000 股",
+      "people": 84459,
+      "shares": 159436875,
+      "ratio": 18.62
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 3,
+      "level_label": "5,001-10,000 股",
+      "people": 8712,
+      "shares": 68905071,
+      "ratio": 8.04
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 4,
+      "level_label": "10,001-15,000 股",
+      "people": 2469,
+      "shares": 31698413,
+      "ratio": 3.7
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 5,
+      "level_label": "15,001-20,000 股",
+      "people": 1432,
+      "shares": 26719871,
+      "ratio": 3.12
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 6,
+      "level_label": "20,001-30,000 股",
+      "people": 1128,
+      "shares": 29172277,
+      "ratio": 3.4
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 7,
+      "level_label": "30,001-40,000 股",
+      "people": 510,
+      "shares": 18261085,
+      "ratio": 2.13
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 8,
+      "level_label": "40,001-50,000 股",
+      "people": 322,
+      "shares": 15068661,
+      "ratio": 1.76
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 9,
+      "level_label": "50,001-100,000 股",
+      "people": 538,
+      "shares": 38171517,
+      "ratio": 4.45
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 10,
+      "level_label": "100,001-200,000 股",
+      "people": 186,
+      "shares": 26493989,
+      "ratio": 3.09
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 11,
+      "level_label": "200,001-400,000 股",
+      "people": 89,
+      "shares": 25073383,
+      "ratio": 2.92
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 12,
+      "level_label": "400,001-600,000 股",
+      "people": 35,
+      "shares": 16974857,
+      "ratio": 1.98
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 13,
+      "level_label": "600,001-800,000 股",
+      "people": 14,
+      "shares": 9417264,
+      "ratio": 1.1
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 14,
+      "level_label": "800,001-1,000,000 股",
+      "people": 8,
+      "shares": 7270118,
+      "ratio": 0.84
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 15,
+      "level_label": "1,000,001 股以上",
+      "people": 64,
+      "shares": 377844075,
+      "ratio": 44.13
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 16,
+      "level_label": "差異或調整數",
+      "people": 0,
+      "shares": 0,
+      "ratio": 0.0
+    },
+    {
+      "date": "20260618",
+      "stock_id": "6282",
+      "level": 17,
+      "level_label": "合計",
+      "people": 157516,
+      "shares": 856100705,
+      "ratio": 100.0
+    }
+  ],
+  "tdcc_history_rows": [
+    {
+      "date": "20260618",
+      "total_people": 157516,
+      "total_shares": 856100705,
+      "small_ratio": 27.31,
+      "mid_ratio": 10.46,
+      "large_ratio": 48.050000000000004,
+      "million_ratio": 44.13,
+      "small_ratio_change": null,
+      "large_ratio_change": null,
+      "million_ratio_change": null,
+      "people_change": null
+    }
+  ],
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-06-21\\07_集保股權歷史趨勢圖.png",
+  "broker_trading_period": "2026-06-18 to 2026-06-18 (no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-06-18 rows=20)",
+  "broker_import_status": "券商分點：2026-06-18 to 2026-06-18；no local broker-branch CSV imported；HiStock brokertrace no usable rows；nStock 2026-06-18 rows=20",
+  "broker_trading_latest_period": "2026-06-18",
+  "broker_pattern_result": {
+    "ok": false,
+    "message": "分點買賣後 5 / 30 交易日勝率回測",
+    "forward_days": 5,
+    "rows": [],
+    "best": null,
+    "signals": [],
+    "horizons": {
+      "5": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      },
+      "30": {
+        "rows": [],
+        "best": null,
+        "signals": []
+      }
+    },
+    "latest_rows": [],
+    "chart_series": []
+  },
+  "news_rows": [
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "營收",
+      "title": "營收速報 - 康舒(6282)5月營收29.40億元年增率高達26.19％｜新聞快訊｜豐雲學堂",
+      "source": "sinotrade.com.tw",
+      "published": "2026-06-10 15:00",
+      "published_ts": "2026-06-10T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1UT0pRVFd3YTN1UXVLVVcwa0VNcVQ3NXl5WXd5U2FnMU40Y0MwYWlPbTlhaVphSHRwXzVUTEtTcGx4WFJESTVOek83NDIwdm1FOVRUdHZ4NGhJQW9hbk5sU2hpTXZ4dFZNTTVMcVBaOVFST3ZfX1E?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "signal_grade": "B",
+      "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "財報",
+      "title": "【即時新聞】康舒(6282)爆獲利賣壓急跌逾7%，這「4檔概念股」同步遭調節！",
+      "source": "CMoney投資網誌",
+      "published": "2026-06-05 15:00",
+      "published_ts": "2026-06-05T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVjFKX0Z1UlZjMUtIcVU5NXZ6UzNaZ0hSZXdsVy1oRW5BSDVIOEEzUGpGbjVrMzIzNHp6RUNUb0R6aFB4eWxNUVJQdVM0eGFrYTJWUFZyc3NaU0hZNVJHMWhSUEFldUdiTndfQXdOaS1DRnRUQUxZZzE0cXBGZ3pjNHI4bGFiMXd0OEZVM1BYVTg?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；檢查 EPS、毛利率與營益率是否支撐估值",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "【追蹤報導】AI電力革命大回饋！康舒(6282)爆量飆漲停突破70 元大關",
+      "source": "理財周刊",
+      "published": "2026-06-04 15:00",
+      "published_ts": "2026-06-04T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBSWFVFdTdSRXpSbXdyakM1NUpxT08zVVFjLTYyR0tjUm41LWZKYmNMR3ZFRkpHR1hzMFJaNDV0WWJ3UVV2dk9pbUVHQnVSYVVub1RvRXdmVTN6eEV6YWphSVVaLUd1ZWdCWE9MWkdmTQ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "signal_grade": "B",
+      "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "AI算力幕後隱形大將亮燈漲停 康舒攻上70.8元股價創新高",
+      "source": "緯來新聞網",
+      "published": "2026-06-04 15:00",
+      "published_ts": "2026-06-04T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdVB6MXpmaG05MnNVbjlMNGg0dmZQMmpBM1EzYTRwdUo5eVpNUUFFR2V6eGgtN1ZCYkV1a25PWGQ1MHppU21jMFJWX2laaDdrR2JLMmhuMmRzOGZxNm1iRDFVTkZSOXllakM5XzN6REZuak9zWnhFeHo5WFVIemZCZTlaWGV3QQ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "signal_grade": "B",
+      "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "今日漲停股｜電子零組件與綠能電力領軍，康舒、泰金寶-DR、華紙強勢攻頂0604｜豐雲學堂2026 年 06 月",
+      "source": "sinotrade.com.tw",
+      "published": "2026-06-04 15:00",
+      "published_ts": "2026-06-04T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi3ANBVV95cUxNYXBZS2JyNmhlSEw3RURTOFo4cFBPS3VjMi1RSVdUSHBVWTFXb0x3R2VWdmt6Y0xkSFhNUmZtclZtSnFvTzl0Y0o1SENzZWVGUmNYdlg0MWVIaFB2eUZuVWhra3JzMHpOaTA1ZmxsRjZMRzBlUUtDSTdQYmp4ZW5WZWNOV2dHVEVHd0JheXpQSmFrQjR1bEUtRmFaTldScE1pRndqLUNYR0o1emdZbzN6SWpYVUhyV1hGUS1ZV1M3b21Ja2V0VjN5VmFINjBzSnZDVGJscE1mR05aZHp4RVF2LTl6M1BjNlIxLXVJbEpxUU9GNV9jQTEteFpJSWc1Y0kzeW9qenVPTmF2Q21Ecm41cGdkNHZnZ1REbFA0OUVGbzZSdktmbDJ0NTVQVllhbzNsX1FkeUMxOUMwdDY2cTd6VkIzZFYzS25SUE9wb2JBSEtkZ01GMnB2cFI0R3htMjQwMWdGVFJjOVd6MFdCT1o2WGxvTmZEWjlyNVdaVzcyR0dBX1dRV1diQWtybHhFUnc5QmkzN294ZVJzRHR0aWZaRldsUnBPbW9DZ3ZaN1UxWFpzN19hZTE2cldIamlLeEQ5amd2QzZLaC1aOVhUTk5GRjJ4WDhUZkRsRFhtcw?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "signal_grade": "B",
+      "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "產業",
+      "bias": "利多",
+      "event_type": "股價",
+      "title": "今日漲停股｜黃仁勳GTC開講震撼全場！Vera Rubin正式量產，台灣AI供應鏈-廣達、緯創、英業達、仁寶全面點火 0601",
+      "source": "sinotrade.com.tw",
+      "published": "2026-06-01 15:00",
+      "published_ts": "2026-06-01T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMi0ARBVV95cUxQRi1Xa1lhODBfc3RDek5pQVdUTGl5bUVRZWRMckhOWVlSa3AwWjdrMFUxOGQxV19iSGw3MFdManA2TjNUZGR0dVc5TWI5RjU0QmE3blo1eGNHNHR3UnNYbzZ5SGVSWE9sWktzY2FjRTNCVnZhTUNtV1BnMG1tYXUwWER3ZjFvSUFsWTlLWThBMUN6Rm1WcFVFVGxlTTlvTnF5STdYRHdBMDFRX2FvYWFSZFBfU1pnMUJ6LVloakp6aVJBdkN6amxfWmhMQUc5Sk9DSElMNHhLY1h0NG5kcHprUGVJejY3MXRCNFVKZTRxdnNlZXFWRmNKRi1BcXZSLTR3TlV6QUZ1cWI0X1hTbGJMM2ZGOXN4OXlxYmpZV2pCcTM3M3dTV3VVN3VCam1WeDFud2pwc3BhRzVqZE1POXd1SlFzbVRVWnFkQ0VkeUlSdmlXUHJIcHgta29oVDdQdEhBay1RVFVVbWVHRzRLZVpZeVh1X1lTNFRlZ3RBb0Z3bE9aQTlFT2t6WTJtQ0NjVnAxM0dIM2VPa1dxaWdjR2ZmTTlOM3hrRjhsTnhIVnlYeGdvcGhNWjVyV1ZQOTN3NkhDNkg1T09jZGRoZ1c2UW9Hazk3N1c2cEdLTy1oU0VBcWJIUTFrV1NmT1pFemRRTnFZYkVaeTRPLU9aVVBDbk95eG5pTFRiY1lGRDUta0pFTWNldFZXWE1Kbk15cXBjWGU5TGUwcDhMTVNON3RVa0Z6dXZ1MWNyS2lub3BLYXlKcy05dWZEbF9MT1h5Tl9kbjEz?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "signal_grade": "B",
+      "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "營收",
+      "title": "【11:28 即時新聞】康舒(6282)亮燈漲停鎖在63.1元，AI伺服器電源與營收連三月成長帶動，搭配三大法人連續買超與主力集中點火",
+      "source": "CMoney投資網誌",
+      "published": "2026-05-25 15:00",
+      "published_ts": "2026-05-25T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUGdjQUxlYXZEVTBiX3hCQ0tqRkF5UzU3LTBTOUJ1Vl9mYVA3ZHZISUFaakQwUVE2QWI4RzdBNFFNdmhOYTFIRk5nY0tjSlQzR21VNEZCMDd5bGhnOTRjQW1lMjN1ZGNlVlBZdkVyb3I4SEdWWXJ0QXA4RWc4YXY5VUlyalJSbkxIZ05GRVVB?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認"
+    }
+  ],
+  "disclosure_rows": [
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "event_type": "營收",
+      "title": "【2026/05月營收公告】康舒(6282) 五月營收月減年增，全年營運續看向上",
+      "source": "CMoney投資網誌",
+      "published": "2026-06-11 15:00",
+      "published_ts": "2026-06-11T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNXBmNlNMS01Relh0OC1CSjVwS0pSbTNDZm5GSm05MU83SkZsaUdFdXBEdnVGU0xQeUNUMmlWb3JkRWdNN2RLczBWcWJ4Z0p0aWhSQU9Hb2VRRzZ4S3FXRlpqb2puM1ljVW85S0o5V0wtc29jazJIb0g4d1QtbVhCXzR5dlF4QnJfaXc?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "event_type": "營收",
+      "title": "【2026/03月營收公告】康舒(6282) 三月營收31.46億元，表現亮眼、呈現雙成長，創近3個月以來新高，年增18.03%",
+      "source": "CMoney",
+      "published": "2026-04-10 15:00",
+      "published_ts": "2026-04-10T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qTVJTUVRiQklycS1WNXRWZEVzMF91Slp4cWdhaVc2WVFhaDZNaGFnWHY4WFhRSTc3LXE1VDNjMkFhUVdUSlF1eGRUeUx0d0ZjX1pWeVl4aEMwOUdvdEFJUjJWRXpzVzg?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認",
+      "kind": "公告"
+    },
+    {
+      "region": "公告/法說",
+      "bias": "利多",
+      "event_type": "營收",
+      "title": "【2026/02月營收公告】康舒(6282) 二月營收27.26億元，表現亮眼、呈現雙成長，創近2個月以來新高，年增14.63%",
+      "source": "CMoney",
+      "published": "2026-03-10 15:00",
+      "published_ts": "2026-03-10T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE43MVRfeW9FVmdaSUwxZzh5al96MHpKNWhsTjM3RnV0c2ZsRmlrZV9PZ0RiX2VzTmNKZ29ySmhDOFNlNUFhWmhreEVQdm1Lc1g2aTVXUU5vSFN5Z2MyMk96X1VwUVVnc2M?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認",
+      "kind": "公告"
+    }
+  ],
+  "warrant_top_rows": [
+    {
+      "warrant_id": "03384T",
+      "warrant_name": "康舒台新5B售01",
+      "call_put": "認售",
+      "exercise_price": 41.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "03527T",
+      "warrant_name": "康舒凱基5C售06",
+      "call_put": "認售",
+      "exercise_price": 50.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "039084",
+      "warrant_name": "康舒永豐55購01",
+      "call_put": "認購",
+      "exercise_price": 37.61,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "039343",
+      "warrant_name": "康舒國票55購01",
+      "call_put": "認購",
+      "exercise_price": 46.0,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    },
+    {
+      "warrant_id": "039433",
+      "warrant_name": "康舒國泰55購01",
+      "call_put": "認購",
+      "exercise_price": 33.5,
+      "trading_money": 0.0,
+      "trading_volume": 0.0
+    }
+  ],
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6282_2026-06-21\\index.html",
+  "prediction_history_status": "已記錄本次預測快照，待後續交易日回測校準",
+  "llm_training_status": {
+    "ok": true,
+    "count": 2884,
+    "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\llm_technical_training_examples.jsonl",
+    "dashboard": {
+      "ok": true,
+      "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\technical_training_dashboard.html",
+      "summary": {
+        "generated_at": "2026-06-21T20:45:53+08:00",
+        "examples": 2884,
+        "stocks": 28,
+        "quality_counts": {
+          "高": 2822,
+          "中": 35,
+          "未標記": 26,
+          "低": 1
+        },
+        "industry_counts": {
+          "電子工業": 841,
+          "半導體業": 520,
+          "電機機械": 279,
+          "其他電子業": 241,
+          "通信網路業": 223,
+          "電子零組件業": 204,
+          "玻璃陶瓷": 135,
+          "鋼鐵工業": 135,
+          "航運業": 80,
+          "光電業": 75,
+          "化學生技醫療": 75,
+          "生技醫療業": 60,
+          "文化創意業": 8,
+          "電腦及週邊設備業": 8
+        },
+        "industry_detail_rows": [
+          {
+            "industry": "電子工業",
+            "examples": 841,
+            "example_pct": 29.2,
+            "stocks": 13,
+            "high_quality": 836,
+            "mid_quality": 5,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "電子工業通用樣本、PCB / HDI、CCL / 銅箔基板、儲能 / 電網",
+            "latest_sample_date": "2026-04-07"
+          },
+          {
+            "industry": "半導體業",
+            "examples": 520,
+            "example_pct": 18.0,
+            "stocks": 6,
+            "high_quality": 506,
+            "mid_quality": 14,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "半導體業通用樣本、DDR4 / DDR5、DRAM / 利基型記憶體、NAND / NOR Flash",
+            "latest_sample_date": "2026-03-06"
+          },
+          {
+            "industry": "電機機械",
+            "examples": 279,
+            "example_pct": 9.7,
+            "stocks": 2,
+            "high_quality": 279,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "儲能 / 電網、儲能系統、變壓器、變壓器 / 重電",
+            "latest_sample_date": "2026-03-16"
+          },
+          {
+            "industry": "其他電子業",
+            "examples": 241,
+            "example_pct": 8.4,
+            "stocks": 3,
+            "high_quality": 240,
+            "mid_quality": 1,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "AI伺服器 / GPU伺服器、AI伺服器ODM / EMS、CPO / 矽光子、其他電子業通用樣本",
+            "latest_sample_date": "2026-04-01"
+          },
+          {
+            "industry": "通信網路業",
+            "examples": 223,
+            "example_pct": 7.7,
+            "stocks": 2,
+            "high_quality": 209,
+            "mid_quality": 11,
+            "low_quality": 1,
+            "unlabeled_quality": 2,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "Fiber Shuffle、MPO / 光纖連接、Optical Engine光引擎、光通訊模組",
+            "latest_sample_date": "2026-04-27"
+          },
+          {
+            "industry": "電子零組件業",
+            "examples": 204,
+            "example_pct": 7.1,
+            "stocks": 3,
+            "high_quality": 195,
+            "mid_quality": 1,
+            "low_quality": 0,
+            "unlabeled_quality": 8,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "CPO / 矽光子、PCB / HDI、工業機器人 / 自動化系統、線性馬達 / 自動化",
+            "latest_sample_date": "2026-04-30"
+          },
+          {
+            "industry": "玻璃陶瓷",
+            "examples": 135,
+            "example_pct": 4.7,
+            "stocks": 1,
+            "high_quality": 132,
+            "mid_quality": 3,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "玻璃陶瓷通用樣本",
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "industry": "鋼鐵工業",
+            "examples": 135,
+            "example_pct": 4.7,
+            "stocks": 1,
+            "high_quality": 135,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "鋼鐵工業通用樣本",
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "industry": "航運業",
+            "examples": 80,
+            "example_pct": 2.8,
+            "stocks": 1,
+            "high_quality": 80,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "航運業通用樣本",
+            "latest_sample_date": "2026-02-09"
+          },
+          {
+            "industry": "光電業",
+            "examples": 75,
+            "example_pct": 2.6,
+            "stocks": 1,
+            "high_quality": 75,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "光電業通用樣本",
+            "latest_sample_date": "2026-02-06"
+          },
+          {
+            "industry": "化學生技醫療",
+            "examples": 75,
+            "example_pct": 2.6,
+            "stocks": 1,
+            "high_quality": 75,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "化學生技醫療通用樣本",
+            "latest_sample_date": "2026-02-06"
+          },
+          {
+            "industry": "生技醫療業",
+            "examples": 60,
+            "example_pct": 2.1,
+            "stocks": 1,
+            "high_quality": 60,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "生技醫療業通用樣本",
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "industry": "文化創意業",
+            "examples": 8,
+            "example_pct": 0.3,
+            "stocks": 1,
+            "high_quality": 0,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 8,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "文化創意業通用樣本",
+            "latest_sample_date": "2026-04-16"
+          },
+          {
+            "industry": "電腦及週邊設備業",
+            "examples": 8,
+            "example_pct": 0.3,
+            "stocks": 1,
+            "high_quality": 0,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 8,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "電腦及週邊設備業通用樣本",
+            "latest_sample_date": "2026-04-16"
+          }
+        ],
+        "tag_counts": {
+          "電子工業通用樣本": 493,
+          "CPO / 矽光子": 360,
+          "儲能 / 電網": 359,
+          "儲能系統": 359,
+          "變壓器": 359,
+          "變壓器 / 重電": 359,
+          "半導體業通用樣本": 295,
+          "DDR4 / DDR5": 281,
+          "DRAM / 利基型記憶體": 281,
+          "NAND / NOR Flash": 281,
+          "NAND Flash": 281,
+          "NOR Flash": 281,
+          "開關設備 / 配電盤": 279,
+          "Fiber Shuffle": 223,
+          "MPO / 光纖連接": 223,
+          "Optical Engine光引擎": 223,
+          "光通訊模組": 223,
+          "PCB / HDI": 217,
+          "工業機器人 / 自動化系統": 217,
+          "線性馬達 / 自動化": 217,
+          "FAU / Fiber Shuffle": 143,
+          "FAU光纖陣列": 143,
+          "MPO / 光纖配線盒": 143,
+          "AI伺服器 / GPU伺服器": 137,
+          "AI伺服器ODM / EMS": 137,
+          "液冷 / 散熱": 135,
+          "液冷 / 水冷 / 散熱模組": 135,
+          "玻璃陶瓷通用樣本": 135,
+          "鋼鐵工業通用樣本": 135,
+          "CCL / 銅箔基板": 80
+        },
+        "tag_detail_rows": [
+          {
+            "tag": "電子工業通用樣本",
+            "examples": 493,
+            "example_pct": 17.1,
+            "stocks": 7,
+            "top_industry": "電子工業",
+            "high_quality": 491,
+            "mid_quality": 2,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-04-07"
+          },
+          {
+            "tag": "CPO / 矽光子",
+            "examples": 360,
+            "example_pct": 12.5,
+            "stocks": 3,
+            "top_industry": "通信網路業",
+            "high_quality": 347,
+            "mid_quality": 11,
+            "low_quality": 0,
+            "unlabeled_quality": 2,
+            "latest_sample_date": "2026-04-27"
+          },
+          {
+            "tag": "儲能 / 電網",
+            "examples": 359,
+            "example_pct": 12.4,
+            "stocks": 3,
+            "top_industry": "電機機械",
+            "high_quality": 357,
+            "mid_quality": 2,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-16"
+          },
+          {
+            "tag": "儲能系統",
+            "examples": 359,
+            "example_pct": 12.4,
+            "stocks": 3,
+            "top_industry": "電機機械",
+            "high_quality": 357,
+            "mid_quality": 2,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-16"
+          },
+          {
+            "tag": "變壓器",
+            "examples": 359,
+            "example_pct": 12.4,
+            "stocks": 3,
+            "top_industry": "電機機械",
+            "high_quality": 357,
+            "mid_quality": 2,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-16"
+          },
+          {
+            "tag": "變壓器 / 重電",
+            "examples": 359,
+            "example_pct": 12.4,
+            "stocks": 3,
+            "top_industry": "電機機械",
+            "high_quality": 357,
+            "mid_quality": 2,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-16"
+          },
+          {
+            "tag": "半導體業通用樣本",
+            "examples": 295,
+            "example_pct": 10.2,
+            "stocks": 4,
+            "top_industry": "半導體業",
+            "high_quality": 295,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "tag": "DDR4 / DDR5",
+            "examples": 281,
+            "example_pct": 9.7,
+            "stocks": 2,
+            "top_industry": "半導體業",
+            "high_quality": 267,
+            "mid_quality": 14,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-06"
+          },
+          {
+            "tag": "DRAM / 利基型記憶體",
+            "examples": 281,
+            "example_pct": 9.7,
+            "stocks": 2,
+            "top_industry": "半導體業",
+            "high_quality": 267,
+            "mid_quality": 14,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-06"
+          },
+          {
+            "tag": "NAND / NOR Flash",
+            "examples": 281,
+            "example_pct": 9.7,
+            "stocks": 2,
+            "top_industry": "半導體業",
+            "high_quality": 267,
+            "mid_quality": 14,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-06"
+          },
+          {
+            "tag": "NAND Flash",
+            "examples": 281,
+            "example_pct": 9.7,
+            "stocks": 2,
+            "top_industry": "半導體業",
+            "high_quality": 267,
+            "mid_quality": 14,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-06"
+          },
+          {
+            "tag": "NOR Flash",
+            "examples": 281,
+            "example_pct": 9.7,
+            "stocks": 2,
+            "top_industry": "半導體業",
+            "high_quality": 267,
+            "mid_quality": 14,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-06"
+          },
+          {
+            "tag": "開關設備 / 配電盤",
+            "examples": 279,
+            "example_pct": 9.7,
+            "stocks": 2,
+            "top_industry": "電機機械",
+            "high_quality": 279,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-16"
+          },
+          {
+            "tag": "Fiber Shuffle",
+            "examples": 223,
+            "example_pct": 7.7,
+            "stocks": 2,
+            "top_industry": "通信網路業",
+            "high_quality": 209,
+            "mid_quality": 11,
+            "low_quality": 1,
+            "unlabeled_quality": 2,
+            "latest_sample_date": "2026-04-27"
+          },
+          {
+            "tag": "MPO / 光纖連接",
+            "examples": 223,
+            "example_pct": 7.7,
+            "stocks": 2,
+            "top_industry": "通信網路業",
+            "high_quality": 209,
+            "mid_quality": 11,
+            "low_quality": 1,
+            "unlabeled_quality": 2,
+            "latest_sample_date": "2026-04-27"
+          },
+          {
+            "tag": "Optical Engine光引擎",
+            "examples": 223,
+            "example_pct": 7.7,
+            "stocks": 2,
+            "top_industry": "通信網路業",
+            "high_quality": 209,
+            "mid_quality": 11,
+            "low_quality": 1,
+            "unlabeled_quality": 2,
+            "latest_sample_date": "2026-04-27"
+          },
+          {
+            "tag": "光通訊模組",
+            "examples": 223,
+            "example_pct": 7.7,
+            "stocks": 2,
+            "top_industry": "通信網路業",
+            "high_quality": 209,
+            "mid_quality": 11,
+            "low_quality": 1,
+            "unlabeled_quality": 2,
+            "latest_sample_date": "2026-04-27"
+          },
+          {
+            "tag": "PCB / HDI",
+            "examples": 217,
+            "example_pct": 7.5,
+            "stocks": 2,
+            "top_industry": "電子零組件業",
+            "high_quality": 216,
+            "mid_quality": 1,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "tag": "工業機器人 / 自動化系統",
+            "examples": 217,
+            "example_pct": 7.5,
+            "stocks": 2,
+            "top_industry": "電子零組件業",
+            "high_quality": 217,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "tag": "線性馬達 / 自動化",
+            "examples": 217,
+            "example_pct": 7.5,
+            "stocks": 2,
+            "top_industry": "電子零組件業",
+            "high_quality": 217,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "tag": "FAU / Fiber Shuffle",
+            "examples": 143,
+            "example_pct": 5.0,
+            "stocks": 1,
+            "top_industry": "通信網路業",
+            "high_quality": 130,
+            "mid_quality": 11,
+            "low_quality": 0,
+            "unlabeled_quality": 2,
+            "latest_sample_date": "2026-04-27"
+          },
+          {
+            "tag": "FAU光纖陣列",
+            "examples": 143,
+            "example_pct": 5.0,
+            "stocks": 1,
+            "top_industry": "通信網路業",
+            "high_quality": 130,
+            "mid_quality": 11,
+            "low_quality": 0,
+            "unlabeled_quality": 2,
+            "latest_sample_date": "2026-04-27"
+          },
+          {
+            "tag": "MPO / 光纖配線盒",
+            "examples": 143,
+            "example_pct": 5.0,
+            "stocks": 1,
+            "top_industry": "通信網路業",
+            "high_quality": 130,
+            "mid_quality": 11,
+            "low_quality": 0,
+            "unlabeled_quality": 2,
+            "latest_sample_date": "2026-04-27"
+          },
+          {
+            "tag": "AI伺服器 / GPU伺服器",
+            "examples": 137,
+            "example_pct": 4.8,
+            "stocks": 1,
+            "top_industry": "其他電子業",
+            "high_quality": 137,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-06"
+          },
+          {
+            "tag": "AI伺服器ODM / EMS",
+            "examples": 137,
+            "example_pct": 4.8,
+            "stocks": 1,
+            "top_industry": "其他電子業",
+            "high_quality": 137,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-06"
+          },
+          {
+            "tag": "液冷 / 散熱",
+            "examples": 135,
+            "example_pct": 4.7,
+            "stocks": 1,
+            "top_industry": "電子工業",
+            "high_quality": 134,
+            "mid_quality": 1,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "tag": "液冷 / 水冷 / 散熱模組",
+            "examples": 135,
+            "example_pct": 4.7,
+            "stocks": 1,
+            "top_industry": "電子工業",
+            "high_quality": 134,
+            "mid_quality": 1,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "tag": "玻璃陶瓷通用樣本",
+            "examples": 135,
+            "example_pct": 4.7,
+            "stocks": 1,
+            "top_industry": "玻璃陶瓷",
+            "high_quality": 132,
+            "mid_quality": 3,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "tag": "鋼鐵工業通用樣本",
+            "examples": 135,
+            "example_pct": 4.7,
+            "stocks": 1,
+            "top_industry": "鋼鐵工業",
+            "high_quality": 135,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "tag": "CCL / 銅箔基板",
+            "examples": 80,
+            "example_pct": 2.8,
+            "stocks": 1,
+            "top_industry": "電子工業",
+            "high_quality": 79,
+            "mid_quality": 1,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-02-09"
+          },
+          {
+            "tag": "其他電子業通用樣本",
+            "examples": 80,
+            "example_pct": 2.8,
+            "stocks": 1,
+            "top_industry": "其他電子業",
+            "high_quality": 79,
+            "mid_quality": 1,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-04-01"
+          },
+          {
+            "tag": "航運業通用樣本",
+            "examples": 80,
+            "example_pct": 2.8,
+            "stocks": 1,
+            "top_industry": "航運業",
+            "high_quality": 80,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-02-09"
+          },
+          {
+            "tag": "電源供應器 / 電源管理",
+            "examples": 80,
+            "example_pct": 2.8,
+            "stocks": 1,
+            "top_industry": "電子工業",
+            "high_quality": 78,
+            "mid_quality": 2,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-02-09"
+          },
+          {
+            "tag": "光電業通用樣本",
+            "examples": 75,
+            "example_pct": 2.6,
+            "stocks": 1,
+            "top_industry": "光電業",
+            "high_quality": 75,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-02-06"
+          },
+          {
+            "tag": "化學生技醫療通用樣本",
+            "examples": 75,
+            "example_pct": 2.6,
+            "stocks": 1,
+            "top_industry": "化學生技醫療",
+            "high_quality": 75,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-02-06"
+          },
+          {
+            "tag": "生技醫療業通用樣本",
+            "examples": 60,
+            "example_pct": 2.1,
+            "stocks": 1,
+            "top_industry": "生技醫療業",
+            "high_quality": 60,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-03-05"
+          },
+          {
+            "tag": "文化創意業通用樣本",
+            "examples": 8,
+            "example_pct": 0.3,
+            "stocks": 1,
+            "top_industry": "文化創意業",
+            "high_quality": 0,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 8,
+            "latest_sample_date": "2026-04-16"
+          },
+          {
+            "tag": "電子零組件業通用樣本",
+            "examples": 8,
+            "example_pct": 0.3,
+            "stocks": 1,
+            "top_industry": "電子零組件業",
+            "high_quality": 0,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 8,
+            "latest_sample_date": "2026-04-30"
+          },
+          {
+            "tag": "電腦及週邊設備業通用樣本",
+            "examples": 8,
+            "example_pct": 0.3,
+            "stocks": 1,
+            "top_industry": "電腦及週邊設備業",
+            "high_quality": 0,
+            "mid_quality": 0,
+            "low_quality": 0,
+            "unlabeled_quality": 8,
+            "latest_sample_date": "2026-04-16"
+          }
+        ],
+        "source_counts": {
+          "rolling_ohlcv_backtest": 2884
+        },
+        "latest_sample_date": "2026-04-30",
+        "manifest": {
+          "generated_at": "2026-06-21T08:03:50+08:00",
+          "requested_stocks": 15,
+          "processed_stocks": 15,
+          "failed_stocks": 0
+        }
+      }
+    },
+    "message": "已輸出 2884 筆 LLM 技術訓練樣本"
+  }
+}
