@@ -704,6 +704,64 @@
       }
     ]
   },
+  "bidirectional_price_forecast": {
+    "ok": true,
+    "bias": "區間",
+    "base_case": "盤整震盪",
+    "summary": "雙向預測：區間，基準情境為盤整震盪；上行 3637.7（33%）/ 下行 3186.2（30%）/ 區間 3101.8-3712.0（37%）；校準樣本 2114 筆；5日正向 38% / 負向 24% / 盤整 38%。",
+    "close": 3390.0,
+    "bull_case": {
+      "price": 3637.72,
+      "probability": 33,
+      "trigger": 4230.0,
+      "upside_pct": 7.31
+    },
+    "bear_case": {
+      "price": 3186.23,
+      "probability": 30,
+      "trigger": 3101.85,
+      "downside_pct": -6.01
+    },
+    "range_case": {
+      "low": 3101.85,
+      "high": 3712.05,
+      "probability": 37
+    },
+    "signals": {
+      "neutral_gap_pct": 2.18,
+      "technical_score": 32.4,
+      "atr_pct": 8.72,
+      "backtest_direction_hit_rate": 50.0,
+      "target_first_rate": 0.0,
+      "stop_first_rate": 0.0,
+      "regime_tags": [
+        "bearish_setup",
+        "below_ma60",
+        "high_volatility"
+      ]
+    },
+    "training_calibration": {
+      "sample_count": 2114,
+      "weighted_sample_count": 4274,
+      "regime_tags": [
+        "bearish_setup",
+        "below_ma60",
+        "high_volatility"
+      ],
+      "positive_rate": 38.0,
+      "negative_rate": 24.4,
+      "neutral_rate": 37.6,
+      "median_return5": 0.58,
+      "q25_return5": -1.95,
+      "q75_return5": 3.73,
+      "median_return20": 1.71,
+      "q25_return20": -3.85,
+      "q75_return20": 8.69,
+      "summary": "校準樣本 2114 筆；5日正向 38% / 負向 24% / 盤整 38%"
+    },
+    "invalidation": "突破 4230.00 或跌破 3101.85 才脫離區間"
+  },
+  "bidirectional_price_forecast_summary": "雙向預測：區間，基準情境為盤整震盪；上行 3637.7（33%）/ 下行 3186.2（30%）/ 區間 3101.8-3712.0（37%）；校準樣本 2114 筆；5日正向 38% / 負向 24% / 盤整 38%。",
   "event_calendar_backtest": {
     "summary": "市場事件樣本偏多；未來45天事件 8 筆，20日影響分數 +6.5",
     "rows": [
@@ -998,8 +1056,8 @@
       "ATR風險偏高"
     ],
     "training_calibration": {
-      "sample_count": 1609,
-      "industry_sample_count": 1609,
+      "sample_count": 1640,
+      "industry_sample_count": 1640,
       "score_adjust": 0.0,
       "reason": ""
     },
@@ -1059,7 +1117,7 @@
   "summary_warrant_signal": "小幅加分",
   "summary_warrant_plain": "權證略偏多，但只能當輔助，仍需現股突破壓力確認",
   "summary_warrant_price_view": "現股距認購主流履約價仍有 33.50% 空間，屬高想像但投機風險也高",
-  "generated_at": "2026-06-25T19:29:44+08:00",
+  "generated_at": "2026-06-25T20:33:08+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3653_2026-06-25\\01_日線完整技術與籌碼分析圖.png",
@@ -1241,8 +1299,8 @@
     }
   ],
   "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3653_2026-06-25\\07_集保股權歷史趨勢圖.png",
-  "broker_trading_period": "2026-03-30 to 2026-06-25 (OK; local rows=4469, days=254, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-25 rows=20)",
-  "broker_import_status": "券商分點：2026-03-30 to 2026-06-25；OK; local rows=4469, days=254, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-25 rows=20",
+  "broker_trading_period": "2026-03-30 to 2026-06-25 (OK; local rows=4489, days=255, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-25 rows=20)",
+  "broker_import_status": "券商分點：2026-03-30 to 2026-06-25；OK; local rows=4489, days=255, imported_files=0；HiStock brokertrace no usable rows；nStock 2026-06-25 rows=20",
   "broker_trading_latest_period": "2026-06-25",
   "broker_pattern_result": {
     "ok": true,
@@ -3629,24 +3687,24 @@
   "prediction_history_status": "已記錄本次預測快照，待後續交易日回測校準",
   "llm_training_status": {
     "ok": true,
-    "count": 4945,
+    "count": 4947,
     "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\llm_technical_training_examples.jsonl",
     "dashboard": {
       "ok": true,
       "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\technical_training_dashboard.html",
       "summary": {
-        "generated_at": "2026-06-25T19:30:02+08:00",
-        "examples": 4945,
+        "generated_at": "2026-06-25T20:33:27+08:00",
+        "examples": 4947,
         "stocks": 34,
         "quality_counts": {
-          "高": 4863,
+          "高": 4865,
           "中": 56,
           "未標記": 25,
           "低": 1
         },
         "industry_counts": {
           "電子工業": 1640,
-          "半導體業": 817,
+          "半導體業": 819,
           "電機機械": 409,
           "通信網路業": 350,
           "電子零組件業": 333,
@@ -3679,16 +3737,16 @@
           },
           {
             "industry": "半導體業",
-            "examples": 817,
-            "example_pct": 16.5,
+            "examples": 819,
+            "example_pct": 16.6,
             "stocks": 7,
-            "high_quality": 796,
+            "high_quality": 798,
             "mid_quality": 21,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "DDR4 / DDR5、DRAM / 利基型記憶體、NAND / NOR Flash、NAND Flash",
-            "latest_sample_date": "2026-03-20"
+            "latest_sample_date": "2026-03-23"
           },
           {
             "industry": "電機機械",
@@ -3888,11 +3946,11 @@
         ],
         "tag_counts": {
           "電子工業通用樣本": 763,
-          "DDR4 / DDR5": 681,
-          "DRAM / 利基型記憶體": 681,
-          "NAND / NOR Flash": 681,
-          "NAND Flash": 681,
-          "NOR Flash": 681,
+          "DDR4 / DDR5": 682,
+          "DRAM / 利基型記憶體": 682,
+          "NAND / NOR Flash": 682,
+          "NAND Flash": 682,
+          "NOR Flash": 682,
           "CPO / 矽光子": 561,
           "儲能 / 電網": 544,
           "儲能系統": 544,
@@ -3900,7 +3958,7 @@
           "變壓器 / 重電": 544,
           "光通訊模組": 430,
           "開關設備 / 配電盤": 409,
-          "半導體業通用樣本": 380,
+          "半導體業通用樣本": 381,
           "Fiber Shuffle": 350,
           "MPO / 光纖連接": 350,
           "Optical Engine光引擎": 350,
@@ -3933,63 +3991,63 @@
           },
           {
             "tag": "DDR4 / DDR5",
-            "examples": 681,
+            "examples": 682,
             "example_pct": 13.8,
             "stocks": 4,
             "top_industry": "半導體業",
-            "high_quality": 657,
+            "high_quality": 658,
             "mid_quality": 24,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-20"
+            "latest_sample_date": "2026-03-23"
           },
           {
             "tag": "DRAM / 利基型記憶體",
-            "examples": 681,
+            "examples": 682,
             "example_pct": 13.8,
             "stocks": 4,
             "top_industry": "半導體業",
-            "high_quality": 657,
+            "high_quality": 658,
             "mid_quality": 24,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-20"
+            "latest_sample_date": "2026-03-23"
           },
           {
             "tag": "NAND / NOR Flash",
-            "examples": 681,
+            "examples": 682,
             "example_pct": 13.8,
             "stocks": 4,
             "top_industry": "半導體業",
-            "high_quality": 657,
+            "high_quality": 658,
             "mid_quality": 24,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-20"
+            "latest_sample_date": "2026-03-23"
           },
           {
             "tag": "NAND Flash",
-            "examples": 681,
+            "examples": 682,
             "example_pct": 13.8,
             "stocks": 4,
             "top_industry": "半導體業",
-            "high_quality": 657,
+            "high_quality": 658,
             "mid_quality": 24,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-20"
+            "latest_sample_date": "2026-03-23"
           },
           {
             "tag": "NOR Flash",
-            "examples": 681,
+            "examples": 682,
             "example_pct": 13.8,
             "stocks": 4,
             "top_industry": "半導體業",
-            "high_quality": 657,
+            "high_quality": 658,
             "mid_quality": 24,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-20"
+            "latest_sample_date": "2026-03-23"
           },
           {
             "tag": "CPO / 矽光子",
@@ -4077,15 +4135,15 @@
           },
           {
             "tag": "半導體業通用樣本",
-            "examples": 380,
+            "examples": 381,
             "example_pct": 7.7,
             "stocks": 4,
             "top_industry": "半導體業",
-            "high_quality": 380,
+            "high_quality": 381,
             "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-03-20"
+            "latest_sample_date": "2026-03-23"
           },
           {
             "tag": "Fiber Shuffle",
@@ -4425,7 +4483,7 @@
           }
         ],
         "source_counts": {
-          "rolling_ohlcv_backtest": 4945
+          "rolling_ohlcv_backtest": 4947
         },
         "latest_sample_date": "2026-04-30",
         "manifest": {
@@ -4436,6 +4494,6 @@
         }
       }
     },
-    "message": "已輸出 4945 筆 LLM 技術訓練樣本"
+    "message": "已輸出 4947 筆 LLM 技術訓練樣本"
   }
 }
