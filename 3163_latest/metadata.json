@@ -85,18 +85,18 @@
   "institutional_latest_period": "2026-07-31",
   "government_bank_period": "2026-07-20 to 2026-07-31 (OK；最近 10 個交易日；原始單位張，已轉換為股；外資/投信交叉驗證通過 10/10)",
   "government_bank_latest_period": "2026-07-31",
-  "margin_period": "2025-07-31 to 2026-07-30 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance; 融資餘額校驗OK; 融券餘額校驗OK)",
-  "margin_latest_period": "2026-07-30",
-  "warrant_period": "None (optional fetch timed out after 20 seconds; skipped)",
-  "warrant_latest_period": "",
-  "fundamental_period": "revenue 2024-02-01 to 2026-07-01; PER/PBR 2025-07-31 to 2026-07-30; EPS 2021-09-30 to 2026-03-31; profitability 2021-09-30 to 2026-03-31; quarterly_detail 2021-09-30 to 2026-03-31 (OK revenue_rows=30; per_rows=242; eps_rows=19; profitability_rows=19; quarterly_detail_rows=19)",
+  "margin_period": "2025-07-31 to 2026-07-31 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance; 融資餘額校驗OK; 融券餘額校驗OK)",
+  "margin_latest_period": "2026-07-31",
+  "warrant_period": "TWSE report_date=2026-07-31 (OK; call=218, put=30, with_exercise_price=0)",
+  "warrant_latest_period": "TWSE report_date=2026-07-31",
+  "fundamental_period": "revenue 2024-02-01 to 2026-07-01; PER/PBR 2025-07-31 to 2026-07-31; EPS 2021-09-30 to 2026-03-31; profitability 2021-09-30 to 2026-03-31; quarterly_detail 2021-09-30 to 2026-03-31 (OK revenue_rows=30; per_rows=243; eps_rows=19; profitability_rows=19; quarterly_detail_rows=19)",
   "revenue_latest_period": "2026-06",
   "quarterly_latest_period": "2026-03-31",
   "major_holder_period": "not available; no complete natural person major-holder list claimed",
   "tdcc_period": "20260724 (OK; rows=17)",
   "tdcc_latest_period": "20260724",
-  "etf_latest_period": "2026-07-30",
-  "etf_holding_change_period": "2026-07-30 (OK; holders=2, active_candidates=1; changes=0)",
+  "etf_latest_period": "2026-07-31",
+  "etf_holding_change_period": "2026-07-31 (OK; holders=2, active_candidates=1; changes=0)",
   "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=波若威(3163), 上詮(3363), 聯亞(3081), 聯鈞(3450), 華星光(4979), 眾達-KY(4977); failures=none",
   "peer_display_list": "波若威(3163)、上詮(3363)、聯亞(3081)、聯鈞(3450)、華星光(4979)、眾達-KY(4977)",
   "peer_business_summary": "波若威(3163) 定位：CPO / 矽光子周邊光連接 / FAU / Fiber Shuffle / MPO 光纖線材核心供應鏈；產品組合：FAU 光纖陣列 / Fiber Array Unit（占比待補）、Fiber Shuffle / 光纖重排線組（占比待補）、MPO / MTP 光纖連接器 / 光纖配線盒（占比待補）、光纖跳接線 / 光纖連接器（占比待補）、光收發模組 / Transceiver 相關組件（占比待補）；資料層級：官方產品資料；同族群比較基準：波若威 FAU / CPO / AI資料中心光連接相似股。對照族群涵蓋：FAU / CPO / 矽光子 / AI 資料中心光連接核心供應鏈。",
@@ -251,7 +251,7 @@
       "stock_price_watch": "AI 資料中心網路升級、CPO / 矽光子與高速交換器架構滲透、400G / 800G / 1.6T 高速傳輸；同時看毛利率、營益率與月營收是否同步改善",
       "comparability": "高：與創威、統新、東典光電同屬光通訊供應鏈，但波若威更偏 CPO 周邊光纖連接、FAU、Fiber Shuffle、MPO；需區分主動光模組、濾波片、無線模組與系統設備。；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：CPO、矽光子、FAU、Fiber Shuffle、MPO",
       "evidence_keywords": "CPO、矽光子、FAU、Fiber Shuffle、MPO",
-      "evidence_sources": "波若威公開產品資訊 / 法說與公開資訊、cmnews.com.tw"
+      "evidence_sources": "波若威公開產品資訊 / 法說與公開資訊、CMoney"
     },
     {
       "stock_id": "3363",
@@ -362,11 +362,11 @@
       "valuation_logic": "以月營收、毛利率、接單能見度、產品認證進度與 CPO / 矽光子導入時程判斷；相似股比較應優先看 FAU、CPO、ELS、光主動元件與高速光模組在 AI 資料中心的實際曝險。",
       "risks": "CPO 導入時程延後、客戶拉貨波動、高估值修正",
       "stock_price_watch": "NVIDIA Rubin 與 AI Datacenter 網路升級、CPO / 矽光子滲透率、FAU / 光連接產品認證與放量；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：波若威、上詮、聯亞、聯鈞、華星光、眾達-KY 同受 AI 資料中心光連接與 CPO / 矽光子題材驅動，但仍需拆分 FAU、ELS、光主動元件與光模組角色。；公司實際產品比重需以法說、年報或公告確認；產品重疊：FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、FAU光纖陣列、PIC光子晶片 / 矽光子、Optical Engine光引擎",
+      "comparability": "高：波若威、上詮、聯亞、聯鈞、華星光、眾達-KY 同受 AI 資料中心光連接與 CPO / 矽光子題材驅動，但仍需拆分 FAU、ELS、光主動元件與光模組角色。；公司實際產品比重需以法說、年報或公告確認；產品重疊：FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、PIC光子晶片 / 矽光子、FAU光纖陣列、Optical Engine光引擎",
       "evidence_keywords": "-",
       "evidence_sources": "-",
       "product_overlap_score": 5.85,
-      "matched_products": "FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、FAU光纖陣列、PIC光子晶片 / 矽光子、Optical Engine光引擎"
+      "matched_products": "FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、PIC光子晶片 / 矽光子、FAU光纖陣列、Optical Engine光引擎"
     },
     {
       "stock_id": "3081",
@@ -477,11 +477,11 @@
       "valuation_logic": "以月營收、毛利率、接單能見度、產品認證進度與 CPO / 矽光子導入時程判斷；相似股比較應優先看 FAU、CPO、ELS、光主動元件與高速光模組在 AI 資料中心的實際曝險。",
       "risks": "CPO 導入時程延後、客戶拉貨波動、高估值修正",
       "stock_price_watch": "NVIDIA Rubin 與 AI Datacenter 網路升級、CPO / 矽光子滲透率、FAU / 光連接產品認證與放量；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：波若威、上詮、聯亞、聯鈞、華星光、眾達-KY 同受 AI 資料中心光連接與 CPO / 矽光子題材驅動，但仍需拆分 FAU、ELS、光主動元件與光模組角色。；公司實際產品比重需以法說、年報或公告確認；產品重疊：FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、FAU光纖陣列、PIC光子晶片 / 矽光子、Optical Engine光引擎",
+      "comparability": "高：波若威、上詮、聯亞、聯鈞、華星光、眾達-KY 同受 AI 資料中心光連接與 CPO / 矽光子題材驅動，但仍需拆分 FAU、ELS、光主動元件與光模組角色。；公司實際產品比重需以法說、年報或公告確認；產品重疊：FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、PIC光子晶片 / 矽光子、FAU光纖陣列、Optical Engine光引擎",
       "evidence_keywords": "-",
       "evidence_sources": "-",
       "product_overlap_score": 5.85,
-      "matched_products": "FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、FAU光纖陣列、PIC光子晶片 / 矽光子、Optical Engine光引擎"
+      "matched_products": "FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、PIC光子晶片 / 矽光子、FAU光纖陣列、Optical Engine光引擎"
     },
     {
       "stock_id": "3450",
@@ -592,11 +592,11 @@
       "valuation_logic": "以月營收、毛利率、接單能見度、產品認證進度與 CPO / 矽光子導入時程判斷；相似股比較應優先看 FAU、CPO、ELS、光主動元件與高速光模組在 AI 資料中心的實際曝險。",
       "risks": "CPO 導入時程延後、客戶拉貨波動、高估值修正",
       "stock_price_watch": "NVIDIA Rubin 與 AI Datacenter 網路升級、CPO / 矽光子滲透率、FAU / 光連接產品認證與放量；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：波若威、上詮、聯亞、聯鈞、華星光、眾達-KY 同受 AI 資料中心光連接與 CPO / 矽光子題材驅動，但仍需拆分 FAU、ELS、光主動元件與光模組角色。；公司實際產品比重需以法說、年報或公告確認；產品重疊：FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、FAU光纖陣列、PIC光子晶片 / 矽光子、Optical Engine光引擎",
+      "comparability": "高：波若威、上詮、聯亞、聯鈞、華星光、眾達-KY 同受 AI 資料中心光連接與 CPO / 矽光子題材驅動，但仍需拆分 FAU、ELS、光主動元件與光模組角色。；公司實際產品比重需以法說、年報或公告確認；產品重疊：FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、PIC光子晶片 / 矽光子、FAU光纖陣列、Optical Engine光引擎",
       "evidence_keywords": "-",
       "evidence_sources": "-",
       "product_overlap_score": 5.85,
-      "matched_products": "FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、FAU光纖陣列、PIC光子晶片 / 矽光子、Optical Engine光引擎"
+      "matched_products": "FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、PIC光子晶片 / 矽光子、FAU光纖陣列、Optical Engine光引擎"
     },
     {
       "stock_id": "4979",
@@ -707,11 +707,11 @@
       "valuation_logic": "以月營收、毛利率、接單能見度、產品認證進度與 CPO / 矽光子導入時程判斷；相似股比較應優先看 FAU、CPO、ELS、光主動元件與高速光模組在 AI 資料中心的實際曝險。",
       "risks": "CPO 導入時程延後、客戶拉貨波動、高估值修正",
       "stock_price_watch": "NVIDIA Rubin 與 AI Datacenter 網路升級、CPO / 矽光子滲透率、FAU / 光連接產品認證與放量；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：波若威、上詮、聯亞、聯鈞、華星光、眾達-KY 同受 AI 資料中心光連接與 CPO / 矽光子題材驅動，但仍需拆分 FAU、ELS、光主動元件與光模組角色。；公司實際產品比重需以法說、年報或公告確認；產品重疊：FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、FAU光纖陣列、PIC光子晶片 / 矽光子、Optical Engine光引擎",
+      "comparability": "高：波若威、上詮、聯亞、聯鈞、華星光、眾達-KY 同受 AI 資料中心光連接與 CPO / 矽光子題材驅動，但仍需拆分 FAU、ELS、光主動元件與光模組角色。；公司實際產品比重需以法說、年報或公告確認；產品重疊：FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、PIC光子晶片 / 矽光子、FAU光纖陣列、Optical Engine光引擎",
       "evidence_keywords": "-",
       "evidence_sources": "-",
       "product_overlap_score": 5.85,
-      "matched_products": "FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、FAU光纖陣列、PIC光子晶片 / 矽光子、Optical Engine光引擎"
+      "matched_products": "FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、PIC光子晶片 / 矽光子、FAU光纖陣列、Optical Engine光引擎"
     },
     {
       "stock_id": "4977",
@@ -822,11 +822,11 @@
       "valuation_logic": "以月營收、毛利率、接單能見度、產品認證進度與 CPO / 矽光子導入時程判斷；相似股比較應優先看 FAU、CPO、ELS、光主動元件與高速光模組在 AI 資料中心的實際曝險。",
       "risks": "CPO 導入時程延後、客戶拉貨波動、高估值修正",
       "stock_price_watch": "NVIDIA Rubin 與 AI Datacenter 網路升級、CPO / 矽光子滲透率、FAU / 光連接產品認證與放量；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：波若威、上詮、聯亞、聯鈞、華星光、眾達-KY 同受 AI 資料中心光連接與 CPO / 矽光子題材驅動，但仍需拆分 FAU、ELS、光主動元件與光模組角色。；公司實際產品比重需以法說、年報或公告確認；產品重疊：FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、FAU光纖陣列、PIC光子晶片 / 矽光子、Optical Engine光引擎",
+      "comparability": "高：波若威、上詮、聯亞、聯鈞、華星光、眾達-KY 同受 AI 資料中心光連接與 CPO / 矽光子題材驅動，但仍需拆分 FAU、ELS、光主動元件與光模組角色。；公司實際產品比重需以法說、年報或公告確認；產品重疊：FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、PIC光子晶片 / 矽光子、FAU光纖陣列、Optical Engine光引擎",
       "evidence_keywords": "-",
       "evidence_sources": "-",
       "product_overlap_score": 5.85,
-      "matched_products": "FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、FAU光纖陣列、PIC光子晶片 / 矽光子、Optical Engine光引擎"
+      "matched_products": "FAU 光纖陣列 / Fiber Array Unit、資料中心高速傳輸 / 400G / 800G / 1.6T 光連接、CPO 交換器周邊光連接客製化產品、PIC光子晶片 / 矽光子、FAU光纖陣列、Optical Engine光引擎"
     }
   ],
   "peer_business_interpretation": [
@@ -834,15 +834,15 @@
     "估值比較應優先看產品組合與獲利率差異：以月營收成長、毛利率、營業利益率與接單能見度判斷 CPO / 高速光通訊需求是否轉為獲利；波若威不是 ASIC 交換晶片、PIC 或 ELS 本體，估值應聚焦 FAU、Fiber Shuffle、MPO 等光連接產品是否放量，並搭配歷史 PER 分位與技術位置。",
     "主要風險要和同族群分開看：客戶拉貨波動、CPO 導入時程延後、高速規格認證時程。"
   ],
-  "etf_display_status": "持有快照 2026-07-30，未命中最新異動",
+  "etf_display_status": "持有快照 2026-07-31，未命中最新異動",
   "tdcc_display_status": "20260724；大額 34.36% / 小額 39.96%",
-  "warrant_display_status": "optional fetch timed out after 20 seconds; skipped",
+  "warrant_display_status": "OK; call=218, put=30, with_exercise_price=0",
   "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
   "fundamental_profitability_summary": "2026Q1 毛利率 18.86%（年變化 +1.06 個百分點）、營業利益率 5.32%（年變化 +0.67 個百分點）",
   "fundamental_quarterly_summary": "2026Q1 營業費用率 13.53%（年變化 +0.39 個百分點）、稅後淨利率 37.15%（年變化 +27.76 個百分點）、ROE 5.67%（年變化 +3.81 個百分點）",
   "fundamental_net_income_eps_summary": "2026Q1 稅後純益 2.44 億元（YoY +395.38%）；2026Q1 EPS 3.03 元（YoY +396.72%），近四季 EPS 8.64 元",
   "revenue_trend_summary": "2026-06 月營收 1.81 億元；MoM -14.34%；YoY -11.53%；近 3 個月累計 YoY 9.91%；近 12 個月滾動營收 YoY 20.84%",
-  "fundamental_price_estimate_summary": "悲觀 421 元 / 中性 544 元 / 樂觀 635 元；產業模型：光通訊/資料中心網路（PER 下限 10.0x / 上限 50.0x）；加權框架：成長電子；近四季 EPS 8.64；預測 EPS 估 10.74（成長假設 +22.4%）；估值 PER 48.7x / 50.0x / 50.0x；估值信心 95/100；稅後純益因子：YoY +395.4% / 最新季 2.44 億元，已納入預測 EPS 與 PER 品質調整；月營收推下一季 EPS 2.74（年化 10.94；季節性係數 0.93 / 歷史營收轉EPS效率 / 近3月營收YoY +9.9% / 最新月營收YoY -11.5% / 近12月營收YoY +20.8% / 毛利率年變化 +1.1ppt）；風險折價：月營收年減超過 10%（-4%）；催化溢價：近四季 EPS 明顯成長、稅後純益年增、ROE 支撐評價（+9%）；目前 PER 57.3x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=75.2x/87.8x/115.8x；目前 PER 位於近一年 9% 分位；市場情境 20x/25x/30x=173/216/259 元；模型推估：EPS/PER 537 元（預測 EPS 10.74 × 中性 PER 50.0x）、稅後純益/EPS 562 元（稅後純益YoY +395.4% / 最新季 2.44億元 × 中性 PER 50.0x）、月營收推估EPS 547 元（下一季EPS估 2.74 ×4 × PER 50.0x / 信心高）、PBR/ROE 82 元（ROE 對應合理 PBR）、技術型態 612 元（下降通道 突破量測目標 / 量能不足折減 / 有效性高87）、法人籌碼成本 691 元（外資 / 投信近20與60日加碼成本）、事件影響 609 元（未來45天 台指期結算、月底作帳；一般型加權 +12.0% / 當日震盪 5.8%）、殖利率 525 元（現殖利率 0.71% / 中位 0.73%）；有效模型權重：EPS/PER 46%、稅後純益/EPS 5%、月營收推估EPS 27%、技術型態 6%、法人籌碼成本 11%、事件影響 1%、殖利率 3%；停用模型：PBR/ROE（非資產型公司且PBR/ROE結果為離群值）；多模型加權參考 544 元；歷史 PBR 分位 Q25/Q50/Q75=7.32x/11.70x/22.03x；ROE/PB 交叉參考 82 元；技術型態目標 612 元（80日下降通道 / 型態分 7.6 / 目標可信高87）；法人籌碼成本 外資 612 元 / 投信 769 元；殖利率模型 525 元（現殖利率 0.71% / 中位 0.73%）；現價 544.00 元，較中性估值 +0.0%；現價接近中性估值；合理偏高區：續漲需要營收與法人同步確認",
+  "fundamental_price_estimate_summary": "悲觀 432 元 / 中性 543 元 / 樂觀 635 元；產業模型：光通訊/資料中心網路（PER 下限 10.0x / 上限 50.0x）；加權框架：成長電子；近四季 EPS 8.64；預測 EPS 估 10.74（成長假設 +22.4%）；估值 PER 50.0x / 50.0x / 50.0x；估值信心 95/100；稅後純益因子：YoY +395.4% / 最新季 2.44 億元，已納入預測 EPS 與 PER 品質調整；月營收推下一季 EPS 2.74（年化 10.94；季節性係數 0.93 / 歷史營收轉EPS效率 / 近3月營收YoY +9.9% / 最新月營收YoY -11.5% / 近12月營收YoY +20.8% / 毛利率年變化 +1.1ppt）；風險折價：月營收年減超過 10%（-4%）；催化溢價：近四季 EPS 明顯成長、稅後純益年增、ROE 支撐評價（+9%）；目前 PER 63.0x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=74.9x/87.8x/115.7x；目前 PER 位於近一年 12% 分位；市場情境 20x/25x/30x=173/216/259 元；模型推估：EPS/PER 537 元（預測 EPS 10.74 × 中性 PER 50.0x）、稅後純益/EPS 562 元（稅後純益YoY +395.4% / 最新季 2.44億元 × 中性 PER 50.0x）、月營收推估EPS 547 元（下一季EPS估 2.74 ×4 × PER 50.0x / 信心高）、PBR/ROE 75 元（ROE 對應合理 PBR）、技術型態 612 元（下降通道 突破量測目標 / 量能不足折減 / 有效性高87）、法人籌碼成本 691 元（外資 / 投信近20與60日加碼成本）、事件影響 609 元（未來45天 台指期結算、月底作帳；一般型加權 +12.0% / 當日震盪 5.8%）、殖利率 484 元（現殖利率 0.64% / 中位 0.72%）；有效模型權重：EPS/PER 46%、稅後純益/EPS 5%、月營收推估EPS 27%、技術型態 6%、法人籌碼成本 11%、事件影響 1%、殖利率 3%；停用模型：PBR/ROE（非資產型公司且PBR/ROE結果為離群值）；多模型加權參考 543 元；歷史 PBR 分位 Q25/Q50/Q75=7.32x/11.97x/22.02x；ROE/PB 交叉參考 75 元；技術型態目標 612 元（80日下降通道 / 型態分 7.6 / 目標可信高87）；法人籌碼成本 外資 612 元 / 投信 769 元；殖利率模型 484 元（現殖利率 0.64% / 中位 0.72%）；現價 544.00 元，較中性估值 +0.3%；現價接近中性估值；合理偏高區：續漲需要營收與法人同步確認",
   "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能轉弱、最新月營收年減雙位數、PER 位階偏高，股價需要成長性支撐、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、稅後純益年增、稅後淨利率較去年同期改善、ROE 較去年同期改善。",
   "prediction_backtest_dashboard": {
     "forecast_contract_version": "forecast-horizons-v1",
@@ -1335,7 +1335,7 @@
       },
       {
         "factor": "估值/技術上緣",
-        "value": "544.0 / 635.0 / 612.5",
+        "value": "543.0 / 635.0 / 612.5",
         "effect": "避免單一模型喊價"
       },
       {
@@ -1440,7 +1440,7 @@
       "display_probability": "中"
     },
     "signals": {
-      "neutral_gap_pct": 0.0,
+      "neutral_gap_pct": -0.18,
       "technical_score": 33.6,
       "atr_pct": 11.34,
       "backtest_direction_hit_rate": 50.0,
@@ -1472,7 +1472,7 @@
     },
     "training_calibration": {
       "sample_count": 7745,
-      "raw_matched_sample_count": 15242,
+      "raw_matched_sample_count": 15278,
       "effective_sample_count": 6169.5,
       "stock_count": 318,
       "ready": true,
@@ -1744,10 +1744,10 @@
     "verified_peer_count": 0
   },
   "chip_summary": {
-    "margin_balance": 6231.0,
-    "margin_5d_change": -121.0,
-    "short_balance": 79.0,
-    "short_5d_change": 79.0,
+    "margin_balance": 6539.0,
+    "margin_5d_change": -26.0,
+    "short_balance": 95.0,
+    "short_5d_change": 95.0,
     "foreign_latest": -362877.0,
     "foreign_5d": -1294705.0,
     "foreign_20d": 86439.0,
@@ -1793,17 +1793,6 @@
     "total_20d": -329137.0,
     "margin_5d_detail": [
       {
-        "date": "2026-07-24",
-        "margin_buy": 659.0,
-        "margin_sell": 444.0,
-        "margin_net": 215.0,
-        "margin_balance": 6565.0,
-        "short_buy": 0.0,
-        "short_sell": 0.0,
-        "short_net": 0.0,
-        "short_balance": 0.0
-      },
-      {
         "date": "2026-07-27",
         "margin_buy": 377.0,
         "margin_sell": 421.0,
@@ -1846,6 +1835,17 @@
         "short_sell": 374.0,
         "short_net": -348.0,
         "short_balance": 79.0
+      },
+      {
+        "date": "2026-07-31",
+        "margin_buy": 400.0,
+        "margin_sell": 88.0,
+        "margin_net": 312.0,
+        "margin_balance": 6539.0,
+        "short_buy": 46.0,
+        "short_sell": 30.0,
+        "short_net": 16.0,
+        "short_balance": 95.0
       }
     ],
     "institutional_5d_detail": [
@@ -2044,7 +2044,7 @@
     "news_score": null,
     "news_weight": 0.0,
     "news_adjustment": 0.0,
-    "news_item_count": 8,
+    "news_item_count": 5,
     "news_high_confidence_count": 0,
     "news_influence": "display_only",
     "grade": "低",
@@ -2117,8 +2117,8 @@
       "weak_score": 0.0,
       "buy_note": "",
       "sell_note": "",
-      "summary": "融資5日-1.9%",
-      "margin_5d_pct": -1.9049118387909347,
+      "summary": "融資5日-0.4%",
+      "margin_5d_pct": -0.3960396039603964,
       "short_5d_pct": null
     },
     "margin_score_adjustment": 0.0,
@@ -2157,14 +2157,14 @@
       "型態命中率佳"
     ],
     "training_calibration": {
-      "sample_count": 592,
-      "industry_sample_count": 592,
+      "sample_count": 593,
+      "industry_sample_count": 593,
       "score_adjust": 4.0,
       "reason": "訓練樣本支持技術分數（高分勝率61%）"
     },
     "summary": "短線走勢：偏弱（34/100；觀察未來 5 個交易日）；空頭排列，型態可信87，量比0.57，ATR 11.3%"
   },
-  "news_display_status": "新聞面偏利多（利多 5 / 利空 0 / 中性 3；高可信 0 則）",
+  "news_display_status": "新聞面偏利多（利多 3 / 利空 0 / 中性 2；高可信 0 則）",
   "disclosure_display_status": "近 120 天公告/法說追蹤 2 則（法說會 0 / 公告 2）",
   "summary_one_line": "偏空弱勢，偏弱震盪；重新站回 MA10 573.43 並突破 555.57 才有續攻機會，跌破 486.00 轉防守。",
   "summary_overall": "偏空弱勢；收盤跌破 MA5, MA5 低於 MA10, 跌破 MA10 且投信偏賣",
@@ -2184,7 +2184,7 @@
   "summary_pressure": "第一 555.57 / 第二 573.43 / 強 604.30",
   "summary_price_pattern": "近80日下降通道 有效7.6 / 跌破；近243日上升通道 有效5.2 / 區間內",
   "summary_price_pattern_brief": "近80日下降通道 有效7.6 / 跌破；近243日上升通道 有效5.2 / 區間內",
-  "summary_trade_plan": "買點：靠近 604.30 守住，或放量突破 604.22 再加分，但需確認融資5日-1.9%；賣點：已跌破 604.30，反彈未站回前偏防守，且融資5日-1.9%。依據：下降通道有效分數 7.6。",
+  "summary_trade_plan": "買點：靠近 604.30 守住，或放量突破 604.22 再加分，但需確認融資5日-0.4%；賣點：已跌破 604.30，反彈未站回前偏防守，且融資5日-0.4%。依據：下降通道有效分數 7.6。",
   "summary_gap": "近120日有 50 個明顯缺口；最近向下缺口 2026-06-24 位於 712.36～736.98 元，分類為趨勢延續缺口，部分回補，量能未明顯放大。類型統計：趨勢延續缺口24個、事件／大幅跳空14個、一般缺口9個、突破缺口3個。",
   "gap_rows": [
     {
@@ -3251,7 +3251,7 @@
   "summary_warrant_signal": "中性",
   "summary_warrant_plain": "權證資料不足，暫不做白話解讀",
   "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
-  "generated_at": "2026-07-31T17:38:17+08:00",
+  "generated_at": "2026-07-31T22:49:41+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3163_2026-07-31\\01_日線完整技術與籌碼分析圖.png",
@@ -4618,17 +4618,17 @@
   "news_rows": [
     {
       "region": "國內",
-      "bias": "中性",
-      "event_type": "股價",
-      "title": "【09:47 即時新聞】波若威(3163)股價上漲守穩650元，受惠CPO量產題材發酵＋短均線多頭排列、主力成本上方維持強勢結構",
-      "source": "cmnews.com.tw",
-      "published": "2026-07-28 09:47",
-      "published_ts": "2026-07-28T09:47:47+08:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZGUtQ0Q3UGhja01tM3B5SFJNMjBidjY4UXE5OXhjMll4ZlBNQjFfc21qMkNGM1VvZTVJU05fWFhfeTlVNTRFeWxnRDRUQUpFeUNxNWhiX2xpYTFXNFZPY0E2SGdUZFpJbExnXzh3T1dWNXI1empFV2JXQ05TNmw1Y2dLcU01OGU1QTlGUUFR?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字",
-      "key_point": "觀察訊號；屬市場反應，需回到量價與支撐壓力驗證",
-      "source_score": 2,
-      "source_tier": "一般來源",
+      "bias": "利多",
+      "event_type": "財報",
+      "title": "【即時新聞】波若威(3163)挾CPO題材獲利回溫，這「5檔概念股」掀多空激戰！",
+      "source": "CMoney",
+      "published": "2026-07-28 11:13",
+      "published_ts": "2026-07-28T11:13:36+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ScUMwTWE4cUl4V2prREV5by15UUk2dDl2S1kxRjJleGJBOFVTVENaY1R5UnJwcGZGY25Oc3BITmhFT2x0cGNvdVFTSmFTR1daWjRoTld6N0E?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；檢查 EPS、毛利率與營益率是否支撐估值",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
       "signal_grade": "B",
       "signal_grade_note": "一般可信，需搭配量價確認"
     },
@@ -4665,66 +4665,18 @@
       "signal_grade_note": "中可信，可作方向輔助"
     },
     {
-      "region": "國內",
-      "bias": "利多",
-      "event_type": "股價",
-      "title": "【10:32 即時新聞】波若威(3163)股價走強至736元，上漲4.4%，AI CPO光通訊題材帶動買盤迴流＋短線均線壓力下籌碼仍待整理",
-      "source": "cmnews.com.tw",
-      "published": "2026-07-27 10:32",
-      "published_ts": "2026-07-27T10:32:30+08:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcXFDeC1JX2J1M0hoZGhLT0RJa1ZYZURtN0ZoMW9jNnU2UHZpYWZ1cFR2NDIxMUU0LWdrUElKZXNQR3VtRk0zXzg0eHV3d2pZRDRPbjhvM0xCOEFVUXV1dDB5RG1GeEc5VERSRnF6ZWkwYUU1VmtkZDN2Yjcyc2cyZm9SNUN0Q2hDUmNobC1n?oc=5",
-      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
-      "source_score": 2,
-      "source_tier": "一般來源",
-      "signal_grade": "B",
-      "signal_grade_note": "中可信，可作方向輔助"
-    },
-    {
-      "region": "國內",
-      "bias": "利多",
-      "event_type": "籌碼",
-      "title": "【10:35 即時新聞】波若威(3163)股價上漲近7%，暗光纖與CPO題材延續帶動買盤迴流＋法人連日偏多、主力買超轉強",
-      "source": "cmnews.com.tw",
-      "published": "2026-07-23 15:00",
-      "published_ts": "2026-07-23T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVWREM0tYd0hQWGpXLVM1RlBJTk1EVFlYWHFmUHNzMFEtUFYzT0EzM19oblFrTUlrcjN1MW9MajRYV0Nvbi1MQ0libFF3cUpxWGJFajBvSnAwTlRjaE9mMjJFd19QOG8td0IyUDNYQWRsVjE0UGdFYmExTFRHTkY2QzNXN0xoZWdhX1ROaHBB?oc=5",
-      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "key_point": "偏多訊號；搭配法人買賣超與股價位置判斷承接力",
-      "source_score": 2,
-      "source_tier": "一般來源",
-      "signal_grade": "B",
-      "signal_grade_note": "中可信，可作方向輔助"
-    },
-    {
-      "region": "國內",
-      "bias": "利多",
-      "event_type": "籌碼",
-      "title": "【11:53 即時新聞】波若威(3163)亮燈漲停至730元，AI光通訊題材吸金＋外資與主力買盤轉強支撐反彈",
-      "source": "cmnews.com.tw",
-      "published": "2026-07-22 15:00",
-      "published_ts": "2026-07-22T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaXRPZFVlVnFXWWwxSk02TmJhSUhVYlc0TGlMX05VaWJWam12bjA3amFCWlZHSUFsSG8zWlBuTC15MUlMVFdkbDViVC00aGxlM1FzaG1GU1FDd1R1ZmFvenhzZ0Y0MHZMTmZKY3kxRS1NTDB6RjRyb0lRQTNMaGFCY3YtdVp2eTk2emREMm5n?oc=5",
-      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "key_point": "偏多訊號；搭配法人買賣超與股價位置判斷承接力",
-      "source_score": 2,
-      "source_tier": "一般來源",
-      "signal_grade": "B",
-      "signal_grade_note": "中可信，可作方向輔助"
-    },
-    {
       "region": "產業",
       "bias": "中性",
       "event_type": "產業",
       "title": "台股驚現恐慌大殺盤！旺矽、日月光、旺矽等十多檔熱門股慘躺平",
-      "source": "經濟日報",
+      "source": "UDN",
       "published": "2026-07-17 15:00",
       "published_ts": "2026-07-17T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51VUczT2hwWHZYckUtNFo0SGxuaFhlQmRsVTJVOGtuQU1mMGhuVTV5eDZJT011YWh6Nmh3REYwUE5fTExnSmFlOXpyV1QtZ011MzhKbzVsVEZnQdIBX0FVX3lxTE5YNzZ5cm1BT1I5Xy1yZ2Jrb0lXQ292LXJWX3FDeVlaWEVpU0dnZnNBSUplWVlKVlZRb0hSSXJnX2dMMUZFbzJDN2V3Z0R0bnVpYUxlQlh1VGJkR0Jxbm44?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE54MkY5Tlo0QU1CREE3SG1hM0xEa3ZISlJoaTVkS3FDb2pmZU9ZZTZoemNuZmJ5Rmd1UVpGblBnTmtyLVRDb1dZeUxuOFBaSHVS0gFWQVVfeXFMTTdCanl1NjN1UFR0NkM1X0RQVTBST0lpc010S2x4eHFVeHNXWG9DMWU0RFFtN1JiRUpocHVudkEzclF6YWNvQk42ZHY5d2F0SnJvMktjY1E?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字",
       "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
-      "source_score": 3,
-      "source_tier": "主流財經",
+      "source_score": 2,
+      "source_tier": "一般來源",
       "signal_grade": "B",
       "signal_grade_note": "一般可信，需搭配量價確認"
     },
@@ -4751,16 +4703,16 @@
       "bias": "利空",
       "event_type": "營收",
       "title": "【2026/06月營收公告】波若威(3163) 六月營收1.81億元，營收雙減，年減11.53%",
-      "source": "cmnews.com.tw",
+      "source": "CMoney投資網誌",
       "published": "2026-07-09 15:00",
       "published_ts": "2026-07-09T15:00:00+08:00",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTWktM1RxWVpOcGZaOWx4N0tHelBiRk5DYzl2TEdhTDRDZk5CR1BQbEloNzFRcDZ3Z0lZcWptWDZ5d3BYYlhyV1NjYXVDd3lPWW40dmd3bmVpLTY0SWxSLVFnTFc1al9QYkxHZE1pWEVaWnpIZVZ0RWFTSWRVazZPVGotbDFNckNXT1E?oc=5",
       "reason": "標題含需求疲弱、報價下跌、虧損或評等偏負向關鍵字",
       "key_point": "偏空訊號；觀察月營收年增與近 3 個月動能是否延續",
-      "source_score": 2,
-      "source_tier": "一般來源",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
       "signal_grade": "B",
-      "signal_grade_note": "中可信，可作方向輔助",
+      "signal_grade_note": "一般可信，需搭配量價確認",
       "kind": "公告"
     },
     {
@@ -4786,19 +4738,19 @@
   "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\3163_2026-07-31\\index.html",
   "llm_training_status": {
     "ok": true,
-    "count": 19479,
+    "count": 19530,
     "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\llm_technical_training_examples.jsonl",
     "dashboard": {
       "ok": true,
       "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\technical_training_dashboard.html",
       "summary": {
-        "generated_at": "2026-07-31T17:39:17+08:00",
-        "examples": 19479,
+        "generated_at": "2026-07-31T22:50:33+08:00",
+        "examples": 19530,
         "stocks": 318,
         "quality_counts": {
-          "高": 18689,
-          "中": 632,
-          "未標記": 101,
+          "高": 18730,
+          "中": 641,
+          "未標記": 102,
           "低": 57
         },
         "industry_counts": {
@@ -4806,7 +4758,7 @@
           "觀光事業": 2640,
           "電子零組件業": 1324,
           "電子工業": 1249,
-          "半導體業": 1199,
+          "半導體業": 1200,
           "貿易百貨": 1080,
           "生技醫療業": 962,
           "光電業": 820,
@@ -4840,7 +4792,7 @@
           {
             "industry": "觀光事業",
             "examples": 2640,
-            "example_pct": 13.6,
+            "example_pct": 13.5,
             "stocks": 44,
             "high_quality": 2563,
             "mid_quality": 74,
@@ -4878,16 +4830,16 @@
           },
           {
             "industry": "半導體業",
-            "examples": 1199,
-            "example_pct": 6.2,
+            "examples": 1200,
+            "example_pct": 6.1,
             "stocks": 21,
             "high_quality": 1088,
             "mid_quality": 60,
             "low_quality": 12,
-            "unlabeled_quality": 39,
+            "unlabeled_quality": 40,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "半導體業通用樣本、DRAM / 利基型記憶體、DDR4 / DDR5、NAND / NOR Flash",
-            "latest_sample_date": "2026-07-23"
+            "latest_sample_date": "2026-07-24"
           },
           {
             "industry": "貿易百貨",
@@ -5203,11 +5155,11 @@
           },
           {
             "industry": "玻璃陶瓷",
-            "examples": 64,
-            "example_pct": 0.3,
+            "examples": 114,
+            "example_pct": 0.6,
             "stocks": 1,
-            "high_quality": 53,
-            "mid_quality": 7,
+            "high_quality": 94,
+            "mid_quality": 16,
             "low_quality": 0,
             "unlabeled_quality": 4,
             "top_source": "rolling_ohlcv_backtest",
@@ -5332,7 +5284,7 @@
           "其他電子類通用樣本": 480,
           "電子商務業通用樣本": 480,
           "光通訊模組": 473,
-          "DRAM / 利基型記憶體": 435,
+          "DRAM / 利基型記憶體": 436,
           "創新版股票通用樣本": 420,
           "電機機械通用樣本": 420,
           "電腦及週邊設備業通用樣本": 420,
@@ -5342,10 +5294,10 @@
           "資訊服務業通用樣本": 360,
           "Optical Engine光引擎": 353,
           "PCB / HDI": 347,
-          "DDR4 / DDR5": 319,
-          "NAND / NOR Flash": 319,
-          "NAND Flash": 319,
-          "NOR Flash": 319,
+          "DDR4 / DDR5": 320,
+          "NAND / NOR Flash": 320,
+          "NAND Flash": 320,
+          "NOR Flash": 320,
           "變壓器 / 重電": 311,
           "存託憑證通用樣本": 289,
           "CCL / 銅箔基板": 280,
@@ -5367,7 +5319,7 @@
           {
             "tag": "觀光事業通用樣本",
             "examples": 2640,
-            "example_pct": 13.6,
+            "example_pct": 13.5,
             "stocks": 44,
             "top_industry": "觀光事業",
             "high_quality": 2563,
@@ -5498,15 +5450,15 @@
           },
           {
             "tag": "DRAM / 利基型記憶體",
-            "examples": 435,
+            "examples": 436,
             "example_pct": 2.2,
             "stocks": 5,
             "top_industry": "半導體業",
             "high_quality": 356,
             "mid_quality": 37,
             "low_quality": 8,
-            "unlabeled_quality": 34,
-            "latest_sample_date": "2026-07-23"
+            "unlabeled_quality": 35,
+            "latest_sample_date": "2026-07-24"
           },
           {
             "tag": "創新版股票通用樣本",
@@ -5559,7 +5511,7 @@
           {
             "tag": "ASIC交換晶片",
             "examples": 400,
-            "example_pct": 2.1,
+            "example_pct": 2.0,
             "stocks": 5,
             "top_industry": "電子工業",
             "high_quality": 375,
@@ -5571,7 +5523,7 @@
           {
             "tag": "CPO / 矽光子",
             "examples": 361,
-            "example_pct": 1.9,
+            "example_pct": 1.8,
             "stocks": 4,
             "top_industry": "通信網路業",
             "high_quality": 284,
@@ -5618,51 +5570,51 @@
           },
           {
             "tag": "DDR4 / DDR5",
-            "examples": 319,
+            "examples": 320,
             "example_pct": 1.6,
             "stocks": 4,
             "top_industry": "半導體業",
             "high_quality": 246,
             "mid_quality": 37,
             "low_quality": 8,
-            "unlabeled_quality": 28,
-            "latest_sample_date": "2026-07-23"
+            "unlabeled_quality": 29,
+            "latest_sample_date": "2026-07-24"
           },
           {
             "tag": "NAND / NOR Flash",
-            "examples": 319,
+            "examples": 320,
             "example_pct": 1.6,
             "stocks": 4,
             "top_industry": "半導體業",
             "high_quality": 246,
             "mid_quality": 37,
             "low_quality": 8,
-            "unlabeled_quality": 28,
-            "latest_sample_date": "2026-07-23"
+            "unlabeled_quality": 29,
+            "latest_sample_date": "2026-07-24"
           },
           {
             "tag": "NAND Flash",
-            "examples": 319,
+            "examples": 320,
             "example_pct": 1.6,
             "stocks": 4,
             "top_industry": "半導體業",
             "high_quality": 246,
             "mid_quality": 37,
             "low_quality": 8,
-            "unlabeled_quality": 28,
-            "latest_sample_date": "2026-07-23"
+            "unlabeled_quality": 29,
+            "latest_sample_date": "2026-07-24"
           },
           {
             "tag": "NOR Flash",
-            "examples": 319,
+            "examples": 320,
             "example_pct": 1.6,
             "stocks": 4,
             "top_industry": "半導體業",
             "high_quality": 246,
             "mid_quality": 37,
             "low_quality": 8,
-            "unlabeled_quality": 28,
-            "latest_sample_date": "2026-07-23"
+            "unlabeled_quality": 29,
+            "latest_sample_date": "2026-07-24"
           },
           {
             "tag": "變壓器 / 重電",
@@ -6037,6 +5989,18 @@
             "latest_sample_date": "2026-05-08"
           },
           {
+            "tag": "玻璃陶瓷通用樣本",
+            "examples": 114,
+            "example_pct": 0.6,
+            "stocks": 1,
+            "top_industry": "玻璃陶瓷",
+            "high_quality": 94,
+            "mid_quality": 16,
+            "low_quality": 0,
+            "unlabeled_quality": 4,
+            "latest_sample_date": "2026-07-16"
+          },
+          {
             "tag": "ELS外部雷射源 / CW Laser",
             "examples": 100,
             "example_pct": 0.5,
@@ -6059,18 +6023,6 @@
             "low_quality": 0,
             "unlabeled_quality": 0,
             "latest_sample_date": "2026-03-26"
-          },
-          {
-            "tag": "玻璃陶瓷通用樣本",
-            "examples": 64,
-            "example_pct": 0.3,
-            "stocks": 1,
-            "top_industry": "玻璃陶瓷",
-            "high_quality": 53,
-            "mid_quality": 7,
-            "low_quality": 0,
-            "unlabeled_quality": 4,
-            "latest_sample_date": "2026-07-16"
           },
           {
             "tag": "SSD / 記憶體模組",
@@ -6194,8 +6146,8 @@
           }
         ],
         "source_counts": {
-          "rolling_ohlcv_backtest": 19378,
-          "prediction_history_backtest": 101
+          "rolling_ohlcv_backtest": 19428,
+          "prediction_history_backtest": 102
         },
         "latest_sample_date": "2026-07-24",
         "manifest": {
@@ -6206,7 +6158,7 @@
         }
       }
     },
-    "content_sha256": "14c3ca5db318db7df7f30b78ae8ae3941a7a0c1541f1cfe6086b1e914c278bee",
-    "message": "已輸出 19479 筆 LLM 技術訓練樣本"
+    "content_sha256": "e1cbd4abf72350e5091c093e41a2229e4eaf7d0aa699bed8eefce7c13f34413e",
+    "message": "已輸出 19530 筆 LLM 技術訓練樣本"
   }
 }
