@@ -4,30 +4,41 @@
   "source": "FinMind TaiwanStockPrice",
   "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
   "industry_category": "電子工業",
-  "data_period": "2025-07-28 to 2026-07-27",
-  "data_date": "2026-07-27",
-  "ohlcv_start": "2025-07-28",
-  "ohlcv_end": "2026-07-27",
-  "last_daily_k_date": "2026-07-27",
+  "data_period": "2025-07-31 to 2026-07-30",
+  "data_date": "2026-07-30",
+  "corporate_action_context": {
+    "stock_id": "2356",
+    "as_of_date": "2026-07-31",
+    "applied_events": [],
+    "upcoming_events": [],
+    "recent_event_window": [],
+    "event_active": false,
+    "price_basis": "raw_ohlcv"
+  },
+  "price_basis": "raw_ohlcv",
+  "corporate_action_events_applied": [],
+  "ohlcv_start": "2025-07-31",
+  "ohlcv_end": "2026-07-30",
+  "last_daily_k_date": "2026-07-30",
   "valid_trading_days": 242,
   "ohlcv_python_status": "OK: OHLCV loaded into pandas DataFrame and PNG charts generated",
   "chart_display_period": "1y daily / weekly / monthly resampled from same OHLCV period",
-  "institutional_period": "2025-07-28 to 2026-07-27 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
-  "institutional_latest_period": "2026-07-27",
-  "government_bank_period": "2026-07-14 to 2026-07-27 (OK；最近 10 個交易日；原始單位張，已轉換為股；外資/投信交叉驗證通過 10/10)",
-  "government_bank_latest_period": "2026-07-27",
-  "margin_period": "2025-07-28 to 2026-07-27 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance; 融資餘額校驗OK; 融券餘額校驗OK)",
-  "margin_latest_period": "2026-07-27",
-  "warrant_period": "TWSE report_date=1150726 (OK; call=119, put=6, with_exercise_price=125)",
-  "warrant_latest_period": "TWSE report_date=1150726",
-  "fundamental_period": "revenue 2024-02-01 to 2026-07-01; PER/PBR 2025-07-28 to 2026-07-27; EPS 2021-09-30 to 2026-03-31; profitability 2021-09-30 to 2026-03-31; quarterly_detail 2021-09-30 to 2026-03-31 (OK revenue_rows=30; per_rows=243; eps_rows=19; profitability_rows=19; quarterly_detail_rows=19)",
+  "institutional_period": "2025-07-31 to 2026-07-30 (OK; investors=外資, 外資自營商, 投信, 自營商自行, 自營商避險)",
+  "institutional_latest_period": "2026-07-30",
+  "government_bank_period": "2026-07-17 to 2026-07-30 (OK；最近 10 個交易日；原始單位張，已轉換為股；外資/投信交叉驗證通過 10/10)",
+  "government_bank_latest_period": "2026-07-30",
+  "margin_period": "2025-07-31 to 2026-07-30 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance; 融資餘額校驗OK; 融券餘額校驗OK)",
+  "margin_latest_period": "2026-07-30",
+  "warrant_period": "None (optional fetch timed out after 20 seconds; skipped)",
+  "warrant_latest_period": "",
+  "fundamental_period": "revenue 2024-02-01 to 2026-07-01; PER/PBR 2025-07-31 to 2026-07-30; EPS 2021-09-30 to 2026-03-31; profitability 2021-09-30 to 2026-03-31; quarterly_detail 2021-09-30 to 2026-03-31 (OK revenue_rows=30; per_rows=243; eps_rows=19; profitability_rows=19; quarterly_detail_rows=19)",
   "revenue_latest_period": "2026-06",
   "quarterly_latest_period": "2026-03-31",
   "major_holder_period": "not available; no complete natural person major-holder list claimed",
   "tdcc_period": "20260724 (OK; rows=17)",
   "tdcc_latest_period": "20260724",
-  "etf_latest_period": "2026-07-24",
-  "etf_holding_change_period": "2026-07-24 (OK; holders=23, active_candidates=1; changes=0)",
+  "etf_latest_period": "2026-07-30",
+  "etf_holding_change_period": "2026-07-30 (OK; holders=23, active_candidates=1; changes=0)",
   "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=英業達(2356), 鴻海(2317), 廣達(2382), 緯創(3231), 緯穎(6669); failures=none",
   "peer_display_list": "英業達(2356)、鴻海(2317)、廣達(2382)、緯創(3231)、緯穎(6669)",
   "peer_business_summary": "英業達(2356) 定位：AI 伺服器 ODM / EMS；產品組合：AI 伺服器（占比待補）、雲端設備（占比待補）、電子代工（占比待補）；資料層級：通用推估；同族群比較基準：AI伺服器 ODM / EMS。對照族群涵蓋：EMS / AI 伺服器整合與電子代工、ODM / AI 伺服器與企業 IT 代工、伺服器 ODM / 雲端硬體。",
@@ -327,19 +338,19 @@
     "估值比較應優先看產品組合與獲利率差異：以 AI 伺服器占比、毛利率、EPS 成長與訂單能見度比較。",
     "主要風險要和同族群分開看：客戶集中、毛利率波動、交期與認列遞延。"
   ],
-  "etf_display_status": "持有快照 2026-07-24，未命中最新異動",
+  "etf_display_status": "持有快照 2026-07-30，未命中最新異動",
   "tdcc_display_status": "20260724；大額 72.92% / 小額 14.35%",
-  "warrant_display_status": "125 檔，認購 119 / 認售 6",
+  "warrant_display_status": "optional fetch timed out after 20 seconds; skipped",
   "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
   "fundamental_profitability_summary": "2026Q1 毛利率 5.08%（年變化 -0.91 個百分點）、營業利益率 1.80%（年變化 -0.41 個百分點）",
   "fundamental_quarterly_summary": "2026Q1 營業費用率 3.28%（年變化 -0.51 個百分點）、稅後淨利率 1.22%（年變化 +0.13 個百分點）、ROE 0.64%（年變化 -1.86 個百分點）",
   "fundamental_net_income_eps_summary": "2026Q1 稅後純益 24.34 億元（YoY +42.83%）；2026Q1 EPS 0.68 元（YoY +44.68%），近四季 EPS 2.62 元",
   "revenue_trend_summary": "2026-06 月營收 1,022.62 億元；MoM 23.49%；YoY 61.62%；近 3 個月累計 YoY 44.64%；近 12 個月滾動營收 YoY 15.95%；創近 24 個月新高；連續 4 個月年增為正",
-  "fundamental_price_estimate_summary": "悲觀 43 元 / 中性 63 元 / 樂觀 82 元；產業模型：EMS/ODM 規模+毛利率（PER 下限 9.0x / 上限 34.0x）；加權框架：成長電子；近四季 EPS 2.62；預測 EPS 估 3.15（成長假設 +19.0%）；估值 PER 16.2x / 19.7x / 26.1x；估值信心 88/100；稅後純益因子：YoY +42.8% / 最新季 24.34 億元，已納入預測 EPS 與 PER 品質調整；月營收推下一季 EPS 0.80（年化 3.19；季節性係數 0.86 / 歷史營收轉EPS效率 / 近3月營收YoY +44.6% / 最新月營收YoY +61.6% / 近12月營收YoY +16.0% / 毛利率年變化 -0.9ppt）；風險折價：營業利益率偏低、年化 ROE 偏低（-8%）；催化溢價：月營收年增雙位數、近四季 EPS 明顯成長、稅後純益年增（+9%）；目前 PER 24.3x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=17.6x/18.6x/20.2x；目前 PER 位於近一年 87% 分位；市場情境 20x/25x/30x=52/66/79 元；模型推估：EPS/PER 62 元（預測 EPS 3.15 × 中性 PER 19.7x）、稅後純益/EPS 67 元（稅後純益YoY +42.8% / 最新季 24.34億元 × 中性 PER 19.7x）、月營收推估EPS 63 元（下一季EPS估 0.80 ×4 × PER 19.7x / 信心高）、技術型態 65 元（上升通道 區間上緣 / 量能不足 / 有效性中62）、法人籌碼成本 63 元（外資 / 投信近20與60日加碼成本）、同族群動能 65 元（同族群中位報酬 +47.5% / 本股 +45.8%）、事件影響 65 元（未來45天 月底作帳、台指期結算；科技出口型加權 +2.1% / 當日震盪 2.8%）、殖利率 51 元（現殖利率 3.13% / 中位 3.88%）；有效模型權重：EPS/PER 38%、稅後純益/EPS 5%、月營收推估EPS 24%、技術型態 6%、法人籌碼成本 11%、同族群動能 11%、事件影響 1%、殖利率 3%；多模型加權參考 63 元；歷史 PBR 分位 Q25/Q50/Q75=2.20x/2.30x/2.55x；技術型態目標 65 元（90日上升通道 / 型態分 5.8 / 目標可信中62）；法人籌碼成本 外資 60 元 / 投信 67 元；同族群相對動能參考 65 元（同族群中位報酬 +47.5% / 本股 +45.8%）；殖利率模型 51 元（現殖利率 3.13% / 中位 3.88%）；現價 63.80 元，較中性估值 +1.7%；現價接近中性估值；合理偏高區：續漲需要營收與法人同步確認",
+  "fundamental_price_estimate_summary": "悲觀 40 元 / 中性 58 元 / 樂觀 77 元；產業模型：EMS/ODM 規模+毛利率（PER 下限 9.0x / 上限 34.0x）；加權框架：成長電子；近四季 EPS 2.62；預測 EPS 估 3.15（成長假設 +19.0%）；估值 PER 15.3x / 18.6x / 24.6x；估值信心 88/100；稅後純益因子：YoY +42.8% / 最新季 24.34 億元，已納入預測 EPS 與 PER 品質調整；月營收推下一季 EPS 0.80（年化 3.19；季節性係數 0.86 / 歷史營收轉EPS效率 / 近3月營收YoY +44.6% / 最新月營收YoY +61.6% / 近12月營收YoY +16.0% / 毛利率年變化 -0.9ppt）；風險折價：營業利益率偏低、年化 ROE 偏低（-8%）；催化溢價：月營收年增雙位數、近四季 EPS 明顯成長、稅後純益年增（+9%）；目前 PER 21.9x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=17.6x/18.6x/20.2x；目前 PER 位於近一年 81% 分位；市場情境 20x/25x/30x=52/66/79 元；模型推估：EPS/PER 58 元（預測 EPS 3.15 × 中性 PER 18.6x）、稅後純益/EPS 63 元（稅後純益YoY +42.8% / 最新季 24.34億元 × 中性 PER 18.6x）、月營收推估EPS 59 元（下一季EPS估 0.80 ×4 × PER 18.6x / 信心高）、技術型態 64 元（下降通道 區間上緣 / 量能待確認 / 有效性高87）、法人籌碼成本 63 元（外資 / 投信近20與60日加碼成本）、同族群動能 58 元（同族群中位報酬 +30.1% / 本股 +29.2%）、事件影響 58 元（未來45天 月底作帳、台指期結算；科技出口型加權 +1.7% / 當日震盪 2.8%）、殖利率 52 元（現殖利率 3.48% / 中位 3.88%）；有效模型權重：EPS/PER 37%、稅後純益/EPS 5%、月營收推估EPS 23%、技術型態 9%、法人籌碼成本 11%、同族群動能 11%、事件影響 1%、殖利率 3%；多模型加權參考 58 元；歷史 PBR 分位 Q25/Q50/Q75=2.20x/2.31x/2.56x；技術型態目標 64 元（44日下降通道 / 型態分 6.9 / 目標可信高87）；法人籌碼成本 外資 60 元 / 投信 67 元；同族群相對動能參考 58 元（同族群中位報酬 +30.1% / 本股 +29.2%）；殖利率模型 52 元（現殖利率 3.48% / 中位 3.88%）；現價 57.50 元，較中性估值 -0.8%；現價接近中性估值；合理偏低區：若技術面轉強，具估值修復條件",
   "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、正式 EPS 年增、毛利率較去年同期下滑、稅後純益年增、ROE 較去年同期下滑、營業費用率較去年同期下降。",
   "prediction_backtest_dashboard": {
     "forecast_contract_version": "forecast-horizons-v1",
-    "sample_count": 0,
+    "sample_count": 1,
     "legacy_sample_count": 0,
     "legacy_valuation_backtest": {
       "sample_count": 0
@@ -348,24 +359,69 @@
       "sample_count": 0
     },
     "pending_count": 2,
-    "latest_pending_date": "2026-07-27",
-    "data_date": "2026-07-27",
+    "data_date": "2026-07-30",
+    "latest_scored_date": "2026-07-22",
+    "latest_pending_date": "2026-07-30",
     "backtest_ready": false,
     "probability_calibration_ready": false,
     "is_exploratory": true,
-    "summary": "新版分週期回測尚無成熟樣本；舊版 0 筆因5日與中長期估值週期混用，已排除正式勝率",
-    "freshness_note": "行情資料至 2026-07-27；新版快照 2 筆尚待至少5個交易日驗證",
-    "rows": []
+    "direction_hit_rate": 100.0,
+    "median_error_pct": 0.28970553218510275,
+    "median_signed_error_pct": -0.28970553218510275,
+    "range_hit_rate": 100.0,
+    "median_interval_width_pct": 23.978768233387353,
+    "probability_brier_score": 0.5449999999999999,
+    "median_error20_pct": 1.1290634643195685,
+    "range20_hit_rate": 100.0,
+    "direction_ci": [
+      20.654329147389294,
+      100.0
+    ],
+    "range_ci": [
+      20.654329147389294,
+      100.0
+    ],
+    "regime_rows": [
+      {
+        "regime": "箱型整理",
+        "sample_count": 1,
+        "direction_hit_rate": 100.0,
+        "range_hit_rate": 100.0
+      }
+    ],
+    "model_error_rows": [],
+    "summary": "探索性回測（新版分週期樣本 1；舊版排除 0）；5日方向命中 100%（95% CI 21%–100%）；5日中位誤差 0.3%；5日區間命中 100%（區間寬度中位 24.0%）；20日中位誤差 1.1%",
+    "freshness_note": "行情資料至 2026-07-30；最新可回測新版樣本 2026-07-22；另有 2 筆待驗證",
+    "rows": [
+      {
+        "date": "2026-07-22",
+        "scope": "個股",
+        "regime": "箱型整理",
+        "close": 61.7,
+        "predicted5": 60.4752,
+        "lower5": 53.6583,
+        "upper5": 68.4532,
+        "actual5": 60.3,
+        "direction_hit": true,
+        "range_hit": true,
+        "error_pct": 0.28970553218510275,
+        "interval_width_pct": 23.978768233387353,
+        "predicted20": 60.9886,
+        "actual20": 60.3,
+        "error20_pct": 1.1290634643195685,
+        "range20_hit": true
+      }
+    ]
   },
   "peer_strength_ranking": {
-    "summary": "英業達(2356) 族群強弱排名第 3/5，期間報酬 +45.8%，相對中位數 +0.0%，屬於中段股（2025-07-28 至 2026-07-27，價格報酬、未含息）",
+    "summary": "英業達(2356) 族群強弱排名第 3/5，期間報酬 +29.2%，相對中位數 +0.0%，屬於中段股（2025-07-31 至 2026-07-30，價格報酬、未含息）",
     "rows": [
       {
         "rank": 1,
         "label": "緯穎(6669)",
         "stock_id": "6669",
-        "return_pct": 120.96153846153848,
-        "relative_to_median": 75.13296703296706,
+        "return_pct": 77.2151898734177,
+        "relative_to_median": 48.00170672735027,
         "product_overlap_score": 1.0,
         "correlation": null,
         "strength_score": 98.0,
@@ -376,11 +432,11 @@
         "rank": 2,
         "label": "緯創(3231)",
         "stock_id": "3231",
-        "return_pct": 47.5,
-        "relative_to_median": 1.671428571428578,
+        "return_pct": 30.081300813008113,
+        "relative_to_median": 0.867817666940681,
         "product_overlap_score": 1.0,
         "correlation": null,
-        "strength_score": 73.53485714285715,
+        "strength_score": 73.27770165342102,
         "position": "中段",
         "is_target": false
       },
@@ -388,7 +444,7 @@
         "rank": 3,
         "label": "英業達(2356)",
         "stock_id": "2356",
-        "return_pct": 45.82857142857142,
+        "return_pct": 29.213483146067432,
         "relative_to_median": 0.0,
         "product_overlap_score": 1.0,
         "correlation": null,
@@ -400,11 +456,11 @@
         "rank": 4,
         "label": "鴻海(2317)",
         "stock_id": "2317",
-        "return_pct": 43.75,
-        "relative_to_median": -2.078571428571422,
+        "return_pct": 28.932584269662925,
+        "relative_to_median": -0.28089887640450684,
         "product_overlap_score": 1.0,
         "correlation": null,
-        "strength_score": 38.334857142857146,
+        "strength_score": 38.91011235955056,
         "position": "落後",
         "is_target": false
       },
@@ -412,8 +468,8 @@
         "rank": 5,
         "label": "廣達(2382)",
         "stock_id": "2382",
-        "return_pct": 18.382352941176478,
-        "relative_to_median": -27.446218487394944,
+        "return_pct": -0.8880994671403215,
+        "relative_to_median": -30.101582613207754,
         "product_overlap_score": 1.0,
         "correlation": null,
         "strength_score": 14.0,
@@ -423,137 +479,137 @@
     ]
   },
   "historical_similarity_forecast": {
-    "summary": "探索性（不納入模型）相似樣本 24 筆；5日中位 +0.7% / 勝率 54%；20日中位 -0.2% / 勝率 50%",
+    "summary": "探索性（不納入模型）相似樣本 24 筆；5日中位 +1.9% / 勝率 79%；20日中位 +4.1% / 勝率 67%",
     "sample_count": 24,
     "selection_method": "動態距離門檻 + 20交易日樣本去重",
-    "candidate_count": 1866,
-    "sample_pool_start": "2018-10-22",
-    "sample_pool_end": "2026-06-26",
-    "distance_cutoff": 2.0467717829975647,
-    "median_distance": 2.34762505189392,
-    "target5": 64.22699851487683,
-    "target20": 63.66480634589602,
-    "low5": 61.65356094900917,
-    "high5": 66.3866488008342,
-    "median_return5": 0.6692766690859497,
-    "average_return5": 0.6642233240823043,
-    "median_return20": -0.2119022791598424,
-    "average_return20": 4.428004152181765,
-    "win_rate5": 54.166666666666664,
-    "win_rate20": 50.0,
-    "bias_pct": 0.3299597577485008,
-    "upper_mult": 1.0181477866761675,
-    "lower_mult": 0.9917510060562875,
-    "confidence": 45.43839146693674,
+    "candidate_count": 1867,
+    "sample_pool_start": "2018-10-24",
+    "sample_pool_end": "2026-07-01",
+    "distance_cutoff": 3.2186681193393105,
+    "median_distance": 2.848781197298157,
+    "target5": 58.577208834558625,
+    "target20": 59.85315769483895,
+    "low5": 56.64534862272504,
+    "high5": 60.372901771926024,
+    "median_return5": 1.8734066687976059,
+    "average_return5": 2.116498893153272,
+    "median_return20": 4.092448164937301,
+    "average_return20": 4.308236861523445,
+    "win_rate5": 79.16666666666666,
+    "win_rate20": 66.66666666666666,
+    "bias_pct": 1.7670143375273974,
+    "upper_mult": 1.0971857885640068,
+    "lower_mult": 0.955824641561815,
+    "confidence": 64.14914793616857,
     "rows": [
       {
-        "date": "2023-08-31",
-        "distance": 0.8304488208236083,
-        "future5_return": -2.8368794326241176,
-        "future20_return": -13.120567375886527,
-        "range_pos": 31.999999999999986,
-        "atr_pct": 5.775075987841945
+        "date": "2024-07-26",
+        "distance": 1.4434615076932888,
+        "future5_return": -3.4343434343434454,
+        "future20_return": -8.080808080808078,
+        "range_pos": 0.0,
+        "atr_pct": 4.7186147186147185
       },
       {
-        "date": "2026-02-09",
-        "distance": 0.9772941089069147,
-        "future5_return": 3.571428571428581,
-        "future20_return": -3.013392857142849,
-        "range_pos": 21.235521235521233,
-        "atr_pct": 5.468750000000004
+        "date": "2023-08-28",
+        "distance": 1.7965114398550401,
+        "future5_return": 0.3669724770642313,
+        "future20_return": -9.266055045871557,
+        "range_pos": 10.769230769230772,
+        "atr_pct": 6.382699868938402
       },
       {
-        "date": "2020-03-27",
-        "distance": 1.3386004124312103,
-        "future5_return": 7.126436781609202,
-        "future20_return": 7.126436781609202,
-        "range_pos": 65.2173913043478,
-        "atr_pct": 5.155993431855502
+        "date": "2023-10-19",
+        "distance": 2.0165048756245056,
+        "future5_return": -1.0356731875719283,
+        "future20_return": -0.9205983889528313,
+        "range_pos": 3.500000000000014,
+        "atr_pct": 4.537234916981749
       },
       {
-        "date": "2024-11-20",
-        "distance": 1.8252396625656973,
-        "future5_return": -0.3061224489795844,
-        "future20_return": 0.3061224489795844,
-        "range_pos": 45.283018867924525,
-        "atr_pct": 4.409620991253643
+        "date": "2025-04-18",
+        "distance": 2.1827982651083064,
+        "future5_return": 1.005025125628145,
+        "future20_return": 4.145728643216096,
+        "range_pos": 44.827586206896555,
+        "atr_pct": 6.075017946877248
       },
       {
-        "date": "2024-05-24",
-        "distance": 1.848309560025542,
-        "future5_return": -2.7272727272727226,
-        "future20_return": 3.6363636363636376,
-        "range_pos": 44.444444444444464,
-        "atr_pct": 3.6493506493506502
+        "date": "2026-03-09",
+        "distance": 2.264575447222137,
+        "future5_return": 7.615480649188533,
+        "future20_return": 6.4918851435705305,
+        "range_pos": 18.29268292682926,
+        "atr_pct": 3.8790797217763524
       },
       {
-        "date": "2025-10-17",
-        "distance": 1.895049846232376,
-        "future5_return": 6.613454960091225,
-        "future20_return": -5.131128848346633,
-        "range_pos": 21.186440677966107,
-        "atr_pct": 3.9827333441928667
+        "date": "2020-07-17",
+        "distance": 2.377356032116892,
+        "future5_return": 0.20202020202020332,
+        "future20_return": -4.444444444444451,
+        "range_pos": 1.3513513513513709,
+        "atr_pct": 3.867243867243865
       },
       {
-        "date": "2025-04-23",
-        "distance": 1.9596333695609516,
-        "future5_return": 0.8684863523573227,
-        "future20_return": 4.466501240694809,
-        "range_pos": 52.83018867924528,
-        "atr_pct": 5.4413328606877025
+        "date": "2025-02-04",
+        "distance": 2.3787313396825476,
+        "future5_return": 2.2471910112359605,
+        "future20_return": 7.078651685393256,
+        "range_pos": 0.0,
+        "atr_pct": 3.5553772070626004
       },
       {
-        "date": "2024-04-01",
-        "distance": 2.018765666497984,
-        "future5_return": -1.7006802721088454,
-        "future20_return": -10.71428571428571,
-        "range_pos": 63.85542168674697,
-        "atr_pct": 4.093780369290574
+        "date": "2018-11-15",
+        "distance": 2.389865769121591,
+        "future5_return": -3.0973451327433787,
+        "future20_return": -3.31858407079646,
+        "range_pos": 9.523809523809575,
+        "atr_pct": 3.6346396965866
       },
       {
-        "date": "2023-05-19",
-        "distance": 2.2369116146633914,
-        "future5_return": 8.42607313195549,
-        "future20_return": 44.67408585055643,
-        "range_pos": 55.952380952380956,
-        "atr_pct": 3.406768112650464
+        "date": "2020-03-17",
+        "distance": 2.685958677002178,
+        "future5_return": 5.527638190954787,
+        "future20_return": 18.341708542713576,
+        "range_pos": 5.333333333333314,
+        "atr_pct": 3.0689160086145053
       },
       {
-        "date": "2018-10-25",
-        "distance": 2.245806700486833,
-        "future5_return": 2.626262626262621,
-        "future20_return": -11.515151515151523,
-        "range_pos": 29.113924050632882,
-        "atr_pct": 3.520923520923516
+        "date": "2024-04-22",
+        "distance": 2.7522583133536607,
+        "future5_return": 5.905511811023612,
+        "future20_return": 7.283464566929143,
+        "range_pos": 0.9009009009008501,
+        "atr_pct": 3.1074240719910025
       },
       {
-        "date": "2026-03-25",
-        "distance": 2.3047172050921287,
-        "future5_return": -4.195804195804187,
-        "future20_return": 12.121212121212132,
-        "range_pos": 53.04878048780488,
-        "atr_pct": 3.155178155178156
+        "date": "2025-10-14",
+        "distance": 2.7819803746118756,
+        "future5_return": 5.458768873403019,
+        "future20_return": -0.5807200929152101,
+        "range_pos": 16.15384615384611,
+        "atr_pct": 4.106520657043307
       },
       {
-        "date": "2024-08-01",
-        "distance": 2.3338442437867455,
-        "future5_return": -10.976837865055378,
-        "future20_return": -7.7542799597180245,
-        "range_pos": 23.584905660377363,
-        "atr_pct": 5.0712127751402685
+        "date": "2026-06-26",
+        "distance": 2.841621106916711,
+        "future5_return": 6.793048973143745,
+        "future20_return": 0.789889415481837,
+        "range_pos": 0.7843137254901796,
+        "atr_pct": 5.405100428797112
       }
     ]
   },
   "short_term_price_convergence": {
-    "summary": "一個月收斂區間 58.4 - 65.3；ATR14 3.80（6.0%）；趨勢偏多；近237筆收盤價路徑回測，色塊涵蓋率 70%（目標 70%；基準 19%）；滾動樣本 172 筆、涵蓋率 67%",
-    "lower": 58.44,
-    "upper": 65.28854166666667,
-    "mid": 61.864270833333336,
-    "atr14": 3.8000000000000003,
-    "atr_pct": 5.956112852664577,
-    "trend_label": "偏多",
-    "five_day_lower": 54.88672183708544,
-    "five_day_upper": 70.21106241408307,
+    "summary": "一個月收斂區間 53.0 - 62.5；ATR14 3.72（6.5%）；趨勢偏弱；近237筆收盤價路徑回測，色塊涵蓋率 70%（目標 70%；基準 19%）；滾動樣本 172 筆、涵蓋率 70%",
+    "lower": 53.034285714285716,
+    "upper": 62.465714285714284,
+    "mid": 57.75,
+    "atr14": 3.721428571428572,
+    "atr_pct": 6.472049689440995,
+    "trend_label": "偏弱",
+    "five_day_lower": 48.750356928874,
+    "five_day_upper": 66.79286742107585,
     "five_day_backtest": {
       "ok": true,
       "sample_count": 217,
@@ -562,16 +618,16 @@
       "baseline_coverage_pct": 19.35483870967742,
       "calibrated_coverage_pct": 70.04608294930875,
       "upper_scale": 3.1627837557104166,
-      "lower_scale": 1.7848501895560713,
+      "lower_scale": 1.7871635728791821,
       "walk_forward_sample_count": 172,
-      "walk_forward_coverage_pct": 66.86046511627907,
+      "walk_forward_coverage_pct": 69.76744186046511,
       "calibration_method": "擴張視窗滾動校準＋前5日標籤隔離",
-      "summary": "近237筆收盤價路徑回測，色塊涵蓋率 70%（目標 70%；基準 19%）；滾動樣本 172 筆、涵蓋率 67%"
+      "summary": "近237筆收盤價路徑回測，色塊涵蓋率 70%（目標 70%；基準 19%）；滾動樣本 172 筆、涵蓋率 70%"
     },
     "rows": [
       {
         "factor": "5日可達區間",
-        "value": "54.9 - 70.2",
+        "value": "48.8 - 66.8",
         "effect": "日K未來5日預測色塊優先參考"
       },
       {
@@ -586,43 +642,48 @@
       },
       {
         "factor": "ATR 風險範圍",
-        "value": "52.4 - 79.8",
+        "value": "42.6 - 66.4",
         "effect": "限制短期過度樂觀/悲觀"
       },
       {
         "factor": "20/60日支撐壓力",
-        "value": "52.4 - 79.8",
+        "value": "47.1 - 72.8",
         "effect": "貼近日K可操作區"
       },
       {
         "factor": "歷史相似樣本",
         "value": "探索性／不納入模型",
-        "effect": "探索性（不納入模型）相似樣本 24 筆；5日中位 +0.7% / 勝率 54%；20日中位 -0.2% / 勝率 50%"
+        "effect": "探索性（不納入模型）相似樣本 24 筆；5日中位 +1.9% / 勝率 79%；20日中位 +4.1% / 勝率 67%"
       },
       {
         "factor": "估值/技術上緣",
-        "value": "63.0 / 82.0 / 65.3",
+        "value": "58.0 / 77.0 / 64.1",
         "effect": "避免單一模型喊價"
       },
       {
         "factor": "收斂後中位",
-        "value": "61.9",
+        "value": "57.8",
         "effect": "供未來5日預測與買賣點參考"
       },
       {
         "factor": "券商勝率 #1",
-        "value": "5日 美商高盛(1480) / 66%",
-        "effect": "近20日賣超；樣本 35 筆；納入短線區間參考"
+        "value": "5日 凱基-台北(9268) / 59%",
+        "effect": "近20日賣超；樣本 34 筆；納入短線區間參考"
       },
       {
         "factor": "券商勝率 #2",
-        "value": "5日 台灣摩根士丹利(1470) / 68%",
-        "effect": "近20日賣超；樣本 30 筆；納入短線區間參考"
+        "value": "5日 美商高盛(1480) / 57%",
+        "effect": "近20日賣超；樣本 35 筆；納入短線區間參考"
       },
       {
         "factor": "券商勝率 #3",
-        "value": "5日 中國信託(6160) / 50%",
-        "effect": "近20日賣超；樣本 31 筆；納入短線區間參考"
+        "value": "5日 凱基-士林(9238) / 57%",
+        "effect": "近20日買超；樣本 33 筆；納入短線區間參考"
+      },
+      {
+        "factor": "券商勝率 #4",
+        "value": "5日 中國信託(6160) / 48%",
+        "effect": "近20日賣超；樣本 30 筆；納入短線區間參考"
       }
     ]
   },
@@ -634,34 +695,34 @@
     "probability_calibration_ready": false,
     "broker_signal": {
       "ok": true,
-      "bias_pct": -0.4714285714285714,
-      "upper_mult": 0.9811428571428571,
-      "lower_mult": 1.0117857142857143,
-      "score": -0.6285714285714286,
-      "note": "券商勝率：5日 美商高盛(1480)，賣超後勝率 66%、樣本 35 筆，近期訊號偏空",
-      "edge": -0.15714285714285714,
+      "bias_pct": -0.19327731092436973,
+      "upper_mult": 0.9922689075630252,
+      "lower_mult": 1.0048319327731092,
+      "score": -0.25770308123249297,
+      "note": "券商勝率：5日 凱基-台北(9268)，賣超後勝率 59%、樣本 34 筆，近期訊號偏空",
+      "edge": -0.06442577030812324,
       "direction": "偏空",
       "primary": {
         "horizon_days": 5,
         "weight": 1.0,
-        "broker": "美商高盛(1480)",
-        "sample_count": 35,
-        "buy_win_rate": 0.6571428571428571,
-        "sell_win_rate": 0.5,
-        "recent_net": -12498.800000000001,
-        "edge": -0.15714285714285714,
+        "broker": "凱基-台北(9268)",
+        "sample_count": 34,
+        "buy_win_rate": 0.5882352941176471,
+        "sell_win_rate": 0.5238095238095238,
+        "recent_net": -7020.0,
+        "edge": -0.06442577030812324,
         "side": "賣超"
       },
       "candidates": [
         {
           "horizon_days": 5,
           "weight": 1.0,
-          "broker": "美商高盛(1480)",
-          "sample_count": 35,
-          "buy_win_rate": 0.6571428571428571,
-          "sell_win_rate": 0.5,
-          "recent_net": -12498.800000000001,
-          "edge": -0.15714285714285714,
+          "broker": "凱基-台北(9268)",
+          "sample_count": 34,
+          "buy_win_rate": 0.5882352941176471,
+          "sell_win_rate": 0.5238095238095238,
+          "recent_net": -7020.0,
+          "edge": -0.06442577030812324,
           "side": "賣超"
         }
       ],
@@ -669,61 +730,71 @@
         {
           "rank": 1,
           "horizon_days": 5,
-          "broker": "美商高盛(1480)",
-          "sample_count": 35,
-          "buy_win_rate": 0.6571428571428571,
-          "sell_win_rate": 0.5,
-          "recent_net": -12498.800000000001,
+          "broker": "凱基-台北(9268)",
+          "sample_count": 34,
+          "buy_win_rate": 0.5882352941176471,
+          "sell_win_rate": 0.5238095238095238,
+          "recent_net": -7020.0,
           "side": "賣超"
         },
         {
           "rank": 2,
           "horizon_days": 5,
-          "broker": "台灣摩根士丹利(1470)",
-          "sample_count": 30,
-          "buy_win_rate": 0.68,
-          "sell_win_rate": 0.4666666666666667,
-          "recent_net": -5456.6,
+          "broker": "美商高盛(1480)",
+          "sample_count": 35,
+          "buy_win_rate": 0.5714285714285714,
+          "sell_win_rate": 0.5,
+          "recent_net": -9693.7,
           "side": "賣超"
         },
         {
           "rank": 3,
           "horizon_days": 5,
+          "broker": "凱基-士林(9238)",
+          "sample_count": 33,
+          "buy_win_rate": 0.5714285714285714,
+          "sell_win_rate": 0.45454545454545453,
+          "recent_net": 3667.0,
+          "side": "買超"
+        },
+        {
+          "rank": 4,
+          "horizon_days": 5,
           "broker": "中國信託(6160)",
-          "sample_count": 31,
-          "buy_win_rate": 0.5,
-          "sell_win_rate": 0.3225806451612903,
-          "recent_net": -1435.0,
+          "sample_count": 30,
+          "buy_win_rate": 0.4782608695652174,
+          "sell_win_rate": 0.36666666666666664,
+          "recent_net": -1506.3,
           "side": "賣超"
         }
       ]
     },
-    "summary": "雙向預測：偏空，基準情境為下行測撐（跨股情境參考）；上行 68.3（低）/ 下行 57.8（中）/ 區間 54.9-70.2（中）；獨立樣本 8627 筆 / 有效 6371 / 318 檔；5日正向 27% / 負向 26% / 盤整 47%。",
-    "close": 63.8,
+    "summary": "雙向預測：偏空，基準情境為下行測撐（跨股情境參考）；上行 63.8（低）/ 下行 51.6（中）/ 區間 48.8-66.8（中）；獨立樣本 7350 筆 / 有效 6163 / 318 檔；5日正向 27% / 負向 26% / 盤整 47%。",
+    "close": 57.5,
     "bull_case": {
-      "price": 68.34,
-      "probability": 25,
+      "price": 63.77,
+      "probability": 24,
       "display_probability": "低",
-      "trigger": 64.01,
-      "upside_pct": 7.12
+      "trigger": 60.54,
+      "upside_pct": 10.9
     },
     "bear_case": {
-      "price": 57.76,
-      "probability": 39,
+      "price": 51.62,
+      "probability": 41,
       "display_probability": "中",
-      "trigger": 62.62,
-      "downside_pct": -9.46
+      "trigger": 56.8,
+      "downside_pct": -10.23
     },
     "range_case": {
-      "low": 54.89,
-      "high": 70.21,
-      "probability": 36,
+      "low": 48.75,
+      "high": 66.79,
+      "probability": 35,
       "display_probability": "中"
     },
     "signals": {
-      "neutral_gap_pct": -1.25,
-      "technical_score": 51.4,
-      "atr_pct": 5.96,
+      "neutral_gap_pct": 0.87,
+      "technical_score": 50.1,
+      "atr_pct": 6.47,
       "backtest_direction_hit_rate": 50.0,
       "backtest_used": false,
       "backtest_calibration": {
@@ -734,48 +805,64 @@
       "stop_first_rate": 0.0,
       "regime_tags": [
         "range_or_mixed",
-        "above_ma60",
-        "below_ma20",
-        "low_volume"
+        "below_ma60",
+        "short_ma_breakdown",
+        "below_ma20"
       ],
       "short_ma_break": {
-        "below_ma5": false,
-        "below_ma10": false,
+        "below_ma5": true,
+        "below_ma10": true,
         "below_ma20": true,
-        "break_count": 1,
-        "foreign_5d": 33827124.0,
-        "trust_5d": -15926939.0
+        "break_count": 3,
+        "foreign_5d": 8801197.0,
+        "trust_5d": 1203796.0
       }
     },
     "training_calibration": {
-      "sample_count": 8627,
-      "raw_matched_sample_count": 18372,
-      "effective_sample_count": 6371.2,
+      "sample_count": 7350,
+      "raw_matched_sample_count": 14155,
+      "effective_sample_count": 6162.9,
       "stock_count": 318,
       "ready": true,
       "regime_tags": [
-        "above_ma60",
         "below_ma20",
-        "low_volume",
-        "range_or_mixed"
+        "below_ma60",
+        "range_or_mixed",
+        "short_ma_breakdown"
       ],
-      "positive_rate": 27.5,
+      "positive_rate": 27.1,
       "negative_rate": 25.8,
-      "neutral_rate": 46.7,
+      "neutral_rate": 47.1,
       "median_return5": 0.0,
       "q25_return5": -2.1,
-      "q75_return5": 2.33,
-      "median_return20": -0.45,
-      "q25_return20": -5.21,
-      "q75_return20": 4.65,
-      "summary": "獨立樣本 8627 筆 / 有效 6371 / 318 檔；5日正向 27% / 負向 26% / 盤整 47%"
+      "q75_return5": 2.31,
+      "median_return20": -0.49,
+      "q25_return20": -5.3,
+      "q75_return20": 4.62,
+      "summary": "獨立樣本 7350 筆 / 有效 6163 / 318 檔；5日正向 27% / 負向 26% / 盤整 47%"
     },
-    "invalidation": "若站回 64.01 且收盤放量，偏空情境失效"
+    "invalidation": "若站回 60.54 且收盤放量，偏空情境失效"
   },
-  "bidirectional_price_forecast_summary": "雙向預測：偏空，基準情境為下行測撐（跨股情境參考）；上行 68.3（低）/ 下行 57.8（中）/ 區間 54.9-70.2（中）；獨立樣本 8627 筆 / 有效 6371 / 318 檔；5日正向 27% / 負向 26% / 盤整 47%。",
+  "bidirectional_price_forecast_summary": "雙向預測：偏空，基準情境為下行測撐（跨股情境參考）；上行 63.8（低）/ 下行 51.6（中）/ 區間 48.8-66.8（中）；獨立樣本 7350 筆 / 有效 6163 / 318 檔；5日正向 27% / 負向 26% / 盤整 47%。",
   "event_calendar_backtest": {
-    "summary": "市場事件樣本中性；未來45天事件 8 筆，20日影響分數 +1.9",
+    "summary": "市場事件樣本中性；未來45天事件 8 筆，20日影響分數 +1.4",
     "rows": [
+      {
+        "event_type": "FOMC",
+        "signal": "中性",
+        "count": 2,
+        "latest_date": "2026-07-29",
+        "avg_0d": 1.9511858797573125,
+        "win_0d": 100.0,
+        "avg_range_0d": 4.712876141447573,
+        "avg_5d": -1.185185185185181,
+        "win_5d": 0.0,
+        "avg_20d": -13.333333333333334,
+        "win_20d": 0.0,
+        "avg_60d": null,
+        "win_60d": null,
+        "direction": "偏空"
+      },
       {
         "event_type": "台指期結算",
         "signal": "中性",
@@ -784,11 +871,11 @@
         "avg_0d": -0.041650701077158916,
         "win_0d": 41.66666666666667,
         "avg_range_0d": 3.079216905153206,
-        "avg_5d": 2.535802063717986,
+        "avg_5d": 2.446684888758116,
         "win_5d": 53.333333333333336,
-        "avg_20d": 2.217868418644862,
+        "avg_20d": 2.047953261570797,
         "win_20d": 57.14285714285714,
-        "avg_60d": 12.866602051517404,
+        "avg_60d": 13.380085197584817,
         "win_60d": 75.0,
         "direction": "略偏多"
       },
@@ -829,15 +916,15 @@
         "signal": "中性",
         "count": 14,
         "latest_date": "2026-06-30",
-        "avg_0d": 0.6745450687791233,
-        "win_0d": 50.0,
-        "avg_range_0d": 2.5972844635571097,
-        "avg_5d": 1.054147566431696,
+        "avg_0d": 0.6637989857699567,
+        "win_0d": 45.45454545454545,
+        "avg_range_0d": 2.709855469561529,
+        "avg_5d": 0.9904924414603604,
         "win_5d": 42.857142857142854,
-        "avg_20d": 2.6524228824170133,
-        "win_20d": 38.46153846153847,
-        "avg_60d": 11.550644416510593,
-        "win_60d": 72.72727272727273,
+        "avg_20d": 1.674011658043127,
+        "win_20d": 35.714285714285715,
+        "avg_60d": 13.272460742796211,
+        "win_60d": 75.0,
         "direction": "略偏多"
       },
       {
@@ -848,13 +935,13 @@
         "avg_0d": 0.9069122030398357,
         "win_0d": 75.0,
         "avg_range_0d": 3.188415927207548,
-        "avg_5d": 1.9693167703924772,
+        "avg_5d": 1.8801995954326074,
         "win_5d": 40.0,
-        "avg_20d": 3.415137787858362,
-        "win_20d": 75.0,
-        "avg_60d": 15.08584757989805,
+        "avg_20d": 0.6816308584590045,
+        "win_20d": 60.0,
+        "avg_60d": 15.599330725965464,
         "win_60d": 75.0,
-        "direction": "偏多"
+        "direction": "中性"
       },
       {
         "event_type": "三巫日",
@@ -864,29 +951,13 @@
         "avg_0d": 0.8585771825665683,
         "win_0d": 75.0,
         "avg_range_0d": 3.444832935452677,
-        "avg_5d": -1.0134070631489476,
+        "avg_5d": -1.1025242381088172,
         "win_5d": 40.0,
-        "avg_20d": 0.08580222309064486,
+        "avg_20d": -0.07278525684514899,
         "win_20d": 60.0,
-        "avg_60d": 14.366966642932022,
+        "avg_60d": 14.880449788999435,
         "win_60d": 75.0,
         "direction": "中性"
-      },
-      {
-        "event_type": "FOMC",
-        "signal": "中性",
-        "count": 1,
-        "latest_date": "2026-06-17",
-        "avg_0d": 1.35135135135136,
-        "win_0d": 100.0,
-        "avg_range_0d": 3.303303303303308,
-        "avg_5d": -1.185185185185181,
-        "win_5d": 0.0,
-        "avg_20d": -13.333333333333334,
-        "win_20d": 0.0,
-        "avg_60d": null,
-        "win_60d": null,
-        "direction": "偏空"
       },
       {
         "event_type": "MSCI調整",
@@ -896,26 +967,16 @@
         "avg_0d": 1.59053020167084,
         "win_0d": 50.0,
         "avg_range_0d": 2.4418847530288583,
-        "avg_5d": 1.6068882248743062,
+        "avg_5d": 1.5177710499144363,
         "win_5d": 60.0,
-        "avg_20d": -3.1172481549150928,
+        "avg_20d": -3.275835634850887,
         "win_20d": 20.0,
-        "avg_60d": 12.29391745429705,
+        "avg_60d": 12.807400600364463,
         "win_60d": 75.0,
         "direction": "偏空"
       }
     ],
     "latest_events": [
-      {
-        "date": "2026-07-29",
-        "event_type": "FOMC",
-        "signal": "中性",
-        "label": "聯準會利率決議",
-        "strength": 80.0,
-        "basis": "Federal Reserve 2026 FOMC calendar",
-        "backtest_count": 1,
-        "direction": "樣本不足（1/10）"
-      },
       {
         "date": "2026-07-31",
         "event_type": "月底作帳",
@@ -924,11 +985,11 @@
         "strength": 48.0,
         "basis": "每月最後一個營業日",
         "backtest_count": 14,
-        "expected_0d": 0.6745450687791233,
-        "expected_day_range": 2.5972844635571097,
-        "expected_5d": 1.054147566431696,
-        "expected_20d": 2.6524228824170133,
-        "win_20d": 38.46153846153847,
+        "expected_0d": 0.6637989857699567,
+        "expected_day_range": 2.709855469561529,
+        "expected_5d": 0.9904924414603604,
+        "expected_20d": 1.674011658043127,
+        "win_20d": 35.714285714285715,
         "direction": "略偏多"
       },
       {
@@ -961,8 +1022,8 @@
         "backtest_count": 15,
         "expected_0d": -0.041650701077158916,
         "expected_day_range": 3.079216905153206,
-        "expected_5d": 2.535802063717986,
-        "expected_20d": 2.217868418644862,
+        "expected_5d": 2.446684888758116,
+        "expected_20d": 2.047953261570797,
         "win_20d": 57.14285714285714,
         "direction": "略偏多"
       },
@@ -974,11 +1035,11 @@
         "strength": 48.0,
         "basis": "每月最後一個營業日",
         "backtest_count": 14,
-        "expected_0d": 0.6745450687791233,
-        "expected_day_range": 2.5972844635571097,
-        "expected_5d": 1.054147566431696,
-        "expected_20d": 2.6524228824170133,
-        "win_20d": 38.46153846153847,
+        "expected_0d": 0.6637989857699567,
+        "expected_day_range": 2.709855469561529,
+        "expected_5d": 0.9904924414603604,
+        "expected_20d": 1.674011658043127,
+        "win_20d": 35.714285714285715,
         "direction": "略偏多"
       },
       {
@@ -1000,115 +1061,92 @@
         "basis": "BLS Employment Situation release schedule",
         "backtest_count": 2,
         "direction": "樣本不足（2/10）"
+      },
+      {
+        "date": "2026-09-11",
+        "event_type": "CPI",
+        "signal": "中性",
+        "label": "美國CPI公布",
+        "strength": 78.0,
+        "basis": "BLS CPI release schedule",
+        "backtest_count": 2,
+        "direction": "樣本不足（2/10）"
       }
     ],
-    "impact_score": 1.93,
+    "impact_score": 1.43,
     "active_event_count": 3,
     "active_backtest_samples": 43
   },
   "market_risk_switch": {
-    "risk_score": 50.0,
-    "bias_pct": -1.6,
-    "upper_mult": 0.78,
-    "lower_mult": 1.08,
-    "summary": "大盤風險升溫（跌破MA20、跌破MA60）"
+    "risk_score": 100.0,
+    "bias_pct": -3.2,
+    "upper_mult": 0.62,
+    "lower_mult": 1.18,
+    "summary": "大盤風險偏高（跌破MA20、跌破MA60、5日-11.0%）"
   },
   "report_data_quality": {
     "status": "可分享但須附限制",
     "issues": [
       {
         "severity": "中",
-        "message": "新版分週期回測僅 0 筆，低於 30 筆門檻；不納入個股機率校準"
+        "message": "新版分週期回測僅 1 筆，低於 30 筆門檻；不納入個股機率校準"
       },
       {
         "severity": "中",
-        "message": "分週期機率校準僅 0 筆，低於 60 筆門檻；情境僅顯示高／中／低，不顯示精確機率"
+        "message": "分週期機率校準僅 1 筆，低於 60 筆門檻；情境僅顯示高／中／低，不顯示精確機率"
       }
     ],
     "verified_peer_count": 4
   },
   "chip_summary": {
-    "margin_balance": 30131.0,
-    "margin_5d_change": -104.0,
-    "short_balance": 279.0,
-    "short_5d_change": 155.0,
-    "foreign_latest": -1472833.0,
-    "foreign_5d": 33827124.0,
-    "foreign_20d": -3028444.0,
-    "foreign_year": 143813967.0,
-    "foreign_5d_cost": 61.77341491662441,
+    "margin_balance": 27396.0,
+    "margin_5d_change": -2375.0,
+    "short_balance": 1160.0,
+    "short_5d_change": 889.0,
+    "foreign_latest": -3455222.0,
+    "foreign_5d": 8801197.0,
+    "foreign_20d": 14076176.0,
+    "foreign_year": 146589636.0,
+    "foreign_5d_cost": 61.1826361771202,
     "foreign_5d_cost_days": 5,
-    "foreign_5d_buy_days": 4,
-    "foreign_cost": 61.32922228661056,
+    "foreign_5d_buy_days": 3,
+    "foreign_cost": 60.97909131711999,
     "foreign_cost_days": 20,
-    "foreign_buy_days": 10,
-    "foreign_year_cost": 50.70295851895472,
+    "foreign_buy_days": 11,
+    "foreign_year_cost": 50.88333527030962,
     "foreign_year_cost_days": 242,
     "foreign_year_buy_days": 126,
-    "trust_latest": 182832.0,
-    "trust_5d": -15926939.0,
-    "trust_20d": 17474641.0,
-    "trust_year": 58704457.0,
-    "trust_5d_cost": 63.89539968159636,
+    "trust_latest": 181689.0,
+    "trust_5d": 1203796.0,
+    "trust_20d": 2757576.0,
+    "trust_year": 54682572.0,
+    "trust_5d_cost": 60.4361099388933,
     "trust_5d_cost_days": 5,
-    "trust_5d_buy_days": 2,
-    "trust_cost": 66.21102576801977,
+    "trust_5d_buy_days": 5,
+    "trust_cost": 66.10170762878796,
     "trust_cost_days": 20,
     "trust_buy_days": 13,
-    "trust_year_cost": 61.682669153426325,
+    "trust_year_cost": 62.16458924829829,
     "trust_year_cost_days": 242,
     "trust_year_buy_days": 99,
-    "government_latest": -124000.0,
-    "government_5d": -5969000.0,
-    "government_20d": -6397000.0,
-    "government_year": -6397000.0,
-    "government_5d_cost": null,
+    "government_latest": 638000.0,
+    "government_5d": -1563000.0,
+    "government_20d": -6966000.0,
+    "government_year": -6966000.0,
+    "government_5d_cost": 57.621875,
     "government_5d_cost_days": 5,
-    "government_5d_buy_days": 0,
-    "government_cost": 61.03345101500441,
+    "government_5d_buy_days": 2,
+    "government_cost": 58.01891050583657,
     "government_cost_days": 10,
-    "government_buy_days": 2,
-    "government_year_cost": 61.03345101500441,
+    "government_buy_days": 3,
+    "government_year_cost": 58.01891050583657,
     "government_year_cost_days": 10,
-    "government_year_buy_days": 2,
+    "government_year_buy_days": 3,
     "government_status": "StockDog 個股整體籌碼；OK；最近 10 個交易日；原始單位張，已轉換為股；外資/投信交叉驗證通過 10/10",
-    "total_latest": -1441806.0,
-    "total_5d": 18341553.0,
-    "total_20d": 15687799.0,
+    "total_latest": -3762200.0,
+    "total_5d": 8820833.0,
+    "total_20d": 15736968.0,
     "margin_5d_detail": [
-      {
-        "date": "2026-07-21",
-        "margin_buy": 707.0,
-        "margin_sell": 1129.0,
-        "margin_net": -422.0,
-        "margin_balance": 29808.0,
-        "short_buy": 28.0,
-        "short_sell": 817.0,
-        "short_net": -789.0,
-        "short_balance": 913.0
-      },
-      {
-        "date": "2026-07-22",
-        "margin_buy": 898.0,
-        "margin_sell": 1159.0,
-        "margin_net": -261.0,
-        "margin_balance": 29536.0,
-        "short_buy": 21.0,
-        "short_sell": 47.0,
-        "short_net": -26.0,
-        "short_balance": 939.0
-      },
-      {
-        "date": "2026-07-23",
-        "margin_buy": 1466.0,
-        "margin_sell": 1227.0,
-        "margin_net": 239.0,
-        "margin_balance": 29771.0,
-        "short_buy": 32.0,
-        "short_sell": 64.0,
-        "short_net": -32.0,
-        "short_balance": 271.0
-      },
       {
         "date": "2026-07-24",
         "margin_buy": 1453.0,
@@ -1130,93 +1168,42 @@
         "short_sell": 43.0,
         "short_net": 81.0,
         "short_balance": 279.0
+      },
+      {
+        "date": "2026-07-28",
+        "margin_buy": 963.0,
+        "margin_sell": 1787.0,
+        "margin_net": -824.0,
+        "margin_balance": 29289.0,
+        "short_buy": 64.0,
+        "short_sell": 204.0,
+        "short_net": -140.0,
+        "short_balance": 419.0
+      },
+      {
+        "date": "2026-07-29",
+        "margin_buy": 1413.0,
+        "margin_sell": 2472.0,
+        "margin_net": -1059.0,
+        "margin_balance": 28209.0,
+        "short_buy": 208.0,
+        "short_sell": 293.0,
+        "short_net": -85.0,
+        "short_balance": 504.0
+      },
+      {
+        "date": "2026-07-30",
+        "margin_buy": 864.0,
+        "margin_sell": 1671.0,
+        "margin_net": -807.0,
+        "margin_balance": 27396.0,
+        "short_buy": 257.0,
+        "short_sell": 913.0,
+        "short_net": -656.0,
+        "short_balance": 1160.0
       }
     ],
     "institutional_5d_detail": [
-      {
-        "date": "2026-07-21",
-        "investor": "外資",
-        "buy": 16979907.0,
-        "sell": 5547820.0,
-        "net_buy": 11432087.0
-      },
-      {
-        "date": "2026-07-21",
-        "investor": "投信",
-        "buy": 282275.0,
-        "sell": 4424000.0,
-        "net_buy": -4141725.0
-      },
-      {
-        "date": "2026-07-21",
-        "investor": "自營商",
-        "buy": 869213.0,
-        "sell": 198907.0,
-        "net_buy": 670306.0
-      },
-      {
-        "date": "2026-07-21",
-        "investor": "法人合計",
-        "buy": 18131395.0,
-        "sell": 10170727.0,
-        "net_buy": 7960668.0
-      },
-      {
-        "date": "2026-07-22",
-        "investor": "外資",
-        "buy": 21357377.0,
-        "sell": 9208184.0,
-        "net_buy": 12149193.0
-      },
-      {
-        "date": "2026-07-22",
-        "investor": "投信",
-        "buy": 3137.0,
-        "sell": 8274000.0,
-        "net_buy": -8270863.0
-      },
-      {
-        "date": "2026-07-22",
-        "investor": "自營商",
-        "buy": 519563.0,
-        "sell": 727119.0,
-        "net_buy": -207556.0
-      },
-      {
-        "date": "2026-07-22",
-        "investor": "法人合計",
-        "buy": 21880077.0,
-        "sell": 18209303.0,
-        "net_buy": 3670774.0
-      },
-      {
-        "date": "2026-07-23",
-        "investor": "外資",
-        "buy": 19708840.0,
-        "sell": 11755898.0,
-        "net_buy": 7952942.0
-      },
-      {
-        "date": "2026-07-23",
-        "investor": "投信",
-        "buy": 314968.0,
-        "sell": 4041000.0,
-        "net_buy": -3726032.0
-      },
-      {
-        "date": "2026-07-23",
-        "investor": "自營商",
-        "buy": 944044.0,
-        "sell": 664636.0,
-        "net_buy": 279408.0
-      },
-      {
-        "date": "2026-07-23",
-        "investor": "法人合計",
-        "buy": 20967852.0,
-        "sell": 16461534.0,
-        "net_buy": 4506318.0
-      },
       {
         "date": "2026-07-24",
         "investor": "外資",
@@ -1272,30 +1259,93 @@
         "buy": 10768283.0,
         "sell": 12210089.0,
         "net_buy": -1441806.0
+      },
+      {
+        "date": "2026-07-28",
+        "investor": "外資",
+        "buy": 9273735.0,
+        "sell": 6808300.0,
+        "net_buy": 2465435.0
+      },
+      {
+        "date": "2026-07-28",
+        "investor": "投信",
+        "buy": 59000.0,
+        "sell": 0.0,
+        "net_buy": 59000.0
+      },
+      {
+        "date": "2026-07-28",
+        "investor": "自營商",
+        "buy": 677403.0,
+        "sell": 1009814.0,
+        "net_buy": -332411.0
+      },
+      {
+        "date": "2026-07-28",
+        "investor": "法人合計",
+        "buy": 10010138.0,
+        "sell": 7818114.0,
+        "net_buy": 2192024.0
+      },
+      {
+        "date": "2026-07-29",
+        "investor": "外資",
+        "buy": 29705610.0,
+        "sell": 22207528.0,
+        "net_buy": 7498082.0
+      },
+      {
+        "date": "2026-07-29",
+        "investor": "投信",
+        "buy": 767000.0,
+        "sell": 15574.0,
+        "net_buy": 751426.0
+      },
+      {
+        "date": "2026-07-29",
+        "investor": "自營商",
+        "buy": 1024491.0,
+        "sell": 1086783.0,
+        "net_buy": -62292.0
+      },
+      {
+        "date": "2026-07-29",
+        "investor": "法人合計",
+        "buy": 31497101.0,
+        "sell": 23309885.0,
+        "net_buy": 8187216.0
+      },
+      {
+        "date": "2026-07-30",
+        "investor": "外資",
+        "buy": 18744841.0,
+        "sell": 22200063.0,
+        "net_buy": -3455222.0
+      },
+      {
+        "date": "2026-07-30",
+        "investor": "投信",
+        "buy": 239689.0,
+        "sell": 58000.0,
+        "net_buy": 181689.0
+      },
+      {
+        "date": "2026-07-30",
+        "investor": "自營商",
+        "buy": 518909.0,
+        "sell": 1007576.0,
+        "net_buy": -488667.0
+      },
+      {
+        "date": "2026-07-30",
+        "investor": "法人合計",
+        "buy": 19503439.0,
+        "sell": 23265639.0,
+        "net_buy": -3762200.0
       }
     ],
     "government_5d_detail": [
-      {
-        "date": "2026-07-21",
-        "buy": null,
-        "sell": null,
-        "net_buy": -2608000.0,
-        "unit": "shares_converted_to_lots"
-      },
-      {
-        "date": "2026-07-22",
-        "buy": null,
-        "sell": null,
-        "net_buy": -1080000.0,
-        "unit": "shares_converted_to_lots"
-      },
-      {
-        "date": "2026-07-23",
-        "buy": null,
-        "sell": null,
-        "net_buy": -928000.0,
-        "unit": "shares_converted_to_lots"
-      },
       {
         "date": "2026-07-24",
         "buy": null,
@@ -1309,6 +1359,27 @@
         "sell": null,
         "net_buy": -124000.0,
         "unit": "shares_converted_to_lots"
+      },
+      {
+        "date": "2026-07-28",
+        "buy": null,
+        "sell": null,
+        "net_buy": 66000.0,
+        "unit": "shares_converted_to_lots"
+      },
+      {
+        "date": "2026-07-29",
+        "buy": null,
+        "sell": null,
+        "net_buy": -914000.0,
+        "unit": "shares_converted_to_lots"
+      },
+      {
+        "date": "2026-07-30",
+        "buy": null,
+        "sell": null,
+        "net_buy": 638000.0,
+        "unit": "shares_converted_to_lots"
       }
     ],
     "quantity_unit": "shares_converted_to_lots",
@@ -1316,55 +1387,55 @@
   },
   "technical_feasibility": {
     "ok": true,
-    "score": 51.4,
-    "technical_score_before_event": 51.0,
-    "event_score": 59.6,
+    "score": 50.1,
+    "technical_score_before_event": 49.8,
+    "event_score": 57.1,
     "event_weight": 0.05,
     "event_adjustment": 0.4,
-    "event_impact_score": 1.93,
+    "event_impact_score": 1.43,
     "event_active_count": 3,
     "event_backtest_samples": 43,
     "event_scoring_method": "upcoming_event_20d_return_backtest",
     "news_score": null,
     "news_weight": 0.0,
     "news_adjustment": 0.0,
-    "news_item_count": 5,
+    "news_item_count": 8,
     "news_high_confidence_count": 0,
     "news_influence": "display_only",
     "grade": "中",
     "trend": "震盪",
     "short_direction": "震盪",
     "horizon_days": 5,
-    "close": 63.8,
-    "prev_close": 64.5,
-    "daily_change_pct": -1.09,
-    "ma5": 62.62,
-    "ma10": 61.43,
-    "ma20": 64.01,
-    "ma60": 62.54,
-    "atr14_pct": 5.96,
-    "volume_ratio20": 0.61,
+    "close": 57.5,
+    "prev_close": 60.3,
+    "daily_change_pct": -4.64,
+    "ma5": 60.98,
+    "ma10": 60.54,
+    "ma20": 62.95,
+    "ma60": 63.16,
+    "atr14_pct": 6.47,
+    "volume_ratio20": 0.94,
     "advanced_trend": {
       "ok": true,
-      "score": 0.0139,
-      "adx": 15.69,
-      "plus_di": 20.87,
-      "minus_di": 23.88,
-      "rsi14": 50.3,
-      "macd": -0.8097,
-      "macd_signal": -0.7636,
-      "macd_histogram": -0.0461,
-      "macd_histogram_slope": 0.7874,
-      "bollinger_mid": 64.01,
-      "bollinger_upper": 70.45,
-      "bollinger_lower": 57.57,
-      "bollinger_bandwidth_pct": 20.12,
-      "bollinger_bandwidth_percentile": 82.5,
+      "score": -0.1883,
+      "adx": 16.7,
+      "plus_di": 16.3,
+      "minus_di": 26.87,
+      "rsi14": 39.78,
+      "macd": -1.4169,
+      "macd_signal": -0.9954,
+      "macd_histogram": -0.4215,
+      "macd_histogram_slope": -0.3753,
+      "bollinger_mid": 62.95,
+      "bollinger_upper": 70.06,
+      "bollinger_lower": 55.84,
+      "bollinger_bandwidth_pct": 22.6,
+      "bollinger_bandwidth_percentile": 87.4,
       "bollinger_squeeze": false,
       "divergence": "",
-      "note": "ADX 16，趨勢力道偏弱"
+      "note": "ADX 17，趨勢力道偏弱"
     },
-    "advanced_trend_score_delta": 0.1,
+    "advanced_trend_score_delta": -1.5,
     "breakout_follow_through": {
       "ok": true,
       "score": 0.0,
@@ -1376,122 +1447,102 @@
     "peer_relative_strength": {
       "ok": true,
       "score": 0.15,
-      "target_return": 45.83,
-      "peer_median_return": 45.83,
+      "target_return": 29.21,
+      "peer_median_return": 29.21,
       "relative_gap": 0.0,
-      "positive_ratio": 1.0,
-      "note": "相對族群中位數 +0.0%；族群上漲比例 100%"
+      "positive_ratio": 0.8,
+      "note": "相對族群中位數 +0.0%；族群上漲比例 80%"
     },
     "peer_relative_strength_score_delta": 0.9,
     "benchmark_relative_strength": {
       "ok": true,
-      "score": 0.2411,
-      "stock_return": 0.79,
-      "benchmark_return": -2.1,
-      "relative_gap": 2.89,
+      "score": 0.0849,
+      "stock_return": -14.05,
+      "benchmark_return": -15.07,
+      "relative_gap": 1.02,
       "lookback": 20,
-      "note": "近20日個股 +0.8%／大盤 -2.1%，相對 +2.9%"
+      "note": "近20日個股 -14.1%／大盤 -15.1%，相對 +1.0%"
     },
-    "benchmark_relative_strength_score_delta": 1.4,
+    "benchmark_relative_strength_score_delta": 0.5,
     "margin_signal": {
       "buy_score": 0.0,
       "sell_score": 3.0,
       "weak_score": 4.0,
       "buy_note": "",
       "sell_note": "融券增加且價格偏弱，空方仍有壓力",
-      "summary": "融資5日-0.3% / 融券5日+125.0%",
-      "margin_5d_pct": -0.3439722176285742,
-      "short_5d_pct": 125.0
+      "summary": "融資5日-8.0% / 融券5日+328.0%",
+      "margin_5d_pct": -7.97756205703537,
+      "short_5d_pct": 328.0442804428044
     },
     "margin_score_adjustment": 0.0,
     "margin_note": "融券變化僅列為觀察，未直接加減分",
-    "adx": 15.69,
-    "plus_di": 20.87,
-    "minus_di": 23.88,
-    "rsi14": 50.3,
-    "macd_histogram": -0.0461,
-    "macd_histogram_slope": 0.7874,
-    "bollinger_bandwidth_pct": 20.12,
-    "bollinger_bandwidth_percentile": 82.5,
+    "adx": 16.7,
+    "plus_di": 16.3,
+    "minus_di": 26.87,
+    "rsi14": 39.78,
+    "macd_histogram": -0.4215,
+    "macd_histogram_slope": -0.3753,
+    "bollinger_bandwidth_pct": 22.6,
+    "bollinger_bandwidth_percentile": 87.4,
     "bollinger_squeeze": false,
     "momentum_divergence": "",
-    "ma20_gap_pct": -0.33,
-    "ma60_gap_pct": 2.01,
-    "pattern_label": "上升通道",
-    "pattern_lookback": 90,
-    "pattern_validity": 61.9,
-    "pattern_hit_rate": 65.7,
-    "pattern_support": 63.26,
-    "pattern_resistance": 65.29,
-    "volume_support": 63.26,
-    "volume_resistance": 65.29,
-    "volume_support_strength": 58.7,
-    "volume_resistance_strength": 82.6,
-    "volume_level_method": "近90日典型價格與成交量分箱，取量能密集區",
-    "foreign_5d": 33827124.0,
-    "trust_5d": -15926939.0,
+    "ma20_gap_pct": -8.66,
+    "ma60_gap_pct": -8.97,
+    "pattern_label": "下降通道",
+    "pattern_lookback": 44,
+    "pattern_validity": 87.4,
+    "pattern_hit_rate": 77.8,
+    "pattern_support": 58.89,
+    "pattern_resistance": 64.09,
+    "volume_support": null,
+    "volume_resistance": 64.09,
+    "volume_support_strength": 0.0,
+    "volume_resistance_strength": 49.4,
+    "volume_level_method": "近44日典型價格與成交量分箱，取量能密集區",
+    "foreign_5d": 8801197.0,
+    "trust_5d": 1203796.0,
     "chip_data_available": true,
     "score_reasons": [
       "收盤跌破MA20",
-      "站上MA60",
-      "型態有效性加分",
-      "型態命中率佳",
-      "量能不足"
+      "跌破MA60",
+      "跌破MA5/MA10",
+      "跌破短均且跌幅擴大",
+      "型態有效性加分"
     ],
     "training_calibration": {
-      "sample_count": 1427,
-      "industry_sample_count": 1427,
+      "sample_count": 1148,
+      "industry_sample_count": 1148,
       "score_adjust": 0.0,
       "reason": ""
     },
-    "summary": "短線走勢：震盪（51/100；觀察未來 5 個交易日）；震盪，型態可信62，量比0.61，ATR 6.0%"
+    "summary": "短線走勢：震盪（50/100；觀察未來 5 個交易日）；震盪，型態可信87，量比0.94，ATR 6.5%"
   },
-  "news_display_status": "新聞面偏利多（利多 4 / 利空 0 / 中性 1；高可信 0 則）",
+  "news_display_status": "新聞面偏利多（利多 6 / 利空 0 / 中性 2；高可信 0 則）",
   "disclosure_display_status": "近 120 天公告/法說追蹤 9 則（法說會 5 / 公告 4）",
-  "summary_one_line": "區間整理，區間震盪；站穩 MA10 61.43 並突破 64.01 才有續攻機會，跌破 62.62 轉防守。",
-  "summary_overall": "區間整理；收盤站上 MA5, MA5 高於 MA10, MA10 上方但投信支撐不足",
-  "summary_tomorrow": "區間震盪",
-  "summary_one_month": "高波動區間震盪",
-  "summary_support": "第一 62.62 / 第二 61.43 / 強 60.00",
-  "summary_downside_support": "MA120 53.38（支撐）",
+  "summary_one_line": "偏空弱勢，偏弱震盪；重新站回 MA10 60.54 並突破 60.54 才有續攻機會，跌破 56.80 轉防守。",
+  "summary_overall": "偏空弱勢；收盤跌破 MA5, MA5 高於 MA10, 跌破 MA10 且投信偏賣",
+  "summary_tomorrow": "偏弱震盪",
+  "summary_one_month": "偏弱修正",
+  "summary_support": "第一 56.80 / 第二 53.78 / 強 53.63",
+  "summary_downside_support": "MA120 53.63（支撐）",
   "downside_support_ladder": [
     {
       "type": "MA120支撐",
-      "price": 53.38,
+      "price": 53.63,
       "date": "",
-      "downside_pct": -16.34,
+      "downside_pct": -6.73,
       "note": "長線均線參考"
     }
   ],
-  "summary_pressure": "第一 64.01 / 第二 65.00 / 強 65.30",
-  "summary_price_pattern": "近90日上升通道 有效5.8 / 區間內；近20日下降通道 有效5.5 / 區間內",
-  "summary_price_pattern_brief": "近90日上升通道 有效5.8 / 區間內；近20日下降通道 有效5.5 / 區間內",
-  "summary_trade_plan": "買點：靠近 64.01 守住，或放量突破 65.29 再加分，但需確認融資5日-0.3% / 融券5日+125.0%；賣點：跌破 64.01，先降權重，且融券增加且價格偏弱，空方仍有壓力。依據：上升通道有效分數 5.8。",
-  "summary_gap": "近120日有 29 個明顯缺口；最近向下缺口 2026-06-08 位於 69.20～73.20 元，分類為事件／大幅跳空，部分回補，量能未明顯放大。類型統計：趨勢延續缺口11個、一般缺口9個、突破缺口6個、事件／大幅跳空3個。",
+  "summary_pressure": "第一 60.54 / 第二 60.98 / 強 61.22",
+  "summary_price_pattern": "近44日下降通道 有效6.9 / 跌破；近90日上升通道 有效5.8 / 區間內",
+  "summary_price_pattern_brief": "近44日下降通道 有效6.9 / 跌破；近90日上升通道 有效5.8 / 區間內",
+  "summary_trade_plan": "買點：靠近 62.95 守住，或放量突破 64.09 再加分，但需確認融資5日-8.0% / 融券5日+328.0%；賣點：已跌破 62.95，反彈未站回前偏防守，且融券增加且價格偏弱，空方仍有壓力。依據：下降通道有效分數 6.9。",
+  "summary_gap": "近120日有 28 個明顯缺口；最近向下缺口 2026-06-08 位於 69.20～73.20 元，分類為事件／大幅跳空，部分回補，量能未明顯放大。類型統計：一般缺口10個、趨勢延續缺口9個、突破缺口6個、事件／大幅跳空3個。",
   "gap_rows": [
     {
-      "date": "2026-01-23",
-      "position": 123,
-      "direction": "向上",
-      "lower": 51.2,
-      "upper": 54.5,
-      "size": 3.3,
-      "gap_pct": 6.45,
-      "status": "已回補",
-      "fill_date": "2026-01-23",
-      "fill_position": 123,
-      "volume_ratio": 1.54,
-      "volume_confirmed": true,
-      "volume_note": "量能確認",
-      "classification": "突破缺口",
-      "classification_note": "突破前高／前低，需用收盤與量能確認",
-      "prior_return_pct": 9.99,
-      "prior_range_pct": 12.21,
-      "action_flag": false
-    },
-    {
       "date": "2026-02-06",
-      "position": 133,
+      "position": 130,
       "direction": "向下",
       "lower": 43.8,
       "upper": 44.05,
@@ -1499,19 +1550,19 @@
       "gap_pct": 0.57,
       "status": "已回補",
       "fill_date": "2026-02-09",
-      "fill_position": 134,
-      "volume_ratio": 0.58,
+      "fill_position": 131,
+      "volume_ratio": 1.19,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
       "classification": "趨勢延續缺口",
       "classification_note": "順著既有趨勢跳空，仍需防止快速回補",
       "prior_return_pct": -5.37,
-      "prior_range_pct": 25.99,
+      "prior_range_pct": 11.24,
       "action_flag": false
     },
     {
       "date": "2026-02-09",
-      "position": 134,
+      "position": 131,
       "direction": "向上",
       "lower": 43.8,
       "upper": 44.75,
@@ -1519,19 +1570,19 @@
       "gap_pct": 2.17,
       "status": "已回補",
       "fill_date": "2026-03-03",
-      "fill_position": 142,
-      "volume_ratio": 0.29,
+      "fill_position": 139,
+      "volume_ratio": 0.57,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
       "classification": "一般缺口",
       "classification_note": "單獨訊息較弱，觀察回補速度",
       "prior_return_pct": -5.91,
-      "prior_range_pct": 29.57,
+      "prior_range_pct": 14.73,
       "action_flag": false
     },
     {
       "date": "2026-03-03",
-      "position": 142,
+      "position": 139,
       "direction": "向下",
       "lower": 44.4,
       "upper": 44.75,
@@ -1539,19 +1590,19 @@
       "gap_pct": 0.78,
       "status": "已回補",
       "fill_date": "2026-03-18",
-      "fill_position": 153,
-      "volume_ratio": 0.82,
-      "volume_confirmed": false,
-      "volume_note": "量能未明顯放大",
-      "classification": "趨勢延續缺口",
-      "classification_note": "順著既有趨勢跳空，仍需防止快速回補",
-      "prior_return_pct": -12.6,
-      "prior_range_pct": 28.94,
+      "fill_position": 150,
+      "volume_ratio": 1.3,
+      "volume_confirmed": true,
+      "volume_note": "量能確認",
+      "classification": "一般缺口",
+      "classification_note": "單獨訊息較弱，觀察回補速度",
+      "prior_return_pct": -3.87,
+      "prior_range_pct": 14.41,
       "action_flag": false
     },
     {
       "date": "2026-03-04",
-      "position": 143,
+      "position": 140,
       "direction": "向下",
       "lower": 42.05,
       "upper": 42.6,
@@ -1559,19 +1610,19 @@
       "gap_pct": 1.29,
       "status": "已回補",
       "fill_date": "2026-03-11",
-      "fill_position": 148,
-      "volume_ratio": 0.98,
-      "volume_confirmed": false,
-      "volume_note": "量能未明顯放大",
-      "classification": "趨勢延續缺口",
-      "classification_note": "順著既有趨勢跳空，仍需防止快速回補",
-      "prior_return_pct": -10.73,
-      "prior_range_pct": 30.22,
+      "fill_position": 145,
+      "volume_ratio": 1.32,
+      "volume_confirmed": true,
+      "volume_note": "量能確認",
+      "classification": "突破缺口",
+      "classification_note": "突破前高／前低，需用收盤與量能確認",
+      "prior_return_pct": -7.95,
+      "prior_range_pct": 15.05,
       "action_flag": false
     },
     {
       "date": "2026-03-09",
-      "position": 146,
+      "position": 143,
       "direction": "向下",
       "lower": 39.4,
       "upper": 41.3,
@@ -1579,7 +1630,7 @@
       "gap_pct": 4.6,
       "status": "已回補",
       "fill_date": "2026-03-10",
-      "fill_position": 147,
+      "fill_position": 144,
       "volume_ratio": 0.88,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -1591,7 +1642,7 @@
     },
     {
       "date": "2026-03-10",
-      "position": 147,
+      "position": 144,
       "direction": "向上",
       "lower": 40.1,
       "upper": 41.4,
@@ -1599,7 +1650,7 @@
       "gap_pct": 3.24,
       "status": "已回補",
       "fill_date": "2026-03-10",
-      "fill_position": 147,
+      "fill_position": 144,
       "volume_ratio": 0.63,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -1611,7 +1662,7 @@
     },
     {
       "date": "2026-03-11",
-      "position": 148,
+      "position": 145,
       "direction": "向上",
       "lower": 41.4,
       "upper": 42.45,
@@ -1619,7 +1670,7 @@
       "gap_pct": 2.54,
       "status": "已回補",
       "fill_date": "2026-03-30",
-      "fill_position": 161,
+      "fill_position": 158,
       "volume_ratio": 1.38,
       "volume_confirmed": true,
       "volume_note": "量能確認",
@@ -1631,7 +1682,7 @@
     },
     {
       "date": "2026-03-17",
-      "position": 152,
+      "position": 149,
       "direction": "向上",
       "lower": 43.2,
       "upper": 43.55,
@@ -1639,7 +1690,7 @@
       "gap_pct": 0.81,
       "status": "已回補",
       "fill_date": "2026-03-19",
-      "fill_position": 154,
+      "fill_position": 151,
       "volume_ratio": 1.19,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -1651,7 +1702,7 @@
     },
     {
       "date": "2026-03-23",
-      "position": 156,
+      "position": 153,
       "direction": "向下",
       "lower": 41.8,
       "upper": 42.65,
@@ -1659,7 +1710,7 @@
       "gap_pct": 1.99,
       "status": "已回補",
       "fill_date": "2026-03-23",
-      "fill_position": 156,
+      "fill_position": 153,
       "volume_ratio": 0.63,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -1671,7 +1722,7 @@
     },
     {
       "date": "2026-03-25",
-      "position": 158,
+      "position": 155,
       "direction": "向上",
       "lower": 42.9,
       "upper": 43.4,
@@ -1679,7 +1730,7 @@
       "gap_pct": 1.17,
       "status": "已回補",
       "fill_date": "2026-03-25",
-      "fill_position": 158,
+      "fill_position": 155,
       "volume_ratio": 0.55,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -1691,7 +1742,7 @@
     },
     {
       "date": "2026-03-30",
-      "position": 161,
+      "position": 158,
       "direction": "向下",
       "lower": 41.9,
       "upper": 42.55,
@@ -1699,7 +1750,7 @@
       "gap_pct": 1.53,
       "status": "已回補",
       "fill_date": "2026-04-08",
-      "fill_position": 166,
+      "fill_position": 163,
       "volume_ratio": 0.95,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -1711,7 +1762,7 @@
     },
     {
       "date": "2026-03-31",
-      "position": 162,
+      "position": 159,
       "direction": "向下",
       "lower": 41.0,
       "upper": 41.4,
@@ -1719,7 +1770,7 @@
       "gap_pct": 0.97,
       "status": "已回補",
       "fill_date": "2026-04-02",
-      "fill_position": 164,
+      "fill_position": 161,
       "volume_ratio": 1.75,
       "volume_confirmed": true,
       "volume_note": "量能確認",
@@ -1731,7 +1782,7 @@
     },
     {
       "date": "2026-04-09",
-      "position": 167,
+      "position": 164,
       "direction": "向上",
       "lower": 42.65,
       "upper": 43.0,
@@ -1739,7 +1790,7 @@
       "gap_pct": 0.82,
       "status": "已回補",
       "fill_date": "2026-04-09",
-      "fill_position": 167,
+      "fill_position": 164,
       "volume_ratio": 1.48,
       "volume_confirmed": true,
       "volume_note": "量能確認",
@@ -1751,7 +1802,7 @@
     },
     {
       "date": "2026-04-27",
-      "position": 179,
+      "position": 176,
       "direction": "向上",
       "lower": 48.2,
       "upper": 50.3,
@@ -1759,7 +1810,7 @@
       "gap_pct": 4.36,
       "status": "已回補",
       "fill_date": "2026-04-27",
-      "fill_position": 179,
+      "fill_position": 176,
       "volume_ratio": 1.89,
       "volume_confirmed": true,
       "volume_note": "量能確認",
@@ -1771,7 +1822,7 @@
     },
     {
       "date": "2026-05-06",
-      "position": 185,
+      "position": 182,
       "direction": "向上",
       "lower": 47.0,
       "upper": 47.3,
@@ -1791,7 +1842,7 @@
     },
     {
       "date": "2026-05-15",
-      "position": 192,
+      "position": 189,
       "direction": "向上",
       "lower": 53.9,
       "upper": 54.4,
@@ -1799,7 +1850,7 @@
       "gap_pct": 0.93,
       "status": "已回補",
       "fill_date": "2026-05-15",
-      "fill_position": 192,
+      "fill_position": 189,
       "volume_ratio": 1.34,
       "volume_confirmed": true,
       "volume_note": "量能確認",
@@ -1811,7 +1862,7 @@
     },
     {
       "date": "2026-05-22",
-      "position": 197,
+      "position": 194,
       "direction": "向上",
       "lower": 54.2,
       "upper": 56.8,
@@ -1831,7 +1882,7 @@
     },
     {
       "date": "2026-05-25",
-      "position": 198,
+      "position": 195,
       "direction": "向上",
       "lower": 59.5,
       "upper": 65.4,
@@ -1839,7 +1890,7 @@
       "gap_pct": 9.92,
       "status": "已回補",
       "fill_date": "2026-07-16",
-      "fill_position": 234,
+      "fill_position": 231,
       "volume_ratio": 3.03,
       "volume_confirmed": true,
       "volume_note": "量能確認",
@@ -1851,7 +1902,7 @@
     },
     {
       "date": "2026-05-26",
-      "position": 199,
+      "position": 196,
       "direction": "向上",
       "lower": 65.4,
       "upper": 69.0,
@@ -1859,7 +1910,7 @@
       "gap_pct": 5.5,
       "status": "已回補",
       "fill_date": "2026-05-26",
-      "fill_position": 199,
+      "fill_position": 196,
       "volume_ratio": 3.92,
       "volume_confirmed": true,
       "volume_note": "量能確認",
@@ -1871,7 +1922,7 @@
     },
     {
       "date": "2026-05-29",
-      "position": 202,
+      "position": 199,
       "direction": "向上",
       "lower": 67.3,
       "upper": 68.1,
@@ -1879,7 +1930,7 @@
       "gap_pct": 1.19,
       "status": "已回補",
       "fill_date": "2026-06-10",
-      "fill_position": 210,
+      "fill_position": 207,
       "volume_ratio": 3.37,
       "volume_confirmed": true,
       "volume_note": "量能確認",
@@ -1891,7 +1942,7 @@
     },
     {
       "date": "2026-06-01",
-      "position": 203,
+      "position": 200,
       "direction": "向上",
       "lower": 70.2,
       "upper": 71.5,
@@ -1899,7 +1950,7 @@
       "gap_pct": 1.85,
       "status": "已回補",
       "fill_date": "2026-06-01",
-      "fill_position": 203,
+      "fill_position": 200,
       "volume_ratio": 3.18,
       "volume_confirmed": true,
       "volume_note": "量能確認",
@@ -1911,7 +1962,7 @@
     },
     {
       "date": "2026-06-05",
-      "position": 207,
+      "position": 204,
       "direction": "向下",
       "lower": 76.5,
       "upper": 77.8,
@@ -1919,7 +1970,7 @@
       "gap_pct": 1.67,
       "status": "已回補",
       "fill_date": "2026-06-05",
-      "fill_position": 207,
+      "fill_position": 204,
       "volume_ratio": 1.0,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -1931,7 +1982,7 @@
     },
     {
       "date": "2026-06-08",
-      "position": 208,
+      "position": 205,
       "direction": "向下",
       "lower": 69.2,
       "upper": 73.2,
@@ -1951,7 +2002,7 @@
     },
     {
       "date": "2026-06-11",
-      "position": 211,
+      "position": 208,
       "direction": "向下",
       "lower": 64.8,
       "upper": 65.6,
@@ -1959,7 +2010,7 @@
       "gap_pct": 1.22,
       "status": "已回補",
       "fill_date": "2026-06-11",
-      "fill_position": 211,
+      "fill_position": 208,
       "volume_ratio": 0.39,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -1971,7 +2022,7 @@
     },
     {
       "date": "2026-06-12",
-      "position": 212,
+      "position": 209,
       "direction": "向上",
       "lower": 66.4,
       "upper": 68.5,
@@ -1979,7 +2030,7 @@
       "gap_pct": 3.16,
       "status": "已回補",
       "fill_date": "2026-06-12",
-      "fill_position": 212,
+      "fill_position": 209,
       "volume_ratio": 0.36,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -1991,7 +2042,7 @@
     },
     {
       "date": "2026-06-18",
-      "position": 216,
+      "position": 213,
       "direction": "向上",
       "lower": 67.5,
       "upper": 68.6,
@@ -1999,7 +2050,7 @@
       "gap_pct": 1.63,
       "status": "已回補",
       "fill_date": "2026-06-18",
-      "fill_position": 216,
+      "fill_position": 213,
       "volume_ratio": 0.33,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -2011,7 +2062,7 @@
     },
     {
       "date": "2026-07-02",
-      "position": 225,
+      "position": 222,
       "direction": "向下",
       "lower": 65.8,
       "upper": 66.7,
@@ -2019,7 +2070,7 @@
       "gap_pct": 1.35,
       "status": "已回補",
       "fill_date": "2026-07-02",
-      "fill_position": 225,
+      "fill_position": 222,
       "volume_ratio": 0.44,
       "volume_confirmed": false,
       "volume_note": "量能未明顯放大",
@@ -2031,7 +2082,7 @@
     },
     {
       "date": "2026-07-09",
-      "position": 230,
+      "position": 227,
       "direction": "向上",
       "lower": 67.4,
       "upper": 69.0,
@@ -2039,7 +2090,7 @@
       "gap_pct": 2.37,
       "status": "已回補",
       "fill_date": "2026-07-13",
-      "fill_position": 231,
+      "fill_position": 228,
       "volume_ratio": 4.25,
       "volume_confirmed": true,
       "volume_note": "量能確認",
@@ -2052,76 +2103,76 @@
   ],
   "price_pattern_rows": [
     {
-      "lookback": 90,
-      "label": "上升通道",
-      "support": 63.26145833333334,
-      "resistance": 65.28854166666667,
-      "shape_support": 42.33,
-      "shape_resistance": 70.92,
-      "volume_support": 63.26145833333334,
-      "volume_resistance": 65.28854166666667,
-      "volume_support_strength": 58.700728214513816,
-      "volume_resistance_strength": 82.5772644139924,
-      "volume_level_method": "近90日典型價格與成交量分箱，取量能密集區",
-      "score": 5.8,
-      "validity": 61.87894279994188,
-      "validity_grade": "中",
-      "touch_count": 14,
-      "slope_stability": 42.59554354355455,
-      "trend_fit_score": 65.53160545162238,
+      "lookback": 44,
+      "label": "下降通道",
+      "support": 58.89,
+      "resistance": 64.0875,
+      "shape_support": 58.89,
+      "shape_resistance": 75.88000000000001,
+      "volume_support": 0.0,
+      "volume_resistance": 64.0875,
+      "volume_support_strength": 0.0,
+      "volume_resistance_strength": 49.36707936329848,
+      "volume_level_method": "近44日典型價格與成交量分箱，取量能密集區",
+      "score": 6.9,
+      "validity": 87.39553687339966,
+      "validity_grade": "高",
+      "touch_count": 9,
+      "slope_stability": 37.12022418587077,
+      "trend_fit_score": 53.39152927233673,
       "trend_confidence": "低",
-      "trend_confidence_note": "高低點線性擬合 R² 0.66；收盤趨勢 R² 0.64",
-      "volume_confirmation": "量能不足",
-      "breakout_status": "區間內",
+      "trend_confidence_note": "高低點線性擬合 R² 0.53；收盤趨勢 R² 0.55",
+      "volume_confirmation": "量能中性",
+      "breakout_status": "跌破",
       "confirm_status": "待確認",
-      "hit_rate": 65.71428571428571,
-      "hit_sample_count": 35,
-      "hit_rate_note": "支撐/壓力命中 66%（35次）"
+      "hit_rate": 77.77777777777779,
+      "hit_sample_count": 36,
+      "hit_rate_note": "支撐/壓力命中 78%（36次）"
     },
     {
-      "lookback": 20,
-      "label": "下降通道",
-      "support": 63.193749999999994,
-      "resistance": 66.50625,
-      "shape_support": 59.03,
-      "shape_resistance": 69.41000000000001,
-      "volume_support": 63.193749999999994,
-      "volume_resistance": 66.50625,
-      "volume_support_strength": 71.83523601482362,
-      "volume_resistance_strength": 62.36148791849008,
-      "volume_level_method": "近20日典型價格與成交量分箱，取量能密集區",
-      "score": 5.5,
-      "validity": 47.044862282234355,
-      "validity_grade": "中",
-      "touch_count": 7,
-      "slope_stability": 38.56753496612887,
-      "trend_fit_score": 45.25038248779112,
+      "lookback": 90,
+      "label": "上升通道",
+      "support": 47.04479166666667,
+      "resistance": 63.26145833333334,
+      "shape_support": 42.33,
+      "shape_resistance": 70.92,
+      "volume_support": 47.04479166666667,
+      "volume_resistance": 63.26145833333334,
+      "volume_support_strength": 57.028251618051186,
+      "volume_resistance_strength": 58.700728214513816,
+      "volume_level_method": "近90日典型價格與成交量分箱，取量能密集區",
+      "score": 5.8,
+      "validity": 80.01084387776017,
+      "validity_grade": "高",
+      "touch_count": 27,
+      "slope_stability": 38.955587752592436,
+      "trend_fit_score": 59.93167346552683,
       "trend_confidence": "低",
-      "trend_confidence_note": "高低點線性擬合 R² 0.45；收盤趨勢 R² 0.37",
-      "volume_confirmation": "量能不足",
+      "trend_confidence_note": "高低點線性擬合 R² 0.60；收盤趨勢 R² 0.59",
+      "volume_confirmation": "量能中性",
       "breakout_status": "區間內",
       "confirm_status": "待確認",
-      "hit_rate": 47.05882352941176,
-      "hit_sample_count": 34,
-      "hit_rate_note": "支撐/壓力命中 47%（34次）"
+      "hit_rate": 71.42857142857143,
+      "hit_sample_count": 42,
+      "hit_rate_note": "支撐/壓力命中 71%（42次）"
     }
   ],
-  "summary_atr": "ATR14 3.80，常態區間 60.00～67.60",
-  "summary_key_watch": "價跌量縮；明日觀察 MA5 62.62 / MA10 61.43",
-  "summary_risk": "跌破 MA10 61.43 且放量，短線轉弱；尚未站回 MA20 64.01，中期結構仍弱；跌破第一支撐 62.62，提高防守權重；MA120長線參考 MA120 53.38（支撐）",
-  "summary_warrant": "認購成交占 0.00%，近價外認購 14 檔，前五大成交占 0.00%",
+  "summary_atr": "ATR14 3.72，常態區間 53.78～61.22",
+  "summary_key_watch": "量價中性偏弱；明日觀察 MA5 60.98 / MA10 60.54",
+  "summary_risk": "尚未站回 MA10 60.54，反彈仍偏弱；尚未站回 MA20 62.95，中期結構仍弱；跌破第一支撐 56.80，提高防守權重；MA120長線參考 MA120 53.63（支撐）",
+  "summary_warrant": "權證資料未完整取得",
   "summary_warrant_signal": "中性",
-  "summary_warrant_plain": "認購優勢不明顯，權證籌碼只代表觀望，不支持單邊偏多",
+  "summary_warrant_plain": "權證資料不足，暫不做白話解讀",
   "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
-  "generated_at": "2026-07-27T21:24:55+08:00",
+  "generated_at": "2026-07-31T11:07:14+08:00",
   "timezone": "台北標準時間",
   "charts": [
-    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-27\\01_日線完整技術與籌碼分析圖.png",
-    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-27\\02_周線完整技術與趨勢分析圖.png",
-    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-27\\03_月線完整技術與長期趨勢分析圖.png",
-    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-27\\04_權證完整分析圖.png",
-    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-27\\05_同族群比較分析圖.png",
-    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-27\\06_基本面分析圖.png"
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-31\\01_日線完整技術與籌碼分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-31\\02_周線完整技術與趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-31\\03_月線完整技術與長期趨勢分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-31\\04_權證完整分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-31\\05_同族群比較分析圖.png",
+    "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-31\\06_基本面分析圖.png"
   ],
   "etf_change_rows": [],
   "tdcc_rows": [
@@ -2294,756 +2345,782 @@
       "people_change": null
     }
   ],
-  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-27\\07_集保股權歷史趨勢圖.png",
-  "broker_trading_period": "2026-04-30 to 2026-07-22 (recent local broker-branch cache used; remote optional sources skipped)",
-  "broker_import_status": "券商分點：2026-04-30 to 2026-07-22；recent local broker-branch cache used; remote optional sources skipped",
-  "broker_trading_latest_period": "2026-07-22",
+  "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-31\\07_集保股權歷史趨勢圖.png",
+  "broker_trading_period": "2026-05-06 to 2026-07-30 (OK; local rows=1211, days=241, imported_files=0；HiStock history brokers=5, days=240, rows=1197；nStock 2026-07-30 rows=20)",
+  "broker_import_status": "券商分點：2026-05-06 to 2026-07-30；OK; local rows=1211, days=241, imported_files=0；HiStock history brokers=5, days=240, rows=1197；nStock 2026-07-30 rows=20",
+  "broker_trading_latest_period": "2026-07-30",
   "broker_pattern_result": {
     "ok": true,
     "message": "分點買賣後 5 / 30 交易日勝率回測",
     "forward_days": 5,
     "rows": [
       {
+        "broker": "凱基-台北(9268)",
+        "horizon_days": 5,
+        "buy_signals": 34,
+        "buy_win_rate": 0.5882352941176471,
+        "buy_avg_return": 4.727313455079158,
+        "sell_signals": 21,
+        "sell_win_rate": 0.5238095238095238,
+        "sell_avg_return": 0.93985207168349,
+        "latest_net_buy": -819.0,
+        "net20": -7020.0,
+        "score": 2.1386543471916233
+      },
+      {
         "broker": "美商高盛(1480)",
         "horizon_days": 5,
         "buy_signals": 35,
-        "buy_win_rate": 0.6571428571428571,
-        "buy_avg_return": 2.5947554632849985,
+        "buy_win_rate": 0.5714285714285714,
+        "buy_avg_return": 1.6576499615563765,
         "sell_signals": 20,
         "sell_win_rate": 0.5,
         "sell_avg_return": -4.148700765643246,
-        "latest_net_buy": 0.0,
-        "net20": -12498.800000000001,
-        "score": 2.380831428475436
+        "latest_net_buy": -3473.0,
+        "net20": -9693.7,
+        "score": 2.064301607304769
       },
       {
-        "broker": "台灣摩根士丹利(1470)",
+        "broker": "凱基-士林(9238)",
         "horizon_days": 5,
-        "buy_signals": 25,
-        "buy_win_rate": 0.68,
-        "buy_avg_return": 2.124875890899499,
-        "sell_signals": 30,
-        "sell_win_rate": 0.4666666666666667,
-        "sell_avg_return": -4.022285308511746,
-        "latest_net_buy": 0.0,
-        "net20": -5456.6,
-        "score": 2.3563600579588946
+        "buy_signals": 21,
+        "buy_win_rate": 0.5714285714285714,
+        "buy_avg_return": 0.6651669674624373,
+        "sell_signals": 33,
+        "sell_win_rate": 0.45454545454545453,
+        "sell_avg_return": -3.885104328357942,
+        "latest_net_buy": 702.0,
+        "net20": 3667.0,
+        "score": 2.0217148265981453
       },
       {
         "broker": "中國信託(6160)",
         "horizon_days": 5,
-        "buy_signals": 24,
-        "buy_win_rate": 0.5,
-        "buy_avg_return": 3.226263332358006,
-        "sell_signals": 31,
-        "sell_win_rate": 0.3225806451612903,
-        "sell_avg_return": -3.1083915016531525,
+        "buy_signals": 23,
+        "buy_win_rate": 0.4782608695652174,
+        "buy_avg_return": 3.020793489557241,
+        "sell_signals": 30,
+        "sell_win_rate": 0.36666666666666664,
+        "sell_avg_return": -2.750423873260332,
         "latest_net_buy": 0.0,
-        "net20": -1435.0,
-        "score": 1.7651305847234433
+        "net20": -1506.3,
+        "score": 1.6725496413884684
       }
     ],
     "best": {
-      "broker": "美商高盛(1480)",
+      "broker": "凱基-台北(9268)",
       "horizon_days": 5,
-      "buy_signals": 35,
-      "buy_win_rate": 0.6571428571428571,
-      "buy_avg_return": 2.5947554632849985,
-      "sell_signals": 20,
-      "sell_win_rate": 0.5,
-      "sell_avg_return": -4.148700765643246,
-      "latest_net_buy": 0.0,
-      "net20": -12498.800000000001,
-      "score": 2.380831428475436
+      "buy_signals": 34,
+      "buy_win_rate": 0.5882352941176471,
+      "buy_avg_return": 4.727313455079158,
+      "sell_signals": 21,
+      "sell_win_rate": 0.5238095238095238,
+      "sell_avg_return": 0.93985207168349,
+      "latest_net_buy": -819.0,
+      "net20": -7020.0,
+      "score": 2.1386543471916233
     },
     "signals": [
       {
-        "date": "2026-05-18",
-        "net_buy": 812.2999999999997,
-        "action": "買超",
-        "horizon_days": 5,
-        "broker": "美商高盛(1480)"
-      },
-      {
-        "date": "2026-05-19",
-        "net_buy": 827.5999999999999,
-        "action": "買超",
-        "horizon_days": 5,
-        "broker": "美商高盛(1480)"
-      },
-      {
-        "date": "2026-05-20",
-        "net_buy": -480.6999999999998,
-        "action": "賣超",
-        "horizon_days": 5,
-        "broker": "美商高盛(1480)"
-      },
-      {
-        "date": "2026-05-21",
-        "net_buy": 1218.9,
-        "action": "買超",
-        "horizon_days": 5,
-        "broker": "美商高盛(1480)"
-      },
-      {
-        "date": "2026-05-22",
-        "net_buy": -1472.0,
-        "action": "賣超",
-        "horizon_days": 5,
-        "broker": "美商高盛(1480)"
-      },
-      {
-        "date": "2026-05-25",
-        "net_buy": -2273.0,
-        "action": "賣超",
-        "horizon_days": 5,
-        "broker": "美商高盛(1480)"
-      },
-      {
-        "date": "2026-05-26",
-        "net_buy": -5567.9,
-        "action": "賣超",
-        "horizon_days": 5,
-        "broker": "美商高盛(1480)"
-      },
-      {
         "date": "2026-05-27",
-        "net_buy": -5992.8,
-        "action": "賣超",
+        "net_buy": 179.0,
+        "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-05-28",
-        "net_buy": 1023.7000000000003,
+        "net_buy": 2018.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-05-29",
-        "net_buy": -6176.799999999999,
+        "net_buy": -937.0,
         "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-01",
-        "net_buy": 491.1999999999998,
-        "action": "買超",
+        "net_buy": -774.0,
+        "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-02",
-        "net_buy": 1965.2000000000007,
-        "action": "買超",
+        "net_buy": -3185.0,
+        "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-03",
-        "net_buy": 2292.2999999999997,
-        "action": "買超",
+        "net_buy": -2267.0,
+        "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-04",
-        "net_buy": 1077.6999999999998,
+        "net_buy": 2714.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-05",
-        "net_buy": 3593.0,
+        "net_buy": 774.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-08",
-        "net_buy": 641.0,
+        "net_buy": 65.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-09",
-        "net_buy": 4154.9,
-        "action": "買超",
+        "net_buy": -2764.0,
+        "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-10",
-        "net_buy": 1455.5,
+        "net_buy": 1993.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-11",
-        "net_buy": 748.5,
-        "action": "買超",
+        "net_buy": -39.0,
+        "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-12",
-        "net_buy": -1033.6,
+        "net_buy": -973.0,
         "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-15",
-        "net_buy": 947.0,
+        "net_buy": 144.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-16",
-        "net_buy": 464.70000000000005,
+        "net_buy": 354.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-17",
-        "net_buy": 887.0999999999999,
+        "net_buy": 950.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-18",
-        "net_buy": -881.0,
-        "action": "賣超",
+        "net_buy": 41.0,
+        "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-22",
-        "net_buy": 157.5,
-        "action": "買超",
+        "net_buy": -1749.0,
+        "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-23",
-        "net_buy": 1372.0,
+        "net_buy": 153.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-24",
-        "net_buy": 625.4000000000001,
-        "action": "買超",
+        "net_buy": -718.0,
+        "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-25",
-        "net_buy": 96.70000000000005,
+        "net_buy": 551.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-26",
-        "net_buy": -2299.0,
+        "net_buy": -1803.0,
         "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-29",
-        "net_buy": -1382.8,
-        "action": "賣超",
+        "net_buy": 1190.0,
+        "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-06-30",
-        "net_buy": -1023.1999999999998,
-        "action": "賣超",
+        "net_buy": 71.0,
+        "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-01",
-        "net_buy": -2373.1,
+        "net_buy": -1187.0,
         "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-02",
-        "net_buy": -451.0,
-        "action": "賣超",
+        "net_buy": 494.0,
+        "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-03",
-        "net_buy": -682.0,
+        "net_buy": -772.0,
         "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-06",
-        "net_buy": -3711.4,
+        "net_buy": -1660.0,
         "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-07",
-        "net_buy": -1674.9,
-        "action": "賣超",
+        "net_buy": 538.0,
+        "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-08",
-        "net_buy": -1302.1,
+        "net_buy": -855.0,
         "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-09",
-        "net_buy": -4263.0,
+        "net_buy": -1981.0,
         "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-13",
-        "net_buy": -4321.1,
+        "net_buy": -1138.0,
         "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-14",
-        "net_buy": -783.0,
-        "action": "賣超",
+        "net_buy": 376.0,
+        "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-15",
-        "net_buy": 570.0,
+        "net_buy": 441.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-16",
-        "net_buy": 2039.0,
+        "net_buy": 149.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-17",
-        "net_buy": 2009.4,
-        "action": "買超",
+        "net_buy": -1330.0,
+        "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-20",
-        "net_buy": 3086.1,
-        "action": "買超",
+        "net_buy": -26.0,
+        "action": "賣超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
       },
       {
         "date": "2026-07-21",
-        "net_buy": 1764.3,
+        "net_buy": 1215.0,
         "action": "買超",
         "horizon_days": 5,
-        "broker": "美商高盛(1480)"
+        "broker": "凱基-台北(9268)"
+      },
+      {
+        "date": "2026-07-22",
+        "net_buy": 551.0,
+        "action": "買超",
+        "horizon_days": 5,
+        "broker": "凱基-台北(9268)"
+      },
+      {
+        "date": "2026-07-23",
+        "net_buy": 481.0,
+        "action": "買超",
+        "horizon_days": 5,
+        "broker": "凱基-台北(9268)"
+      },
+      {
+        "date": "2026-07-24",
+        "net_buy": -2535.0,
+        "action": "賣超",
+        "horizon_days": 5,
+        "broker": "凱基-台北(9268)"
+      },
+      {
+        "date": "2026-07-27",
+        "net_buy": -132.0,
+        "action": "賣超",
+        "horizon_days": 5,
+        "broker": "凱基-台北(9268)"
+      },
+      {
+        "date": "2026-07-28",
+        "net_buy": 372.0,
+        "action": "買超",
+        "horizon_days": 5,
+        "broker": "凱基-台北(9268)"
+      },
+      {
+        "date": "2026-07-29",
+        "net_buy": -389.0,
+        "action": "賣超",
+        "horizon_days": 5,
+        "broker": "凱基-台北(9268)"
+      },
+      {
+        "date": "2026-07-30",
+        "net_buy": -819.0,
+        "action": "賣超",
+        "horizon_days": 5,
+        "broker": "凱基-台北(9268)"
       }
     ],
     "horizons": {
       "5": {
         "rows": [
           {
+            "broker": "凱基-台北(9268)",
+            "horizon_days": 5,
+            "buy_signals": 34,
+            "buy_win_rate": 0.5882352941176471,
+            "buy_avg_return": 4.727313455079158,
+            "sell_signals": 21,
+            "sell_win_rate": 0.5238095238095238,
+            "sell_avg_return": 0.93985207168349,
+            "latest_net_buy": -819.0,
+            "net20": -7020.0,
+            "score": 2.1386543471916233
+          },
+          {
             "broker": "美商高盛(1480)",
             "horizon_days": 5,
             "buy_signals": 35,
-            "buy_win_rate": 0.6571428571428571,
-            "buy_avg_return": 2.5947554632849985,
+            "buy_win_rate": 0.5714285714285714,
+            "buy_avg_return": 1.6576499615563765,
             "sell_signals": 20,
             "sell_win_rate": 0.5,
             "sell_avg_return": -4.148700765643246,
-            "latest_net_buy": 0.0,
-            "net20": -12498.800000000001,
-            "score": 2.380831428475436
+            "latest_net_buy": -3473.0,
+            "net20": -9693.7,
+            "score": 2.064301607304769
           },
           {
-            "broker": "台灣摩根士丹利(1470)",
+            "broker": "凱基-士林(9238)",
             "horizon_days": 5,
-            "buy_signals": 25,
-            "buy_win_rate": 0.68,
-            "buy_avg_return": 2.124875890899499,
-            "sell_signals": 30,
-            "sell_win_rate": 0.4666666666666667,
-            "sell_avg_return": -4.022285308511746,
-            "latest_net_buy": 0.0,
-            "net20": -5456.6,
-            "score": 2.3563600579588946
+            "buy_signals": 21,
+            "buy_win_rate": 0.5714285714285714,
+            "buy_avg_return": 0.6651669674624373,
+            "sell_signals": 33,
+            "sell_win_rate": 0.45454545454545453,
+            "sell_avg_return": -3.885104328357942,
+            "latest_net_buy": 702.0,
+            "net20": 3667.0,
+            "score": 2.0217148265981453
           },
           {
             "broker": "中國信託(6160)",
             "horizon_days": 5,
-            "buy_signals": 24,
-            "buy_win_rate": 0.5,
-            "buy_avg_return": 3.226263332358006,
-            "sell_signals": 31,
-            "sell_win_rate": 0.3225806451612903,
-            "sell_avg_return": -3.1083915016531525,
+            "buy_signals": 23,
+            "buy_win_rate": 0.4782608695652174,
+            "buy_avg_return": 3.020793489557241,
+            "sell_signals": 30,
+            "sell_win_rate": 0.36666666666666664,
+            "sell_avg_return": -2.750423873260332,
             "latest_net_buy": 0.0,
-            "net20": -1435.0,
-            "score": 1.7651305847234433
+            "net20": -1506.3,
+            "score": 1.6725496413884684
           }
         ],
         "best": {
-          "broker": "美商高盛(1480)",
+          "broker": "凱基-台北(9268)",
           "horizon_days": 5,
-          "buy_signals": 35,
-          "buy_win_rate": 0.6571428571428571,
-          "buy_avg_return": 2.5947554632849985,
-          "sell_signals": 20,
-          "sell_win_rate": 0.5,
-          "sell_avg_return": -4.148700765643246,
-          "latest_net_buy": 0.0,
-          "net20": -12498.800000000001,
-          "score": 2.380831428475436
+          "buy_signals": 34,
+          "buy_win_rate": 0.5882352941176471,
+          "buy_avg_return": 4.727313455079158,
+          "sell_signals": 21,
+          "sell_win_rate": 0.5238095238095238,
+          "sell_avg_return": 0.93985207168349,
+          "latest_net_buy": -819.0,
+          "net20": -7020.0,
+          "score": 2.1386543471916233
         },
         "signals": [
           {
-            "date": "2026-05-18",
-            "net_buy": 812.2999999999997,
-            "action": "買超",
-            "horizon_days": 5,
-            "broker": "美商高盛(1480)"
-          },
-          {
-            "date": "2026-05-19",
-            "net_buy": 827.5999999999999,
-            "action": "買超",
-            "horizon_days": 5,
-            "broker": "美商高盛(1480)"
-          },
-          {
-            "date": "2026-05-20",
-            "net_buy": -480.6999999999998,
-            "action": "賣超",
-            "horizon_days": 5,
-            "broker": "美商高盛(1480)"
-          },
-          {
-            "date": "2026-05-21",
-            "net_buy": 1218.9,
-            "action": "買超",
-            "horizon_days": 5,
-            "broker": "美商高盛(1480)"
-          },
-          {
-            "date": "2026-05-22",
-            "net_buy": -1472.0,
-            "action": "賣超",
-            "horizon_days": 5,
-            "broker": "美商高盛(1480)"
-          },
-          {
-            "date": "2026-05-25",
-            "net_buy": -2273.0,
-            "action": "賣超",
-            "horizon_days": 5,
-            "broker": "美商高盛(1480)"
-          },
-          {
-            "date": "2026-05-26",
-            "net_buy": -5567.9,
-            "action": "賣超",
-            "horizon_days": 5,
-            "broker": "美商高盛(1480)"
-          },
-          {
             "date": "2026-05-27",
-            "net_buy": -5992.8,
-            "action": "賣超",
+            "net_buy": 179.0,
+            "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-05-28",
-            "net_buy": 1023.7000000000003,
+            "net_buy": 2018.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-05-29",
-            "net_buy": -6176.799999999999,
+            "net_buy": -937.0,
             "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-01",
-            "net_buy": 491.1999999999998,
-            "action": "買超",
+            "net_buy": -774.0,
+            "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-02",
-            "net_buy": 1965.2000000000007,
-            "action": "買超",
+            "net_buy": -3185.0,
+            "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-03",
-            "net_buy": 2292.2999999999997,
-            "action": "買超",
+            "net_buy": -2267.0,
+            "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-04",
-            "net_buy": 1077.6999999999998,
+            "net_buy": 2714.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-05",
-            "net_buy": 3593.0,
+            "net_buy": 774.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-08",
-            "net_buy": 641.0,
+            "net_buy": 65.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-09",
-            "net_buy": 4154.9,
-            "action": "買超",
+            "net_buy": -2764.0,
+            "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-10",
-            "net_buy": 1455.5,
+            "net_buy": 1993.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-11",
-            "net_buy": 748.5,
-            "action": "買超",
+            "net_buy": -39.0,
+            "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-12",
-            "net_buy": -1033.6,
+            "net_buy": -973.0,
             "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-15",
-            "net_buy": 947.0,
+            "net_buy": 144.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-16",
-            "net_buy": 464.70000000000005,
+            "net_buy": 354.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-17",
-            "net_buy": 887.0999999999999,
+            "net_buy": 950.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-18",
-            "net_buy": -881.0,
-            "action": "賣超",
+            "net_buy": 41.0,
+            "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-22",
-            "net_buy": 157.5,
-            "action": "買超",
+            "net_buy": -1749.0,
+            "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-23",
-            "net_buy": 1372.0,
+            "net_buy": 153.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-24",
-            "net_buy": 625.4000000000001,
-            "action": "買超",
+            "net_buy": -718.0,
+            "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-25",
-            "net_buy": 96.70000000000005,
+            "net_buy": 551.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-26",
-            "net_buy": -2299.0,
+            "net_buy": -1803.0,
             "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-29",
-            "net_buy": -1382.8,
-            "action": "賣超",
+            "net_buy": 1190.0,
+            "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-06-30",
-            "net_buy": -1023.1999999999998,
-            "action": "賣超",
+            "net_buy": 71.0,
+            "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-01",
-            "net_buy": -2373.1,
+            "net_buy": -1187.0,
             "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-02",
-            "net_buy": -451.0,
-            "action": "賣超",
+            "net_buy": 494.0,
+            "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-03",
-            "net_buy": -682.0,
+            "net_buy": -772.0,
             "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-06",
-            "net_buy": -3711.4,
+            "net_buy": -1660.0,
             "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-07",
-            "net_buy": -1674.9,
-            "action": "賣超",
+            "net_buy": 538.0,
+            "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-08",
-            "net_buy": -1302.1,
+            "net_buy": -855.0,
             "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-09",
-            "net_buy": -4263.0,
+            "net_buy": -1981.0,
             "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-13",
-            "net_buy": -4321.1,
+            "net_buy": -1138.0,
             "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-14",
-            "net_buy": -783.0,
-            "action": "賣超",
+            "net_buy": 376.0,
+            "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-15",
-            "net_buy": 570.0,
+            "net_buy": 441.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-16",
-            "net_buy": 2039.0,
+            "net_buy": 149.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-17",
-            "net_buy": 2009.4,
-            "action": "買超",
+            "net_buy": -1330.0,
+            "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-20",
-            "net_buy": 3086.1,
-            "action": "買超",
+            "net_buy": -26.0,
+            "action": "賣超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
           },
           {
             "date": "2026-07-21",
-            "net_buy": 1764.3,
+            "net_buy": 1215.0,
             "action": "買超",
             "horizon_days": 5,
-            "broker": "美商高盛(1480)"
+            "broker": "凱基-台北(9268)"
+          },
+          {
+            "date": "2026-07-22",
+            "net_buy": 551.0,
+            "action": "買超",
+            "horizon_days": 5,
+            "broker": "凱基-台北(9268)"
+          },
+          {
+            "date": "2026-07-23",
+            "net_buy": 481.0,
+            "action": "買超",
+            "horizon_days": 5,
+            "broker": "凱基-台北(9268)"
+          },
+          {
+            "date": "2026-07-24",
+            "net_buy": -2535.0,
+            "action": "賣超",
+            "horizon_days": 5,
+            "broker": "凱基-台北(9268)"
+          },
+          {
+            "date": "2026-07-27",
+            "net_buy": -132.0,
+            "action": "賣超",
+            "horizon_days": 5,
+            "broker": "凱基-台北(9268)"
+          },
+          {
+            "date": "2026-07-28",
+            "net_buy": 372.0,
+            "action": "買超",
+            "horizon_days": 5,
+            "broker": "凱基-台北(9268)"
+          },
+          {
+            "date": "2026-07-29",
+            "net_buy": -389.0,
+            "action": "賣超",
+            "horizon_days": 5,
+            "broker": "凱基-台北(9268)"
+          },
+          {
+            "date": "2026-07-30",
+            "net_buy": -819.0,
+            "action": "賣超",
+            "horizon_days": 5,
+            "broker": "凱基-台北(9268)"
           }
         ]
       },
@@ -3057,23 +3134,260 @@
     "chart_series": [
       {
         "rank": 1,
-        "broker": "美商高盛(1480)",
+        "broker": "凱基-台北(9268)",
         "horizon_days": 5,
-        "buy_win_rate": 0.6571428571428571,
-        "buy_signals": 35,
+        "buy_win_rate": 0.5882352941176471,
+        "buy_signals": 34,
         "records": [
           {
-            "date": "2026-04-30",
-            "net_buy": 2237.0
+            "date": "2026-05-06",
+            "net_buy": 119.0
           },
           {
-            "date": "2026-05-04",
-            "net_buy": 518.0
+            "date": "2026-05-07",
+            "net_buy": 1246.0
           },
           {
-            "date": "2026-05-05",
-            "net_buy": 1172.9
+            "date": "2026-05-08",
+            "net_buy": 950.0
           },
+          {
+            "date": "2026-05-11",
+            "net_buy": -2012.0
+          },
+          {
+            "date": "2026-05-12",
+            "net_buy": -1430.0
+          },
+          {
+            "date": "2026-05-13",
+            "net_buy": 3884.0
+          },
+          {
+            "date": "2026-05-14",
+            "net_buy": 3856.0
+          },
+          {
+            "date": "2026-05-15",
+            "net_buy": 1578.0
+          },
+          {
+            "date": "2026-05-18",
+            "net_buy": 741.0
+          },
+          {
+            "date": "2026-05-19",
+            "net_buy": 2155.0
+          },
+          {
+            "date": "2026-05-20",
+            "net_buy": 1032.0
+          },
+          {
+            "date": "2026-05-21",
+            "net_buy": 66.0
+          },
+          {
+            "date": "2026-05-22",
+            "net_buy": 5166.0
+          },
+          {
+            "date": "2026-05-25",
+            "net_buy": 2688.0
+          },
+          {
+            "date": "2026-05-26",
+            "net_buy": -9563.0
+          },
+          {
+            "date": "2026-05-27",
+            "net_buy": 179.0
+          },
+          {
+            "date": "2026-05-28",
+            "net_buy": 2018.0
+          },
+          {
+            "date": "2026-05-29",
+            "net_buy": -937.0
+          },
+          {
+            "date": "2026-06-01",
+            "net_buy": -774.0
+          },
+          {
+            "date": "2026-06-02",
+            "net_buy": -3185.0
+          },
+          {
+            "date": "2026-06-03",
+            "net_buy": -2267.0
+          },
+          {
+            "date": "2026-06-04",
+            "net_buy": 2714.0
+          },
+          {
+            "date": "2026-06-05",
+            "net_buy": 774.0
+          },
+          {
+            "date": "2026-06-08",
+            "net_buy": 65.0
+          },
+          {
+            "date": "2026-06-09",
+            "net_buy": -2764.0
+          },
+          {
+            "date": "2026-06-10",
+            "net_buy": 1993.0
+          },
+          {
+            "date": "2026-06-11",
+            "net_buy": -39.0
+          },
+          {
+            "date": "2026-06-12",
+            "net_buy": -973.0
+          },
+          {
+            "date": "2026-06-15",
+            "net_buy": 144.0
+          },
+          {
+            "date": "2026-06-16",
+            "net_buy": 354.0
+          },
+          {
+            "date": "2026-06-17",
+            "net_buy": 950.0
+          },
+          {
+            "date": "2026-06-18",
+            "net_buy": 41.0
+          },
+          {
+            "date": "2026-06-22",
+            "net_buy": -1749.0
+          },
+          {
+            "date": "2026-06-23",
+            "net_buy": 153.0
+          },
+          {
+            "date": "2026-06-24",
+            "net_buy": -718.0
+          },
+          {
+            "date": "2026-06-25",
+            "net_buy": 551.0
+          },
+          {
+            "date": "2026-06-26",
+            "net_buy": -1803.0
+          },
+          {
+            "date": "2026-06-29",
+            "net_buy": 1190.0
+          },
+          {
+            "date": "2026-06-30",
+            "net_buy": 71.0
+          },
+          {
+            "date": "2026-07-01",
+            "net_buy": -1187.0
+          },
+          {
+            "date": "2026-07-02",
+            "net_buy": 494.0
+          },
+          {
+            "date": "2026-07-03",
+            "net_buy": -772.0
+          },
+          {
+            "date": "2026-07-06",
+            "net_buy": -1660.0
+          },
+          {
+            "date": "2026-07-07",
+            "net_buy": 538.0
+          },
+          {
+            "date": "2026-07-08",
+            "net_buy": -855.0
+          },
+          {
+            "date": "2026-07-09",
+            "net_buy": -1981.0
+          },
+          {
+            "date": "2026-07-13",
+            "net_buy": -1138.0
+          },
+          {
+            "date": "2026-07-14",
+            "net_buy": 376.0
+          },
+          {
+            "date": "2026-07-15",
+            "net_buy": 441.0
+          },
+          {
+            "date": "2026-07-16",
+            "net_buy": 149.0
+          },
+          {
+            "date": "2026-07-17",
+            "net_buy": -1330.0
+          },
+          {
+            "date": "2026-07-20",
+            "net_buy": -26.0
+          },
+          {
+            "date": "2026-07-21",
+            "net_buy": 1215.0
+          },
+          {
+            "date": "2026-07-22",
+            "net_buy": 551.0
+          },
+          {
+            "date": "2026-07-23",
+            "net_buy": 481.0
+          },
+          {
+            "date": "2026-07-24",
+            "net_buy": -2535.0
+          },
+          {
+            "date": "2026-07-27",
+            "net_buy": -132.0
+          },
+          {
+            "date": "2026-07-28",
+            "net_buy": 372.0
+          },
+          {
+            "date": "2026-07-29",
+            "net_buy": -389.0
+          },
+          {
+            "date": "2026-07-30",
+            "net_buy": -819.0
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "broker": "美商高盛(1480)",
+        "horizon_days": 5,
+        "buy_win_rate": 0.5714285714285714,
+        "buy_signals": 35,
+        "records": [
           {
             "date": "2026-05-06",
             "net_buy": 2487.1
@@ -3285,472 +3599,279 @@
           {
             "date": "2026-07-21",
             "net_buy": 1764.3
-          }
-        ]
-      },
-      {
-        "rank": 2,
-        "broker": "台灣摩根士丹利(1470)",
-        "horizon_days": 5,
-        "buy_win_rate": 0.68,
-        "buy_signals": 25,
-        "records": [
-          {
-            "date": "2026-04-30",
-            "net_buy": 436.0
           },
           {
-            "date": "2026-05-04",
-            "net_buy": -1399.1
+            "date": "2026-07-22",
+            "net_buy": 4057.0
           },
           {
-            "date": "2026-05-05",
-            "net_buy": -505.6
+            "date": "2026-07-23",
+            "net_buy": 3068.0
           },
           {
-            "date": "2026-05-06",
-            "net_buy": 2673.0
+            "date": "2026-07-24",
+            "net_buy": -1267.0
           },
           {
-            "date": "2026-05-07",
-            "net_buy": 1358.0
+            "date": "2026-07-27",
+            "net_buy": -1830.0
           },
           {
-            "date": "2026-05-08",
-            "net_buy": 1367.1
+            "date": "2026-07-28",
+            "net_buy": -195.0
           },
           {
-            "date": "2026-05-11",
-            "net_buy": 1390.2
+            "date": "2026-07-29",
+            "net_buy": -2334.0
           },
           {
-            "date": "2026-05-12",
-            "net_buy": -2183.0
-          },
-          {
-            "date": "2026-05-13",
-            "net_buy": 24136.0
-          },
-          {
-            "date": "2026-05-14",
-            "net_buy": -198.5
-          },
-          {
-            "date": "2026-05-15",
-            "net_buy": 4054.0
-          },
-          {
-            "date": "2026-05-18",
-            "net_buy": -535.1999999999998
-          },
-          {
-            "date": "2026-05-19",
-            "net_buy": -1932.0
-          },
-          {
-            "date": "2026-05-20",
-            "net_buy": -4388.0
-          },
-          {
-            "date": "2026-05-21",
-            "net_buy": 2427.9
-          },
-          {
-            "date": "2026-05-22",
-            "net_buy": -3144.1
-          },
-          {
-            "date": "2026-05-25",
-            "net_buy": -18918.8
-          },
-          {
-            "date": "2026-05-26",
-            "net_buy": -5604.0
-          },
-          {
-            "date": "2026-05-27",
-            "net_buy": -3609.7
-          },
-          {
-            "date": "2026-05-28",
-            "net_buy": 6542.2
-          },
-          {
-            "date": "2026-05-29",
-            "net_buy": 108.39999999999964
-          },
-          {
-            "date": "2026-06-01",
-            "net_buy": -7302.0
-          },
-          {
-            "date": "2026-06-02",
-            "net_buy": -848.0
-          },
-          {
-            "date": "2026-06-03",
-            "net_buy": 7806.9
-          },
-          {
-            "date": "2026-06-04",
-            "net_buy": 686.1999999999998
-          },
-          {
-            "date": "2026-06-05",
-            "net_buy": 3274.0
-          },
-          {
-            "date": "2026-06-08",
-            "net_buy": 218.0
-          },
-          {
-            "date": "2026-06-09",
-            "net_buy": -3821.7
-          },
-          {
-            "date": "2026-06-10",
-            "net_buy": 1767.0
-          },
-          {
-            "date": "2026-06-11",
-            "net_buy": 3959.0
-          },
-          {
-            "date": "2026-06-12",
-            "net_buy": -4178.0
-          },
-          {
-            "date": "2026-06-15",
-            "net_buy": -3405.0
-          },
-          {
-            "date": "2026-06-16",
-            "net_buy": -2710.0
-          },
-          {
-            "date": "2026-06-17",
-            "net_buy": 152.0
-          },
-          {
-            "date": "2026-06-18",
-            "net_buy": -706.1999999999998
-          },
-          {
-            "date": "2026-06-22",
-            "net_buy": -1021.0
-          },
-          {
-            "date": "2026-06-23",
-            "net_buy": 3863.6
-          },
-          {
-            "date": "2026-06-24",
-            "net_buy": 3622.7
-          },
-          {
-            "date": "2026-06-25",
-            "net_buy": -763.8999999999999
-          },
-          {
-            "date": "2026-06-26",
-            "net_buy": -3667.4
-          },
-          {
-            "date": "2026-06-29",
-            "net_buy": -36.0
-          },
-          {
-            "date": "2026-06-30",
-            "net_buy": 1309.8
-          },
-          {
-            "date": "2026-07-01",
-            "net_buy": -3166.0
-          },
-          {
-            "date": "2026-07-02",
-            "net_buy": 30.799999999999955
-          },
-          {
-            "date": "2026-07-03",
-            "net_buy": -408.0
-          },
-          {
-            "date": "2026-07-06",
-            "net_buy": -1189.2
-          },
-          {
-            "date": "2026-07-07",
-            "net_buy": -2180.0
-          },
-          {
-            "date": "2026-07-08",
-            "net_buy": -2512.0
-          },
-          {
-            "date": "2026-07-09",
-            "net_buy": 1731.5
-          },
-          {
-            "date": "2026-07-13",
-            "net_buy": -10835.9
-          },
-          {
-            "date": "2026-07-14",
-            "net_buy": -1614.6
-          },
-          {
-            "date": "2026-07-15",
-            "net_buy": -2801.2
-          },
-          {
-            "date": "2026-07-16",
-            "net_buy": 3914.7
-          },
-          {
-            "date": "2026-07-17",
-            "net_buy": 7956.5
-          },
-          {
-            "date": "2026-07-20",
-            "net_buy": 1175.0
-          },
-          {
-            "date": "2026-07-21",
-            "net_buy": 3168.0
+            "date": "2026-07-30",
+            "net_buy": -3473.0
           }
         ]
       },
       {
         "rank": 3,
-        "broker": "中國信託(6160)",
+        "broker": "凱基-士林(9238)",
         "horizon_days": 5,
-        "buy_win_rate": 0.5,
-        "buy_signals": 24,
+        "buy_win_rate": 0.5714285714285714,
+        "buy_signals": 21,
         "records": [
           {
-            "date": "2026-04-30",
-            "net_buy": 11.200000000000001
-          },
-          {
-            "date": "2026-05-04",
-            "net_buy": -24.700000000000003
-          },
-          {
-            "date": "2026-05-05",
-            "net_buy": -61.2
-          },
-          {
             "date": "2026-05-06",
-            "net_buy": -133.2
+            "net_buy": -28.0
           },
           {
             "date": "2026-05-07",
-            "net_buy": -918.8000000000001
+            "net_buy": -528.0
           },
           {
             "date": "2026-05-08",
-            "net_buy": 16.799999999999997
+            "net_buy": -3696.0
           },
           {
             "date": "2026-05-11",
-            "net_buy": -26.800000000000004
+            "net_buy": -3.0
           },
           {
             "date": "2026-05-12",
-            "net_buy": -47.900000000000006
+            "net_buy": 15.0
           },
           {
             "date": "2026-05-13",
-            "net_buy": -425.40000000000003
+            "net_buy": -2218.0
           },
           {
             "date": "2026-05-14",
-            "net_buy": -303.29999999999995
+            "net_buy": 88.0
           },
           {
             "date": "2026-05-15",
-            "net_buy": -188.60000000000002
+            "net_buy": 9.0
           },
           {
             "date": "2026-05-18",
-            "net_buy": -236.40000000000003
+            "net_buy": -11.0
           },
           {
             "date": "2026-05-19",
-            "net_buy": 193.10000000000002
+            "net_buy": -8.0
           },
           {
             "date": "2026-05-20",
-            "net_buy": -1091.5
+            "net_buy": -14.0
           },
           {
             "date": "2026-05-21",
-            "net_buy": 42.599999999999994
+            "net_buy": -32.0
           },
           {
             "date": "2026-05-22",
-            "net_buy": -539.5999999999999
+            "net_buy": -60.0
           },
           {
             "date": "2026-05-25",
-            "net_buy": 301.2
+            "net_buy": -969.0
           },
           {
             "date": "2026-05-26",
-            "net_buy": 512.6999999999999
+            "net_buy": -102.0
           },
           {
             "date": "2026-05-27",
-            "net_buy": 59.80000000000001
+            "net_buy": -3.0
           },
           {
             "date": "2026-05-28",
-            "net_buy": -96.29999999999995
+            "net_buy": 167.0
           },
           {
             "date": "2026-05-29",
-            "net_buy": -69.5
+            "net_buy": -2213.0
           },
           {
             "date": "2026-06-01",
-            "net_buy": 741.0
+            "net_buy": -9080.0
           },
           {
             "date": "2026-06-02",
-            "net_buy": 248.19999999999993
+            "net_buy": -211.0
           },
           {
             "date": "2026-06-03",
-            "net_buy": -80.09999999999991
+            "net_buy": -19.0
           },
           {
             "date": "2026-06-04",
-            "net_buy": 63.69999999999999
+            "net_buy": 27.0
           },
           {
             "date": "2026-06-05",
-            "net_buy": -91.39999999999998
+            "net_buy": 2.0
           },
           {
             "date": "2026-06-08",
-            "net_buy": 355.7
+            "net_buy": 16.0
           },
           {
             "date": "2026-06-09",
-            "net_buy": -204.39999999999998
+            "net_buy": -112.0
           },
           {
             "date": "2026-06-10",
-            "net_buy": -139.3
+            "net_buy": -3.0
           },
           {
             "date": "2026-06-11",
-            "net_buy": -93.1
+            "net_buy": -118.0
           },
           {
             "date": "2026-06-12",
-            "net_buy": 136.2
+            "net_buy": 25.0
           },
           {
             "date": "2026-06-15",
-            "net_buy": 50.10000000000001
+            "net_buy": -1.0
           },
           {
             "date": "2026-06-16",
-            "net_buy": -39.6
-          },
-          {
-            "date": "2026-06-17",
-            "net_buy": -86.80000000000001
+            "net_buy": -29.0
           },
           {
             "date": "2026-06-18",
-            "net_buy": 74.9
+            "net_buy": -17.0
           },
           {
             "date": "2026-06-22",
-            "net_buy": 148.60000000000002
+            "net_buy": -1.0
           },
           {
             "date": "2026-06-23",
-            "net_buy": -65.0
+            "net_buy": -1.0
           },
           {
             "date": "2026-06-24",
-            "net_buy": -42.699999999999996
+            "net_buy": 8.0
           },
           {
             "date": "2026-06-25",
-            "net_buy": -27.099999999999994
+            "net_buy": -6.0
           },
           {
             "date": "2026-06-26",
-            "net_buy": -51.8
+            "net_buy": 7.0
           },
           {
             "date": "2026-06-29",
-            "net_buy": 19.1
+            "net_buy": 13.0
           },
           {
             "date": "2026-06-30",
-            "net_buy": 46.80000000000001
+            "net_buy": -8.0
           },
           {
             "date": "2026-07-01",
-            "net_buy": 5.400000000000006
+            "net_buy": 1.0
           },
           {
             "date": "2026-07-02",
-            "net_buy": -410.59999999999997
+            "net_buy": -9.0
           },
           {
             "date": "2026-07-03",
-            "net_buy": -11.800000000000004
+            "net_buy": 8.0
           },
           {
             "date": "2026-07-06",
-            "net_buy": -24.000000000000004
+            "net_buy": -3.0
           },
           {
             "date": "2026-07-07",
-            "net_buy": 5.799999999999997
+            "net_buy": 1.0
           },
           {
             "date": "2026-07-08",
-            "net_buy": -49.699999999999996
+            "net_buy": -3.0
           },
           {
             "date": "2026-07-09",
-            "net_buy": -62.89999999999998
+            "net_buy": -76.0
           },
           {
             "date": "2026-07-13",
-            "net_buy": 87.29999999999998
+            "net_buy": 17.0
           },
           {
             "date": "2026-07-14",
-            "net_buy": 19.499999999999993
+            "net_buy": 102.0
           },
           {
             "date": "2026-07-15",
-            "net_buy": 71.2
+            "net_buy": 21.0
           },
           {
             "date": "2026-07-16",
-            "net_buy": 6.5
+            "net_buy": 112.0
           },
           {
             "date": "2026-07-17",
-            "net_buy": 2.200000000000003
+            "net_buy": 2018.0
           },
           {
             "date": "2026-07-20",
-            "net_buy": -7.300000000000004
+            "net_buy": 796.0
           },
           {
             "date": "2026-07-21",
-            "net_buy": -1132.5
+            "net_buy": -10.0
+          },
+          {
+            "date": "2026-07-22",
+            "net_buy": -10.0
+          },
+          {
+            "date": "2026-07-23",
+            "net_buy": 5.0
+          },
+          {
+            "date": "2026-07-24",
+            "net_buy": -15.0
+          },
+          {
+            "date": "2026-07-27",
+            "net_buy": 3.0
+          },
+          {
+            "date": "2026-07-28",
+            "net_buy": 13.0
+          },
+          {
+            "date": "2026-07-29",
+            "net_buy": -5.0
+          },
+          {
+            "date": "2026-07-30",
+            "net_buy": 702.0
           }
         ]
       }
@@ -3760,14 +3881,62 @@
     {
       "region": "國內",
       "bias": "利多",
-      "event_type": "營收",
-      "title": "【即時新聞】雲端大廠擴產！英業達(2356)營收爆發，這「3檔概念股」資金輪動升溫？",
-      "source": "CMoney投資網誌",
-      "published": "2026-07-24 11:35",
-      "published_ts": "2026-07-24T11:35:45+08:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUmR5YnB4ZjUyZVVWS0Y2V2J6VzJ0RUJLQUxuYVEyT2ZEdk1TXzB0TndqVEN3TDRORXVXWlBtam5NQjkyRVNsNVc0TmpVdWpkbmM3VjNjZ0tpN2RJbjhTNDB6X3FjVTRIY0dubkhKYVdBUUJBcjVoX0ZKWTBfRE9LdEVhUDlzQjFKeDFCSEVtOHI?oc=5",
+      "event_type": "股價",
+      "title": "〈焦點股〉英業達擴大台美泰投資攻AI商機 股價逆風上漲",
+      "source": "優分析UAnalyze",
+      "published": "2026-07-29 17:06",
+      "published_ts": "2026-07-29T17:06:27+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9QcW5RdXVxRVNsVmdqZjJoMi1jU0hxSlAzeFVybl9mRm1MNVUxcl9GaDR6eWg0SmJwWHBIcDJneW1JVlR2ZU5EYTZhU2hzUXlSMGUyS053?oc=5",
       "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "key_point": "偏多訊號；觀察月營收年增與近 3 個月動能是否延續",
+      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "signal_grade": "B",
+      "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "產業",
+      "title": "Google 上修全年資本支出 廣達、鴻海、英業達齊漲",
+      "source": "經濟日報",
+      "published": "2026-07-29 17:00",
+      "published_ts": "2026-07-29T17:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rVnZHVEpUVDVJU3k4NjBQUEVLUi1uNGN4XzhBN1NLY1VyaHZDdUxUYWJycHJTS3dETmNzdWVseXpJc2x2WlFBYTU3WHJhTGtCdlpnQjZXLVJ5UdIBX0FVX3lxTFBIcWhUY3ItTE9pQ3l5Y0dUNjZnWUhJOFZLNmlFR2xzSE9RN29NOVljOGNFclpyVzUzR2NmVWpGMThYYXUtaHdRZWZBQUdPTnI1SjdNQmNwNU9JTTRJeWhr?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 3,
+      "source_tier": "主流財經",
+      "signal_grade": "B",
+      "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "財報",
+      "title": "英業達(2356)守穩六十元，市場押注獲利轉換先看哪個訊號-王澤明",
+      "source": "CMoney投資網誌",
+      "published": "2026-07-29 12:33",
+      "published_ts": "2026-07-29T12:33:58+08:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQklvb1VjVURJSmZDME04dzRVMlM4Q1A5ZFFuN1JhUWlrQ1IwbmhTS1doVmVPOEdiYWZFTmlrUHRqMDRHWFZZcGtMZVlYQ21LMnpmYzN1NWFwZGtfWjNCMnBQNDJFdHNzSXFkOU9GTWFFZGxCZzl2MDRBeG5iOXRxb3duSQ?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；檢查 EPS、毛利率與營益率是否支撐估值",
+      "source_score": 1,
+      "source_tier": "輔助訊號",
+      "signal_grade": "B",
+      "signal_grade_note": "一般可信，需搭配量價確認"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "訂單",
+      "title": "AI訂單大爆發？英業達再砸181億元強化台美泰布局",
+      "source": "CMoney",
+      "published": "2026-07-28 21:53",
+      "published_ts": "2026-07-28T21:53:35+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE14ZDdOam5pUFY5djlIS0ZXTGFUX2M1dDFtNXJWZVZoSm9WM3F4cVhrLWtlS2lWeUEwX0E1enVodWN4THVfRnpnb3ZkZzNmZ2k5LWFlVGdqTzI?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；確認訂單能見度、認列時程與毛利率",
       "source_score": 1,
       "source_tier": "輔助訊號",
       "signal_grade": "B",
@@ -3777,15 +3946,15 @@
       "region": "國內",
       "bias": "中性",
       "event_type": "產業",
-      "title": "焦點股》英業達：填息行情續旺 帶量奮起",
-      "source": "自由財經",
-      "published": "2026-07-24 09:47",
-      "published_ts": "2026-07-24T09:47:20+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1GaWV2cUhVdVVkNHA4SnF6V21zMG1uUjcwZEcxVExqMllyaFR4c2ZObnFFbFA5V0ZVaFcyU1JTa1JXLS1Ic3FWd3UwQ1JuUERtb0YwUjN4Z2dvTENndDl30gFkQVVfeXFMUDI5SWU0OG1FeTA1ZUxqRjJWaVllWEpOMmVsc0t1VG9temRMajVCR09LNXdGMTVNbmZxOE85ckpWbU14QjFVV2xqQndNSzBTQllRdWFMclB5ZGc0cFhCTWtDaW9Rdw?oc=5",
+      "title": "英業達擴大北美投資 增資1.1億美元",
+      "source": "UDN",
+      "published": "2026-07-28 15:28",
+      "published_ts": "2026-07-28T15:28:32+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1uRFRmZUxlZ005aURrYTg0WjFfYkRxR3ZwcFNkTXlENWZYRDdLM1RwUHBtSWdCNEdpbG5YeVBDOS1lNTBpWTR4b01peXVHT2FY0gFWQVVfeXFMT2ZwRTJWR1VZR2FSMVJGVTI0UkFUYmRBaTV1NjBkZEZiNnkyX1ZPRXl6SU51eG13amtyNGF3SVZPNEdNdm13blgtNVZreUk2Z0FaNzQ1dHc?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字",
       "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
-      "source_score": 3,
-      "source_tier": "主流財經",
+      "source_score": 2,
+      "source_tier": "一般來源",
       "signal_grade": "B",
       "signal_grade_note": "一般可信，需搭配量價確認"
     },
@@ -3807,17 +3976,17 @@
     },
     {
       "region": "國內",
-      "bias": "利多",
-      "event_type": "營收",
-      "title": "【09:08 即時新聞】英業達(2356)亮燈漲停72.8元，史上最高單月營收＋AI伺服器成長動能推升買盤追價",
-      "source": "CMoney投資網誌",
-      "published": "2026-07-09 15:00",
-      "published_ts": "2026-07-09T15:00:00+08:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQVhmd0lDVW14M3BDU2cwTjg3Q0dPNTZQWDZHZDB0c042eWMwdmZsS0FwZElfYVRsZEVobjJwTzh3WlJKMWdSRTVIOGZFeTlLVkhocnlFcEthZXN2TEdvMzQ5eTdBV0U3T2ozb3plOTJnVDFWSklXeHJRWUhLZER3dnNmamV4LXZuTnRqVHRR?oc=5",
-      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "key_point": "偏多訊號；觀察月營收年增與近 3 個月動能是否延續",
-      "source_score": 1,
-      "source_tier": "輔助訊號",
+      "bias": "中性",
+      "event_type": "產業",
+      "title": "英業達除息秀登場！填息2成後翻黑 暫陷貼息",
+      "source": "Yahoo股市",
+      "published": "2026-07-14 15:00",
+      "published_ts": "2026-07-14T15:00:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxOUmRfTnBNSU81VHpSeHZOUmtXTDJiazNuOExCSDloZzA3am9KRldOLXJ3OHlVZnVWeU1RUk5xUTJaYXlSOFBtTVBxZTB2N3JDanNtazlnTGhWVGhyOGVPREMycUZ3c2VOUUR5U2lHMVY5c0lTLTZmbWR6QjVXc2EzYjI4bUFtSUFwd0QwbTBBOVBlTzc0Y0pCeHZ6aUJwWVpBVWpNaE9FaFcwUURCSHV0UXhfTUYyczVDVWotXzNWbkIyYUJYanhVanBpSFBDNV9iREdoUzhZbHhlcE1XbmR0MGhiUEpUTF9YTTM0bDk4bC10U2llVWJOMFBfb2xPY29oYm9ZckNwR3ZCSDFBTWtGV3o3NXZlWGVhMVlYbTNqU1lOMWpnSmNac3hMQWo5V0tPc2h3QmhTUU5iSkp6Mi1leXNB?oc=5",
+      "reason": "標題未出現明確利多或利空關鍵字",
+      "key_point": "觀察訊號；作為背景訊號，需確認是否直接影響公司",
+      "source_score": 3,
+      "source_tier": "主流財經",
       "signal_grade": "B",
       "signal_grade_note": "一般可信，需搭配量價確認"
     },
@@ -3929,7 +4098,7 @@
       "bias": "中性",
       "event_type": "法說",
       "title": "(2356) 英業達法說會 2026/05、英業達財報、英業達展望、英業達財報投資亮點｜理柴知道:法說最速報! - 方格子",
-      "source": "Vocus",
+      "source": "vocus",
       "published": "2026-05-12 15:00",
       "published_ts": "2026-05-12T15:00:00+08:00",
       "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5zQ21SZkVzaDFjRmRCVXJvVHpxU2E1bnhXX0drNXY0T2JMSkllcUlWOWxSYXBFWV94a0tMWkllVmFPV1lva1FveWxrQm8wN3pKam9UWUpLV2VRMmZhMXfSAWNBVV95cUxNLTNaZ19KTFB5bWNtY0MtNzdMdU5HQ1NLdHpsSEZpc3Bnczk1ZXBuWkFjRzNSWTlOVTI4eEN3YTJYLWRHdlkwOWpqeEYyOEQ1M0E4QUlORHRMcFFra2p6TUpMR1U?oc=5",
@@ -3993,80 +4162,39 @@
       "kind": "法說會"
     }
   ],
-  "warrant_top_rows": [
-    {
-      "warrant_id": "030577",
-      "warrant_name": "英業達統一57購03",
-      "call_put": "認購",
-      "exercise_price": 52.74,
-      "trading_money": 0.0,
-      "trading_volume": 0.0
-    },
-    {
-      "warrant_id": "03486T",
-      "warrant_name": "英業達群益5C售03",
-      "call_put": "認售",
-      "exercise_price": 48.43,
-      "trading_money": 0.0,
-      "trading_volume": 0.0
-    },
-    {
-      "warrant_id": "036646",
-      "warrant_name": "英業達永豐56購01",
-      "call_put": "認購",
-      "exercise_price": 54.28,
-      "trading_money": 0.0,
-      "trading_volume": 0.0
-    },
-    {
-      "warrant_id": "038406",
-      "warrant_name": "英業達永豐56購02",
-      "call_put": "認購",
-      "exercise_price": 61.19,
-      "trading_money": 0.0,
-      "trading_volume": 0.0
-    },
-    {
-      "warrant_id": "038407",
-      "warrant_name": "英業達永豐56購03",
-      "call_put": "認購",
-      "exercise_price": 67.99,
-      "trading_money": 0.0,
-      "trading_volume": 0.0
-    }
-  ],
+  "warrant_top_rows": [],
   "prediction_history_status": "已記錄分週期預測快照，待後續交易日回測校準",
-  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-27\\index.html",
+  "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\2356_2026-07-31\\index.html",
   "llm_training_status": {
     "ok": true,
-    "count": 19362,
+    "count": 19478,
     "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\llm_technical_training_examples.jsonl",
     "dashboard": {
       "ok": true,
       "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\technical_training_dashboard.html",
       "summary": {
-        "generated_at": "2026-07-27T21:25:45+08:00",
-        "examples": 19362,
+        "generated_at": "2026-07-31T11:08:06+08:00",
+        "examples": 19478,
         "stocks": 318,
         "quality_counts": {
-          "高": 18595,
-          "中": 630,
-          "未標記": 85,
-          "低": 52
+          "高": 18689,
+          "中": 632,
+          "未標記": 100,
+          "低": 57
         },
         "industry_counts": {
           "其他": 3000,
           "觀光事業": 2640,
-          "電子工業": 1527,
-          "電子零組件業": 1264,
+          "電子零組件業": 1324,
+          "電子工業": 1249,
+          "半導體業": 1199,
           "貿易百貨": 1080,
           "生技醫療業": 962,
-          "半導體業": 930,
           "光電業": 820,
-          "電機機械": 608,
-          "通信網路業": 590,
+          "電機機械": 610,
+          "通信網路業": 592,
+          "其他電子業": 547,
           "電腦及週邊設備業": 490,
-          "其他電子業": 487,
           "其他電子類": 480,
           "電子商務業": 480,
           "創新版股票": 420,
@@ -4080,7 +4208,7 @@
           {
             "industry": "其他",
             "examples": 3000,
-            "example_pct": 15.5,
+            "example_pct": 15.4,
             "stocks": 50,
             "high_quality": 2974,
             "mid_quality": 25,
@@ -4104,35 +4232,48 @@
             "latest_sample_date": "2026-05-20"
           },
           {
-            "industry": "電子工業",
-            "examples": 1527,
-            "example_pct": 7.9,
-            "stocks": 25,
-            "high_quality": 1440,
-            "mid_quality": 64,
-            "low_quality": 13,
-            "unlabeled_quality": 10,
-            "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "電子工業通用樣本、DRAM / 利基型記憶體、ASIC交換晶片、DDR4 / DDR5",
-            "latest_sample_date": "2026-07-03"
-          },
-          {
             "industry": "電子零組件業",
-            "examples": 1264,
-            "example_pct": 6.5,
+            "examples": 1324,
+            "example_pct": 6.8,
             "stocks": 22,
-            "high_quality": 1171,
-            "mid_quality": 76,
+            "high_quality": 1232,
+            "mid_quality": 75,
             "low_quality": 13,
             "unlabeled_quality": 4,
             "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "電子零組件業通用樣本、PCB / HDI、CCL / 銅箔基板、MLCC / 被動元件",
+            "top_tags": "電子零組件業通用樣本、PCB / HDI、MLCC / 被動元件、CPO / 矽光子",
             "latest_sample_date": "2026-07-09"
+          },
+          {
+            "industry": "電子工業",
+            "examples": 1249,
+            "example_pct": 6.4,
+            "stocks": 24,
+            "high_quality": 1174,
+            "mid_quality": 54,
+            "low_quality": 10,
+            "unlabeled_quality": 11,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "電子工業通用樣本、ASIC交換晶片、AI伺服器 / GPU伺服器、AI伺服器ODM / EMS",
+            "latest_sample_date": "2026-07-22"
+          },
+          {
+            "industry": "半導體業",
+            "examples": 1199,
+            "example_pct": 6.2,
+            "stocks": 21,
+            "high_quality": 1088,
+            "mid_quality": 60,
+            "low_quality": 12,
+            "unlabeled_quality": 39,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "半導體業通用樣本、DRAM / 利基型記憶體、DDR4 / DDR5、NAND / NOR Flash",
+            "latest_sample_date": "2026-07-23"
           },
           {
             "industry": "貿易百貨",
             "examples": 1080,
-            "example_pct": 5.6,
+            "example_pct": 5.5,
             "stocks": 18,
             "high_quality": 1065,
             "mid_quality": 15,
@@ -4145,7 +4286,7 @@
           {
             "industry": "生技醫療業",
             "examples": 962,
-            "example_pct": 5.0,
+            "example_pct": 4.9,
             "stocks": 16,
             "high_quality": 932,
             "mid_quality": 28,
@@ -4154,19 +4295,6 @@
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "生技醫療業通用樣本、SSD / 記憶體模組",
             "latest_sample_date": "2026-07-02"
-          },
-          {
-            "industry": "半導體業",
-            "examples": 930,
-            "example_pct": 4.8,
-            "stocks": 20,
-            "high_quality": 856,
-            "mid_quality": 39,
-            "low_quality": 5,
-            "unlabeled_quality": 30,
-            "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "半導體業通用樣本、DRAM / 利基型記憶體、DDR4 / DDR5、NAND / NOR Flash",
-            "latest_sample_date": "2026-07-17"
           },
           {
             "industry": "光電業",
@@ -4183,29 +4311,42 @@
           },
           {
             "industry": "電機機械",
-            "examples": 608,
+            "examples": 610,
             "example_pct": 3.1,
             "stocks": 10,
-            "high_quality": 566,
-            "mid_quality": 34,
+            "high_quality": 567,
+            "mid_quality": 33,
             "low_quality": 0,
-            "unlabeled_quality": 8,
+            "unlabeled_quality": 10,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "電機機械通用樣本、儲能 / 電網、儲能系統、變壓器",
-            "latest_sample_date": "2026-07-09"
+            "latest_sample_date": "2026-07-21"
           },
           {
             "industry": "通信網路業",
-            "examples": 590,
+            "examples": 592,
             "example_pct": 3.0,
             "stocks": 8,
-            "high_quality": 500,
+            "high_quality": 499,
             "mid_quality": 60,
-            "low_quality": 10,
-            "unlabeled_quality": 20,
+            "low_quality": 11,
+            "unlabeled_quality": 22,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "光通訊模組、Optical Engine光引擎、通信網路業通用樣本、CPO / 矽光子",
-            "latest_sample_date": "2026-07-20"
+            "latest_sample_date": "2026-07-23"
+          },
+          {
+            "industry": "其他電子業",
+            "examples": 547,
+            "example_pct": 2.8,
+            "stocks": 11,
+            "high_quality": 519,
+            "mid_quality": 21,
+            "low_quality": 0,
+            "unlabeled_quality": 7,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "其他電子業通用樣本、液冷 / 散熱、液冷 / 水冷 / 散熱模組、AI伺服器 / GPU伺服器",
+            "latest_sample_date": "2026-07-06"
           },
           {
             "industry": "電腦及週邊設備業",
@@ -4218,33 +4359,20 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "電腦及週邊設備業通用樣本、AI伺服器 / GPU伺服器、AI伺服器ODM / EMS",
-            "latest_sample_date": "2026-05-25"
-          },
-          {
-            "industry": "其他電子業",
-            "examples": 487,
-            "example_pct": 2.5,
-            "stocks": 11,
-            "high_quality": 459,
-            "mid_quality": 21,
-            "low_quality": 0,
-            "unlabeled_quality": 7,
-            "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "其他電子業通用樣本、AI伺服器 / GPU伺服器、AI伺服器ODM / EMS、CPO / 矽光子",
-            "latest_sample_date": "2026-07-06"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "industry": "其他電子類",
             "examples": 480,
             "example_pct": 2.5,
             "stocks": 8,
-            "high_quality": 450,
-            "mid_quality": 30,
+            "high_quality": 456,
+            "mid_quality": 24,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "其他電子類通用樣本",
-            "latest_sample_date": "2026-04-07"
+            "latest_sample_date": "2026-06-29"
           },
           {
             "industry": "電子商務業",
@@ -4288,7 +4416,7 @@
           {
             "industry": "資訊服務業",
             "examples": 360,
-            "example_pct": 1.9,
+            "example_pct": 1.8,
             "stocks": 6,
             "high_quality": 344,
             "mid_quality": 16,
@@ -4301,7 +4429,7 @@
           {
             "industry": "化學工業",
             "examples": 340,
-            "example_pct": 1.8,
+            "example_pct": 1.7,
             "stocks": 5,
             "high_quality": 334,
             "mid_quality": 6,
@@ -4355,13 +4483,13 @@
             "examples": 180,
             "example_pct": 0.9,
             "stocks": 3,
-            "high_quality": 178,
-            "mid_quality": 2,
+            "high_quality": 177,
+            "mid_quality": 3,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "塑膠工業通用樣本、CCL / 銅箔基板、PCB / HDI、變壓器 / 重電",
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "industry": "綠能環保",
@@ -4420,8 +4548,8 @@
             "examples": 121,
             "example_pct": 0.6,
             "stocks": 2,
-            "high_quality": 114,
-            "mid_quality": 5,
+            "high_quality": 115,
+            "mid_quality": 4,
             "low_quality": 1,
             "unlabeled_quality": 1,
             "top_source": "rolling_ohlcv_backtest",
@@ -4456,16 +4584,16 @@
           },
           {
             "industry": "玻璃陶瓷",
-            "examples": 63,
+            "examples": 64,
             "example_pct": 0.3,
             "stocks": 1,
-            "high_quality": 52,
-            "mid_quality": 8,
+            "high_quality": 53,
+            "mid_quality": 7,
             "low_quality": 0,
-            "unlabeled_quality": 3,
+            "unlabeled_quality": 4,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "玻璃陶瓷通用樣本",
-            "latest_sample_date": "2026-07-01"
+            "latest_sample_date": "2026-07-16"
           },
           {
             "industry": "居家生活",
@@ -4504,7 +4632,7 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "油電燃氣業通用樣本",
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "industry": "農業科技",
@@ -4530,7 +4658,7 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "運動休閒通用樣本",
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "industry": "金融業",
@@ -4556,7 +4684,7 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "鋼鐵工業通用樣本",
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "industry": "電子通路業",
@@ -4584,31 +4712,31 @@
           "其他電子業通用樣本": 480,
           "其他電子類通用樣本": 480,
           "電子商務業通用樣本": 480,
-          "光通訊模組": 470,
+          "光通訊模組": 472,
+          "DRAM / 利基型記憶體": 435,
           "創新版股票通用樣本": 420,
           "電機機械通用樣本": 420,
           "電腦及週邊設備業通用樣本": 420,
           "紡織纖維通用樣本": 411,
+          "ASIC交換晶片": 400,
+          "CPO / 矽光子": 360,
           "資訊服務業通用樣本": 360,
-          "CPO / 矽光子": 358,
-          "Optical Engine光引擎": 350,
+          "Optical Engine光引擎": 352,
           "PCB / HDI": 347,
-          "ASIC交換晶片": 345,
-          "DRAM / 利基型記憶體": 329,
-          "變壓器 / 重電": 309,
+          "DDR4 / DDR5": 319,
+          "NAND / NOR Flash": 319,
+          "NAND Flash": 319,
+          "NOR Flash": 319,
+          "變壓器 / 重電": 311,
           "存託憑證通用樣本": 289,
           "CCL / 銅箔基板": 280,
-          "DDR4 / DDR5": 264,
-          "NAND / NOR Flash": 264,
-          "NAND Flash": 264,
-          "NOR Flash": 264,
-          "Fiber Shuffle": 250
+          "Fiber Shuffle": 252
         },
         "tag_detail_rows": [
           {
             "tag": "其他通用樣本",
             "examples": 3000,
-            "example_pct": 15.5,
+            "example_pct": 15.4,
             "stocks": 50,
             "top_industry": "其他",
             "high_quality": 2974,
@@ -4632,7 +4760,7 @@
           {
             "tag": "貿易百貨通用樣本",
             "examples": 1080,
-            "example_pct": 5.6,
+            "example_pct": 5.5,
             "stocks": 18,
             "top_industry": "貿易百貨",
             "high_quality": 1065,
@@ -4644,14 +4772,14 @@
           {
             "tag": "電子零組件業通用樣本",
             "examples": 960,
-            "example_pct": 5.0,
+            "example_pct": 4.9,
             "stocks": 16,
             "top_industry": "電子零組件業",
-            "high_quality": 902,
-            "mid_quality": 52,
+            "high_quality": 903,
+            "mid_quality": 51,
             "low_quality": 6,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "tag": "生技醫療業通用樣本",
@@ -4663,7 +4791,7 @@
             "mid_quality": 28,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "tag": "光電業通用樣本",
@@ -4695,8 +4823,8 @@
             "example_pct": 2.7,
             "stocks": 8,
             "top_industry": "電子工業",
-            "high_quality": 479,
-            "mid_quality": 30,
+            "high_quality": 478,
+            "mid_quality": 31,
             "low_quality": 8,
             "unlabeled_quality": 1,
             "latest_sample_date": "2026-06-18"
@@ -4711,7 +4839,7 @@
             "mid_quality": 21,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "tag": "其他電子類通用樣本",
@@ -4719,11 +4847,11 @@
             "example_pct": 2.5,
             "stocks": 8,
             "top_industry": "其他電子類",
-            "high_quality": 450,
-            "mid_quality": 30,
+            "high_quality": 456,
+            "mid_quality": 24,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-04-07"
+            "latest_sample_date": "2026-06-29"
           },
           {
             "tag": "電子商務業通用樣本",
@@ -4739,15 +4867,27 @@
           },
           {
             "tag": "光通訊模組",
-            "examples": 470,
+            "examples": 472,
             "example_pct": 2.4,
             "stocks": 6,
             "top_industry": "通信網路業",
-            "high_quality": 378,
-            "mid_quality": 61,
-            "low_quality": 11,
-            "unlabeled_quality": 20,
-            "latest_sample_date": "2026-07-20"
+            "high_quality": 376,
+            "mid_quality": 62,
+            "low_quality": 12,
+            "unlabeled_quality": 22,
+            "latest_sample_date": "2026-07-23"
+          },
+          {
+            "tag": "DRAM / 利基型記憶體",
+            "examples": 435,
+            "example_pct": 2.2,
+            "stocks": 5,
+            "top_industry": "半導體業",
+            "high_quality": 356,
+            "mid_quality": 37,
+            "low_quality": 8,
+            "unlabeled_quality": 34,
+            "latest_sample_date": "2026-07-23"
           },
           {
             "tag": "創新版股票通用樣本",
@@ -4798,9 +4938,33 @@
             "latest_sample_date": "2026-04-23"
           },
           {
+            "tag": "ASIC交換晶片",
+            "examples": 400,
+            "example_pct": 2.1,
+            "stocks": 5,
+            "top_industry": "電子工業",
+            "high_quality": 375,
+            "mid_quality": 15,
+            "low_quality": 0,
+            "unlabeled_quality": 10,
+            "latest_sample_date": "2026-07-17"
+          },
+          {
+            "tag": "CPO / 矽光子",
+            "examples": 360,
+            "example_pct": 1.8,
+            "stocks": 4,
+            "top_industry": "通信網路業",
+            "high_quality": 284,
+            "mid_quality": 40,
+            "low_quality": 6,
+            "unlabeled_quality": 30,
+            "latest_sample_date": "2026-07-23"
+          },
+          {
             "tag": "資訊服務業通用樣本",
             "examples": 360,
-            "example_pct": 1.9,
+            "example_pct": 1.8,
             "stocks": 6,
             "top_industry": "資訊服務業",
             "high_quality": 344,
@@ -4810,28 +4974,16 @@
             "latest_sample_date": "2026-05-05"
           },
           {
-            "tag": "CPO / 矽光子",
-            "examples": 358,
-            "example_pct": 1.8,
-            "stocks": 4,
-            "top_industry": "通信網路業",
-            "high_quality": 284,
-            "mid_quality": 41,
-            "low_quality": 5,
-            "unlabeled_quality": 28,
-            "latest_sample_date": "2026-07-20"
-          },
-          {
             "tag": "Optical Engine光引擎",
-            "examples": 350,
+            "examples": 352,
             "example_pct": 1.8,
             "stocks": 4,
             "top_industry": "通信網路業",
-            "high_quality": 268,
+            "high_quality": 267,
             "mid_quality": 53,
-            "low_quality": 9,
-            "unlabeled_quality": 20,
-            "latest_sample_date": "2026-07-20"
+            "low_quality": 10,
+            "unlabeled_quality": 22,
+            "latest_sample_date": "2026-07-23"
           },
           {
             "tag": "PCB / HDI",
@@ -4839,47 +4991,71 @@
             "example_pct": 1.8,
             "stocks": 5,
             "top_industry": "電子零組件業",
-            "high_quality": 323,
-            "mid_quality": 14,
+            "high_quality": 322,
+            "mid_quality": 15,
             "low_quality": 3,
             "unlabeled_quality": 7,
             "latest_sample_date": "2026-07-09"
           },
           {
-            "tag": "ASIC交換晶片",
-            "examples": 345,
-            "example_pct": 1.8,
-            "stocks": 5,
-            "top_industry": "電子工業",
-            "high_quality": 325,
-            "mid_quality": 15,
-            "low_quality": 0,
-            "unlabeled_quality": 5,
-            "latest_sample_date": "2026-07-09"
+            "tag": "DDR4 / DDR5",
+            "examples": 319,
+            "example_pct": 1.6,
+            "stocks": 4,
+            "top_industry": "半導體業",
+            "high_quality": 246,
+            "mid_quality": 37,
+            "low_quality": 8,
+            "unlabeled_quality": 28,
+            "latest_sample_date": "2026-07-23"
           },
           {
-            "tag": "DRAM / 利基型記憶體",
-            "examples": 329,
-            "example_pct": 1.7,
-            "stocks": 5,
-            "top_industry": "電子工業",
-            "high_quality": 268,
-            "mid_quality": 28,
-            "low_quality": 4,
-            "unlabeled_quality": 29,
-            "latest_sample_date": "2026-07-17"
+            "tag": "NAND / NOR Flash",
+            "examples": 319,
+            "example_pct": 1.6,
+            "stocks": 4,
+            "top_industry": "半導體業",
+            "high_quality": 246,
+            "mid_quality": 37,
+            "low_quality": 8,
+            "unlabeled_quality": 28,
+            "latest_sample_date": "2026-07-23"
+          },
+          {
+            "tag": "NAND Flash",
+            "examples": 319,
+            "example_pct": 1.6,
+            "stocks": 4,
+            "top_industry": "半導體業",
+            "high_quality": 246,
+            "mid_quality": 37,
+            "low_quality": 8,
+            "unlabeled_quality": 28,
+            "latest_sample_date": "2026-07-23"
+          },
+          {
+            "tag": "NOR Flash",
+            "examples": 319,
+            "example_pct": 1.6,
+            "stocks": 4,
+            "top_industry": "半導體業",
+            "high_quality": 246,
+            "mid_quality": 37,
+            "low_quality": 8,
+            "unlabeled_quality": 28,
+            "latest_sample_date": "2026-07-23"
           },
           {
             "tag": "變壓器 / 重電",
-            "examples": 309,
+            "examples": 311,
             "example_pct": 1.6,
             "stocks": 5,
             "top_industry": "電機機械",
             "high_quality": 285,
             "mid_quality": 14,
             "low_quality": 1,
-            "unlabeled_quality": 9,
-            "latest_sample_date": "2026-07-09"
+            "unlabeled_quality": 11,
+            "latest_sample_date": "2026-07-21"
           },
           {
             "tag": "存託憑證通用樣本",
@@ -4898,96 +5074,48 @@
             "examples": 280,
             "example_pct": 1.4,
             "stocks": 4,
-            "top_industry": "電子零組件業",
-            "high_quality": 263,
-            "mid_quality": 14,
+            "top_industry": "化學工業",
+            "high_quality": 262,
+            "mid_quality": 15,
             "low_quality": 3,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-05-25"
-          },
-          {
-            "tag": "DDR4 / DDR5",
-            "examples": 264,
-            "example_pct": 1.4,
-            "stocks": 4,
-            "top_industry": "電子工業",
-            "high_quality": 208,
-            "mid_quality": 28,
-            "low_quality": 4,
-            "unlabeled_quality": 24,
-            "latest_sample_date": "2026-07-17"
-          },
-          {
-            "tag": "NAND / NOR Flash",
-            "examples": 264,
-            "example_pct": 1.4,
-            "stocks": 4,
-            "top_industry": "電子工業",
-            "high_quality": 208,
-            "mid_quality": 28,
-            "low_quality": 4,
-            "unlabeled_quality": 24,
-            "latest_sample_date": "2026-07-17"
-          },
-          {
-            "tag": "NAND Flash",
-            "examples": 264,
-            "example_pct": 1.4,
-            "stocks": 4,
-            "top_industry": "電子工業",
-            "high_quality": 208,
-            "mid_quality": 28,
-            "low_quality": 4,
-            "unlabeled_quality": 24,
-            "latest_sample_date": "2026-07-17"
-          },
-          {
-            "tag": "NOR Flash",
-            "examples": 264,
-            "example_pct": 1.4,
-            "stocks": 4,
-            "top_industry": "電子工業",
-            "high_quality": 208,
-            "mid_quality": 28,
-            "low_quality": 4,
-            "unlabeled_quality": 24,
-            "latest_sample_date": "2026-07-17"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "tag": "Fiber Shuffle",
-            "examples": 250,
+            "examples": 252,
             "example_pct": 1.3,
             "stocks": 3,
             "top_industry": "通信網路業",
-            "high_quality": 182,
+            "high_quality": 181,
             "mid_quality": 39,
-            "low_quality": 9,
-            "unlabeled_quality": 20,
-            "latest_sample_date": "2026-07-20"
+            "low_quality": 10,
+            "unlabeled_quality": 22,
+            "latest_sample_date": "2026-07-23"
           },
           {
             "tag": "MPO / 光纖連接",
-            "examples": 250,
+            "examples": 252,
             "example_pct": 1.3,
             "stocks": 3,
             "top_industry": "通信網路業",
-            "high_quality": 182,
+            "high_quality": 181,
             "mid_quality": 39,
-            "low_quality": 9,
-            "unlabeled_quality": 20,
-            "latest_sample_date": "2026-07-20"
+            "low_quality": 10,
+            "unlabeled_quality": 22,
+            "latest_sample_date": "2026-07-23"
           },
           {
             "tag": "儲能 / 電網",
-            "examples": 249,
+            "examples": 251,
             "example_pct": 1.3,
             "stocks": 4,
             "top_industry": "電機機械",
-            "high_quality": 226,
-            "mid_quality": 13,
+            "high_quality": 227,
+            "mid_quality": 12,
             "low_quality": 1,
-            "unlabeled_quality": 9,
-            "latest_sample_date": "2026-07-09"
+            "unlabeled_quality": 11,
+            "latest_sample_date": "2026-07-21"
           },
           {
             "tag": "電源供應器 / 電源管理",
@@ -4995,8 +5123,8 @@
             "example_pct": 1.3,
             "stocks": 4,
             "top_industry": "電子工業",
-            "high_quality": 220,
-            "mid_quality": 19,
+            "high_quality": 219,
+            "mid_quality": 20,
             "low_quality": 1,
             "unlabeled_quality": 5,
             "latest_sample_date": "2026-07-15"
@@ -5027,51 +5155,51 @@
           },
           {
             "tag": "AI伺服器 / GPU伺服器",
-            "examples": 235,
+            "examples": 236,
             "example_pct": 1.2,
             "stocks": 3,
             "top_industry": "電子工業",
             "high_quality": 228,
             "mid_quality": 2,
             "low_quality": 0,
-            "unlabeled_quality": 5,
-            "latest_sample_date": "2026-07-01"
+            "unlabeled_quality": 6,
+            "latest_sample_date": "2026-07-22"
           },
           {
             "tag": "AI伺服器ODM / EMS",
-            "examples": 235,
+            "examples": 236,
             "example_pct": 1.2,
             "stocks": 3,
             "top_industry": "電子工業",
             "high_quality": 228,
             "mid_quality": 2,
             "low_quality": 0,
-            "unlabeled_quality": 5,
-            "latest_sample_date": "2026-07-01"
+            "unlabeled_quality": 6,
+            "latest_sample_date": "2026-07-22"
           },
           {
             "tag": "FAU / Fiber Shuffle",
-            "examples": 230,
+            "examples": 232,
             "example_pct": 1.2,
             "stocks": 2,
             "top_industry": "通信網路業",
             "high_quality": 164,
-            "mid_quality": 41,
-            "low_quality": 5,
-            "unlabeled_quality": 20,
-            "latest_sample_date": "2026-07-20"
+            "mid_quality": 40,
+            "low_quality": 6,
+            "unlabeled_quality": 22,
+            "latest_sample_date": "2026-07-23"
           },
           {
             "tag": "FAU光纖陣列",
-            "examples": 230,
+            "examples": 232,
             "example_pct": 1.2,
             "stocks": 2,
             "top_industry": "通信網路業",
             "high_quality": 164,
-            "mid_quality": 41,
-            "low_quality": 5,
-            "unlabeled_quality": 20,
-            "latest_sample_date": "2026-07-20"
+            "mid_quality": 40,
+            "low_quality": 6,
+            "unlabeled_quality": 22,
+            "latest_sample_date": "2026-07-23"
           },
           {
             "tag": "文化創意業通用樣本",
@@ -5087,24 +5215,48 @@
           },
           {
             "tag": "儲能系統",
-            "examples": 188,
+            "examples": 190,
             "example_pct": 1.0,
             "stocks": 3,
             "top_industry": "電機機械",
             "high_quality": 170,
             "mid_quality": 10,
             "low_quality": 0,
-            "unlabeled_quality": 8,
-            "latest_sample_date": "2026-07-09"
+            "unlabeled_quality": 10,
+            "latest_sample_date": "2026-07-21"
+          },
+          {
+            "tag": "變壓器",
+            "examples": 190,
+            "example_pct": 1.0,
+            "stocks": 3,
+            "top_industry": "電機機械",
+            "high_quality": 170,
+            "mid_quality": 10,
+            "low_quality": 0,
+            "unlabeled_quality": 10,
+            "latest_sample_date": "2026-07-21"
+          },
+          {
+            "tag": "開關設備 / 配電盤",
+            "examples": 190,
+            "example_pct": 1.0,
+            "stocks": 3,
+            "top_industry": "電機機械",
+            "high_quality": 172,
+            "mid_quality": 8,
+            "low_quality": 0,
+            "unlabeled_quality": 10,
+            "latest_sample_date": "2026-07-21"
           },
           {
             "tag": "工業機器人 / 自動化系統",
             "examples": 188,
             "example_pct": 1.0,
             "stocks": 3,
-            "top_industry": "電子工業",
-            "high_quality": 177,
-            "mid_quality": 3,
+            "top_industry": "電子零組件業",
+            "high_quality": 178,
+            "mid_quality": 2,
             "low_quality": 0,
             "unlabeled_quality": 8,
             "latest_sample_date": "2026-07-09"
@@ -5114,33 +5266,9 @@
             "examples": 188,
             "example_pct": 1.0,
             "stocks": 3,
-            "top_industry": "電子工業",
-            "high_quality": 177,
-            "mid_quality": 3,
-            "low_quality": 0,
-            "unlabeled_quality": 8,
-            "latest_sample_date": "2026-07-09"
-          },
-          {
-            "tag": "變壓器",
-            "examples": 188,
-            "example_pct": 1.0,
-            "stocks": 3,
-            "top_industry": "電機機械",
-            "high_quality": 170,
-            "mid_quality": 10,
-            "low_quality": 0,
-            "unlabeled_quality": 8,
-            "latest_sample_date": "2026-07-09"
-          },
-          {
-            "tag": "開關設備 / 配電盤",
-            "examples": 188,
-            "example_pct": 1.0,
-            "stocks": 3,
-            "top_industry": "電機機械",
-            "high_quality": 173,
-            "mid_quality": 7,
+            "top_industry": "電子零組件業",
+            "high_quality": 178,
+            "mid_quality": 2,
             "low_quality": 0,
             "unlabeled_quality": 8,
             "latest_sample_date": "2026-07-09"
@@ -5207,22 +5335,22 @@
           },
           {
             "tag": "MPO / 光纖配線盒",
-            "examples": 130,
+            "examples": 132,
             "example_pct": 0.7,
             "stocks": 1,
             "top_industry": "通信網路業",
             "high_quality": 78,
-            "mid_quality": 27,
-            "low_quality": 5,
-            "unlabeled_quality": 20,
-            "latest_sample_date": "2026-07-20"
+            "mid_quality": 26,
+            "low_quality": 6,
+            "unlabeled_quality": 22,
+            "latest_sample_date": "2026-07-23"
           },
           {
             "tag": "液冷 / 散熱",
             "examples": 125,
             "example_pct": 0.6,
             "stocks": 2,
-            "top_industry": "電子工業",
+            "top_industry": "其他電子業",
             "high_quality": 120,
             "mid_quality": 0,
             "low_quality": 0,
@@ -5234,7 +5362,7 @@
             "examples": 125,
             "example_pct": 0.6,
             "stocks": 2,
-            "top_industry": "電子工業",
+            "top_industry": "其他電子業",
             "high_quality": 120,
             "mid_quality": 0,
             "low_quality": 0,
@@ -5251,7 +5379,7 @@
             "mid_quality": 14,
             "low_quality": 4,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-03"
+            "latest_sample_date": "2026-06-05"
           },
           {
             "tag": "創新板股票通用樣本",
@@ -5275,7 +5403,7 @@
             "mid_quality": 1,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "tag": "數位雲端通用樣本",
@@ -5315,15 +5443,15 @@
           },
           {
             "tag": "玻璃陶瓷通用樣本",
-            "examples": 63,
+            "examples": 64,
             "example_pct": 0.3,
             "stocks": 1,
             "top_industry": "玻璃陶瓷",
-            "high_quality": 52,
-            "mid_quality": 8,
+            "high_quality": 53,
+            "mid_quality": 7,
             "low_quality": 0,
-            "unlabeled_quality": 3,
-            "latest_sample_date": "2026-07-01"
+            "unlabeled_quality": 4,
+            "latest_sample_date": "2026-07-16"
           },
           {
             "tag": "SSD / 記憶體模組",
@@ -5371,7 +5499,7 @@
             "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "tag": "農業科技通用樣本",
@@ -5395,7 +5523,7 @@
             "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "tag": "金融業通用樣本",
@@ -5419,7 +5547,7 @@
             "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-05-25"
+            "latest_sample_date": "2026-05-27"
           },
           {
             "tag": "電器電纜通用樣本",
@@ -5447,19 +5575,19 @@
           }
         ],
         "source_counts": {
-          "rolling_ohlcv_backtest": 19277,
-          "prediction_history_backtest": 85
+          "rolling_ohlcv_backtest": 19378,
+          "prediction_history_backtest": 100
         },
-        "latest_sample_date": "2026-07-20",
+        "latest_sample_date": "2026-07-23",
         "manifest": {
-          "generated_at": "2026-07-27T18:32:48+08:00",
+          "generated_at": "2026-07-30T18:33:02+08:00",
           "requested_stocks": 48,
           "processed_stocks": 48,
           "failed_stocks": 0
         }
       }
     },
-    "content_sha256": "45990255370968084d32c258b9b3499ef14a182d11c04b0d06026b9e4ba79016",
-    "message": "已輸出 19362 筆 LLM 技術訓練樣本"
+    "content_sha256": "d48619da6f4a1b5f140a2f5a3eeb59cfaeb26d82d4d89785b49a2739467f301a",
+    "message": "已輸出 19478 筆 LLM 技術訓練樣本"
   }
 }
