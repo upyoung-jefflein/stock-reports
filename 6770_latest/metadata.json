@@ -3,6 +3,7 @@
   "stock_name": "力積電",
   "source": "FinMind TaiwanStockPrice",
   "data_source": "FinMind TaiwanStockPrice / Python matplotlib",
+  "chart_style_version": "bollinger-light-v2",
   "industry_category": "半導體業",
   "data_period": "2025-08-14 to 2026-08-14",
   "data_date": "2026-08-14",
@@ -27,8 +28,8 @@
   "institutional_latest_period": "2026-08-14",
   "government_bank_period": "2026-08-03 to 2026-08-14 (OK；最近 10 個交易日；原始單位張，已轉換為股；外資/投信交叉驗證通過 10/10)",
   "government_bank_latest_period": "2026-08-14",
-  "margin_period": "2025-08-14 to 2026-08-13 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance; 融資餘額校驗OK; 融券餘額校驗OK)",
-  "margin_latest_period": "2026-08-13",
+  "margin_period": "2025-08-14 to 2026-08-14 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance; 融資餘額校驗OK; 融券餘額校驗OK)",
+  "margin_latest_period": "2026-08-14",
   "warrant_period": "TWSE report_date=1150813 (OK; call=261, put=32, with_exercise_price=293)",
   "warrant_latest_period": "TWSE report_date=1150813",
   "fundamental_period": "revenue 2024-03-01 to 2026-08-01; PER/PBR 2025-08-14 to 2026-08-14; EPS 2021-09-30 to 2026-06-30; profitability 2021-09-30 to 2026-06-30; quarterly_detail 2021-09-30 to 2026-06-30 (OK revenue_rows=30; per_rows=243; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
@@ -144,84 +145,6 @@
       "evidence_sources": "力積電公開產品資訊 / 年報 / 法說 / 公開說明書、TWSE 公司基本資料 / 官網：https://www.powerchip.com"
     },
     {
-      "stock_id": "2344",
-      "name": "華邦電",
-      "profile_scope": "官網 / 公開資訊佐證",
-      "data_confidence": "高",
-      "product_basis": "官網 / 公開資訊佐證",
-      "chain_position": "記憶體 / DRAM / Flash 供應鏈",
-      "product_mix": "DRAM（占比待補）、利基型記憶體（占比待補）、NAND Flash（占比待補）、NOR Flash（占比待補）、記憶體晶片 / 模組（占比待補）",
-      "product_mix_items": [
-        {
-          "product": "DRAM",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "利基型記憶體",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "NAND Flash",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "NOR Flash",
-          "percent": null,
-          "source": ""
-        },
-        {
-          "product": "記憶體晶片 / 模組",
-          "percent": null,
-          "source": ""
-        }
-      ],
-      "product_mix_has_percent": false,
-      "supply_chain_nodes": [
-        {
-          "theme": "記憶體 / 儲存",
-          "layer": "Flash",
-          "product": "NAND / NOR Flash",
-          "role": "核心產品",
-          "directness": "高",
-          "evidence_level": "A",
-          "matched_keywords": [
-            "NAND",
-            "NOR",
-            "Flash"
-          ],
-          "stock_price_relevance": "看報價循環、需求復甦與產品組合",
-          "score": 7
-        },
-        {
-          "theme": "記憶體 / 儲存",
-          "layer": "DRAM",
-          "product": "DRAM / 利基型記憶體",
-          "role": "核心產品",
-          "directness": "高",
-          "evidence_level": "A",
-          "matched_keywords": [
-            "DRAM",
-            "利基型記憶體"
-          ],
-          "stock_price_relevance": "看報價、庫存、位元出貨與毛利率",
-          "score": 5
-        }
-      ],
-      "supply_chain_summary": "NAND / NOR Flash（高，證據A）、DRAM / 利基型記憶體（高，證據A）",
-      "growth_drivers": "DRAM / Flash 報價循環、庫存去化、稼動率回升",
-      "valuation_logic": "以記憶體報價、庫存水位、稼動率、毛利率修復與 PBR/PER 區間交叉評估；虧轉盈或 EPS 低檔時不宜只看 PER。",
-      "risks": "報價波動、需求循環、同業產能競爭",
-      "stock_price_watch": "DRAM / Flash 報價循環、庫存去化、稼動率回升；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：記憶體製造 / IC 同業；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：記憶體；產品重疊：DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、DRAM / 利基型記憶體、NAND / NOR Flash",
-      "evidence_keywords": "記憶體",
-      "evidence_sources": "TWSE 公司基本資料 / 官網：https://WWW.WINBOND.COM、sinotrade.com.tw",
-      "product_overlap_score": 3.7399999999999998,
-      "matched_products": "DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、DRAM / 利基型記憶體、NAND / NOR Flash"
-    },
-    {
       "stock_id": "2408",
       "name": "南亞科",
       "profile_scope": "官網 / 公開資訊佐證",
@@ -293,11 +216,11 @@
       "valuation_logic": "以記憶體報價、庫存水位、稼動率、毛利率修復與 PBR/PER 區間交叉評估；虧轉盈或 EPS 低檔時不宜只看 PER。",
       "risks": "報價反轉、景氣循環、庫存與資本支出",
       "stock_price_watch": "DRAM / Flash 報價循環、庫存去化、稼動率回升；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：記憶體製造同業；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：DRAM、DDR4、DDR5；產品重疊：DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、DRAM / 利基型記憶體、NAND / NOR Flash",
+      "comparability": "高：記憶體製造同業；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：DRAM、DDR4、DDR5；產品重疊：DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、NAND / NOR Flash、DRAM / 利基型記憶體",
       "evidence_keywords": "DRAM、DDR4、DDR5",
       "evidence_sources": "TWSE 公司基本資料 / 官網：https://www.nanya.com、官網延伸頁：https://www.nanya.com/en/Product/List/450/2478",
       "product_overlap_score": 3.7399999999999998,
-      "matched_products": "DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、DRAM / 利基型記憶體、NAND / NOR Flash"
+      "matched_products": "DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、NAND / NOR Flash、DRAM / 利基型記憶體"
     },
     {
       "stock_id": "5347",
@@ -355,6 +278,58 @@
       "evidence_sources": "-",
       "product_overlap_score": 2.69,
       "matched_products": "12吋成熟製程晶圓代工、電源管理 IC / 類比與混合訊號製程、8吋成熟製程 / 類比與特殊應用、電源供應器 / 電源管理"
+    },
+    {
+      "stock_id": "2344",
+      "name": "華邦電",
+      "profile_scope": "個股資料",
+      "data_confidence": "高",
+      "product_basis": "公司產品資料",
+      "chain_position": "記憶體 IC / DRAM 相關",
+      "product_mix": "DRAM（占比待補）、記憶體產品（占比待補）、利基型應用（占比待補）",
+      "product_mix_items": [
+        {
+          "product": "DRAM",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "記憶體產品",
+          "percent": null,
+          "source": ""
+        },
+        {
+          "product": "利基型應用",
+          "percent": null,
+          "source": ""
+        }
+      ],
+      "product_mix_has_percent": false,
+      "supply_chain_nodes": [
+        {
+          "theme": "記憶體 / 儲存",
+          "layer": "DRAM",
+          "product": "DRAM / 利基型記憶體",
+          "role": "核心產品",
+          "directness": "高",
+          "evidence_level": "A",
+          "matched_keywords": [
+            "DRAM"
+          ],
+          "stock_price_relevance": "看報價、庫存、位元出貨與毛利率",
+          "score": 3
+        }
+      ],
+      "supply_chain_summary": "DRAM / 利基型記憶體（高，證據A）",
+      "growth_drivers": "記憶體報價回升、利基型需求、庫存循環",
+      "valuation_logic": "以記憶體循環、毛利率與 PBR 區間為主。",
+      "risks": "報價波動、需求循環、同業產能競爭",
+      "stock_price_watch": "記憶體報價回升、利基型需求、庫存循環；同時看毛利率、營益率與月營收是否同步改善",
+      "comparability": "高：記憶體製造 / IC 同業；產品重疊：DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、DRAM / 利基型記憶體",
+      "evidence_keywords": "-",
+      "evidence_sources": "-",
+      "product_overlap_score": 2.34,
+      "matched_products": "DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、DRAM / 利基型記憶體"
     },
     {
       "stock_id": "2303",
@@ -764,8 +739,8 @@
     "atr14": 4.932142857142858,
     "atr_pct": 6.290998542274052,
     "trend_label": "偏多",
-    "five_day_lower": 67.65986397694046,
-    "five_day_upper": 96.13551419152283,
+    "five_day_lower": 67.23025853601808,
+    "five_day_upper": 95.7374348845345,
     "five_day_backtest": {
       "ok": true,
       "sample_count": 218,
@@ -783,7 +758,7 @@
     "rows": [
       {
         "factor": "5日可達區間",
-        "value": "67.7 - 96.1",
+        "value": "67.2 - 95.7",
         "effect": "日K未來5日預測色塊優先參考"
       },
       {
@@ -795,6 +770,11 @@
         "factor": "未來5日色塊回測",
         "value": "70% / 目標 70%",
         "effect": "以歷史未來5日收盤價路徑校準色塊寬度，避免過窄或過寬"
+      },
+      {
+        "factor": "布林區間修正",
+        "value": "上軌附近過熱觀察",
+        "effect": "價格區間上緣修正 -2%、下緣修正 +4%；依上下軌、量能與ADX分流"
       },
       {
         "factor": "ATR 風險範圍",
@@ -940,31 +920,31 @@
         }
       ]
     },
-    "summary": "雙向預測：偏多，基準情境為上行測壓（跨股情境參考）；上行 90.3（中）/ 下行 70.9（低）/ 區間 67.7-96.1（中）；獨立樣本 6491 筆 / 有效 4740 / 390 檔；5日正向 31% / 負向 31% / 盤整 39%。",
+    "summary": "雙向預測：偏多，基準情境為上行測壓（跨股情境參考）；上行 90.0（中）/ 下行 70.7（低）/ 區間 67.2-95.7（中）；獨立樣本 6511 筆 / 有效 4760 / 391 檔；5日正向 31% / 負向 31% / 盤整 39%。",
     "close": 78.4,
     "bull_case": {
-      "price": 90.27,
+      "price": 90.03,
       "probability": 42,
       "display_probability": "中",
       "trigger": 81.8,
-      "upside_pct": 15.15
+      "upside_pct": 14.83
     },
     "bear_case": {
-      "price": 70.92,
+      "price": 70.65,
       "probability": 26,
       "display_probability": "低",
       "trigger": 73.47,
-      "downside_pct": -9.54
+      "downside_pct": -9.88
     },
     "range_case": {
-      "low": 67.66,
-      "high": 96.14,
+      "low": 67.23,
+      "high": 95.74,
       "probability": 32,
       "display_probability": "中"
     },
     "signals": {
       "neutral_gap_pct": 49.23,
-      "technical_score": 90.9,
+      "technical_score": 91.9,
       "atr_pct": 6.29,
       "backtest_direction_hit_rate": 50.0,
       "backtest_used": false,
@@ -989,30 +969,30 @@
       }
     },
     "training_calibration": {
-      "sample_count": 6491,
-      "raw_matched_sample_count": 14619,
-      "effective_sample_count": 4740.4,
-      "stock_count": 390,
+      "sample_count": 6511,
+      "raw_matched_sample_count": 14856,
+      "effective_sample_count": 4759.9,
+      "stock_count": 391,
       "ready": true,
       "regime_tags": [
         "above_ma60",
         "bullish_setup",
         "volume_expansion"
       ],
-      "positive_rate": 30.6,
-      "negative_rate": 30.6,
+      "positive_rate": 30.5,
+      "negative_rate": 30.7,
       "neutral_rate": 38.8,
       "median_return5": -0.12,
-      "q25_return5": -2.75,
+      "q25_return5": -2.76,
       "q75_return5": 2.95,
-      "median_return20": -0.26,
-      "q25_return20": -5.38,
-      "q75_return20": 6.61,
-      "summary": "獨立樣本 6491 筆 / 有效 4740 / 390 檔；5日正向 31% / 負向 31% / 盤整 39%"
+      "median_return20": -0.28,
+      "q25_return20": -5.39,
+      "q75_return20": 6.58,
+      "summary": "獨立樣本 6511 筆 / 有效 4760 / 391 檔；5日正向 31% / 負向 31% / 盤整 39%"
     },
     "invalidation": "若跌破 73.47 且量能放大，偏多情境失效"
   },
-  "bidirectional_price_forecast_summary": "雙向預測：偏多，基準情境為上行測壓（跨股情境參考）；上行 90.3（中）/ 下行 70.9（低）/ 區間 67.7-96.1（中）；獨立樣本 6491 筆 / 有效 4740 / 390 檔；5日正向 31% / 負向 31% / 盤整 39%。",
+  "bidirectional_price_forecast_summary": "雙向預測：偏多，基準情境為上行測壓（跨股情境參考）；上行 90.0（中）/ 下行 70.7（低）/ 區間 67.2-95.7（中）；獨立樣本 6511 筆 / 有效 4760 / 391 檔；5日正向 31% / 負向 31% / 盤整 39%。",
   "event_calendar_backtest": {
     "summary": "市場事件樣本偏多；未來45天事件 8 筆，20日影響分數 +12.7",
     "rows": [
@@ -1268,10 +1248,10 @@
     "verified_peer_count": 4
   },
   "chip_summary": {
-    "margin_balance": 132727.0,
-    "margin_5d_change": -7311.0,
-    "short_balance": 7025.0,
-    "short_5d_change": -129.0,
+    "margin_balance": 130865.0,
+    "margin_5d_change": -11506.0,
+    "short_balance": 7595.0,
+    "short_5d_change": 386.0,
     "foreign_latest": 144966464.0,
     "foreign_5d": 316382023.0,
     "foreign_20d": 161782079.0,
@@ -1317,17 +1297,6 @@
     "total_20d": 158535399.0,
     "margin_5d_detail": [
       {
-        "date": "2026-08-07",
-        "margin_buy": 8889.0,
-        "margin_sell": 6537.0,
-        "margin_net": 2352.0,
-        "margin_balance": 142371.0,
-        "short_buy": 523.0,
-        "short_sell": 579.0,
-        "short_net": -56.0,
-        "short_balance": 7209.0
-      },
-      {
         "date": "2026-08-10",
         "margin_buy": 13280.0,
         "margin_sell": 8828.0,
@@ -1370,6 +1339,17 @@
         "short_sell": 821.0,
         "short_net": 365.0,
         "short_balance": 7025.0
+      },
+      {
+        "date": "2026-08-14",
+        "margin_buy": 20327.0,
+        "margin_sell": 22120.0,
+        "margin_net": -1793.0,
+        "margin_balance": 130865.0,
+        "short_buy": 720.0,
+        "short_sell": 1346.0,
+        "short_net": -626.0,
+        "short_balance": 7595.0
       }
     ],
     "institutional_5d_detail": [
@@ -1556,11 +1536,11 @@
   },
   "technical_feasibility": {
     "ok": true,
-    "score": 90.9,
-    "technical_score_before_event": 90.4,
+    "score": 91.9,
+    "technical_score_before_event": 91.5,
     "event_score": 100.0,
     "event_weight": 0.05,
-    "event_adjustment": 0.5,
+    "event_adjustment": 0.4,
     "event_impact_score": 12.68,
     "event_active_count": 3,
     "event_backtest_samples": 43,
@@ -1586,7 +1566,7 @@
     "volume_ratio20": 2.4,
     "advanced_trend": {
       "ok": true,
-      "score": 0.2462,
+      "score": 0.1362,
       "adx": 16.45,
       "plus_di": 41.03,
       "minus_di": 22.53,
@@ -1600,11 +1580,47 @@
       "bollinger_lower": 48.45,
       "bollinger_bandwidth_pct": 47.45,
       "bollinger_bandwidth_percentile": 74.6,
+      "bollinger_bandwidth_change_5d_pct": 2.86,
+      "bollinger_percent_b": 0.9938,
+      "bollinger_position": "上半部",
       "bollinger_squeeze": false,
+      "bollinger_breakout_direction": "",
+      "bollinger_breakout_confirmed": false,
+      "bollinger_signal_mode": "上軌附近過熱觀察",
+      "bollinger_signal": -0.25,
+      "bollinger_signal_weight": 0.16,
       "divergence": "",
-      "note": "ADX 16，趨勢力道偏弱"
+      "note": "ADX 16，趨勢力道偏弱；上軌附近過熱觀察"
     },
-    "advanced_trend_score_delta": 2.0,
+    "advanced_trend_score_delta": 1.1,
+    "bollinger_score_adjustment": -0.3,
+    "bollinger_backtest": {
+      "ok": true,
+      "sample_count": 198,
+      "baseline_hit_rate": 51.5,
+      "bollinger_hit_rate": 50.5,
+      "uplift_pp": -1.0,
+      "regimes": {
+        "通道中性": {
+          "samples": 148,
+          "hit_rate": 51.4
+        },
+        "上軌過熱觀察": {
+          "samples": 22,
+          "hit_rate": 40.9
+        },
+        "上軌放量突破": {
+          "samples": 18,
+          "hit_rate": 50.0
+        },
+        "下軌反轉觀察": {
+          "samples": 10,
+          "hit_rate": 60.0
+        }
+      },
+      "method": "滾動視窗、只使用當日以前資料、未含交易成本",
+      "summary": "探索性回測 198 筆：布林規則 50.5%、MA20基準 51.5%（差異 -1.0 個百分點）"
+    },
     "breakout_follow_through": {
       "ok": true,
       "score": -0.75,
@@ -1636,17 +1652,17 @@
     },
     "benchmark_relative_strength_score_delta": 3.2,
     "margin_signal": {
-      "buy_score": 0.0,
-      "sell_score": 0.0,
+      "buy_score": 6.0,
+      "sell_score": -3.0,
       "weak_score": 0.0,
-      "buy_note": "",
+      "buy_note": "融資下降且價格守穩，籌碼壓力下降",
       "sell_note": "",
-      "summary": "融資5日-5.2% / 融券5日-1.8%",
-      "margin_5d_pct": -5.220725802996329,
-      "short_5d_pct": -1.803187028235953
+      "summary": "融資5日-8.1% / 融券5日+5.4%",
+      "margin_5d_pct": -8.081702032014949,
+      "short_5d_pct": 5.354418088500479
     },
-    "margin_score_adjustment": 0.0,
-    "margin_note": "融券變化僅列為觀察，未直接加減分",
+    "margin_score_adjustment": 2.0,
+    "margin_note": "融資5日下降且股價守住MA20，槓桿壓力下降",
     "adx": 16.45,
     "plus_di": 41.03,
     "minus_di": 22.53,
@@ -1655,6 +1671,13 @@
     "macd_histogram_slope": 1.0534,
     "bollinger_bandwidth_pct": 47.45,
     "bollinger_bandwidth_percentile": 74.6,
+    "bollinger_bandwidth_change_5d_pct": 2.86,
+    "bollinger_percent_b": 0.9938,
+    "bollinger_position": "上半部",
+    "bollinger_breakout_direction": "",
+    "bollinger_breakout_confirmed": false,
+    "bollinger_signal_mode": "上軌附近過熱觀察",
+    "bollinger_signal_weight": 0.16,
     "bollinger_squeeze": false,
     "momentum_divergence": "",
     "ma20_gap_pct": 23.43,
@@ -1681,14 +1704,14 @@
       "量能明顯放大"
     ],
     "training_calibration": {
-      "sample_count": 1440,
-      "industry_sample_count": 1440,
+      "sample_count": 1591,
+      "industry_sample_count": 1591,
       "score_adjust": 0.0,
       "reason": ""
     },
-    "summary": "短線走勢：偏強（91/100；觀察未來 5 個交易日）；多頭排列，型態可信89，量比2.40，ATR 6.3%"
+    "summary": "短線走勢：偏強（92/100；觀察未來 5 個交易日）；多頭排列，型態可信89，量比2.40，ATR 6.3%"
   },
-  "news_display_status": "新聞面偏利多（利多 2 / 利空 0 / 中性 6；高可信 0 則）",
+  "news_display_status": "新聞面偏利多（利多 3 / 利空 0 / 中性 5；高可信 0 則）",
   "disclosure_display_status": "近 120 天公告/法說追蹤 8 則（法說會 3 / 公告 5）",
   "summary_one_line": "中性偏多，偏多震盪；站穩 MA10 67.46 並突破 81.80 才有續攻機會，跌破 73.47 轉防守。",
   "summary_overall": "中性偏多；收盤站上 MA5, MA5 高於 MA10, MA10 上方但投信支撐不足",
@@ -1708,7 +1731,7 @@
   "summary_pressure": "第一 81.80 / 第二 83.33 / 強 94.50",
   "summary_price_pattern": "近243日上升通道 有效6.7 / 突破；近60日下降通道（趨勢線低可信度，改看區間） 有效5.2 / 區間內",
   "summary_price_pattern_brief": "近243日上升通道 有效6.7 / 突破；近60日下降通道（趨勢線低可信度，改看區間） 有效5.2 / 區間內",
-  "summary_trade_plan": "買點：突破 77.00 後需再站穩，未確認前避免追價，但需確認融資5日-5.2% / 融券5日-1.8%；賣點：跌破 76.35，先降權重，且融資5日-5.2% / 融券5日-1.8%。依據：上升通道有效分數 6.7。",
+  "summary_trade_plan": "買點：突破 77.00 後需再站穩，未確認前避免追價，但需確認融資下降且價格守穩，籌碼壓力下降；賣點：跌破 76.35，先降權重，且融資5日-8.1% / 融券5日+5.4%。依據：上升通道有效分數 6.7。",
   "summary_gap": "近120日有 50 個明顯缺口；最近向上缺口 2026-08-12 位於 67.50～68.00 元，分類為事件／大幅跳空，部分回補，量能確認。類型統計：趨勢延續缺口19個、事件／大幅跳空17個、一般缺口10個、突破缺口4個。",
   "gap_rows": [
     {
@@ -2775,7 +2798,7 @@
   "summary_warrant_signal": "中性偏投機",
   "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
   "summary_warrant_price_view": "現股距認購主流履約價仍有 15.79% 空間，屬高想像但投機風險也高",
-  "generated_at": "2026-08-14T19:19:30+08:00",
+  "generated_at": "2026-08-14T21:13:57+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6770_2026-08-14\\01_日線完整技術與籌碼分析圖.png",
@@ -4540,6 +4563,38 @@
       "region": "國內",
       "bias": "利多",
       "event_type": "籌碼",
+      "title": "外資本周天天買超共2061億元 最青睞力積電連4天加碼逾31萬張",
+      "source": "news.cnyes.com",
+      "published": "2026-08-14 20:14",
+      "published_ts": "2026-08-14T20:14:17+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA3SnVEbUx5cEYwUF9pV21mV3IxVzZlZURjQ0NYWVpQVkNQaF9kOFFRQnRnNzh5M3I2NU9GdENMbFlTVnYxcHFNSWFBVkFsZzA?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；搭配法人買賣超與股價位置判斷承接力",
+      "source_score": 3,
+      "source_tier": "主流財經",
+      "signal_grade": "B",
+      "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "財報",
+      "title": "台股重挫仍有亮點！力積電股利、營收雙喜爆發奪外資逾32萬張稱王「這檔」獲利暴增549％獲上喊45元目標價受矚",
+      "source": "ftnn.com.tw",
+      "published": "2026-08-14 20:09",
+      "published_ts": "2026-08-14T20:09:00+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE4zbEw3STZFamZ5R3V3Mkh0SjNUWE5hVXhHVk8yTUFMYjh1bW81VnlQbWZna2dZdkVaR1NKcUVkdl9MV0pRQ1NPUFNWZw?oc=5",
+      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
+      "key_point": "偏多訊號；檢查 EPS、毛利率與營益率是否支撐估值",
+      "source_score": 2,
+      "source_tier": "一般來源",
+      "signal_grade": "B",
+      "signal_grade_note": "中可信，可作方向輔助"
+    },
+    {
+      "region": "國內",
+      "bias": "利多",
+      "event_type": "籌碼",
       "title": "三大法人買賣超 – 外資買超(6770)力積電、(2344)華邦電，投信買超(8046)南電、(6669)緯穎，法人合計買超508.86億元",
       "source": "sinotrade.com.tw",
       "published": "2026-08-14 17:08",
@@ -4561,38 +4616,6 @@
       "published": "2026-08-14 16:39",
       "published_ts": "2026-08-14T16:39:16+08:00",
       "link": "https://news.google.com/rss/articles/CBMiswNBVV95cUxNUWd0VGhybS1aUFB6SkxMdmhKanBhaVhSQzE4Ym1pYm1IdDI1ZF9ZZ2NyUXdUZkNndC1QY3dMeGNhVjgzY3lUMUdSaVFDaU5DcTQtMWp2S0lzS2VTRGJwUjNUTmh4eHJ5VUZRM002enh0YTd3bVVwYzRfazYteGJJWHBxR2ZxdHpTVTRGak1YTHYtWUlCUEJwdWFBUU5SV3RUbEx5WWRIX09IeFBCZ0Y4c3AzNXFvNlBKeW9zdTU4NnV6dUk4eE9mN2RLSnhFSE1WT3hiT3Jtb2RneEMxLWNFeUtVZDEyM3czX2d4ejlid1d2bzU2UWdTSVpOX1RaRzJweS1xMVM5R0QycTV1MWRmQ1ltZmtMMmJrQV9TRnFua19jcF9UcV9WNGV4SDl2a1VYZHFNb2h2RUZVSld5RDZSTjQyMUNNQm55WmZ5VmNSRE1nU2c1TTFrSUVvQVVrbVVLanp5STRUTUVVYUhSWHR2dHo0bmRLcG9QLV9USjBYTUhMQlpOVkNWWDFIZVBvTkxLUEx0TTlPaHh0Tzh0VUpPdUJpV0tSUnJLX1BHZjVLSjItOGM?oc=5",
-      "reason": "標題未出現明確利多或利空關鍵字",
-      "key_point": "觀察訊號；搭配法人買賣超與股價位置判斷承接力",
-      "source_score": 3,
-      "source_tier": "主流財經",
-      "signal_grade": "B",
-      "signal_grade_note": "一般可信，需搭配量價確認"
-    },
-    {
-      "region": "國內",
-      "bias": "利多",
-      "event_type": "股利",
-      "title": "焦點股》力積電：股利題材激勵 爆量再飆漲9％",
-      "source": "自由時報",
-      "published": "2026-08-14 11:14",
-      "published_ts": "2026-08-14T11:14:04+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBoY29JRDgxTmk0QjBZY0JNVmlRemV0Q012bUd3b1k0UUR2Y3lKUExVc2VONEpTV18xUmpzU1hYb0lQaFM3b3FpSEdHLXE0LWNhT1E2MG52UV8?oc=5",
-      "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "key_point": "偏多訊號；可輔助殖利率估值，但需看配息穩定度",
-      "source_score": 2,
-      "source_tier": "一般來源",
-      "signal_grade": "B",
-      "signal_grade_note": "中可信，可作方向輔助"
-    },
-    {
-      "region": "國內",
-      "bias": "中性",
-      "event_type": "籌碼",
-      "title": "【Follow法人】記憶體不同調！外資狂買力積電11.4萬張居冠 反手砍華邦電、南亞科4.4萬張",
-      "source": "Yahoo股市",
-      "published": "2026-08-12 16:50",
-      "published_ts": "2026-08-12T16:50:31+08:00",
-      "link": "https://news.google.com/rss/articles/CBMigwRBVV95cUxOSHBOMEFrMmpzR214Y01ZdXFuaU1Fbm5sMk5BMHdZR3pYMzVMOXB3SHhLNWlWSWdIbWZoZTd3VHRDZlE5WnRzWlRQWDlUR1I2WkpBODJhem0xbHY5Mkx0c1RxVWZxVFI1Z3JIOHZXaUp5b0lOd0VBYXlqdmQ5SllwNmFCTzJaaHZON25abkhUTDRXRnRobWZMUk0wYTNTdFdoMkYxX1MtSm5zZkRLcGRHRHB0Mmo1alhNeXBROGpuZWZqeC1WdmNBMzI2Qk5fOTZaVFI0VDN2MkRnalNRSWZPT2dDekU1WHk2dWJtaExUNUo5MDVOWEFVSzA5ZDhRbWJCaUFqYjhYXzlUZ2dUWXZ4OXpUVkxrQ0lhWDFNcEFCWkFLS3hLczJzdmVXeVZZUTNna01SbkdobE9LYW1GZ3dqbGhCVzFPZ2EwZE9sX3UzX2QtVjIwNEdtLVFQMG5nNFAyRUVDQk1NbzVDaGJadno5WXRtMDBncThCQTRqVTE3d2FRQWJtdTRFbG9JR1dFdkZEQUpEVGJkV3FaSzNoM2E1OUk2T05sa3ZuRzVybzVKSDF0cHhPdXlPVlVpSW5nSzVrUVJXU2pSalRfOWJsUURCMkJaZDNrZVd5UmY0bnVJelRDWEhXVUlucFllZWNKd2lPRjlkQWxwZEhYb2RxMVBLQXI0WQ?oc=5",
       "reason": "標題未出現明確利多或利空關鍵字",
       "key_point": "觀察訊號；搭配法人買賣超與股價位置判斷承接力",
       "source_score": 3,
@@ -4671,7 +4694,7 @@
       "bias": "利多",
       "event_type": "法說",
       "title": "不甩大盤陰霾！力積電營收、除息雙利多湧52萬張奪成交王 「這檔」吞法說會大補丸亮燈成焦點",
-      "source": "FTNN 新聞網",
+      "source": "ftnn.com.tw",
       "published": "2026-08-14 16:55",
       "published_ts": "2026-08-14T16:55:00+08:00",
       "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8zWFp5djNjcTBIekZBTk5XNlFpNHRoRXV6MnpIRXoxc2daSmNaMzVvNTQ4UW5hNHItY3gtTktoaHQxdDE0NGEwM3Q4RQ?oc=5",
@@ -4688,7 +4711,7 @@
       "bias": "中性",
       "event_type": "產業",
       "title": "個股：力積電(6770)董事會推選謝再居擔任董事長",
-      "source": "富聯網",
+      "source": "ww2.money-link.com.tw",
       "published": "2026-08-12 08:05",
       "published_ts": "2026-08-12T08:05:00+08:00",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMkhKMnBqWk82WkdPTjZJY2ZRLTI3UmVLcndEbXpVeTUtSndXam5Xa21UQlpIaGpZMlQwZi13a2tIOE0tY25HU3VtT1NPR1lxVGROVEFERTNMZWJvbFkzdUxPVlNoUkJjeVdkekpXQWtIWTRGdlFmWlpPVWRFOXVEbWt4Mngxclhi?oc=5",
@@ -4790,7 +4813,7 @@
       "bias": "利多",
       "event_type": "財報",
       "title": "力積電財報／首季EPS 3.36元獲利暴增 扣除美光售廠利益本業仍轉盈",
-      "source": "udn.com",
+      "source": "UDN",
       "published": "2026-04-21 15:00",
       "published_ts": "2026-04-21T15:00:00+08:00",
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5HSGR0bmMyVURQQlA2YkNkLUdZNVR1OE1iYllWb3JDREFEMUJ6RDFFckNsRXh5T3RZZFlZYUkyOVZlaklJVllCbFFycjVlRGMy0gFWQVVfeXFMUFBKQkVYdTNQNlV1ZHFIU29yLTJDdEdOWTBGSHJETWxvb3dtSDdwN18wSmJyejNIREViR013RVpFOUZMMVEwMlBhX2x6elZTRkdPUmRVSmc?oc=5",
@@ -4849,40 +4872,40 @@
   "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6770_2026-08-14\\index.html",
   "llm_training_status": {
     "ok": true,
-    "count": 23732,
+    "count": 23923,
     "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\llm_technical_training_examples.jsonl",
     "dashboard": {
       "ok": true,
       "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\technical_training_dashboard.html",
       "summary": {
-        "generated_at": "2026-08-14T19:20:31+08:00",
-        "examples": 23732,
-        "stocks": 391,
+        "generated_at": "2026-08-14T21:14:57+08:00",
+        "examples": 23923,
+        "stocks": 392,
         "quality_counts": {
-          "高": 22595,
-          "中": 917,
-          "未標記": 125,
+          "高": 22778,
+          "中": 924,
+          "未標記": 126,
           "低": 95
         },
         "industry_counts": {
           "其他": 2940,
           "觀光事業": 2640,
-          "電子工業": 2401,
+          "電子工業": 2351,
           "電子零組件業": 1925,
           "半導體業": 1711,
           "貿易百貨": 1080,
           "光電業": 1060,
           "生技醫療業": 962,
           "電腦及週邊設備業": 960,
+          "電機機械": 711,
           "金融保險": 660,
-          "電機機械": 611,
           "通信網路業": 548,
           "其他電子類": 480,
           "電子商務業": 480,
           "紡織纖維": 471,
+          "其他電子業": 469,
           "創新版股票": 420,
           "化學工業": 400,
-          "其他電子業": 369,
           "航運業": 360,
           "資訊服務業": 360
         },
@@ -4890,7 +4913,7 @@
           {
             "industry": "其他",
             "examples": 2940,
-            "example_pct": 12.4,
+            "example_pct": 12.3,
             "stocks": 49,
             "high_quality": 2914,
             "mid_quality": 25,
@@ -4903,7 +4926,7 @@
           {
             "industry": "觀光事業",
             "examples": 2640,
-            "example_pct": 11.1,
+            "example_pct": 11.0,
             "stocks": 44,
             "high_quality": 2563,
             "mid_quality": 74,
@@ -4915,10 +4938,10 @@
           },
           {
             "industry": "電子工業",
-            "examples": 2401,
-            "example_pct": 10.1,
+            "examples": 2351,
+            "example_pct": 9.8,
             "stocks": 43,
-            "high_quality": 2189,
+            "high_quality": 2139,
             "mid_quality": 167,
             "low_quality": 31,
             "unlabeled_quality": 14,
@@ -4929,7 +4952,7 @@
           {
             "industry": "電子零組件業",
             "examples": 1925,
-            "example_pct": 8.1,
+            "example_pct": 8.0,
             "stocks": 32,
             "high_quality": 1736,
             "mid_quality": 163,
@@ -4955,7 +4978,7 @@
           {
             "industry": "貿易百貨",
             "examples": 1080,
-            "example_pct": 4.6,
+            "example_pct": 4.5,
             "stocks": 18,
             "high_quality": 1065,
             "mid_quality": 15,
@@ -4968,7 +4991,7 @@
           {
             "industry": "光電業",
             "examples": 1060,
-            "example_pct": 4.5,
+            "example_pct": 4.4,
             "stocks": 17,
             "high_quality": 996,
             "mid_quality": 57,
@@ -4981,7 +5004,7 @@
           {
             "industry": "生技醫療業",
             "examples": 962,
-            "example_pct": 4.1,
+            "example_pct": 4.0,
             "stocks": 16,
             "high_quality": 933,
             "mid_quality": 27,
@@ -5005,6 +5028,19 @@
             "latest_sample_date": "2026-06-11"
           },
           {
+            "industry": "電機機械",
+            "examples": 711,
+            "example_pct": 3.0,
+            "stocks": 11,
+            "high_quality": 660,
+            "mid_quality": 40,
+            "low_quality": 0,
+            "unlabeled_quality": 11,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "電機機械通用樣本、線性馬達 / 自動化、儲能 / 電網、儲能系統",
+            "latest_sample_date": "2026-07-28"
+          },
+          {
             "industry": "金融保險",
             "examples": 660,
             "example_pct": 2.8,
@@ -5016,19 +5052,6 @@
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "金融保險通用樣本",
             "latest_sample_date": "2026-06-12"
-          },
-          {
-            "industry": "電機機械",
-            "examples": 611,
-            "example_pct": 2.6,
-            "stocks": 10,
-            "high_quality": 565,
-            "mid_quality": 35,
-            "low_quality": 0,
-            "unlabeled_quality": 11,
-            "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "電機機械通用樣本、儲能 / 電網、儲能系統、變壓器",
-            "latest_sample_date": "2026-07-28"
           },
           {
             "industry": "通信網路業",
@@ -5083,6 +5106,19 @@
             "latest_sample_date": "2026-06-11"
           },
           {
+            "industry": "其他電子業",
+            "examples": 469,
+            "example_pct": 2.0,
+            "stocks": 9,
+            "high_quality": 441,
+            "mid_quality": 19,
+            "low_quality": 0,
+            "unlabeled_quality": 9,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "其他電子業通用樣本、液冷 / 散熱、液冷 / 水冷 / 散熱模組、AI伺服器 / GPU伺服器",
+            "latest_sample_date": "2026-07-17"
+          },
+          {
             "industry": "創新版股票",
             "examples": 420,
             "example_pct": 1.8,
@@ -5107,19 +5143,6 @@
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "化學工業通用樣本、CCL / 銅箔基板、PCB / HDI",
             "latest_sample_date": "2026-06-15"
-          },
-          {
-            "industry": "其他電子業",
-            "examples": 369,
-            "example_pct": 1.6,
-            "stocks": 9,
-            "high_quality": 341,
-            "mid_quality": 19,
-            "low_quality": 0,
-            "unlabeled_quality": 9,
-            "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "其他電子業通用樣本、AI伺服器 / GPU伺服器、AI伺服器ODM / EMS、液冷 / 散熱",
-            "latest_sample_date": "2026-07-17"
           },
           {
             "industry": "航運業",
@@ -5200,6 +5223,19 @@
             "latest_sample_date": "2026-06-11"
           },
           {
+            "industry": "電器電纜",
+            "examples": 222,
+            "example_pct": 0.9,
+            "stocks": 3,
+            "high_quality": 215,
+            "mid_quality": 5,
+            "low_quality": 0,
+            "unlabeled_quality": 2,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "電器電纜通用樣本、儲能 / 電網、變壓器 / 重電",
+            "latest_sample_date": "2026-07-17"
+          },
+          {
             "industry": "文化創意業",
             "examples": 200,
             "example_pct": 0.8,
@@ -5211,19 +5247,6 @@
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "文化創意業通用樣本",
             "latest_sample_date": "2026-05-20"
-          },
-          {
-            "industry": "電器電纜",
-            "examples": 181,
-            "example_pct": 0.8,
-            "stocks": 3,
-            "high_quality": 177,
-            "mid_quality": 3,
-            "low_quality": 0,
-            "unlabeled_quality": 1,
-            "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "電器電纜通用樣本、儲能 / 電網、變壓器 / 重電",
-            "latest_sample_date": "2026-07-09"
           },
           {
             "industry": "ETF",
@@ -5436,15 +5459,15 @@
           "航運業通用樣本": 360,
           "資訊服務業通用樣本": 360,
           "電源供應器 / 電源管理": 359,
-          "CCL / 銅箔基板": 340,
-          "CPO / 矽光子": 318,
-          "儲能 / 電網": 312
+          "儲能 / 電網": 353,
+          "變壓器 / 重電": 353,
+          "線性馬達 / 自動化": 350
         },
         "tag_detail_rows": [
           {
             "tag": "其他通用樣本",
             "examples": 2940,
-            "example_pct": 12.4,
+            "example_pct": 12.3,
             "stocks": 49,
             "top_industry": "其他",
             "high_quality": 2914,
@@ -5456,7 +5479,7 @@
           {
             "tag": "觀光事業通用樣本",
             "examples": 2640,
-            "example_pct": 11.1,
+            "example_pct": 11.0,
             "stocks": 44,
             "top_industry": "觀光事業",
             "high_quality": 2563,
@@ -5492,7 +5515,7 @@
           {
             "tag": "半導體業通用樣本",
             "examples": 1205,
-            "example_pct": 5.1,
+            "example_pct": 5.0,
             "stocks": 21,
             "top_industry": "半導體業",
             "high_quality": 1118,
@@ -5504,7 +5527,7 @@
           {
             "tag": "貿易百貨通用樣本",
             "examples": 1080,
-            "example_pct": 4.6,
+            "example_pct": 4.5,
             "stocks": 18,
             "top_industry": "貿易百貨",
             "high_quality": 1065,
@@ -5516,7 +5539,7 @@
           {
             "tag": "光電業通用樣本",
             "examples": 1060,
-            "example_pct": 4.5,
+            "example_pct": 4.4,
             "stocks": 17,
             "top_industry": "光電業",
             "high_quality": 996,
@@ -5564,7 +5587,7 @@
           {
             "tag": "DRAM / 利基型記憶體",
             "examples": 514,
-            "example_pct": 2.2,
+            "example_pct": 2.1,
             "stocks": 7,
             "top_industry": "半導體業",
             "high_quality": 428,
@@ -5576,7 +5599,7 @@
           {
             "tag": "光通訊模組",
             "examples": 488,
-            "example_pct": 2.1,
+            "example_pct": 2.0,
             "stocks": 7,
             "top_industry": "通信網路業",
             "high_quality": 378,
@@ -5766,6 +5789,42 @@
             "latest_sample_date": "2026-08-07"
           },
           {
+            "tag": "儲能 / 電網",
+            "examples": 353,
+            "example_pct": 1.5,
+            "stocks": 5,
+            "top_industry": "電機機械",
+            "high_quality": 327,
+            "mid_quality": 13,
+            "low_quality": 0,
+            "unlabeled_quality": 13,
+            "latest_sample_date": "2026-07-28"
+          },
+          {
+            "tag": "變壓器 / 重電",
+            "examples": 353,
+            "example_pct": 1.5,
+            "stocks": 5,
+            "top_industry": "電機機械",
+            "high_quality": 324,
+            "mid_quality": 16,
+            "low_quality": 0,
+            "unlabeled_quality": 13,
+            "latest_sample_date": "2026-07-28"
+          },
+          {
+            "tag": "線性馬達 / 自動化",
+            "examples": 350,
+            "example_pct": 1.5,
+            "stocks": 5,
+            "top_industry": "電機機械",
+            "high_quality": 323,
+            "mid_quality": 16,
+            "low_quality": 1,
+            "unlabeled_quality": 10,
+            "latest_sample_date": "2026-07-21"
+          },
+          {
             "tag": "CCL / 銅箔基板",
             "examples": 340,
             "example_pct": 1.4,
@@ -5788,30 +5847,6 @@
             "low_quality": 1,
             "unlabeled_quality": 38,
             "latest_sample_date": "2026-07-31"
-          },
-          {
-            "tag": "儲能 / 電網",
-            "examples": 312,
-            "example_pct": 1.3,
-            "stocks": 5,
-            "top_industry": "電機機械",
-            "high_quality": 289,
-            "mid_quality": 11,
-            "low_quality": 0,
-            "unlabeled_quality": 12,
-            "latest_sample_date": "2026-07-28"
-          },
-          {
-            "tag": "變壓器 / 重電",
-            "examples": 312,
-            "example_pct": 1.3,
-            "stocks": 5,
-            "top_industry": "電機機械",
-            "high_quality": 286,
-            "mid_quality": 14,
-            "low_quality": 0,
-            "unlabeled_quality": 12,
-            "latest_sample_date": "2026-07-28"
           },
           {
             "tag": "Optical Engine光引擎",
@@ -5888,7 +5923,7 @@
           {
             "tag": "儲能系統",
             "examples": 251,
-            "example_pct": 1.1,
+            "example_pct": 1.0,
             "stocks": 4,
             "top_industry": "電機機械",
             "high_quality": 230,
@@ -5900,19 +5935,7 @@
           {
             "tag": "工業機器人 / 自動化系統",
             "examples": 250,
-            "example_pct": 1.1,
-            "stocks": 4,
-            "top_industry": "電子工業",
-            "high_quality": 228,
-            "mid_quality": 11,
-            "low_quality": 1,
-            "unlabeled_quality": 10,
-            "latest_sample_date": "2026-07-21"
-          },
-          {
-            "tag": "線性馬達 / 自動化",
-            "examples": 250,
-            "example_pct": 1.1,
+            "example_pct": 1.0,
             "stocks": 4,
             "top_industry": "電子工業",
             "high_quality": 228,
@@ -6091,11 +6114,11 @@
           },
           {
             "tag": "液冷 / 散熱",
-            "examples": 127,
-            "example_pct": 0.5,
+            "examples": 177,
+            "example_pct": 0.7,
             "stocks": 2,
-            "top_industry": "電子工業",
-            "high_quality": 119,
+            "top_industry": "其他電子業",
+            "high_quality": 169,
             "mid_quality": 1,
             "low_quality": 0,
             "unlabeled_quality": 7,
@@ -6103,11 +6126,11 @@
           },
           {
             "tag": "液冷 / 水冷 / 散熱模組",
-            "examples": 127,
-            "example_pct": 0.5,
+            "examples": 177,
+            "example_pct": 0.7,
             "stocks": 2,
-            "top_industry": "電子工業",
-            "high_quality": 119,
+            "top_industry": "其他電子業",
+            "high_quality": 169,
             "mid_quality": 1,
             "low_quality": 0,
             "unlabeled_quality": 7,
@@ -6184,6 +6207,18 @@
             "low_quality": 0,
             "unlabeled_quality": 0,
             "latest_sample_date": "2026-03-26"
+          },
+          {
+            "tag": "線性滑軌 / 滾珠螺桿",
+            "examples": 100,
+            "example_pct": 0.4,
+            "stocks": 1,
+            "top_industry": "電機機械",
+            "high_quality": 95,
+            "mid_quality": 5,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-05-15"
           },
           {
             "tag": "MPO / 光纖配線盒",
@@ -6319,8 +6354,8 @@
           }
         ],
         "source_counts": {
-          "rolling_ohlcv_backtest": 23607,
-          "prediction_history_backtest": 125
+          "rolling_ohlcv_backtest": 23797,
+          "prediction_history_backtest": 126
         },
         "latest_sample_date": "2026-08-07",
         "manifest": {
@@ -6331,7 +6366,7 @@
         }
       }
     },
-    "content_sha256": "b1de7d79d48304aaf89024336413b0e466ed2f77cf996bd236a40781268917d0",
-    "message": "已輸出 23732 筆 LLM 技術訓練樣本"
+    "content_sha256": "05a81b3527b22b927c3d13fa8a77f6bae84e0b131eb0bb3f4e7f5226edf72203",
+    "message": "已輸出 23923 筆 LLM 技術訓練樣本"
   }
 }
