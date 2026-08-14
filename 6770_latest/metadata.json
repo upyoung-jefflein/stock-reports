@@ -29,19 +29,19 @@
   "government_bank_latest_period": "2026-08-14",
   "margin_period": "2025-08-14 to 2026-08-13 (OK; fields=MarginPurchaseTodayBalance, ShortSaleTodayBalance; 融資餘額校驗OK; 融券餘額校驗OK)",
   "margin_latest_period": "2026-08-13",
-  "warrant_period": "None (optional fetch timed out after 20 seconds; skipped)",
-  "warrant_latest_period": "",
-  "fundamental_period": "revenue 2024-03-01 to 2026-08-01; PER/PBR 2025-08-14 to 2026-08-14; EPS 2021-09-30 to 2026-06-30; profitability 2021-09-30 to 2026-03-31; quarterly_detail 2021-09-30 to 2026-03-31 (OK revenue_rows=30; per_rows=243; eps_rows=20; profitability_rows=19; quarterly_detail_rows=19)",
+  "warrant_period": "TWSE report_date=1150813 (OK; call=261, put=32, with_exercise_price=293)",
+  "warrant_latest_period": "TWSE report_date=1150813",
+  "fundamental_period": "revenue 2024-03-01 to 2026-08-01; PER/PBR 2025-08-14 to 2026-08-14; EPS 2021-09-30 to 2026-06-30; profitability 2021-09-30 to 2026-06-30; quarterly_detail 2021-09-30 to 2026-06-30 (OK revenue_rows=30; per_rows=243; eps_rows=20; profitability_rows=20; quarterly_detail_rows=20)",
   "fundamental_report_source": "",
   "fundamental_report_announcement_date": "",
   "fundamental_report_announcement_title": "",
   "revenue_latest_period": "2026-07",
-  "quarterly_latest_period": "2026-03-31",
+  "quarterly_latest_period": "2026-06-30",
   "major_holder_period": "not available; no complete natural person major-holder list claimed",
   "tdcc_period": "20260807 (OK; rows=17)",
   "tdcc_latest_period": "20260807",
-  "etf_latest_period": "2026-08-13",
-  "etf_holding_change_period": "2026-08-13 (OK; holders=10, active_candidates=1; changes=1)",
+  "etf_latest_period": "2026-08-14",
+  "etf_holding_change_period": "2026-08-14 (OK; holders=10, active_candidates=1; changes=1)",
   "peer_source_and_list": "peer_themes.json theme rules + FinMind TaiwanStockInfo + TaiwanStockPrice OHLCV; compared=力積電(6770), 聯電(2303), 世界(5347), 華邦電(2344), 南亞科(2408); failures=none",
   "peer_display_list": "力積電(6770)、聯電(2303)、世界(5347)、華邦電(2344)、南亞科(2408)",
   "peer_business_summary": "力積電(6770) 定位：成熟製程晶圓代工 / DRAM 與特殊記憶體製造 / 邏輯與顯示驅動代工；產品組合：12吋成熟製程晶圓代工（占比待補）、DRAM / 利基型記憶體製造（占比待補）、Flash / 非揮發性記憶體相關製程（占比待補）、顯示驅動 IC / 高壓製程代工（占比待補）、電源管理 IC / 類比與混合訊號製程（占比待補）；資料層級：官方產品資料；同族群比較基準：成熟製程晶圓代工 / DRAM 與特殊記憶體代工。對照族群涵蓋：成熟製程晶圓代工、成熟製程晶圓代工 / 車用工控偏重、記憶體 / DRAM / Flash 供應鏈。",
@@ -215,11 +215,11 @@
       "valuation_logic": "以記憶體報價、庫存水位、稼動率、毛利率修復與 PBR/PER 區間交叉評估；虧轉盈或 EPS 低檔時不宜只看 PER。",
       "risks": "報價波動、需求循環、同業產能競爭",
       "stock_price_watch": "DRAM / Flash 報價循環、庫存去化、稼動率回升；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：記憶體製造 / IC 同業；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：記憶體；產品重疊：DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、NAND / NOR Flash、DRAM / 利基型記憶體",
+      "comparability": "高：記憶體製造 / IC 同業；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：記憶體；產品重疊：DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、DRAM / 利基型記憶體、NAND / NOR Flash",
       "evidence_keywords": "記憶體",
       "evidence_sources": "TWSE 公司基本資料 / 官網：https://WWW.WINBOND.COM、sinotrade.com.tw",
       "product_overlap_score": 3.7399999999999998,
-      "matched_products": "DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、NAND / NOR Flash、DRAM / 利基型記憶體"
+      "matched_products": "DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、DRAM / 利基型記憶體、NAND / NOR Flash"
     },
     {
       "stock_id": "2408",
@@ -293,11 +293,11 @@
       "valuation_logic": "以記憶體報價、庫存水位、稼動率、毛利率修復與 PBR/PER 區間交叉評估；虧轉盈或 EPS 低檔時不宜只看 PER。",
       "risks": "報價反轉、景氣循環、庫存與資本支出",
       "stock_price_watch": "DRAM / Flash 報價循環、庫存去化、稼動率回升；同時看毛利率、營益率與月營收是否同步改善",
-      "comparability": "高：記憶體製造同業；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：DRAM、DDR4、DDR5；產品重疊：DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、NAND / NOR Flash、DRAM / 利基型記憶體",
+      "comparability": "高：記憶體製造同業；公司實際產品比重需以法說、年報或公告確認；佐證關鍵字：DRAM、DDR4、DDR5；產品重疊：DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、DRAM / 利基型記憶體、NAND / NOR Flash",
       "evidence_keywords": "DRAM、DDR4、DDR5",
       "evidence_sources": "TWSE 公司基本資料 / 官網：https://www.nanya.com、官網延伸頁：https://www.nanya.com/en/Product/List/450/2478",
       "product_overlap_score": 3.7399999999999998,
-      "matched_products": "DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、NAND / NOR Flash、DRAM / 利基型記憶體"
+      "matched_products": "DRAM / 利基型記憶體製造、Flash / 非揮發性記憶體相關製程、DRAM / 利基型記憶體、NAND / NOR Flash"
     },
     {
       "stock_id": "5347",
@@ -402,14 +402,14 @@
   ],
   "etf_display_status": "最新異動命中 1 檔",
   "tdcc_display_status": "20260807；大額 43.71% / 小額 26.07%",
-  "warrant_display_status": "optional fetch timed out after 20 seconds; skipped",
+  "warrant_display_status": "293 檔，認購 261 / 認售 32",
   "fundamental_display_status": "月營收、估值與正式 EPS 已取得",
-  "fundamental_profitability_summary": "2026Q1 毛利率 10.23%（年變化 +15.05 個百分點）、營業利益率 104.82%（年變化 +112.54 個百分點）",
-  "fundamental_quarterly_summary": "2026Q1 營業費用率 18.64%（年變化 -0.18 個百分點）、稅後淨利率 104.85%（年變化 +114.72 個百分點）、ROE 8.24%（年變化 +9.49 個百分點）",
-  "fundamental_net_income_eps_summary": "2026Q1 稅後純益 142.31 億元（由虧轉盈）；2026Q2 EPS 0.76 元（由虧轉盈），近四季 EPS 3.32 元",
+  "fundamental_profitability_summary": "2026Q2 毛利率 28.28%（年變化 +37.34 個百分點）、營業利益率 21.31%（年變化 +36.35 個百分點）",
+  "fundamental_quarterly_summary": "2026Q2 營業費用率 13.35%（年變化 -3.98 個百分點）、稅後淨利率 19.03%（年變化 +48.59 個百分點）",
+  "fundamental_net_income_eps_summary": "2026Q2 稅後純益 32.91 億元（由虧轉盈）；2026Q2 EPS 0.76 元（由虧轉盈），近四季 EPS 3.32 元",
   "revenue_trend_summary": "2026-07 月營收 66.69 億元；MoM 3.01%；YoY 70.54%；近 3 個月累計 YoY 66.21%；近 12 個月滾動營收 YoY 27.99%；創近 24 個月新高；連續 14 個月年增為正",
-  "fundamental_price_estimate_summary": "悲觀 71 元 / 中性 119 元 / 樂觀 145 元；產業模型：成熟製程/記憶體混合循環（PER 下限 5.0x / 上限 34.0x）；加權框架：景氣循環；近四季 EPS 3.32；預測 EPS 估 5.09（成長假設 +9.2%）；估值 PER 23.1x / 27.6x / 34.0x；估值信心 95/100；稅後純益因子：YoY -1397.2% / 最新季 142.31 億元，已納入預測 EPS 與 PER 品質調整；月營收推下一季 EPS 1.72（年化 6.88；季節性係數 0.86 / 歷史營收轉EPS效率 / 近3月營收YoY +66.2% / 最新月營收YoY +70.5% / 近12月營收YoY +28.0% / 毛利率年變化 +15.1ppt）；風險折價：稅後純益年減（-4%）；催化溢價：月營收年增雙位數、營業利益率具支撐、ROE 支撐評價（+9%）；目前 PER 26.1x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=35.0x/38.2x/42.1x；目前 PER 位於近一年 1% 分位；市場情境 20x/25x/30x=66/83/100 元；模型推估：EPS/PER 140 元（預測 EPS 5.09 × 中性 PER 27.6x）、稅後純益/EPS 73 元（稅後純益YoY -1397.2% / 最新季 142.31億元 × 中性 PER 27.6x）、月營收推估EPS 190 元（下一季EPS估 1.72 ×4 × PER 27.6x / 信心高）、PBR/ROE 75 元（ROE 對應合理 PBR）、技術型態 78 元（上升通道 突破量測目標 / 量能確認 / 有效性高89）、法人籌碼成本 71 元（外資 / 投信近20與60日加碼成本）、同族群動能 98 元（同族群中位報酬 +919.4% / 本股 +402.6%）、事件影響 86 元（未來45天 台指期結算、月底作帳；記憶體循環型加權 +10.3% / 當日震盪 5.8%）；有效模型權重：EPS/PER 31%、稅後純益/EPS 5%、月營收推估EPS 26%、PBR/ROE 4%、技術型態 10%、法人籌碼成本 11%、同族群動能 13%、事件影響 1%；多模型加權參考 119 元；歷史 PBR 分位 Q25/Q50/Q75=1.64x/2.71x/3.15x；ROE/PB 交叉參考 75 元；技術型態目標 78 元（243日上升通道 / 型態分 6.7 / 目標可信高89）；法人籌碼成本 外資 75 元 / 投信 67 元；同族群相對動能參考 98 元（同族群中位報酬 +919.4% / 本股 +402.6%）；現價 78.40 元，較中性估值 -34.1%；現價低於中性估值，具估值修復空間；合理偏低區：若技術面轉強，具估值修復條件",
-  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、稅後純益年減、稅後淨利率較去年同期改善、ROE 較去年同期改善。",
+  "fundamental_price_estimate_summary": "悲觀 71 元 / 中性 117 元 / 樂觀 145 元；產業模型：成熟製程/記憶體混合循環（PER 下限 5.0x / 上限 34.0x）；加權框架：景氣循環；近四季 EPS 3.32；預測 EPS 估 5.09（成長假設 +9.2%）；估值 PER 22.0x / 26.2x / 34.0x；估值信心 95/100；稅後純益因子：YoY -198.7% / 最新季 32.91 億元，已納入預測 EPS 與 PER 品質調整；月營收推下一季 EPS 1.72（年化 6.88；季節性係數 0.86 / 歷史營收轉EPS效率 / 近3月營收YoY +66.2% / 最新月營收YoY +70.5% / 近12月營收YoY +28.0% / 毛利率年變化 +37.3ppt）；風險折價：稅後純益年減（-4%）；催化溢價：月營收年增雙位數、營業利益率具支撐（+6%）；目前 PER 26.1x 納入中性估值權重；歷史 PER 分位 Q25/Q50/Q75=35.0x/38.2x/42.1x；目前 PER 位於近一年 1% 分位；市場情境 20x/25x/30x=66/83/100 元；模型推估：EPS/PER 134 元（預測 EPS 5.09 × 中性 PER 26.2x）、稅後純益/EPS 70 元（稅後純益YoY -198.7% / 最新季 32.91億元 × 中性 PER 26.2x）、月營收推估EPS 180 元（下一季EPS估 1.72 ×4 × PER 26.2x / 信心高）、技術型態 78 元（上升通道 突破量測目標 / 量能確認 / 有效性高89）、法人籌碼成本 71 元（外資 / 投信近20與60日加碼成本）、同族群動能 98 元（同族群中位報酬 +919.4% / 本股 +402.6%）、事件影響 86 元（未來45天 台指期結算、月底作帳；記憶體循環型加權 +10.3% / 當日震盪 5.8%）；有效模型權重：EPS/PER 32%、稅後純益/EPS 5%、月營收推估EPS 27%、技術型態 10%、法人籌碼成本 11%、同族群動能 13%、事件影響 1%；多模型加權參考 117 元；歷史 PBR 分位 Q25/Q50/Q75=1.64x/2.71x/3.15x；技術型態目標 78 元（243日上升通道 / 型態分 6.7 / 目標可信高89）；法人籌碼成本 外資 75 元 / 投信 67 元；同族群相對動能參考 98 元（同族群中位報酬 +919.4% / 本股 +402.6%）；現價 78.40 元，較中性估值 -33.2%；現價低於中性估值，具估值修復空間；合理偏低區：若技術面轉強，具估值修復條件",
+  "fundamental_support_summary": "是否支持股價：支持度偏強。理由：近 3 個月營收動能改善、最新月營收年增雙位數、正式 EPS 年增、毛利率較去年同期改善、營業利益率較去年同期改善、稅後純益年減、稅後淨利率較去年同期改善、營業費用率較去年同期下降。",
   "prediction_backtest_dashboard": {
     "forecast_contract_version": "forecast-horizons-v1",
     "sample_count": 6,
@@ -420,8 +420,8 @@
       "stop_hit_rate": 100.0
     },
     "industry_pool": {
-      "sample_count": 15,
-      "direction_hit_rate": 20.0,
+      "sample_count": 17,
+      "direction_hit_rate": 29.411764705882355,
       "scope": "同產業（非個股專屬，僅供參考）"
     },
     "pending_count": 1,
@@ -457,7 +457,7 @@
     ],
     "model_error_rows": [],
     "summary": "探索性回測（新版分週期樣本 6；舊版排除 5）；5日方向命中 67%（95% CI 30%–90%）；5日中位誤差 10.8%；5日區間命中 67%（區間寬度中位 36.3%）；20日中位誤差 16.2%",
-    "freshness_note": "行情資料至 2026-08-14；最新可回測新版樣本 2026-08-07；另有 1 筆待驗證；舊版估值樣本 5 筆已驗證（達標 0% / 觸停損 100%）；同產業已累積 15 筆可用樣本，5日方向勝率 20%（僅供參考，非個股專屬）",
+    "freshness_note": "行情資料至 2026-08-14；最新可回測新版樣本 2026-08-07；另有 1 筆待驗證；舊版估值樣本 5 筆已驗證（達標 0% / 觸停損 100%）；同產業已累積 17 筆可用樣本，5日方向勝率 29%（僅供參考，非個股專屬）",
     "rows": [
       {
         "date": "2026-07-09",
@@ -813,7 +813,7 @@
       },
       {
         "factor": "估值/技術上緣",
-        "value": "119.0 / 145.0 / 77.5",
+        "value": "117.0 / 145.0 / 77.5",
         "effect": "避免單一模型喊價"
       },
       {
@@ -940,21 +940,21 @@
         }
       ]
     },
-    "summary": "雙向預測：偏多，基準情境為上行測壓（跨股情境參考）；上行 90.3（中）/ 下行 70.9（低）/ 區間 67.7-96.1（中）；獨立樣本 6502 筆 / 有效 4759 / 390 檔；5日正向 30% / 負向 31% / 盤整 39%。",
+    "summary": "雙向預測：偏多，基準情境為上行測壓（跨股情境參考）；上行 90.3（中）/ 下行 70.9（低）/ 區間 67.7-96.1（中）；獨立樣本 6491 筆 / 有效 4740 / 390 檔；5日正向 31% / 負向 31% / 盤整 39%。",
     "close": 78.4,
     "bull_case": {
       "price": 90.27,
       "probability": 42,
       "display_probability": "中",
       "trigger": 81.8,
-      "upside_pct": 15.14
+      "upside_pct": 15.15
     },
     "bear_case": {
-      "price": 70.91,
+      "price": 70.92,
       "probability": 26,
       "display_probability": "低",
       "trigger": 73.47,
-      "downside_pct": -9.55
+      "downside_pct": -9.54
     },
     "range_case": {
       "low": 67.66,
@@ -963,7 +963,7 @@
       "display_probability": "中"
     },
     "signals": {
-      "neutral_gap_pct": 51.79,
+      "neutral_gap_pct": 49.23,
       "technical_score": 90.9,
       "atr_pct": 6.29,
       "backtest_direction_hit_rate": 50.0,
@@ -989,9 +989,9 @@
       }
     },
     "training_calibration": {
-      "sample_count": 6502,
-      "raw_matched_sample_count": 14717,
-      "effective_sample_count": 4758.8,
+      "sample_count": 6491,
+      "raw_matched_sample_count": 14619,
+      "effective_sample_count": 4740.4,
       "stock_count": 390,
       "ready": true,
       "regime_tags": [
@@ -999,20 +999,20 @@
         "bullish_setup",
         "volume_expansion"
       ],
-      "positive_rate": 30.0,
-      "negative_rate": 31.0,
-      "neutral_rate": 38.9,
-      "median_return5": -0.17,
-      "q25_return5": -2.78,
-      "q75_return5": 2.92,
-      "median_return20": -0.3,
-      "q25_return20": -5.56,
-      "q75_return20": 6.45,
-      "summary": "獨立樣本 6502 筆 / 有效 4759 / 390 檔；5日正向 30% / 負向 31% / 盤整 39%"
+      "positive_rate": 30.6,
+      "negative_rate": 30.6,
+      "neutral_rate": 38.8,
+      "median_return5": -0.12,
+      "q25_return5": -2.75,
+      "q75_return5": 2.95,
+      "median_return20": -0.26,
+      "q25_return20": -5.38,
+      "q75_return20": 6.61,
+      "summary": "獨立樣本 6491 筆 / 有效 4740 / 390 檔；5日正向 31% / 負向 31% / 盤整 39%"
     },
     "invalidation": "若跌破 73.47 且量能放大，偏多情境失效"
   },
-  "bidirectional_price_forecast_summary": "雙向預測：偏多，基準情境為上行測壓（跨股情境參考）；上行 90.3（中）/ 下行 70.9（低）/ 區間 67.7-96.1（中）；獨立樣本 6502 筆 / 有效 4759 / 390 檔；5日正向 30% / 負向 31% / 盤整 39%。",
+  "bidirectional_price_forecast_summary": "雙向預測：偏多，基準情境為上行測壓（跨股情境參考）；上行 90.3（中）/ 下行 70.9（低）/ 區間 67.7-96.1（中）；獨立樣本 6491 筆 / 有效 4740 / 390 檔；5日正向 31% / 負向 31% / 盤整 39%。",
   "event_calendar_backtest": {
     "summary": "市場事件樣本偏多；未來45天事件 8 筆，20日影響分數 +12.7",
     "rows": [
@@ -1681,8 +1681,8 @@
       "量能明顯放大"
     ],
     "training_calibration": {
-      "sample_count": 1487,
-      "industry_sample_count": 1487,
+      "sample_count": 1440,
+      "industry_sample_count": 1440,
       "score_adjust": 0.0,
       "reason": ""
     },
@@ -2771,11 +2771,11 @@
   "summary_atr": "ATR14 4.93，常態區間 73.47～83.33",
   "summary_key_watch": "價漲量增；明日觀察 MA5 72.32 / MA10 67.46",
   "summary_risk": "跌破 MA10 67.46 且放量，短線轉弱；跌破 MA20 63.52 則整理擴大；跌破第一支撐 73.47，提高防守權重；MA120長線參考 MA120 65.85（支撐）",
-  "summary_warrant": "權證資料未完整取得",
-  "summary_warrant_signal": "中性",
-  "summary_warrant_plain": "權證資料不足，暫不做白話解讀",
-  "summary_warrant_price_view": "權證熱區不足，暫不評估股價位置",
-  "generated_at": "2026-08-14T17:57:24+08:00",
+  "summary_warrant": "認購成交占 97.18%，近價外認購 35 檔，前五大成交占 26.92%",
+  "summary_warrant_signal": "中性偏投機",
+  "summary_warrant_plain": "權證人氣偏多但偏投機，只能輔助現股判斷；現股不續強時權證容易快速降溫",
+  "summary_warrant_price_view": "現股距認購主流履約價仍有 15.79% 空間，屬高想像但投機風險也高",
+  "generated_at": "2026-08-14T19:19:30+08:00",
   "timezone": "台北標準時間",
   "charts": [
     "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6770_2026-08-14\\01_日線完整技術與籌碼分析圖.png",
@@ -2966,8 +2966,8 @@
     }
   ],
   "tdcc_history_chart": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6770_2026-08-14\\07_集保股權歷史趨勢圖.png",
-  "broker_trading_period": "2026-05-21 to 2026-08-14 (OK; local rows=4128, days=268, imported_files=0；HiStock history brokers=5, days=240, rows=1200；nStock 2026-08-14 rows=20)",
-  "broker_import_status": "券商分點：2026-05-21 to 2026-08-14；OK; local rows=4128, days=268, imported_files=0；HiStock history brokers=5, days=240, rows=1200；nStock 2026-08-14 rows=20",
+  "broker_trading_period": "2026-05-21 to 2026-08-14 (recent local broker-branch cache used; remote optional sources skipped)",
+  "broker_import_status": "券商分點：2026-05-21 to 2026-08-14；recent local broker-branch cache used; remote optional sources skipped",
   "broker_trading_latest_period": "2026-08-14",
   "broker_pattern_result": {
     "ok": true,
@@ -4571,16 +4571,16 @@
     {
       "region": "國內",
       "bias": "利多",
-      "event_type": "股價",
-      "title": "69萬股東笑開懷！力積電暴量鎖漲停 全靠「這大咖」",
-      "source": "自由財經",
-      "published": "2026-08-12 16:52",
-      "published_ts": "2026-08-12T16:52:53+08:00",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBkVVFrRUNTR3lsUGRGMkpzTmJ1WlJQaEd5V3VYNU1obk9SUk42cHhHNkZuRFByczN3eHNjYXhfZ2pKYlgxU095a1VfVEVzMTRxOTdPRnVXVTlhaDVqdzlN?oc=5",
+      "event_type": "股利",
+      "title": "焦點股》力積電：股利題材激勵 爆量再飆漲9％",
+      "source": "自由時報",
+      "published": "2026-08-14 11:14",
+      "published_ts": "2026-08-14T11:14:04+08:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBoY29JRDgxTmk0QjBZY0JNVmlRemV0Q012bUd3b1k0UUR2Y3lKUExVc2VONEpTV18xUmpzU1hYb0lQaFM3b3FpSEdHLXE0LWNhT1E2MG52UV8?oc=5",
       "reason": "標題含需求、報價、獲利或評等偏正向關鍵字",
-      "key_point": "偏多訊號；屬市場反應，需回到量價與支撐壓力驗證",
-      "source_score": 3,
-      "source_tier": "主流財經",
+      "key_point": "偏多訊號；可輔助殖利率估值，但需看配息穩定度",
+      "source_score": 2,
+      "source_tier": "一般來源",
       "signal_grade": "B",
       "signal_grade_note": "中可信，可作方向輔助"
     },
@@ -4790,7 +4790,7 @@
       "bias": "利多",
       "event_type": "財報",
       "title": "力積電財報／首季EPS 3.36元獲利暴增 扣除美光售廠利益本業仍轉盈",
-      "source": "UDN",
+      "source": "udn.com",
       "published": "2026-04-21 15:00",
       "published_ts": "2026-04-21T15:00:00+08:00",
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5HSGR0bmMyVURQQlA2YkNkLUdZNVR1OE1iYllWb3JDREFEMUJ6RDFFckNsRXh5T3RZZFlZYUkyOVZlaklJVllCbFFycjVlRGMy0gFWQVVfeXFMUFBKQkVYdTNQNlV1ZHFIU29yLTJDdEdOWTBGSHJETWxvb3dtSDdwN18wSmJyejNIREViR013RVpFOUZMMVEwMlBhX2x6elZTRkdPUmRVSmc?oc=5",
@@ -4803,32 +4803,73 @@
       "kind": "公告"
     }
   ],
-  "warrant_top_rows": [],
+  "warrant_top_rows": [
+    {
+      "warrant_id": "069954",
+      "warrant_name": "力積電台新5C購02",
+      "call_put": "認購",
+      "exercise_price": 130.0,
+      "trading_money": 7636380.0,
+      "trading_volume": 7671000.0
+    },
+    {
+      "warrant_id": "069517",
+      "warrant_name": "力積電台新5B購12",
+      "call_put": "認購",
+      "exercise_price": 110.0,
+      "trading_money": 4724410.0,
+      "trading_volume": 2535000.0
+    },
+    {
+      "warrant_id": "079080",
+      "warrant_name": "力積電中信62購03",
+      "call_put": "認購",
+      "exercise_price": 90.0,
+      "trading_money": 3152370.0,
+      "trading_volume": 2939000.0
+    },
+    {
+      "warrant_id": "069953",
+      "warrant_name": "力積電台新5C購01",
+      "call_put": "認購",
+      "exercise_price": 120.0,
+      "trading_money": 3016360.0,
+      "trading_volume": 3199000.0
+    },
+    {
+      "warrant_id": "078156",
+      "warrant_name": "力積電富邦63購04",
+      "call_put": "認購",
+      "exercise_price": 78.78,
+      "trading_money": 2720940.0,
+      "trading_volume": 1863000.0
+    }
+  ],
   "prediction_history_status": "已記錄分週期預測快照，待後續交易日回測校準",
   "html_report": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\6770_2026-08-14\\index.html",
   "llm_training_status": {
     "ok": true,
-    "count": 23820,
+    "count": 23732,
     "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\llm_technical_training_examples.jsonl",
     "dashboard": {
       "ok": true,
       "path": "C:\\Users\\jefflein\\Documents\\Codex\\2026-05-18\\gpt-line\\outputs\\technical_training_dashboard.html",
       "summary": {
-        "generated_at": "2026-08-14T17:58:18+08:00",
-        "examples": 23820,
+        "generated_at": "2026-08-14T19:20:31+08:00",
+        "examples": 23732,
         "stocks": 391,
         "quality_counts": {
-          "高": 22647,
-          "中": 953,
-          "未標記": 123,
-          "低": 97
+          "高": 22595,
+          "中": 917,
+          "未標記": 125,
+          "低": 95
         },
         "industry_counts": {
           "其他": 2940,
           "觀光事業": 2640,
-          "電子工業": 2351,
+          "電子工業": 2401,
           "電子零組件業": 1925,
-          "半導體業": 1709,
+          "半導體業": 1711,
           "貿易百貨": 1080,
           "光電業": 1060,
           "生技醫療業": 962,
@@ -4839,9 +4880,9 @@
           "其他電子類": 480,
           "電子商務業": 480,
           "紡織纖維": 471,
-          "其他電子業": 469,
-          "化學工業": 440,
           "創新版股票": 420,
+          "化學工業": 400,
+          "其他電子業": 369,
           "航運業": 360,
           "資訊服務業": 360
         },
@@ -4849,7 +4890,7 @@
           {
             "industry": "其他",
             "examples": 2940,
-            "example_pct": 12.3,
+            "example_pct": 12.4,
             "stocks": 49,
             "high_quality": 2914,
             "mid_quality": 25,
@@ -4874,12 +4915,12 @@
           },
           {
             "industry": "電子工業",
-            "examples": 2351,
-            "example_pct": 9.9,
+            "examples": 2401,
+            "example_pct": 10.1,
             "stocks": 43,
-            "high_quality": 2128,
-            "mid_quality": 179,
-            "low_quality": 30,
+            "high_quality": 2189,
+            "mid_quality": 167,
+            "low_quality": 31,
             "unlabeled_quality": 14,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "電子工業通用樣本、DRAM / 利基型記憶體、DDR4 / DDR5、NAND / NOR Flash",
@@ -4889,10 +4930,10 @@
             "industry": "電子零組件業",
             "examples": 1925,
             "example_pct": 8.1,
-            "stocks": 33,
-            "high_quality": 1710,
-            "mid_quality": 185,
-            "low_quality": 25,
+            "stocks": 32,
+            "high_quality": 1736,
+            "mid_quality": 163,
+            "low_quality": 21,
             "unlabeled_quality": 5,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "電子零組件業通用樣本、PCB / HDI、MLCC / 被動元件、CCL / 銅箔基板",
@@ -4900,13 +4941,13 @@
           },
           {
             "industry": "半導體業",
-            "examples": 1709,
+            "examples": 1711,
             "example_pct": 7.2,
             "stocks": 32,
-            "high_quality": 1527,
-            "mid_quality": 113,
+            "high_quality": 1529,
+            "mid_quality": 111,
             "low_quality": 20,
-            "unlabeled_quality": 49,
+            "unlabeled_quality": 51,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "半導體業通用樣本、DRAM / 利基型記憶體、DDR4 / DDR5、NAND / NOR Flash",
             "latest_sample_date": "2026-08-07"
@@ -4914,7 +4955,7 @@
           {
             "industry": "貿易百貨",
             "examples": 1080,
-            "example_pct": 4.5,
+            "example_pct": 4.6,
             "stocks": 18,
             "high_quality": 1065,
             "mid_quality": 15,
@@ -4929,21 +4970,21 @@
             "examples": 1060,
             "example_pct": 4.5,
             "stocks": 17,
-            "high_quality": 1001,
-            "mid_quality": 56,
-            "low_quality": 3,
+            "high_quality": 996,
+            "mid_quality": 57,
+            "low_quality": 7,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "光電業通用樣本",
-            "latest_sample_date": "2026-06-12"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "industry": "生技醫療業",
             "examples": 962,
-            "example_pct": 4.0,
+            "example_pct": 4.1,
             "stocks": 16,
-            "high_quality": 932,
-            "mid_quality": 28,
+            "high_quality": 933,
+            "mid_quality": 27,
             "low_quality": 0,
             "unlabeled_quality": 2,
             "top_source": "rolling_ohlcv_backtest",
@@ -4961,28 +5002,28 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "電腦及週邊設備業通用樣本、AI伺服器 / GPU伺服器、AI伺服器ODM / EMS",
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "industry": "金融保險",
             "examples": 660,
             "example_pct": 2.8,
             "stocks": 11,
-            "high_quality": 658,
-            "mid_quality": 2,
+            "high_quality": 660,
+            "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "金融保險通用樣本",
-            "latest_sample_date": "2026-06-11"
+            "latest_sample_date": "2026-06-12"
           },
           {
             "industry": "電機機械",
             "examples": 611,
             "example_pct": 2.6,
             "stocks": 10,
-            "high_quality": 566,
-            "mid_quality": 34,
+            "high_quality": 565,
+            "mid_quality": 35,
             "low_quality": 0,
             "unlabeled_quality": 11,
             "top_source": "rolling_ohlcv_backtest",
@@ -4994,9 +5035,9 @@
             "examples": 548,
             "example_pct": 2.3,
             "stocks": 8,
-            "high_quality": 458,
-            "mid_quality": 53,
-            "low_quality": 9,
+            "high_quality": 457,
+            "mid_quality": 57,
+            "low_quality": 6,
             "unlabeled_quality": 28,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "光通訊模組、Optical Engine光引擎、通信網路業通用樣本、CPO / 矽光子",
@@ -5007,13 +5048,13 @@
             "examples": 480,
             "example_pct": 2.0,
             "stocks": 8,
-            "high_quality": 457,
-            "mid_quality": 23,
+            "high_quality": 456,
+            "mid_quality": 24,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "其他電子類通用樣本",
-            "latest_sample_date": "2026-07-09"
+            "latest_sample_date": "2026-07-13"
           },
           {
             "industry": "電子商務業",
@@ -5039,33 +5080,7 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "紡織纖維通用樣本",
-            "latest_sample_date": "2026-06-10"
-          },
-          {
-            "industry": "其他電子業",
-            "examples": 469,
-            "example_pct": 2.0,
-            "stocks": 9,
-            "high_quality": 441,
-            "mid_quality": 19,
-            "low_quality": 0,
-            "unlabeled_quality": 9,
-            "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "其他電子業通用樣本、液冷 / 散熱、液冷 / 水冷 / 散熱模組、AI伺服器 / GPU伺服器",
-            "latest_sample_date": "2026-07-17"
-          },
-          {
-            "industry": "化學工業",
-            "examples": 440,
-            "example_pct": 1.8,
-            "stocks": 6,
-            "high_quality": 434,
-            "mid_quality": 6,
-            "low_quality": 0,
-            "unlabeled_quality": 0,
-            "top_source": "rolling_ohlcv_backtest",
-            "top_tags": "化學工業通用樣本、CCL / 銅箔基板、PCB / HDI",
-            "latest_sample_date": "2026-05-22"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "industry": "創新版股票",
@@ -5081,6 +5096,32 @@
             "latest_sample_date": "2026-05-25"
           },
           {
+            "industry": "化學工業",
+            "examples": 400,
+            "example_pct": 1.7,
+            "stocks": 6,
+            "high_quality": 394,
+            "mid_quality": 6,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "化學工業通用樣本、CCL / 銅箔基板、PCB / HDI",
+            "latest_sample_date": "2026-06-15"
+          },
+          {
+            "industry": "其他電子業",
+            "examples": 369,
+            "example_pct": 1.6,
+            "stocks": 9,
+            "high_quality": 341,
+            "mid_quality": 19,
+            "low_quality": 0,
+            "unlabeled_quality": 9,
+            "top_source": "rolling_ohlcv_backtest",
+            "top_tags": "其他電子業通用樣本、AI伺服器 / GPU伺服器、AI伺服器ODM / EMS、液冷 / 散熱",
+            "latest_sample_date": "2026-07-17"
+          },
+          {
             "industry": "航運業",
             "examples": 360,
             "example_pct": 1.5,
@@ -5091,7 +5132,7 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "航運業通用樣本",
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "industry": "資訊服務業",
@@ -5111,13 +5152,13 @@
             "examples": 300,
             "example_pct": 1.3,
             "stocks": 5,
-            "high_quality": 289,
-            "mid_quality": 10,
-            "low_quality": 1,
+            "high_quality": 291,
+            "mid_quality": 7,
+            "low_quality": 2,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "化學生技醫療通用樣本",
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "industry": "塑膠工業",
@@ -5130,20 +5171,20 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "塑膠工業通用樣本、CCL / 銅箔基板、PCB / HDI、變壓器 / 重電",
-            "latest_sample_date": "2026-06-11"
+            "latest_sample_date": "2026-06-12"
           },
           {
             "industry": "存託憑證",
             "examples": 289,
             "example_pct": 1.2,
             "stocks": 5,
-            "high_quality": 280,
-            "mid_quality": 8,
-            "low_quality": 1,
+            "high_quality": 283,
+            "mid_quality": 6,
+            "low_quality": 0,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "存託憑證通用樣本",
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "industry": "食品工業",
@@ -5156,7 +5197,7 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "食品工業通用樣本",
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "industry": "文化創意業",
@@ -5195,7 +5236,7 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "ETF通用樣本",
-            "latest_sample_date": "2026-06-17"
+            "latest_sample_date": "2026-06-18"
           },
           {
             "industry": "綠能環保",
@@ -5260,15 +5301,15 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "運動休閒通用樣本",
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "industry": "玻璃陶瓷",
             "examples": 64,
             "example_pct": 0.3,
             "stocks": 1,
-            "high_quality": 54,
-            "mid_quality": 6,
+            "high_quality": 52,
+            "mid_quality": 8,
             "low_quality": 0,
             "unlabeled_quality": 4,
             "top_source": "rolling_ohlcv_backtest",
@@ -5306,13 +5347,13 @@
             "examples": 60,
             "example_pct": 0.3,
             "stocks": 1,
-            "high_quality": 59,
-            "mid_quality": 1,
+            "high_quality": 60,
+            "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "油電燃氣業通用樣本",
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "industry": "農業科技",
@@ -5351,7 +5392,7 @@
             "unlabeled_quality": 0,
             "top_source": "rolling_ohlcv_backtest",
             "top_tags": "鋼鐵工業通用樣本",
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "industry": "電子通路業",
@@ -5370,40 +5411,40 @@
         "tag_counts": {
           "其他通用樣本": 2940,
           "觀光事業通用樣本": 2640,
-          "電子工業通用樣本": 1538,
-          "電子零組件業通用樣本": 1321,
+          "電子工業通用樣本": 1478,
+          "電子零組件業通用樣本": 1381,
           "半導體業通用樣本": 1205,
           "貿易百貨通用樣本": 1080,
           "光電業通用樣本": 1060,
           "生技醫療業通用樣本": 900,
           "電腦及週邊設備業通用樣本": 840,
           "金融保險通用樣本": 660,
-          "DRAM / 利基型記憶體": 512,
+          "DRAM / 利基型記憶體": 514,
           "光通訊模組": 488,
           "其他電子類通用樣本": 480,
           "電子商務業通用樣本": 480,
           "紡織纖維通用樣本": 471,
-          "DDR4 / DDR5": 446,
-          "NAND / NOR Flash": 446,
+          "DDR4 / DDR5": 448,
+          "NAND / NOR Flash": 448,
           "創新版股票通用樣本": 420,
           "電機機械通用樣本": 420,
           "ASIC交換晶片": 410,
           "PCB / HDI": 409,
-          "NAND Flash": 386,
-          "NOR Flash": 386,
+          "NAND Flash": 388,
+          "NOR Flash": 388,
           "其他電子業通用樣本": 360,
           "航運業通用樣本": 360,
           "資訊服務業通用樣本": 360,
           "電源供應器 / 電源管理": 359,
           "CCL / 銅箔基板": 340,
-          "化學工業通用樣本": 340,
-          "CPO / 矽光子": 318
+          "CPO / 矽光子": 318,
+          "儲能 / 電網": 312
         },
         "tag_detail_rows": [
           {
             "tag": "其他通用樣本",
             "examples": 2940,
-            "example_pct": 12.3,
+            "example_pct": 12.4,
             "stocks": 49,
             "top_industry": "其他",
             "high_quality": 2914,
@@ -5426,25 +5467,25 @@
           },
           {
             "tag": "電子工業通用樣本",
-            "examples": 1538,
-            "example_pct": 6.5,
-            "stocks": 25,
+            "examples": 1478,
+            "example_pct": 6.2,
+            "stocks": 24,
             "top_industry": "電子工業",
-            "high_quality": 1365,
-            "mid_quality": 147,
-            "low_quality": 25,
+            "high_quality": 1321,
+            "mid_quality": 130,
+            "low_quality": 26,
             "unlabeled_quality": 1,
             "latest_sample_date": "2026-06-18"
           },
           {
             "tag": "電子零組件業通用樣本",
-            "examples": 1321,
-            "example_pct": 5.5,
+            "examples": 1381,
+            "example_pct": 5.8,
             "stocks": 23,
             "top_industry": "電子零組件業",
-            "high_quality": 1186,
-            "mid_quality": 121,
-            "low_quality": 13,
+            "high_quality": 1253,
+            "mid_quality": 117,
+            "low_quality": 10,
             "unlabeled_quality": 1,
             "latest_sample_date": "2026-07-23"
           },
@@ -5455,15 +5496,15 @@
             "stocks": 21,
             "top_industry": "半導體業",
             "high_quality": 1118,
-            "mid_quality": 68,
-            "low_quality": 14,
+            "mid_quality": 65,
+            "low_quality": 17,
             "unlabeled_quality": 5,
             "latest_sample_date": "2026-07-28"
           },
           {
             "tag": "貿易百貨通用樣本",
             "examples": 1080,
-            "example_pct": 4.5,
+            "example_pct": 4.6,
             "stocks": 18,
             "top_industry": "貿易百貨",
             "high_quality": 1065,
@@ -5478,11 +5519,11 @@
             "example_pct": 4.5,
             "stocks": 17,
             "top_industry": "光電業",
-            "high_quality": 1001,
-            "mid_quality": 56,
-            "low_quality": 3,
+            "high_quality": 996,
+            "mid_quality": 57,
+            "low_quality": 7,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-12"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "生技醫療業通用樣本",
@@ -5490,11 +5531,11 @@
             "example_pct": 3.8,
             "stocks": 15,
             "top_industry": "生技醫療業",
-            "high_quality": 872,
-            "mid_quality": 28,
+            "high_quality": 873,
+            "mid_quality": 27,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "電腦及週邊設備業通用樣本",
@@ -5502,11 +5543,11 @@
             "example_pct": 3.5,
             "stocks": 14,
             "top_industry": "電腦及週邊設備業",
-            "high_quality": 817,
-            "mid_quality": 22,
+            "high_quality": 815,
+            "mid_quality": 24,
             "low_quality": 1,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "金融保險通用樣本",
@@ -5514,33 +5555,33 @@
             "example_pct": 2.8,
             "stocks": 11,
             "top_industry": "金融保險",
-            "high_quality": 658,
-            "mid_quality": 2,
+            "high_quality": 660,
+            "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-11"
+            "latest_sample_date": "2026-06-12"
           },
           {
             "tag": "DRAM / 利基型記憶體",
-            "examples": 512,
-            "example_pct": 2.1,
+            "examples": 514,
+            "example_pct": 2.2,
             "stocks": 7,
             "top_industry": "半導體業",
-            "high_quality": 425,
-            "mid_quality": 40,
-            "low_quality": 5,
-            "unlabeled_quality": 42,
+            "high_quality": 428,
+            "mid_quality": 36,
+            "low_quality": 6,
+            "unlabeled_quality": 44,
             "latest_sample_date": "2026-08-07"
           },
           {
             "tag": "光通訊模組",
             "examples": 488,
-            "example_pct": 2.0,
+            "example_pct": 2.1,
             "stocks": 7,
             "top_industry": "通信網路業",
             "high_quality": 378,
-            "mid_quality": 68,
-            "low_quality": 14,
+            "mid_quality": 76,
+            "low_quality": 6,
             "unlabeled_quality": 28,
             "latest_sample_date": "2026-07-31"
           },
@@ -5550,11 +5591,11 @@
             "example_pct": 2.0,
             "stocks": 8,
             "top_industry": "其他電子類",
-            "high_quality": 457,
-            "mid_quality": 23,
+            "high_quality": 456,
+            "mid_quality": 24,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-07-09"
+            "latest_sample_date": "2026-07-13"
           },
           {
             "tag": "電子商務業通用樣本",
@@ -5578,30 +5619,30 @@
             "mid_quality": 9,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "DDR4 / DDR5",
-            "examples": 446,
+            "examples": 448,
             "example_pct": 1.9,
             "stocks": 6,
             "top_industry": "半導體業",
-            "high_quality": 365,
-            "mid_quality": 40,
-            "low_quality": 5,
-            "unlabeled_quality": 36,
+            "high_quality": 368,
+            "mid_quality": 36,
+            "low_quality": 6,
+            "unlabeled_quality": 38,
             "latest_sample_date": "2026-08-07"
           },
           {
             "tag": "NAND / NOR Flash",
-            "examples": 446,
+            "examples": 448,
             "example_pct": 1.9,
             "stocks": 6,
             "top_industry": "半導體業",
-            "high_quality": 365,
-            "mid_quality": 40,
-            "low_quality": 5,
-            "unlabeled_quality": 36,
+            "high_quality": 368,
+            "mid_quality": 36,
+            "low_quality": 6,
+            "unlabeled_quality": 38,
             "latest_sample_date": "2026-08-07"
           },
           {
@@ -5634,9 +5675,9 @@
             "example_pct": 1.7,
             "stocks": 6,
             "top_industry": "電子工業",
-            "high_quality": 378,
-            "mid_quality": 21,
-            "low_quality": 1,
+            "high_quality": 382,
+            "mid_quality": 18,
+            "low_quality": 0,
             "unlabeled_quality": 10,
             "latest_sample_date": "2026-07-17"
           },
@@ -5646,34 +5687,34 @@
             "example_pct": 1.7,
             "stocks": 6,
             "top_industry": "電子零組件業",
-            "high_quality": 370,
-            "mid_quality": 26,
-            "low_quality": 4,
+            "high_quality": 378,
+            "mid_quality": 17,
+            "low_quality": 5,
             "unlabeled_quality": 9,
             "latest_sample_date": "2026-07-21"
           },
           {
             "tag": "NAND Flash",
-            "examples": 386,
+            "examples": 388,
             "example_pct": 1.6,
             "stocks": 5,
             "top_industry": "半導體業",
-            "high_quality": 312,
-            "mid_quality": 34,
-            "low_quality": 4,
-            "unlabeled_quality": 36,
+            "high_quality": 315,
+            "mid_quality": 30,
+            "low_quality": 5,
+            "unlabeled_quality": 38,
             "latest_sample_date": "2026-08-07"
           },
           {
             "tag": "NOR Flash",
-            "examples": 386,
+            "examples": 388,
             "example_pct": 1.6,
             "stocks": 5,
             "top_industry": "半導體業",
-            "high_quality": 308,
-            "mid_quality": 37,
-            "low_quality": 5,
-            "unlabeled_quality": 36,
+            "high_quality": 311,
+            "mid_quality": 33,
+            "low_quality": 6,
+            "unlabeled_quality": 38,
             "latest_sample_date": "2026-08-07"
           },
           {
@@ -5698,7 +5739,7 @@
             "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "資訊服務業通用樣本",
@@ -5717,10 +5758,10 @@
             "examples": 359,
             "example_pct": 1.5,
             "stocks": 5,
-            "top_industry": "半導體業",
-            "high_quality": 323,
-            "mid_quality": 26,
-            "low_quality": 1,
+            "top_industry": "電子工業",
+            "high_quality": 318,
+            "mid_quality": 29,
+            "low_quality": 3,
             "unlabeled_quality": 9,
             "latest_sample_date": "2026-08-07"
           },
@@ -5730,23 +5771,11 @@
             "example_pct": 1.4,
             "stocks": 5,
             "top_industry": "電子零組件業",
-            "high_quality": 310,
-            "mid_quality": 26,
-            "low_quality": 4,
+            "high_quality": 318,
+            "mid_quality": 17,
+            "low_quality": 5,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
-          },
-          {
-            "tag": "化學工業通用樣本",
-            "examples": 340,
-            "example_pct": 1.4,
-            "stocks": 5,
-            "top_industry": "化學工業",
-            "high_quality": 337,
-            "mid_quality": 3,
-            "low_quality": 0,
-            "unlabeled_quality": 0,
-            "latest_sample_date": "2026-05-22"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "CPO / 矽光子",
@@ -5754,9 +5783,9 @@
             "example_pct": 1.3,
             "stocks": 4,
             "top_industry": "通信網路業",
-            "high_quality": 247,
-            "mid_quality": 30,
-            "low_quality": 3,
+            "high_quality": 250,
+            "mid_quality": 29,
+            "low_quality": 1,
             "unlabeled_quality": 38,
             "latest_sample_date": "2026-07-31"
           },
@@ -5766,8 +5795,8 @@
             "example_pct": 1.3,
             "stocks": 5,
             "top_industry": "電機機械",
-            "high_quality": 292,
-            "mid_quality": 8,
+            "high_quality": 289,
+            "mid_quality": 11,
             "low_quality": 0,
             "unlabeled_quality": 12,
             "latest_sample_date": "2026-07-28"
@@ -5778,8 +5807,8 @@
             "example_pct": 1.3,
             "stocks": 5,
             "top_industry": "電機機械",
-            "high_quality": 288,
-            "mid_quality": 12,
+            "high_quality": 286,
+            "mid_quality": 14,
             "low_quality": 0,
             "unlabeled_quality": 12,
             "latest_sample_date": "2026-07-28"
@@ -5791,8 +5820,8 @@
             "stocks": 4,
             "top_industry": "通信網路業",
             "high_quality": 226,
-            "mid_quality": 46,
-            "low_quality": 8,
+            "mid_quality": 49,
+            "low_quality": 5,
             "unlabeled_quality": 28,
             "latest_sample_date": "2026-07-31"
           },
@@ -5802,9 +5831,9 @@
             "example_pct": 1.3,
             "stocks": 5,
             "top_industry": "電子工業",
-            "high_quality": 286,
-            "mid_quality": 13,
-            "low_quality": 1,
+            "high_quality": 293,
+            "mid_quality": 7,
+            "low_quality": 0,
             "unlabeled_quality": 7,
             "latest_sample_date": "2026-07-22"
           },
@@ -5814,11 +5843,23 @@
             "example_pct": 1.3,
             "stocks": 5,
             "top_industry": "電子工業",
-            "high_quality": 286,
-            "mid_quality": 13,
-            "low_quality": 1,
+            "high_quality": 293,
+            "mid_quality": 7,
+            "low_quality": 0,
             "unlabeled_quality": 7,
             "latest_sample_date": "2026-07-22"
+          },
+          {
+            "tag": "化學工業通用樣本",
+            "examples": 300,
+            "example_pct": 1.3,
+            "stocks": 5,
+            "top_industry": "化學工業",
+            "high_quality": 297,
+            "mid_quality": 3,
+            "low_quality": 0,
+            "unlabeled_quality": 0,
+            "latest_sample_date": "2026-06-15"
           },
           {
             "tag": "化學生技醫療通用樣本",
@@ -5826,11 +5867,11 @@
             "example_pct": 1.3,
             "stocks": 5,
             "top_industry": "化學生技醫療",
-            "high_quality": 289,
-            "mid_quality": 10,
-            "low_quality": 1,
+            "high_quality": 291,
+            "mid_quality": 7,
+            "low_quality": 2,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "存託憑證通用樣本",
@@ -5838,11 +5879,11 @@
             "example_pct": 1.2,
             "stocks": 5,
             "top_industry": "存託憑證",
-            "high_quality": 280,
-            "mid_quality": 8,
-            "low_quality": 1,
+            "high_quality": 283,
+            "mid_quality": 6,
+            "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "儲能系統",
@@ -5850,8 +5891,8 @@
             "example_pct": 1.1,
             "stocks": 4,
             "top_industry": "電機機械",
-            "high_quality": 233,
-            "mid_quality": 7,
+            "high_quality": 230,
+            "mid_quality": 10,
             "low_quality": 0,
             "unlabeled_quality": 11,
             "latest_sample_date": "2026-07-28"
@@ -5859,7 +5900,7 @@
           {
             "tag": "工業機器人 / 自動化系統",
             "examples": 250,
-            "example_pct": 1.0,
+            "example_pct": 1.1,
             "stocks": 4,
             "top_industry": "電子工業",
             "high_quality": 228,
@@ -5871,7 +5912,7 @@
           {
             "tag": "線性馬達 / 自動化",
             "examples": 250,
-            "example_pct": 1.0,
+            "example_pct": 1.1,
             "stocks": 4,
             "top_industry": "電子工業",
             "high_quality": 228,
@@ -5886,11 +5927,11 @@
             "example_pct": 1.0,
             "stocks": 4,
             "top_industry": "電子零組件業",
-            "high_quality": 190,
-            "mid_quality": 42,
-            "low_quality": 8,
+            "high_quality": 199,
+            "mid_quality": 35,
+            "low_quality": 6,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-22"
+            "latest_sample_date": "2026-06-23"
           },
           {
             "tag": "塑膠工業通用樣本",
@@ -5902,7 +5943,7 @@
             "mid_quality": 3,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-11"
+            "latest_sample_date": "2026-06-12"
           },
           {
             "tag": "通信網路業通用樣本",
@@ -5926,7 +5967,7 @@
             "mid_quality": 6,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "Fiber Shuffle",
@@ -5935,8 +5976,8 @@
             "stocks": 3,
             "top_industry": "通信網路業",
             "high_quality": 140,
-            "mid_quality": 32,
-            "low_quality": 8,
+            "mid_quality": 35,
+            "low_quality": 5,
             "unlabeled_quality": 28,
             "latest_sample_date": "2026-07-31"
           },
@@ -5947,8 +5988,8 @@
             "stocks": 3,
             "top_industry": "通信網路業",
             "high_quality": 140,
-            "mid_quality": 32,
-            "low_quality": 8,
+            "mid_quality": 35,
+            "low_quality": 5,
             "unlabeled_quality": 28,
             "latest_sample_date": "2026-07-31"
           },
@@ -5970,8 +6011,8 @@
             "example_pct": 0.8,
             "stocks": 3,
             "top_industry": "電機機械",
-            "high_quality": 173,
-            "mid_quality": 7,
+            "high_quality": 171,
+            "mid_quality": 9,
             "low_quality": 0,
             "unlabeled_quality": 11,
             "latest_sample_date": "2026-07-28"
@@ -5982,8 +6023,8 @@
             "example_pct": 0.8,
             "stocks": 3,
             "top_industry": "電機機械",
-            "high_quality": 172,
-            "mid_quality": 8,
+            "high_quality": 171,
+            "mid_quality": 9,
             "low_quality": 0,
             "unlabeled_quality": 11,
             "latest_sample_date": "2026-07-28"
@@ -5994,9 +6035,9 @@
             "example_pct": 0.8,
             "stocks": 2,
             "top_industry": "通信網路業",
-            "high_quality": 127,
-            "mid_quality": 30,
-            "low_quality": 3,
+            "high_quality": 130,
+            "mid_quality": 29,
+            "low_quality": 1,
             "unlabeled_quality": 28,
             "latest_sample_date": "2026-07-31"
           },
@@ -6006,9 +6047,9 @@
             "example_pct": 0.8,
             "stocks": 2,
             "top_industry": "通信網路業",
-            "high_quality": 127,
-            "mid_quality": 30,
-            "low_quality": 3,
+            "high_quality": 130,
+            "mid_quality": 29,
+            "low_quality": 1,
             "unlabeled_quality": 28,
             "latest_sample_date": "2026-07-31"
           },
@@ -6022,7 +6063,7 @@
             "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-17"
+            "latest_sample_date": "2026-06-18"
           },
           {
             "tag": "綠能環保通用樣本",
@@ -6050,24 +6091,24 @@
           },
           {
             "tag": "液冷 / 散熱",
-            "examples": 177,
-            "example_pct": 0.7,
+            "examples": 127,
+            "example_pct": 0.5,
             "stocks": 2,
-            "top_industry": "其他電子業",
-            "high_quality": 170,
-            "mid_quality": 0,
+            "top_industry": "電子工業",
+            "high_quality": 119,
+            "mid_quality": 1,
             "low_quality": 0,
             "unlabeled_quality": 7,
             "latest_sample_date": "2026-07-17"
           },
           {
             "tag": "液冷 / 水冷 / 散熱模組",
-            "examples": 177,
-            "example_pct": 0.7,
+            "examples": 127,
+            "example_pct": 0.5,
             "stocks": 2,
-            "top_industry": "其他電子業",
-            "high_quality": 170,
-            "mid_quality": 0,
+            "top_industry": "電子工業",
+            "high_quality": 119,
+            "mid_quality": 1,
             "low_quality": 0,
             "unlabeled_quality": 7,
             "latest_sample_date": "2026-07-17"
@@ -6106,7 +6147,7 @@
             "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "電器電纜通用樣本",
@@ -6118,7 +6159,7 @@
             "mid_quality": 2,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "ELS外部雷射源 / CW Laser",
@@ -6150,9 +6191,9 @@
             "example_pct": 0.4,
             "stocks": 1,
             "top_industry": "通信網路業",
-            "high_quality": 41,
-            "mid_quality": 16,
-            "low_quality": 3,
+            "high_quality": 44,
+            "mid_quality": 15,
+            "low_quality": 1,
             "unlabeled_quality": 28,
             "latest_sample_date": "2026-07-31"
           },
@@ -6162,8 +6203,8 @@
             "example_pct": 0.3,
             "stocks": 1,
             "top_industry": "玻璃陶瓷",
-            "high_quality": 54,
-            "mid_quality": 6,
+            "high_quality": 52,
+            "mid_quality": 8,
             "low_quality": 0,
             "unlabeled_quality": 4,
             "latest_sample_date": "2026-07-16"
@@ -6190,7 +6231,7 @@
             "mid_quality": 6,
             "low_quality": 1,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "居家生活通用樣本",
@@ -6222,11 +6263,11 @@
             "example_pct": 0.3,
             "stocks": 1,
             "top_industry": "油電燃氣業",
-            "high_quality": 59,
-            "mid_quality": 1,
+            "high_quality": 60,
+            "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "農業科技通用樣本",
@@ -6262,7 +6303,7 @@
             "mid_quality": 0,
             "low_quality": 0,
             "unlabeled_quality": 0,
-            "latest_sample_date": "2026-06-10"
+            "latest_sample_date": "2026-06-11"
           },
           {
             "tag": "電子通路業通用樣本",
@@ -6278,19 +6319,19 @@
           }
         ],
         "source_counts": {
-          "rolling_ohlcv_backtest": 23697,
-          "prediction_history_backtest": 123
+          "rolling_ohlcv_backtest": 23607,
+          "prediction_history_backtest": 125
         },
         "latest_sample_date": "2026-08-07",
         "manifest": {
-          "generated_at": "2026-08-13T18:36:49+08:00",
-          "requested_stocks": 123,
-          "processed_stocks": 123,
+          "generated_at": "2026-08-14T18:37:25+08:00",
+          "requested_stocks": 124,
+          "processed_stocks": 124,
           "failed_stocks": 0
         }
       }
     },
-    "content_sha256": "b84e92c7518d081a2a28299a9e04486c3327ed3f191f0f5c86cc73ecc03f4606",
-    "message": "已輸出 23820 筆 LLM 技術訓練樣本"
+    "content_sha256": "b1de7d79d48304aaf89024336413b0e466ed2f77cf996bd236a40781268917d0",
+    "message": "已輸出 23732 筆 LLM 技術訓練樣本"
   }
 }
